@@ -1,0 +1,690 @@
+% -*- TeX:SI -*-
+% slovene sub-mode for spell check
+% ----------------------------------------------------------------------
+%  Predloga za obliko in navodila za pisanje diplomskih nalog v LaTex-u
+
+%  Univerza v Ljubljani, Fakulteta za elektrotehniko
+
+%  zbral in uredil Roman Kamnik, junij 2013
+
+% ----------------------------------------------------------------------
+
+\documentclass[a4paper,twoside,openright,12pt]{book}
+\usepackage[cp1250]{inputenc}  %Kodna stran za Windows okolje, za linux je kodna stran latin2
+\usepackage[Slovene]{babel}    % pravila za slovensko deljenje besed
+\usepackage[pdftex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko (za pdfTeX v MkiTex)
+%\usepackage[pctex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko  (za pcTex)
+
+%*************************** PRILAGODITVE *****************************
+% mapa s slikami
+\potgrafike{./Slike/}
+%prilagoditev levega roba sodih strani. Èe se pri dvostranskem tisku robovi ne umemajo se lahko poveèa ali pomanjša
+\zamaknirobsodihstrani{0mm}
+
+%*************************** NASLOVNA STRAN *****************************
+\naslov{Navodila in predloga za izdelavo diplomskega in magistrskega dela}
+\avtor{Ime Priimek} \univerza{Univerza v Ljubljani}
+\fakulteta{Fakulteta za elektrotehniko}
+\delo{Magistrsko delo}
+%\delo{Diplomsko delo visokošolskega strokovnega študija}
+\date{Ljubljana, 2013}
+\mentor{prof. dr. Ime Priimek}
+%\somentor{prof. dr. Ime Priimek}
+\begin{document}
+
+%------------------------ ZAÈETNI DEL -----------------------------------
+\frontmatter
+%------------------------------------------------------------------------
+
+
+%************************ NASLOVNA STRAN ********************************
+\maketitle
+
+
+%*************************** ZAHVALA ************************************
+\zahvala V zahvali se kandidati zahvali mentorju in poimensko tudi
+vsem sodelavcem in prijateljem, ki so pomagali in prispevali pri
+delu v laboratoriju, na raèunalniku, v delavnici, pri tehnièni
+izdelavi dela in drugje.
+
+
+%*************************** VSEBINA *************************************
+\tableofcontents
+
+%*************************** SEZNAM SLIK in TABEL  ***********************
+\seznamslik
+\seznamtabel
+
+%***************************  SEZNAM UPORABLJENIH SIMBOLOV  **************
+
+\seznamsimbolov
+
+V prièujoèem zakljuènem delu so uporabljeni naslednje velièine in
+simboli:
+
+\begin{table}[h]
+\centering
+%\begin{footnotesize}
+\begin{tabular}{l l l l}
+ \hline \multicolumn{2}{c}{\bf{Velièina / oznaka}} & \multicolumn{2}{c}{\bf{Enota}}  \\
+ \hline
+Ime & Simbol & Ime & Simbol \\
+ \hline
+ èas & $t$  & sekunda & s \\
+ frekvenca & $f$  & Hertz & Hz \\
+ tlak & $p$  & Pascal & Pa \\
+ sila vzgona & $\textbf{\textit{f}}_\text{vz}$  & Newton & N \\
+ gostota & $\rho$  & - & kg/m$^3$ \\
+ masa telesa  & $m_\text{t}$  & kilogram & kg \\
+ vhodna napestost & $U_\text{vh}$ & volt  & V \\
+ Jacobijeva matrika & $\mathbf{J}$  & - & - \\
+  \hline
+\end{tabular}
+%\end{footnotesize}
+  \caption{Velièine in simboli}
+  \label{prebojne_trdnosti}
+\end{table}
+
+Pri èemer so vektorji in matrike napisani s poudarjeno pisavo.
+Natanènejši pomen simbolov in njihovih indeksov je razviden iz
+ustreznih slik ali pa je pojasnjen v spremljajoèem besedilu, kjer je
+simbol uporabljen.
+
+
+%------------------------ GLAVNI DEL ------------------------------------
+\mainmatter
+%-------------------------------------------------------------------------
+
+
+%********************* POVZETEK V SLOVENŠÈINI ****************************
+\povzetek
+
+V prièujoèem delu so predstavljena navodila za izdelavo zakljuènega
+dela na Fakulteti za elektrotehniko v Ljubljani. Zakljuèno delo
+predstavlja diplomsko delo na prvi stopnji ter magistrsko delo na
+drugi stopnji izobraževalnega programa.
+
+V povzetku v slovenšèini in v anglešèini kandidat navede glavne
+rezultate dela, zato naj povzetek seznani bralca z jedrom dela na
+naèin, ki je obièajen za pisanje krajših èlankov ali referatov.
+Obseg povzetka je za Repozitorij Univerze v Ljubljani omejen na tisoè
+znakov.
+
+Povzetek se naj priène z opisom in definicijo problema. Nadaljuje se
+naj z opisom uporabljenih metod in postopkov, ki so privedli do
+rešitve. Na koncu naj bodo opisani rezultati dela in glavni zakljuèki, ki iz rezultatov
+izhajajo.
+
+Za tem se na isti strani navede še kljuène besede v slovenšèini in v
+tujem jeziku.
+
+\kljucnebesede beseda1, beseda2, beseda3
+
+
+%*************************** POVZETEK V ANGLEŠÈINI ***********************
+\abstract
+
+The thesis addresses ...
+
+\keywords word1, word2, word3
+
+
+%***************************** UVOD **************************************
+\chapter{Uvod} \label{uvod}
+
+Uvod v zakljuèno delo ima namen, da uvede bralca v tematiko
+zakljuènega dela. V njem kandidat razèleni zahteve in cilje
+zakljuènega dela, po literaturi povzame znane rešitve in oceni
+njihov pomen za zakljuèno delo. Sklicevanje na literaturo se v
+besedilu oznaèi s številko v oglatem oklepaju, ki jo ima ta v
+seznamu uporabljenih virov, in po potrebi navede strani, npr.
+\cite{miklavvcivc2010objavljanje} ali \cite[stran 520 -
+534]{juvznivc1992diplomska}.
+
+%*********************** OSREDNJA POGLAVJA ********************************
+\chapter{Izbira teme zakljuènega dela} \label{izbira_teme}
+
+\begin{enumerate}
+
+\item Zakljuèno delo je zakljuèna študijska obveznost študentov
+prvostopenjskih in drugostopenjskih študijskih programov. Delo mora
+biti zasnovano na znanju, sposobnostih in vešèinah, ki jih je
+študent pridobil med študijem. V zakljuènem delu študent samostojno
+obdela strokovni problem, pri katerem izkaže svojo ustvarjalno
+sposobnost za razvojno in raziskovalno delo, predvsem pa zmožnost,
+da pridobljeno znanje uspešno in celovito uporabi pri izdelavi
+svojega dela. Delo na zakljuèni temi ni in ne more biti le
+pridobivanje novega znanja. Z njim mora študent dokazati sposobnost
+analiziranja, kritiènega ocenjevanja, uporabe literature,
+samostojnega sklepanja in presoje in s tem usposobljenost za
+strokovno delo in reševanje strokovnih problemov. Zakljuèno delo je
+lahko tudi rezultat dela veè študentov, pri èemer mora biti jasno
+razviden prispevek posameznega študenta.
+
+\item Študent lahko izbira temo zakljuènega dela na dva naèina:
+\begin{itemize}
+    \item lahko si izbere katero izmed tem, ki jih fakulteta oziroma posamezni fakultetni
+    uèitelji razpisujejo za tekoèe študijsko leto,
+    \item lahko si najprej izbere mentorja iz vrst habilitiranih uèiteljev za doloèeno strokovno podroèje
+    in se z njim dogovori za temo zakljuènega dela. V tem primeru lahko zajema tema tudi problematiko neke gospodarske organizacije, štipenditorja in podobno.
+\end{itemize}
+
+\item Fakultetni uèitelji imajo pravico in dolžnost predlagati okvirne
+teme zakljuènega dela. Pri tem lahko po svoji presoji vkljuèijo tudi
+somentorja, kadar zajame tema širše oziroma interdisciplinarno
+podroèje. Pravica študenta pa je, da samostojno izbira teme.
+
+\item Pri izbiri teme zakljuènega dela je treba upoštevati aktualnost
+problema, materialne možnosti in potreben èas za izdelavo dela.
+Zahtevnost dela mora biti odmerjena tako, da ga povpreèni študent
+provstopenjskega študijskega programa lahko opravi v 10 tednih,
+študent drugostopenjskega programa pa v 20 tednih. Urejeno zakljuèno
+delo izdela in odda študent prvostopenjskega študijskega programa po
+3 mesecih, študent drugostopenjskega programa pa po 6 mesecih od
+izstavitve teme. Podrobnosti o tem ureja pravilnik o preverjanju in
+ocenjevanju znanja ter izpitnem redu.
+
+\item Študent izbere temo zakljuènega dela praviloma s tistih
+elektrotehniških podroèij, ki so kljuèna za oblikovanje profila
+doloèene smeri študija.
+\end{enumerate}
+
+\chapter{Prijava zakljuènega dela} \label{prijava}
+
+\begin{enumerate}
+\item Študent, ki je opravil vse izpite in druge, s študijskim programom
+predpisane obveznosti, se mora o vsebini zakljuène teme in naèinu dela najprej dogovoriti z mentorjem.
+
+\item Naslednji korak v postopku zakljuèevanja študija je elektronska prijava teme v sistemu Studis. Prijavo opravi študent, ob prijavi izbere mentorja in na nekaterih študijskih programih tudi delovni naslov teme. Sistem upošteva omejitve pri številu zakljuènih nalog na mentorja in onemogoèa prijavo, èe je omejitev že dosežena.
+
+
+
+\item Ko mentor prijavo teme v sistemu Studis potrdi, zaène teèi rok za izdelavo zakljuènega dela.
+
+\item Mentor v teku izdelave zakljuènega dela ureja podatke o temi (naslov, opis, jezik dela).
+
+\item Študent lahko prijavi temo kadarkoli v letu, v èasu od 20. julija do 20. avgusta pa zagovori zakljuènih del
+ne potekajo. V tem obdobju miruje tudi rok za izdelavo zakljuènega dela.
+
+\end{enumerate}
+
+\chapter{Navodilo za opravljanje zakljuènega dela} \label{navodilo_opravljanje}
+
+\begin{enumerate}
+\item Zakljuèno delo je kandidatovo prvo veèje samostojno strokovno delo, zato naj se ga loti sistematièno in z vso resnostjo.
+\item Zakljuèno delo lahko opravi kandidat na fakulteti, v gospodarski družbi, pri štipenditorju ali drugje. O tem se dogovori z mentorjem.
+\item Pri opravljanju zakljuènega dela mora kandidat strogo upoštevati pravila hišnega reda fakultete ali gospodarske organizacije in pravila o varstvu pri delu.
+\item Za uspešno delo je zelo pomembno dobro sodelovanje kandidata z mentorjem. Zato se kandidat redno in po dogovoru posvetuje s svojim mentorjem in ga sproti obvešèa o opravljenem delu. Z vednostjo mentorja se posvetuje še z drugimi sodelavci na fakulteti ali zunaj nje.
+\item Za kvalitetno zakljuèno delo je pomembna tudi uporaba vseh razpoložljivih domaèih in tujih strokovnih ter znanstvenih virov.
+\item Kandidat, ki je pri zakljuènem delu posebno uspešen in ga zakljuèi pred rokom, lahko s pristankom mentorja zaprosi za predèasen zagovor zakljuènega dela. Prošnjo za predèasen zagovor podpišeta na posebnem obrazcu mentor in kandidat. Vzorec prošnje je na spletni strani Fakultete za elektrotehniko\footnote{http://www.fe.uni-lj.si/obvestila/1\_stopnja/}. Prošnje
+sprejema študentska pisarna FE, predèasen zagovor pa odobri prodekan
+za pedagoško dejavnost.
+\item Kandidat lahko z zakljuèno nalog kandidira za Prešernovo nagrado študentom UL, pri èemer so v postopku izbire upoštevana naslednja merila:
+\begin{itemize}
+\item   javnost opredelitve raziskovalnega problema in oblikovanja hipotez,
+\item	znanstvena odliènost in uporabna vrednost,
+\item	širina in poglobljenost teoretske zasnove naloge in metodološka korektnost izvedbe,
+\item	poznavanje domaèe in tuje literature ter doslednost pri njenem navajanju,
+\item	razèlenjevalna temeljitost,
+\item	samostojnost, prodornost, izvirnost, ustvarjalnost in odmevnost naloge (morebitna objava v znanstveni in strokovni literaturi),
+\item	zmogljivost oblikovanja besedila in jezikovna kultura.
+\end{itemize}
+
+\item Èe pride med opravljanjem zakljuènega dela do nesoglasja med kandidatom in mentorjem ali somentorjem, kar onemogoèi ustvarjalno sodelovanje, ima kandidat na podlagi sklepa Komisije za dodiplomski študij pravico do zamenjave mentorja ali somentorja. Zaradi istih razlogov in po enakem postopku lahko tudi mentor ali somentor odklonita mentorstvo oziroma somentorstvo. V takšnem primeru je potrebno z navedbo razlogov pisno zaprositi študijsko komisijo, ki na podlagi sklepa odobri zamenjavo in doloèi novega mentorja ali somentorja.
+Kandidat ima pravico zamenjave mentorja uveljaviti le enkrat.
+\end{enumerate}
+
+\chapter{Navodilo za pisanje} \label{navodilo_pisanje}
+
+\section{Splošna navodila} \label{splosna_navodila}
+
+\begin{enumerate}
+\item Pri pisanju zakljuènega dela izkazuje kandidat poleg strokovne usposobljenosti še splošno razgledanost.
+\item Zakljuèno delo mora biti napisano v slovenskem jeziku in mora biti jezikovno neoporeèno. Priporoèamo, da pisni izdelek pred oddajo pregleda lektor. Obsega naj najmanj 20 strani strokovnega besedila.
+Besedilo mora biti napisano na belem papirju formata A4. Okvirna
+postavitev besedila na omenjenem formatu naj bo tale:
+\begin{itemize}
+    \item zgornji rob 20 mm (nad pagino vivo, èe je ta uporabljena)
+    \item spodnji rob 30 mm
+    \item notranji rob 30 mm
+    \item zunanji rob 20 mm
+\end{itemize}
+\item Razmaki med vrsticami naj bodo ena in pol. Priporoèa se obojestranski tisk.
+\item Celoten izdelek naj bo vezan v platno ali drug ustrezen material. Barva tega materiala je poljubna. Na hrbtni strani vezanega dela naj bo napisano ime in priimek kandidata ter vrsta zakljuèega dela ("magistrsko delo" ali "diplomsko delo").
+\item Na platnici mora biti:
+\begin{itemize}
+    \item naziv univerze in fakultete z veèjimi èrkami, oddaljen ca. 30 mm od zgornjega roba,
+    \item ime in priimek kandidata in pod njim naslov dela,
+    \item oznaka, za katero vrsto zakljuènega dela gre (Magistrsko delo,
+Diplomsko delo visokošolskega strokovnega študija), napisano prav tako z veèjimi èrkami,
+    \item spodaj na sredini "Ljubljana, letnica", oddaljena ca. 30 mm od spodnjega roba.
+\end{itemize}
+\item Naslovna stran (prva stran) je enaka platnici, le da ima še navedbo mentorja.
+\item V ovitku si najprej sledijo uvodne strani po naslednjem vrstnem redu:
+\begin{itemize}
+    \item naslovna stran (prva stran), na kateri je ponovno navedena univerza in fakulteta, ime in priimek kandidata, naslov teme zakljuènega dela (enak kot v originalu izdane teme), oznaka za katero vrsto zakljuènega dela gre, navedba mentorja ter kraj in letnica;
+    \item original izdane teme zakljuènega dela, ki ga kandidat dvigne v študentski pisarni, preden odda izdelek v vezavo;
+    \item izjava kandidata o avtorstvu, istovetnosti elektronske in tiskane verzije ter avtorskih pravicah;
+    \item zahvala, v kateri se kandidat zahvali mentorju in poimensko tudi vsem sodelavcem in prijateljem, ki so pomagali in prispevali pri delu v laboratoriju, na raèunalniku, v delavnici, pri tehnièni izdelavi dela in drugje;
+    \item morebitno posvetilo.
+\end{itemize}
+Ta del nima oznaèb strani.
+\item Uvodnemu delu sledijo še:
+\begin{itemize}
+    \item kazalo,
+    \item seznam slik, tabel in uporabljenih simbolov (priporoèljivo je, da se oznaèbe strani nadaljujejo od kazala naprej).
+\end{itemize}
+\item Zakljuèno delo obsega: (1) povzetek s kljuènimi besedami, (2) uvod, (3) glavni del, ki je smiselno razdeljen na veè poglavij, (4) sklepne ugotovitve, (5) morebitne priloge in (6) seznam uporabljenih virov. Pred povzetkom naj bo kazalo, sledi pa mu seznam uporabljenih simbolov, ki morajo biti enotni v celotnem delu, ne glede na oznaèevanje v uporabljenih virih.
+\begin{itemize}
+    \item V povzetku v slovenšèini in v enem izmed tujih jezikov, ki obsega najveè tisoè znakov, kandidat navede glavne rezultate dela, zato naj povzetek seznani bralca z jedrom dela na naèin, ki je obièajen za pisanje krajših èlankov ali referatov. Za tem se na isti strani navede še kljuène besede v slovenšèini in v tujem jeziku.
+    \item Uvod v zakljuèno delo ima namen, da uvede bralca v tematiko zakljuènega dela. V njem kandidat razèleni zahteve in cilje zakljuènega dela, po literaturi povzame znane rešitve in oceni njihov pomen za zakljuèno delo. Sklicevanje na literaturo se v besedilu oznaèi s številko v oglatem oklepaju, ki jo ima ta v seznamu uporabljenih virov, in po potrebi navede strani, npr. [13, stran 520 - 534].
+    \item Glavni del vsebuje sistematièno opisano opravljeno delo, raèunske rezultate, opis merilnih vezav, merilnih rezultatov in oceno toènosti rezultatov. Slog mora biti kratek, jedrnat, informativen, strokovno eksakten in korekten. Zmotno je mnenje, da je zajetno zakljuèno delo nujno tudi znak kandidatovega obsežnega dela. V zakljuènem delu kandidat ne prevaja ali prepisuje del in daljših razlag drugih avtorjev. Navaja le njihove rezultate, navede izhodišène predpostavke in podroèje veljavnosti.
+    \item Kandidat oblikovno razdeli gradivo smiselno na poglavja, podpoglavja in morebiti še na razdelke, ki jih oštevilèi (na primer 4.3.3.).
+    \item Slik, ki skrajšujejo besedilo, ali pripomorejo k razumljivosti, naj bo èim
+    veè. Podrobna navodila za vnos slik so podana posebej v podpoglavju
+    \ref{vnos_slik} in dodatku \ref{dodatekC}.
+    \item Podrobna navodila za pisanje enaèb in formul so podana posebej v podpoglavju
+    \ref{vnos_enacb}. Oblika zapisa velièin in enaèb naj bo
+    usklajena s standardom SIST-V ISO/IEC Vodilo 99 \cite{standard_sist_v} in s serijo standardov SIST EN ISO 80000 \cite{standard_sist_80000}.
+    V osnovi standard priporoèa, da so simboli za spremenljive velièine zapisani v poševnem tisku (tudi èe nastopajo kot indeks), simboli za nespremenljive velièine in enote pa pokonèno.
+    \item Navajanje tehniènih podatkov v tehniških tekstih zahteva doloèeno obliko. Nekatere koristne napotke najdete v spletnem dokumentu \cite{murovec2013}.
+    \item Kadar za doloèen strokovni termin ni splošno sprejetega
+domaèega izraza, se prviè, ko se slovenski izraz pojavi, v oklepaju
+navede originalni izraz, povzet iz uporabljene litarature, npr.
+impedanèno vodenje (ang. impedance control).
+    \item Sklepne ugotovitve naj prikažejo oceno o opravljenem delu in povzamejo težave, na katere je naletel kandidat. Kot rezultat dela lahko navede ideje, ki so nastale med delom, in bi lahko bile predmet novih raziskav.
+    \item Vire navede kandidat v posebnem seznamu zapovrstjo, kot so bili v besedilu prviè omenjeni.
+    Vselej se omejuje na najpotrebnejše vire; dolg seznam še zdaleè ni dokaz, da ima kandidat tudi tak pregled èez literaturo.
+    Knjige, èlanke in vire iz zbornikov in spletnih strani in navaja takole:
+\begin{enumerate}
+    \item Primer stavka, ki citira knjigo \cite{juvznivc1992diplomska}.
+    \item Primer stavka, ki citira èlanek \cite{kuscer1996}.
+    \item Primer stavka, ki citira prispevek iz zbornika s konference \cite{amrozic2012}.
+    \item Primer stavka, ki citira vir s spletne strani \cite{bor2006}.
+\end{enumerate}
+    Podrobna navodila za obliko navajanja posameznih vrst dokumentov so podana v spletnem dokumentu \cite{oven2013}.
+    \item Priloge (daljše raèunalniške izpise, risbe, konstrukcijske naèrte, registracijo merilnih rezultatov, daljša izvajanja in podobno), èe so potrebni, kandidat izdela kot posebno poglavje, da ne bi razvlekle glavnega dela naloge. Vse priloge morajo biti naslovljene in
+    oštevilèene. Primer \ref{dodatekA}.
+    % V tem poglavju je priporoèljivo navesti tudi sezname slik in tabel, ki se jih uredi na enak naèin kot ostale priloge.
+    \item Plagiatorstvo, ne glede na obliko in naèin predstavljanja tujega avtorskega dela kot svojega, v nasprotju z akademsko etiko, pomeni hujšo kršitev pravil in predpisov, ki urejajo to podroèje in je podlaga za odvzem strokovnega naslova.
+    \item Kandidatu se dovoli pisanje zakljuènega dela v tujem jeziku na osnovi utemeljene prošnje. Naslovna stran (platnica) zakljuènega dela je napisana v slovenskem jeziku. V naslednjem zaporedju si sledijo: prva stran zakljuènega dela v tujem jeziku, prva stran zakljuènega dela v slovenskem jeziku in original izdane teme zakljuènega dela v tujem jeziku. Povzetek zakljuènega dela v slovenskem jeziku mora obsegati 3 do 5 strani.
+\end{itemize}
+\end{enumerate}
+
+\section{Podrobna navodila} \label{podrobna_navodila}
+
+\subsection{Primer pisanja enaèb} \label{vnos_enacb}
+
+Formule in enaèbe je potrebno oštevilèiti z zaporedno številko v
+oklepaju, npr. (1), in se tako nanje tudi sklicevati. V tekstu je
+potrebno pojasniti pomen posameznih parametrov. Primer:
+
+Enaèba (\ref{eq_1}) opisuje hitrost toèke $\textbf{\textit{v}}$, ki se nahaja
+na telesu:
+\begin{equation}\label{eq_1}
+    \textbf{\textit{v}} = \textbf{\textit{v}}_0 + \boldsymbol{\omega} \times \mathbf{r}
+\end{equation}
+pri èemer $\textbf{\textit{v}}_0$ predstavlja hitrost izhodišèa koordinatnega
+sistema, $\boldsymbol{\omega}$ kotno hitrost, $\mathbf{r}$ pa vektor
+od izhodišèa do toèke.
+
+Enaèbo (\ref{eq_1}) lahko zapišemo v sklopu enaèb po komponentah
+kot:
+\begin{eqnarray}
+% \nonumber prepreci stevilcenje posameznih enacb
+  v_x  &=& v_{0x} + z \;\omega_y - y \;\omega_z \nonumber \\
+  v_y  &=& v_{0y} + x \;\omega_z - z \;\omega_x  \\
+  v_z  &=& v_{0z} + y \;\omega_x - x \;\omega_y \nonumber
+\end{eqnarray}
+
+\subsection{Slike} \label{vnos_slik}
+
+Slike ali fotografije morajo biti oštevilèene in citirane v besedilu
+ter podnaslovljene tako, da je razvidno, kaj predstavljajo. V
+besedilo so vstavljene približno tam, kjer se nanje sklicujemo.
+Slike naj bodo pregledne in naj prikažejo le najpotrebnejšo
+informacijo. Grafi potekov signalov na slikah morajo vsebovati imena
+osi, enote in legendo. Napisi na sliki morajo biti v slovenskem
+jeziku. Za veè podrobnosti o vkljuèevanju vektorskih in bitnih slik v
+okolju LaTex, glej prilogo \ref{dodatekC}.
+
+
+
+
+
+
+
+\slikaeps{Primer vkljuèitve slike}{vektorska_slika_1}
+
+%namesto makroja \slikaeps se v MikTexu uporabi tudi naslednji naèin. Za preizkus odkomentirajte spodnje vrstice. Ne dela v PcTeXu.
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.75\columnwidth]{vektorska_slika_1.eps}
+%\caption{\label{oblika_signalov} Primer vkljuèitve slike}
+%\end{figure}
+
+
+\subsection{Tabele}
+
+Tabele morajo biti, podobno kot slike, oštevilèene in citirane v
+besedilu ter podnaslovljene tako, da je razvidno, kaj vsebujejo. V
+besedilo so vstavljene približno tam, kjer se nanje sklicujemo.
+Podatki v tabelah morajo biti poimenovani in navedeni z enotami v
+obliki, ki jo priporoèa standard \cite{standard_sist_v,
+standard_sist_80000}.
+
+Napisi morajo biti v slovenskem jeziku. Primer:
+
+V tabeli \ref{prebojne_trdnosti} so navedene elektriène prebojne
+trdnosti razliènih izolantov in prikljuène napetosti.
+
+\begin{table}[h]
+\centering
+\begin{footnotesize}
+\begin{tabular}{|l||c|c|}
+ \hline Izolant (pri $20^o$C) & $\emph{E}_p$ / (V/m) & $U /$ V  \\
+ \hline \hline
+ zrak & 3  & 30 \\
+ trd papir &  10 & 40 \\
+ trda guma & 10  & 36 \\
+  transformatorsko olje & 15 & 34.5 \\
+   porcelan & 20 & 45 \\
+   polivinilklorid (PVC) & 50 & 70 \\
+    polistirol & 80  & 45\\
+  \hline
+\end{tabular}
+\end{footnotesize}
+  \caption{Prebojne trdnosti izolantov in prikljuène napetosti}
+  \label{prebojne_trdnosti}
+\end{table}
+
+\subsection{Programska koda}
+
+Manjši deli programske kode so lahko navedeni in opisani v tekstu.
+Oblika teksta programske kode se loèi od oblike ostalega teksta.
+Primer:
+
+Funkcija, ki omogoèa prenos podatkov, je naslednja:
+
+\small
+\begin{verbatim}
+void I2C_Transfer(unsigned Addr,unsigned Data) {
+    I2CAddress = Addr;
+    I2CData = Data;
+
+    I2CONCLR = 0x000000FF;  // Izbris I2C nastavitev
+    I2CONSET = 0x00000040;  // Vklop I2C prenosa
+    I2CONSET = 0x00000020;  // Start signal
+}
+\end{verbatim}
+\normalsize
+
+
+\chapter{Oddaja zakljuènega dela} \label{oddaja}
+
+\begin{enumerate}
+    \item Kandidat mora pred oddajo zakljuènega dela pridobiti soglasje mentorja, da se ta strinja z oddajo, nakar mentor v sistemu Studis odobri oddajo zakljuènega dela.
+
+    \item Po odobritvi, študent v sistem Studis naloži elektronsko verzijo zakljuènega dela v formatu PDF/A. Oddani dokument se avtomatsko preveri s testom plagiatorstva. Mentor prejme poroèilo sistema o morebitnih ujemanjih z drugimi deli.
+
+    \item V primeru, ko mentor ni zadovoljen s kandidatovimi dosežki, mora kandidat zaprositi za podaljšanje roka oddaje in delo dopolniti glede na zahteve mentorja. Delo ponovno odda v elektronski obliki.
+
+    \item Ko je mentor zadovoljen z delom, potrdi oddano elektronsko verzijo. Kandidat je o tem obvešèen po elektronski pošti in lahko v pisarni, skladno s tretjim odstavkom 127. èlena Statuta UL, odda zakljuèno delo v tiskani obliki.
+
+    \item Ob predložitvi zakljuènega dela v tiskani obliki mora študent s pisno izjavo potrditi, da je zakljuèno delo rezultat njegovega samostojnega dela, da je tiskani izvod identièen z elektronskim in na univerzo neodplaèno, neizkljuèno, prostorsko in èasovno neomejeno prenesti pravici shranitve avtorskega dela v elektronski obliki in reproduciranja ter pravico omogoèanja javnega dostopa do avtorskega dela na svetovnem spletu preko Repozitorija Univerze v Ljubljani.
+
+    \item Roke za oddajo in pogoje za zagovor zakljuènega dela doloèata Pravilnik o preverjanju in ocenjevanju znanja ter izpitnem redu FE in Statut univerze.
+\end{enumerate}
+
+
+
+   \chapter{Zagovor zakljuènega dela} \label{zagovor}
+
+\begin{enumerate}
+
+    \item Kandidat zagovarja svoje delo na zakljuènem izpitu. Zagovor zakljuènega dela je javen in praviloma poteka v diplomski sobi; èe istoèasno potekajo zagovori pred razliènimi komisijami, pa v eni izmed primernih predavalnic ali seminarjev.
+    Zagovor vodi predsednik komisije za oceno in zagovor zakljuènega dela.
+
+        \item Predstavitev zakljuènega dela je ustna, kandidat pa ne sme brati vnaprej
+        pripravljenega besedila. To mu je lahko samo v pomoè. Dovoljeno je prebrati številène podatke in citate. Kandidat naj predstavitev zakljuènega dela popestri z ilustrativnim prikazom dosežkov. Pri tem sme uporabiti vsa primerna sredstva, vkljuèno z multimedijskimi. O obliki predstavitve se dogovori z mentorjem. Za uporabo avdiovizualnih sredstev, s katerimi upravlja študentska pisarna, se je potrebno dogovoriti vsaj en dan pred zagovorom.
+Kadar ta sredstva niso zadostna oziroma primerna, jih kandidat lahko
+z mentorjevim soglasjem dopolni z laboratorijskimi ali lastnimi;
+vendar jih mora takoj po zagovoru pospraviti, da se v diplomski sobi
+lahko priène nov zagovor. O èasu, v katerem je diplomska soba na
+razpolago kandidatu, se ta dogovori v študentski pisarni.
+        \item Zagovor zakljuènega dela zaène kandidat s kratko, najveè 15 minutno predstavitvijo svojega dela. Kandidat mora biti sposoben, da v razmeroma kratkem èasu poda èlanom komisije in drugim poslušalcem poglavitno vsebino svojega dela. Uvodoma naj razloži, kaj je predmet njegovega dela, katerih problemov se je lotil, kakšne so bile zahteve in kakšne vire je imel na voljo za njihovo rešitev. Sledi opis reševanja problemov v skladu s podanimi specifikacijami, npr. razvoja in izdelave elektronske naprave s pripadajoèo programsko opremo, razvojnega projekta tehnološkega ali energetskega procesa, preverjanja delovnih hipotez s pomoèjo meritev, razvoja novih merilnih metod ali strategij vodenja oziroma upravljanja itd.
+        V zakljuèku kandidat kritièno oceni rezultate svojega dela ter poda ideje in smernice za njegovo nadaljevanje.
+        \item Po ustni predstavitvi èlani komisije postavijo kandidatu vprašanja. Kandidat odgovori na vprašanja iz celotne tematike zakljuènega dela, iz usmerjenega znanja programa študija, na katerega se opira zakljuèno delo, in iz splošnega temeljnega znanja elektrotehnike. Na vprašanja mora kandidat odgovoriti jasno, kratko in suvereno.
+        \item Zagovor zakljuènega dela lahko traja najveè 1 uro. Po konèanem zagovoru se komisija za oceno in zagovor zakljuènega dela oddalji in oceni zakljuèno delo in zagovor. Po vrnitvi v prostor zagovora predsednik komisije za oceno in zagovor ustno sporoèi oceno zakljuènega dela, oceno zagovora zakljuènega dela in konèno oceno zakljuènega izpita. Pri pozitivno opravljenem zakljuènem izpitu prizna kandidatu tudi vse pravice, ki izvirajo iz pravkar pridobljenega strokovnega naslova.
+        \item Èe se kandidat ne strinja s katero od ocen (dela ali zagovora), se lahko pisno pritoži dekanu. Pritožbo mora oddati v tajništvo fakultete v roku 24 ur po zagovoru. V takem primeru se upošteva 153. èlen statuta.
+
+\end{enumerate}
+
+
+\chapter{Zakljuèek} \label{zakljucek}
+
+\begin{enumerate}
+    \item Rezultati zakljuènih del so izkljuèno intelektualna lastnina Fakultete za elektrotehniko Univerze v Ljubljani. Za objavljanje ali izkorišèanje rezultatov zakljuènega dela je potrebno pisno soglasje Fakultete za elektrotehniko in mentorja.
+    \item Kandidatu, ki ne odda v roku zakljuènega dela in ne zaprosi za njegovo podaljšanje, izda fakulteta ugotovitveni sklep, da je tema zapadla. Za izstavitev nove teme zakljuènega dela mora kandidat s pisno vlogo zaprositi Komisijo za dodiplomski študij.
+    \item V primeru, da kandidat tudi v podaljšanem roku ne odda zakljuènega dela, roka ne more veè podaljšati in mora zaprositi za izstavitev nove teme.
+    \item Vsem kandidatom priporoèamo, da pred pisanjem preberejo
+    literaturo \cite{miklavvcivc2010objavljanje, juvznivc1992diplomska, kuscer1996}.
+\end{enumerate}
+
+
+%**************** LITERATURA ************************
+\bibliographystyle{ieeetrslo}
+\bibliography{literatura}
+
+%**************** PRILOGE ************************
+
+
+\appendix
+\chapter{Urejanje dokumentov z orodjem LaTex} \label{dodatekA}
+
+
+Postopek dela:
+\begin{description}
+
+    \item[Korak 1] Avtor kreira tekstovno datoteko s konènico \emph{.tex}, ki vsebuje
+tekst in ukaze za oblikovanje teksta (glej osnovno obliko predloge v
+\ref{dodatekB}). Dober uvod v delo z ukazi LaTex so spletna navodila
+\cite{oetiker1995not}. Za pisanje je lahko uporabljen katerikoli
+tekstovni urejevalnik. Priporoèamo uporabo urejevalnikov
+WinEdt\footnote{Dosegljivo na http://www.winedt.org} ali
+TexStudio\footnote{Dosegljivo na http://texstudio.sourceforge.net/},
+ki sta namenski orodji z integriranimi ikonami za posamezne korake.
+Urejevalnika vsebujeta tudi slovar slovenskih
+besed\footnote{Dosegljivo na  http://www.winedt.org/Dict} za sprotno
+preverjanje in deljenje besed.
+
+    \item[Korak 2] Prevajanje izvorne datoteke s prevajalnikom MikTex. Možnost direktnega prevajanja v PDF dokument (ikonca PDFLaTeX), ali pa v EPS dokument (ikonca LaTex - deluje brez vkljuèenih bitnih slik). Pri prevajanju v EPS dokument se najprej ustvari datoteka s konènico \emph{.dvi} (ang. Device Independent file), ki omogoèa ogled dokumenta (ikona DVI Preview).
+    Pri prvem prevajanju se ustvari tudi lista citatov in sklicevanj (datoteka
+    \emph{.aux}).
+
+    \begin{description}
+    \item[Korak 2.1]\footnote{Potrebno samo pri navajanju virov s
+pomoèjo orodja BibTex} Zagon BibTex prevajanja (ikonca Bib), ki na
+    osnovi \emph{.aux} datoteke in podatkov iz baze referenc,
+    ustvari oblikovan spisek referenc (datoteka \emph{.bbl}) glede
+    na izbran stil citiranja (datoteka \emph{.bst}).
+    \item[Korak 2.2]\footnote{Potrebno samo pri navajanju virov s
+pomoèjo orodja BibTex} Ponovno prevajanje s prevajalnikom MikTex, ki
+    v glavni dokument vkljuèi oblikovane reference iz datoteke
+    \emph{.bbl}.
+    \end{description}
+
+    \item[Korak 3] Ponovno prevajanje s prevajalnikom MikTex, ki
+    poveže spisek referenc z navedki v tekstu.
+    \item[Korak 4a] Pretvorba oblikovanega dokumenta v \emph{PostScript} format in nato izvoz v obliki PDF dokumenta:
+    \begin{itemize}
+        \item ikona DVI-PS - pretvorba v datoteko \emph{.ps}
+        \item Ogled \emph{PostScript} datoteke s programom
+        \emph{GhostView}
+        \item Pretvorba v PDF dokument: GhostView:
+        File/Convert/pdfwrite, pri èemer je potrebno izbrati
+        parametre za format PDF/A glede na spletna navodila\footnote{http://svn.ghostscript.com/ghostscript/trunk/gs/doc/Ps2pdf.htm\#PDFA}.
+    \end{itemize}
+    V tem primeru morajo biti vse vkljuèene slike v formatu
+    \emph{PostScript}. V tem naèinu je možna tudi uporaba orodja \emph{PSfrag}, ki omogoèa
+zamenjavo tekstovnih elementov na originalni sliki s poljubnim
+tekstom ali enaèbo.
+    \item[Korak 4b] Pretvorba oblikovanega dokumenta neposredno v
+    PDF format. Ikona PDFTexify. V tem primeru so vkljuèene
+    slike lahko le v formatu PDF, PNG, JPEG ali GIF.
+
+    Pretvorba iz formata PDF v format PDF/A, ki je zahtevan za oddajo v Repozitorij UL, je
+    možna z uporabo spletnega prevajalnika\footnote{http://convert.neevia.com}, programa Adobe Professional (plaèljiva rešitev) ali programa PDFCreator\footnote{http://www.pdfforge.org/pdfcreator} (zastonjska rešitev). Program PDFCreator z nastavitvami\footnote{http://www.jud.ct.gov/external/super/e-services/efile/How-to-Save-or-Convert-to-PDFA.htm}
+omogoèa tiskanje v format PDF/A, saj se namesti kot tiskalnik. 
+\end{description}
+
+
+
+
+\chapter{Primer LaTex kode} \label{dodatekB}
+
+Primer minimalne LaTex datoteke s konènico \emph{.tex}:
+
+\footnotesize
+\begin{verbatim}
+
+\documentclass[a4paper,twoside,openright,12pt]{book}
+
+\usepackage[cp1250]{inputenc}   % uporaba slo sumnikov
+\usepackage[slovene]{babel}
+\usepackage[pdftex]{UNI-LJ-FE-Diploma}    % stil oblike diplome na FE
+
+
+\begin{document}
+
+   Sem sodi tekst...
+
+\end{document}
+
+\end{verbatim}
+\normalsize
+
+\chapter{Vkljuèevanje slik v okolju LaTex} \label{dodatekC}
+
+Vektorske slike morajo biti v formatu EPS shranjene brez glave z bitno sliko
+za predogled. Slike vkljuèujemo z ukazom \verb1\includegraphics1 v okolju \verb1\figure1.
+Dodatno orodje PSFRAG omogoèa zamenjavo napisov na vektorski sliki z napisi LaTex,
+kot so npr. grške èrke ali enaèbe. Za uporabo je potrebna vkljuèitev orodja z ukazom \verb1\usepackage{psfrag}1.
+Primer LaTex kode za zamenjavo napisa $test$ na sliki z LaTex simbolom $\epsilon \;[\mu]$ je:
+
+\footnotesize
+\begin{verbatim}
+\begin{figure}[h]
+\centering
+    \psfrag{test}[B1][B1][1][0]{$\epsilon \;[\mu]$}
+    \includegraphics[width=0.75\columnwidth]{primer_vektorske_slike.eps}
+    \caption{\label{slika4} Primer slike}
+\end{figure}
+\end{verbatim}
+\normalsize
+
+Za vkljuèitev vektorske slike je možno uporabiti tudi makro
+\textbackslash epsslika, ki je vkljuèen v stil za predlogo. Prvi
+parameter v makroju \textbackslash epsslika je podnaslov, drugi pa
+je ime datoteke s sliko brez konènice (privzeta konènica je .eps) in
+hkrati tudi labela za sklicevanje na sliko. Pri stilu je za
+vkljuèevanje slik potrebno izbrati ustrezno opcijo pdftex ali pctex,
+glede na to katero distribucijo LaTeX prevajalnika se uporablja za
+prevajanje.
+
+\slikaeps{Primer vektorske slike eps. Za vkljuèevanje slika ne sme
+imeti glave z bitno sliko za predogled.}{vektorska_slika_2}
+
+Za vkljuèevanje bitne slike ja v predlogi na voljo makro \textbackslash jpgslika.
+Prvi parameter v makroju \textbackslash jpgslika je podnaslov, drugi pa je ime datoteke s
+sliko (privzeta konènica je .jpg) in hkrati tudi labela za sklicevanje na sliko.
+Slike so v tekst vkljuèene v originalni velikosti.
+
+Slika \ref{bitnaslika.png} predstavlja primer vkljuèitve bitne slike
+JPG formata velikosti 9.4 x 7.6 cm.
+
+\bitnaslika{Primer vkljuèitve bitne slike: sistem
+vodenja}{bitnaslika.png}{9.4cm}{7.6cm}
+
+
+
+\chapter{Instalacija programskih orodij za urejanje teksta v
+okolju LaTex } \label{dodatekD}
+
+
+\begin{description}
+    \item[Korak 1] Instalacija paketa MikTex, ki je prevajalnik za dokumente napisane v kodi LaTex.
+    Datoteke dostopne na spletu: \texttt{http://miktex.org/}
+    \item[Korak 2] Instalacija tekstovnega urejevalnika WinEdt.\\
+    Datoteke dostopne na spletu: \texttt{http://www.winedt.com/}
+    \item[Korak 3] Instalacija ogledovalnika \emph{PostScript}
+    dokumentov:
+    \begin{itemize}
+        \item instalacija modula GhostScript
+        \item instalacija modula GhostView
+    \end{itemize}
+    Datoteke dostopne na spletu: \texttt{www.cs.wisc.edu/\textasciitilde ghost/}
+\end{description}
+
+
+\chapter{Predloge za navajanje literature - baza BibTex}
+\label{dodatekE}
+
+Podani so primeri predlog za navajanje èlanka, knjige, prispevka v
+zborniku in dokumenta s spletne strani. Veè predlog za razliène
+primere je skupaj z literaturo navedenih v datoteki
+\texttt{literatura.bib}.
+
+\noindent Izvoz citatov v BibTex formatu je možen na spletni strani
+\texttt{http://scholar.google.com/}, opcija \emph{Import into
+BibTeX}.
+
+
+
+\footnotesize
+\begin{verbatim}
+@ARTICLE{clanek1,
+   author = "L[eslie] A. Aamport",
+   title = "The Gnats and Gnus Document Preparation System",
+   journal = "\mbox{G-Animal's} Journal",
+   year = 1986,
+   volume = 41,
+   number = 7,
+   pages = "73-77",
+   month = jul,
+}
+
+@BOOK{knjiga1,
+   author = "Donald E. Knuth",
+   title = "Seminumerical Algorithms",
+   publisher = "Addison-Wesley",
+   address = "Reading, Massachusetts",
+   year = "1981",
+}
+
+
+@INPROCEEDINGS{vzborniku,
+   author = "Alfred V. Oaho and Jeffrey D. Ullman and Mihalis Yannakakis",
+   title = "On Notions of Information Transfer in {VLSI} Circuits",
+   editor = "Wizard V. Oz and Mihalis Yannakakis",
+   booktitle = "Proc. Fifteenth Annual ACM" # STOC,
+   pages = "133--139",
+   month = mar,
+   year = 1983,
+   address = "Boston",
+   publisher = "Academic Press",
+}
+
+
+@misc{spletna_stran,
+  author = "LLC",
+  title = "{MS Windows NT Kernel Description [Online]}",
+  howpublished = "Dosegljivo: \url{http://web.archive.org}",
+  note = "[Dostopano: 19. 4. 2013]"
+}
+\end{verbatim}
+\normalsize
+
+
+
+\end{document}

@@ -1,0 +1,660 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.10)  13 MAR 2017 12:29
+entering extended mode
+**./Navodila.tex
+(Navodila.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk12.clo"
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\cp1250.def"
+File: cp1250.def 2015/03/17 v1.2c Input encoding file
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2016/04/23 3.9r The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-slovenian\Slovene.ldf"
+Language: slovene 2005/03/31 v1.2m Slovene support from the babel system
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+Package babel Info: Making " an active character on input line 79.
+))
+(UNI-LJ-FE-Diploma.sty
+
+UNI-LJ-FE-Diploma stilska opcija V.1.0 junij 2013
+Stilska opcija za diplome na Fakulteti za elektrotehniko Univerze v Ljubljani
+Izvedena iz DOKT-STYLE OPTION V.1.01 9.1.1992
+Avtor: Sa\v so Toma\v zi\v c
+Dopolnil: Jus Kocijan 
+Dopolnil: Ales Hribar 2006
+Dopolnil: Sebastjan Slajpah, 2013
+Dopolnil in pre\v cistil: Sa\v so Toma\v zi\v c, 2013
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/06/28 v2.15d AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen104
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks17
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks18
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count101
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+))
+\epsffilein=\read1
+\epsfxsize=\dimen115
+\epsfysize=\dimen116
+\epsftsize=\dimen117
+\epsfrsize=\dimen118
+\epsftmp=\dimen119
+\pspoints=\dimen120
+\xcelo=\count102
+\xdec=\count103
+\xxdec=\count104
+\xxxdec=\count105
+\ycelo=\count106
+\ydec=\count107
+\yydec=\count108
+\yyydec=\count109
+\tmpcount=\count110
+)
+(Navodila.aux
+
+LaTeX Warning: Label `prebojne_trdnosti' multiply defined.
+
+)
+\openout1 = `Navodila.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen121
+\scratchbox=\box28
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen122
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks23
+) [1
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[4
+
+] (Navodila.toc
+Underfull \vbox (badness 1609) has occurred while \output is active []
+
+ [5])
+\tf@toc=\write3
+\openout3 = `Navodila.toc'.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[6] (Navodila.lof)
+\tf@lof=\write4
+\openout4 = `Navodila.lof'.
+
+ [7
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[8
+
+] (Navodila.lot)
+\tf@lot=\write5
+\openout5 = `Navodila.lot'.
+
+ [9]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[10
+
+] (Navodila.lof)
+\tf@lof=\write6
+\openout6 = `Navodila.lof'.
+
+ [11]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[12
+
+] (Navodila.lof)
+\tf@lof=\write7
+\openout7 = `Navodila.lof'.
+
+ [1
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[2
+
+] (Navodila.lof)
+\tf@lof=\write8
+\openout8 = `Navodila.lof'.
+
+ [3]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[4
+
+]
+  1.
+
+LaTeX Warning: Citation `miklavvcivc2010objavljanje' on page 5 undefined on inp
+ut line 141.
+
+
+LaTeX Warning: Citation `juvznivc1992diplomska' on page 5 undefined on input li
+ne 142.
+
+[5]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[6
+
+]
+  2.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 166.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
+ [7]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[8]
+  3.
+[9
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[10
+
+]
+  4.
+[11]
+Underfull \hbox (badness 1533) in paragraph at lines 222--223
+[]\OT1/cmr/m/n/12 Kandidat lahko z za-kljucno na-log kan-di-dira za Presernov
+o na-grado
+ []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[12]
+  5.
+[13
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[14]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[15]
+
+LaTeX Warning: Citation `standard_sist_v' on page 16 undefined on input line 28
+8.
+
+
+LaTeX Warning: Citation `standard_sist_80000' on page 16 undefined on input lin
+e 288.
+
+
+LaTeX Warning: Citation `murovec2013' on page 16 undefined on input line 290.
+
+
+LaTeX Warning: Citation `juvznivc1992diplomska' on page 16 undefined on input l
+ine 300.
+
+
+LaTeX Warning: Citation `kuscer1996' on page 16 undefined on input line 301.
+
+
+LaTeX Warning: Citation `amrozic2012' on page 16 undefined on input line 302.
+
+
+LaTeX Warning: Citation `bor2006' on page 16 undefined on input line 303.
+
+
+LaTeX Warning: Citation `oven2013' on page 16 undefined on input line 305.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[16]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[17]
+Package epstopdf Info: Source file: <./Slike/vektorska_slika_1.eps>
+(epstopdf)                    date: 2012-08-26 13:39:04
+(epstopdf)                    size: 82596 bytes
+(epstopdf)             Output file: <./Slike/vektorska_slika_1-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2013-12-02 10:38:10
+(epstopdf)                    size: 12876 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/vektorska_slika_1-e
+ps-converted-to.pdf ./Slike/vektorska_slika_1.eps>
+(epstopdf)             \includegraphics on input line 357.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/vektorska_slika_1-eps-converted-to.pdf, id=104, 324.21124pt x 165.6187
+4pt>
+File: ./Slike/vektorska_slika_1-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./Slike/vektorska_slika_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/vektorska_slika_1-eps-converted-to.pdf used on
+ input line 357.
+(pdftex.def)             Requested size: 324.21045pt x 165.61833pt.
+
+
+LaTeX Warning: Citation `standard_sist_v' on page 18 undefined on input line 37
+4.
+
+
+LaTeX Warning: Citation `standard_sist_80000' on page 18 undefined on input lin
+e 374.
+
+
+Underfull \vbox (badness 1635) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[18 <./Slike/vektorska_slika_1-eps-converted-to.pdf>]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[19]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[20]
+  6.
+[21
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[22]
+  7.
+[23
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[24]
+  8.
+
+LaTeX Warning: Citation `miklavvcivc2010objavljanje' on page 25 undefined on in
+put line 471.
+
+
+LaTeX Warning: Citation `juvznivc1992diplomska' on page 25 undefined on input l
+ine 471.
+
+
+LaTeX Warning: Citation `kuscer1996' on page 25 undefined on input line 471.
+
+No file Navodila.bbl.
+[25
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[26
+
+] [27]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[28
+
+]
+  A.
+
+LaTeX Warning: Citation `oetiker1995not' on page 29 undefined on input line 492
+.
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
+[][]\OT1/cmr/m/n/10 http://www.jud.ct.gov/external/super/e-services/efile/How-t
+o-Save-or-Convert-to-
+ []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[30]
+  B.
+[31
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[32
+
+]
+  C.
+Package epstopdf Info: Source file: <./Slike/vektorska_slika_2.eps>
+(epstopdf)                    date: 2013-10-17 18:36:30
+(epstopdf)                    size: 43721 bytes
+(epstopdf)             Output file: <./Slike/vektorska_slika_2-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2013-12-02 10:38:12
+(epstopdf)                    size: 6625 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/vektorska_slika_2-e
+ps-converted-to.pdf ./Slike/vektorska_slika_2.eps>
+(epstopdf)             \includegraphics on input line 596.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/vektorska_slika_2-eps-converted-to.pdf, id=167, 192.72pt x 51.19125pt>
+File: ./Slike/vektorska_slika_2-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Slike/vektorska_slika_2-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/vektorska_slika_2-eps-converted-to.pdf used on
+ input line 596.
+(pdftex.def)             Requested size: 192.71951pt x 51.19112pt.
+ [33]
+<./Slike/bitnaslika.png, id=172, 378.41376pt x 306.14375pt>
+File: ./Slike/bitnaslika.png Graphic file (type png)
+
+<use ./Slike/bitnaslika.png>
+Package pdftex.def Info: ./Slike/bitnaslika.png used on input line 607.
+(pdftex.def)             Requested size: 267.4573pt x 216.24245pt.
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[34 <./Slike/vektorska_slika_2-eps-converted-to.pdf> <./Slike/bitnaslika.png>]
+  D.
+[35
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[36
+
+]
+  E.
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--641
+\OT1/cmr/m/n/12 Izvoz ci-ta-tov v Bib-Tex for-matu je mozen na sple-tni strani
+
+ []
+
+[37]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[38] (Navodila.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2841 strings out of 493334
+ 38179 string characters out of 3136668
+ 108423 words of memory out of 3000000
+ 6295 multiletter control sequences out of 15000+200000
+ 17248 words of font info for 60 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 49i,11n,25p,756b,296s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Navodila.pdf (50 pages, 501227 bytes).
+PDF statistics:
+ 259 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+
