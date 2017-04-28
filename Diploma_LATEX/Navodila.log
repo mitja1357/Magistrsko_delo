@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.10)  13 MAR 2017 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.10.10)  28 APR 2017 13:28
 entering extended mode
 **./Navodila.tex
 (Navodila.tex
@@ -441,11 +441,11 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 
 [17]
 Package epstopdf Info: Source file: <./Slike/vektorska_slika_1.eps>
-(epstopdf)                    date: 2012-08-26 13:39:04
+(epstopdf)                    date: 2017-04-28 11:49:06
 (epstopdf)                    size: 82596 bytes
 (epstopdf)             Output file: <./Slike/vektorska_slika_1-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2013-12-02 10:38:10
+(epstopdf)                    date: 2017-04-28 11:49:06
 (epstopdf)                    size: 12876 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/vektorska_slika_1-e
 ps-converted-to.pdf ./Slike/vektorska_slika_1.eps>
@@ -565,11 +565,11 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 ]
   C.
 Package epstopdf Info: Source file: <./Slike/vektorska_slika_2.eps>
-(epstopdf)                    date: 2013-10-17 18:36:30
+(epstopdf)                    date: 2017-04-28 11:49:06
 (epstopdf)                    size: 43721 bytes
 (epstopdf)             Output file: <./Slike/vektorska_slika_2-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2013-12-02 10:38:12
+(epstopdf)                    date: 2017-04-28 11:49:06
 (epstopdf)                    size: 6625 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/vektorska_slika_2-e
 ps-converted-to.pdf ./Slike/vektorska_slika_2.eps>
