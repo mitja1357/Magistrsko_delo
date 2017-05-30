@@ -1,0 +1,147 @@
+% -*- TeX:SI -*-
+% slovene sub-mode for spell check
+% ----------------------------------------------------------------------
+%  Predloga za obliko in navodila za pisanje diplomskih nalog v LaTex-u
+
+%  Univerza v Ljubljani, Fakulteta za elektrotehniko
+
+%  zbral in uredil Roman Kamnik, junij 2013
+
+% ----------------------------------------------------------------------
+
+\documentclass[a4paper,twoside,openright,12pt]{book}
+\usepackage[latin2]{inputenc}  %Kodna stran za Windows okolje, za linux je kodna stran latin2
+\usepackage[slovene]{babel}    % pravila za slovensko deljenje besed
+\usepackage[pdftex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko (za pdfTeX v MkiTex)
+%\usepackage[pctex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko  (za pcTex)
+
+%*************************** PRILAGODITVE *****************************
+% mapa s slikami
+\potgrafike{./Slike/}
+%prilagoditev levega roba sodih strani. Èe se pri dvostranskem tisku robovi ne umemajo se lahko poveèa ali pomanjša
+\zamaknirobsodihstrani{0mm}
+
+%*************************** NASLOVNA STRAN *****************************
+\naslov{Vpliv statène in dinamiène ekscentriènosti na napako senzorja RM44, uèinkovitost kalibracije in robustnost kalibracije na harmonske oscilacije mehanske hitrosti}
+\avtor{Mitja Aliè} \univerza{Univerza v Ljubljani}
+\fakulteta{Fakulteta za elektrotehniko}
+\delo{Magistrsko delo}
+%\delo{Diplomsko delo visokošolskega strokovnega študija}
+\date{Ljubljana, 2017}
+\mentor{doc. dr. Mitja Nemec}
+%\somentor{prof. dr. Ime Priimek}
+\begin{document}
+
+%------------------------ ZAÈETNI DEL -----------------------------------
+\frontmatter
+%------------------------------------------------------------------------
+
+
+%************************ NASLOVNA STRAN ********************************
+\maketitle
+
+
+%*************************** ZAHVALA ************************************
+\zahvala V zahvali se kandidati zahvali mentorju in poimensko tudi
+vsem sodelavcem in prijateljem, ki so pomagali in prispevali pri
+delu v laboratoriju, na raèunalniku, v delavnici, pri tehnièni
+izdelavi dela in drugje.
+
+
+%*************************** VSEBINA *************************************
+\tableofcontents
+
+%*************************** SEZNAM SLIK in TABEL  ***********************
+\seznamslik
+\seznamtabel
+
+%***************************  SEZNAM UPORABLJENIH SIMBOLOV  **************
+
+\seznamsimbolov
+
+V prièujoèem zakljuènem delu so uporabljeni naslednje velièine in
+simboli:
+
+\begin{table}[h]
+\centering
+%\begin{footnotesize}
+\begin{tabular}{l l l l}
+ \hline \multicolumn{2}{c}{\bf{Velièina / oznaka}} & \multicolumn{2}{c}{\bf{Enota}}  \\
+ \hline
+Ime & Simbol & Ime & Simbol \\
+ \hline
+ èas & $t$  & sekunda & s \\
+ frekvenca & $f$  & Hertz & Hz \\
+ tlak & $p$  & Pascal & Pa \\
+ sila vzgona & $\textbf{\textit{f}}_\text{vz}$  & Newton & N \\
+ gostota & $\rho$  & - & kg/m$^3$ \\
+ masa telesa  & $m_\text{t}$  & kilogram & kg \\
+ vhodna napestost & $U_\text{vh}$ & volt  & V \\
+ Jacobijeva matrika & $\mathbf{J}$  & - & - \\
+  \hline
+\end{tabular}
+%\end{footnotesize}
+  \caption{Velièine in simboli}
+  \label{prebojne_trdnosti}
+\end{table}
+
+
+
+%------------------------ GLAVNI DEL ------------------------------------
+\mainmatter
+%-------------------------------------------------------------------------
+
+
+%********************* POVZETEK V SLOVENŠÈINI ****************************
+\povzetek
+
+V prièujoèem delu so predstavljena navodila za izdelavo 
+
+\kljucnebesede beseda1, beseda2, beseda3
+
+
+%*************************** POVZETEK V ANGLEŠÈINI ***********************
+\abstract
+
+The thesis addresses ...
+
+\keywords word1, word2, word3
+
+
+%***************************** UVOD **************************************
+\chapter{Uvod} \label{uvod}
+
+Uvod v zakljuèno delo ima namen, da uvede bralca v tematiko
+zakljuènega dela. V njem kandidat razèleni zahteve in cilje
+zakljuènega dela, po literaturi povzame znane 
+re"sitve in oceni
+njihov pomen za zakljuèno delo. Sklicevanje na literaturo se v
+besedilu oznaèi s "stevilko v oglatem oklepaju, ki jo ima ta v
+seznamu uporabljenih virov, in po potrebi navede strani, npr.
+\cite{miklavvcivc2010objavljanje} ali \cite[stran 520 -
+534]{juvznivc1992diplomska}.
+
+%*********************** OSREDNJA POGLAVJA ********************************
+\chapter{Izbira teme zakljuènega dela} \label{izbira_teme}
+
+\chapter{Princip delovanja senzorja RM44}
+
+
+
+\chapter{Dolo"canje kota}
+
+\chapter{Vpliv ekscentri"cnosti}
+
+\section{Vpliv stati"cne ekscentri"cnosti}
+
+\section{Vpliv dinami"cne ekscentri"cnosti}
+
+\section{Rezultati simulacij}
+
+\chapter{Zakljuèek} \label{zakljucek}
+
+
+
+
+
+\end{document}
