@@ -15,6 +15,51 @@
 \usepackage[pdftex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko (za pdfTeX v MkiTex)
 %\usepackage[pctex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko  (za pcTex)
 
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+
+\newcommand{\magnet}[3]{% xsredisce, ysredisce, zasuk
+ \pgfmathsetmacro{\Cosa}{cos(#3)}
+ \pgfmathsetmacro{\Sina}{sin(#3)}
+\draw (#1,#2) circle (2);
+\draw ( -2.0 * \Cosa  , -2.0 * \Sina )--(2.0 * \Cosa , 2.0 * \Sina );
+\node at (-1.6*\Sina ,1.6*\Cosa ){\rotatebox{#3}{N}};
+\node at (1.6*\Sina ,-1.6*\Cosa  ){\rotatebox{#3}{S}};
+\fill (#1,#2) circle [radius=1pt] node [anchor=north east]{$S_m$};
+}
+
+
+\newcommand{\senzorja}[3]{% xsredisce, ysredisce, zasuk
+ \pgfmathsetmacro{\Cosb}{cos(#3)}
+ \pgfmathsetmacro{\Sinb}{sin(#3)}
+
+
+
+\hall{#1+2.4*\Cosb }{#2+2.4*\Sinb }{#3}
+\hall{#1-2.4*\Sinb}{#2+2.4*\Cosb}{#3}
+\fill (#1,#2) circle [radius=1pt] node [anchor=south east]{$S_h$};
+
+}
+
+\newcommand{\hall}[3]{
+
+ \pgfmathsetmacro{\Cosd}{cos(#3)}
+ \pgfmathsetmacro{\Sind}{sin(#3)}
+ 
+\draw 
+(#1 - 0.2 * \Sind -0.2 * \Cosd  ,#2 + 0.2 * \Cosd -0.2 *\Sind )--
+(#1 - 0.2 * \Sind +0.2 * \Cosd  ,#2 + 0.2 * \Cosd +0.2 *\Sind )--
+(#1 + 0.2 * \Sind +0.2 * \Cosd  ,#2 - 0.2 * \Cosd +0.2 *\Sind )--
+(#1 + 0.2 * \Sind -0.2 * \Cosd  ,#2 - 0.2 * \Cosd -0.2 *\Sind )--
+(#1 - 0.2 * \Sind -0.2 * \Cosd  ,#2 + 0.2 * \Cosd -0.2 *\Sind );
+
+\draw (#1-0.1,#2+0.1) --(#1+0.1,#2-0.1);
+\draw (#1+0.1,#2+0.1)-- (#1-0.1,#2-0.1);
+}
+
+
 %*************************** PRILAGODITVE *****************************
 % mapa s slikami
 \potgrafike{./Slike/}
@@ -128,11 +173,43 @@ seznamu uporabljenih virov, in po potrebi navede strani, npr.
 
 
 
-\chapter{Dolo"canje kota}
+
+\chapter{Dolo"canje napake s simulacijo}
+
+
+
 
 \chapter{Vpliv ekscentri"cnosti}
 
+Idealna postavitev magneta in senzorja na os vrtenja je v realnosti te"zko dose"ci. Od tod lo"cimo dva tipa ekscentri"cnosti, ki si ju bomo pogledali v nadaljevanju. Njihov vpliv ni vedno zanemarljivo majhen. Napake zaradi ekscentri"cnosti se pojavijo zaradi nenatan"cne vgradnje v postroje. 
+
+
+V za"cetnem delu kjer sem sestavil model z Matlab-~om, sem 
+
+
+
+
+, v tej nalogi pa se bom osredoto"cil na izredno majhne premike. 
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}[scale=1]
+\magnet {0} {0} {10}
+\senzorja{0}{0.5}{0}
+
+\end{tikzpicture}
+\caption{Prikaz navora v odvistnosti od komponent toka }
+
+\label{fig:navor}
+\end{figure}
+
+
 \section{Vpliv stati"cne ekscentri"cnosti}
+
+
+
+
 
 \section{Vpliv dinami"cne ekscentri"cnosti}
 
