@@ -41,6 +41,8 @@
 \hall{#1-2.4*\Sinb}{#2+2.4*\Cosb}{#3}
 \fill (#1,#2) circle [radius=1pt] node [anchor=south east]{$S_h$};
 
+\draw [dashed, thick](#1,#2)--(#1+2.2*\Cosb ,#2+2.2*\Sinb );
+\draw [dashed, thick](#1,#2)--(#1-2.2*\Sinb ,#2+2.2*\Cosb );
 }
 
 \newcommand{\hall}[3]{
@@ -197,22 +199,30 @@ V za"cetnem delu kjer sem sestavil model z Matlab-~om, sem
 \begin{tikzpicture}[scale=1]
 \magnet {0} {0} {10}
 \senzorja{0}{0.5}{0}
+\draw (0,0) circle (0.5);
+\senzorja{-0.35}{0.35}{45}
 
 \end{tikzpicture}
 \caption{Prikaz navora v odvistnosti od komponent toka }
 
 \label{fig:navor}
 \end{figure}
+%izpeljava ekscentricnosti za 1 senzor [x0,y0]
+
+\section{izpeljava stati"cne ekscentri"cnosti}
+%Napises da je senzor izmaknjen iz centra magneta in sredisce senzorja opise kroznico
+%
+%
+%
+%
+%\section{izpeljava dinami"cne ekscentri"cnosti}
+%napisi da je magnet izmaknjen senzor pa zavrtis okoli sredisca senzorja
 
 
-%\section{Vpliv stati"cne ekscentri"cnosti}
-%
-%
-%
-%
-%
-%\section{Vpliv dinami"cne ekscentri"cnosti}
-%
+
+
+
+
 %\section{Rezultati simulacij}
 %
 %\chapter{Zakljuèek} \label{zakljucek}
