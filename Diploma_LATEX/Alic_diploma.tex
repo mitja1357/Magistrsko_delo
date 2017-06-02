@@ -179,14 +179,35 @@
 %\chapter{Dolo"canje napake s simulacijo}
 
 
+\chapter{Uvod}
+
+V dana"snjem "casu elektromotorski pogoni vse hitreje nadome"scajo druge oblike ustvarjanja mehanskega dela. Zahteve po "cim hitrej"si regulaciji in zaneslivosti pogona so "cedalje vi"sje. V pogonih se "zeli dose"ci tudi "cim vi"sji izkoristek. Za doseganje uspe"snega obratovanja elektromotorskega pogona se potrebuje dober in zanesljiv dajalnik pozicije. 
+Dejalnike delimo na linearne dajalnike in dajalnike zasuka oz. rotacije. Tu se bom osredoto"cil na rotacijske dajalnike pozicije. Ti so lahko montirani na poljubnem mestu na osi (angl.: through hole), ali le na koncu osi (ang.: On-axis).
+
+%analogni-digitalni senzorji
+%relativni absolutni dajalniki
+
+Vsak dajalnik ima to"cnost, katero dose"ze, "ce je pravilno montiran. naapka nepravilne montaze je odvisna od nepravilno postavljenega aktuatorja na osi pogona, ali nepravilno montiranega senzorja. V tem delu bom analiziral kako se napaka ....
+
+V tem delu se bom osredoto"cil na dajalnik RM44, ki ga bom namerno 
 
 
-\chapter{Vpliv ekscentri"cnosti}
 
-Idealna postavitev magneta in senzorja na os vrtenja je v realnosti te"zko dose"ci. Od tod lo"cimo dva tipa ekscentri"cnosti, ki si ju bomo pogledali v nadaljevanju. Njihov vpliv ni vedno zanemarljivo majhen. Napake zaradi ekscentri"cnosti se pojavijo zaradi nenatan"cne vgradnje v postroje. 
+Dajalnike lo"cimo tudi glede na uporabljen princip zaznavanja premika. Poznamo magnetne, opti"cne, induktivne in druge. 
+Dejalniki se razlikujejo tudi na izodne signale.
 
 
-V za"cetnem delu kjer sem sestavil model z Matlab-~om, sem 
+
+
+\chapter{Dajalniki pozicije RM44}
+
+Dajalnik pozicije RM44 je produkt podjetja RLS merilna tehnika d.o.o. kratica RLS pomeni rotacijski in linearni senzorji zasuka (ang.: Rotary and Linear motion Sensors). Podjetje proizvaja merilnike na podlagi merjenja magnetnega polja. Dajalnik pozicije RM44 spada v dru"zio enkoderjev montiranih na koncu osi rotirajo"ce gredi (ang.: On-axis). Na rotirajo"co os je pritrjen cilindri"cni magnet, ki je diametralno magnetiziran. %(dodaj sliko iz diplome barbare na strani 22 )
+Senzor je sestavljen iz "cipa AM8192B, v katerem so vgrajene Hallove sonde za merjenje pravokotne komponente magnetnega polja, magneta montiranega na os pogona. Izhod senzorja je lahko analogen v obliki dveh signalov sinusa in kosinusa. Izhod senzorja je lahko inkrementalni, ki poda relativno spremembo pozicije ter smer premikanja. Senzor lahko prika"ze tudi absolutno vrednost pozicije. Njegova resolucija je nastavljiva med 320 in 8192 pozicij na obrat.
+
+\chapter{Analiti"cna izpeljava dinami"cne in stati"cne eks"centri"cnosti}
+
+Napake so prisotne ravzaprav pri vsakem senzorju. V tem poglavju bom analiti"cno prikazal vpliv napak omenjenih ekscentri"cnosti, ki se pojavijo ob nepravilni monta"zi senzorja. Njuna vpliva razli"cno vplivata na izhodni signal pozicija. njuna vpliva ra"zli"cno vplivata na napako zato ju bom obravnaval posami"cno. V izpeljavah bom predpostavil, da so izmiki majhni. Zaradi majhnih odmikov lahko predpostavim, da je pravokotna komponenta vektorja gostote magnetnega pretoka(vektor \textbf{B}) linearna. S tem se izpeljava za dolo"citev pozicije, poenostavi. Kasneje bom predstavil tudi na"cin kako pridobiti vredn ost \textbf{B} realnega polja. Predpostavil bom tudi da je senzor za mejenje pozicije sestavljen le iz dveh Hallovih sond, pri kateri je druga sonda fazno premaknjena za 90$^\circ$. 
+%slika kjer je narisano linearno polje
 
 
 
