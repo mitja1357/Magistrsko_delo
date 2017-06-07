@@ -2,13 +2,13 @@ clear all
 %definiraj ekscentricnost
 xs=0+0*(rand()-0.5);
 ys=0+0*(rand()-0.5);
-xd=1+0*(rand()-0.5);
+xd=0.1+0*(rand()-0.5);
 yd=0+0*(rand()-0.5);
 % definiraj zacetni poziciji sond
 zac_x=[1;0];
 zac_y=[0;1];
 % definiraj kote
-theta=linspace(0,2*pi,1000);
+theta=linspace(-pi,pi,1000);
 % priprava slike
 figure(2)
 clf
@@ -20,7 +20,7 @@ By=zeros(size(theta));
 stevec=1;
 for i=theta
 %   vrednosti rotacijske matrike 
-  rot_mat=[cos(i) sin(i);-sin(i) cos(i) ]; 
+  rot_mat=[cos(i) -sin(i);sin(i) cos(i) ]; 
 
 
 %   pozicija hallove sonde
@@ -36,11 +36,21 @@ stevec=stevec+1;
 end
 
 
-kotmerjeni=atan2(Bx,By);
+kot_merjeni=atan2(Bx,By);
 
+poprava_kota;
+
+figure(3)
+
+plot(kot_merjeni-theta,'-r')
+hold off
 figure(2)
 
 plot(theta,Bx,'-b',theta,By,'-r')
 grid on
 legend('B_x','B_y')
 
+fftprotokol=fft(kot_merjeni-theta);
+
+figure(1)
+plot(abs(fftprotokol))
