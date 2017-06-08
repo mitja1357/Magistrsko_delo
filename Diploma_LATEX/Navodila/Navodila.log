@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.5.5)  8 MAY 2017 13:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.24)  8 JUN 2017 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Navodila.tex
+**./Navodila.tex
 (./Navodila.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(c:/texlive/2016/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+(c:/texlive/2016/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -24,170 +24,151 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(c:/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/latin2.def
-File: latin2.def 2015/03/17 v1.2c Input encoding file
+(c:/texlive/2016/texmf-dist/tex/latex/base/cp1250.def
+File: cp1250.def 2015/03/17 v1.2c Input encoding file
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2016/02/24 3.9q The Babel package
+(c:/texlive/2016/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/04/23 3.9r The Babel package
 
+(c:/texlive/2016/texmf-dist/tex/generic/babel-slovenian/Slovene.ldf
+Language: slovene 2005/03/31 v1.2m Slovene support from the babel system
 
-! Package babel Error: Unknown option `Slovene'. Either you misspelled it
-(babel)                or the language definition file Slovene.ldf was not foun
-d.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.310 \ProcessOptions*
-                      
-Valid options are: shorthands=, KeepShorthandsActive,
-activeacute, activegrave, noconfigs, safe=, main=, math=
-headfoot=, strings=, config=, hyphenmap=, or a language name.
-
-
-! Package babel Error: You haven't specified a language option.
-
-See the babel package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.343 ...ry to proceed from here, type x to quit.}
-                                                  
-You need to specify a language, either as a global option
-or as an optional argument to the \usepackage command;
-You shouldn't try to proceed from here, type x to quit.
-
-) (./UNI-LJ-FE-Diploma.sty
+(c:/texlive/2016/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+Package babel Info: Making " an active character on input line 79.
+))
+(./UNI-LJ-FE-Diploma.sty
 
 UNI-LJ-FE-Diploma stilska opcija V.1.0 junij 2013
 Stilska opcija za diplome na Fakulteti za elektrotehniko Univerze v Ljubljani
 Izvedena iz DOKT-STYLE OPTION V.1.01 9.1.1992
-Avtor: Sa\@inpenc@undefined@{latin2}o Toma\@inpenc@undefined@{latin2}i\v c
+Avtor: Sa\v so Toma\v zi\v c
 Dopolnil: Jus Kocijan 
 Dopolnil: Ales Hribar 2006
 Dopolnil: Sebastjan Slajpah, 2013
-Dopolnil in pre\v cistil: Sa\@inpenc@undefined@{latin2}o Toma\@inpenc@undefined
-@{latin2}i\v c, 2013
+Dopolnil in pre\v cistil: Sa\v so Toma\v zi\v c, 2013
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/03 v2.15a AMS math features
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
-\ex@=\dimen103
+\ex@=\dimen104
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen104
+\pmbraise@=\dimen105
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count88
+\inf@bad=\count89
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count89
-\leftroot@=\count90
+\uproot@=\count90
+\leftroot@=\count91
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count91
-\DOTSCASE@=\count92
+\classnum@=\count92
+\DOTSCASE@=\count93
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count93
-\c@MaxMatrixCols=\count94
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
 \dotsspace@=\muskip10
-\c@parentequation=\count95
-\dspbrk@lvl=\count96
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
 \tag@help=\toks17
-\row@=\count97
-\column@=\count98
-\maxfields@=\count99
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
 \andhelp@=\toks18
-\eqnshift@=\dimen106
-\alignsep@=\dimen107
-\tagshift@=\dimen108
-\tagwidth@=\dimen109
-\totwidth@=\dimen110
-\lineht@=\dimen111
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
 \@envbody=\toks19
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2735.
-LaTeX Info: Redefining \] on input line 2736.
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 96.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(c:/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count100
+\Gread@gobject=\count101
 ))
-\Gin@req@height=\dimen112
-\Gin@req@width=\dimen113
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
-Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+(c:/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+(c:/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+(c:/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+(c:/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
 Package etexcmds Info: Could not find \expanded.
@@ -195,13 +176,12 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -211,28 +191,28 @@ Package pdftexcmds Info: \pdfdraftmode found.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
+(grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(c:/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
 \epsffilein=\read1
-\epsfxsize=\dimen114
-\epsfysize=\dimen115
-\epsftsize=\dimen116
-\epsfrsize=\dimen117
-\epsftmp=\dimen118
-\pspoints=\dimen119
-\xcelo=\count101
-\xdec=\count102
-\xxdec=\count103
-\xxxdec=\count104
-\ycelo=\count105
-\ydec=\count106
-\yydec=\count107
-\yyydec=\count108
-\tmpcount=\count109
+\epsfxsize=\dimen115
+\epsfysize=\dimen116
+\epsftsize=\dimen117
+\epsfrsize=\dimen118
+\epsftmp=\dimen119
+\pspoints=\dimen120
+\xcelo=\count102
+\xdec=\count103
+\xxdec=\count104
+\xxxdec=\count105
+\ycelo=\count106
+\ydec=\count107
+\yydec=\count108
+\yyydec=\count109
+\tmpcount=\count110
 )
 (./Navodila.aux
 
@@ -253,23 +233,24 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen120
+\scratchcounter=\count111
+\scratchdimen=\dimen121
 \scratchbox=\box28
-\nofMPsegments=\count111
-\nofMParguments=\count112
+\nofMPsegments=\count112
+\nofMParguments=\count113
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen121
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen122
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks23
 ) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3
+{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+[3
 
 ]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -279,20 +260,6 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [4
 
 ] (./Navodila.toc
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 ...@inpenc@undefined@ {latin2}na navodila}{13}
-                                                  
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
 Underfull \vbox (badness 1609) has occurred while \output is active []
 
  [5])
@@ -332,21 +299,7 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 \tf@lof=\write6
 \openout6 = `Navodila.lof'.
 
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89 Natanènejš
-               i pomen simbolov in njihovih indeksov je razviden iz
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-[11]
+ [11]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -357,100 +310,7 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 \tf@lof=\write7
 \openout7 = `Navodila.lof'.
 
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.105 drugi stopnji izobraž
-                           evalnega programa.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107 V povzetku v slovenš
-                          èini in v anglešèini kandidat navede glavne
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107 V povzetku v slovenšèini in v angleš
-                                          èini kandidat navede glavne
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.109 naèin, ki je obièajen za pisanje krajš
-                                            ih èlankov ali referatov.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115 reš
-         itve. Na koncu naj bodo opisani rezultati dela in glavni zakljuèki,...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.118 Za tem se na isti strani navede š
-                                       e kljuène besede v slovenšèini in v
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.118 ...strani navede še kljuène besede v slovenš
-                                                  èini in v
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-[1
+ [1
 
 ]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -473,32 +333,6 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 ]
   1.
 
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137 ...ega dela, po literaturi povzame znane reš
-                                                  itve in oceni
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.139 besedilu oznaèi s š
-                         tevilko v oglatem oklepaju, ki jo ima ta v
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
 LaTeX Warning: Citation `miklavvcivc2010objavljanje' on page 5 undefined on inp
 ut line 141.
 
@@ -515,574 +349,20 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 
 ]
   2.
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.149 \item Zakljuèno delo je zakljuèna š
-                                         tudijska obveznost študentov
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.149 ...o delo je zakljuèna študijska obveznost š
-                                                  tudentov
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.150 prvostopenjskih in drugostopenjskih š
-                                           tudijskih programov. Delo mora
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.151 ... zasnovano na znanju, sposobnostih in veš
-                                                  èinah, ki jih je
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.152 š
-       tudent pridobil med študijem. V zakljuènem delu študent samostojno
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.152 študent pridobil med š
-                            tudijem. V zakljuènem delu študent samostojno
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.152 ...ridobil med študijem. V zakljuènem delu š
-                                                  tudent samostojno
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 obdela strokovni problem, pri katerem izkaž
-                                                 e svojo ustvarjalno
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.154 ...no in raziskovalno delo, predvsem pa zmož
-                                                  nost,
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155 da pridobljeno znanje uspeš
-                                 no in celovito uporabi pri izdelavi
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.157 pridobivanje novega znanja. Z njim mora š
-                                               tudent dokazati sposobnost
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.160 strokovno delo in reš
-                           evanje strokovnih problemov. Zakljuèno delo je
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.161 lahko tudi rezultat dela veè š
-                                    tudentov, pri èemer mora biti jasno
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162 razviden prispevek posameznega š
-                                      tudenta.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.164 \item Š
-             tudent lahko izbira temo zakljuènega dela na dva naèina:
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 166.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.167     uèitelji razpisujejo za tekoèe š
-                                          tudijsko leto,
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.169 ...lematiko neke gospodarske organizacije, š
-                                                  tipenditorja in podobno.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.172 ...Fakultetni uèitelji imajo pravico in dolž
-                                                  nost predlagati okvirne
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.174 somentorja, kadar zajame tema š
-                                     irše oziroma interdisciplinarno
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.174 somentorja, kadar zajame tema širš
-                                        e oziroma interdisciplinarno
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.175 podroèje. Pravica š
-                         tudenta pa je, da samostojno izbira teme.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-[7]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.177 ...zbiri teme zakljuènega dela je treba upoš
-                                                  tevati aktualnost
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.178 problema, materialne mož
-                              nosti in potreben èas za izdelavo dela.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.179 ...ra biti odmerjena tako, da ga povpreèni š
-                                                  tudent
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.180 provstopenjskega š
-                        tudijskega programa lahko opravi v 10 tednih,
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.181 š
-       tudent drugostopenjskega programa pa v 20 tednih. Urejeno zakljuèno
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.182 delo izdela in odda š
-                           tudent prvostopenjskega študijskega programa po
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.182 ...izdela in odda študent prvostopenjskega š
-                                                  tudijskega programa po
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.183 3 mesecih, š
-                  tudent drugostopenjskega programa pa po 6 mesecih od
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.187 \item Š
-             tudent izbere temo zakljuènega dela praviloma s tistih
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.188 elektrotehniš
-                   kih podroèij, ki so kljuèna za oblikovanje profila
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.189 doloèene smeri š
-                      tudija.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
+ [7]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 [8]
   3.
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.195 \item Š
-             tudent, ki je opravil vse izpite in druge, s študijskim programom
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.195 ...t, ki je opravil vse izpite in druge, s š
-                                                  tudijskim programom
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.198 ...aslednji korak v postopku zakljuèevanja š
-                                                  tudija je elektronska prij...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.198 ...a teme v sistemu Studis. Prijavo opravi š
-                                                  tudent, ob prijavi izbere ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.198 ...prijavi izbere mentorja in na nekaterih š
-                                                  tudijskih programih tudi d...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.198 ...mih tudi delovni naslov teme. Sistem upoš
-                                                  teva omejitve pri številu ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.198 ...slov teme. Sistem upošteva omejitve pri š
-                                                  tevilu zakljuènih nalog na...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.198 ...ja in onemogoèa prijavo, èe je omejitev ž
-                                                  e dosežena.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.198 ...nemogoèa prijavo, èe je omejitev že dosež
-                                                  ena.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.206 \item Š
-             tudent lahko prijavi temo kadarkoli v letu, v èasu od 20. julij...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
 [9
 
 ]
@@ -1094,329 +374,11 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 
 ]
   4.
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.215 ...kandidat na fakulteti, v gospodarski druž
-                                                  bi, pri štipenditorju ali ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.215 ...na fakulteti, v gospodarski družbi, pri š
-                                                  tipenditorju ali drugje. O...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.216 ...akljuènega dela mora kandidat strogo upoš
-                                                  tevati pravila hišnega red...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.216 ...ra kandidat strogo upoštevati pravila hiš
-                                                  nega reda fakultete ali go...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217 \item Za uspeš
-                    no delo je zelo pomembno dobro sodelovanje kandidata z m...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217 ...uje s svojim mentorjem in ga sproti obveš
-                                                  èa o opravljenem delu. Z v...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.217 ...delu. Z vednostjo mentorja se posvetuje š
-                                                  e z drugimi sodelavci na f...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.218 ...lo je pomembna tudi uporaba vseh razpolož
-                                                  ljivih domaèih in tujih st...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 ..., ki je pri zakljuènem delu posebno uspeš
-                                                  en in ga zakljuèi pred rok...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 ... predèasen zagovor zakljuènega dela. Proš
-                                                  njo za predèasen zagovor p...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 ...dela. Prošnjo za predèasen zagovor podpiš
-                                                  eta na posebnem obrazcu me...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 ...m obrazcu mentor in kandidat. Vzorec proš
-                                                  nje je na spletni strani F...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.219 ...fe.uni-lj.si/obvestila/1\_stopnja/}. Proš
-                                                  nje
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 sprejema š
-                tudentska pisarna FE, predèasen zagovor pa odobri prodekan
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.221 za pedagoš
-                ko dejavnost.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
 [11]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.222 ...lahko z zakljuèno nalog kandidira za Preš
-                                                  ernovo nagrado študentom U...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.222 ...o nalog kandidira za Prešernovo nagrado š
-                                                  tudentom UL, pri èemer so ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.222 ...m UL, pri èemer so v postopku izbire upoš
-                                                  tevana naslednja merila:
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.226 \item	š
-             irina in poglobljenost teoretske zasnove naloge in metodološka ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.226 ...ost teoretske zasnove naloge in metodološ
-                                                  ka korektnost izvedbe,
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-Underfull \hbox (badness 1783) in paragraph at lines 229--230
-[]\OT1/cmr/m/n/12 samostojnost, prodor-nost, izvirnost, ust-var-jal-nost in odm
-evnost
+Underfull \hbox (badness 1533) in paragraph at lines 222--223
+[]\OT1/cmr/m/n/12 Kandidat lahko z za-klju^^Tcno na-log kan-di-dira za Pre^^Tse
+rnovo na-grado
  []
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.233 ... podlagi sklepa Komisije za dodiplomski š
-                                                  tudij pravico do zamenjave...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.233 ...a mentorstvo oziroma somentorstvo. V takš
-                                                  nem primeru je potrebno z ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.233 ...ebno z navedbo razlogov pisno zaprositi š
-                                                  tudijsko komisijo, ki na p...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
 
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -1425,309 +387,14 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 
 [12]
   5.
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.239 \section{Splošna navodila}
-                                 \label{splosna_navodila}
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.242 ...andidat poleg strokovne usposobljenosti š
-                                                  e splošno razgledanost.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.242 ... poleg strokovne usposobljenosti še sploš
-                                                  no razgledanost.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-Underfull \hbox (badness 1983) in paragraph at lines 242--243
-[]\OT1/cmr/m/n/12 Pri pisanju za-klju^^Tcnega dela izkazuje kan-di-dat po-leg s
-trokovne us-
- []
-
 [13
 
 ]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.259 Diplomsko delo visokoš
-                            olskega strokovnega študija), napisano prav tako...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.259 Diplomsko delo visokošolskega strokovnega š
-                                                 tudija), napisano prav tako...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.262 ...rva stran) je enaka platnici, le da ima š
-                                                  e navedbo mentorja.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.266 ...kljuènega dela, ki ga kandidat dvigne v š
-                                                  tudentski pisarni, preden ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.272 \item Uvodnemu delu sledijo š
-                                   e:
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 [14]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.279     \item V povzetku v slovenš
-                                    èini in v enem izmed tujih jezikov, ki o...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.279 ...na naèin, ki je obièajen za pisanje krajš
-                                                  ih èlankov ali referatov. ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.279 ...eratov. Za tem se na isti strani navede š
-                                                  e kljuène besede v slovenš...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.279 ...strani navede še kljuène besede v slovenš
-                                                  èini in v tujem jeziku.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.280 ...ega dela, po literaturi povzame znane reš
-                                                  itve in oceni njihov pomen...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.280 ...je na literaturo se v besedilu oznaèi s š
-                                                  tevilko v oglatem oklepaju...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.281 ... delo nujno tudi znak kandidatovega obsež
-                                                  nega dela. V zakljuènem de...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.281 ...dat ne prevaja ali prepisuje del in daljš
-                                                  ih razlag drugih avtorjev....
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.281 ...vaja le njihove rezultate, navede izhodiš
-                                                  ène predpostavke in podroè...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.282 ...no na poglavja, podpoglavja in morebiti š
-                                                  e na razdelke, ki jih ošte...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.282 ...vja in morebiti še na razdelke, ki jih oš
-                                                  tevilèi (na primer 4.3.3.).
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.283     \item Slik, ki skrajš
-                               ujejo besedilo, ali pripomorejo k razumljivos...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.286     \item P
-                 odrobna navodila za pisanje enaèb in formul so podana poseb...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -1742,104 +409,7 @@ LaTeX Warning: Citation `standard_sist_80000' on page 16 undefined on input lin
 e 288.
 
 
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.289 ...i za spremenljive velièine zapisani v poš
-                                                  evnem tisku (tudi èe nasto...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.290 ...tem Navajanje tehniènih podatkov v tehniš
-                                                  kih tekstih zahteva doloèe...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
 LaTeX Warning: Citation `murovec2013' on page 16 undefined on input line 290.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.291 ...adar za doloèen strokovni termin ni sploš
-                                                  no sprejetega
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.295     \item Sklepne ugotovitve naj prikaž
-                                             ejo oceno o opravljenem delu in...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.295 ...oceno o opravljenem delu in povzamejo tež
-                                                  ave, na katere je naletel ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.297     Vselej se omejuje na najpotrebnejš
-                                            e vire; dolg seznam še zdaleè ni...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.297 ...uje na najpotrebnejše vire; dolg seznam š
-                                                  e zdaleè ni dokaz, da ima ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
 
 
 LaTeX Warning: Citation `juvznivc1992diplomska' on page 16 undefined on input l
@@ -1858,312 +428,41 @@ LaTeX Warning: Citation `bor2006' on page 16 undefined on input line 303.
 LaTeX Warning: Citation `oven2013' on page 16 undefined on input line 305.
 
 
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.306     \item Priloge (daljš
-                              e raèunalniške izpise, risbe, konstrukcijske n...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.306     \item Priloge (daljše raèunalniš
-                                          ke izpise, risbe, konstrukcijske n...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.306 ..., registracijo merilnih rezultatov, daljš
-                                                  a izvajanja in podobno), è...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.307     oš
-            tevilèene. Primer \ref{dodatekA}.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 [16]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.309 ... nasprotju z akademsko etiko, pomeni hujš
-                                                  o kršitev pravil in predpi...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.309 ...rotju z akademsko etiko, pomeni hujšo krš
-                                                  itev pravil in predpisov, ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.310 ... v tujem jeziku na osnovi utemeljene proš
-                                                  nje. Naslovna stran (platn...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.318 Formule in enaèbe je potrebno oš
-                                      tevilèiti z zaporedno številko v
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.318 ...èbe je potrebno oštevilèiti z zaporedno š
-                                                  tevilko v
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.327 ...textit{v}}_0$ predstavlja hitrost izhodiš
-                                                  èa koordinatnega
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.329 od izhodiš
-                èa do toèke.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.331 Enaèbo (\ref{eq_1}) lahko zapiš
-                                     emo v sklopu enaèb po komponentah
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 [17]
 
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
+LaTeX Warning: File `vektorska_slika_1.eps' not found on input line 362.
 
-See the inputenc package documentation for explanation.
+Package epstopdf Info: Source file: <vektorska_slika_1.eps>
+(epstopdf)             Output file: <vektorska_slika_1-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=vektorska_slika_1-eps-conv
+erted-to.pdf vektorska_slika_1.eps>
+(epstopdf)             \includegraphics on input line 362.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `vektorska_slika_1-eps-converted-to.pdf' not f
+ound.
+
+See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.342 Slike ali fotografije morajo biti oš
-                                          tevilèene in citirane v besedilu
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
+l.362 ...=0.75\columnwidth]{vektorska_slika_1.eps}
                                                   
-l.344 besedilo so vstavljene približ
-                                    no tam, kjer se nanje sklicujemo.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.345 Slike naj bodo pregledne in naj prikaž
-                                            ejo le najpotrebnejšo
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.345 ...egledne in naj prikažejo le najpotrebnejš
-                                                  o
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-Ne najdem datoteke ./Slike/vektorska_slika_1.eps!
-! Missing $ inserted.
-<inserted text> 
-                $
-l.357 ...imer vkljuèitve slike}{vektorska_slika_1}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: Command \end{center} invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.357 ...imer vkljuèitve slike}{vektorska_slika_1}
-                                                  
+Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.357 ...imer vkljuèitve slike}{vektorska_slika_1}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.357 ...imer vkljuèitve slike}{vektorska_slika_1}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.357 ...imer vkljuèitve slike}{vektorska_slika_1}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.369 Tabele morajo biti, podobno kot slike, oš
-                                               tevilèene in citirane v
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.371 besedilo so vstavljene približ
-                                    no tam, kjer se nanje sklicujemo.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: Citation `standard_sist_v' on page 18 undefined on input line 37
@@ -2177,17 +476,7 @@ e 374.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.403 Manjš
-           i deli programske kode so lahko navedeni in opisani v tekstu.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -2204,486 +493,26 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[20
+[20]
+  6.
+[21
 
 ]
-  6.
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.428     \item Po odobritvi, š
-                               tudent v sistem Studis naloži elektronsko ver...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.428 ... odobritvi, študent v sistem Studis nalož
-                                                  i elektronsko verzijo zakl...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.430 ...entor ni zadovoljen s kandidatovimi dosež
-                                                  ki, mora kandidat zaprosit...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.430 ...sežki, mora kandidat zaprositi za podaljš
-                                                  anje roka oddaje in delo d...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.432 ...ktronsko verzijo. Kandidat je o tem obveš
-                                                  èen po elektronski pošti i...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.432 ...idat je o tem obvešèen po elektronski poš
-                                                  ti in lahko v pisarni, skl...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.434     \item Ob predlož
-                          itvi zakljuènega dela v tiskani obliki mora študen...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.434 ... zakljuènega dela v tiskani obliki mora š
-                                                  tudent s pisno izjavo potr...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-[21]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 [22]
   7.
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.449 ...hko samo v pomoè. Dovoljeno je prebrati š
-                                                  tevilène podatke in citate...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.449 ...a popestri z ilustrativnim prikazom dosež
-                                                  kov. Pri tem sme uporabiti...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.449 ...vizualnih sredstev, s katerimi upravlja š
-                                                  tudentska pisarna, se je p...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.454 razpolago kandidatu, se ta dogovori v š
-                                             tudentski pisarni.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.455 ...asu poda èlanom komisije in drugim posluš
-                                                  alcem poglavitno vsebino s...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.455 ... vsebino svojega dela. Uvodoma naj razlož
-                                                  i, kaj je predmet njegoveg...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.455 ...dela, katerih problemov se je lotil, kakš
-                                                  ne so bile zahteve in kakš...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.455 ... je lotil, kakšne so bile zahteve in kakš
-                                                  ne vire je imel na voljo z...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.455 ...kšne vire je imel na voljo za njihovo reš
-                                                  itev. Sledi opis reševanja...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.455 ... voljo za njihovo rešitev. Sledi opis reš
-                                                  evanja problemov v skladu ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.455 ...msko opremo, razvojnega projekta tehnološ
-                                                  kega ali energetskega proc...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
 [23
 
 ]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.457 ... èlani komisije postavijo kandidatu vpraš
-                                                  anja. Kandidat odgovori na...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.457 ...atu vprašanja. Kandidat odgovori na vpraš
-                                                  anja iz celotne tematike z...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.457 ...ga dela, iz usmerjenega znanja programa š
-                                                  tudija, na katerega se opi...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.457 ...rega se opira zakljuèno delo, in iz sploš
-                                                  nega temeljnega znanja ele...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.457 ...emeljnega znanja elektrotehnike. Na vpraš
-                                                  anja mora kandidat odgovor...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.459 ...dela ali zagovora), se lahko pisno pritož
-                                                  i dekanu. Pritožbo mora od...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.459 ...a), se lahko pisno pritoži dekanu. Pritož
-                                                  bo mora oddati v tajništvo...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.459 ...oži dekanu. Pritožbo mora oddati v tajniš
-                                                  tvo fakultete v roku 24 ur...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.459 ...4 ur po zagovoru. V takem primeru se upoš
-                                                  teva 153. èlen statuta.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 [24]
   8.
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.467 ...e v Ljubljani. Za objavljanje ali izkoriš
-                                                  èanje rezultatov zakljuène...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.468 ...ega dela in ne zaprosi za njegovo podaljš
-                                                  anje, izda fakulteta ugoto...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.468 ...vlogo zaprositi Komisijo za dodiplomski š
-                                                  tudij.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.469 ...tem V primeru, da kandidat tudi v podaljš
-                                                  anem roku ne odda zakljuèn...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.469 ...akljuènega dela, roka ne more veè podaljš
-                                                  ati in mora zaprositi za i...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
 
 LaTeX Warning: Citation `miklavvcivc2010objavljanje' on page 25 undefined on in
 put line 471.
@@ -2718,91 +547,7 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 LaTeX Warning: Citation `oetiker1995not' on page 29 undefined on input line 492
 .
 
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.501 ...orne datoteke s prevajalnikom MikTex. Mož
-                                                  nost direktnega prevajanja...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
 [29]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.518     povež
-               e spisek referenc z navedki v tekstu.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.529     \emph{PostScript}. V tem naèinu je mož
-                                                na tudi uporaba orodja \emph...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.537     mož
-             na z uporabo spletnega prevajalnika\footnote{http://convert.nee...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.537 ...rograma Adobe Professional (plaèljiva reš
-                                                  itev) ali programa PDFCrea...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.537 ....pdfforge.org/pdfcreator} (zastonjska reš
-                                                  itev). Program PDFCreator ...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 537--537
 [][]\OT1/cmr/m/n/10 http://www.jud.ct.gov/external/super/e-services/efile/How-t
 o-Save-or-Convert-to-
@@ -2826,33 +571,6 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 
 ]
   C.
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.572 kot so npr. grš
-                     ke èrke ali enaèbe. Za uporabo je potrebna vkljuèitev o...
-
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.586 Za vkljuèitev vektorske slike je mož
-                                          no uporabiti tudi makro
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
 Ne najdem datoteke ./Slike/vektorska_slika_2.eps!
 ! Missing $ inserted.
 <inserted text> 
@@ -2930,21 +648,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 ]
   E.
 
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin2'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.638 ...ent Izvoz citatov v BibTex formatu je mož
-                                                  en na spletni strani
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 638--641
-\OT1/cmr/m/n/12 Izvoz ci-ta-tov v Bib-Tex for-matu je moen na spletni strani
+\OT1/cmr/m/n/12 Izvoz ci-ta-tov v Bib-Tex for-matu je mo^^Tzen na sple-tni stra
+ni
  []
 
 [37]
@@ -2961,31 +667,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2463 strings out of 493029
- 32773 string characters out of 6136235
- 98657 words of memory out of 5000000
- 5930 multiletter control sequences out of 15000+600000
+ 2831 strings out of 493014
+ 37285 string characters out of 6137001
+ 109583 words of memory out of 5000000
+ 6291 multiletter control sequences out of 15000+600000
  17248 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,11n,25p,754b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Navodila.pdf (50 pages, 251263 bytes).
+ 49i,11n,25p,756b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2016/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2016/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmib10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Navodila.pdf (50 pages, 252350 bytes).
 PDF statistics:
  239 PDF objects out of 1000 (max. 8388607)
  167 compressed objects within 2 object streams

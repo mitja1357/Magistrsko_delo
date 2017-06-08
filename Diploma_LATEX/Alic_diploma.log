@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.10)  6 JUN 2017 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.24)  8 JUN 2017 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -29,8 +29,8 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(c:/texlive/2016/texmf-dist/tex/latex/base/latin2.def
-File: latin2.def 2015/03/17 v1.2c Input encoding file
+(c:/texlive/2016/texmf-dist/tex/latex/base/cp1250.def
+File: cp1250.def 2015/03/17 v1.2c Input encoding file
 ))
 (c:/texlive/2016/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/04/23 3.9r The Babel package
@@ -50,12 +50,11 @@ Package babel Info: Making " an active character on input line 79.
 UNI-LJ-FE-Diploma stilska opcija V.1.0 junij 2013
 Stilska opcija za diplome na Fakulteti za elektrotehniko Univerze v Ljubljani
 Izvedena iz DOKT-STYLE OPTION V.1.01 9.1.1992
-Avtor: Sa\@inpenc@undefined@{latin2}o Toma\@inpenc@undefined@{latin2}i\v c
+Avtor: Sa\v so Toma\v zi\v c
 Dopolnil: Jus Kocijan 
 Dopolnil: Ales Hribar 2006
 Dopolnil: Sebastjan Slajpah, 2013
-Dopolnil in pre\v cistil: Sa\@inpenc@undefined@{latin2}o Toma\@inpenc@undefined
-@{latin2}i\v c, 2013
+Dopolnil in pre\v cistil: Sa\v so Toma\v zi\v c, 2013
 
 (c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/10 v2.15b AMS math features
@@ -486,36 +485,62 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 (c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
-) (./Alic_diploma.aux)
+)
+(c:/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+
+(c:/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(c:/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen167
+\captionmargin@=\dimen168
+\captionwidth=\dimen169
+\caption@tempdima=\dimen170
+\caption@indent=\dimen171
+\caption@parindent=\dimen172
+\caption@hangindent=\dimen173
+)
+\c@ContinuedFloat=\count130
+)
+\c@subfigure=\count131
+\c@subtable=\count132
+)
+(./Alic_diploma.aux)
 \openout1 = `Alic_diploma.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
 
 (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
-\scratchdimen=\dimen167
+\scratchcounter=\count133
+\scratchdimen=\dimen174
 \scratchbox=\box39
-\nofMPsegments=\count131
-\nofMParguments=\count132
+\nofMPsegments=\count134
+\nofMParguments=\count135
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count133
-\MPscratchDim=\dimen168
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
+\MPscratchCnt=\count136
+\MPscratchDim=\dimen175
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
 \everyMPtoPDFconversion=\toks35
 ) ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
   1.
 [1
 
@@ -543,25 +568,48 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[6] (./Alic_diploma.aux) ) 
+[6]
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 315--342
+[][] [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[7]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[8] (./Alic_diploma.aux) ) 
 Here is how much of TeX's memory you used:
- 12726 strings out of 493014
- 249334 string characters out of 6137001
- 294568 words of memory out of 5000000
- 16024 multiletter control sequences out of 15000+600000
- 8920 words of font info for 32 fonts, out of 8000000 for 9000
+ 13954 strings out of 493014
+ 271951 string characters out of 6137001
+ 324344 words of memory out of 5000000
+ 17243 multiletter control sequences out of 15000+600000
+ 10060 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,54p,838b,601s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,54p,573b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-i12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c
-:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Alic_diploma.pdf (6 pages, 70553 bytes).
+ts/cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2016/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+l12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Alic_diploma.pdf (8 pages, 129110 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

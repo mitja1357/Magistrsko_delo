@@ -10,28 +10,28 @@
 % ----------------------------------------------------------------------
 
 \documentclass[a4paper,twoside,openright,12pt]{book}
-\usepackage[latin2]{inputenc}  %Kodna stran za Windows okolje, za linux je kodna stran latin2
+\usepackage[cp1250]{inputenc}  %Kodna stran za Windows okolje, za linux je kodna stran latin2
 \usepackage[slovene]{babel}    % pravila za slovensko deljenje besed
 \usepackage[pdftex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko (za pdfTeX v MkiTex)
 %\usepackage[pctex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko  (za pcTex)
-
+\usepackage{graphicx}
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
+\usepackage{subcaption} 
 
-
-\newcommand{\magnet}[3]{% xsredisce, ysredisce, zasuk
+\newcommand{\magnet}[5]{% xsredisce, ysredisce, zasuk besedilo v srediscu najb bo crta ali ne
  \pgfmathsetmacro{\Cosa}{cos(#3)}
  \pgfmathsetmacro{\Sina}{sin(#3)}
 \draw (#1,#2) circle (2);
-\draw ( -2.0 * \Cosa  , -2.0 * \Sina )--(2.0 * \Cosa , 2.0 * \Sina );
-\node at (-1.6*\Sina ,1.6*\Cosa ){\rotatebox{#3}{N}};
-\node at (1.6*\Sina ,-1.6*\Cosa  ){\rotatebox{#3}{S}};
-\fill (#1,#2) circle [radius=1pt] node [anchor=north east]{$S_m$};
+\draw (#1+ -2.0 *#5* \Cosa  ,#2 -2.0 *#5* \Sina )--(#1+2.0 *#5* \Cosa , #2+2.0 *#5* \Sina );
+\node at (#1-1.6*\Sina ,#2+1.6*\Cosa ){\rotatebox{#3}{N}};
+\node at (#1+1.6*\Sina ,#2-1.6*\Cosa  ){\rotatebox{#3}{S}};
+\fill (#1,#2) circle [radius=1pt] node [anchor=north east]{#4};
 }
 
 
-\newcommand{\senzorja}[3]{% xsredisce, ysredisce, zasuk
+\newcommand{\senzorja}[4]{% xsredisce, ysredisce, zasuk
  \pgfmathsetmacro{\Cosb}{cos(#3)}
  \pgfmathsetmacro{\Sinb}{sin(#3)}
 
@@ -39,7 +39,7 @@
 
 \hall{#1+2.4*\Cosb }{#2+2.4*\Sinb }{#3}
 \hall{#1-2.4*\Sinb}{#2+2.4*\Cosb}{#3}
-\fill (#1,#2) circle [radius=1pt] node [anchor=south east]{$S_h$};
+\fill (#1,#2) circle [radius=1pt] node [anchor=south east]{#4};
 
 \draw [dashed, thick](#1,#2)--(#1+2.2*\Cosb ,#2+2.2*\Sinb );
 \draw [dashed, thick](#1,#2)--(#1-2.2*\Sinb ,#2+2.2*\Cosb );
@@ -57,10 +57,15 @@
 (#1 + 0.2 * \Sind -0.2 * \Cosd  ,#2 - 0.2 * \Cosd -0.2 *\Sind )--
 (#1 - 0.2 * \Sind -0.2 * \Cosd  ,#2 + 0.2 * \Cosd -0.2 *\Sind );
 
-\draw (#1-0.1,#2+0.1) --(#1+0.1,#2-0.1);
-\draw (#1+0.1,#2+0.1)-- (#1-0.1,#2-0.1);
+\draw (#1-0.1*\Cosd -0.1*\Sind,#2+0.1*\Cosd-0.1*\Sind) --(#1+0.1*\Cosd +0.1*\Sind,#2-0.1*\Cosd+0.1*\Sind);
+\draw (#1+0.1*\Cosd -0.1*\Sind,#2+0.1*\Cosd+0.1*\Sind)-- (#1-0.1*\Cosd +0.1*\Sind,#2-0.1*\Cosd-0.1*\Sind);
 }
-
+\newcommand{\CaCS}[3]{
+	
+	\draw [<->](-#1+#2,#3)--(#1+#2,0+#3) node[anchor=north]{$x$};
+	\draw [<->](#2,-#1+#3)--(0+#2,#1+#3) node[anchor=east]{$y$};
+	
+	}
 
 %*************************** PRILAGODITVE *****************************
 % mapa s slikami
@@ -206,31 +211,188 @@ Senzor je sestavljen iz "cipa AM8192B, v katerem so vgrajene Hallove sonde za me
 
 \chapter{Analiti"cna izpeljava dinami"cne in stati"cne eks"centri"cnosti}
 
-Napake so prisotne ravzaprav pri vsakem senzorju. V tem poglavju bom analiti"cno prikazal vpliv napak omenjenih ekscentri"cnosti, ki se pojavijo ob nepravilni monta"zi senzorja. Njuna vpliva ra"zli"cno vplivata na napako zato ju bom obravnaval posami"cno. V izpeljavah bom predpostavil, da so izmiki majhni. Zaradi majhnih odmikov lahko predpostavim, da je pravokotna komponenta vektorja gostote magnetnega pretoka(vektor \textbf{B}) linearna. S tem se izpeljava za dolo"canje pozicije, poenostavi. Kasneje bom predstavil tudi na"cin kako pridobiti vredn ost \textbf{B} realnega polja. Predpostavil bom tudi da je senzor za mejenje pozicije sestavljen le iz dveh Hallovih sond, pri kateri je druga sonda fazno premaknjena za 90$^\circ$. 
+Napake so prisotne pravzaprav pri vsakem senzorju. V tem poglavju bom analiti"cno prikazal vpliv napak omenjenih ekscentri"cnosti, ki se pojavijo ob nepravilni monta"zi senzorja. Njuna vpliva ra"zli"cno vplivata na napako zato ju bom obravnaval posami"cno. V delu sem predpostavil, da se izmiki iz idealne pozicije izmikajo le v smeri x in y. Napaka se pojavi tudi ob premiku v smeri z vendar tega tu nebom obravnaval.
+ Zaradi narave problema je smiselno uporabiti kartezi"ni koordinatni sistem. V izpeljavah bom predpostavil, da so izmiki majhni. Najprej bom izpeljal po ka"sni trajetoriji se giblje posamezna Hallova sonda. Iz znane tretnutne lokacije Hallove sonde bom lahko izra"cunal vrednost B komponente ki jo meri posamezna Hallova sonda. Pri analiti"cni izpeljavi bom predopstavil, da je polje ob majhnih odmikih linearno in ustreza enacbi polja $B(x,y)=k \cdot x$.  Nato bom analiti"cno izrazil vrednost kota, ki predstavlja izhod senzorja.
+
+
+
+\section{Za"cetna pozicija senzorjev}
+
+Za dolo"canje kota med vektorjem ki ka"ze v smeri x-os (\textbf{$1_x$}) in vektorjem med koordinatnim izhodiscem in poljubno to"cko v koordinatnem sistemu, je potrebno poznati poznati le polo"zaj to"cke. Primer je podan na sliki \ref{fig:dolocitev_kota}. Kot $\varphi$ dolo"cimo preko trigonometri"cne funkcije $\arctan$: $$\varphi=\arctan\frac{y_0}{x_0}$$
+
+
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[scale=4]
+	\CaCS{0.75}{0}{0}
+	\draw [->,thick](0,0)--(-0.5,0.2855);
+	\draw (0.15,0) arc (0:150:0.15);
+	\node at (0.05,0.05){$\varphi$};
+%	\node at (-0.5,0.285) {\textbullet};
+	\node at (-0.32,0.35) {($x_0$,$y_0$)};
+	\end{tikzpicture}
+	\caption{Slika za pomo"c pri dolo"canju kota}
+	\label{fig:dolocitev_kota}
+\end{figure}
+
+
+Za dolo"citev kota $\varphi$  je dovolj poznati "ze projekciji vektorja na koordinatni osi(slika \ref{fig:dolocitev_kota_2}),
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[scale=4]
+	\CaCS{0.75}{0}{0}
+	\draw [->,thick](0,0)--(-0.5,0.2855);
+	\draw (0.15,0) arc (0:150:0.15);
+	\node at (0.05,0.05){$\varphi$};
+	\draw [dashed] (-0.5,0.2855)--(-0.5,0);
+	\draw [dashed] (-0.5,0.2855)--(0,0.2855);
+	%	\node at (-0.5,0.285) {\textbullet};
+%	\node at (-0.32,0.35) {($x_0$,$y_0$)};
+	\node at(-0.5,-0.1){$x_0$} ;
+	\node at(0.1,0.2855){$y_0$};
+	\end{tikzpicture}
+	\caption{Slika za pomo"c pri dolo"canju kota}
+	\label{fig:dolocitev_kota_2}
+\end{figure}
+
+
+"Ce poznamo le projekciji to"cke na koordinatni osi, je to zadosten pogoj za dolo"citev kota $\varphi$.
+Za dolo"citev kota zasuka v idealnih pogojih, kot je predpostavka, da je polje linearno, sta dovolj dve Hallovi sondi, ki sta prostorsko zamaknjeni za 90$^\circ$ (Slika \ref{fig:zacetna_postavitev_sond}).
+
+Za"cetni lokaciji sond enostavmo postavimo na koordinatni osi in s tem ustre"zemo pogoju po prostorskem zasuku med sondama. Sondi postavimo na razdaljo $r_0$ od koordinatnega izhodi"s"ca. S tem dobimo za"cetni lokaciji Hallovih sond $\mathrm{H}_1(x_0, y_0)=(r_0, 0)$, $\mathrm{H}_2(x_0, y_0)=(0, r_0)$.
+
+
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[scale=1]
+	\CaCS{3}{0}{0}
+	\senzorja{0}{0}{0}{}
+%	\magnet {0} {0} {10}{ }{0}
+	\node at (2.0,-0.5){$\mathrm{H}_1(r_0,0)$};
+	\node at (-1,2.3){$\mathrm{H}_2(0, r_0)$};
+	\end{tikzpicture}
+	\caption{Za"cetna postavitev Hallovih sond}
+	\label{fig:zacetna_postavitev_sond}
+\end{figure}
+
+
+\section{Zasuk magneta}
+
+Z zasukom magneta za kot $\theta$ se na mestu, kjer merimo magnetno polje, polje spremni. Polje bi se spremnilo enako "ce bi nad magnetom  zasukali senzor za kot $-\theta$. Hallova sonda z za"cetno lokacijo ($x_0, y_0$) bi se po kro"znici premaknila v novo lokacijo($\mathrm{x, y}$):
+\begin{equation}
+\label{eq:osnovni_zasuk}
+\begin{bmatrix}
+x\\y
+\end{bmatrix}= \begin{bmatrix}
+\cos (-\theta)& -\sin(-\theta)\\ \sin( -\theta)& \cos (-\theta)
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+x_0\\y_0
+\end{bmatrix}
+\end{equation}
+Z upo"stevanjem da je funkcija sinus liha in funkcija kosinus soda, se izra"cun v ena"cbi \ref{eq:osnovni_zasuk} poenostavi v:
+\begin{equation}
+\label{eq:osnovni_zasuk_popravljena_rot}
+\begin{bmatrix}
+x\\y
+\end{bmatrix}= \begin{bmatrix}
+\cos (\theta)& \sin(\theta)\\ -\sin( \theta)& \cos (\theta)
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+x_0\\y_0
+\end{bmatrix}
+\end{equation}
+
+
+
+
+\begin{figure}[h!]
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\resizebox{\linewidth}{!}{
+			\begin{tikzpicture}
+	\senzorja{0}{0}{0}{}
+	\magnet {0} {0} {30}{ }{1}
+	\draw (1.5,0) arc (0:30:1.5);
+	\node at (1,0.3){$\theta$};
+			\end{tikzpicture}
+		}
+		\caption{Zasukan magnet za kot $\mathrm{\theta}$}
+		\label{fig:subfig8}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\resizebox{\linewidth}{!}{
+			\begin{tikzpicture}
+
+				\senzorja{8}{0}{-30}{}
+				\magnet {8} {0} {0}{ }{1}
+				\draw (1.5+8,0) arc (0:-30:1.5);
+				\node at (1+8,-0.3){$-\theta$};
+			\end{tikzpicture}
+		}
+		\caption{Zasukan senzor za kot $\mathrm{-\theta}$}   
+		\label{fig:subfig9}
+	\end{subfigure}
+
+	\caption{Hallovi sondi se glede na magnet nahajati na enaki lokaciji}
+	\label{fig:subfig1.a.4}
+\end{figure}
+
+Ko zavrtimo senzor okoli magneta pri tem pomeri polje. Ker sem predpostavil linearno polje, ga predstavim s izrazom 
+\begin{equation}
+\label{eq:enacba_polja}
+B(x,y)=k \cdot x
+\end{equation}
+Za poenostavitev vzemimo $k=1$. S tem se ena"cba \ref{eq:enacba_polja} poenostavi v:
+\begin{equation}
+\label{eq:enacba_polja_2}
+B(x,y)=x
+\end{equation}
+
+
+Polje ki ga pomeri posamezna sonda dobimo z upostevanjem ena"cb \ref{eq:osnovni_zasuk_popravljena_rot} in \ref{eq:enacba_polja_2}.
+\begin{equation}
+B_{H_1}(\theta)=r_0\cdot \cos \theta
+\end{equation}
+\begin{equation}
+B_{H_2}(\theta)=r_0\cdot \sin \theta
+\end{equation}
+
+%\slikaeps{magnetno polje ki ga pomeriti sondi ko je vse scentrirano}{B1B2_brez_eks}
+
+
+
+
+%Zaradi majhnih odmikov lahko predpostavim, da je pravokotna komponenta vektorja gostote magnetnega pretoka(vektor \textbf{B}) linearna. S tem se izpeljava za dolo"canje pozicije, poenostavi. Kasneje bom predstavil tudi na"cin kako pridobiti vredn ost \textbf{B} realnega polja. Predpostavil bom tudi da je senzor za mejenje pozicije sestavljen le iz dveh Hallovih sond, pri kateri je druga sonda fazno premaknjena za 90$^\circ$. 
 %slika kjer je narisano linearno polje
 
 
 
 
-, v tej nalogi pa se bom osredoto"cil na izredno majhne premike. 
+
+%\begin{figure}
+%\centering
+%\begin{tikzpicture}[scale=1]
+%\magnet {0} {0} {10}{ }{1}
+%\senzorja{0}{0.5}{0}{$S_h$}
+%\draw (0,0) circle (0.5);
+%\senzorja{-0.35}{0.35}{45}{$S_h$}
 
 
-\begin{figure}
-\centering
-\begin{tikzpicture}[scale=1]
-\magnet {0} {0} {10}
-\senzorja{0}{0.5}{0}
-\draw (0,0) circle (0.5);
-\senzorja{-0.35}{0.35}{45}
-
-\end{tikzpicture}
-\caption{Prikaz navora v odvistnosti od komponent toka }
-
-\label{fig:navor}
-\end{figure}
+%\end{tikzpicture}
+%\caption{Prikaz navora v odvistnosti od komponent toka }
+%
+%\label{fig:navor}
+%\end{figure}
 %izpeljava ekscentricnosti za 1 senzor [x0,y0]
 
-\section{izpeljava stati"cne ekscentri"cnosti}
+%\section{izpeljava stati"cne ekscentri"cnosti}
 %Napises da je senzor izmaknjen iz centra magneta in sredisce senzorja opise kroznico
 %
 %

@@ -10,7 +10,7 @@
 % ----------------------------------------------------------------------
 
 \documentclass[a4paper,twoside,openright,12pt]{book}
-\usepackage[latin2]{inputenc}  %Kodna stran za Windows okolje cp1250, za linux je kodna stran latin2
+\usepackage[cp1250]{inputenc}  %Kodna stran za Windows okolje cp1250, za linux je kodna stran latin2
 \usepackage[Slovene]{babel}    % pravila za slovensko deljenje besed
 \usepackage[pdftex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko (za pdfTeX v MkiTex)
 %\usepackage[pctex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko  (za pcTex)
@@ -354,14 +354,14 @@ okolju LaTex, glej prilogo \ref{dodatekC}.
 
 
 
-\slikaeps{Primer vkljuèitve slike}{vektorska_slika_1}
+%\slikaeps{Primer vkljuèitve slike}{vektorska_slika_1}
 
 %namesto makroja \slikaeps se v MikTexu uporabi tudi naslednji naèin. Za preizkus odkomentirajte spodnje vrstice. Ne dela v PcTeXu.
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=0.75\columnwidth]{vektorska_slika_1.eps}
-%\caption{\label{oblika_signalov} Primer vkljuèitve slike}
-%\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\columnwidth]{vektorska_slika_1.eps}
+\caption{\label{oblika_signalov} Primer vkljuèitve slike}
+\end{figure}
 
 
 \subsection{Tabele}

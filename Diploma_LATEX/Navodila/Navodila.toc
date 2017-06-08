@@ -1,9 +1,10 @@
+\select@language {slovene}
 \contentsline {chapter}{\numberline {1}Uvod}{5}
 \contentsline {chapter}{\numberline {2}Izbira teme zaklju\v cnega dela}{7}
 \contentsline {chapter}{\numberline {3}Prijava zaklju\v cnega dela}{9}
 \contentsline {chapter}{\numberline {4}Navodilo za opravljanje zaklju\v cnega dela}{11}
 \contentsline {chapter}{\numberline {5}Navodilo za pisanje}{13}
-\contentsline {section}{\numberline {5.1}Splo\@inpenc@undefined@ {latin2}na navodila}{13}
+\contentsline {section}{\numberline {5.1}Splo\v sna navodila}{13}
 \contentsline {section}{\numberline {5.2}Podrobna navodila}{17}
 \contentsline {subsection}{\numberline {5.2.1}Primer pisanja ena\v cb}{17}
 \contentsline {subsection}{\numberline {5.2.2}Slike}{18}
