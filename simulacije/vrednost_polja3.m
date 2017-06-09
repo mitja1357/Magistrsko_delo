@@ -37,8 +37,8 @@ for i=theta
 
 
 %   pozicija hallove sonde
-  hallx=rot_mat*(zac_x+[xs;ys])+[xd;yd];
-  hally=rot_mat*(zac_y+[xs;ys])+[xd;yd];
+  hallx=rot_mat*(zac_x+[xs;ys])-[xd;yd];
+  hally=rot_mat*(zac_y+[xs;ys])-[xd;yd];
 
 % shrani vrednost polja Bz
 

@@ -27,7 +27,7 @@
 \draw (#1+ -2.0 *#5* \Cosa  ,#2 -2.0 *#5* \Sina )--(#1+2.0 *#5* \Cosa , #2+2.0 *#5* \Sina );
 \node at (#1-1.6*\Sina ,#2+1.6*\Cosa ){\rotatebox{#3}{N}};
 \node at (#1+1.6*\Sina ,#2-1.6*\Cosa  ){\rotatebox{#3}{S}};
-\fill (#1,#2) circle [radius=1pt] node [anchor=north east]{#4};
+\fill (#1,#2) circle [radius=1pt];
 }
 
 
@@ -39,7 +39,7 @@
 
 \hall{#1+2.4*\Cosb }{#2+2.4*\Sinb }{#3}
 \hall{#1-2.4*\Sinb}{#2+2.4*\Cosb}{#3}
-\fill (#1,#2) circle [radius=1pt] node [anchor=south east]{#4};
+\fill (#1,#2) circle [radius=1pt];
 
 \draw [dashed, thick](#1,#2)--(#1+2.2*\Cosb ,#2+2.2*\Sinb );
 \draw [dashed, thick](#1,#2)--(#1-2.2*\Sinb ,#2+2.2*\Cosb );
@@ -212,7 +212,7 @@ Senzor je sestavljen iz "cipa AM8192B, v katerem so vgrajene Hallove sonde za me
 \chapter{Analiti"cna izpeljava dinami"cne in stati"cne eks"centri"cnosti}
 
 Napake so prisotne pravzaprav pri vsakem senzorju. V tem poglavju bom analiti"cno prikazal vpliv napak omenjenih ekscentri"cnosti, ki se pojavijo ob nepravilni monta"zi senzorja. Njuna vpliva ra"zli"cno vplivata na napako zato ju bom obravnaval posami"cno. V delu sem predpostavil, da se izmiki iz idealne pozicije izmikajo le v smeri x in y. Napaka se pojavi tudi ob premiku v smeri z vendar tega tu nebom obravnaval.
- Zaradi narave problema je smiselno uporabiti kartezi"ni koordinatni sistem. V izpeljavah bom predpostavil, da so izmiki majhni. Najprej bom izpeljal po ka"sni trajetoriji se giblje posamezna Hallova sonda. Iz znane tretnutne lokacije Hallove sonde bom lahko izra"cunal vrednost B komponente ki jo meri posamezna Hallova sonda. Pri analiti"cni izpeljavi bom predopstavil, da je polje ob majhnih odmikih linearno in ustreza enacbi polja $B(x,y)=k \cdot x$.  Nato bom analiti"cno izrazil vrednost kota, ki predstavlja izhod senzorja.
+ Zaradi narave problema je smiselno uporabiti kartezi"ni koordinatni sistem. V izpeljavah bom predpostavil, da so izmiki majhni. Najprej bom izpeljal po ka"sni trajetoriji se giblje posamezna Hallova sonda. Iz znane tretnutne lokacije Hallove sonde bom lahko izra"cunal vrednost B komponente ki jo meri posamezna Hallova sonda. Pri analiti"cni izpeljavi bom predopstavil, da je polje ob majhnih odmikih linearno in ustreza enacbi polja $B(x,y)=k \cdot y$.  Nato bom analiti"cno izrazil vrednost kota, ki predstavlja izhod senzorja.
 
 
 
@@ -314,14 +314,16 @@ x_0\\y_0
 \begin{figure}[h!]
 	\begin{subfigure}[b]{0.5\textwidth}
 		\centering
+		
 		\resizebox{\linewidth}{!}{
 			\begin{tikzpicture}
-	\senzorja{0}{0}{0}{}
-	\magnet {0} {0} {30}{ }{1}
-	\draw (1.5,0) arc (0:30:1.5);
-	\node at (1,0.3){$\theta$};
+	\senzorja{0}{0}{0}{ }
+	\magnet {0} {0} {-60}{ }{1}
+
+	\draw (1.2,0) arc (0:30:1.2) node at (0.8,0.2){$\theta$}[dashed]--(0,0);
 			\end{tikzpicture}
 		}
+		
 		\caption{Zasukan magnet za kot $\mathrm{\theta}$}
 		\label{fig:subfig8}
 	\end{subfigure}
@@ -330,10 +332,10 @@ x_0\\y_0
 		\resizebox{\linewidth}{!}{
 			\begin{tikzpicture}
 
-				\senzorja{8}{0}{-30}{}
-				\magnet {8} {0} {0}{ }{1}
-				\draw (1.5+8,0) arc (0:-30:1.5);
-				\node at (1+8,-0.3){$-\theta$};
+				\senzorja{0}{0}{-30}{ }
+				\magnet {0} {0} {-90}{ }{1}
+				\draw [dashed](0,0)--(1.2,0) arc (0:-30:1.2);
+				\node at (0.9,-0.3){$-\theta$};
 			\end{tikzpicture}
 		}
 		\caption{Zasukan senzor za kot $\mathrm{-\theta}$}   
@@ -347,24 +349,132 @@ x_0\\y_0
 Ko zavrtimo senzor okoli magneta pri tem pomeri polje. Ker sem predpostavil linearno polje, ga predstavim s izrazom 
 \begin{equation}
 \label{eq:enacba_polja}
-B(x,y)=k \cdot x
+B(x,y)=k \cdot y
 \end{equation}
 Za poenostavitev vzemimo $k=1$. S tem se ena"cba \ref{eq:enacba_polja} poenostavi v:
 \begin{equation}
 \label{eq:enacba_polja_2}
-B(x,y)=x
+B(x,y)=y
 \end{equation}
 
 
 Polje ki ga pomeri posamezna sonda dobimo z upostevanjem ena"cb \ref{eq:osnovni_zasuk_popravljena_rot} in \ref{eq:enacba_polja_2}.
 \begin{equation}
-B_{H_1}(\theta)=r_0\cdot \cos \theta
+B_{H_1}(\theta)=-r_0\cdot \sin \theta
 \end{equation}
 \begin{equation}
-B_{H_2}(\theta)=r_0\cdot \sin \theta
+B_{H_2}(\theta)=r_0\cdot \cos \theta
 \end{equation}
 
-%\slikaeps{magnetno polje ki ga pomeriti sondi ko je vse scentrirano}{B1B2_brez_eks}
+\slikaeps{Magnetno polje, ki ga pomeriti sondi, ko je monta"za pravilna}{B1B2_brez_eks}
+
+
+\section{Izpeljava ena"cb pri dinami"cni ekscentri"cnosti}
+
+
+Opazujmo sedaj opisan sistem s dodano dinami"cno ekscentri"cnostjo. Definirajmo za"cetno lego rotorja v centru statorja $S_r(0, 0)=S_s(0, 0)$. Rotor izmaknemo iz za"cetne lege v novo sredi"s"ce $S_r(\Delta x_d, \Delta y_d,)$. Os vrtenja ostaja v centru statorja, zato staro sredi"s"ce rotorja opisuje kro"znico s polmerom $\sqrt{\Delta x_d^2+ \Delta y_d^2}$.
+
+
+
+
+
+
+\begin{figure}[h!]
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\resizebox{\linewidth}{!}{
+			\begin{tikzpicture}
+	\senzorja{0}{0}{0}{$S_s(0, 0)$}
+	\magnet {0.5} {0.5} {-60}{$S_r(\Delta x_d, \Delta y_d)$}{1}
+	\draw [dotted,thick](0,0) circle [radius=0.707];
+	
+	\draw [dashed](1.5,0) arc (0:30:1.5)--(0,0);
+	\node at(1,0.3){$\theta$};
+			\end{tikzpicture}
+		}
+		\caption{Zasukan magnet za kot $\mathrm{\theta}$}
+		\label{fig:teorija_dinamika_1}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\resizebox{\linewidth}{!}{
+			\begin{tikzpicture}
+	\senzorja{-0.5}{-0.5}{-30}{$S_s(-\Delta x_d, -\Delta y_d)$}
+	\magnet {0} {0} {-90}{$S_r(0, 0)$}{1}
+	\draw [dotted, thick](-0.5, -0.5) circle [radius=2.4];
+	
+	\draw  [dashed](-0.5,-0.5)--(1,-0.5) arc (0:-30:1.5);
+	\node at (0.5, -0.75){$-\theta$};
+			\end{tikzpicture}
+		}
+		\caption{Zasukan senzor za kot $\mathrm{-\theta}$}   
+		\label{fig:teorija_dinamika_2}
+	\end{subfigure}
+	
+	\caption{Hallovi sondi se glede na magnet nahajati na enaki lokaciji}
+	\label{fig:subfig1.a.4}
+\end{figure}
+
+
+
+
+"Ce sedaj sistem miselno obrnemo kot sem to napravil v prej"njem poglavju in senzor zavrtimo. Ob takem premiku senzor opi"se trajektorijo kot pri pravilno montiranem senzorju le z dodano translacijo ekscentri"cnosti. Kako Hallova sonda spreminja lokacijo glede na vrtenje je prikazano na sliki \ref{fig:teorija_dinamika_2}, s pik"casto kro"znico.
+
+
+Novo lokacijo Hallove sonde lahko dolo"cimo po ena"cbi \ref{eq:dinamicna_ekscentricnost}.
+\begin{equation}
+\label{eq:dinamicna_ekscentricnost}
+\begin{bmatrix}
+x\\y
+\end{bmatrix}= \begin{bmatrix}
+\cos (\theta)& \sin(\theta)\\ -\sin( \theta)& \cos (\theta)
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+x_0\\y_0
+\end{bmatrix}
++
+\begin{bmatrix}
+-\Delta x_d \\ -\Delta y_d
+\end{bmatrix}
+\end{equation}
+Ena"cbo \ref{eq:dinamicna_ekscentricnost} lahko poenostavimo pri "cemer $\Delta x_d$ in $\Delta y_d$ predstavlja vrednost za koliko je rotor izmaknjen iz osi vrtenja.
+\begin{equation}
+\label{eq:dinamicna_ekscentricnost_popravljena}
+\begin{bmatrix}
+x\\y
+\end{bmatrix}= \begin{bmatrix}
+\cos (\theta)& \sin(\theta)\\ -\sin( \theta)& \cos (\theta)
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+x_0\\y_0
+\end{bmatrix}
+-
+\begin{bmatrix}
+\Delta x_d \\ \Delta y_d
+\end{bmatrix}
+\end{equation}
+
+Z upo"stevanjem magnetnega polja po izrazu \ref{eq:enacba_polja_2} izrazimo odvistnost magnetnega polja od kota zasuke in ekscenri"cnosti. Iz potekov magnetnega polja v izrazih (\ref{eq:B_H_1_dinamicen}) in (\ref{eq:B_H_2_dinamicen}) opazimo da magnetno polje ni odvisno od dinami"cne eks"centri"cnosti v y smeri. S hitrim miselnim eksperimentom si lahko hitro predstavljamo, da "ce senzor izmaknemo v smeri y magnetno polje na novi lokaciji ostane enako.
+
+\begin{equation}
+\label{eq:B_H_1_dinamicen}
+B_{H_1}(\theta)=r_0\cdot \cos \theta -\Delta x_d
+\end{equation}
+\begin{equation}
+\label{eq:B_H_2_dinamicen}
+B_{H_2}(\theta)=r_0\cdot \sin \theta-\Delta x_d
+\end{equation}
+
+
+
+
+
+
+
+
+
 
 
 
