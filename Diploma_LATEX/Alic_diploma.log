@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.24)  9 JUN 2017 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.24)  12 JUN 2017 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -512,6 +512,13 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 
 LaTeX Warning: Label `fig:subfig1.a.4' multiply defined.
 
+
+LaTeX Warning: Label `eq:dinamicna_ekscentricnost_popravljena' multiply defined
+.
+
+
+LaTeX Warning: Label `fig:subfig1.a.4' multiply defined.
+
 )
 \openout1 = `Alic_diploma.aux'.
 
@@ -594,7 +601,7 @@ Package epstopdf Info: Source file: <./Slike/B1B2_brez_eks.eps>
 (epstopdf)                    size: 18675 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Slike/B1B2_brez_eks-eps-
 converted-to.pdf ./Slike/B1B2_brez_eks.eps>
-(epstopdf)             \includegraphics on input line 369.
+(epstopdf)             \includegraphics on input line 372.
 Package epstopdf Info: Output file is already uptodate.
 
 <./Slike/B1B2_brez_eks-eps-converted-to.pdf, id=37, 420.57124pt x 316.18124pt>
@@ -602,16 +609,16 @@ File: ./Slike/B1B2_brez_eks-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/B1B2_brez_eks-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/B1B2_brez_eks-eps-converted-to.pdf used on inp
-ut line 369.
+ut line 372.
 (pdftex.def)             Requested size: 420.57022pt x 316.18047pt.
 
-Overfull \hbox (8.00526pt too wide) in paragraph at lines 369--369
+Overfull \hbox (8.00526pt too wide) in paragraph at lines 372--372
  [] 
  []
 
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 383--413
-[][] [] 
+Overfull \hbox (15.66649pt too wide) in paragraph at lines 404--433
+[][] []\OT1/cmr/m/n/12 ub 
  []
 
 
@@ -628,20 +635,96 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 [9 <./Slike/B1B2_brez_eks-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Slike/B1B2_din_eks.eps>
+(epstopdf)                    date: 2017-06-12 10:53:11
+(epstopdf)                    size: 20108 bytes
+(epstopdf)             Output file: <./Slike/B1B2_din_eks-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2017-06-12 10:54:52
+(epstopdf)                    size: 18302 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Slike/B1B2_din_eks-eps-c
+onverted-to.pdf ./Slike/B1B2_din_eks.eps>
+(epstopdf)             \includegraphics on input line 492.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/B1B2_din_eks-eps-converted-to.pdf, id=57, 420.57124pt x 316.18124pt>
+File: ./Slike/B1B2_din_eks-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./Slike/B1B2_din_eks-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/B1B2_din_eks-eps-converted-to.pdf used on inpu
+t line 492.
+(pdftex.def)             Requested size: 420.57022pt x 316.18047pt.
+
+Overfull \hbox (8.00526pt too wide) in paragraph at lines 492--492
+ [] 
+ []
+
+
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[10] (./Alic_diploma.aux)
+[10]
+Overfull \hbox (15.66649pt too wide) in paragraph at lines 541--591
+[][] []\OT1/cmr/m/n/12 ub 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/B1B2_sta_eks.eps>
+(epstopdf)                    date: 2017-06-12 16:41:58
+(epstopdf)                    size: 20207 bytes
+(epstopdf)             Output file: <./Slike/B1B2_sta_eks-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2017-06-12 16:46:20
+(epstopdf)                    size: 18191 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Slike/B1B2_sta_eks-eps-c
+onverted-to.pdf ./Slike/B1B2_sta_eks.eps>
+(epstopdf)             \includegraphics on input line 599.
+Package epstopdf Info: Output file is already uptodate.
+<./Slike/B1B2_sta_eks-eps-converted-to.pdf, id=61, 420.57124pt x 316.18124pt>
+File: ./Slike/B1B2_sta_eks-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./Slike/B1B2_sta_eks-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/B1B2_sta_eks-eps-converted-to.pdf used on inpu
+t line 599.
+(pdftex.def)             Requested size: 420.57022pt x 316.18047pt.
+
+Overfull \hbox (8.00526pt too wide) in paragraph at lines 599--599
+ [] 
+ []
+
+
+Underfull \hbox (badness 4303) in paragraph at lines 602--602
+[]\OT1/cmr/bx/n/14.4 Kon^^Tcna ena^^Tcba za dolo^^Tcitev lo-ka-cije sonde in
+ []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[11 <./Slike/B1B2_din_eks-eps-converted-to.pdf>]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[12]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[13 <./Slike/B1B2_sta_eks-eps-converted-to.pdf>] (./Alic_diploma.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13970 strings out of 493014
- 272423 string characters out of 6137001
+ 13999 strings out of 493014
+ 273163 string characters out of 6137001
  323344 words of memory out of 5000000
- 17256 multiletter control sequences out of 15000+600000
+ 17283 multiletter control sequences out of 15000+600000
  10060 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,54p,573b,770s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -656,10 +739,10 @@ pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Alic_diploma.pdf (10 pages, 151409 bytes).
+Output written on Alic_diploma.pdf (13 pages, 187988 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 131 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

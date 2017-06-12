@@ -335,7 +335,7 @@ x_0\\y_0
 				\senzorja{0}{0}{-30}{ }
 				\magnet {0} {0} {-90}{ }{1}
 				\draw [dashed](0,0)--(1.2,0) arc (0:-30:1.2);
-				\node at (0.9,-0.3){$-\theta$};
+				\node at (0.9,-0.25){$-\theta$};
 			\end{tikzpicture}
 		}
 		\caption{Zasukan senzor za kot $\mathrm{-\theta}$}   
@@ -346,21 +346,24 @@ x_0\\y_0
 	\label{fig:subfig1.a.4}
 \end{figure}
 
+
+
+
 Ko zavrtimo senzor okoli magneta pri tem pomeri polje. Ker sem predpostavil linearno polje, ga predstavim s izrazom 
 \begin{equation}
 \label{eq:enacba_polja}
-B(x,y)=k \cdot y
+B(x,y)=k \cdot x
 \end{equation}
 Za poenostavitev vzemimo $k=1$. S tem se ena"cba \ref{eq:enacba_polja} poenostavi v:
 \begin{equation}
 \label{eq:enacba_polja_2}
-B(x,y)=y
+B(x,y)=x
 \end{equation}
 
 
 Polje ki ga pomeri posamezna sonda dobimo z upostevanjem ena"cb \ref{eq:osnovni_zasuk_popravljena_rot} in \ref{eq:enacba_polja_2}.
 \begin{equation}
-B_{H_1}(\theta)=-r_0\cdot \sin \theta
+B_{H_1}(\theta)=r_0\cdot \sin \theta
 \end{equation}
 \begin{equation}
 B_{H_2}(\theta)=r_0\cdot \cos \theta
@@ -371,8 +374,26 @@ B_{H_2}(\theta)=r_0\cdot \cos \theta
 
 \section{Izpeljava ena"cb pri dinami"cni ekscentri"cnosti}
 
-
-Opazujmo sedaj opisan sistem s dodano dinami"cno ekscentri"cnostjo. Definirajmo za"cetno lego rotorja v centru statorja $S_r(0, 0)=S_s(0, 0)$. Rotor izmaknemo iz za"cetne lege v novo sredi"s"ce $S_r(\Delta x_d, \Delta y_d,)$. Os vrtenja ostaja v centru statorja, zato staro sredi"s"ce rotorja opisuje kro"znico s polmerom $\sqrt{\Delta x_d^2+ \Delta y_d^2}$.
+%Zaradi splo"snosti predpostavimo da sta sredi"s"ci v za"cetni legi poravnani vendar je magnet glede na senzor zasukan za kot $\lambda$ (Slika \ref{fig:definicija_lambde}).  Ta je v primeru ko je smer poravnana z za"cetno lego magneta enaka 0. V nasprotnem primeru pa kot upo"stevamo v definiciji njene lege glede na kot magneta $\theta -\lambda$.  Ta zasuk bo imel na obe Hallovi sondi enak vpliv. Zato si lahko privo"s"cimo implementacijo kota  $\lambda$, ki temelji na principu superpozicije. 
+%
+%
+%\begin{figure}[h!]
+%	\centering
+%	
+%	\begin{tikzpicture}
+%	\senzorja{0}{0}{0}{ }
+%	\magnet {0} {0} {-60}{ }{1}
+%	
+%	\draw[dashed](0.0,0)--(1.5,0)arc(0:30:1.5)--(0.,0);
+%	\node at (1.2,0.3){$\lambda$};
+%	
+%	\end{tikzpicture}
+%	
+%	\caption{Zasukan magnet za kot $\mathrm{\theta}$}
+%	\label{fig:definicija_lambde}
+%	
+%\end{figure}
+Opazujmo sedaj opisan sistem z dodano dinami"cno ekscentri"cnostjo. Definirajmo za"cetno lego rotorja v centru statorja $S_r(0, 0)=S_s(0, 0)$. Rotor izmaknemo iz za"cetne lege v novo sredi"s"ce $S_r(\Delta x_d, \Delta y_d,)$. Os vrtenja ostaja v centru statorja, zato staro sredi"s"ce rotorja opisuje kro"znico s polmerom $\sqrt{\Delta x_d^2+ \Delta y_d^2}$. 
 
 
 
@@ -385,9 +406,8 @@ Opazujmo sedaj opisan sistem s dodano dinami"cno ekscentri"cnostjo. Definirajmo 
 		\resizebox{\linewidth}{!}{
 			\begin{tikzpicture}
 	\senzorja{0}{0}{0}{$S_s(0, 0)$}
-	\magnet {0.5} {0.5} {-60}{$S_r(\Delta x_d, \Delta y_d)$}{1}
+	\magnet {0.5} {0.5} {-30}{$S_r(\Delta x_d, \Delta y_d)$}{1}
 	\draw [dotted,thick](0,0) circle [radius=0.707];
-	
 	\draw [dashed](1.5,0) arc (0:30:1.5)--(0,0);
 	\node at(1,0.3){$\theta$};
 			\end{tikzpicture}
@@ -409,7 +429,7 @@ Opazujmo sedaj opisan sistem s dodano dinami"cno ekscentri"cnostjo. Definirajmo 
 		}
 		\caption{Zasukan senzor za kot $\mathrm{-\theta}$}   
 		\label{fig:teorija_dinamika_2}
-	\end{subfigure}
+	\end{subfigure}ub
 	
 	\caption{Hallovi sondi se glede na magnet nahajati na enaki lokaciji}
 	\label{fig:subfig1.a.4}
@@ -456,7 +476,7 @@ x_0\\y_0
 \end{bmatrix}
 \end{equation}
 
-Z upo"stevanjem magnetnega polja po izrazu \ref{eq:enacba_polja_2} izrazimo odvistnost magnetnega polja od kota zasuke in ekscenri"cnosti. Iz potekov magnetnega polja v izrazih (\ref{eq:B_H_1_dinamicen}) in (\ref{eq:B_H_2_dinamicen}) opazimo da magnetno polje ni odvisno od dinami"cne eks"centri"cnosti v y smeri. S hitrim miselnim eksperimentom si lahko hitro predstavljamo, da "ce senzor izmaknemo v smeri y magnetno polje na novi lokaciji ostane enako.
+Z upo"stevanjem magnetnega polja po izrazu \ref{eq:enacba_polja_2} izrazimo odvistnost magnetnega polja od kota zasuke in ekscenri"cnosti. Iz potekov magnetnega polja v izrazih (\ref{eq:B_H_1_dinamicen}) in (\ref{eq:B_H_2_dinamicen}) opazimo da magnetno polje ni odvisno od dinami"cne eks"centri"cnosti v y smeri. S hitrim miselnim eksperimentom si lahko hitro predstavljamo, da "ce senzor izmaknemo v smeri y magnetno polje na novi lokaciji ostane enako. 
 
 \begin{equation}
 \label{eq:B_H_1_dinamicen}
@@ -468,6 +488,160 @@ B_{H_2}(\theta)=r_0\cdot \sin \theta-\Delta x_d
 \end{equation}
 
 
+
+\slikaeps{Magnetno polje, ki ga pomeriti sondi, ko je magnet izmaknjen}{B1B2_din_eks}
+
+
+
+
+
+\section{Izpeljava ena"cb pri stati"cni ekscentri"cnosti}
+
+Opazovani sistem ostaja enak, brez ekscentri"cnosti. Sedaj iz osi vrtenja izmaknemo senzor. Os magneta in os vrtenja sta poravnani.  Sredi"s"ce senzorja se sedaj nahaja na koorinatah $S_s(\Delta x_s, \Delta y_s)$. kot pri izpeljavi pri dinami"cni ekscentri"cnosti obrnimo sistem in zavrtimo senzor upo"stevajo"ce z ekscentri"cnostjo. Sredi"s"ce senzorja opi"se kro"znico okoli sredi"sca magneta oz. osi vrtenja. Hallovi sondi se vrtita vsaka po svoji kro"znici. Gibanje posamezne sonde lahko opi"semo z izrazom:
+
+   \begin{equation}
+   \label{eq:dinamicna_ekscentricnost_popravljena}
+   \begin{bmatrix}
+   x\\y
+   \end{bmatrix}=
+   \begin{bmatrix}
+   \cos (\theta)& \sin(\theta)\\ -\sin( \theta)& \cos (\theta)
+   \end{bmatrix}
+   \cdot
+   \begin{bmatrix}
+   x_0+\Delta x_s\\y_0+\Delta y_s
+   \end{bmatrix}
+   \end{equation}
+
+Magnetno polje, ki ga pomerita dobimo iz izraza (\ref{eq:enacba_polja_2}).
+
+\begin{equation}
+\label{eq:B_H_1_staticen}
+B_{H_1}=(r_0+\Delta x_s)\cos(\theta)+\Delta y_s \sin(\theta)
+\end{equation}
+
+\begin{equation}
+\label{eq:B_H_2_staticen}
+B_{H_1}=-\Delta x_s\sin(\theta)+(r_0+\Delta y_s) \cos(\theta)
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{figure}[h!]
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\resizebox{\linewidth}{!}{
+			\begin{tikzpicture}
+			\senzorja{0.5}{-0.5}{0}{$S_s(\Delta x_s, \Delta y_s)$}
+			\magnet {0} {0} {-60}{$S_r(0, 0)$}{1}
+		
+		
+			\node at (0.75,-0.75){$S_s(\Delta x_s, \Delta y_s)$};
+			\node at (-0.75,0){$S_r(0, 0)$};
+			
+		
+			\draw [dashed](0,0)--(1.6,0) arc (0:30:1.6)--(0,0);
+			\node at(1,0.3){$\theta$};
+			
+
+			
+			\end{tikzpicture}
+		}
+		\caption{Zasukan magnet za kot $\mathrm{\theta}$ in statina eksenri"cnost}
+		\label{fig:teorija_statika_1}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\centering
+		\resizebox{\linewidth}{!}{
+			\begin{tikzpicture}
+%			\senzorja{0.5}{-0.5}{0}{$S_s(-\Delta x_d, -\Delta y_d)$}
+			\senzorja{0.183}{-0.683}{-30}{$S_s(-\Delta x_d, -\Delta y_d)$}
+			\magnet {0} {0} {-90}{$S_r(0, 0)$}{1}
+
+
+			\draw [dashed](0,0)--(1.5,0) arc (0:-30:1.5)--(0,0);
+			\node at(1.1,-0.3){$-\theta$};
+
+
+			
+			
+			\draw [dotted](0,0) circle [radius=0.707];
+		
+%			\node at (0,-1){$S_s(\Delta x_s, \Delta y_s)$};
+			\node at (-0.22,0.25){$S_r(0, 0)$};			
+		
+     			\draw [dotted](0,0) circle	[radius=2.94];
+     			\draw [dotted](0,0) circle	[radius=1.965];
+     		                                                                                     
+			\end{tikzpicture}
+		}
+		\caption{Zasukan senzor za kot $\mathrm{-\theta}$}   
+		\label{fig:teorija_statika_2}
+	\end{subfigure}ub
+	
+	\caption{Hallovi sondi se glede na magnet nahajati na enaki lokaciji}
+	\label{fig:subfig1.a.4}
+\end{figure}
+
+
+
+
+\slikaeps{Magnetno polje, ki ga pomeriti sondi, ko je senzor izmaknjen}{B1B2_sta_eks}
+
+
+\section{Kon"cna ena"cba za dolo"citev lokacije sonde in dolo"canje pomerjenega kota}
+
+
+Sedaj lahko izraza za dolo"canje lokacije in hkrati magnetnega polja zapi"semo z eno ena"cbo:
+
+
+
+   \begin{equation}
+   \label{eq:enacba_lokacije}
+   \begin{bmatrix}
+   x\\y
+   \end{bmatrix}=
+   \begin{bmatrix}
+   \cos (\theta)& \sin(\theta)\\ -\sin( \theta)& \cos (\theta)
+   \end{bmatrix}
+   \cdot
+   \begin{bmatrix}
+   x_0+\Delta x_s\\y_0+\Delta y_s
+   \end{bmatrix}
+   -
+   \begin{bmatrix}
+   \Delta x_d\\ \Delta y_d
+   \end{bmatrix}
+   \end{equation}
+
+Polje ki ga opi"seti sondi se glasi:
+\begin{equation}
+\label{B_H_1_koncna}
+B_{H_1}=(r_0+\Delta x_s) \cos(\theta)+\Delta y_s \sin(\theta)-\Delta x_d
+\end{equation}
+
+\begin{equation}
+\label{B_H_2_koncna}
+B_{H_1}=\Delta x_s \cos(\theta)+(r_0+\Delta y_s) \sin(\theta)-\Delta x_d
+\end{equation}
+
+Iz izrazov (\ref{B_H_1_koncna}) in (\ref{B_H_2_koncna}) sedaj lahko izra"cunamo kot.
+
+\begin{equation}
+\varphi=\arctan \frac{B_{H_2}}{B_{H_1}}
+	=\arctan \frac{\Delta x_s \cos(\theta)+(r_0+\Delta y_s) \sin(\theta)-\Delta x_d}
+	{(r_0+\Delta x_s) \cos(\theta)+\Delta y_s \sin(\theta)-\Delta x_d}
+\end{equation}
 
 
 

@@ -1,10 +1,10 @@
 clear all;
 close all;
 %definiraj ekscentricnost
-xs=0.0+0*(rand()-0.5);
-ys=0.0+0*(rand()-0.5);
-xd=0.0+0*(rand()-0.5);
-yd=0.0+0*(rand()-0.5);
+xs=0+0*(rand()-0.5);
+ys=-0+0*(rand()-0.5);
+xd=0.1+0*(rand()-0.5);
+yd=-0.0+0*(rand()-0.5);
 % definiraj zacetni poziciji sond
 zac_x=[1;0];
 zac_y=[0;1];
@@ -69,5 +69,5 @@ grid on
 fftprotokol=fft(kot_merjeni-theta);
 
 figure(fig_fft_protokol)
-plot(0:9,abs(fftprotokol(1:10)))
+bar(0:19,abs(fftprotokol(1:20)))
 grid on
