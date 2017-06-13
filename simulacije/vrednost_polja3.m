@@ -1,5 +1,5 @@
-clear all;
-close all;
+% clear all;
+% close all;
 %definiraj ekscentricnost
 xs=0+0*(rand()-0.5);
 ys=-0+0*(rand()-0.5);
@@ -9,7 +9,7 @@ yd=-0.0+0*(rand()-0.5);
 zac_x=[1;0];
 zac_y=[0;1];
 % definiraj kote
-theta=linspace(0,2*pi,1000);
+theta=linspace(-pi/4,pi/4,1000);
 % priprava slike
 
 
@@ -62,7 +62,7 @@ poprava_kota;
 
 
 figure(fig_protokol)
-plot(kot_merjeni-theta,'-r')
+plot(theta,kot_merjeni-theta,'-r')
 grid on
 
 
