@@ -638,6 +638,7 @@ B_{H_2}=\Delta x_s \cos(\theta)+(r_0+\Delta y_s) \sin(\theta)-\Delta x_d
 Iz izrazov (\ref{B_H_1_koncna}) in (\ref{B_H_2_koncna}) sedaj lahko izra"cunamo kot.
 
 \begin{equation}
+\label{eq:dolocanje_kota_splosna}
 \varphi=\arctan \frac{B_{H_2}}{B_{H_1}}
 	=\arctan \frac{\Delta x_s \cos(\theta)+(r_0+\Delta y_s) \sin(\theta)-\Delta x_d}
 	{(r_0+\Delta x_s) \cos(\theta)+\Delta y_s \sin(\theta)-\Delta x_d}
@@ -647,16 +648,48 @@ Iz izrazov (\ref{B_H_1_koncna}) in (\ref{B_H_2_koncna}) sedaj lahko izra"cunamo 
 %https://dspguru.com/files/Sum_of_Two_Sinusoids.pdf vir za izracun trigonometrije
 
 
-
-
-
-
-
+%http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6375931
+%http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6567733
+%http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4054743
+%http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5346438
+%http://www.embedded.com/design/other/4216719/Performing-efficient-arctangent-approximation
+%
 
 %Zaradi majhnih odmikov lahko predpostavim, da je pravokotna komponenta vektorja gostote magnetnega pretoka(vektor \textbf{B}) linearna. S tem se izpeljava za dolo"canje pozicije, poenostavi. Kasneje bom predstavil tudi na"cin kako pridobiti vredn ost \textbf{B} realnega polja. Predpostavil bom tudi da je senzor za mejenje pozicije sestavljen le iz dveh Hallovih sond, pri kateri je druga sonda fazno premaknjena za 90$^\circ$. 
 %slika kjer je narisano linearno polje
 
+\section{Dolo"canje kota pri stati"cni ekscntri"cnosti v smeri x }
 
+Zaradi nelinearnosti fukcije $\arctan$ je izraz (\ref{eq:dolocanje_kota_splosna}) analiti"cno te"zko poenostaviti v polni obliki. Zato se vsake ekscentri"cnosti lotim posami"cno. "Ce upo"stevamo le ekscentri"cnost $\Delta x_s$ se izraz (\ref{eq:dolocanje_kota_splosna}) poenostavi v:
+\begin{equation}
+\label{eq:dolocanje_kota_xs}
+\varphi=
+\arctan \frac{\Delta x_s \cos(\theta)+r_0 \sin(\theta)}
+{(r_0+\Delta x_s) \cos(\theta)}
+\end{equation}
+
+
+Z upo"stevanjem Taylorjeve vrse za $\arctan$:
+\begin{equation}
+\arctan(x)=x-\frac{x^3}{3}... pri |x|\leq 1
+\end{equation}
+
+Izraz lahko zapi"semo kot
+
+\begin{equation}
+\varphi=  \frac{\Delta x_s \cos(\theta)+r_0 \sin(\theta)}
+{(r_0+\Delta x_s) \cos(\theta)}+
+\frac{(\Delta x_s \cos(\theta)+r_0 \sin(\theta))^3}
+{3((r_0+\Delta x_s) \cos(\theta))^3}
+\end{equation}
+
+
+
+\section{Dolo"canje kota pri stati"cni ekscntri"cnosti v smeri y }
+\begin{equation}
+\varphi=\frac{(r_0+\Delta y_s)\sin(\theta) (8 r_0^2+4r_0 \Delta y_s + 8 \Delta y_s^2)\cos (2 \theta) +12 r_0 \Delta y_s \sin (2 \theta)}
+{((3 r_0^3  +3 r_0 \Delta y_s^2) \cos(\theta) + (r_0^3-3r_0 \Delta y_s) \cos(3 \theta )+ (3 r_0^2 \Delta y_s+3\Delta y_s^3)\sin(\theta)+(3 r_0^2 \Delta y_s - \Delta y_s^3)\sin(\theta))}
+\end{equation}
 
 
 

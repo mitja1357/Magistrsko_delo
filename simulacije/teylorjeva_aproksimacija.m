@@ -65,3 +65,14 @@ x=x-x.^3/3;
 figure
 plot(theta,x-theta)
 grid on
+
+
+
+
+x=-1:0.01:1;
+y=x./(1+0.28125 *x.^2);
+plot(x,y,'-r')
+clf
+plot(x,y,'-r')
+hold on
+plot(x,atan(x))
