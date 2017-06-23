@@ -687,6 +687,36 @@ Izraz lahko zapi"semo kot
 
 \section{Dolo"canje pribli"zka za funkcijo $\arctan$}
 
+Funkcija arkustangens ($\arctan$), je inverzna funkcija funkcije tangens.
+
+Zaloga vrednosti je v obmo"cju med $-\pi/2$ in $\pi/2$. Funkcija arkustangens tako zajame le polovico periode. V numeriki se za dolo"citev kota na celi periodi
+ $[-\pi, \pi]$ uporablja funkcijo $atan2$, ki sprejme dva parametra in na podlagi njunih predznakov dolo"ci v katerem kvadrantu se nahaja iskani kot. 
+ 
+ \[
+ \varphi=atan2(x,y)=
+ \begin{cases}
+ [0, \frac{\pi}{2}]:&  x\geq 0, y\geq 0 \\
+ [\frac{\pi}{2}, \pi]:& x\leq 0, y\geq 0\\
+ [-\pi, -\frac{\pi}{2}]:& x\leq 0, y\leq 0\\
+ [-\frac{\pi}{2}, 0]:& x\geq 0, y\leq 0
+ \end{cases}
+ \]
+
+
+
+
+Funkcija $atan2$ nato preko funkcije $\arctan$ izra"cuna vrednost na podlagi razmerja $\frac{y}{x}$. Iz izraza (\ref{eq:arctan_picetrt}) lahko vidimo, da je potrebno poznati za funkcijo $\arctan$ zalogo vrednosti le med $-\frac{\pi}{4}$ in $\frac{\pi}{4}$. 
+ \begin{equation}
+\label{eq:arctan_picetrt}
+ \arctan x=\frac{\pi}{2}-\arctan \frac{1}{x}
+\end{equation}
+
+Za dolo"citev kota ne glede kje na periodi, je potrebno izra"cunati kvocient med spremenljivko x in y. Da bi se izognil temu deljenju sem aproksimiral funkcijo $f(x,y)=\arctan(\frac{y}{x})$ z ravnino (\ref{eq:polinom}).
+\begin{equation}
+\label{eq:polinom}
+\varphi(x,y)=a_1 x^3 + a_2 x^2 y + a_3 x^2 + a_4 x y^2 + a_5 x y + a_6 x + a_7 y^3 + a_8 y^2 + a_9 y + a_{10}
+\end{equation}
+
 
 
 

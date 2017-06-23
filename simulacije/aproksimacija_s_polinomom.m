@@ -1,11 +1,11 @@
-clear all
-close all
+% clear all
+% close all
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% dolocitev tock na katrih nardi fit %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-kot=pi/2*rand(1000,1)-pi/4;
-radij=0.5*rand(1000,1)+0.5;
+kot=pi/2*rand(10000,1)-pi/4;
+radij=rand(10000,1);
 
 jx=radij.*cos(kot);
 jy=radij.*sin(kot);
@@ -21,7 +21,7 @@ p = polyfitn([jx,jy],jz,n);
 
 pot=p.ModelTerms;
 k=p.Coefficients;
-
+%{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% narisi polinom na zeljenih tockah %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,12 +66,13 @@ k=p.Coefficients;
             dod=k(l)*((jx.^pot(l,1)).*(jy.^pot(l,2)));
                 zapp=zapp+dod;
  end
-offset=sum(zapp-jz)/max(size(jz))
+offset=sum(zapp-jz)/max(size(jz));
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%% prikazi vrednosti %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
+
 fig_error=figure('Name',strcat('Error n = ',num2str(n)),'numbertitle','off','Position',[0   550   560   420]);
 plot((zapp-jz-offset)*180/pi);
 ylabel('Napaka approksimacije v ^\circ')
@@ -80,4 +81,4 @@ fig_tock_in_polinoma=figure('Name',strcat('Tocke in polinom n = ',num2str(n)),'n
 scatter3(jx,jy,jz);
 hold on
 mesh(X,Y,Zapp)
-
+%}

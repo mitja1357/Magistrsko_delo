@@ -1,19 +1,19 @@
 % clear all;
 % close all;
 %definiraj ekscentricnost
-xs=0.0+0*(rand()-0.5);
+xs=0.10+0*(rand()-0.5);
 ys=0.0+0*(rand()-0.5);
-xd=0.10+0*(rand()-0.5);
+xd=0.0+0*(rand()-0.5);
 yd=-0.0+0*(rand()-0.5);
 % definiraj zacetni poziciji sond
 zac_x=[1;0];
 zac_y=[0;1];
 % definiraj kote
-theta=linspace(-pi/1,pi/1,1000);
+theta=linspace(-pi/4,pi/4,1000);
 % priprava slike
 
 
-ime_slik=strcat('xs=',num2str(xs),', ','yd=',num2str(ys),', ','xd=',num2str(xd),', ','yd=',num2str(yd));
+ime_slik=strcat('xs=',num2str(xs),', ','ys=',num2str(ys),', ','xd=',num2str(xd),', ','yd=',num2str(yd));
 
 
 fig_BxBy=figure('Name',strcat('Bx,By, ',ime_slik),'numbertitle','off','Position',[0   550   560   420]);
