@@ -4,8 +4,8 @@
 %%% dolocitev tock na katrih nardi fit %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-kot=pi/2*rand(10000,1)-pi/4;
-radij=rand(10000,1);
+kot=pi/2*rand(1000,1)-pi/4;
+radij=0.4*rand(1000,1)+2.2;
 
 jx=radij.*cos(kot);
 jy=radij.*sin(kot);
@@ -21,12 +21,12 @@ p = polyfitn([jx,jy],jz,n);
 
 pot=p.ModelTerms;
 k=p.Coefficients;
-%{
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% narisi polinom na zeljenih tockah %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-[X,Y] = meshgrid(0:0.01: 1,-1:0.01:1);
+[X,Y] = meshgrid(0:0.01: 2.5,-2:0.01:2);
  
  kot=0; % ce zelis ravnino zasukat za kot v stopinjah
   for i=1:size(X,1)
@@ -66,7 +66,7 @@ k=p.Coefficients;
             dod=k(l)*((jx.^pot(l,1)).*(jy.^pot(l,2)));
                 zapp=zapp+dod;
  end
-offset=sum(zapp-jz)/max(size(jz));
+offset=sum(zapp-jz)/max(size(jz))
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -81,4 +81,4 @@ fig_tock_in_polinoma=figure('Name',strcat('Tocke in polinom n = ',num2str(n)),'n
 scatter3(jx,jy,jz);
 hold on
 mesh(X,Y,Zapp)
-%}
+

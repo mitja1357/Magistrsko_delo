@@ -20,6 +20,10 @@
 \usetikzlibrary{calc}
 \usepackage{subcaption} 
 
+
+\usepackage{hyperref}
+
+
 \newcommand{\magnet}[5]{% xsredisce, ysredisce, zasuk besedilo v srediscu najb bo crta ali ne
  \pgfmathsetmacro{\Cosa}{cos(#3)}
  \pgfmathsetmacro{\Sina}{sin(#3)}
@@ -60,7 +64,7 @@
 \draw (#1-0.1*\Cosd -0.1*\Sind,#2+0.1*\Cosd-0.1*\Sind) --(#1+0.1*\Cosd +0.1*\Sind,#2-0.1*\Cosd+0.1*\Sind);
 \draw (#1+0.1*\Cosd -0.1*\Sind,#2+0.1*\Cosd+0.1*\Sind)-- (#1-0.1*\Cosd +0.1*\Sind,#2-0.1*\Cosd-0.1*\Sind);
 }
-\newcommand{\CaCS}[3]{
+\newcommand{\CaCS}[3]{% razdalja od izhodisca do x max, x komponenta izhodisca, y komponenta izhodisca
 	
 	\draw [<->](-#1+#2,#3)--(#1+#2,0+#3) node[anchor=north]{$x$};
 	\draw [<->](#2,-#1+#3)--(0+#2,#1+#3) node[anchor=east]{$y$};
@@ -717,16 +721,227 @@ Za dolo"citev kota ne glede kje na periodi, je potrebno izra"cunati kvocient med
 \varphi(x,y)=a_1 x^3 + a_2 x^2 y + a_3 x^2 + a_4 x y^2 + a_5 x y + a_6 x + a_7 y^3 + a_8 y^2 + a_9 y + a_{10}
 \end{equation}
 
+Funkcijo sem aproksimiral na naklju"cno razporejene to"cke po "cetrtini kro"znega  kolobarja $\varphi \in [-\frac{\pi}{4}, \frac{\pi}{4}]$, z radijema $a=r_0-0.2$~mm in $b=r_0+0.2$~mm.
 
 
 
-\section{Dolo"canje kota pri stati"cni ekscntri"cnosti v smeri y }
+\begin{figure}[!h]
+	\label{fig:obmocje_tock}
+	\centering
+	\begin{tikzpicture}
+	\draw [<->](-1,0)--(3,0) node[anchor=north]{$x$};
+	\draw [<->](0,-2.5)--(0,2.5) node[anchor=east]{$y$};
+	\fill [blue] (1.5556*0.9,-1.5556*0.9) arc (-45:45:2.2*0.9)--(1.0*1.8385,1.0*1.8385)arc (45:-45:1.0*2.6)--(1.5556*0.9,-1.5556*0.9);
+		\end{tikzpicture}
+		\caption{Obmo"cje nahajanja akljucnih to"ck}
+\end{figure}
+
+Za to"cke znotraj obmo"cja sem izracunal vrednost $\arctan \frac{y}{x}$. Na to sem z uporabo funkcije polyfitn(dodaj vir), aproksimiral ravnino definirano z izrazom (\ref{eq:polinom}). Dobil sem koeficiente katere sem lahko uporabil v izra"cunih za analiti"cen prikaz napake. Ravnina je na definiranem obmo"cju odstopala za najve"c $0,253^\circ$. Z predpostavko, da bo napaka zaradi ekscentri"cnosti vi"sja od napake zaradi aproksimacije ravnine sem v izraz za ravnino, vstavil izraza (\ref{B_H_1_koncna}) in(\ref{B_H_2_koncna}). Izpeljava je prikazana v dodatku. Izrazi se poenostavijo "ce posami"cno obravnavam vsako ekcentri"cnost. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\appendix
+Koeficienti ena"cbe (\ref{eq:polinom}):
+
+\begin{align*}
+a_1& =-6.306319442659312 \cdot 10^{-4}\\
+a_2& =-1.640168709495793 \cdot 10^{-3}\\
+a_3& = 3.962017072440235 \cdot 10^{-3}\\
+a_4& =-2.887048260782111 \cdot 10^{-4}\\
+a_5& =-1.412276545356571 \cdot 10^{-1}\\
+a_6& =-7.931822230064153 \cdot 10^{-3}\\
+a_7& =-2.104555700820865 \cdot 10^{-2}\\
+a_8& = 6.238774627110503 \cdot 10^{-4}\\
+a_9& = 7.651613620676274 \cdot 10^{-1}\\
+a_{10}& =4.980440898351878 \cdot 10^{-3}
+\end{align*}
+
+
+\section{Brez ekscentri"cnosti}
+ V ena"cbo (\ref{eq:polinom}), namesto x vstavimo izraz za $B_{H_1}$ iz ena"cbe (\ref{B_H_1_koncna}). Namesto y vstavimo izraz za $B_{H_2}$ iz ena"cbe (\ref{B_H_2_koncna}).
+ Z upo"stevanjem, da ekscentri"cnosti ni, se izraza iz ena"cb (\ref{B_H_1_koncna}) in (\ref{B_H_2_koncna}) poenostavita v:
+ 
+ \begin{equation}
+ B_{H_1}=r_0 \cos(\theta)
+ \end{equation}
+ \begin{equation}
+ B_{H_2}=r_0 \sin(\theta)
+ \end{equation}
+ 
+ Vstavimo izraza v (\ref{eq:polinom}) in poenostavimo.
+ 
 \begin{equation}
-\varphi=\frac{(r_0+\Delta y_s)\sin(\theta) (8 r_0^2+4r_0 \Delta y_s + 8 \Delta y_s^2)\cos (2 \theta) +12 r_0 \Delta y_s \sin (2 \theta)}
-{((3 r_0^3  +3 r_0 \Delta y_s^2) \cos(\theta) + (r_0^3-3r_0 \Delta y_s) \cos(3 \theta )+ (3 r_0^2 \Delta y_s+3\Delta y_s^3)\sin(\theta)+(3 r_0^2 \Delta y_s - \Delta y_s^3)\sin(\theta))}
+\label{eq:brez_eks} 
+\begin{split}
+\varphi=0.00498044 + 0.00229295 r_0^2\\
+-( 0.00793182 r_0 +0.00054515 r_0^3) \cos(\theta)\\
++ 0.00166907 r_0^2 \cos(2 \theta)\\
+-0.0000854818 r_0^3 \cos(3 \theta)\\
++(0.765161 r_0- 0.0161942 r_0^3) \sin(\theta)\\
+-0.0706138 r_0^2 \sin(2 \theta)\\
++ 0.00485135 r_0^3 \sin(3 \theta)\\
+ \end{split}
+ \end{equation}
+ 
+ "Ce za $r_0$ vzamemo $2.4$~mm se izraz (\ref{eq:brez_eks}) poenostavi v
+ 
+ \begin{equation}
+ \varphi=0.018 + 0.613\cdot \sin( \theta-2.484^\circ) - 
+ 0.407\cdot\sin(2\cdot\theta+1.354^\circ) -0.067\cdot\sin(3 \cdot\theta-1.009^\circ)
+ \end{equation}
+
+\section{Staticna ekscentri"cnost v x-osi}
+
+V izrazih (\ref{B_H_1_koncna}) in (\ref{B_H_2_koncna}) upo"stevamo, da je stati"cni izmik v x-osi. $\Delta x_s$ ni 0, $\Delta y_s$ in $\Delta x_d$ sta 0 in izraza za $B_{H_1}$ in $B_{H_2}$ sta enaka:
+
+
+\begin{equation}
+\label{B_H_1_xs}
+B_{H_1}=(r_0+\Delta x_s) \cos(\theta)
+\end{equation}
+
+\begin{equation}
+\label{B_H_2_xs}
+B_{H_2}=\Delta x_s \cos(\theta)+r_0 \sin(\theta)
+\end{equation}
+
+Vstavimo v (\ref{eq:polinom}) in dobimo:
+
+
+\begin{equation}
+\label{eq:brez_eks} 
+\begin{split}
+\varphi=
+0.00498044 + 0.00229295 r_0^2 - 0.0666518 r_0 x_s -0.0683209 x_s^2\\
+ + (-0.00054515 r_0^3 + 0.75723 x_s -0.0185054 r_0^2 x_s \\- 0.0177038 x_s^3 
++r_0 (-0.00793182 - 0.0040957 x_s^2)) \cos[\theta]\\
+ + (0.00166907 r_0^2 - 0.0666518 r_0 x_s - 0.0683209 x_s^2) \cos[2 \theta] \\
++(-0.0000854818 r_0^3 + 0.0149733 r_0^2 x_s - 
+0.00136523 r_0 x_s^2 - 0.00590127 x_s^3) \cos[3 \theta] \\
++r_0 (0.765161 - 0.0161942 r_0^2 - 0.000964437 r_0 x_s - 
+0.0163386 x_s^2)\sin[\theta]\\
+ + r_0(-0.070614 r_0 - 0.06999 x_s)  \sin[2\theta]\\
++r_0 (0.00485135 r_0^2 - 0.000964437 r_0 x_s - 0.0163386 x_s^2) \sin[3 \theta]
+\end{split}
 \end{equation}
 
 
+
+\section{Staticna ekscentri"cnost v y-osi}
+
+V izrazih (\ref{B_H_1_koncna}) in (\ref{B_H_2_koncna}) upo"stevamo, da je stati"cni izmik v y-osi. $\Delta y_s$ ni 0, $\Delta x_s$ in $\Delta x_d$ sta 0 in izraza za $B_{H_1}$ in $B_{H_2}$ sta enaka:
+
+
+
+
+
+\begin{equation}
+\label{B_H_1_ys}
+B_{H_1}=r_0 \cos(\theta)+\Delta y_s \sin(\theta)
+\end{equation}
+
+\begin{equation}
+\label{B_H_2_ys}
+B_{H_2}=(r_0+\Delta y_s) \sin(\theta)
+\end{equation}
+
+
+Vstavimo v (\ref{eq:polinom}) in dobimo:
+
+
+\begin{equation}
+\label{eq:brez_eks} 
+\begin{split}
+\varphi=
+0.00498044 + 0.00229295 r_0^2 - 0.0699899 r_0 y_s - 
+0.0683209 y_s^2 \\
++r_0  (-0.00793182 - 0.00054515 r_0^2 - 0.000964437 r_0 y_s - 
+0.00136523 y_s^2 )\cos(\theta)\\
++ (0.00166907 r_0^2 + 0.0699899 r_0 y_s + 
+0.0683209 y_s^2) \cos(2 \theta)\\
++(- 0.0000854818 r_0^3 + 
+0.000964437 r_0^2 y_s + 0.00136523 r_0 y_s^2) \cos(3 \theta)\\
++(0.765161 r_0  - 0.0161942 r_0^3+0.75723 y_s  - 0.048452 r_0^2 y_s\\
+ -0.0490157 r_0 y_s^2  - 0.0177038 y_s^3) \sin(\theta)\\
++r_0  (-0.070614 r_0 - 0.066652 y_s) \sin(2 \theta)\\
++(0.00485135 r_0^3 + 0.0149733 r_0^2 y_s  + 
+0.0163386 r_0 y_s^2  + 0.00590127 y_s^3 )\sin(3 \theta)\\
+\end{split}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+\section{Dinami"cna ekscentri"cnost v x-osi}
+
+V izrazih (\ref{B_H_1_koncna}) in (\ref{B_H_2_koncna}) upo"stevamo, da je stati"cni izmik v x-osi. $\Delta x_d$ ni 0, $\Delta x_s$ in $\Delta y_s$ sta 0 in izraza za $B_{H_1}$ in $B_{H_2}$ sta enaka:
+
+
+
+
+
+\begin{equation}
+\label{B_H_1_ys}
+B_{H_1}=r_0 \cos(\theta)-\Delta x_d
+\end{equation}
+
+\begin{equation}
+\label{B_H_2_ys}
+B_{H_2}=r_0 \sin(\theta)-\Delta x_d
+\end{equation}
+
+
+Vstavimo v (\ref{eq:polinom}) in dobimo:
+
+
+\begin{equation}
+\label{eq:brez_eks} 
+\begin{split}
+\varphi=
+0.00498044 + 0.00229295 r0^2 - 0.75723 xd + 0.0334787 r0^2 xd - 
+0.136642 xd^2 + 0.0236051 xd^3 - 0.00793182 r0 Cos[theta] - 
+0.00054515 r0^3 Cos[theta] + 0.133304 r0 xd Cos[theta] - 
+0.00546094 r0 xd^2 Cos[theta] + 0.00166907 r0^2 Cos[2 theta] - 
+0.0299467 r0^2 xd Cos[2 theta] - 0.0000854818 r0^3 Cos[3 theta] + 
+0.765161 r0 Sin[theta] - 0.0161942 r0^3 Sin[theta] + 
+0.13998 r0 xd Sin[theta] - 0.0653542 r0 xd^2 Sin[theta] - 
+0.0706138 r0^2 Sin[2 theta] + 0.00192887 r0^2 xd Sin[2 theta] + 
+0.00485135 r0^3 Sin[3 theta]
+\end{split}
+\end{equation}
+
+
+%\section{Dolo"canje kota pri stati"cni ekscntri"cnosti v smeri y }
+%\begin{equation}
+%\varphi=\frac{(r_0+\Delta y_s)\sin(\theta) (8 r_0^2+4r_0 \Delta y_s + 8 \Delta y_s^2)\cos (2 \theta) +12 r_0 \Delta y_s \sin (2 \theta)}
+%{((3 r_0^3  +3 r_0 \Delta y_s^2) \cos(\theta) + (r_0^3-3r_0 \Delta y_s) \cos(3 \theta )+ (3 r_0^2 \Delta y_s+3\Delta y_s^3)\sin(\theta)+(3 r_0^2 \Delta y_s - \Delta y_s^3)\sin(\theta))}
+%\end{equation}
+%
+%
 
 %\begin{figure}
 %\centering
