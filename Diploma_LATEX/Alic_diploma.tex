@@ -736,7 +736,42 @@ Funkcijo sem aproksimiral na naklju"cno razporejene to"cke po "cetrtini kro"zneg
 		\caption{Obmo"cje nahajanja akljucnih to"ck}
 \end{figure}
 
-Za to"cke znotraj obmo"cja sem izracunal vrednost $\arctan \frac{y}{x}$. Na to sem z uporabo funkcije polyfitn(dodaj vir), aproksimiral ravnino definirano z izrazom (\ref{eq:polinom}). Dobil sem koeficiente katere sem lahko uporabil v izra"cunih za analiti"cen prikaz napake. Ravnina je na definiranem obmo"cju odstopala za najve"c $0,253^\circ$. Z predpostavko, da bo napaka zaradi ekscentri"cnosti vi"sja od napake zaradi aproksimacije ravnine sem v izraz za ravnino, vstavil izraza (\ref{B_H_1_koncna}) in(\ref{B_H_2_koncna}). Izpeljava je prikazana v dodatku. Izrazi se poenostavijo "ce posami"cno obravnavam vsako ekcentri"cnost. 
+Za to"cke znotraj obmo"cja sem izracunal vrednost $\arctan \frac{y}{x}$. Na to sem z uporabo funkcije polyfitn(dodaj vir), aproksimiral ravnino definirano z izrazom (\ref{eq:polinom}). Dobil sem koeficiente katere sem lahko uporabil v izra"cunih za analiti"cen prikaz napake. Ravnina je na definiranem obmo"cju odstopala za najve"c $0,253^\circ$. S predpostavko, da bo napaka ob dovolj veliki ekscentri"cnosti, vi"sja od napake zaradi aproksimacije ravnine sem v izraz za ravnino, vstavil izraza (\ref{B_H_1_koncna}) in(\ref{B_H_2_koncna}). Izpeljava je prikazana v dodatku. Izrazi se poenostavijo "ce posami"cno obravnavam vsako ekcentri"cnost. 
+
+Z vnosom "stevilk sej je pokazalo, da bo pri stati"cnem izmiku nekoliko bolj izrazit drugi harmonik napake, kot pri dinami"cni ekscentri"cnosti. 
+
+Tu se kaj napisati
+
+Ve"c informacij je bilo te"zko izlu"sciti, saj je bila funkcija $\arctan$ aproksimirana z ravnino dveh spremenljivk le na "cetrtini celotne periode.
+
+\chapter{Numeri"cen izra"cun napake}
+
+Od tu naprej sem za izra"cun kota uporabljal vgrajeno funkcijo $atan2$, ki numeri"cno dolo"ci izhodni kot $\varphi$ glede na vhodni spremenljivki x in y. Pri izra"cunih sem postavil hallovi sondi na razdaljo $r_0=2,4$~mm, vsako ekscentri"cnost posamezno  sem simuliral z $0,1$~mm izmikom.
+
+\section{Napaka pri stati"cni ekscentri"cnosti v smeri x-osi}
+
+Z vnosom izrazov (\ref{B_H_1_koncna}) in (\ref{B_H_2_koncna}) v funkcijo $atan2$, s stati"cno ekscentri"cnostjo v x-osi se pojavi napaka definirana kot 
+\begin{equation}
+\varepsilon= \varphi - \theta
+\end{equation}
+
+
+  \begin{figure}[h!]
+  	\begin{center}
+  		\includegraphics[scale=0.5]{\dirslike/protokol_xs_1.eps}
+  	\end{center}
+  	\caption{numericen izracun napake}
+  	\label{fig:protokol_xs_1}
+  \end{figure}
+
+Iz slike \ref{fig:protokol_xs_1} se vidi napaka v obliki enosmerne komponente in drugega harminika na periodo. Napaka se s konstantnim vrtenjem magneta ne akumulira, zato je dovolj prikaz napake na eni periodi. Napako razvijem v Fouriejevo vrsto do osmega harmonika. Amplitude posameznega harmonika za staticno ekscentri"cnost v smeri x osi za izmik $0,1$~mm so prikazane na sliki \ref{fig:vrsta_protokola_xs_1}.
+
+\begin{figure}
+
+	\includegraphics{\dirslike/vrsta_protokola_xs_1}
+	\caption{AAmplitude harmonikov protokola}
+	\label{fig:vrsta_protokola_xs_1}
+\end{figure}
 
 
 
@@ -744,17 +779,34 @@ Za to"cke znotraj obmo"cja sem izracunal vrednost $\arctan \frac{y}{x}$. Na to s
 
 
 
+  \begin{figure}[h!]
+  	\begin{center}
+  		\includegraphics[scale=0.5]{\dirslike/protokol_ys_1.eps}
+  	\end{center}
+  	\caption{numericen izracun napake}
+  	\label{fig:protokol_xs_1}
+  \end{figure}
+\begin{figure}
+	
+	\includegraphics{\dirslike/vrsta_protokola_ys_1}
+	\caption{AAmplitude harmonikov protokola}
+	\label{fig:vrsta_protokola_ys_1}
+\end{figure}
 
 
-
-
-
-
-
-
-
-
-
+  \begin{figure}[h!]
+  	\begin{center}
+  		\includegraphics[scale=0.5]{\dirslike/protokol_xd_1.eps}
+  	\end{center}
+  	\caption{numericen izracun napake}
+  	\label{fig:protokol_xs_1}
+  \end{figure}
+\begin{figure}
+	
+	\includegraphics{\dirslike/vrsta_protokola_xd_1}
+	\caption{AAmplitude harmonikov protokola}
+	\label{fig:vrsta_protokola_xd_1}
+\end{figure}
 
 
 \appendix
@@ -922,15 +974,18 @@ Vstavimo v (\ref{eq:polinom}) in dobimo:
 \label{eq:brez_eks} 
 \begin{split}
 \varphi=
-0.00498044 + 0.00229295 r0^2 - 0.75723 xd + 0.0334787 r0^2 xd - 
-0.136642 xd^2 + 0.0236051 xd^3 - 0.00793182 r0 Cos[theta] - 
-0.00054515 r0^3 Cos[theta] + 0.133304 r0 xd Cos[theta] - 
-0.00546094 r0 xd^2 Cos[theta] + 0.00166907 r0^2 Cos[2 theta] - 
-0.0299467 r0^2 xd Cos[2 theta] - 0.0000854818 r0^3 Cos[3 theta] + 
-0.765161 r0 Sin[theta] - 0.0161942 r0^3 Sin[theta] + 
-0.13998 r0 xd Sin[theta] - 0.0653542 r0 xd^2 Sin[theta] - 
-0.0706138 r0^2 Sin[2 theta] + 0.00192887 r0^2 xd Sin[2 theta] + 
-0.00485135 r0^3 Sin[3 theta]
+0.00498044 + 0.00229295 r_0^2 - 0.75723 x_d\\
+ + 0.0334787 r_0^2 x_d - 0.136642 x_d^2 + 0.0236051 x_d^3\\ 
++(- 0.00793182 r_0
+- 0.00054515 r_0^3  + 0.133304 r_0 x_d 
+- 0.00546094 r_0 x_d^2) \cos(\theta)\\
+ + (0.00166907 r_0^2  
+- 0.0299467 r_0^2 x_d) \cos(2 \theta)\\
+ - 0.0000854818 r_0^3 \cos(3 \theta)\\
++ (0.765161 r_0  - 0.0161942 r_0^3 
++ 0.13998 r_0 x_d - 0.0653542 r_0 x_d^2) \sin(\theta) \\
++(- 0.0706138 r0^2  + 0.00192887 r_0^2 x_d) \sin(2 \theta)\\ 
++ 0.00485135 r_0^3 \sin(3 \theta)
 \end{split}
 \end{equation}
 

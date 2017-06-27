@@ -1,16 +1,9 @@
- clear all;
- close all;
-  tic
-%definiraj ekscentricnost
-xs=0.10+0*(rand()-0.5);
-ys=0.0+0*(rand()-0.5);
-xd=0.0+0*(rand()-0.5);
-yd=0.0+0*(rand()-0.5);
+function [kot_merjeni,absA,kotA,Bx,By]=vrednost_polja(theta,r0,xs,ys,xd,yd)
+
 % definiraj zacetni poziciji sond
-zac_x=[2.4;0];
-zac_y=[0;2.4];
-% definiraj kote
-theta=linspace(-pi,pi,1024);
+zac_x=[r0;0];
+zac_y=[0;r0];
+
 % priprava slike
 
 
@@ -74,4 +67,11 @@ grid on
 % grid on
 
 aproksimacija_protokola
-toc
+
+
+
+
+
+
+
+end

@@ -8,4 +8,11 @@ for i=2:max(size(kot_merjeni))
     
 end
 clear i;
+
+while kot_merjeni(1)-theta(1)>=2*pi
+    kot_merjeni=kot_merjeni-2*pi;
+end
+while kot_merjeni(1)-theta(1)<=-2*pi
+    kot_merjeni=kot_merjeni+2*pi;
+end
 % kot_merjeni(1)=theta(1);
