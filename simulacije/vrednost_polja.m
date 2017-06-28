@@ -1,4 +1,4 @@
-function [kot_merjeni,absA,kotA,Bx,By]=vrednost_polja(theta,r0,xs,ys,xd,yd)
+function [kot_merjeni,absA,kotA,Bx,By,absSin,absCos]=vrednost_polja(theta,r0,xs,ys,xd,yd,koliko_harmonikov,slike)
 
 % definiraj zacetni poziciji sond
 zac_x=[r0;0];
@@ -6,7 +6,7 @@ zac_y=[0;r0];
 
 % priprava slike
 
-
+if slike
 ime_slik=strcat('xs=',num2str(xs),', ','ys=',num2str(ys),', ','xd=',num2str(xd),', ','yd=',num2str(yd));
 
 
@@ -21,7 +21,7 @@ hold on
 fig_protokol=figure('Name',strcat('Protokol, ',ime_slik),'numbertitle','off','Position',[1120   550   560   420]);
 clf
 hold on
-
+end
 Bx=zeros(size(theta));
 By=zeros(size(theta));
 stevec=1;
@@ -41,6 +41,9 @@ By(stevec)=hally(1);
 
 stevec=stevec+1;
 end
+
+if slike
+
 figure(fig_BxBy);
 plot(theta*180/pi,Bx,'-b');
 plot(theta*180/pi,By,'-r');
@@ -49,12 +52,12 @@ legend('B_{H_1}','B_{H_2}');
 title('Pomerjeno magnetno polje Hallovih sond v odvisnosti kota zasuka');
 xlabel('\theta/ rad');
 ylabel('B/ T');
-
+end
 kot_merjeni=atan2(By,Bx);
 
 poprava_kota;
 
-
+if slike
 figure(fig_protokol)
 plot(theta*180/pi,(kot_merjeni-theta)*180/pi,'-r')
 grid on
@@ -65,6 +68,7 @@ grid on
 % figure(fig_fft_protokol)
 % bar(0:19,abs(fftprotokol(1:20)))
 % grid on
+end
 
 aproksimacija_protokola
 

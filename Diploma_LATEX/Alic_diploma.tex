@@ -748,7 +748,7 @@ Ve"c informacij je bilo te"zko izlu"sciti, saj je bila funkcija $\arctan$ aproks
 
 Od tu naprej sem za izra"cun kota uporabljal vgrajeno funkcijo $atan2$, ki numeri"cno dolo"ci izhodni kot $\varphi$ glede na vhodni spremenljivki x in y. Pri izra"cunih sem postavil hallovi sondi na razdaljo $r_0=2,4$~mm, vsako ekscentri"cnost posamezno  sem simuliral z $0,1$~mm izmikom.
 
-\section{Napaka pri stati"cni ekscentri"cnosti v smeri x-osi}
+\subsection{Napaka pri stati"cni ekscentri"cnosti v smeri x-osi}
 
 Z vnosom izrazov (\ref{B_H_1_koncna}) in (\ref{B_H_2_koncna}) v funkcijo $atan2$, s stati"cno ekscentri"cnostjo v x-osi se pojavi napaka definirana kot 
 \begin{equation}
@@ -764,9 +764,9 @@ Z vnosom izrazov (\ref{B_H_1_koncna}) in (\ref{B_H_2_koncna}) v funkcijo $atan2$
   	\label{fig:protokol_xs_1}
   \end{figure}
 
-Iz slike \ref{fig:protokol_xs_1} se vidi napaka v obliki enosmerne komponente in drugega harminika na periodo. Napaka se s konstantnim vrtenjem magneta ne akumulira, zato je dovolj prikaz napake na eni periodi. Napako razvijem v Fouriejevo vrsto do osmega harmonika. Amplitude posameznega harmonika za staticno ekscentri"cnost v smeri x osi za izmik $0,1$~mm so prikazane na sliki \ref{fig:vrsta_protokola_xs_1}.
+Iz slike \ref{fig:protokol_xs_1} se vidi napaka v obliki enosmerne komponente in drugega harminika na periodo. Napaka se s konstantnim vrtenjem magneta ne akumulira, zato je dovolj prikaz napake na eni periodi. Napako razvijem v Fouriejevo vrsto do osmega harmonika. Amplitude posameznih harmonikov za stati"cno ekscentri"cnost v smeri x osi za izmik $0,1$~mm so prikazane na sliki \ref{fig:vrsta_protokola_xs_1}.
 
-\begin{figure}
+\begin{figure}[h!]
 
 	\includegraphics{\dirslike/vrsta_protokola_xs_1}
 	\caption{AAmplitude harmonikov protokola}
@@ -774,9 +774,15 @@ Iz slike \ref{fig:protokol_xs_1} se vidi napaka v obliki enosmerne komponente in
 \end{figure}
 
 
+Kot smo "ze predpostavili po sliki \ref{fig:protokol_xs_1} izstopata predvsem enosmerna komponenta in drugi harmonik. Nakaj je "se "cetrtega harmonika medtem ko so ostali harmoniki zanemarljivi.
 
 
 
+\subsection{Napaka pri stati"cni ekscentri"cnosti v smeri y-osi}
+
+
+Pri stati"cni ekscentri"cnosti sem ponovil postopek kot pri stati"cni ekscentri"cnosti v smeri x-osi. Pri"cakoval sem podobene rezultate, kot pri stati"cni ekscentri"cnosti v smeri x-osi. Napaka kota $\varepsilon$ je prikazana na sliki \ref{fig:protokol_ys_1}. Prav tako kot pri napaki ob stati"cni ekscentri"cnosti v smeri x-osi izstopa enosmerna komponenta in drugi harmonik. Opazimo, da je enosmerna komponenta spremenila predznak. Iz Fouriejeve vrste (slika \ref{fig:vrsta_protokola_ys_1}) Opazimo rezultate podobne kot pri stati"cni ekscentri"cnosti v smeri x-osi. Izstopajo enosmerna komponenta drugi harmonik, obstaja tudi "cetrti harmonik, ostali so zanemarljivi. 
+Zanimivost lahko razberemo "se iz faznega premika. Napaka pri stati"cni ekscentri"cnosti v smeri y-osi, za stati"cno napako v smeri x-osi, fazno zaostaja ravno za velikost dveh faznih kotov. To se pojavi pri drugem in "sestem harmoniku. "sesti harmonik je po amplitudi zanemarljiv zato je zanimiv podatek o faznem kotu le za drugi harmonik.
 
 
   \begin{figure}[h!]
@@ -784,8 +790,10 @@ Iz slike \ref{fig:protokol_xs_1} se vidi napaka v obliki enosmerne komponente in
   		\includegraphics[scale=0.5]{\dirslike/protokol_ys_1.eps}
   	\end{center}
   	\caption{numericen izracun napake}
-  	\label{fig:protokol_xs_1}
+  	\label{fig:protokol_ys_1}
   \end{figure}
+  
+  
 \begin{figure}
 	
 	\includegraphics{\dirslike/vrsta_protokola_ys_1}
@@ -794,12 +802,17 @@ Iz slike \ref{fig:protokol_xs_1} se vidi napaka v obliki enosmerne komponente in
 \end{figure}
 
 
+\subsection{Napaka pri dinami"cni ekscentri"cnosti v smeri x-osi}
+
+
+"Ze iz analiti"cnih izrazov lahko pri"cakujemo, da bo tu manj"sa izrazitost drugega harmonika. Napaka kota $\varepsilon$ je prikazana na sliki \ref{fig:protokol_xd_1}. Izrazit je predvsem prvi harmonik. Nezanemarljiv je "se drugi harmonik, ostale komponente Fourierjeve vrste pa so zanemarljive.
+
   \begin{figure}[h!]
   	\begin{center}
   		\includegraphics[scale=0.5]{\dirslike/protokol_xd_1.eps}
   	\end{center}
   	\caption{numericen izracun napake}
-  	\label{fig:protokol_xs_1}
+  	\label{fig:protokol_xd_1}
   \end{figure}
 \begin{figure}
 	
@@ -807,6 +820,113 @@ Iz slike \ref{fig:protokol_xs_1} se vidi napaka v obliki enosmerne komponente in
 	\caption{AAmplitude harmonikov protokola}
 	\label{fig:vrsta_protokola_xd_1}
 \end{figure}
+
+
+
+
+
+
+\section{Linearno ve"canje napake in opazovanje posameznih harmonikov pogre"ska}
+
+
+Sedaj poglejmo kako se spreminja posamezna amplituda ekcentri"cnosti glede na velikost ekscentri"costi. 
+
+
+\subsection{Ve"canje stati"cne napake v x-osi}
+S ve"canjem stati"cne napake se spreminja amplituda posameznih harmonikov
+Vrednost enosmerne komponente lahko zapisemo kot polinom  v odvisnsti od $p_0(\Delta x_s)$. 
+
+
+
+\subsection{Ve"canje stati"cne napake v y-osi}
+
+
+
+
+\subsection{Ve"canje dinami"cne napake v x-osi}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \appendix
