@@ -1,10 +1,20 @@
 for i=2:max(size(kot_merjeni))
 %     kot_merjeni(i)=kot_merjeni(i)-(-theta(1)+kot_merjeni(1));
-   
-    while kot_merjeni(i-1)-kot_merjeni(i)>pi
-        kot_merjeni(i)=kot_merjeni(i)+2*pi;
+   tmp=0;
+    while (kot_merjeni(i-1)-kot_merjeni(i))>pi/100
+        tmp=kot_merjeni(i);
+        tmp=tmp+2*pi;
+        kot_merjeni(i)=tmp;
+    tmp=1;
     end
     
+    if tmp==0
+    while (kot_merjeni(i-1)-kot_merjeni(i))<-pi/100
+        tmp=kot_merjeni(i);
+        tmp=tmp-2*pi;
+        kot_merjeni(i)=tmp;
+    end
+    end
     
 end
 clear i;

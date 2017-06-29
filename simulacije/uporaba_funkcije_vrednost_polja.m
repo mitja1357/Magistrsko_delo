@@ -8,16 +8,21 @@ xd=0.00;
 yd=0;
 
 koliko_harmonikov=2;
-zacetek=-2;
-konec=10;
-korak=0.25;
-
-amp=zeros((konec-zacetek)/korak,koliko_harmonikov+1);
+zacetek=0;
+konec=r0;
+potek=linspace(zacetek,konec,30);
+amp=zeros(max(size(potek)),koliko_harmonikov+1);
 ampcos=amp;
 ampsin=amp;
 stevec=1;
-potek=zacetek:korak:konec;
-for xs=potek
+
+
+po_kateri_eks='xd';
+
+for i=potek
+eval(strcat(po_kateri_eks,'=',num2str(i),';'))
+
+
 [kot_merjeni,absA,kotA,Bx,By,absSin,absCos]=vrednost_polja(theta,r0,xs,ys,xd,yd,koliko_harmonikov,0);
 
 
@@ -27,9 +32,11 @@ ampsin(stevec,:)=absSin';
 
 stevec=stevec+1;
 
-end
+end;
 
-spremeni_predznak=find(zacetek:korak:konec>=0,1);
+
+if zacetek < 0
+spremeni_predznak=find(potek>=0,1);
 amp(1:spremeni_predznak,3)=-amp(1:spremeni_predznak,3);
 
 
@@ -57,32 +64,64 @@ end
 % end
 % 
 
-
-
-
-
-figure
-hold on
-for i=1:koliko_harmonikov+1
-    
-    plot(zacetek:korak:konec,ampcos(:,i))
-    
-    
 end
-grid on
 
-figure
-hold on
-for i=1:koliko_harmonikov+1
-    
-    plot(zacetek:korak:konec,ampsin(:,i))
-    
-    
+
+
+% figure
+% hold on
+% for i=1:koliko_harmonikov+1
+%     
+%     plot(potek,ampcos(:,i))
+%     
+%     
+% end
+% grid on
+% 
+% figure
+% hold on
+% for i=1:koliko_harmonikov+1
+%     
+%     plot(potek,ampsin(:,i))
+%     
+%     
+% end
+% grid on
+
+switch po_kateri_eks
+    case 'xs'
+        izrisi_harmonike=[0 2];
+        legenda={'A_0','A_2'};
+    case 'ys'
+        izrisi_harmonike=[0 2];
+        legenda={'A_0','A_2'};
+    case 'xd'
+        izrisi_harmonike=[1 2];
+        legenda={'A_1','A_2'};
+    case 'yd'
+        izrisi_harmonike=1;
+        legenda={'A_1'};
 end
-grid on
 
+Barve;
+eval(strcat('barve=Barva',num2str(max(size(izrisi_harmonike))),';' ))
+clear Barva1 Barva2 Barva3 Barva4 Barva5 Barva6 Barva7 Barva8 Barva9 Barva10 Barva11 Barva12;
 
 figure
 hold on
-plot(zacetek:korak:konec,amp(:,1),'-b')
-plot(zacetek:korak:konec,amp(:,3),'-r')
+stevec=1;
+for i=izrisi_harmonike
+plot(potek,amp(:,i+1),'Color',cell2mat(barve(stevec))./255)
+
+eval(strcat('amp_harmonik_',num2str(stevec),'=amp(:,',num2str(i+1),');'))
+
+tmp=fit(potek',amp(:,i+1),'poly2');
+
+eval(strcat('polinom_harmonika_',num2str(i),'=tmp;'));
+
+
+stevec=stevec+1;
+end
+legend(legenda);
+
+
