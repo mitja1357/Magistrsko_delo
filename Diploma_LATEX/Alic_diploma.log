@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.24)  28 JUN 2017 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.24)  29 JUN 2017 09:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -619,21 +619,6 @@ LaTeX Warning: Label `eq:dinamicna_ekscentricnost_popravljena' multiply defined
 
 
 LaTeX Warning: Label `fig:subfig1.a.4' multiply defined.
-
-
-LaTeX Warning: Label `eq:brez_eks' multiply defined.
-
-
-LaTeX Warning: Label `eq:brez_eks' multiply defined.
-
-
-LaTeX Warning: Label `B_H_1_ys' multiply defined.
-
-
-LaTeX Warning: Label `B_H_2_ys' multiply defined.
-
-
-LaTeX Warning: Label `eq:brez_eks' multiply defined.
 
 )
 \openout1 = `Alic_diploma.aux'.
@@ -1397,6 +1382,9 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                removing `\textasciicaron' on input line 982.
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -1477,10 +1465,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1159.
  ) 
 Here is how much of TeX's memory you used:
- 17684 strings out of 493014
- 330580 string characters out of 6137001
- 401179 words of memory out of 5000000
- 20799 multiletter control sequences out of 15000+600000
+ 17688 strings out of 493014
+ 330647 string characters out of 6137001
+ 401495 words of memory out of 5000000
+ 20804 multiletter control sequences out of 15000+600000
  12039 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,54p,719b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1495,10 +1483,10 @@ pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Alic_diploma.pdf (27 pages, 252436 bytes).
+Output written on Alic_diploma.pdf (27 pages, 252023 bytes).
 PDF statistics:
- 460 PDF objects out of 1000 (max. 8388607)
- 394 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 457 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
+ 102 named destinations out of 1000 (max. 500000)
  234 words of extra memory for PDF output out of 10000 (max. 10000000)
 
