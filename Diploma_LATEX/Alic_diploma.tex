@@ -523,7 +523,6 @@ Magnetno polje, ki ga pomerita dobimo iz izraza (\ref{eq:enacba_polja_2}).
 \label{eq:B_H_1_staticen}
 B_{H_1}=(r_0+\Delta x_s)\cos(\theta)+\Delta y_s \sin(\theta)
 \end{equation}
-
 \begin{equation}
 \label{eq:B_H_2_staticen}
 B_{H_1}=-\Delta x_s\sin(\theta)+(r_0+\Delta y_s) \cos(\theta)
@@ -633,7 +632,6 @@ Polje ki ga opi"seti sondi se glasi:
 \label{B_H_1_koncna}
 B_{H_1}=(r_0+\Delta x_s) \cos(\theta)+\Delta y_s \sin(\theta)-\Delta x_d
 \end{equation}
-
 \begin{equation}
 \label{B_H_2_koncna}
 B_{H_2}=\Delta x_s \cos(\theta)+(r_0+\Delta y_s) \sin(\theta)-\Delta x_d
@@ -768,7 +766,7 @@ Iz slike \ref{fig:protokol_xs_1} se vidi napaka v obliki enosmerne komponente in
 
 \begin{figure}[h!]
 
-	\includegraphics{\dirslike/vrsta_protokola_xs_1}
+	\includegraphics[scale=0.7]{\dirslike/vrsta_protokola_xs_1}
 	\caption{AAmplitude harmonikov protokola}
 	\label{fig:vrsta_protokola_xs_1}
 \end{figure}
@@ -796,14 +794,14 @@ Zanimivost lahko razberemo "se iz faznega premika. Napaka pri stati"cni ekscentr
   
 \begin{figure}
 	
-	\includegraphics{\dirslike/vrsta_protokola_ys_1}
+	\includegraphics[scale=0.7]{\dirslike/vrsta_protokola_ys_1}
 	\caption{AAmplitude harmonikov protokola}
 	\label{fig:vrsta_protokola_ys_1}
 \end{figure}
 
 
 \subsection{Napaka pri dinami"cni ekscentri"cnosti v smeri x-osi}
-
+\label{Napaka pri dinami"cni ekscentri"cnosti v smeri x-osi}
 
 "Ze iz analiti"cnih izrazov lahko pri"cakujemo, da bo tu manj"sa izrazitost drugega harmonika. Napaka kota $\varepsilon$ je prikazana na sliki \ref{fig:protokol_xd_1}. Izrazit je predvsem prvi harmonik. Nezanemarljiv je "se drugi harmonik, ostale komponente Fourierjeve vrste pa so zanemarljive.
 
@@ -816,7 +814,7 @@ Zanimivost lahko razberemo "se iz faznega premika. Napaka pri stati"cni ekscentr
   \end{figure}
 \begin{figure}
 	
-	\includegraphics{\dirslike/vrsta_protokola_xd_1}
+	\includegraphics[scale=0.7]{\dirslike/vrsta_protokola_xd_1}
 	\caption{AAmplitude harmonikov protokola}
 	\label{fig:vrsta_protokola_xd_1}
 \end{figure}
@@ -829,23 +827,96 @@ Zanimivost lahko razberemo "se iz faznega premika. Napaka pri stati"cni ekscentr
 \section{Linearno ve"canje napake in opazovanje posameznih harmonikov pogre"ska}
 
 
-Sedaj poglejmo kako se spreminja posamezna amplituda ekcentri"cnosti glede na velikost ekscentri"costi. 
+Sedaj poglejmo kako se spreminja posamezna amplituda ekcentri"cnosti glede na velikost ekscentri"costi. Posami"cno sem ve"cal ekscentri"cnosti in pri tem opazoval spreminjanje pogre"ska $\varepsilon$. Pogre"sek $\varepsilon$ sem razvil v fourierovo vrsto in opazoval amplitudo posameznega harmonika $A_n \cos( n \theta)+B_n \sin(n \theta)$.
 
 
 \subsection{Ve"canje stati"cne napake v x-osi}
-S ve"canjem stati"cne napake se spreminja amplituda posameznih harmonikov
-Vrednost enosmerne komponente lahko zapisemo kot polinom  v odvisnsti od $p_0(\Delta x_s)$. 
+Z ve"canjem stati"cne napake se spreminja amplituda posameznih harmonikov. Slika \ref{fig:potek_amplitude_harmonikov_xs} prikazuje potek amplitud posameznih harmonikov poteka napake $\varepsilon$. Opazimo dokaj linearno pove"cevanje amplitude posameznega harmonika. Vednost amplitude lahko zapi"semo kot polinom druge stopnje.
+\begin{equation}
+\label{eq:polinom_A0_xs}
+A_0(\Delta x_s)=0.24856 \Delta x_s^3-2.334952 \Delta x_s^2+11.8579362 \Delta x_s +0.00749
+\end{equation}
+\begin{equation}
+\label{eq:polinom_A2_xs}
+A_2(\Delta x_s)=0.61989 \Delta x_s^3-4.32207 \Delta x_s^2+11.62794 \Delta x_s +0.02824
+\end{equation}
+\begin{equation}
+\label{eq:polinom_B2_xs}
+B_2(\Delta x_s)=0.32657 \Delta x_s^3+0.45499 \Delta x_s^2-12.04424 \Delta x_s +0.00516
+\end{equation}
+
+S primerjavo z analiti"cnih izpeljav lahko vidimo, da se pri majhnih ekscentri"cnostih amplitude harmonikov pogre"ska $\varepsilon$ linearno pove"cujejo.
+
+%Vrednost enosmerne komponente lahko zapisemo kot polinom  v odvisnsti od $p_0(\Delta x_s)$. 
+
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/potek_amplitude_harmonikov_xs}
+	\caption{AAmplitude harmonikov s spreminjanjem ekscentri"cnosti}
+	\label{fig:potek_amplitude_harmonikov_xs}
+\end{figure}
+
+\subsection{Ve"canje stati"cne ekscentri"cnosti v y-osi}
+
+Na sliki \ref{fig:potek_amplitude_harmonikov_ys} vidimo spreminjanje amplitude izrazitih posameznih harmonikov. Pri stati"cni ekscentri"cnosti v smeri y-osi se velikosti amplitud pri dolo"ceni ekscentri"cnosti ne spremeni. Spremeni se le predznak. Predznak sa spremenila amplituda enosmerne komponente in sinusna komponenta. S zapisom odvistnosti amlitude od ekscentri"cnosti s polinomom dobimo izraze:
 
 
 
-\subsection{Ve"canje stati"cne napake v y-osi}
+
+\begin{equation}
+\label{eq:polinom_A0_ys}
+A_0(\Delta y_s)=-0.24299 \Delta y_s^3+2.33829 \Delta y_s^2-11.87186 \Delta y_s -0.00587
+\end{equation}
+\begin{equation}
+\label{eq:polinom_A2_ys}
+A_2(\Delta y_s)=0.85111 \Delta y_s^3-4.800845 \Delta y_s^2+11.88757 \Delta y_s +0.00263
+\end{equation}
+\begin{equation}
+\label{eq:polinom_B2_ys}
+B_2(\Delta y_s)=-0.33333 \Delta y_s^3-0.45861 \Delta y_s^2+12.0461 \Delta y_s -0.00527
+\end{equation}
+Izrazi (\ref{eq:polinom_A0_ys}),(\ref{eq:polinom_A2_ys}) in (\ref{eq:polinom_B2_ys}) so podobni izrazom (\ref{eq:polinom_A0_xs}),(\ref{eq:polinom_A2_xs}) in (\ref{eq:polinom_B2_xs}). Razlikujejo se le v predznakih pri izrazih (\ref{eq:polinom_A0_xs}) in (\ref{eq:polinom_B2_xs}). Razlika pri decimalnih mesti se pojavi zaradi numeri"cnih napak in kon"cnega "stevila to"ck s  katerimi sem aproksimiral polinom.
 
 
+
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/potek_amplitude_harmonikov_ys}
+	\caption{AAmplitude harmonikov s spreminjanjem ekscentri"cnosti}
+	\label{fig:potek_amplitude_harmonikov_ys}
+\end{figure}
 
 
 \subsection{Ve"canje dinami"cne napake v x-osi}
 
+"Ze v poglavju \ref{Napaka pri dinami"cni ekscentri"cnosti v smeri x-osi}, smo opazili, da se pri dinami"cni ekscentri"cnosti napaka $\varepsilon$ pojavi v izraziti obliki prvega harmonika. Na sliki \ref{fig:potek_amplitude_harmonikov_xd} vidim potek amplitude prvega in drugega harmonika.  Z aproksimacijo, posamezne amplitude od dinami"cne ekscentri"cnosti v smeri x-osi, s polinomom dobimo izraze:
 
+\begin{equation}
+\label{eq:polinom_A1_xd}
+A_1(\Delta x_d)=-0.6196 \Delta x_d^3+0.71962 \Delta x_d^2-24.09233 \Delta x_d+0.01225
+\end{equation}
+\begin{equation}
+\label{eq:polinom_B1_xd}
+B_1(\Delta x_d)=0.52925 \Delta x_d^3-0.50255 \Delta x_d^2+24.00878 \Delta x_d-0.00688
+\end{equation}
+\begin{equation}
+\label{eq:polinom_A2_xd}
+A_2(\Delta x_d)=0.17300\Delta x_d^3-9.97085\Delta x_d^2-0.02442\Delta x_d+0.00272
+\end{equation}
+\begin{equation}
+\label{eq:polinom_B2_xd}
+B_2(\Delta x_d)=-1.64858 \Delta x_d^3+1.6394\Delta x_d^2-0.45992\Delta x_d+0.02430
+\end{equation}
+
+Iz izrazov vidimo linearno nara"scanje amplitude prvega harmonika. Z ve"canjem eksentri"cnosti pri"cne kvadrati"cno nara"s"cati tudi drugi harmonik.
+
+
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/potek_amplitude_harmonikov_xd}
+	\caption{AAmplitude harmonikov s spreminjanjem ekscentri"cnosti}
+	\label{fig:potek_amplitude_harmonikov_xd}
+\end{figure}
 
 
 
@@ -1104,7 +1175,7 @@ Vstavimo v (\ref{eq:polinom}) in dobimo:
  - 0.0048977 r_0^3 \cos(3 \theta)\\
 + (43.8404961 r_0  - 0.9278593 r_0^3 
 + 8.0202637 r_0 x_d - 3.7445199 r_0 x_d^2) \sin(\theta) \\
-+(- 4.0458727 r0^2  + 0.1105161 r_0^2 x_d) \sin(2 \theta)\\ 
++(- 4.0458727 r_0^2  + 0.1105161 r_0^2 x_d) \sin(2 \theta)\\ 
 + 0.2779619 r_0^3 \sin(3 \theta)
 \end{split}
 \end{equation}

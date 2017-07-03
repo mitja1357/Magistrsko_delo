@@ -1,11 +1,11 @@
-% clear all
-% close all
+ clear all
+ close all
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% dolocitev tock na katrih nardi fit %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-kot=pi/2*rand(1000,1)-pi/4;
-radij=0.4*rand(1000,1)+2.2;
+kot=pi/2*rand(10000,1)-pi/4;
+radij=0.4*rand(10000,1)+2.2;
 
 jx=radij.*cos(kot);
 jy=radij.*sin(kot);
