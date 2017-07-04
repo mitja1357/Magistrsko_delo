@@ -919,21 +919,38 @@ Iz izrazov vidimo linearno nara"scanje amplitude prvega harmonika. Z ve"canjem e
 \end{figure}
 
 
+\section{Izra"cun napke z realnimi podatki gostote magnetnega polja}
+
+V podjetju RLS merilna tehnika so mi simulirali Z-komponento vektorja gostote magnetnega pretoka. Simulacija je bila opravljena na vi"sini 2.55mm nad magnetom tako kot to predpisuje podotkovni list senzorja RM44. Kljub realnemu polju se zavedam da bo to"cnost simulacije slab"sa od realnega senzorja, saj merim polje le z dvema sondama. Sondi sem postavil na enak radij, kot so postavljene sonde v senzorju. S spreminjanjem radija na katerega sem postavil sondi se je spreminjala tudi velikost napake. Napaka je bila glede na dimenzije magneta najni"zja pri postavitvi sond na radij 2.4mm.  Simulacije sem se lotil na enak na"cin kot pri predpostavki, da je gostota magnetnega polja linearna funkcija. S poznavanjem lokacije sonde, sem iz tabele rezultatov simulacije Z-komponente vektorja B, od"cital polje. Tako sem dobil poteke vektorja B, ki ga pomeriti sondi v odvistnosti od trenutnaga zasuka $\theta$. Nato sem z uporabe funkcije atan2 dolo"cil vrednost kota $\varphi$. Podatek, ki me je zanimal, je seveda napaka. V naslednjih podpoglavjih bom predstavil, potek napake $\varepsilon$ v odvistnosti od kota zasuka $\theta$, z uporabo realnega vektorja B ki ga ustvarja magnet.
+
+
+\subsection{Napaka brez ekscentri"cnosti}
+
+Poglejmo najprej kak"sen je potek napake brez ekscentri"cnosti. Potek napake $\varepsilon$ se nahaja na sliki \ref{fig:protokol_real_brez}.
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/protokol_real_brez}
+	\caption{Napaka pomerjenega kota pri idealni montazi}
+	\label{fig:protokol_real_brez}
+\end{figure}
+
+
+
+\subsection{Napaka pri stati"cni ekscentri"cnosti v smeri x-osi}
 
 
 
 
 
+\subsection{Napaka pri stati"cni ekscentri"cnosti v smeri y-osi}
 
 
 
 
+\subsection{Napaka pri dinami"cni ekscentri"cnosti v smeri x-osi}
 
 
-
-
-
-
+\subsection{Napaka pri dinami"cni ekscentri"cnosti v smeri y-osi}
 
 
 

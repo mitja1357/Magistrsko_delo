@@ -1,17 +1,18 @@
+function [B]=vrednost_B_realno(pozicija,X_tmp,Y_tmp,Zmesh)
 
-function [B]=vrednost_B_realno(pozicija)
 
-X_tmp=X(1,:);
-Y_tmp=Y(:,1)';
+
 
 iskanx=min(abs(pozicija(1)-X_tmp));
 iskany=min(abs(pozicija(2)-Y_tmp));
 
+iskanx=round(50*(iskanx+pozicija(1)))/50;
+iskany=round(50*(iskany+pozicija(2)))/50;
 
-x_tmp=find(abs(X_temp)==iskanx+pozicija(1));
-y_tmp=find(abs(Y_temp)==iskany+pozicija(2));
+x_tmp=find(X_tmp==iskanx);
+y_tmp=find(Y_tmp==iskany);
 
-B=Z(x_tmp,y_tmp);
+B=Zmesh(x_tmp,y_tmp);
 
 end
 

@@ -8,9 +8,9 @@ xd=0.00;
 yd=0;
 
 koliko_harmonikov=4;
-zacetek=0;
-konec=2;
-potek=linspace(zacetek,konec,30);
+zacetek=1.2;
+konec=2.2;
+potek=linspace(zacetek,konec,3000);
 amp=zeros(max(size(potek)),koliko_harmonikov+1);
 ampcos=amp;
 ampsin=amp;
