@@ -18,7 +18,7 @@ ys=0.0;
 xd=0.00;
 yd=0;
 
-koliko_harmonikov=4;
+koliko_harmonikov=8;
 zacetek=0;
 konec=0.1;
 potek=linspace(zacetek,konec,5);

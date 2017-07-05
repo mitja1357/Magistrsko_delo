@@ -921,12 +921,29 @@ Iz izrazov vidimo linearno nara"scanje amplitude prvega harmonika. Z ve"canjem e
 
 \section{Izra"cun napke z realnimi podatki gostote magnetnega polja}
 
-V podjetju RLS merilna tehnika so mi simulirali Z-komponento vektorja gostote magnetnega pretoka. Simulacija je bila opravljena na vi"sini 2.55mm nad magnetom tako kot to predpisuje podotkovni list senzorja RM44. Kljub realnemu polju se zavedam da bo to"cnost simulacije slab"sa od realnega senzorja, saj merim polje le z dvema sondama. Sondi sem postavil na enak radij, kot so postavljene sonde v senzorju. S spreminjanjem radija na katerega sem postavil sondi se je spreminjala tudi velikost napake. Napaka je bila glede na dimenzije magneta najni"zja pri postavitvi sond na radij 2.4mm.  Simulacije sem se lotil na enak na"cin kot pri predpostavki, da je gostota magnetnega polja linearna funkcija. S poznavanjem lokacije sonde, sem iz tabele rezultatov simulacije Z-komponente vektorja B, od"cital polje. Tako sem dobil poteke vektorja B, ki ga pomeriti sondi v odvistnosti od trenutnaga zasuka $\theta$. Nato sem z uporabe funkcije atan2 dolo"cil vrednost kota $\varphi$. Podatek, ki me je zanimal, je seveda napaka. V naslednjih podpoglavjih bom predstavil, potek napake $\varepsilon$ v odvistnosti od kota zasuka $\theta$, z uporabo realnega vektorja B ki ga ustvarja magnet.
+V podjetju RLS merilna tehnika so mi simulirali Z-komponento vektorja gostote magnetnega pretoka. Simulacija je bila opravljena na vi"sini 2.55mm nad magnetom tako kot to predpisuje podotkovni list senzorja RM44. Kljub realnemu polju se zavedam da bo to"cnost simulacije slab"sa od realnega senzorja, saj merim polje le z dvema sondama. Sondi sem postavil na enak radij, kot so postavljene sonde v senzorju. S spreminjanjem radija na katerega sem postavil sondi se je spreminjala tudi velikost napake. Napaka je bila glede na dimenzije magneta najni"zja pri postavitvi sond na radij 2.4mm.  Simulacije sem se lotil na enak na"cin kot pri predpostavki, da je gostota magnetnega polja linearna funkcija. 
+
+
+
+
+S poznavanjem lokacije sonde, sem iz tabele rezultatov simulacije Z-komponente vektorja B, od"cital polje. 
+
+Izra"cun vrednosti polja v dolo"ceni to"cki z uporabo funkcije interp2 je dolgotrajen. Funkcija interp2 ima velik povpre"cni "cas izvajanja (ACET-avrage case execution time). Za hitrej"se izvajanje simulacije, sem zato za vrednost polja v dolo"ceni to"cki uporabil vrednost polja, v kateri imam znano polje in je le ta najbli"zja to"cki v kateri "zelim dobiti polje. Simulacije sem opravil tudi z uporabo funkcije interp2. () Razlika dobljenih potekov vektorja B je vidna na sliki (dodaj sliko !!!!!!). Razlika ni velika, "cas izvajanja simulacije pa je kraj"si. 
+
+Tako sem dobil poteke vektorja B, ki ga pomeriti sondi v odvistnosti od trenutnaga zasuka $\theta$. Nato sem z uporabe funkcije atan2 dolo"cil vrednost kota $\varphi$. 
+
+
+
+Podatek, ki me je zanimal, je seveda napaka. V naslednjih podpoglavjih bom predstavil, potek napake $\varepsilon$ v odvistnosti od kota zasuka $\theta$, z uporabo realnega vektorja B ki ga ustvarja magnet.
+
+ 
 
 
 \subsection{Napaka brez ekscentri"cnosti}
 
-Poglejmo najprej kak"sen je potek napake brez ekscentri"cnosti. Potek napake $\varepsilon$ se nahaja na sliki \ref{fig:protokol_real_brez}.
+Poglejmo najprej kak"sen je potek napake brez ekscentri"cnosti. Potek napake $\varepsilon$ se nahaja na sliki \ref{fig:protokol_real_brez}. Opazimo da je nekoliko bolj izrazit "cetrti harmonik, ki pri simulacijah ekscentri"cnosti z aprksimacijo linearnega vektorja B ni bil klju"cen. Ve"cji skoki ki se pojavljajo v napaki (kot naprimer pri $\theta=-160^\circ$), so posledica numeri"cno izra"cunanega polja. 
+
+
 \begin{figure}[h!]
 	
 	\includegraphics{\dirslike/protokol_real_brez}
@@ -934,26 +951,74 @@ Poglejmo najprej kak"sen je potek napake brez ekscentri"cnosti. Potek napake $\v
 	\label{fig:protokol_real_brez}
 \end{figure}
 
+Z razvojem napake $\varepsilon$ v Fouriejevo vrsto, se potrdi teza da je najvi"sji "cetrti harmonik. Pri uporabi linearnega polja vektorja B se je stati"cno ekscentri"cnostjo najbolj spreminjala amplituda drugega harmonika, katera je v napaki po sliki \ref{fig:amplitude_real_brez} v napaki brez ekscentri"cnosti majhna. Vi"sje harmonike bi lahko izlo"cil "ce bi uporabil ve"c Hallovih sond. Sonde bi morale biti pametno razporejene po radiju, tako kot je to vrjetno izvedeno v senzorju RM44.
 
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/vrsta_protokola_real_brez}
+	\caption{Amplitude harmonikov pogre"ska $\varepsilon$}
+	\label{fig:amplitude_real_brez}
+\end{figure}
 
 \subsection{Napaka pri stati"cni ekscentri"cnosti v smeri x-osi}
 
 
+Sedaj v simulaciji dodamo stati"cno ekscentri"cnost v smeri x-osi. Razlika med izra"cunanim kotom $\varphi$ in pravim kotom $\theta$,v odvistnosti od pravilnega kota $\theta$ je prikazana na sliki \ref{fig:protokol_real_xs}. Tako kot je v napaki pri uporabi linearnega vektorja B najbolj izstopala enosmerna komponenta in drugi harmonik, se tudi tu takoj opazi podoben potek.
+
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/protokol_real_xs_1}
+	\caption{Napaka pomerjenega kota pri statiècni ekscentriènosti v smeri x-osi }
+	\label{fig:protokol_real_xs}
+\end{figure}
+
+Z razvojem napake v Fourijejevo vrsto (slika \ref{fig:amplitude_real_xs}) lahko vidimo podobnosti, z napako, kjer je bilo uporabljeno linearno polje vektorja B. Vi"sjim harmonikom je amplituda ostala enaka ali se je zmanj"sala. Amplituda prve komponente se je tudi pove"cala vendar ne tako veliko kot amplituda enosmerne komponente in drugega harmonika.
+
+
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/vrsta_protokola_real_xs_1}
+	\caption{Amplitude harmonikov pogre"ska $\varepsilon$ ob stati"cni ekscentri"cnosti v smeri x-osi}
+	\label{fig:amplitude_real_xs}
+\end{figure}
 
 
 
 \subsection{Napaka pri stati"cni ekscentri"cnosti v smeri y-osi}
 
 
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/protokol_real_ys_1}
+	\caption{Napaka pomerjenega kota pri statiècni ekscentriènosti v smeri y-osi }
+	\label{fig:protokol_real_ys}
+\end{figure}
 
+
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/vrsta_protokola_real_ys_1}
+	\caption{Amplitude harmonikov pogre"ska $\varepsilon$ ob stati"cni ekscentri"cnosti v smeri y-osi}
+	\label{fig:amplitude_real_ys}
+\end{figure}
 
 \subsection{Napaka pri dinami"cni ekscentri"cnosti v smeri x-osi}
-
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/protokol_real_xd_1}
+	\caption{Napaka pomerjenega kota pri dinami"cni ekscentriènosti v smeri x-osi }
+	\label{fig:protokol_real_xd}
+\end{figure}
 
 \subsection{Napaka pri dinami"cni ekscentri"cnosti v smeri y-osi}
 
 
-
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/protokol_real_yd_1}
+	\caption{Napaka pomerjenega kota pri dinami"cni ekscentriènosti v smeri y-osi }
+	\label{fig:protokol_real_ys}
+\end{figure}
 
 
 
