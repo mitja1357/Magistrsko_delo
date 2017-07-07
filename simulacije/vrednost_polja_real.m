@@ -30,7 +30,7 @@ By=zeros(size(theta));
 stevec=1;
 for i=theta
 %   vrednosti rotacijske matrike 
-  rot_mat=[cos(i-pi/2) sin(i-pi/2);-sin(i-pi/2) cos(i-pi/2) ]; 
+  rot_mat=[cos(i) sin(i);-sin(i) cos(i) ]; 
 
 
 %   pozicija hallove sonde
@@ -69,7 +69,7 @@ end
 kot_merjeni=atan2(By,Bx);
 
 poprava_kota;
-kot_merjeni=kot_merjeni;
+kot_merjeni=kot_merjeni-pi/2;
 if slike
 figure(fig_protokol)
 plot(theta*180/pi,(kot_merjeni-theta)*180/pi,'-r')
