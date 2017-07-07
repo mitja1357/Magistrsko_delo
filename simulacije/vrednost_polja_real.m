@@ -28,7 +28,7 @@ end
 Bx=zeros(size(theta));
 By=zeros(size(theta));
 stevec=1;
-for i=theta
+for i=(theta)
 %   vrednosti rotacijske matrike 
   rot_mat=[cos(i) sin(i);-sin(i) cos(i) ]; 
 

@@ -11,17 +11,17 @@ X_tmp=(round(X_tmp.*50)/50);
 Y_tmp=(round(Y_tmp.*50)/50);
 
 
-theta=linspace(-pi,pi,2048);
+theta=linspace(-pi/4,7*pi/4,2048);
 r0=2.4;
 xs=0.0;
 ys=0.0;
 xd=0.00;
 yd=0;
 
-koliko_harmonikov=4;
+koliko_harmonikov=2;
 zacetek=0;
 konec=0.2;
-potek=linspace(zacetek,konec,5);
+potek=linspace(zacetek,konec,30);
 amp=zeros(max(size(potek)),koliko_harmonikov+1);
 ampcos=amp;
 ampsin=amp;
