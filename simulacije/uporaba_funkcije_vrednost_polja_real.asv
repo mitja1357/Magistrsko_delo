@@ -19,9 +19,9 @@ xd=0.00;
 yd=0;
 
 koliko_harmonikov=8;
-zacetek=0.0;
-konec=0.2;
-potek=linspace(zacetek,konec,5);
+zacetek=0.1;
+konec=0.1;
+potek=linspace(zacetek,konec,1);
 amp=zeros(max(size(potek)),koliko_harmonikov+1);
 ampcos=amp;
 ampsin=amp;
@@ -37,9 +37,9 @@ eval(strcat(po_kateri_eks,'=',num2str(i),';'))
 [kot_merjeni,absA,kotA,Bx,By,absSin,absCos]=vrednost_polja_real(theta,r0,xs,ys,xd,yd,koliko_harmonikov,0,X_tmp,Y_tmp, Zmesh);
 
 
-amp(stevec,:)=absA;
-ampcos(stevec,:)=absCos;
-ampsin(stevec,:)=absSin;
+amp(stevec,:)=absA';
+ampcos(stevec,:)=absCos';
+ampsin(stevec,:)=absSin';
 
 stevec=stevec+1;
 
@@ -102,16 +102,16 @@ end
 switch po_kateri_eks
     case 'xs'
         izrisi_harmonike=[0 2];
-        legenda={'C_0','C_2'};
+        legenda={'A_0','A_2'};
     case 'ys'
         izrisi_harmonike=[0 2];
-        legenda={'C_0','C_2'};
+        legenda={'A_0','A_2'};
     case 'xd'
         izrisi_harmonike=[1 2];
-        legenda={'C_1','C_2'};
+        legenda={'A_1','A_2'};
     case 'yd'
-        izrisi_harmonike=[1 2];
-        legenda={'C_1','C_2'};
+        izrisi_harmonike=1;
+        legenda={'A_1'};
 end
 
 Barve;

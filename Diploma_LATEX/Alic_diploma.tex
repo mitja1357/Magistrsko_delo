@@ -11,11 +11,13 @@
 
 \documentclass[a4paper,twoside,openright,12pt]{book}
 \usepackage[cp1250]{inputenc}  %Kodna stran za Windows okolje, za linux je kodna stran latin2
-\usepackage[slovene]{babel}    % pravila za slovensko deljenje besed
+\usepackage[Slovene]{babel}    % pravila za slovensko deljenje besed
 \usepackage[pdftex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko (za pdfTeX v MkiTex)
 %\usepackage[pctex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko  (za pcTex)
-\usepackage{graphicx}
 
+\usepackage{xkeyval}
+\usepackage{graphicx}
+\usepackage{epstopdf}
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage{subcaption} 
@@ -946,16 +948,18 @@ Poglejmo najprej kak"sen je potek napake brez ekscentri"cnosti. Potek napake $\v
 
 \begin{figure}[h!]
 	
-	\includegraphics{\dirslike/protokol_real_brez}%vrednost_polja_real.m
+	\includegraphics[scale=0.5]{\dirslike/protokol_real_brez}%vrednost_polja_real.m
+	\centering
 	\caption{Napaka pomerjenega kota pri idealni montazi}
 	\label{fig:protokol_real_brez}
 \end{figure}
 
-Z razvojem napake $\varepsilon$ v Fouriejevo vrsto, se potrdi teza da je najvi"sji "cetrti harmonik. Pri uporabi linearnega polja vektorja B se je stati"cno ekscentri"cnostjo najbolj spreminjala amplituda drugega harmonika, katera je v napaki po sliki \ref{fig:amplitude_real_brez} v napaki brez ekscentri"cnosti majhna. Vi"sje harmonike bi lahko izlo"cil "ce bi uporabil ve"c Hallovih sond. Sonde bi morale biti pametno razporejene po radiju, tako kot je to vrjetno izvedeno v senzorju RM44.
+Z razvojem napake $\varepsilon$ v Fouriejevo vrsto, se potrdi teza da je najvi"sji "cetrti harmonik. Pri uporabi linearnega polja vektorja B se je stati"cno ekscentri"cnostjo najbolj spreminjala amplituda drugega harmonika, katera je v napaki na sliki \ref{fig:amplitude_real_brez} majhna. Vi"sje harmonike bi lahko izlo"cil "ce bi uporabil ve"c Hallovih sond. Sonde bi morale biti pametno razporejene po radiju, tako kot je to vrjetno izvedeno v senzorju RM44.
 
 \begin{figure}[h!]
 	
-	\includegraphics{\dirslike/vrsta_protokola_real_brez}%vrednost_polja_real.m
+	\includegraphics[scale=0.5]{\dirslike/vrsta_protokola_real_brez}%vrednost_polja_real.m
+	\centering
 	\caption{Amplitude harmonikov pogre"ska $\varepsilon$}
 	\label{fig:amplitude_real_brez}
 \end{figure}
@@ -967,17 +971,19 @@ Sedaj v simulaciji dodamo stati"cno ekscentri"cnost v smeri x-osi. Razlika med i
 
 \begin{figure}[h!]
 	
-	\includegraphics{\dirslike/protokol_real_xs_1}%vrednost_polja_real.m
+	\includegraphics[scale=0.5]{\dirslike/protokol_real_xs_1}%vrednost_polja_real.m
+	\centering
 	\caption{Napaka pomerjenega kota pri statiècni ekscentriènosti v smeri x-osi }
 	\label{fig:protokol_real_xs}
 \end{figure}
 
-Z razvojem napake v Fourijejevo vrsto (slika \ref{fig:amplitude_real_xs}) lahko vidimo podobnosti, z napako, kjer je bilo uporabljeno linearno polje vektorja B. Vi"sjim harmonikom je amplituda ostala enaka ali se je zmanj"sala. Amplituda prve komponente se je tudi pove"cala vendar ne tako veliko kot amplituda enosmerne komponente in drugega harmonika.
+Z razvojem napake v Fourijejevo vrsto (slika \ref{fig:amplitude_real_xs}) lahko vidimo podobnosti, z napako, kjer je bilo uporabljeno linearno polje vektorja B. Izstopati enosmerna komponta in drugi harmonik. Malo izstopa tudi "cetrti harmonik, ostali so zanemarljvi.
 
 
 \begin{figure}[h!]
 	
-	\includegraphics{\dirslike/vrsta_protokola_real_xs_1}%vrednost_polja_real.m
+	\includegraphics[scale=0.5]{\dirslike/vrsta_protokola_real_xs_1}%vrednost_polja_real.m
+	\centering
 	\caption{Amplitude harmonikov pogre"ska $\varepsilon$ ob stati"cni ekscentri"cnosti v smeri x-osi}
 	\label{fig:amplitude_real_xs}
 \end{figure}
@@ -986,42 +992,66 @@ Z razvojem napake v Fourijejevo vrsto (slika \ref{fig:amplitude_real_xs}) lahko 
 
 \subsection{Napaka pri stati"cni ekscentri"cnosti v smeri y-osi}
 
-Rezultate pri simulaciji napake stati"cne ekscentri"cnosti v smeri y-osi, sem pri"cakoval podobne kot rezultate simulirane v smeri x-osi. Napaka $\varepsilon$ za primer ekscentri"cnosti v smeri y-osi, je prikazana na sliki \ref{fig:protokol_real_ys}. S slike se vidi negativno enosmerno komponento in izrazit drugi harmonik. 
+Po simulacijah z uporabo linearnega polja sem pri"cakoval enak potek napake kot pri stati"cni ekscentri"cnosti v smeri x-osi. Pri"cakoval sem razliko le v enosmerni komponenti, ki bo negativna, drugi harmonik pa fazno premaknjen.
+
+Napaka $\varepsilon$ za primer ekscentri"cnosti v smeri y-osi, je prikazana na sliki \ref{fig:protokol_real_ys}. S slike se opazi pri"cakovano negativno enosmerno komponento in izrazit drugi harmonik. Razvoj napake $\varepsilon$ v Fourierovo vrsto potrdi pri"cakovane rezultate(slika \ref{fig:amplitude_real_ys}).
 
 \begin{figure}[h!]
 	
-	\includegraphics{\dirslike/protokol_real_ys_1}%vrednost_polja_real.m
+	\includegraphics[scale=0.5]{\dirslike/protokol_real_ys_1}%vrednost_polja_real.m
+	\centering
 	\caption{Napaka pomerjenega kota pri statièni ekscentriènosti v smeri y-osi }
 	\label{fig:protokol_real_ys}
+	\
 \end{figure}
 
 
 \begin{figure}[h!]
 	
-	\includegraphics{\dirslike/vrsta_protokola_real_ys_1}%vrednost_polja_real.m
+	\includegraphics[scale=0.5]{\dirslike/vrsta_protokola_real_ys_1}%vrednost_polja_real.m
+	\centering
 	\caption{Amplitude harmonikov pogre"ska $\varepsilon$ ob stati"cni ekscentri"cnosti v smeri y-osi}
 	\label{fig:amplitude_real_ys}
 \end{figure}
 
 \subsection{Napaka pri dinami"cni ekscentri"cnosti v smeri x-osi}
+
+Pri dinami"cne ekscentir"cnosti sem pri"cakoval izrazit prvi harmonik napake. Napaka $\varepsilon$ prikazana na sliki \ref{fig:protokol_real_xd}. Na sliki opazimo izrazit tretji harmonik, ki je bil v napaki z uporabo linearnega polja B zanemarljiv. Z razvojem napake v Fourierovo vrsto (slika \ref{fig:amplitude_real_xd}) opazimo, da je amplituda tretjega harmonika podobna amplitudi prvega harmonika. Enosmerna komponenta je nizka po pri"cakovanjih. Ostali harmoniki imajo enake vrednosti kot napaka, kjer sem postavil ekscentri"cnosti na ni"c. Amplituda prvega harmonika je ni"zja od pri"cakovane vrednosti.
 \begin{figure}[h!]
 	
-	\includegraphics{\dirslike/protokol_real_xd_1}%vrednost_polja_real.m
+	\includegraphics[scale=0.5]{\dirslike/protokol_real_xd_1}%vrednost_polja_real.m
+	\centering
 	\caption{Napaka pomerjenega kota pri dinami"cni ekscentriènosti v smeri x-osi }
 	\label{fig:protokol_real_xd}
 \end{figure}
 
+\begin{figure}[h!]
+	
+	\includegraphics[scale=0.5]{\dirslike/vrsta_protokola_real_xd_1}%vrednost_polja_real.m
+	\centering
+	\caption{Amplitude harmonikov pogre"ska $\varepsilon$ ob dinami"cni ekscentri"cnosti v smeri x-osi}
+	\label{fig:amplitude_real_xd}
+\end{figure}
+
 \subsection{Napaka pri dinami"cni ekscentri"cnosti v smeri y-osi}
+
+Dinami"cna ekscentri"cnost v smeri y-osi ni bilo zaradi poenostavitve z uporabo linearnega polja B. Z uporabo realnega modela polja pri"cakujem napako podobno. Napaka je prikazana na sliki \ref{fig:protokol_real_yd}. Napaka je zelo podobena napaki dinami"cne ekscentri"cnosti v smeri x-osi z uporabo linearnega magnetnega polja B. Izrazit je prvi harmonik, izstopa tudi tretji. Z razvojem v Fouriejevo vrsto, opazimo izrazit prvi harmonik. Povi"sala se je amplituda tretjega harmonika, ostali harmoniki pa imajo amplitude zanemarljive.
 
 
 \begin{figure}[h!]
-	
-	\includegraphics{\dirslike/protokol_real_yd_1}%vrednost_polja_real.m
+	\includegraphics[scale=0.5]{\dirslike/protokol_real_yd_1}%vrednost_polja_real.m
+	\centering
 	\caption{Napaka pomerjenega kota pri dinami"cni ekscentriènosti v smeri y-osi }
-	\label{fig:protokol_real_ys}
+	\label{fig:protokol_real_yd}
 \end{figure}
 
-
+\begin{figure}[h!]
+	
+	\includegraphics[scale=0.5]{\dirslike/vrsta_protokola_real_yd_1}%vrednost_polja_real.m
+	\centering
+	\caption{Amplitude harmonikov pogre"ska $\varepsilon$ ob dinami"cni ekscentri"cnosti v smeri y-osi}
+	\label{fig:amplitude_real_yd}
+\end{figure}
 
 
 
