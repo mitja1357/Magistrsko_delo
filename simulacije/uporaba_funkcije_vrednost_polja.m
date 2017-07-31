@@ -1,5 +1,5 @@
- close all
- clear all
+ %close all
+ %clear all
 theta=linspace(-pi,pi,1024);
 r0=2.4;
 xs=0.0;
@@ -8,16 +8,16 @@ xd=0.00;
 yd=0;
 
 koliko_harmonikov=4;
-zacetek=1.2;
-konec=2.2;
-potek=linspace(zacetek,konec,3000);
+zacetek=0;
+konec=0.2;
+potek=linspace(zacetek,konec,40);
 amp=zeros(max(size(potek)),koliko_harmonikov+1);
 ampcos=amp;
 ampsin=amp;
 stevec=1;
 
 
-po_kateri_eks='xd';
+po_kateri_eks='ys';
 
 for i=potek
 eval(strcat(po_kateri_eks,'=',num2str(i),';'))

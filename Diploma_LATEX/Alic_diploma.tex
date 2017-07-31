@@ -1057,6 +1057,66 @@ Dinami"cna ekscentri"cnost v smeri y-osi ni bilo zaradi poenostavitve z uporabo 
 
 
 
+\subsection{Ve"canje stati"cne ekscentri"cnosti v x-osi}
+
+Sedaj poglejmo odvistnost spreminjanja posamezne amplitude harmonikov v odvistnosti od stati"cne ekscentri"cnosti v smeri x-osi. Iz rezultatov kjer smo predpostavili linearno polje z-komponente vektorja B. Pri"cajkujem tudi tu podobne rezultate. Za"cetne vrednosti amplitud bodo neni"celne, saj "ze v primeru brez ekscentri"cnosti dobim napako, ki se izra"za v posameznih harmonikih(slika \ref{fig:amplitude_real_brez}).   Spremembo amplitude enosmerne komponente in drugega harmonika je vidna na sliki \ref{fig:potek_amplitude_harmonikov_xs_real}.
+
+
+
+
+
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/potek_amplitude_harmonikov_xs_real} %uporaba_funkcije_vrednost_polja.m in nato Izris_potekov_amplitud.m
+	\caption{Amplitude harmonikov s spreminjanjem ekscentri"cnosti}
+	\label{fig:potek_amplitude_harmonikov_xs_real}
+\end{figure}
+
+Spreminjanje amplitude posameznega harmonika lahko aproksimiramo s polinomom tretje stopnje in dobimo izraz:
+
+\begin{equation}
+C_0(\Delta x_s)=40,4 \Delta x_s^3-13,41 \Delta x_s^2 +13,12 \Delta x_s+0.1253
+\end{equation}
+
+\begin{equation}
+C_2(\Delta x_s)=-58,14 \Delta x_s^3+18,88 \Delta x_s^2 +10,54 \Delta x_s+0.003307
+\end{equation}
+
+
+Pri"cakovano je za"cetna vrednost aproksimacijskega polinoma enaka amplitudi harmonika pri napaki brez ekscentri"cnosti. Enosmerna kmponenta je nara"s"ca enako, kot je nara"s"cala pri simulaciji z uporabo linearnega polja z-komponente vektorja B, medtem ko amplituda drugega harmonika nara"s"ca po"casneje.
+
+
+\subsection{Ve"canje stati"cne ekscentri"cnosti v y-osi}
+
+Napaka zaradi stati"cne ekscentri"cnosti v smeri y-osi pri"cakujem enako kot pri ekscentri"cnosti v smeri x-osi. Po rezultatih iz prej"snjih poglavij predvidevam, da bo enosmerna komponenta z vi"sanjem ekscentri"cnosti vedno bolj negativna.
+
+Na sliki \ref{fig:potek_amplitude_harmonikov_ys_real} so predvidevanja potrdijo. Za"cetni vrednosti sta enaki. Amplituda drugega harmonika nara"sca
+
+
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/potek_amplitude_harmonikov_ys_real} %uporaba_funkcije_vrednost_polja.m in nato Izris_potekov_amplitud.m
+	\caption{Amplitude harmonikov s spreminjanjem ekscentri"cnosti}
+	\label{fig:potek_amplitude_harmonikov_ys_real}
+\end{figure}
+
+
+\begin{equation}
+A_0(\Delta y_s)=   
+38.7884\Delta y_s^3
+-13.0988\Delta y_s^2
+-10.7638\Delta y_s
++0.1253
+\end{equation}
+
+
+\begin{equation}
+C_2(\Delta y_s)= 
+61.0142 \Delta y_s^3
+-18.9682\Delta y_s^2+
+13.4816\Delta y_s
+-0.0028
+\end{equation}
 
 
 
@@ -1071,20 +1131,7 @@ Dinami"cna ekscentri"cnost v smeri y-osi ni bilo zaradi poenostavitve z uporabo 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Predvidevam, da bo pri meritvah napaka ni"zja, v napaki se bo pokazala napaka v obliki enosmerne komponente oz. prvega ali drugega harmonika. Napaka bo z ve"canjem ekscentri"cnosti nara"s"cala.
 
 
 
