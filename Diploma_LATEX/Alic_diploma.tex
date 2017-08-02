@@ -1075,11 +1075,11 @@ Sedaj poglejmo odvistnost spreminjanja posamezne amplitude harmonikov v odvistno
 Spreminjanje amplitude posameznega harmonika lahko aproksimiramo s polinomom tretje stopnje in dobimo izraz:
 
 \begin{equation}
-C_0(\Delta x_s)=40,4 \Delta x_s^3-13,41 \Delta x_s^2 +13,12 \Delta x_s+0.1253
+C_0(\Delta x_s)=39,78 \Delta x_s^3-13,29 \Delta x_s^2 +13,12 \Delta x_s+0,12
 \end{equation}
 
 \begin{equation}
-C_2(\Delta x_s)=-58,14 \Delta x_s^3+18,88 \Delta x_s^2 +10,54 \Delta x_s+0.003307
+C_2(\Delta x_s)=-61,68 \Delta x_s^3+19,77 \Delta x_s^2 +10,49 \Delta x_s+0,004
 \end{equation}
 
 
@@ -1090,7 +1090,7 @@ Pri"cakovano je za"cetna vrednost aproksimacijskega polinoma enaka amplitudi har
 
 Napaka zaradi stati"cne ekscentri"cnosti v smeri y-osi pri"cakujem enako kot pri ekscentri"cnosti v smeri x-osi. Po rezultatih iz prej"snjih poglavij predvidevam, da bo enosmerna komponenta z vi"sanjem ekscentri"cnosti vedno bolj negativna.
 
-Na sliki \ref{fig:potek_amplitude_harmonikov_ys_real} so predvidevanja potrdijo. Za"cetni vrednosti sta enaki. Amplituda drugega harmonika nara"sca
+Na sliki \ref{fig:potek_amplitude_harmonikov_ys_real} so predvidevanja potrdijo. Za"cetni vrednosti sta enaki. Amplituda drugega harmonika nara"sca enako kot nara"sca amplituda drugega harmonika pri stati"cni ekscentri"cnosti v smeri x-osi. Odvistnost amplitude posameznega harmonika napake lahko aproksimiramo s polinomom. Potek je amplitude je po pri"cakovanjih.
 
 
 \begin{figure}[h!]
@@ -1121,17 +1121,75 @@ C_2(\Delta y_s)=
 
 
 
+\subsection{Ve"canje dinami"cne ekscentri"cnosti v x-osi}
+Pri simulacijah napake zaradi dinami"cne ekscentir"cnosti pri uporabi linearnega poteka z-komponente vektorja B je amplituda prvega harmonika linearno nara"scala v odvistnosti od ve"canja dinami"cne ekscentri"cnosti v smeri x-osi. Pri"cakujem linearno nara"s"cananje amplitude prvega harmonika. Pri simulaciji z realnim poljem se je izkazal za izrazitej"si tretji harmonik. Pri"cakujem, da bo tudi amplituda tretjega harmonika nara"s"cala z ve"canjem ekscentri"cnosti. Na sliki \ref{fig:potek_amplitude_harmonikov_xd_real} so prikazani poteki amplitud za prvi drugi in tretji harmonik v odvistnosti od dinami"cne ekscetri"cnosti v x-osi. Amplitudi prvega in tretjega harmonika nara"s"cata linearno in strmo. Drugi harmonik nara"s"ca s kvadratom ekscentri"cnosti vendar zelo polo"zno. Poteke amplitude posameznega harmonika v odvistnosti od dinami"cne ekscentri"cnosti v smeri x-osi lahko aproksimiramo s polinomom:
+\begin{equation}
+C_1(\Delta x_d)=   
+-5.88\Delta x_d^3
++5.50\Delta x_d^2
++7.18\Delta x_d
++0.08
+\end{equation}
+\begin{equation}
+C_2(\Delta x_d)=   
+-0.31\Delta x_d^3
++0.95\Delta x_d^2
+-0.09\Delta x_d
++0.004
+\end{equation}
+\begin{equation}
+C_3(\Delta x_d)=   
+-3.28\Delta x_d^3
++2.52\Delta x_d^2
++8.19\Delta x_d
+-0.04
+\end{equation}
 
 
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/potek_amplitude_harmonikov_xd_real} %uporaba_funkcije_vrednost_polja.m in nato Izris_potekov_amplitud.m
+	\caption{Amplitude harmonikov s spreminjanjem ekscentri"cnosti}
+	\label{fig:potek_amplitude_harmonikov_xd_real}
+\end{figure}
 
 
+\subsection{Ve"canje dinami"cne ekscentri"cnosti v y-osi}
+
+Pri dinami"cni ekscentri"cnosti v smeri y-osi pri"cakujem podobne rezultate kot pri dinami"cni ekscentri"cnosti v smeri x-osi. Pri"cakujem le vi"sjo amplitudo prvega harmonika. Rezultat je viden na sliki \ref{fig:potek_amplitude_harmonikov_yd_real}. Amplituda prvega harmonika nara"s"ca pribli"zno trikrat hitreje, kot je nara"s"cala amplituda prvega haromika pri dinami"cni ekscentri"cnosti v smei x-osi. Drugi harmonik nara"s"ca po"casneje kot pri dinami"cni ekscentri"cnosti v smei x-osi, tretji harmonik poteka pribli"zno enako.
+Aproksimacija s polinomom potrdi sklepanja s slike.
 
 
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/potek_amplitude_harmonikov_yd_real} %uporaba_funkcije_vrednost_polja.m in nato Izris_potekov_amplitud.m
+	\caption{Amplitude harmonikov s spreminjanjem ekscentri"cnosti}
+	\label{fig:potek_amplitude_harmonikov_yd_real}
+\end{figure}
+\begin{equation}
+C_1(\Delta y_d)=   
+1.01\Delta y_d^3
++1.82\Delta y_d^2
++24.57\Delta y_d
+-0.07
+\end{equation}
+\begin{equation}
+C_2(\Delta y_d)=   
+-2.37\Delta y_d^3
++2.79\Delta y_d^2
+-0.41\Delta y_d
++0.01
+\end{equation}
+\begin{equation}
+C_3(\Delta y_d)=   
+0.83\Delta y_d^3
+-1.21\Delta y_d^2
++8.71\Delta y_d
++0.09
+\end{equation}
 
-
-
-
-Predvidevam, da bo pri meritvah napaka ni"zja, v napaki se bo pokazala napaka v obliki enosmerne komponente oz. prvega ali drugega harmonika. Napaka bo z ve"canjem ekscentri"cnosti nara"s"cala.
+\section{Zaklju"cna misel po opravljenih simulacijah}
+Predvidevam, da bo pri meritvah napaka ni"zja, saj je bil simulacijski model osnoven. V napaki kljub temu pri"cakujem izraz napake v obliki enosmerne komponente oz. prvega ali drugega harmonika. Napaka bo z ve"canjem ekscentri"cnosti nara"s"cala pribli"zno linearno. Napaka zaradi dinami"cne ekscentri"cnosti bo vi"sja kot napaka zaradi stati"cne ekscentri"cnosti. To se je pokazalo "ze pri linearnem modelu in prav tako prirealnem modelu polja.
 
 
 

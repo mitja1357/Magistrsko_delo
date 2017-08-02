@@ -18,16 +18,16 @@ xd=0.00;
 yd=0;
 
 koliko_harmonikov=8;
-zacetek=0.0;
-konec=0.2;
-potek=linspace(zacetek,konec,40);
+zacetek=-0.6;
+konec=0.6;
+potek=linspace(zacetek,konec,120);
 amp=zeros(max(size(potek)),koliko_harmonikov+1);
 ampcos=amp;
 ampsin=amp;
 stevec=1;
 
-
-po_kateri_eks='ys';
+potenca=3;
+po_kateri_eks='xs';
 
 for i=potek
 eval(strcat(po_kateri_eks,'=',num2str(i),';'))
@@ -44,37 +44,37 @@ stevec=stevec+1;
 
 end;
 
-
-if zacetek < 0
-spremeni_predznak=find(potek>=0,1);
-amp(1:spremeni_predznak,3)=-amp(1:spremeni_predznak,3);
-
-
-% figure
-% bar(0:koliko_harmonikov,kotA)
-
-x1=potek(spremeni_predznak-1);
-x2=potek(spremeni_predznak);
-x3=potek(spremeni_predznak+1);
-
-y1=amp(spremeni_predznak-1,:);
-y2=amp(spremeni_predznak,:);
-y3=amp(spremeni_predznak+1,:);
-
-k1=sign((y2-y1)./(x2-x1));
-k2=sign((y3-y2)./(x3-x2));
-predznak=double(k1==k2);
-for i=1:koliko_harmonikov+1
-    if predznak(i)==0
-        predznak(i)=-1;
-    end
-end
-% for i=1:koliko_harmonikov+1
-%       amp(1:spremeni_predznak,i)=amp(1:spremeni_predznak,i).*predznak(i);
-% end
 % 
-
-end
+% if zacetek < 0
+% spremeni_predznak=find(potek>=0,1);
+% amp(1:spremeni_predznak,3)=-amp(1:spremeni_predznak,3);
+% 
+% 
+% % figure
+% % bar(0:koliko_harmonikov,kotA)
+% 
+% x1=potek(spremeni_predznak-1);
+% x2=potek(spremeni_predznak);
+% x3=potek(spremeni_predznak+1);
+% 
+% y1=amp(spremeni_predznak-1,:);
+% y2=amp(spremeni_predznak,:);
+% y3=amp(spremeni_predznak+1,:);
+% 
+% k1=sign((y2-y1)./(x2-x1));
+% k2=sign((y3-y2)./(x3-x2));
+% predznak=double(k1==k2);
+% for i=1:koliko_harmonikov+1
+%     if predznak(i)==0
+%         predznak(i)=-1;
+%     end
+% end
+% % for i=1:koliko_harmonikov+1
+% %       amp(1:spremeni_predznak,i)=amp(1:spremeni_predznak,i).*predznak(i);
+% % end
+% % 
+% 
+% end
 
 
 
@@ -125,10 +125,10 @@ plot(potek,amp(:,i+1),'Color',cell2mat(barve(stevec))./255)
 
 eval(strcat('amp_harmonik_',num2str(stevec),'=amp(:,',num2str(i+1),');'))
 
-tmp=metoda_najmanjsih_kvadratov_polinom(potek',amp(:,i+1),3);
+tmp=metoda_najmanjsih_kvadratov_polinom(potek',amp(:,i+1),potenca);
 
-tmpsin=metoda_najmanjsih_kvadratov_polinom(potek',ampsin(:,i+1),3);
-tmpcos=metoda_najmanjsih_kvadratov_polinom(potek',ampcos(:,i+1),3);
+tmpsin=metoda_najmanjsih_kvadratov_polinom(potek',ampsin(:,i+1),potenca);
+tmpcos=metoda_najmanjsih_kvadratov_polinom(potek',ampcos(:,i+1),potenca);
 eval(strcat('polinom_harmonika_',num2str(i),'=tmp;'));
 eval(strcat('polinom_harmonika_sin',num2str(i),'=tmpsin;'));
 eval(strcat('polinom_harmonika_cos',num2str(i),'=tmpcos;'));
