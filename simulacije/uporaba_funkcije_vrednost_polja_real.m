@@ -1,7 +1,7 @@
 
- close all
- clear all
- 
+%  close all
+%  clear all
+%  
 
 load('X_tmp.mat');
 load('Y_tmp.mat');
@@ -13,13 +13,13 @@ Y_tmp=(round(Y_tmp.*50)/50);
 theta=linspace(-pi,pi,2048);
 r0=2.4;
 xs=0.0;
-ys=0.0;
-xd=0.00;
+ys=0.1;
+xd=0.1;
 yd=0;
 
 koliko_harmonikov=8;
-zacetek=-0.6;
-konec=0.6;
+zacetek=-0.0;
+konec=0.2;
 potek=linspace(zacetek,konec,120);
 amp=zeros(max(size(potek)),koliko_harmonikov+1);
 ampcos=amp;
