@@ -1,7 +1,7 @@
 
-%  close all
-%  clear all
-%  
+  close all
+  clear all
+  
 
 load('X_tmp.mat');
 load('Y_tmp.mat');
@@ -13,8 +13,8 @@ Y_tmp=(round(Y_tmp.*50)/50);
 theta=linspace(-pi,pi,2048);
 r0=2.4;
 xs=0.0;
-ys=0.1;
-xd=0.1;
+ys=0.0;
+xd=0.0;
 yd=0;
 
 koliko_harmonikov=8;
@@ -121,14 +121,14 @@ figure
 hold on
 stevec=1;
 for i=izrisi_harmonike
-plot(potek,amp(:,i+1),'Color',cell2mat(barve(stevec))./255)
+plot(potek*1e-3,amp(:,i+1),'Color',cell2mat(barve(stevec))./255)
 
 eval(strcat('amp_harmonik_',num2str(stevec),'=amp(:,',num2str(i+1),');'))
 
-tmp=metoda_najmanjsih_kvadratov_polinom(potek',amp(:,i+1),potenca);
+tmp=metoda_najmanjsih_kvadratov_polinom(potek'*1e-3,amp(:,i+1),potenca);
 
-tmpsin=metoda_najmanjsih_kvadratov_polinom(potek',ampsin(:,i+1),potenca);
-tmpcos=metoda_najmanjsih_kvadratov_polinom(potek',ampcos(:,i+1),potenca);
+tmpsin=metoda_najmanjsih_kvadratov_polinom(potek'*1e-3,ampsin(:,i+1),potenca);
+tmpcos=metoda_najmanjsih_kvadratov_polinom(potek'*1e-3,ampcos(:,i+1),potenca);
 eval(strcat('polinom_harmonika_',num2str(i),'=tmp;'));
 eval(strcat('polinom_harmonika_sin',num2str(i),'=tmpsin;'));
 eval(strcat('polinom_harmonika_cos',num2str(i),'=tmpcos;'));
