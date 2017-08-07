@@ -1,9 +1,12 @@
 % 3.8.2017 Mitja Alic
 % funkcija uvozi csv file in naredi fouriejevo vrsto
+% vhod je ime csv file ('kako_se_imenuje.csv'), stevilo harmonikov je na
+% koliko harmonikov zelis da jih razvrsti v fouriejevi vrsti, slike pa je
+% bit ali zelis videti slike ali ne
 % izhod je array harmonikov in enosmerne komponente element 1 je enosmerna
 % komponenta
 
-function [amps,error]= izpis_harmonikov(ime, st_harmonikov) 
+function [amps,error]= izpis_harmonikov(ime, st_harmonikov,slike) 
 
 [error]=uvoz_podatkov(ime);
 error=error*360;
@@ -11,6 +14,16 @@ error=error*360;
 clear a b
 
 amps=[c0,c];
+
+
+if slike
+    figure
+    plot(error);
+    
+    figure
+    bar(0:st_harmonikov,amps);
+end
+
 
 end
 
