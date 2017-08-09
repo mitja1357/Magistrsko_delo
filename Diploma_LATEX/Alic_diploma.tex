@@ -1207,21 +1207,58 @@ Iz prejetih signalov s funkcijo $\arctan$ lahko izra"cunam trenutno pozicijo. Po
 Na za"cetku si oglejmo prejeta signala s senzorja. V idelani monta"zi oz. vkolikor sem senzor lahko 
 
 
+\subsection{Napaka ko sta senzor in magnet na isti osi}
+
+napaka med kotom pomerjenega s senzorjem RM44 in referen"cnim enkoderjem je prikazana na sliki \ref{fig:protokol_merjeni_brez}. 
 
 
 
 
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/protokol_meritve_brez.eps} % izpis_harmonikov.m
+	\caption{Napaka pomerjenega kota pri najbolj"simonta"zi}
+	\label{fig:protokol_merjeni_brez}
+\end{figure}
+
+V napaki je najizrazitej"si "cetrti harmonik. Vi"sja frekvenca vidna v napaki je razlika ki nastane zaradi razli"cnih resolucij enkoderjev. Izhoda senzorja (signala sinus in kosinus), sta z analogno-digitalnim pretvorniko pretvorjena v digitalno obliko. AD pretvornik ima ni"zjo resolucijo kot referen"cni enkoder.
+
+S primerjavo napake pri simulacijah z realnim poljem, ko je bil senzor in magnet v idealne stanju (Slika \ref{fig:protokol_real_brez}) opazimo, da je napaka manj"sa. Napaka je manj"sa zaradi drugega na"cina zajema signalov sinus in kosinus.
+
+Napako razvijmo v Fourierovo vrsto. Amplituda posameznega harmonika je prikazana na sliki \ref{fig:amplitude_merjeni_brez}. Enosmerna komponenta je ni"c, saj se ob zagonu naprave senzora kalibrirata v enako izhodi"sce. Nara"s"canje enosmerna komponenta se bo pojavila z izmikom senzorja iz kalibrirane pozicije. S primerjavo velikosti amplitud posameznega harmonika napake pri simulacijah z uporabo realnega magnetnega polja (slika \ref{fig:amplitude_real_brez}) opazimo, da je amplituda drugega harmonika vi"sja kot amplituda drugega harmonika pri simulacijah. 
+
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/vrsta_protokola_meritve_brez.eps} % izpis_harmonikov.m 
+	\caption{Amplitude posameznega  harmonika napake pri najbolj"si monta"zi}
+	\label{fig:amplitude_merjeni_brez}
+\end{figure}
+
+
+\subsection{Napaka bri stati"cni ekscentri"cnosti v smeri x-osi}
+
+Pri simulcijah stati"cne ekscentri"cnosti se je pojavila napaka v obliki drugega harmonika. Napako pri meritvah pri"cakujem manj"so kot je bila v simulacijah. Pri"cakujem enako obliko. Napaka pri ekscentri"cnosti 0.1mm je prikazana na sliki \ref{fig:protokol_merjeni_xs_1}. Napaka je v primerjavi s simulacijami pol manj"sa (slika \ref{fig:amplitude_real_xs}). Iz poteka napake ni razvidno, povi"sanje le drugega harmonika. 
+
+Slika  \ref{fig:amplitude_merjeni__xs_1} prikazuje amplitude posameznih harmonikov v napaki. Po pri"cakovanjih sta se povi"sali enosmerna komponenta in drugi harmonik. Po nepri"cakovanem se je povi"sal tudi prvi harmonik. Med simuliranjem nisem zaznal, da bi bile napake ekscentri"cnosti odvisne od drugih ekscentri"cnosti. Amplituda prvega harmonika napake je najvi"sja. Harmoniki, vi"sji od drugega se z ekscentri"cnostjo niso spremnili.
+
+
+
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/protokol_meritve_xs_1.eps} % izpis_harmonikov.m
+	\caption{Napaka pomerjenega kota pri stati"cni ekscentri"cnosti v x-osi}
+	\label{fig:protokol_merjeni_xs_1}
+\end{figure}
 
 
 
 
-
-
-
-
-
-
-
+\begin{figure}[h!]
+	
+	\includegraphics{\dirslike/vrsta_protokola_meritve_xs_1.eps} % izpis_harmonikov.m
+	\caption{Razvoj napake v F vrsto pri stati"cni ekscentri"cnosti v x-osi}
+	\label{fig:amplitude_merjeni__xs_1}
+\end{figure}
 
 
 

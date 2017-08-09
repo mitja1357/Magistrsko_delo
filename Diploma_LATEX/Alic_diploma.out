@@ -29,7 +29,9 @@
 \BOOKMARK [1][-]{section.4.3}{Zakljucna misel po opravljenih simulacijah}{chapter.4}% 29
 \BOOKMARK [0][-]{chapter.5}{Meritve ekscentricnosti}{}% 30
 \BOOKMARK [1][-]{section.5.1}{Pomerjeno magnetno polje}{chapter.5}% 31
-\BOOKMARK [1][-]{section.Alph0.1}{Brez ekscentricnosti}{chapter.5}% 32
-\BOOKMARK [1][-]{section.Alph0.2}{Staticna ekscentricnost v x-osi}{chapter.5}% 33
-\BOOKMARK [1][-]{section.Alph0.3}{Staticna ekscentricnost v y-osi}{chapter.5}% 34
-\BOOKMARK [1][-]{section.Alph0.4}{Dinamicna ekscentricnost v x-osi}{chapter.5}% 35
+\BOOKMARK [2][-]{subsection.5.1.1}{Napaka ko sta senzor in magnet na isti osi}{section.5.1}% 32
+\BOOKMARK [2][-]{subsection.5.1.2}{Napaka bri staticni ekscentricnosti v smeri x-osi}{section.5.1}% 33
+\BOOKMARK [1][-]{section.Alph0.1}{Brez ekscentricnosti}{chapter.5}% 34
+\BOOKMARK [1][-]{section.Alph0.2}{Staticna ekscentricnost v x-osi}{chapter.5}% 35
+\BOOKMARK [1][-]{section.Alph0.3}{Staticna ekscentricnost v y-osi}{chapter.5}% 36
+\BOOKMARK [1][-]{section.Alph0.4}{Dinamicna ekscentricnost v x-osi}{chapter.5}% 37

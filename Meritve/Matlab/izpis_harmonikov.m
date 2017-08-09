@@ -6,11 +6,30 @@
 % izhod je array harmonikov in enosmerne komponente element 1 je enosmerna
 % komponenta
 
-function [amps,error]= izpis_harmonikov(ime, st_harmonikov,slike) 
+function [amps,error,napaka]= izpis_harmonikov(ime, st_harmonikov,slike, odstrani_offset,approx,c_offset) 
 
 [error]=uvoz_podatkov(ime);
 error=error*360;
+error=error-c_offset;
 [c0,a,b,c] = fourier(1:1000,error,st_harmonikov,0);
+
+
+if odstrani_offset
+    
+    error=error-c0;
+    c0=0;
+end
+
+
+
+kot=linspace(0,360,1000);
+
+napaka=0;
+for i=1:st_harmonikov
+    napaka=napaka + a(i).*cosd(i.*kot)+b(i).*sind(i.*kot);
+end
+napaka=napaka+c0;
+
 clear a b
 
 amps=[c0,c];
@@ -18,10 +37,15 @@ amps=[c0,c];
 
 if slike
     figure
-    plot(error);
-    
+    plot(kot,error,'-r');
+    if approx
+    hold on
+    plot(kot,napaka,'-b')
+    end
+    grid on
     figure
     bar(0:st_harmonikov,amps);
+    grid on
 end
 
 

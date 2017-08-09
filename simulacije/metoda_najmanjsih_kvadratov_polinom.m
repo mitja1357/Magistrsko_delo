@@ -1,4 +1,4 @@
-function[koeficienti]= metoda_najmanjsih_kvadratov_polinom(X,Y,potenca)
+function [koeficienti]= metoda_najmanjsih_kvadratov_polinom(X,Y,potenca)
 % funkcija je metoda najmanjsih kvadratov, ki aproksimira s polinomom zeljene stopnje
 % za vhodne spremenljivke vzame funkcija stolpicni matriki X kot t'cke
 % x-osi, matrika Y pa tocke y osi
@@ -25,7 +25,6 @@ A(:,i)=X.^(i-1);
 end
 
 koeficienti=A\Y;
-
 
 
 

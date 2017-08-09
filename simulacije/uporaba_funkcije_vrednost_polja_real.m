@@ -15,19 +15,19 @@ r0=2.4;
 xs=0.0;
 ys=0.0;
 xd=0.0;
-yd=0;
+yd=0.0;
 
-koliko_harmonikov=8;
-zacetek=-0.0;
-konec=0.2;
-potek=linspace(zacetek,konec,120);
+koliko_harmonikov=3;
+zacetek=0.0;
+konec=0.5;
+potek=linspace(zacetek,konec,20);
 amp=zeros(max(size(potek)),koliko_harmonikov+1);
 ampcos=amp;
 ampsin=amp;
 stevec=1;
 
 potenca=3;
-po_kateri_eks='xs';
+po_kateri_eks='xd';
 
 for i=potek
 eval(strcat(po_kateri_eks,'=',num2str(i),';'))
@@ -100,14 +100,14 @@ end;
 
 switch po_kateri_eks
     case 'xs'
-        izrisi_harmonike=[0 2];
-        legenda={'C_0','C_2'};
+        izrisi_harmonike=[0 1 2];
+        legenda={'C_0','C_1','C_2'};
     case 'ys'
         izrisi_harmonike=[0 2];
         legenda={'C_0','C_2'};
     case 'xd'
-        izrisi_harmonike=[1 2 3];
-        legenda={'C_1','C_2','C_3'};
+        izrisi_harmonike=[0 1 2 3];
+        legenda={'C_0','C_1','C_2','C_3'};
     case 'yd'
         izrisi_harmonike=[1 2 3];
         legenda={'C_1','C_2','C_3'};
