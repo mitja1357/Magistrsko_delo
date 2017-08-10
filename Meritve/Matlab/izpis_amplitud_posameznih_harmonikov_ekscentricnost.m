@@ -41,7 +41,7 @@ clear i list;
 
 for i=1:stevec-1;
 ime=strcat(folder,'\',eksc,'_',num2str(meritve(i),'%03d'),'u.csv');
-amps= izpis_harmonikov(ime, st_harmonikov,0);
+amps= izpis_harmonikov(ime, st_harmonikov,0,0,0,0);
 amplitude(i,:)=amps;
 ekscentricnost(i)=meritve(i)*1e-6;
 end

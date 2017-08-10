@@ -1216,7 +1216,7 @@ napaka med kotom pomerjenega s senzorjem RM44 in referen"cnim enkoderjem je prik
 
 \begin{figure}[h!]
 	
-	\includegraphics{\dirslike/protokol_meritve_brez.eps} % izpis_harmonikov.m
+	\includegraphics[scale=0.5]{\dirslike/protokol_meritve_brez.eps} % izpis_harmonikov.m
 	\caption{Napaka pomerjenega kota pri najbolj"simonta"zi}
 	\label{fig:protokol_merjeni_brez}
 \end{figure}
@@ -1229,13 +1229,13 @@ Napako razvijmo v Fourierovo vrsto. Amplituda posameznega harmonika je prikazana
 
 \begin{figure}[h!]
 	
-	\includegraphics{\dirslike/vrsta_protokola_meritve_brez.eps} % izpis_harmonikov.m 
+	\includegraphics[scale=0.5]{\dirslike/vrsta_protokola_meritve_brez.eps} % izpis_harmonikov.m 
 	\caption{Amplitude posameznega  harmonika napake pri najbolj"si monta"zi}
 	\label{fig:amplitude_merjeni_brez}
 \end{figure}
 
 
-\subsection{Napaka bri stati"cni ekscentri"cnosti v smeri x-osi}
+\subsection{Napaka pri stati"cni ekscentri"cnosti v smeri x-osi}
 
 Pri simulcijah stati"cne ekscentri"cnosti se je pojavila napaka v obliki drugega harmonika. Napako pri meritvah pri"cakujem manj"so kot je bila v simulacijah. Pri"cakujem enako obliko. Napaka pri ekscentri"cnosti 0.1mm je prikazana na sliki \ref{fig:protokol_merjeni_xs_1}. Napaka je v primerjavi s simulacijami pol manj"sa (slika \ref{fig:amplitude_real_xs}). Iz poteka napake ni razvidno, povi"sanje le drugega harmonika. 
 
@@ -1245,7 +1245,7 @@ Slika  \ref{fig:amplitude_merjeni__xs_1} prikazuje amplitude posameznih harmonik
 
 \begin{figure}[h!]
 	
-	\includegraphics{\dirslike/protokol_meritve_xs_1.eps} % izpis_harmonikov.m
+	\includegraphics[scale=0.5]{\dirslike/protokol_meritve_xs_1.eps} % izpis_harmonikov.m
 	\caption{Napaka pomerjenega kota pri stati"cni ekscentri"cnosti v x-osi}
 	\label{fig:protokol_merjeni_xs_1}
 \end{figure}
@@ -1255,7 +1255,7 @@ Slika  \ref{fig:amplitude_merjeni__xs_1} prikazuje amplitude posameznih harmonik
 
 \begin{figure}[h!]
 	
-	\includegraphics{\dirslike/vrsta_protokola_meritve_xs_1.eps} % izpis_harmonikov.m
+	\includegraphics[scale=0.5]{\dirslike/vrsta_protokola_meritve_xs_1.eps} % izpis_harmonikov.m
 	\caption{Razvoj napake v F vrsto pri stati"cni ekscentri"cnosti v x-osi}
 	\label{fig:amplitude_merjeni__xs_1}
 \end{figure}
@@ -1263,6 +1263,84 @@ Slika  \ref{fig:amplitude_merjeni__xs_1} prikazuje amplitude posameznih harmonik
 
 
 
+
+\subsection{Napaka pri stati"cni ekscentri"cnosti v smeri y-osi}
+
+
+
+Izmaknimo sedaj senzor v smeri y-osi. Opazi se pozitivno enosmerno komponento katero sem iz rezultatov simulacij pri"cakoval negativno (Slika \ref{fig:protokol_merjeni_ys_1}). Napaka je ve"cja(peak-peak) kot je bila napaka pri izmiku senzorja v smeri x-osi. Napaka je manj"sa od pri"cakovane napake po rezultatih  simulacij. S Fouriejevo vrsto razvijmo napako po amplitudah(Slika \ref{fig:amplitude_merjeni__ys_1}).Povi"sala sta se predvsem prvi in drugi harmonik. Opazimo da je enosmerna komponenta pozitivna, kar se ne sklada s simulacijami. Po simulacijah se meritev razlikuje tudi v tem da se je izrazio pove"cal prvi harmonik napake. Harmoniki vi"sji od tretjega se niso spremenili.
+
+
+\begin{figure}[h!]
+	
+	\includegraphics[scale=0.5]{\dirslike/protokol_meritve_ys_1.eps} % izpis_harmonikov.m
+	\caption{Napaka pomerjenega kota pri stati"cni ekscentri"cnosti v y-osi}
+	\label{fig:protokol_merjeni_ys_1}
+\end{figure}
+
+
+
+
+\begin{figure}[h!]
+	
+	\includegraphics[scale=0.5]{\dirslike/vrsta_protokola_meritve_ys_1.eps} % izpis_harmonikov.m
+	\caption{Razvoj napake v F vrsto pri stati"cni ekscentri"cnosti v y-osi}
+	\label{fig:amplitude_merjeni__ys_1}
+\end{figure}
+
+
+
+
+
+\subsection{Napaka pri premiku senzorja v smeri z-osi}
+
+V simulacijah tega dogodka nisme predvidel. Pri"cakoval bi, da se bo magnetno polje, ki ga pomerijo hallove sonde zmanj"salo. Tako bosta imela signala sinus in kosinus zmanj"sano amplitudo za enak faktor, kar na izra"cun kota ($\arctan$) ne bi imelo vpliva.
+$$\arctan \frac{k \cdot y}{k \cdot x}=\arctan \frac{y}{x}$$
+ Meritev je pokazala, da se ob premiku senzorja v z-osi pojavi napaka. Povi"sala se je amplituda prvega in tretjega harmonika.
+
+\begin{figure}[h!]
+	
+	\includegraphics[scale=0.5]{\dirslike/protokol_meritve_zs_1.eps} % izpis_harmonikov.m
+	\caption{Napaka pomerjenega kota pri stati"cni ekscentri"cnosti v z-osi}
+	\label{fig:protokol_merjeni_zs_1}
+\end{figure}
+
+
+
+
+\begin{figure}[h!]
+	
+	\includegraphics[scale=0.5]{\dirslike/vrsta_protokola_meritve_zs_1.eps} % izpis_harmonikov.m
+	\caption{Razvoj napake v F vrsto pri stati"cni ekscentri"cnosti v z-osi}
+	\label{fig:amplitude_merjeni__zs_1}
+\end{figure}
+
+
+
+
+
+
+
+\subsection{Napaka pri premiku magneta iz osi vrtenja}
+
+Naparava omogo"ca premik magneta izven osi vrtenja le v eni smeri. Meritev je zato narejena le za en primer. Napaka je pomerjena pri premiku 125 $\mathrm{\mu m}$(Slika \ref{fig:protokol_merjeni__xd_1}). Opazi se, da se je pojavila napaka v obliki prvega harmonika. Z DFT-jem razvijemo napako na posamezne amplitude (Slika \ref{fig:amplitude_merjeni__xd_1}). Velikosti amplitud poka"zejo povi"sanje ammplitude prvega harmonika kar je bilo pri"cakovati. Spremenila se je tudi enosmerna komponeta napake.
+
+\begin{figure}[h!]
+	
+	\includegraphics[scale=0.5]{\dirslike/protokol_meritve_xd_125.eps} % izpis_harmonikov.m
+	\caption{Napaka pomerjenega kota pri dinami"cni ekscentri"cnosti 125u}
+	\label{fig:protokol_merjeni_xd_1}
+\end{figure}
+
+
+
+
+\begin{figure}[h!]
+	
+	\includegraphics[scale=0.5]{\dirslike/vrsta_protokola_meritve_xd_125.eps} % izpis_harmonikov.m
+	\caption{Razvoj napake v F vrsto pri dinami"cni ekscentri"cnosti 125u}
+	\label{fig:amplitude_merjeni__xd_1}
+\end{figure}
 
 
 
