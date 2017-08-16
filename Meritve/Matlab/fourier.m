@@ -34,7 +34,7 @@
 % y = f(t);                                                                                                              % y-os --> vzorèenje testnega signala 
 % h = 20;
 % risi = 1;
-% [f,c0,c,fi,THD] = fourier(t,y,h,risi);
+% [c0,a,b,c,fi] = fourier(t,y,h,risi);
 
 %%
 function varargout = fourier(t,y,h,risi)
