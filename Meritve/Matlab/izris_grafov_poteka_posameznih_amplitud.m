@@ -1,9 +1,9 @@
  
 
 
-folder='2017_08_14';
+folder='2017_09_27';
 eksc='xs';
-st_harmonikov=3;
+st_harmonikov=2;
 periode=1;
 [amplitude,ekscentricnost]=izpis_amplitud_posameznih_harmonikov_ekscentricnost(folder,eksc,st_harmonikov*periode);
 

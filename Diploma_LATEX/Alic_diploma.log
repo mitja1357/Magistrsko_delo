@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.7.26)  10 AUG 2017 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.7.26)  27 SEP 2017 18:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -633,12 +633,6 @@ LaTeX Warning: Label `eq:dinamicna_ekscentricnost_popravljena' multiply defined
 
 LaTeX Warning: Label `fig:subfig1.a.4' multiply defined.
 
-
-LaTeX Warning: Label `fig:protokol_merjeni_zs_1' multiply defined.
-
-
-LaTeX Warning: Label `fig:amplitude_merjeni__zs_1' multiply defined.
-
 )
 \openout1 = `Alic_diploma.aux'.
 
@@ -815,7 +809,7 @@ converted-to.pdf ./Slike/B1B2_brez_eks.eps>
 (epstopdf)             \includegraphics on input line 378.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/B1B2_brez_eks-eps-converted-to.pdf, id=220, 420.57124pt x 316.18124pt>
+<./Slike/B1B2_brez_eks-eps-converted-to.pdf, id=224, 420.57124pt x 316.18124pt>
 File: ./Slike/B1B2_brez_eks-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/B1B2_brez_eks-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/B1B2_brez_eks-eps-converted-to.pdf used on inp
@@ -882,7 +876,7 @@ onverted-to.pdf ./Slike/B1B2_din_eks.eps>
 (epstopdf)             \includegraphics on input line 498.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/B1B2_din_eks-eps-converted-to.pdf, id=256, 420.57124pt x 316.18124pt>
+<./Slike/B1B2_din_eks-eps-converted-to.pdf, id=260, 420.57124pt x 316.18124pt>
 File: ./Slike/B1B2_din_eks-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/B1B2_din_eks-eps-converted-to.pdf>
@@ -940,7 +934,7 @@ onverted-to.pdf ./Slike/B1B2_sta_eks.eps>
 (epstopdf)             \includegraphics on input line 604.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/B1B2_sta_eks-eps-converted-to.pdf, id=264, 420.57124pt x 316.18124pt>
+<./Slike/B1B2_sta_eks-eps-converted-to.pdf, id=268, 420.57124pt x 316.18124pt>
 File: ./Slike/B1B2_sta_eks-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/B1B2_sta_eks-eps-converted-to.pdf>
@@ -1132,7 +1126,7 @@ f>
 (epstopdf)             \includegraphics on input line 761.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_xs_1-eps-converted-to.pdf, id=338, 420.57124pt x 316.18124pt
+<./Slike//protokol_xs_1-eps-converted-to.pdf, id=342, 420.57124pt x 316.18124pt
 >
 File: ./Slike//protokol_xs_1-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike//protokol_xs_1-eps-converted-to.pdf>
@@ -1156,7 +1150,7 @@ s_1-eps-converted-to.pdf ./Slike//vrsta_protokola_xs_1.eps>
 (epstopdf)             \includegraphics on input line 771.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_xs_1-eps-converted-to.pdf, id=353, 420.57124pt x 316.
+<./Slike//vrsta_protokola_xs_1-eps-converted-to.pdf, id=357, 420.57124pt x 316.
 18124pt>
 File: ./Slike//vrsta_protokola_xs_1-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1199,7 +1193,7 @@ f>
 (epstopdf)             \includegraphics on input line 790.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_ys_1-eps-converted-to.pdf, id=369, 420.57124pt x 316.18124pt
+<./Slike//protokol_ys_1-eps-converted-to.pdf, id=373, 420.57124pt x 316.18124pt
 >
 File: ./Slike//protokol_ys_1-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike//protokol_ys_1-eps-converted-to.pdf>
@@ -1218,7 +1212,7 @@ s_1-eps-converted-to.pdf ./Slike//vrsta_protokola_ys_1.eps>
 (epstopdf)             \includegraphics on input line 799.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_ys_1-eps-converted-to.pdf, id=370, 420.57124pt x 316.
+<./Slike//vrsta_protokola_ys_1-eps-converted-to.pdf, id=374, 420.57124pt x 316.
 18124pt>
 File: ./Slike//vrsta_protokola_ys_1-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1251,7 +1245,7 @@ f>
 (epstopdf)             \includegraphics on input line 812.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_xd_1-eps-converted-to.pdf, id=372, 420.57124pt x 316.18124pt
+<./Slike//protokol_xd_1-eps-converted-to.pdf, id=376, 420.57124pt x 316.18124pt
 >
 File: ./Slike//protokol_xd_1-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike//protokol_xd_1-eps-converted-to.pdf>
@@ -1274,7 +1268,7 @@ d_1-eps-converted-to.pdf ./Slike//vrsta_protokola_xd_1.eps>
 (epstopdf)             \includegraphics on input line 819.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_xd_1-eps-converted-to.pdf, id=373, 420.57124pt x 316.
+<./Slike//vrsta_protokola_xd_1-eps-converted-to.pdf, id=377, 420.57124pt x 316.
 18124pt>
 File: ./Slike//vrsta_protokola_xd_1-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -1337,7 +1331,7 @@ armonikov_xs-eps-converted-to.pdf ./Slike//potek_amplitude_harmonikov_xs.eps>
 (epstopdf)             \includegraphics on input line 856.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//potek_amplitude_harmonikov_xs-eps-converted-to.pdf, id=404, 420.57124
+<./Slike//potek_amplitude_harmonikov_xs-eps-converted-to.pdf, id=408, 420.57124
 pt x 316.18124pt>
 File: ./Slike//potek_amplitude_harmonikov_xs-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -1394,7 +1388,7 @@ armonikov_ys-eps-converted-to.pdf ./Slike//potek_amplitude_harmonikov_ys.eps>
 (epstopdf)             \includegraphics on input line 886.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//potek_amplitude_harmonikov_ys-eps-converted-to.pdf, id=428, 420.57124
+<./Slike//potek_amplitude_harmonikov_ys-eps-converted-to.pdf, id=432, 420.57124
 pt x 316.18124pt>
 File: ./Slike//potek_amplitude_harmonikov_ys-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -1458,7 +1452,7 @@ armonikov_xd-eps-converted-to.pdf ./Slike//potek_amplitude_harmonikov_xd.eps>
 (epstopdf)             \includegraphics on input line 918.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//potek_amplitude_harmonikov_xd-eps-converted-to.pdf, id=460, 420.57124
+<./Slike//potek_amplitude_harmonikov_xd-eps-converted-to.pdf, id=464, 420.57124
 pt x 316.18124pt>
 File: ./Slike//potek_amplitude_harmonikov_xd-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -1513,7 +1507,7 @@ z-eps-converted-to.pdf ./Slike//protokol_real_brez.eps>
 (epstopdf)             \includegraphics on input line 951.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_real_brez-eps-converted-to.pdf, id=472, 420.57124pt x 316.18
+<./Slike//protokol_real_brez-eps-converted-to.pdf, id=476, 420.57124pt x 316.18
 124pt>
 File: ./Slike//protokol_real_brez-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike//protokol_real_brez-eps-converted-to.pdf>
@@ -1546,7 +1540,7 @@ eal_brez-eps-converted-to.pdf ./Slike//vrsta_protokola_real_brez.eps>
 (epstopdf)             \includegraphics on input line 961.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_real_brez-eps-converted-to.pdf, id=481, 420.57124pt x
+<./Slike//vrsta_protokola_real_brez-eps-converted-to.pdf, id=485, 420.57124pt x
  316.18124pt>
 File: ./Slike//vrsta_protokola_real_brez-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1579,7 +1573,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 974.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_real_xs_1-eps-converted-to.pdf, id=483, 420.57124pt x 316.18
+<./Slike//protokol_real_xs_1-eps-converted-to.pdf, id=487, 420.57124pt x 316.18
 124pt>
 File: ./Slike//protokol_real_xs_1-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike//protokol_real_xs_1-eps-converted-to.pdf>
@@ -1613,7 +1607,7 @@ eal_xs_1-eps-converted-to.pdf ./Slike//vrsta_protokola_real_xs_1.eps>
 (epstopdf)             \includegraphics on input line 985.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_real_xs_1-eps-converted-to.pdf, id=497, 420.57124pt x
+<./Slike//vrsta_protokola_real_xs_1-eps-converted-to.pdf, id=501, 420.57124pt x
  316.18124pt>
 File: ./Slike//vrsta_protokola_real_xs_1-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1657,7 +1651,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 1001.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_real_ys_1-eps-converted-to.pdf, id=512, 420.57124pt x 316.18
+<./Slike//protokol_real_ys_1-eps-converted-to.pdf, id=516, 420.57124pt x 316.18
 124pt>
 File: ./Slike//protokol_real_ys_1-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike//protokol_real_ys_1-eps-converted-to.pdf>
@@ -1676,7 +1670,7 @@ eal_ys_1-eps-converted-to.pdf ./Slike//vrsta_protokola_real_ys_1.eps>
 (epstopdf)             \includegraphics on input line 1011.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_real_ys_1-eps-converted-to.pdf, id=513, 420.57124pt x
+<./Slike//vrsta_protokola_real_ys_1-eps-converted-to.pdf, id=517, 420.57124pt x
  316.18124pt>
 File: ./Slike//vrsta_protokola_real_ys_1-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1709,7 +1703,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 1022.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_real_xd_1-eps-converted-to.pdf, id=516, 420.57124pt x 316.18
+<./Slike//protokol_real_xd_1-eps-converted-to.pdf, id=520, 420.57124pt x 316.18
 124pt>
 File: ./Slike//protokol_real_xd_1-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike//protokol_real_xd_1-eps-converted-to.pdf>
@@ -1742,7 +1736,7 @@ eal_xd_1-eps-converted-to.pdf ./Slike//vrsta_protokola_real_xd_1.eps>
 (epstopdf)             \includegraphics on input line 1030.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_real_xd_1-eps-converted-to.pdf, id=531, 420.57124pt x
+<./Slike//vrsta_protokola_real_xd_1-eps-converted-to.pdf, id=535, 420.57124pt x
  316.18124pt>
 File: ./Slike//vrsta_protokola_real_xd_1-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1778,7 +1772,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 1042.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_real_yd_1-eps-converted-to.pdf, id=533, 420.57124pt x 316.18
+<./Slike//protokol_real_yd_1-eps-converted-to.pdf, id=537, 420.57124pt x 316.18
 124pt>
 File: ./Slike//protokol_real_yd_1-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike//protokol_real_yd_1-eps-converted-to.pdf>
@@ -1801,7 +1795,7 @@ eal_yd_1-eps-converted-to.pdf ./Slike//vrsta_protokola_real_yd_1.eps>
 (epstopdf)             \includegraphics on input line 1050.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_real_yd_1-eps-converted-to.pdf, id=534, 420.57124pt x
+<./Slike//vrsta_protokola_real_yd_1-eps-converted-to.pdf, id=538, 420.57124pt x
  316.18124pt>
 File: ./Slike//vrsta_protokola_real_yd_1-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -1836,9 +1830,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1063.
+(babel)             in language  on input line 1064.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1063.
+(babel)             in language  on input line 1064.
 [29 <./Slike//protokol_real_xd_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike//potek_amplitude_harmonikov_xs_rea
 l.eps>
@@ -1851,20 +1845,20 @@ l-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=./Slike//potek_amplitude_h
 armonikov_xs_real-eps-converted-to.pdf ./Slike//potek_amplitude_harmonikov_xs_r
 eal.eps>
-(epstopdf)             \includegraphics on input line 1070.
+(epstopdf)             \includegraphics on input line 1071.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//potek_amplitude_harmonikov_xs_real-eps-converted-to.pdf, id=548, 420.
+<./Slike//potek_amplitude_harmonikov_xs_real-eps-converted-to.pdf, id=552, 420.
 57124pt x 316.18124pt>
 File: ./Slike//potek_amplitude_harmonikov_xs_real-eps-converted-to.pdf Graphic 
 file (type pdf)
 
 <use ./Slike//potek_amplitude_harmonikov_xs_real-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//potek_amplitude_harmonikov_xs_real-eps-conver
-ted-to.pdf used on input line 1070.
+ted-to.pdf used on input line 1071.
 (pdftex.def)             Requested size: 420.57022pt x 316.18047pt.
 
-Overfull \hbox (8.00526pt too wide) in paragraph at lines 1070--1071
+Overfull \hbox (8.00526pt too wide) in paragraph at lines 1071--1072
 [][] 
  []
 
@@ -1880,9 +1874,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1076.
+(babel)             in language  on input line 1077.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1076.
+(babel)             in language  on input line 1077.
 [30 <./Slike//vrsta_protokola_real_xd_1-eps-converted-to.pdf> <./Slike//protoko
 l_real_yd_1-eps-converted-to.pdf>]
 
@@ -1897,28 +1891,28 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1076.
+(babel)             in language  on input line 1077.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1076.
+(babel)             in language  on input line 1077.
 [31 <./Slike//vrsta_protokola_real_yd_1-eps-converted-to.pdf> <./Slike//potek_a
 mplitude_harmonikov_xs_real-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1089.
+(babel)             in language  on input line 1090.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1089.
+(hyperref)                removing `\textasciicaron' on input line 1090.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1089.
+(hyperref)                removing `\textasciicaron' on input line 1090.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1089.
+(hyperref)                removing `\textasciicaron' on input line 1090.
 
 Package epstopdf Info: Source file: <./Slike//potek_amplitude_harmonikov_ys_rea
 l.eps>
@@ -1931,20 +1925,20 @@ l-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=./Slike//potek_amplitude_h
 armonikov_ys_real-eps-converted-to.pdf ./Slike//potek_amplitude_harmonikov_ys_r
 eal.eps>
-(epstopdf)             \includegraphics on input line 1098.
+(epstopdf)             \includegraphics on input line 1099.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//potek_amplitude_harmonikov_ys_real-eps-converted-to.pdf, id=577, 420.
+<./Slike//potek_amplitude_harmonikov_ys_real-eps-converted-to.pdf, id=581, 420.
 57124pt x 316.18124pt>
 File: ./Slike//potek_amplitude_harmonikov_ys_real-eps-converted-to.pdf Graphic 
 file (type pdf)
 
 <use ./Slike//potek_amplitude_harmonikov_ys_real-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//potek_amplitude_harmonikov_ys_real-eps-conver
-ted-to.pdf used on input line 1098.
+ted-to.pdf used on input line 1099.
 (pdftex.def)             Requested size: 420.57022pt x 316.18047pt.
 
-Overfull \hbox (8.00526pt too wide) in paragraph at lines 1098--1099
+Overfull \hbox (8.00526pt too wide) in paragraph at lines 1099--1100
 [][] 
  []
 
@@ -1952,21 +1946,21 @@ Overfull \hbox (8.00526pt too wide) in paragraph at lines 1098--1099
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1124.
+(babel)             in language  on input line 1125.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1124.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1124.
+(hyperref)                removing `\textasciicaron' on input line 1125.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1124.
+(hyperref)                removing `\textasciicaron' on input line 1125.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1125.
 
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -1974,9 +1968,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1126.
+(babel)             in language  on input line 1127.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1126.
+(babel)             in language  on input line 1127.
 [32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1986,9 +1980,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1132.
+(babel)             in language  on input line 1133.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1132.
+(babel)             in language  on input line 1133.
 [33 <./Slike//potek_amplitude_harmonikov_ys_real-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike//potek_amplitude_harmonikov_xd_rea
 l.eps>
@@ -2001,39 +1995,39 @@ l-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=./Slike//potek_amplitude_h
 armonikov_xd_real-eps-converted-to.pdf ./Slike//potek_amplitude_harmonikov_xd_r
 eal.eps>
-(epstopdf)             \includegraphics on input line 1151.
+(epstopdf)             \includegraphics on input line 1152.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//potek_amplitude_harmonikov_xd_real-eps-converted-to.pdf, id=599, 420.
+<./Slike//potek_amplitude_harmonikov_xd_real-eps-converted-to.pdf, id=603, 420.
 57124pt x 316.18124pt>
 File: ./Slike//potek_amplitude_harmonikov_xd_real-eps-converted-to.pdf Graphic 
 file (type pdf)
 
 <use ./Slike//potek_amplitude_harmonikov_xd_real-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//potek_amplitude_harmonikov_xd_real-eps-conver
-ted-to.pdf used on input line 1151.
+ted-to.pdf used on input line 1152.
 (pdftex.def)             Requested size: 420.57022pt x 316.18047pt.
 
-Overfull \hbox (8.00526pt too wide) in paragraph at lines 1151--1152
+Overfull \hbox (8.00526pt too wide) in paragraph at lines 1152--1153
 [][] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1157.
+(babel)             in language  on input line 1158.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1157.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1157.
+(hyperref)                removing `\textasciicaron' on input line 1158.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1157.
+(hyperref)                removing `\textasciicaron' on input line 1158.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1158.
 
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -2041,9 +2035,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1161.
+(babel)             in language  on input line 1162.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1161.
+(babel)             in language  on input line 1162.
 [34 <./Slike//potek_amplitude_harmonikov_xd_real-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike//potek_amplitude_harmonikov_yd_rea
 l.eps>
@@ -2056,29 +2050,29 @@ l-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=./Slike//potek_amplitude_h
 armonikov_yd_real-eps-converted-to.pdf ./Slike//potek_amplitude_harmonikov_yd_r
 eal.eps>
-(epstopdf)             \includegraphics on input line 1165.
+(epstopdf)             \includegraphics on input line 1166.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//potek_amplitude_harmonikov_yd_real-eps-converted-to.pdf, id=614, 420.
+<./Slike//potek_amplitude_harmonikov_yd_real-eps-converted-to.pdf, id=618, 420.
 57124pt x 316.18124pt>
 File: ./Slike//potek_amplitude_harmonikov_yd_real-eps-converted-to.pdf Graphic 
 file (type pdf)
 
 <use ./Slike//potek_amplitude_harmonikov_yd_real-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//potek_amplitude_harmonikov_yd_real-eps-conver
-ted-to.pdf used on input line 1165.
+ted-to.pdf used on input line 1166.
 (pdftex.def)             Requested size: 420.57022pt x 316.18047pt.
 
-Overfull \hbox (8.00526pt too wide) in paragraph at lines 1165--1166
+Overfull \hbox (8.00526pt too wide) in paragraph at lines 1166--1167
 [][] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1191.
+(babel)             in language  on input line 1192.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1191.
+(hyperref)                removing `\textasciicaron' on input line 1192.
 
 
 Underfull \vbox (badness 5345) has occurred while \output is active []
@@ -2089,31 +2083,31 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1193.
+(babel)             in language  on input line 1194.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1193.
+(babel)             in language  on input line 1194.
 [35 <./Slike//potek_amplitude_harmonikov_yd_real-eps-converted-to.pdf>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1196.
+(babel)             in language  on input line 1197.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1196.
+(babel)             in language  on input line 1197.
 [36]
   5.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1196.
+(babel)             in language  on input line 1197.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1196.
+(hyperref)                removing `\textasciicaron' on input line 1197.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1205.
+(babel)             in language  on input line 1206.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1210.
+(babel)             in language  on input line 1211.
 Package epstopdf Info: Source file: <./Slike//protokol_meritve_brez.eps>
 (epstopdf)                    date: 2017-08-10 10:52:13
 (epstopdf)                    size: 16428 bytes
@@ -2123,25 +2117,25 @@ ed-to.pdf>
 (epstopdf)                    size: 10293 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Slike//protokol_meritve_
 brez-eps-converted-to.pdf ./Slike//protokol_meritve_brez.eps>
-(epstopdf)             \includegraphics on input line 1219.
+(epstopdf)             \includegraphics on input line 1220.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_meritve_brez-eps-converted-to.pdf, id=632, 420.57124pt x 316
+<./Slike//protokol_meritve_brez-eps-converted-to.pdf, id=636, 420.57124pt x 316
 .18124pt>
 File: ./Slike//protokol_meritve_brez-eps-converted-to.pdf Graphic file (type pd
 f)
  <use ./Slike//protokol_meritve_brez-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//protokol_meritve_brez-eps-converted-to.pdf us
-ed on input line 1219.
+ed on input line 1220.
 (pdftex.def)             Requested size: 210.28511pt x 158.09023pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1226.
+(babel)             in language  on input line 1227.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1226.
+(babel)             in language  on input line 1227.
 [37
 
 ]
@@ -2155,36 +2149,36 @@ converted-to.pdf>
 (epstopdf)                    size: 5498 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Slike//vrsta_protokola_m
 eritve_brez-eps-converted-to.pdf ./Slike//vrsta_protokola_meritve_brez.eps>
-(epstopdf)             \includegraphics on input line 1232.
+(epstopdf)             \includegraphics on input line 1233.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_meritve_brez-eps-converted-to.pdf, id=642, 420.57124p
+<./Slike//vrsta_protokola_meritve_brez-eps-converted-to.pdf, id=646, 420.57124p
 t x 316.18124pt>
 File: ./Slike//vrsta_protokola_meritve_brez-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use ./Slike//vrsta_protokola_meritve_brez-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//vrsta_protokola_meritve_brez-eps-converted-to
-.pdf used on input line 1232.
+.pdf used on input line 1233.
 (pdftex.def)             Requested size: 210.28511pt x 158.09023pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1238.
+(babel)             in language  on input line 1239.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1238.
+(hyperref)                removing `\textasciicaron' on input line 1239.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1238.
+(hyperref)                removing `\textasciicaron' on input line 1239.
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 1242--1243
+Underfull \hbox (badness 1448) in paragraph at lines 1243--1244
 []\OT1/cmr/m/n/12 Slika []5.4[] pri-ka-zuje am-pli-tude po-sa-me-znih har-mo-ni
 -kov v na-paki. Po
  []
@@ -2198,9 +2192,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1243.
+(babel)             in language  on input line 1244.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1243.
+(babel)             in language  on input line 1244.
 [38 <./Slike//protokol_meritve_brez-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike//protokol_meritve_xs_1.eps>
 (epstopdf)                    date: 2017-08-09 15:22:58
@@ -2211,16 +2205,16 @@ ed-to.pdf>
 (epstopdf)                    size: 10296 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Slike//protokol_meritve_
 xs_1-eps-converted-to.pdf ./Slike//protokol_meritve_xs_1.eps>
-(epstopdf)             \includegraphics on input line 1248.
+(epstopdf)             \includegraphics on input line 1249.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_meritve_xs_1-eps-converted-to.pdf, id=658, 420.57124pt x 316
+<./Slike//protokol_meritve_xs_1-eps-converted-to.pdf, id=662, 420.57124pt x 316
 .18124pt>
 File: ./Slike//protokol_meritve_xs_1-eps-converted-to.pdf Graphic file (type pd
 f)
  <use ./Slike//protokol_meritve_xs_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//protokol_meritve_xs_1-eps-converted-to.pdf us
-ed on input line 1248.
+ed on input line 1249.
 (pdftex.def)             Requested size: 210.28511pt x 158.09023pt.
 Package epstopdf Info: Source file: <./Slike//vrsta_protokola_meritve_xs_1.eps>
 
@@ -2232,33 +2226,33 @@ converted-to.pdf>
 (epstopdf)                    size: 5377 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Slike//vrsta_protokola_m
 eritve_xs_1-eps-converted-to.pdf ./Slike//vrsta_protokola_meritve_xs_1.eps>
-(epstopdf)             \includegraphics on input line 1258.
+(epstopdf)             \includegraphics on input line 1259.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_meritve_xs_1-eps-converted-to.pdf, id=659, 421.575pt 
+<./Slike//vrsta_protokola_meritve_xs_1-eps-converted-to.pdf, id=663, 421.575pt 
 x 316.18124pt>
 File: ./Slike//vrsta_protokola_meritve_xs_1-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use ./Slike//vrsta_protokola_meritve_xs_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//vrsta_protokola_meritve_xs_1-eps-converted-to
-.pdf used on input line 1258.
+.pdf used on input line 1259.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1267.
+(babel)             in language  on input line 1268.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1267.
+(hyperref)                removing `\textasciicaron' on input line 1268.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1267.
+(hyperref)                removing `\textasciicaron' on input line 1268.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2269,9 +2263,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1272.
+(babel)             in language  on input line 1273.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1272.
+(babel)             in language  on input line 1273.
 [39 <./Slike//vrsta_protokola_meritve_brez-eps-converted-to.pdf> <./Slike//prot
 okol_meritve_xs_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike//protokol_meritve_ys_1.eps>
@@ -2283,16 +2277,16 @@ ed-to.pdf>
 (epstopdf)                    size: 9833 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Slike//protokol_meritve_
 ys_1-eps-converted-to.pdf ./Slike//protokol_meritve_ys_1.eps>
-(epstopdf)             \includegraphics on input line 1276.
+(epstopdf)             \includegraphics on input line 1277.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_meritve_ys_1-eps-converted-to.pdf, id=680, 420.57124pt x 316
+<./Slike//protokol_meritve_ys_1-eps-converted-to.pdf, id=684, 420.57124pt x 316
 .18124pt>
 File: ./Slike//protokol_meritve_ys_1-eps-converted-to.pdf Graphic file (type pd
 f)
  <use ./Slike//protokol_meritve_ys_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//protokol_meritve_ys_1-eps-converted-to.pdf us
-ed on input line 1276.
+ed on input line 1277.
 (pdftex.def)             Requested size: 210.28511pt x 158.09023pt.
 Package epstopdf Info: Source file: <./Slike//vrsta_protokola_meritve_ys_1.eps>
 
@@ -2304,33 +2298,33 @@ converted-to.pdf>
 (epstopdf)                    size: 5376 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Slike//vrsta_protokola_m
 eritve_ys_1-eps-converted-to.pdf ./Slike//vrsta_protokola_meritve_ys_1.eps>
-(epstopdf)             \includegraphics on input line 1286.
+(epstopdf)             \includegraphics on input line 1287.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_meritve_ys_1-eps-converted-to.pdf, id=681, 420.57124p
+<./Slike//vrsta_protokola_meritve_ys_1-eps-converted-to.pdf, id=685, 420.57124p
 t x 316.18124pt>
 File: ./Slike//vrsta_protokola_meritve_ys_1-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use ./Slike//vrsta_protokola_meritve_ys_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//vrsta_protokola_meritve_ys_1-eps-converted-to
-.pdf used on input line 1286.
+.pdf used on input line 1287.
 (pdftex.def)             Requested size: 210.28511pt x 158.09023pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1295.
+(babel)             in language  on input line 1296.
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1298.
+(babel)             in language  on input line 1299.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1298.
+(babel)             in language  on input line 1299.
 [40 <./Slike//vrsta_protokola_meritve_xs_1-eps-converted-to.pdf> <./Slike//prot
 okol_meritve_ys_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike//protokol_meritve_zs_1.eps>
@@ -2342,16 +2336,16 @@ ed-to.pdf>
 (epstopdf)                    size: 10273 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Slike//protokol_meritve_
 zs_1-eps-converted-to.pdf ./Slike//protokol_meritve_zs_1.eps>
-(epstopdf)             \includegraphics on input line 1303.
+(epstopdf)             \includegraphics on input line 1304.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_meritve_zs_1-eps-converted-to.pdf, id=699, 421.575pt x 316.1
+<./Slike//protokol_meritve_zs_1-eps-converted-to.pdf, id=703, 421.575pt x 316.1
 8124pt>
 File: ./Slike//protokol_meritve_zs_1-eps-converted-to.pdf Graphic file (type pd
 f)
  <use ./Slike//protokol_meritve_zs_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//protokol_meritve_zs_1-eps-converted-to.pdf us
-ed on input line 1303.
+ed on input line 1304.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 Package epstopdf Info: Source file: <./Slike//vrsta_protokola_meritve_zs_1.eps>
 
@@ -2363,31 +2357,27 @@ converted-to.pdf>
 (epstopdf)                    size: 5503 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Slike//vrsta_protokola_m
 eritve_zs_1-eps-converted-to.pdf ./Slike//vrsta_protokola_meritve_zs_1.eps>
-(epstopdf)             \includegraphics on input line 1313.
+(epstopdf)             \includegraphics on input line 1314.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_meritve_zs_1-eps-converted-to.pdf, id=700, 421.575pt 
+<./Slike//vrsta_protokola_meritve_zs_1-eps-converted-to.pdf, id=704, 421.575pt 
 x 316.18124pt>
 File: ./Slike//vrsta_protokola_meritve_zs_1-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use ./Slike//vrsta_protokola_meritve_zs_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//vrsta_protokola_meritve_zs_1-eps-converted-to
-.pdf used on input line 1313.
+.pdf used on input line 1314.
 (pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1324.
+(babel)             in language  on input line 1325.
 
 LaTeX Warning: Reference `fig:protokol_merjeni__xd_1' on page 41 undefined on i
-nput line 1326.
-
-
-LaTeX Warning: Reference `fig:amplitude_merjeni__xd_1' on page 41 undefined on 
-input line 1326.
+nput line 1327.
 
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -2395,9 +2385,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1327.
+(babel)             in language  on input line 1328.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1327.
+(babel)             in language  on input line 1328.
 [41 <./Slike//vrsta_protokola_meritve_ys_1-eps-converted-to.pdf> <./Slike//prot
 okol_meritve_zs_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike//protokol_meritve_xd_125.eps>
@@ -2409,16 +2399,16 @@ rted-to.pdf>
 (epstopdf)                    size: 10280 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Slike//protokol_meritve_
 xd_125-eps-converted-to.pdf ./Slike//protokol_meritve_xd_125.eps>
-(epstopdf)             \includegraphics on input line 1330.
+(epstopdf)             \includegraphics on input line 1331.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//protokol_meritve_xd_125-eps-converted-to.pdf, id=717, 420.57124pt x 3
+<./Slike//protokol_meritve_xd_125-eps-converted-to.pdf, id=722, 420.57124pt x 3
 16.18124pt>
 File: ./Slike//protokol_meritve_xd_125-eps-converted-to.pdf Graphic file (type 
 pdf)
  <use ./Slike//protokol_meritve_xd_125-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//protokol_meritve_xd_125-eps-converted-to.pdf 
-used on input line 1330.
+used on input line 1331.
 (pdftex.def)             Requested size: 210.28511pt x 158.09023pt.
 Package epstopdf Info: Source file: <./Slike//vrsta_protokola_meritve_xd_125.ep
 s>
@@ -2431,73 +2421,115 @@ s-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=./Slike//vrsta_protokola_m
 eritve_xd_125-eps-converted-to.pdf ./Slike//vrsta_protokola_meritve_xd_125.eps>
 
-(epstopdf)             \includegraphics on input line 1340.
+(epstopdf)             \includegraphics on input line 1341.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike//vrsta_protokola_meritve_xd_125-eps-converted-to.pdf, id=718, 420.5712
+<./Slike//vrsta_protokola_meritve_xd_125-eps-converted-to.pdf, id=723, 420.5712
 4pt x 316.18124pt>
 File: ./Slike//vrsta_protokola_meritve_xd_125-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use ./Slike//vrsta_protokola_meritve_xd_125-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike//vrsta_protokola_meritve_xd_125-eps-converted-
-to.pdf used on input line 1340.
+to.pdf used on input line 1341.
 (pdftex.def)             Requested size: 210.28511pt x 158.09023pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 1346.
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1346.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1346.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1346.
+
+
+Underfull \vbox (badness 5939) has occurred while \output is active []
+
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1347.
+(babel)             in language  on input line 1349.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1347.
+(babel)             in language  on input line 1349.
 [42 <./Slike//vrsta_protokola_meritve_zs_1-eps-converted-to.pdf> <./Slike//prot
 okol_meritve_xd_125-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Slike//potek_amp_merjenih_xs.eps>
+(epstopdf)                    date: 2017-09-27 17:35:23
+(epstopdf)                    size: 11029 bytes
+(epstopdf)             Output file: <./Slike//potek_amp_merjenih_xs-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2017-09-27 17:50:33
+(epstopdf)                    size: 5952 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Slike//potek_amp_merjeni
+h_xs-eps-converted-to.pdf ./Slike//potek_amp_merjenih_xs.eps>
+(epstopdf)             \includegraphics on input line 1353.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike//potek_amp_merjenih_xs-eps-converted-to.pdf, id=745, 420.57124pt x 316
+.18124pt>
+File: ./Slike//potek_amp_merjenih_xs-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use ./Slike//potek_amp_merjenih_xs-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike//potek_amp_merjenih_xs-eps-converted-to.pdf us
+ed on input line 1353.
+(pdftex.def)             Requested size: 210.28511pt x 158.09023pt.
+
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1347.
+(babel)             in language  on input line 1364.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1347.
-[43 <./Slike//vrsta_protokola_meritve_xd_125-eps-converted-to.pdf>]
+(babel)             in language  on input line 1364.
+[43 <./Slike//vrsta_protokola_meritve_xd_125-eps-converted-to.pdf> <./Slike//po
+tek_amp_merjenih_xs-eps-converted-to.pdf>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1347.
+(babel)             in language  on input line 1364.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1347.
-[44
+(babel)             in language  on input line 1364.
+[44]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 1384.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1384.
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 1393.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 1393.
+[45
 
 ]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1364.
+(babel)             in language  on input line 1417.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1364.
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1373.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1373.
-[45]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1397.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1397.
+(hyperref)                removing `\textasciicaron' on input line 1417.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2508,17 +2540,17 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1430.
+(babel)             in language  on input line 1450.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1430.
+(babel)             in language  on input line 1450.
 [46]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1434.
+(babel)             in language  on input line 1454.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1434.
+(hyperref)                removing `\textasciicaron' on input line 1454.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2529,22 +2561,22 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1474.
+(babel)             in language  on input line 1494.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1474.
+(babel)             in language  on input line 1494.
 [47]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1486.
+(babel)             in language  on input line 1506.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1486.
+(hyperref)                removing `\textasciicaron' on input line 1506.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1486.
+(hyperref)                removing `\textasciicaron' on input line 1506.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2555,27 +2587,27 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1525.
+(babel)             in language  on input line 1545.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1525.
+(babel)             in language  on input line 1545.
 [48]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1574.
+(babel)             in language  on input line 1594.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1574.
+(babel)             in language  on input line 1594.
 [49]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1574.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1574.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1594.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1594.
  (./Alic_diploma.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1574.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1574.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1594.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1594.
 
 Package rerunfilecheck Info: File `Alic_diploma.out' has not changed.
-(rerunfilecheck)             Checksum: 2186431C136132615608B2670042A2FC;3573.
+(rerunfilecheck)             Checksum: 3DC3557CE6FF879C7E9C581CD8F11EA0;3678.
 
 
 LaTeX Warning: There were undefined references.
@@ -2583,13 +2615,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1574.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1594.
  ) 
 Here is how much of TeX's memory you used:
- 18203 strings out of 493013
- 343849 string characters out of 6136993
- 411076 words of memory out of 5000000
- 21195 multiletter control sequences out of 15000+600000
+ 18213 strings out of 493013
+ 344189 string characters out of 6136993
+ 411461 words of memory out of 5000000
+ 21202 multiletter control sequences out of 15000+600000
  12039 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,15n,94p,976b,827s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2604,10 +2636,10 @@ pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2016
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Alic_diploma.pdf (49 pages, 417914 bytes).
+Output written on Alic_diploma.pdf (49 pages, 422010 bytes).
 PDF statistics:
- 887 PDF objects out of 1000 (max. 8388607)
- 751 compressed objects within 8 object streams
- 189 named destinations out of 1000 (max. 500000)
- 513 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 902 PDF objects out of 1000 (max. 8388607)
+ 764 compressed objects within 8 object streams
+ 191 named destinations out of 1000 (max. 500000)
+ 526 words of extra memory for PDF output out of 10000 (max. 10000000)
 

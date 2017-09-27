@@ -1058,6 +1058,7 @@ Dinami"cna ekscentri"cnost v smeri y-osi ni bilo zaradi poenostavitve z uporabo 
 
 
 \subsection{Ve"canje stati"cne ekscentri"cnosti v x-osi}
+\label{sec:vec_st_x}
 
 Sedaj poglejmo odvistnost spreminjanja posamezne amplitude harmonikov v odvistnosti od stati"cne ekscentri"cnosti v smeri x-osi. Iz rezultatov kjer smo predpostavili linearno polje z-komponente vektorja B. Pri"cajkujem tudi tu podobne rezultate. Za"cetne vrednosti amplitud bodo neni"celne, saj "ze v primeru brez ekscentri"cnosti dobim napako, ki se izra"za v posameznih harmonikih(slika \ref{fig:amplitude_real_brez}).   Spremembo amplitude enosmerne komponente in drugega harmonika je vidna na sliki \ref{fig:potek_amplitude_harmonikov_xs_real}.
 
@@ -1342,8 +1343,24 @@ Naparava omogo"ca premik magneta izven osi vrtenja le v eni smeri. Meritev je za
 	\label{fig:amplitude_merjeni__xd_1}
 \end{figure}
 
+\subsection{Ve"canje stati"cne ekscentri"cnosti v x osi na napravi}
 
+Kot v poglavju \ref{sec:vec_st_x}, sem tudi tu pomeril napako pri razli"cnih izmikih enkoderja iz idealne monta"ze. Napako sem z DFT-jem razstavil na posamezne harmonike. Na sliki \ref{fig:potek_amp_merjenih_xs}, so prikazani poteki spreminjanja velikosti posameznega harmonika napake v odvistnosti stati"cne ekscenri"cnosti v x-osi.
 
+ 
+ \begin{figure}[h!]
+ 	
+ 	\includegraphics[scale=0.5]{\dirslike/potek_amp_merjenih_xs.eps} % izris_grafov_poteka_posameznih_amplitud.m folder='2017_09_27';	eksc='xs';	st_harmonikov=2;	periode=1;
+ 	\caption{Odvistnost posameznega harmonika napake od stati"cne ekscentri"cnosti v x osi}
+ 	\label{fig:potek_amp_merjenih_xs}
+ \end{figure}
+
+%delta x mora bit v milimetrih da bos popravil na vseh slikah
+$A_0(\Delta x_s)=0.15740 \Delta x_s^3+0.01388 \Delta x_s^2+0.17182 \Delta x_s+0.00061$
+
+$A_1(\Delta x_s)=1.81983 \Delta x_s^3-0.81049 \Delta x_s^2+2.49720 \Delta x_s+0.04854$
+
+$A_2(\Delta x_s)=-1.75100 \Delta x_s^3+9.86952 \Delta x_s^2+1.23683 \Delta x_s+0.03126$
 \appendix
 Koeficienti ena"cbe (\ref{eq:polinom}):
 
@@ -1359,6 +1376,9 @@ a_8& =  3.574554554667357 \cdot 10^{-2}\\
 a_9& =  4.384051669295653 \cdot 10^{1}\\
 a_{10}& = 2.853582435899069 \cdot 10^{-1}
 \end{align*}
+
+
+
 
 
 \section{Brez ekscentri"cnosti}
