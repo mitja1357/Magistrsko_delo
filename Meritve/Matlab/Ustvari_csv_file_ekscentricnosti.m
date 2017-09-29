@@ -4,9 +4,9 @@
 % v for stavku dolocis od kje do kje naj steje in koliksen korak
 
 
-eks='zs';
-path='Y:\Alic_Mitja\Magistrsko_delo\Meritve\CSVfiles\2017_09_27\';
-for i=500:50:1000
+eks='xd';
+path='Y:\Alic_Mitja\Magistrsko_delo\Meritve\CSVfiles\2017_09_29\';
+for i=0:250:1000
     if i<100
         stevilka=strcat('0',num2str(i));
     else

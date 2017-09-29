@@ -17,7 +17,7 @@ t=linspace(0,1,1000);                               % tocke za prikaz. V napaki 
 
 error=uvoz_podatkov(file_name);                     % uvoz napake
 
-error=360*error;                                    % napaka v stopinjah
+error=2*pi*error;                                    % napaka v redianih
 
 
 [~,~,~,c,fi] = fourier(t,error,h,0);                %dolocitev posameznih harmonikov
