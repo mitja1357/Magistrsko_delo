@@ -1,7 +1,7 @@
  
 
 
-folder='2017_09_29';
+folder='2017_10_02';
 eksc='ys';
 st_harmonikov=2;
 periode=1;
