@@ -1,0 +1,96 @@
+% 4.10.2017 Mitja Alic
+% funkcnija glede na vhodni podatek (ekscentricnost in oddaljenost) 
+% izracuna kaksen navor naj se doda trenutnem poteku navora
+% eks naj bo string, oddaljenost pa je izmik ekscentricnosti v mm
+% funkcija to naredi le za podatke katere sem pomeril in ne simuliral
+% primer:
+% 
+% eks='xs'; ali
+% eks='xd'; ali
+% eks='ys'; ali 
+% eks='zs';
+% oddaljenost=0.40; nekje med nic in 0.425 pri zs do 0.999
+% 
+% kaksen_navor_naj_se_doda(eks,oddaljenost);
+% 
+
+
+function kaksen_navor_naj_se_doda(eks,oddaljenost)
+
+    switch eks
+        case 'xs'
+            if oddaljenost>=0.45
+                oddaljenost=0.45;
+            end
+            if oddaljenost<=0
+                oddaljenost=0;
+            end
+            oddaljenost=round(oddaljenost*40)/40;
+        case 'ys'
+            if oddaljenost>=0.425
+                oddaljenost=0.425;
+            end
+            if oddaljenost<=0
+                oddaljenost=0;
+            end
+            oddaljenost=round(oddaljenost*40)/40;
+        case 'xd'
+            if oddaljenost>=0.45
+                oddaljenost=0.45;
+            end
+            if oddaljenost<=0
+                oddaljenost=0;
+            end
+            oddaljenost=round(oddaljenost*4)/4;
+    end
+
+
+
+
+    ime_structa=strcat('meritev_',eks,'_',num2str(oddaljenost*1000),'u.mat');
+
+
+    path_script=which('kaksen_navor_naj_se_doda');              % pot do skripte
+
+    path_file=path_script(1:end-26);                          	% pot do mape
+
+    path_mat_dat=strcat(path_file,'mat_datoteke\');             % pot do mape mat_dat
+
+    filename=strcat(path_mat_dat,ime_structa);
+
+    load(filename)
+
+    eval(strcat('amp=',ime_structa(1:end-4),'.fft_napake;'))
+    eval(strcat('fi1=',ime_structa(1:end-4),'.fi;'))
+    
+    fi=2*pi*fi1;
+    amp=amp*2*pi;                                       % amplitude daj v radiane za odvajanje
+    amp_kot=amp(2:9);
+    h=3;
+    J = 0.1474544 + 0.001682;
+    w=2*pi; 
+    t=linspace(0,1,1000);
+    shrani_amplitude_navora=zeros(1,h);
+    cosinusni=zeros(1,1000);                            % matrika kjer bodo poteki posameznih harmoonikov 
+
+    for i=1:h
+    
+        amp_posp=-(i*w)^2*amp_kot(i);                      %izracun amplitude harmonika pospeska
+        shrani_amplitude_navora(i)=amp_posp;
+        dod=cos(i*w.*t+fi(i));
+        cosinusni=cosinusni+amp_posp*dod;   %kjer se izracuna poteke posameznih harmonikov
+    end
+
+
+    delta_M=J.*cosinusni;                           % potek pospeska krat vztrajnost
+
+
+
+    figure
+    plot(t*360,delta_M)
+    figure
+    bar(shrani_amplitude_navora)
+
+
+
+end
