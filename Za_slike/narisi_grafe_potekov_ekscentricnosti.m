@@ -74,7 +74,8 @@ function narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
  
         load(ime);                                          % nalozi zeljeno .mat datoteko
       
-        oddaljenost(stevec)=str2num(ime(end-7:end-5)).*1e-3;% iz imena vzemi oddaljenost in jo daj v mm
+        % oddaljenost(stevec)=str2num(ime(end-7:end-5)).*1e-3;% iz imena vzemi oddaljenost in jo daj v mm
+        eval(strcat('oddaljenost(stevec)=',ime(1:end-3),'oddaljenost;'));   % zapisi oddaljenost v mm
         eval(strcat('amplitude(stevec,:)=',ime(1:end-3),'fft_napake;')) % shrani amplitude v matriko
         
         eval(['clear ',ime(1:end-4)])                       % clear nalozen struct
