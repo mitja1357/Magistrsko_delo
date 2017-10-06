@@ -20,7 +20,7 @@
 % eks='ys'; ali
 % eks='yd'; ali
 % eks='zs';
-% narisi_grafe_potekov_ekscentricnosti(model,ekscentricnost)
+% narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
 
 
 function narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)

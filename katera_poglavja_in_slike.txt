@@ -25,6 +25,7 @@ Linearni model
         
     YD
         ni nic ker ni odvisno od njega
+    
         
 Realni model
     Brez napake
@@ -58,6 +59,7 @@ Realni model
         visanje_napake
 
         
+    Razlika med simulacijami
 Meritve
      Brez napake
         Sin_cos
@@ -85,6 +87,7 @@ Meritve
         napaka
         fft_napake
         visanje_napake
+    Rezultati med meritvami in simulacijami
         
         
 Izracun navora za odstranitev ekscentricnosti

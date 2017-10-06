@@ -25,9 +25,12 @@ for i=1:max(size(list))
        
       load(ime);
       
-      oddaljenost(stevec)=str2num(ime(end-7:end-5)).*1e-3;
+      %oddaljenost(stevec)=str2num(ime(end-7:end-5)).*1e-3;
       eval(strcat('amplitude(stevec,:)=',ime(1:end-3),'fft_napake;'))
        
+      
+      
+      eval(strcat('oddaljenost(stevec)=',ime(1:end-3),'oddaljenost;'))
        
       eval(['clear ',ime(1:end-4)])
        
