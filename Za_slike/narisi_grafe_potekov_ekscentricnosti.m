@@ -19,7 +19,11 @@
 % eks='xd'; ali
 % eks='ys'; ali
 % eks='yd'; ali
-% eks='zs';
+% % eks='zs';
+% 
+% in
+% 
+% katere_harmonike_zelis=[0,2,3];
 % narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
 
 

@@ -196,6 +196,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     plot(x,tmp.analog_sinus)
     hold on
     plot(x,tmp.analog_cosinus,'r')
+    legend('sin','cos')
 
 
     xlabel('kot zasuka / ^\circ')
