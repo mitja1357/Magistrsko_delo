@@ -58,8 +58,8 @@ end
 
     tmp=struct;
 
-    tmp.analog_sinus=By;
-    tmp.analog_cosinus=Bx;
+    tmp.analog_sinus=Bx;                        % 2017.10.11 zamenjal Bx in By prej:tmp.analog_sinus=By;
+    tmp.analog_cosinus=By;
     tmp.napaka=(kot_merjeni-theta)/(2*pi);      % v per unit
     tmp.fft_napake=absA /360 ;           % v per unit
     tmp.fi=kotA/360;                        % v per unit

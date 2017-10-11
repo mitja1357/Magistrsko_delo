@@ -1,0 +1,456 @@
+% -*- TeX:SI -*-
+% slovene sub-mode for spell check
+% ----------------------------------------------------------------------
+%  Predloga za obliko in navodila za pisanje diplomskih nalog v LaTex-u
+
+%  Univerza v Ljubljani, Fakulteta za elektrotehniko
+
+%  zbral in uredil Roman Kamnik, junij 2013
+
+% ----------------------------------------------------------------------
+
+\documentclass[a4paper,twoside,openright,12pt]{book}
+\usepackage[cp1250]{inputenc}  %Kodna stran za Windows okolje, za linux je kodna stran latin2
+\usepackage[Slovene]{babel}    % pravila za slovensko deljenje besed
+\usepackage[pdftex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko (za pdfTeX v MkiTex)
+%\usepackage[pctex]{UNI-LJ-FE-Diploma} %Stil za diplome na Fakulteti za elektrotehniko  (za pcTex)
+
+%*************************** PRILAGODITVE *****************************
+% mapa s slikami
+\potgrafike{./Slike/}
+%prilagoditev levega roba sodih strani. Èe se pri dvostranskem tisku robovi ne umemajo se lahko poveèa ali pomanjša
+\zamaknirobsodihstrani{0mm}
+
+%*************************** NASLOVNA STRAN *****************************
+\naslov{Navodila in predloga za izdelavo diplomskega in magistrskega dela}
+\avtor{Ime Priimek} \univerza{Univerza v Ljubljani}
+\fakulteta{Fakulteta za elektrotehniko}
+\delo{Magistrsko delo}
+%\delo{Diplomsko delo visokošolskega strokovnega študija}
+\date{Ljubljana, 2013}
+\mentor{prof. dr. Ime Priimek}
+%\somentor{prof. dr. Ime Priimek}
+\begin{document}
+
+%------------------------ ZAÈETNI DEL -----------------------------------
+\frontmatter
+%------------------------------------------------------------------------
+
+
+%************************ NASLOVNA STRAN ********************************
+\maketitle
+
+
+%*************************** ZAHVALA ************************************
+\zahvala V zahvali se kandidati zahvali mentorju in poimensko tudi
+vsem sodelavcem in prijateljem, ki so pomagali in prispevali pri
+delu v laboratoriju, na raèunalniku, v delavnici, pri tehnièni
+izdelavi dela in drugje.
+
+
+%*************************** VSEBINA *************************************
+\tableofcontents
+
+%*************************** SEZNAM SLIK in TABEL  ***********************
+\seznamslik
+\seznamtabel
+
+%***************************  SEZNAM UPORABLJENIH SIMBOLOV  **************
+
+\seznamsimbolov
+
+V prièujoèem zakljuènem delu so uporabljeni naslednje velièine in
+simboli:
+
+\begin{table}[h]
+\centering
+%\begin{footnotesize}
+\begin{tabular}{l l l l}
+ \hline \multicolumn{2}{c}{\bf{Velièina / oznaka}} & \multicolumn{2}{c}{\bf{Enota}}  \\
+ \hline
+Ime & Simbol & Ime & Simbol \\
+ \hline
+ èas & $t$  & sekunda & s \\
+ frekvenca & $f$  & Hertz & Hz \\
+ tlak & $p$  & Pascal & Pa \\
+ sila vzgona & $\textbf{\textit{f}}_\text{vz}$  & Newton & N \\
+ gostota & $\rho$  & - & kg/m$^3$ \\
+ masa telesa  & $m_\text{t}$  & kilogram & kg \\
+ vhodna napestost & $U_\text{vh}$ & volt  & V \\
+ Jacobijeva matrika & $\mathbf{J}$  & - & - \\
+  \hline
+\end{tabular}
+%\end{footnotesize}
+  \caption{Velièine in simboli}
+  \label{prebojne_trdnosti}
+\end{table}
+
+Pri èemer so vektorji in matrike napisani s poudarjeno pisavo.
+Natanènejši pomen simbolov in njihovih indeksov je razviden iz
+ustreznih slik ali pa je pojasnjen v spremljajoèem besedilu, kjer je
+simbol uporabljen.
+
+
+%------------------------ GLAVNI DEL ------------------------------------
+\mainmatter
+%-------------------------------------------------------------------------
+
+
+%********************* POVZETEK V SLOVENŠÈINI ****************************
+\povzetek
+
+V prièujoèem delu so predstavljena navodila za izdelavo zakljuènega
+dela na Fakulteti za elektrotehniko v Ljubljani. Zakljuèno delo
+predstavlja diplomsko delo na prvi stopnji ter magistrsko delo na
+drugi stopnji izobraževalnega programa.
+
+V povzetku v slovenšèini in v anglešèini kandidat navede glavne
+rezultate dela, zato naj povzetek seznani bralca z jedrom dela na
+naèin, ki je obièajen za pisanje krajših èlankov ali referatov.
+Obseg povzetka je za Repozitorij Univerze v Ljubljani omejen na tisoè
+znakov.
+
+Povzetek se naj priène z opisom in definicijo problema. Nadaljuje se
+naj z opisom uporabljenih metod in postopkov, ki so privedli do
+rešitve. Na koncu naj bodo opisani rezultati dela in glavni zakljuèki, ki iz rezultatov
+izhajajo.
+
+Za tem se na isti strani navede še kljuène besede v slovenšèini in v
+tujem jeziku.
+
+\kljucnebesede beseda1, beseda2, beseda3
+
+
+%*************************** POVZETEK V ANGLEŠÈINI ***********************
+\abstract
+
+The thesis addresses ...
+
+\keywords word1, word2, word3
+
+
+%***************************** UVOD **************************************
+\chapter{Uvod} \label{uvod}
+
+\chapter{Linearni model}
+\section{Brez napake}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\section{XS}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\subsection{visanje\_napake}
+
+\section{YS}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\subsection{visanje\_napake}
+
+\section{ZS}
+ni nic ker je atan(k/k)
+\section{Xd}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\subsection{visanje\_napake}    
+
+\section{YD}
+ni nic ker ni odvisno od njega
+
+
+\chapter{Realni model}
+\section{Brez napake}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\section{XS}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\subsection{visanje\_napake}
+
+\section{YS}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\subsection{visanje\_napake}
+
+\section{ZS}
+imam polje le v ravnini
+\section{Xd}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\subsection{visanje\_napake      }  
+
+\section{YD}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\subsection{visanje\_napake}
+
+
+\section{Razlika med simulacijami}
+\chapter{Meritve}
+\section{Brez napake}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\section{XS}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\subsection{visanje\_napake}
+
+\section{YS}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\subsection{visanje\_napake}
+
+\section{ZS}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\subsection{visanje\_napake}
+\section{Xd}
+\subsection{Sin\_cos}
+\subsection{napaka}
+\subsection{fft\_napake}
+\subsection{visanje\_napake}
+\section{Rezultati med meritvami in simulacijami}
+
+
+\chapter{Izracun navora za odstranitev ekscentricnosti}
+
+
+\chapter{Zakljuèek} \label{zakljucek}
+
+\begin{enumerate}
+    \item Rezultati zakljuènih del so izkljuèno intelektualna lastnina Fakultete za elektrotehniko Univerze v Ljubljani. Za objavljanje ali izkorišèanje rezultatov zakljuènega dela je potrebno pisno soglasje Fakultete za elektrotehniko in mentorja.
+    \item Kandidatu, ki ne odda v roku zakljuènega dela in ne zaprosi za njegovo podaljšanje, izda fakulteta ugotovitveni sklep, da je tema zapadla. Za izstavitev nove teme zakljuènega dela mora kandidat s pisno vlogo zaprositi Komisijo za dodiplomski študij.
+    \item V primeru, da kandidat tudi v podaljšanem roku ne odda zakljuènega dela, roka ne more veè podaljšati in mora zaprositi za izstavitev nove teme.
+    \item Vsem kandidatom priporoèamo, da pred pisanjem preberejo
+    literaturo \cite{miklavvcivc2010objavljanje, juvznivc1992diplomska, kuscer1996}.
+\end{enumerate}
+
+
+%**************** LITERATURA ************************
+\bibliographystyle{ieeetrslo}
+\bibliography{literatura}
+
+%**************** PRILOGE ************************
+
+
+\appendix
+\chapter{Urejanje dokumentov z orodjem LaTex} \label{dodatekA}
+
+
+Postopek dela:
+\begin{description}
+
+    \item[Korak 1] Avtor kreira tekstovno datoteko s konènico \emph{.tex}, ki vsebuje
+tekst in ukaze za oblikovanje teksta (glej osnovno obliko predloge v
+\ref{dodatekB}). Dober uvod v delo z ukazi LaTex so spletna navodila
+\cite{oetiker1995not}. Za pisanje je lahko uporabljen katerikoli
+tekstovni urejevalnik. Priporoèamo uporabo urejevalnikov
+WinEdt\footnote{Dosegljivo na http://www.winedt.org} ali
+TexStudio\footnote{Dosegljivo na http://texstudio.sourceforge.net/},
+ki sta namenski orodji z integriranimi ikonami za posamezne korake.
+Urejevalnika vsebujeta tudi slovar slovenskih
+besed\footnote{Dosegljivo na  http://www.winedt.org/Dict} za sprotno
+preverjanje in deljenje besed.
+
+    \item[Korak 2] Prevajanje izvorne datoteke s prevajalnikom MikTex. Možnost direktnega prevajanja v PDF dokument (ikonca PDFLaTeX), ali pa v EPS dokument (ikonca LaTex - deluje brez vkljuèenih bitnih slik). Pri prevajanju v EPS dokument se najprej ustvari datoteka s konènico \emph{.dvi} (ang. Device Independent file), ki omogoèa ogled dokumenta (ikona DVI Preview).
+    Pri prvem prevajanju se ustvari tudi lista citatov in sklicevanj (datoteka
+    \emph{.aux}).
+
+    \begin{description}
+    \item[Korak 2.1]\footnote{Potrebno samo pri navajanju virov s
+pomoèjo orodja BibTex} Zagon BibTex prevajanja (ikonca Bib), ki na
+    osnovi \emph{.aux} datoteke in podatkov iz baze referenc,
+    ustvari oblikovan spisek referenc (datoteka \emph{.bbl}) glede
+    na izbran stil citiranja (datoteka \emph{.bst}).
+    \item[Korak 2.2]\footnote{Potrebno samo pri navajanju virov s
+pomoèjo orodja BibTex} Ponovno prevajanje s prevajalnikom MikTex, ki
+    v glavni dokument vkljuèi oblikovane reference iz datoteke
+    \emph{.bbl}.
+    \end{description}
+
+    \item[Korak 3] Ponovno prevajanje s prevajalnikom MikTex, ki
+    poveže spisek referenc z navedki v tekstu.
+    \item[Korak 4a] Pretvorba oblikovanega dokumenta v \emph{PostScript} format in nato izvoz v obliki PDF dokumenta:
+    \begin{itemize}
+        \item ikona DVI-PS - pretvorba v datoteko \emph{.ps}
+        \item Ogled \emph{PostScript} datoteke s programom
+        \emph{GhostView}
+        \item Pretvorba v PDF dokument: GhostView:
+        File/Convert/pdfwrite, pri èemer je potrebno izbrati
+        parametre za format PDF/A glede na spletna navodila\footnote{http://svn.ghostscript.com/ghostscript/trunk/gs/doc/Ps2pdf.htm\#PDFA}.
+    \end{itemize}
+    V tem primeru morajo biti vse vkljuèene slike v formatu
+    \emph{PostScript}. V tem naèinu je možna tudi uporaba orodja \emph{PSfrag}, ki omogoèa
+zamenjavo tekstovnih elementov na originalni sliki s poljubnim
+tekstom ali enaèbo.
+    \item[Korak 4b] Pretvorba oblikovanega dokumenta neposredno v
+    PDF format. Ikona PDFTexify. V tem primeru so vkljuèene
+    slike lahko le v formatu PDF, PNG, JPEG ali GIF.
+
+    Pretvorba iz formata PDF v format PDF/A, ki je zahtevan za oddajo v Repozitorij UL, je
+    možna z uporabo spletnega prevajalnika\footnote{http://convert.neevia.com}, programa Adobe Professional (plaèljiva rešitev) ali programa PDFCreator\footnote{http://www.pdfforge.org/pdfcreator} (zastonjska rešitev). Program PDFCreator z nastavitvami\footnote{http://www.jud.ct.gov/external/super/e-services/efile/How-to-Save-or-Convert-to-PDFA.htm}
+omogoèa tiskanje v format PDF/A, saj se namesti kot tiskalnik. 
+\end{description}
+
+
+
+
+\chapter{Primer LaTex kode} \label{dodatekB}
+
+Primer minimalne LaTex datoteke s konènico \emph{.tex}:
+
+\footnotesize
+\begin{verbatim}
+
+\documentclass[a4paper,twoside,openright,12pt]{book}
+
+\usepackage[cp1250]{inputenc}   % uporaba slo sumnikov
+\usepackage[slovene]{babel}
+\usepackage[pdftex]{UNI-LJ-FE-Diploma}    % stil oblike diplome na FE
+
+
+\begin{document}
+
+   Sem sodi tekst...
+
+\end{document}
+
+\end{verbatim}
+\normalsize
+
+\chapter{Vkljuèevanje slik v okolju LaTex} \label{dodatekC}
+
+Vektorske slike morajo biti v formatu EPS shranjene brez glave z bitno sliko
+za predogled. Slike vkljuèujemo z ukazom \verb1\includegraphics1 v okolju \verb1\figure1.
+Dodatno orodje PSFRAG omogoèa zamenjavo napisov na vektorski sliki z napisi LaTex,
+kot so npr. grške èrke ali enaèbe. Za uporabo je potrebna vkljuèitev orodja z ukazom \verb1\usepackage{psfrag}1.
+Primer LaTex kode za zamenjavo napisa $test$ na sliki z LaTex simbolom $\epsilon \;[\mu]$ je:
+
+\footnotesize
+\begin{verbatim}
+\begin{figure}[h]
+\centering
+    \psfrag{test}[B1][B1][1][0]{$\epsilon \;[\mu]$}
+    \includegraphics[width=0.75\columnwidth]{primer_vektorske_slike.eps}
+    \caption{\label{slika4} Primer slike}
+\end{figure}
+\end{verbatim}
+\normalsize
+
+Za vkljuèitev vektorske slike je možno uporabiti tudi makro
+\textbackslash epsslika, ki je vkljuèen v stil za predlogo. Prvi
+parameter v makroju \textbackslash epsslika je podnaslov, drugi pa
+je ime datoteke s sliko brez konènice (privzeta konènica je .eps) in
+hkrati tudi labela za sklicevanje na sliko. Pri stilu je za
+vkljuèevanje slik potrebno izbrati ustrezno opcijo pdftex ali pctex,
+glede na to katero distribucijo LaTeX prevajalnika se uporablja za
+prevajanje.
+
+\slikaeps{Primer vektorske slike eps. Za vkljuèevanje slika ne sme
+imeti glave z bitno sliko za predogled.}{vektorska_slika_2}
+
+Za vkljuèevanje bitne slike ja v predlogi na voljo makro \textbackslash jpgslika.
+Prvi parameter v makroju \textbackslash jpgslika je podnaslov, drugi pa je ime datoteke s
+sliko (privzeta konènica je .jpg) in hkrati tudi labela za sklicevanje na sliko.
+Slike so v tekst vkljuèene v originalni velikosti.
+
+Slika \ref{bitnaslika.png} predstavlja primer vkljuèitve bitne slike
+JPG formata velikosti 9.4 x 7.6 cm.
+
+\bitnaslika{Primer vkljuèitve bitne slike: sistem
+vodenja}{bitnaslika.png}{9.4cm}{7.6cm}
+
+
+
+\chapter{Instalacija programskih orodij za urejanje teksta v
+okolju LaTex } \label{dodatekD}
+
+
+\begin{description}
+    \item[Korak 1] Instalacija paketa MikTex, ki je prevajalnik za dokumente napisane v kodi LaTex.
+    Datoteke dostopne na spletu: \texttt{http://miktex.org/}
+    \item[Korak 2] Instalacija tekstovnega urejevalnika WinEdt.\\
+    Datoteke dostopne na spletu: \texttt{http://www.winedt.com/}
+    \item[Korak 3] Instalacija ogledovalnika \emph{PostScript}
+    dokumentov:
+    \begin{itemize}
+        \item instalacija modula GhostScript
+        \item instalacija modula GhostView
+    \end{itemize}
+    Datoteke dostopne na spletu: \texttt{www.cs.wisc.edu/\textasciitilde ghost/}
+\end{description}
+
+
+\chapter{Predloge za navajanje literature - baza BibTex}
+\label{dodatekE}
+
+Podani so primeri predlog za navajanje èlanka, knjige, prispevka v
+zborniku in dokumenta s spletne strani. Veè predlog za razliène
+primere je skupaj z literaturo navedenih v datoteki
+\texttt{literatura.bib}.
+
+\noindent Izvoz citatov v BibTex formatu je možen na spletni strani
+\texttt{http://scholar.google.com/}, opcija \emph{Import into
+BibTeX}.
+
+
+
+\footnotesize
+\begin{verbatim}
+@ARTICLE{clanek1,
+   author = "L[eslie] A. Aamport",
+   title = "The Gnats and Gnus Document Preparation System",
+   journal = "\mbox{G-Animal's} Journal",
+   year = 1986,
+   volume = 41,
+   number = 7,
+   pages = "73-77",
+   month = jul,
+}
+
+@BOOK{knjiga1,
+   author = "Donald E. Knuth",
+   title = "Seminumerical Algorithms",
+   publisher = "Addison-Wesley",
+   address = "Reading, Massachusetts",
+   year = "1981",
+}
+
+
+@INPROCEEDINGS{vzborniku,
+   author = "Alfred V. Oaho and Jeffrey D. Ullman and Mihalis Yannakakis",
+   title = "On Notions of Information Transfer in {VLSI} Circuits",
+   editor = "Wizard V. Oz and Mihalis Yannakakis",
+   booktitle = "Proc. Fifteenth Annual ACM" # STOC,
+   pages = "133--139",
+   month = mar,
+   year = 1983,
+   address = "Boston",
+   publisher = "Academic Press",
+}
+
+
+@misc{spletna_stran,
+  author = "LLC",
+  title = "{MS Windows NT Kernel Description [Online]}",
+  howpublished = "Dosegljivo: \url{http://web.archive.org}",
+  note = "[Dostopano: 19. 4. 2013]"
+}
+\end{verbatim}
+\normalsize
+
+
+
+\end{document}

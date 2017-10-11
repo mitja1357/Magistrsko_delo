@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.7.26)  27 SEP 2017 18:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.7.26)  11 OCT 2017 09:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2494,9 +2494,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1364.
+(babel)             in language  on input line 1368.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1364.
+(babel)             in language  on input line 1368.
 [43 <./Slike//vrsta_protokola_meritve_xd_125-eps-converted-to.pdf> <./Slike//po
 tek_amp_merjenih_xs-eps-converted-to.pdf>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -2504,32 +2504,32 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1364.
+(babel)             in language  on input line 1368.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1364.
+(babel)             in language  on input line 1368.
 [44]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1384.
+(babel)             in language  on input line 1388.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1384.
+(hyperref)                removing `\textasciicaron' on input line 1388.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1393.
+(babel)             in language  on input line 1397.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1393.
+(babel)             in language  on input line 1397.
 [45
 
 ]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1417.
+(babel)             in language  on input line 1421.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1417.
+(hyperref)                removing `\textasciicaron' on input line 1421.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2539,18 +2539,18 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1450.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1450.
-[46]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 1454.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 1454.
+[46]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 1458.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1454.
+(hyperref)                removing `\textasciicaron' on input line 1458.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2561,22 +2561,22 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1494.
+(babel)             in language  on input line 1498.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1494.
+(babel)             in language  on input line 1498.
 [47]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1506.
+(babel)             in language  on input line 1510.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1506.
+(hyperref)                removing `\textasciicaron' on input line 1510.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1506.
+(hyperref)                removing `\textasciicaron' on input line 1510.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2587,24 +2587,24 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1545.
+(babel)             in language  on input line 1549.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1545.
+(babel)             in language  on input line 1549.
 [48]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1594.
+(babel)             in language  on input line 1598.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1594.
+(babel)             in language  on input line 1598.
 [49]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1594.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1594.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1598.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1598.
  (./Alic_diploma.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1594.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1594.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1598.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1598.
 
 Package rerunfilecheck Info: File `Alic_diploma.out' has not changed.
 (rerunfilecheck)             Checksum: 3DC3557CE6FF879C7E9C581CD8F11EA0;3678.
@@ -2615,7 +2615,7 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1594.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1598.
  ) 
 Here is how much of TeX's memory you used:
  18213 strings out of 493013

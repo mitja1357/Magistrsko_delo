@@ -36,8 +36,8 @@ for i=theta
 
 % shrani vrednost polja Bz
 
-Bx(stevec)=hallx(1);
-By(stevec)=hally(1);
+Bx(stevec)=hallx(2);    % popravil polje da je odvisno od drufge komponente B(x,y)=y
+By(stevec)=hally(2);
 
 stevec=stevec+1;
 end
@@ -54,6 +54,7 @@ xlabel('\theta/ rad');
 ylabel('B/ T');
 end
 kot_merjeni=atan2(By,Bx);
+kot_merjeni=kot_merjeni-pi/2;       % dodal odstet pi polovic
 
 poprava_kota;
 

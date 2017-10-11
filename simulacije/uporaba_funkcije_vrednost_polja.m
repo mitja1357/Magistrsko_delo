@@ -1,6 +1,6 @@
  %close all
  %clear all
-theta=linspace(-pi,pi,1024);
+theta=linspace(0,2*pi,1024);
 r0=2.4;
 xs=0.0;
 ys=0.0;

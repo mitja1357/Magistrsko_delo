@@ -11,21 +11,21 @@
 % 
 % 
 % Primer:
-% model='meritev'; ali
-% model='sim_lin_polje'; ali
-% model='sim_real_polje';
+% tip='meritev'; ali
+% tip='sim_lin_polje'; ali
+% tip='sim_real_polje';
 % 
 % in
 % 
-% ekscentricnost='xs'; ali
-% ekscentricnost='xd'; ali
-% ekscentricnost='ys'; ali
-% ekscentricnost='yd'; ali
-% ekscentricnost='zs';
+% eks='xs'; ali
+% eks='xd'; ali
+% eks='ys'; ali
+% eks='yd'; ali
+% eks='zs';
 % 
 % in
 % 
-% oddaljenost= 0.265;
+% oddaljenost= 0.1;
 % 
 % narisi_grafe_meritve(tip, eks,oddaljenost);
 
@@ -167,7 +167,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
 
     eval(strcat('tmp=',ime_structa(1:end-4),';'));   % struct shrani v struct z imenom tmp
 
-    eval(['clear ', ime_structa ]);         % pobrisi uvozen struct; sedaj je v tmp
+    eval(['clear ', ime_structa(1:end-4) ]);         % pobrisi uvozen struct; sedaj je v tmp
 
 
     %%%%%%%%%%%%%%%%%%%%%%%%
@@ -187,24 +187,30 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     
     %%%%%%%%%%%%%
     %%% slike %%%
-    %%%%%%%%%%%%%        
-
+    %%%%%%%%%%%%%  
+    switch tip
+        case 'sim_lin_polje'
+            tmp.analog_sinus=tmp.analog_sinus*20;
+        case 'meritev'        
+            tmp.analog_sinus=tmp.analog_sinus*1;
+        otherwise
+    end
+    
 
     %Sin_cos
-
+    
     figure
     plot(x,tmp.analog_sinus)
     hold on
     plot(x,tmp.analog_cosinus,'r')
     legend('sin','cos')
 
-
     xlabel('kot zasuka / ^\circ')
     ylabel('B / mT')
     grid on
     xyaxis=axis;
     axis([0,360,xyaxis(3),xyaxis(4)])
-
+    saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_BxBy'),'epsc')
 
     %napaka
 
@@ -216,6 +222,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     grid on
     xyaxis=axis;
     axis([0,360,xyaxis(3),xyaxis(4)])
+    saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_napaka'),'epsc')
 
 
     %fft_napake
@@ -224,6 +231,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     bar(0:8,tmp.fft_napake*360)
     xlabel('harmonik')
     ylabel('amplituda harmonika napake / ^\circ')
+    saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_fft'),'epsc')
     grid on
 
     
