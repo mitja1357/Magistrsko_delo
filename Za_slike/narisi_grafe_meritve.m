@@ -43,22 +43,22 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
             switch eks
                 case 'xs'
                 oddaljenost=round(oddaljenost*40)/40;
-                if oddaljenost>=0.45
+                if oddaljenost>0.45
                     oddaljenost=0.45;
                     warning('Najvecja pomerjenea ekscentricnost je 0.45mm katera je tudi prikazana');
                 end
-                if oddaljenost<=0
+                if oddaljenost<0
                     oddaljenost=0;
                     warning('Najmanjsa pomerjenea ekscentricnost je 0.00mm katera je tudi prikazana');
                 end
                 
                 case 'ys'
                     oddaljenost=round(oddaljenost*40)/40;
-                    if oddaljenost>=0.425
+                    if oddaljenost>0.425
                         oddaljenost=0.425;
                         warning('Najvecja pomerjenea ekscentricnost je 0.425mm katera je tudi prikazana');
                     end
-                    if oddaljenost<=0
+                    if oddaljenost<0
                         oddaljenost=0;
                         warning('Najmanjsa pomerjenea ekscentricnost je 0.00mm katera je tudi prikazana');
                     end
@@ -68,13 +68,13 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
                         oddaljenost=0.999;
                         warning('Najvecja pomerjenea ekscentricnost je 1.00 mm katera je tudi prikazana');
                     end
-                    if oddaljenost<=0
+                    if oddaljenost<0
                         oddaljenost=0;
                         warning('Najmanjsa pomerjenea ekscentricnost je 0.00mm katera je tudi prikazana');
                     end
                 case 'zs'
                     oddaljenost=round(oddaljenost*40)/40;
-                    if oddaljenost<=0
+                    if oddaljenost<0
                         oddaljenost=0;
                         warning('Najmanjsa pomerjenea ekscentricnost je 0.00mm katera je tudi prikazana');
                     end
@@ -103,7 +103,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
                 oddaljenost=0.5;
                 warning('Najvecja pomerjenea ekscentricnost je 0.50 mm katera je tudi prikazana');
             end
-            if oddaljenost<=0
+            if oddaljenost<0
                 oddaljenost=0;
                 warning('Najmanjsa pomerjenea ekscentricnost je 0.00mm katera je tudi prikazana');
                 
@@ -120,7 +120,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
                 oddaljenost=0.5;
                 warning('Najvecja pomerjenea ekscentricnost je 0.50 mm katera je tudi prikazana');
             end
-            if oddaljenost<=0
+            if oddaljenost<0
                 oddaljenost=0;
                 warning('Najmanjsa pomerjenea ekscentricnost je 0.00mm katera je tudi prikazana');
                 
@@ -190,15 +190,27 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     %%%%%%%%%%%%%  
     switch tip
         case 'sim_lin_polje'
-            tmp.analog_sinus=tmp.analog_sinus*20;
+            tmp.analog_sinus=tmp.analog_sinus*40/2.4;
+            tmp.analog_cosinus=tmp.analog_cosinus*40/2.4;
         case 'meritev'        
-            tmp.analog_sinus=tmp.analog_sinus*1;
+            tmp.analog_sinus=tmp.analog_sinus*80;
+            tmp.analog_cosinus=tmp.analog_cosinus*80;
         otherwise
     end
     
-
-    %Sin_cos
     
+    
+    
+    %naredi se fft analognih signalov:
+    
+    [c0_sin,~,~,c_sin,fi_sin] = fourier(x,tmp.analog_sinus,1,0);
+    
+    [c0_cos,~,~,c_cos,fi_cos] = fourier(x,tmp.analog_cosinus,1,0);
+    
+    analog_sinus=strcat(num2str(c0_sin),'+',num2str(c_sin),'cos(wt+',num2str(fi_sin),')')
+    analog_cosinus=strcat(num2str(c0_cos),'+',num2str(c_cos),'cos(wt+',num2str(fi_cos),')')
+    %Sin_cos
+
     figure
     plot(x,tmp.analog_sinus)
     hold on
@@ -210,7 +222,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     grid on
     xyaxis=axis;
     axis([0,360,xyaxis(3),xyaxis(4)])
-    saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_BxBy'),'epsc')
+%     saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_BxBy'),'epsc')
 
     %napaka
 
@@ -222,7 +234,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     grid on
     xyaxis=axis;
     axis([0,360,xyaxis(3),xyaxis(4)])
-    saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_napaka'),'epsc')
+%     saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_napaka'),'epsc')
 
 
     %fft_napake
@@ -231,8 +243,9 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     bar(0:8,tmp.fft_napake*360)
     xlabel('harmonik')
     ylabel('amplituda harmonika napake / ^\circ')
-    saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_fft'),'epsc')
     grid on
+%     saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_fft'),'epsc')
+    
 
     
    

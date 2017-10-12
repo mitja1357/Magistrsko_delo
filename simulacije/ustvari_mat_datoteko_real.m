@@ -30,8 +30,8 @@ switch ekscentricnost
     case 'yd' 
         xs=0;
         ys=0;
-        xd=velikost;
-        yd=0;
+        xd=0;
+        yd=velikost;
         
 end
 

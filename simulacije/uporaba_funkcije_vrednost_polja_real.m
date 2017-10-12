@@ -10,7 +10,7 @@ X_tmp=(round(X_tmp.*50)/50);
 Y_tmp=(round(Y_tmp.*50)/50);
 
 
-theta=linspace(-pi,pi,2048);
+theta=linspace(0,2*pi,2048);
 r0=2.4;
 xs=0.0;
 ys=0.0;

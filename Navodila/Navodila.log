@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.7.26)  11 OCT 2017 13:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.7.26)  12 OCT 2017 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -216,7 +216,11 @@ e
 \yyydec=\count109
 \tmpcount=\count110
 )
-(./Navodila.aux)
+(./Navodila.aux
+
+LaTeX Warning: Label `prebojne_trdnosti' multiply defined.
+
+)
 \openout1 = `Navodila.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -231,8 +235,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
-
-(c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen121
@@ -259,19 +262,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [4
 
 ] (./Navodila.toc
-Underfull \vbox (badness 4156) has occurred while \output is active []
+Underfull \vbox (badness 1609) has occurred while \output is active []
 
- [5]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-[6]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-[7])
+ [5])
 \tf@toc=\write3
 \openout3 = `Navodila.toc'.
 
@@ -280,22 +273,33 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[8] (./Navodila.lof)
+[6] (./Navodila.lof)
 \tf@lof=\write4
 \openout4 = `Navodila.lof'.
 
- [9
+ [7
 
 ]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[10
+[8
 
 ] (./Navodila.lot)
 \tf@lot=\write5
 \openout5 = `Navodila.lot'.
+
+ [9]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[10
+
+] (./Navodila.lof)
+\tf@lof=\write6
+\openout6 = `Navodila.lof'.
 
  [11]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -303,17 +307,6 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 [12
-
-] (./Navodila.lof)
-\tf@lof=\write6
-\openout6 = `Navodila.lof'.
-
- [13]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-[14
 
 ] (./Navodila.lof)
 \tf@lof=\write7
@@ -350,23 +343,23 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 
 ]
   2.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 166.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+(c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
  [7]
-Overfull \vbox (90.28091pt too high) has occurred while \output is active []
-
-
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 [8]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
+  3.
+[9
 
-[9]
+]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -374,12 +367,12 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [10
 
 ]
-  3.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-Overfull \vbox (90.28091pt too high) has occurred while \output is active []
+  4.
+[11]
+Underfull \hbox (badness 1533) in paragraph at lines 222--223
+[]\OT1/cmr/m/n/12 Kandidat lahko z za-klju^^Tcno na-log kan-di-dira za Pre^^Tse
+rnovo na-grado
+ []
 
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -387,49 +380,95 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 [12]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-[13]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-[14
+  5.
+[13
 
 ]
-  4.
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[14]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
 
- [15]
-Overfull \vbox (417.8468pt too high) has occurred while \output is active []
-
-
+[15]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 [16]
-  5.
-[17
-
-]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[18
+[17]
+Package epstopdf Info: Source file: <./Slike/vektorska_slika_1.eps>
+(epstopdf)                    date: 2012-08-26 13:39:04
+(epstopdf)                    size: 82596 bytes
+(epstopdf)             Output file: <./Slike/vektorska_slika_1-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2013-12-02 11:38:10
+(epstopdf)                    size: 12876 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Slike/vektorska_slika_1-
+eps-converted-to.pdf ./Slike/vektorska_slika_1.eps>
+(epstopdf)             \includegraphics on input line 357.
+Package epstopdf Info: Output file is already uptodate.
 
-]
+<./Slike/vektorska_slika_1-eps-converted-to.pdf, id=105, 324.21124pt x 165.6187
+4pt>
+File: ./Slike/vektorska_slika_1-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./Slike/vektorska_slika_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/vektorska_slika_1-eps-converted-to.pdf used on
+ input line 357.
+(pdftex.def)             Requested size: 324.21045pt x 165.61833pt.
+
+Underfull \vbox (badness 1635) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[18 <./Slike/vektorska_slika_1-eps-converted-to.pdf>]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[19]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[20]
   6.
-(./Navodila.bbl [19]
+[21
+
+]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[20
+[22]
+  7.
+[23
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[24]
+  8.
+(./Navodila.bbl [25
+
+]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[26
 
 ]
 Underfull \hbox (badness 6978) in paragraph at lines 44--48
@@ -443,32 +482,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--48
 .fe.uni-
  []
 
-[21])
+[27])
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[22] [23
+[28] [29
 
 ]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[24
+[30
 
 ]
   A.
-[25]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 287.
-
- (c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 287.
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--303
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
 [][]\OT1/cmr/m/n/10 http://www.jud.ct.gov/external/super/e-services/efile/How-t
 o-Save-or-Convert-to-
  []
@@ -478,16 +509,16 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[26]
+[32]
   B.
-[27
+[33
 
 ]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[28
+[34
 
 ]
   C.
@@ -500,76 +531,84 @@ Package epstopdf Info: Source file: <./Slike/vektorska_slika_2.eps>
 (epstopdf)                    size: 6625 bytes
 (epstopdf)             Command: <repstopdf --outfile=./Slike/vektorska_slika_2-
 eps-converted-to.pdf ./Slike/vektorska_slika_2.eps>
-(epstopdf)             \includegraphics on input line 362.
+(epstopdf)             \includegraphics on input line 596.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/vektorska_slika_2-eps-converted-to.pdf, id=147, 192.72pt x 51.19125pt>
+<./Slike/vektorska_slika_2-eps-converted-to.pdf, id=174, 192.72pt x 51.19125pt>
 File: ./Slike/vektorska_slika_2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/vektorska_slika_2-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/vektorska_slika_2-eps-converted-to.pdf used on
- input line 362.
+ input line 596.
 (pdftex.def)             Requested size: 192.71951pt x 51.19112pt.
- [29]
-<./Slike/bitnaslika.png, id=153, 378.41376pt x 306.14375pt>
+ [35]
+<./Slike/bitnaslika.png, id=179, 378.41376pt x 306.14375pt>
 File: ./Slike/bitnaslika.png Graphic file (type png)
 
 <use ./Slike/bitnaslika.png>
-Package pdftex.def Info: ./Slike/bitnaslika.png used on input line 373.
+Package pdftex.def Info: ./Slike/bitnaslika.png used on input line 607.
 (pdftex.def)             Requested size: 267.4573pt x 216.24245pt.
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[30 <./Slike/vektorska_slika_2-eps-converted-to.pdf> <./Slike/bitnaslika.png>]
+[36 <./Slike/vektorska_slika_2-eps-converted-to.pdf> <./Slike/bitnaslika.png>]
   D.
-[31
+[37
 
 ]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[32
+[38
 
 ]
   E.
 
-Underfull \hbox (badness 10000) in paragraph at lines 404--407
+Underfull \hbox (badness 10000) in paragraph at lines 638--641
 \OT1/cmr/m/n/12 Izvoz ci-ta-tov v Bib-Tex for-matu je mo^^Tzen na sple-tni stra
 ni
  []
 
-[33]
+[39]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[34] (./Navodila.aux) ) 
+[40] (./Navodila.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2797 strings out of 493013
- 37082 string characters out of 6136993
- 108614 words of memory out of 5000000
- 6272 multiletter control sequences out of 15000+600000
- 13895 words of font info for 49 fonts, out of 8000000 for 9000
+ 2845 strings out of 493013
+ 37851 string characters out of 6136993
+ 108775 words of memory out of 5000000
+ 6311 multiletter control sequences out of 15000+600000
+ 17248 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,11n,25p,403b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti
-10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c
-:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2016/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsl12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c
-:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Navodila.pdf (48 pages, 412985 bytes).
+ 49i,11n,25p,756b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2016/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2016/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2016/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmib10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Navodila.pdf (52 pages, 480753 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 268 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
