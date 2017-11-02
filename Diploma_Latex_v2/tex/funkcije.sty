@@ -1,0 +1,69 @@
+
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{funkcije}
+
+
+
+% ----- OPCIJE PCTEX ALI PDFTEX -----------------------------------------------------------
+
+\newif\if@pdftex\@pdftextrue
+\DeclareOption{pctex}{\@pdftexfalse}
+\DeclareOption{pdftex}{\@pdftextrue}
+\ProcessOptions\relax
+
+
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\newcommand{\Bz}{0}
+{
+	$B_z$
+}
+
+\newcommand{\magnet}[5]{% xsredisce, ysredisce, zasuk besedilo v srediscu najb bo crta ali ne
+	\pgfmathsetmacro{\Cosa}{cos(#3)}
+	\pgfmathsetmacro{\Sina}{sin(#3)}
+	\draw (#1,#2) circle (2);
+	\draw (#1+ -2.0 *#5* \Cosa  ,#2 -2.0 *#5* \Sina )--(#1+2.0 *#5* \Cosa , #2+2.0 *#5* \Sina );
+	\node at (#1-1.6*\Sina ,#2+1.6*\Cosa ){\rotatebox{#3}{N}};
+	\node at (#1+1.6*\Sina ,#2-1.6*\Cosa  ){\rotatebox{#3}{S}};
+	\fill (#1,#2) circle [radius=1pt];
+}
+
+
+\newcommand{\senzorja}[4]{% xsredisce, ysredisce, zasuk
+	\pgfmathsetmacro{\Cosb}{cos(#3)}
+	\pgfmathsetmacro{\Sinb}{sin(#3)}
+	
+	
+	
+	\hall{#1+2.4*\Cosb }{#2+2.4*\Sinb }{#3}
+	\hall{#1-2.4*\Sinb}{#2+2.4*\Cosb}{#3}
+	\fill (#1,#2) circle [radius=1pt];
+	
+	\draw [dashed, thick](#1,#2)--(#1+2.2*\Cosb ,#2+2.2*\Sinb );
+	\draw [dashed, thick](#1,#2)--(#1-2.2*\Sinb ,#2+2.2*\Cosb );
+}
+
+\newcommand{\hall}[3]{
+	
+	\pgfmathsetmacro{\Cosd}{cos(#3)}
+	\pgfmathsetmacro{\Sind}{sin(#3)}
+	
+	\draw 
+	(#1 - 0.2 * \Sind -0.2 * \Cosd  ,#2 + 0.2 * \Cosd -0.2 *\Sind )--
+	(#1 - 0.2 * \Sind +0.2 * \Cosd  ,#2 + 0.2 * \Cosd +0.2 *\Sind )--
+	(#1 + 0.2 * \Sind +0.2 * \Cosd  ,#2 - 0.2 * \Cosd +0.2 *\Sind )--
+	(#1 + 0.2 * \Sind -0.2 * \Cosd  ,#2 - 0.2 * \Cosd -0.2 *\Sind )--
+	(#1 - 0.2 * \Sind -0.2 * \Cosd  ,#2 + 0.2 * \Cosd -0.2 *\Sind );
+	
+	\draw (#1-0.1*\Cosd -0.1*\Sind,#2+0.1*\Cosd-0.1*\Sind) --(#1+0.1*\Cosd +0.1*\Sind,#2-0.1*\Cosd+0.1*\Sind);
+	\draw (#1+0.1*\Cosd -0.1*\Sind,#2+0.1*\Cosd+0.1*\Sind)-- (#1-0.1*\Cosd +0.1*\Sind,#2-0.1*\Cosd-0.1*\Sind);
+}
+\newcommand{\CaCS}[3]{% razdalja od izhodisca do x max, x komponenta izhodisca, y komponenta izhodisca
+	
+	\draw [<->](-#1+#2,#3)--(#1+#2,0+#3) node[anchor=north]{$x$};
+	\draw [<->](#2,-#1+#3)--(0+#2,#1+#3) node[anchor=east]{$y$};
+	
+}
