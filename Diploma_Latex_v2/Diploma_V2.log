@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.19)  2 NOV 2017 21:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.19)  3 NOV 2017 12:25
 entering extended mode
 **./Diploma_V2.tex
 (Diploma_V2.tex
@@ -569,7 +569,13 @@ Package caption Info: End \AtBeginDocument code.
   1.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-[1
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1062) has occurred while \output is active []
+
+ [1
 
 
 
@@ -577,7 +583,7 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 42--68
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 44--70
 [][] [] 
  []
 
@@ -592,6 +598,15 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Overfull \hbox (15.84032pt too wide) has occurred while \output is active
 []\OT1/cmr/m/sl/12 1.2 Izpeljava gibanja lokacije Hall-ove sonde na magnet pri 
 dinamicni ekscentricnosti \OT1/cmr/m/n/12 3
@@ -603,17 +618,20 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 [3]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-)
-Underfull \vbox (badness 2762) has occurred while \output is active []
-
-
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 [4]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
 Overfull \hbox (3.50294pt too wide) has occurred while \output is active
 []\OT1/cmr/m/sl/12 1.3 Izpeljava gibanja lokacije Hall-ove sonde na magnet pri 
 staticni ekscentricnosti \OT1/cmr/m/n/12 5
@@ -624,12 +642,17 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
-[5] (Diploma_V2.aux (tex/Analiticna_izpeljava.aux)) ) 
+[5]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+[6] (Diploma_V2.aux (tex/Analiticna_izpeljava.aux)) ) 
 Here is how much of TeX's memory you used:
- 14204 strings out of 493323
- 275703 string characters out of 3139065
+ 14232 strings out of 493323
+ 276254 string characters out of 3139065
  330985 words of memory out of 3000000
- 17468 multiletter control sequences out of 15000+200000
+ 17496 multiletter control sequences out of 15000+200000
  9753 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,10n,94p,645b,800s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -643,9 +666,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Diploma_V2.pdf (5 pages, 118923 bytes).
+Output written on Diploma_V2.pdf (6 pages, 122785 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

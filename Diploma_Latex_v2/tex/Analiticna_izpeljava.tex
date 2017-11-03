@@ -5,7 +5,7 @@ V tem poglavju bom sku"sal analiti"cno prikazati vpliv napak omenjenih ekscentri
 
 \section{Definicija koordinatnih sistemov}
 
-Definirajmo kartezi"cni koordinatni sistem, ki ima v izhodi"scu postavljen radialno magnetiziran magnet. Na poljubno to"cko $S_{h0}(x_0,y_0)$, vendar ne v izhodi"s"ce postavimo Hall-ovo sondo. 
+Definirajmo kartezi"cni koordinatni sistem, ki ima v izhodi"scu postavljen radialno magnetiziran magnet. Na poljubno to"cko $S_{h0}(x_0,y_0)$, vendar ne v izhodi"s"ce postavimo Hall-ovo sondo. Na sliki \ref{fig:def_kks} je prikazan tak sistem. Hall-ova sonda je postavljena na abcisno os za la"zje razumevanje. Vrednost $y_0$ je lahko poljubna in kon"cna re"sitev izpeljave bo splo"sna za poljubno lokacijo Hall-ove sonde v za"cetni legi. 
 
 \begin{figure}[h!]
 	\centering
@@ -13,6 +13,8 @@ Definirajmo kartezi"cni koordinatni sistem, ki ima v izhodi"scu postavljen radia
 	\magnet {0} {0} {0}{$S_r(0, 0)$}{1};
 	\hall {2.3}{0} {0};
 	\end{tikzpicture}
+	\caption{Definicija koordinatnega sistema z magnetom in Hall-ovo sondo}
+	\label{fig:def_kks}
 \end{figure}
 
 Z rotacijo magneta za kot $\theta$, se lokacija Hall-ove sonde glede na magnet spremeni. Nova lokacija Hall-ove sonde glede na magnet je enaka, "ce namesto magnet, zarotiramo Hall-ovo sondo za kot $-\theta$ . Novo lokacjo Hall-ove sonde glede na magnet lahko zapi"semo z rotacijsko matriko.
@@ -162,3 +164,51 @@ V (\ref{equ:rotacija_hall_din}) lahko izrazimo - in izraz se poenostavi.
 \end{equation}
 
 \section{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri stati"cni ekscentri"cnosti}
+
+
+Postavimo sistem nazaj v izhodi"scno lego, brez ekscentri"cnosti. Tako sredisce magneta, kot os vrtenja postavimo v izhodi"sce. Hall-ova sonda je postavljena v to"cko $S_{h0}(x_0,y_0)$. Sedaj premaknimo Hall-ovo sondo za $(\Delta x_s, \Delta y_s)$, v novo to"cko $S_{h1}(x_0+\Delta x_s, y_0+\Delta y_s)$. Na sliki \ref{fig:def_sta_eks} je prikazana le stati"cna ekscentri"cnost v y-osi, vendar celotni razmislek velja za obe stati"cni ekscentri"cnosti enako.
+
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}
+	\magnet {0} {0} {0}{}{1};
+	\hall {2.4}{-0.6} {0};
+	\draw[<->,dotted] (0,0)--(0,-0.6);
+	\draw[dotted] (2.3,-0.6)--(0,-0.6);
+	\node at (0.4,-0.3){$\Delta y_s$};
+	\end{tikzpicture}
+	\caption{Shema definicije stati"cne ekscentri"cnosti}
+	\label{fig:def_sta_eks}
+\end{figure}
+
+Po enakem razmisljanju kot v zgornjih poglavjih, sedaj zarotirajmo Hall-ovo sondo za kot \kol{-\theta} okoli izhodi"s"ca. Hall-ova sonda se giblje po kro"znici z radijem $\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$. 
+
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}
+	\magnet {0} {0} {0}{}{1};
+	\hall {1.69}{-1.67} {-30};
+	\draw[<->,dotted] (0,0)--(-0.3,-0.52);
+	\draw[dotted] (1.69,-1.67)--(-0.3,-0.52);
+	\draw [dashed] (0,0) -- (2.377,0) arc(0:-30:2.377)--(0,0);
+	\node at (0.8,-0.2) {\kol{-\theta}};
+	\draw [dotted] (0,0)circle[radius=2.377];
+	
+	\end{tikzpicture}
+	\caption{Shema definicije stati"cne ekscentri"cnosti}
+	\label{fig:def_sta_eks_stat}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
