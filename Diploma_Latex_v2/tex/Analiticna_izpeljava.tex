@@ -5,7 +5,7 @@ V tem poglavju bom sku"sal analiti"cno prikazati vpliv napak omenjenih ekscentri
 
 \section{Definicija koordinatnih sistemov}
 
-Definirajmo kartezi"cni koordinatni sistem, ki ima v izhodi"scu postavljen radialno magnetiziran magnet. Na poljubno to"cko $S_{h0}(x_0,y_0)$, vendar ne v izhodi"s"ce postavimo Hall-ovo sondo. Na sliki \ref{fig:def_kks} je prikazan tak sistem. Hall-ova sonda je postavljena na abcisno os za la"zje razumevanje. Vrednost $y_0$ je lahko poljubna in kon"cna re"sitev izpeljave bo splo"sna za poljubno lokacijo Hall-ove sonde v za"cetni legi. 
+Definirajmo kartezi"cni koordinatni sistem, ki ima v izhodi"scu postavljen radialno magnetiziran magnet. Na poljubno to"cko $S_{h0}(x_0,y_0)$, vendar ne v izhodi"s"ce postavimo Hall-ovo sondo. Na sliki \ref{fig:def_kks} je prikazan tak sistem. Hall-ova sonda je postavljena na abcisno os za la"zje razumevanje. Vrednost $y_0$ je lahko poljubna in kon"cna re"sitev izpeljave bo splo"sna za poljubno lokacijo Hall-ove sonde v za"cetni legi.
 
 \begin{figure}[h!]
 	\centering
@@ -22,7 +22,7 @@ Z rotacijo magneta za kot $\theta$, se lokacija Hall-ove sonde glede na magnet s
 \begin{equation}
 \label{equ:rotacija_hall}
 \begin{bmatrix} x\\y \end{bmatrix}=
-\begin{bmatrix} \cos(-\theta)&\sin(-\theta)\\-\sin(-\theta)&\cos(-\theta) \end{bmatrix}
+\begin{bmatrix} \cos(-\theta)&-\sin(-\theta)\\\sin(-\theta)&\cos(-\theta) \end{bmatrix}
 \begin{bmatrix} x_0\\y_0 \end{bmatrix}
 \end{equation}
 
@@ -30,7 +30,7 @@ Argument rotacijske matrike je $-\theta$, pri "cemer vemo, da smo namesto magnet
 \begin{equation}
 \label{equ:rotacija_hall_simplify}
 \begin{bmatrix} x\\y \end{bmatrix}=
-\begin{bmatrix} \cos(\theta)&-\sin(\theta)\\\sin(\theta)&\cos(\theta) \end{bmatrix}
+\begin{bmatrix} \cos(\theta)&\sin(\theta)\\-\sin(\theta)&\cos(\theta) \end{bmatrix}
 \begin{bmatrix} x_0\\y_0 \end{bmatrix}
 \end{equation}
 
@@ -64,11 +64,11 @@ Argument rotacijske matrike je $-\theta$, pri "cemer vemo, da smo namesto magnet
 				\node at(1,-0.3){-$\theta$};
 		\end{tikzpicture}
 	
-	\caption{Zasukan senzor za kot $\mathrm{-\theta}$}   
+	\caption{Zasukan senzor za kot $\mathrm{-\theta}$}
 	\label{subfig:zasuk_hall}
 \end{subfigure}
 
-\caption{Sprememba lokacije glede na magnet ob rotaciji} 
+\caption{Sprememba lokacije glede na magnet ob rotaciji}
 \label{fig:zasuk_magneta}
 
 \end{figure}
@@ -82,8 +82,8 @@ Opazujmo sedaj sistem gibanja Hall-ove sonde glede na magnet ter dinami"cno eksc
   x_d,\Delta y_d)$ (Slika \ref{fig:def_din_eks}). Os vrtenja je "se vedno postavljena v izhodi"s"ce
    koordinatnega sistema. Sredi"sce magneta $S_{m1}(\Delta x_d,\Delta y_d)$ tako tekom vrtenja okoli
     koordinatnega izhodi"sca opi"se kro"znico z radijem $\sqrt{\Delta x_d^2+\Delta y_d^2}$. V sistem sedaj
-     dodajmo Hall-ovo sondo v njeno za"cetno lego glede na izhodi"sce $S_{h0}(x_0,y_0)$. 
-     
+     dodajmo Hall-ovo sondo v njeno za"cetno lego glede na izhodi"sce $S_{h0}(x_0,y_0)$.
+
 
 
 
@@ -103,7 +103,7 @@ Opazujmo sedaj sistem gibanja Hall-ove sonde glede na magnet ter dinami"cno eksc
 \end{figure}
 
 
- 
+
 
 Enako gibanje Hall-ove sonde na magnet lahko dose"zemo tudi z obrnjenim sistemom. Vrnimo magnet v izhodi"s"cno lego $S_m(0,0)$. Sedaj postavimo os vrtenja magneta v to"cko $(-\Delta x_d,-\Delta y_d)$. Hall-ovo sondo postavimo v to"cko $S_{h1}(x_0-\Delta x_d,y_0 - \Delta y_d).$
 
@@ -146,7 +146,7 @@ Potek Hall-ove sonde ob rotaciji z upo"stevanjem dinami"cne ekscentri"cnosti lah
 \begin{equation}
 \label{equ:rotacija_hall_din}
 \begin{bmatrix} x\\y \end{bmatrix}=
-\begin{bmatrix} \cos(\theta)&-\sin(\theta)\\\sin(\theta)&\cos(\theta) \end{bmatrix}
+\begin{bmatrix} \cos(\theta)&\sin(\theta)\\-\sin(\theta)&\cos(\theta) \end{bmatrix}
 \begin{bmatrix} x_0\\y_0 \end{bmatrix}
 +
 \begin{bmatrix} -\Delta x_d\\-\Delta y_d \end{bmatrix}
@@ -182,7 +182,7 @@ Postavimo sistem nazaj v izhodi"scno lego, brez ekscentri"cnosti. Tako sredisce 
 	\label{fig:def_sta_eks}
 \end{figure}
 
-Po enakem razmisljanju kot v zgornjih poglavjih, sedaj zarotirajmo Hall-ovo sondo za kot \kol{-\theta} okoli izhodi"s"ca. Hall-ova sonda se giblje po kro"znici z radijem $\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$. 
+Po enakem razmi"sljanju kot v zgornjih poglavjih, sedaj zarotirajmo Hall-ovo sondo za kot \kol{-\theta} okoli izhodi"s"ca. Hall-ova sonda se giblje po kro"znici z radijem $\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$.
 
 
 \begin{figure}[h!]
@@ -195,6 +195,8 @@ Po enakem razmisljanju kot v zgornjih poglavjih, sedaj zarotirajmo Hall-ovo sond
 	\draw [dashed] (0,0) -- (2.377,0) arc(0:-30:2.377)--(0,0);
 	\node at (0.8,-0.2) {\kol{-\theta}};
 	\draw [dotted] (0,0)circle[radius=2.377];
+    \draw [dotted, <->] (0,0)--(2.06,1.19);
+    \node at (3.03,0.6){$\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$};
 	
 	\end{tikzpicture}
 	\caption{Shema definicije stati"cne ekscentri"cnosti}
