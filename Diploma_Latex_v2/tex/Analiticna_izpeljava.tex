@@ -1,6 +1,6 @@
 \chapter{Analiti"cna izpeljava vplivov dinami"cne in stati"cne ekscentri"cnosti}
 
-V tem poglavju bom sku"sal analiti"cno prikazati vpliv napak omenjenih ekscentri"cnosti, ki se pojavita zaradi neprimerne vgradnje te vrste enkoderja. Napaki razli"cno vplivati na izhode senzorja, zato ju lahko obravnamvam posami"cno. Preko analiti"cne izpeljave bomo spoznali kako se spreminja lokacija Hall-ove sonde glede na magnet ob pravilni monta"zi. Z vpeljavo dodane ekscentri"cnosti v model bomo videli, kako se trajektorija gibanja Hall-ove sonde glede na magnet spremeni. S poznavanjem lokacije Hall-ove sonde nad magnetom bomo lahko od"citali vrednost \Bz.
+V tem poglavju bom analiti"cno prikazati vpliv napak omenjenih ekscentri"cnosti, ki se pojavita zaradi neprimerne vgradnje te vrste enkoderja. Napaki razli"cno vplivati na izhode senzorja, zato ju lahko obravnamvam posami"cno. Preko analiti"cne izpeljave bomo spoznali kako se spreminja lokacija Hall-ove sonde glede na magnet ob pravilni monta"zi. Z vpeljavo dodane ekscentri"cnosti v model bomo videli, kako se trajektorija gibanja Hall-ove sonde glede na magnet spremeni. S poznavanjem lokacije Hall-ove sonde nad magnetom bomo lahko od"citali vrednost \Bz.
 
 
 \section{Definicija koordinatnih sistemov}
@@ -50,6 +50,7 @@ Argument rotacijske matrike je $-\theta$, pri "cemer vemo, da smo namesto magnet
 				\hall {2.3}{0} {0};
 				\draw [dashed](0,0)--(2.3,0) arc (0:30:2.3)--(0,0);
 				\node at(1,0.3){$\theta$};
+                \draw [->] (1.5,0) arc (0:30:1.5);
 		\end{tikzpicture}
 	\caption{Zasukan magnet za kot $\mathrm{\theta}$}
 	\label{subfig:zasuk_magnet}
@@ -62,6 +63,7 @@ Argument rotacijske matrike je $-\theta$, pri "cemer vemo, da smo namesto magnet
 				\hall {1.99}{-1.15} {-30};
 				\draw [dashed](0,0)--(2.3,0) arc (0:-30:2.3)--(0,0);
 				\node at(1,-0.3){-$\theta$};
+                \draw [->] (1.5,0) arc (0:-30:1.5);
 		\end{tikzpicture}
 	
 	\caption{Zasukan senzor za kot $\mathrm{-\theta}$}
@@ -135,6 +137,7 @@ Sistema prikazana na slikah \ref{fig:def_din_eks} in \ref{fig:def_din_eks_na_sta
 		\hall {1.39}{-1.45} {-30};
 		\draw [dashed](-0.6,-0.3)--(1.7,-0.3) arc(0:-30:2.3)--(-0.6,-0.3);
 		\node at(0.4,-0.6){$-\theta$};
+        \draw [->] (0.9,-0.3) arc (0:-30:1.5);
 		\kks{3}
 	\end{tikzpicture}
 	\caption{Potek Hall-ove sonde ob rotaciji glede na magnet ob dinami"cni ekscentri"cnosti}
@@ -195,21 +198,49 @@ Po enakem razmi"sljanju kot v zgornjih poglavjih, sedaj zarotirajmo Hall-ovo son
 	\draw [dashed] (0,0) -- (2.377,0) arc(0:-30:2.377)--(0,0);
 	\node at (0.8,-0.2) {\kol{-\theta}};
 	\draw [dotted] (0,0)circle[radius=2.377];
-    \draw [dotted, <->] (0,0)--(2.06,1.19);
-    \node at (3.03,0.6){$\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$};
-	
+%    \draw [dotted, <->] (0,0)--(2.06,1.19);
+%    \node at (4.03,0.6){$\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$};
+	\draw [dotted, <->] (0,0)--(1.69,-1.67);
+    \draw [->] (1.5,0) arc (0:-30:1.5);
 	\end{tikzpicture}
-	\caption{Shema definicije stati"cne ekscentri"cnosti}
+	\caption{Potek Hall-ove sonde ob rotaciji glede na magnet ob stati"cni ekscentri"cnosti}
 	\label{fig:def_sta_eks_stat}
 \end{figure}
 
 
+To lahko zapi"semo v izraz (\ref{equ:rotacija_hall_simplify}) kot:
+
+\begin{equation}
+\label{equ:rotacija_hall_stat}
+\begin{bmatrix} x\\y \end{bmatrix}=
+\begin{bmatrix} \cos(\theta)&\sin(\theta)\\-\sin(\theta)&\cos(\theta) \end{bmatrix}
+\begin{bmatrix} x_0+\Delta x_s\\y_0+\Delta y_s \end{bmatrix}
+\end{equation}
 
 
 
 
 
 
+
+\section{Kon"cna ena"cba za dolo"canje lokacije Hall-ove sonde}
+
+Do sedaj smo postopoma izpeljali ena"cbe za:
+\begin{itemize}
+  \item sistem magneta in Hall-ove sonde ob pravilni monta"zi
+  \item sistem magneta in Hall-ove sonde z dinami"cno ekscentri"cnostjo magneta
+  \item sistem magneta in Hall-ove sonde z stati"cno ekscentri"cnostjo Hall-ove sonde
+\end{itemize}
+
+Ena"cbi sistema z ekscentri"cnostjo sti med seboj neodvisni zato lahko ena"cbe sistemov zdru"zimo. Uporabimo princip superpozicije in dobimo kon"cno ena"cbo za lociranje Hall-ove sonde glede na magnet v odvistnosti od zasuka magneta, z upo"stevanjem vpliva tako dinami"cne kot stati"cne ekscentri"cnosti. Kon"cna ena"cba se glasi:
+
+\begin{equation}
+\label{equ:rotacija_hall_koncna}
+\begin{bmatrix} x\\y \end{bmatrix}=
+\begin{bmatrix} \cos(\theta)&\sin(\theta)\\-\sin(\theta)&\cos(\theta) \end{bmatrix}
+\begin{bmatrix} x_0+\Delta x_s\\y_0+\Delta y_s \end{bmatrix}-
+\begin{bmatrix} \Delta x_d\\\Delta y_d \end{bmatrix}
+\end{equation}
 
 
 
