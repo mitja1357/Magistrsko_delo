@@ -1,8 +1,8 @@
  clear  amp_sin amp_cos ofset_sin ofset_cos
 
-% tip='sim_real_polje';
-tip='meritev';
-eks='xd';
+tip='sim_real_polje';
+% tip='meritev';
+eks='yd';
 x=linspace(0,360,1000);     % x os je v stopinjah imamo po 1000 tock kot v .mat datotekah
 addpath('C:\Users\mitja\Documents\Magistrsko_delo\Za_slike');
 path_script=which('narisi_grafe_potekov_ekscentricnosti');	% pot do skripte
