@@ -270,9 +270,74 @@ Dajalnik pozicije RM44 meri z komponento gostote magnetnega polja zato se lahko 
 Potek z-komponente lahko izra"cunamo po Biot-Savartovim zakonom oz. numeri"cno se"stejemo prispevke posameznih del"ckov magneta. Tako dobimo vrednost celotnega vektorja gostote magnetnga polja v posamezni to"cki. Magnetno polje z komponente v okolici osi vrtenja magneta lahko aproksimiramo z ravnino
 
 \begin{equation}
-B_z(x,y)=k\cdot x
+B_z(x,y)=k\cdot x.
 \end{equation}
 
+Tak"sna aproksimacija zadostuje za ocenitev poteka napake. S poznavanjem lokacije Hall-ove sonde, kar smo si ogledali v prej"snjem poglavju, sedaj dobimo potek pomerjene komponente gostote magnetnega polja. Aprokisirano polje je linearno odvisno od x komponente. Za la"zje razumevanje definirajmo konstanto $k$ enako 1.
+
+\section{Dolo"canje kota zasuka in postavitev Hall-ovih sond za zajem polja}
+Sedaj si oglejmo, kako bi dolo"cili kot zasuka poljubne to"cke okoli izhodi"s"ca. Definirajmo kartezi"cni koordinatni sistem, in v njem poljubno to"cko $(x_0,y_0)$, ki ni v izhodi"s"cu(Slika \ref{fig:dolocitev_kota}).
+Za dolo"canje kota $\varphi$ je potrebno poznati poznati polo"zaj to"cke. Kot $\varphi$ dolo"cimo preko trigonometri"cne funkcije $\arctan$: $$\varphi=\arctan\frac{y_0}{x_0}$$
+
+
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[scale=4]
+	\CaCS{0.75}{0}{0}
+	\draw [->,thick](0,0)--(-0.5,0.2855);
+	\draw (0.15,0) arc (0:150:0.15);
+	\node at (0.05,0.05){$\varphi$};
+%	\node at (-0.5,0.285) {\textbullet};
+	\node at (-0.32,0.35) {($x_0$,$y_0$)};
+	\end{tikzpicture}
+	\caption{Slika za pomo"c pri dolo"canju kota}
+	\label{fig:dolocitev_kota}
+\end{figure}
+
+
+Za dolo"citev kota $\varphi$  je dovolj poznati "ze projekciji vektorja na koordinatni osi(slika \ref{fig:dolocitev_kota_2}),
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[scale=4]
+	\CaCS{0.75}{0}{0}
+	\draw [->,thick](0,0)--(-0.5,0.2855);
+	\draw (0.15,0) arc (0:150:0.15);
+	\node at (0.05,0.05){$\varphi$};
+	\draw [dashed] (-0.5,0.2855)--(-0.5,0);
+	\draw [dashed] (-0.5,0.2855)--(0,0.2855);
+	%	\node at (-0.5,0.285) {\textbullet};
+%	\node at (-0.32,0.35) {($x_0$,$y_0$)};
+	\node at(-0.5,-0.1){$x_0$} ;
+	\node at(0.1,0.2855){$y_0$};
+	\end{tikzpicture}
+	\caption{Slika za pomo"c pri dolo"canju kota}
+	\label{fig:dolocitev_kota_2}
+\end{figure}
+
+
+"Ce poznamo projekciji to"cke na koordinatni osi, je to zadosten pogoj za dolo"citev kota $\varphi$.
+Projekcijo lahko pridobimo "ce opazujemo projekciji polo"zaja to"cke v koordinatnih oseh. 
+
+Sedaj si predstavljajmo da ta poljubna to"cka predstavlja enega od polov magneta. Za poznavanje zasuka pola magneta, je dovolj od"citanje polja na koordinatnih oseh. Hall-ovi sondi ne smeti biti postavljeni na isto koordinatno os. Ni nujno da sta sondi postavljeni pravokotno druga na drugo, si pa s tem prihranimo korak v katerem bi bilo potrebno izra"cunati projekcijo na pravokotni koordinatni osi. 
+
+Iz zgornjega razmisleka lahko sedaj smiselno postavimo Hall-ovi sondi v koordinatni sistem. Najprimerneje ju je postaviti na koordinatni osi (Slika \ref{fig:zacetna_postavitev_sond}). Sondi postavimo na enako razdaljo od izhodi"s"ca $r_0$. Tako bo zajem poteka polja ob rotaciji magneta enako, le fazno zamaknjeno.
+
+
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[scale=1]
+	\CaCS{3}{0}{0}
+	\senzorja{0}{0}{0}{}
+%	\magnet {0} {0} {10}{ }{0}
+	\node at (2.0,-0.5){$\mathrm{H}_1(r_0,0)$};
+	\node at (-1,2.3){$\mathrm{H}_2(0, r_0)$};
+	\end{tikzpicture}
+	\caption{Za"cetna postavitev Hallovih sond}
+	\label{fig:zacetna_postavitev_sond}
+\end{figure}
 
 
 
