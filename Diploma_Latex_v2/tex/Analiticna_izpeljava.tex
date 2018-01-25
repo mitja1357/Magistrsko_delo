@@ -270,12 +270,13 @@ Dajalnik pozicije RM44 meri z komponento gostote magnetnega polja zato se lahko 
 Potek z-komponente lahko izra"cunamo po Biot-Savartovim zakonom oz. numeri"cno se"stejemo prispevke posameznih del"ckov magneta. Tako dobimo vrednost celotnega vektorja gostote magnetnga polja v posamezni to"cki. Magnetno polje z komponente v okolici osi vrtenja magneta lahko aproksimiramo z ravnino
 
 \begin{equation}
+\label{equ:poljeB}
 B_z(x,y)=k\cdot x.
 \end{equation}
 
 Tak"sna aproksimacija zadostuje za ocenitev poteka napake. S poznavanjem lokacije Hall-ove sonde, kar smo si ogledali v prej"snjem poglavju, sedaj dobimo potek pomerjene komponente gostote magnetnega polja. Aprokisirano polje je linearno odvisno od x komponente. Za la"zje razumevanje definirajmo konstanto $k$ enako 1.
 
-\section{Dolo"canje kota zasuka in postavitev Hall-ovih sond za zajem polja}
+\section{Postavitev Hall-ovih sond za zajem polja in pomerjeno polje v odvistnosti od ekscentri"cnosti}
 Sedaj si oglejmo, kako bi dolo"cili kot zasuka poljubne to"cke okoli izhodi"s"ca. Definirajmo kartezi"cni koordinatni sistem, in v njem poljubno to"cko $(x_0,y_0)$, ki ni v izhodi"s"cu(Slika \ref{fig:dolocitev_kota}).
 Za dolo"canje kota $\varphi$ je potrebno poznati poznati polo"zaj to"cke. Kot $\varphi$ dolo"cimo preko trigonometri"cne funkcije $\arctan$: $$\varphi=\arctan\frac{y_0}{x_0}$$
 
@@ -318,9 +319,9 @@ Za dolo"citev kota $\varphi$  je dovolj poznati "ze projekciji vektorja na koord
 
 
 "Ce poznamo projekciji to"cke na koordinatni osi, je to zadosten pogoj za dolo"citev kota $\varphi$.
-Projekcijo lahko pridobimo "ce opazujemo projekciji polo"zaja to"cke v koordinatnih oseh. 
+Projekcijo lahko pridobimo "ce opazujemo projekciji polo"zaja to"cke v koordinatnih oseh.
 
-Sedaj si predstavljajmo da ta poljubna to"cka predstavlja enega od polov magneta. Za poznavanje zasuka pola magneta, je dovolj od"citanje polja na koordinatnih oseh. Hall-ovi sondi ne smeti biti postavljeni na isto koordinatno os. Ni nujno da sta sondi postavljeni pravokotno druga na drugo, si pa s tem prihranimo korak v katerem bi bilo potrebno izra"cunati projekcijo na pravokotni koordinatni osi. 
+Sedaj si predstavljajmo da ta poljubna to"cka predstavlja enega od polov magneta. Za poznavanje zasuka pola magneta, je dovolj od"citanje polja na koordinatnih oseh. Hall-ovi sondi ne smeti biti postavljeni na isto koordinatno os. Ni nujno da sta sondi postavljeni pravokotno druga na drugo, si pa s tem prihranimo korak v katerem bi bilo potrebno izra"cunati projekcijo na pravokotni koordinatni osi.
 
 Iz zgornjega razmisleka lahko sedaj smiselno postavimo Hall-ovi sondi v koordinatni sistem. Najprimerneje ju je postaviti na koordinatni osi (Slika \ref{fig:zacetna_postavitev_sond}). Sondi postavimo na enako razdaljo od izhodi"s"ca $r_0$. Tako bo zajem poteka polja ob rotaciji magneta enako, le fazno zamaknjeno.
 
@@ -339,7 +340,86 @@ Iz zgornjega razmisleka lahko sedaj smiselno postavimo Hall-ovi sondi v koordina
 	\label{fig:zacetna_postavitev_sond}
 \end{figure}
 
+S poznavanjem lociranja sonde glede na magnet (\ref{equ:rotacija_hall_koncna}), funkcije polja (\ref{equ:poljeB}) ter za"cetne pozicije Hall-ovih sond lahko dolo"cimo potek polja sonde.
+
+\begin{equation}\label{equ:Bx_splosna}
+B_x(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d
+\end{equation}
+\begin{equation}\label{equ:By_splosna}
+B_y(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d
+\end{equation}
 
 
 
+\subsection{Sprememba magnetnega polja zaradi ekscentri"cnosti}
+
+Oglejmo si primer kak"sno polje zajameti Hall-ovi sondi, ko ekscentri"cnosti ni. Ena"cbi (\ref{equ:Bx_splosna}) in (\ref{equ:By_splosna}) se poenostavita in dobimo poteka v obliki sinusa ter kosinusa z enako amplitudo $r_0$.
+
+
+Upo"stevajmo sedaj le stati"cni ekscentri"cnosti $\Delta x_s$ in $\Delta y_s$. $\Delta x_d$ postavimo na 0.   Ena"cbi (\ref{equ:Bx_splosna}) in (\ref{equ:By_splosna}) lahko preuredimo v izraza:
+
+
+\begin{equation}\label{equ:Bx_stat}
+B_x(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{(r_0+\Delta x_s)^2+\Delta y_s^2}\cos(\theta -\arctan \frac{\Delta y_s}{r_0+\Delta x_s})
+\end{equation}
+\begin{equation}\label{equ:By_stat}
+B_y(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{\Delta x_s^2+(r_0+\Delta y_s)^2} \sin(\theta +\arctan \frac{\Delta x_s}{r_0+\Delta y_s})
+\end{equation}
+
+Iz njiju vidimo spremenjena poteka. Zajetima potekoma se spremeni amplituda in  fazni kot.
+
+Postavimo sedaj vrednosti $\Delta x_s$ in $\Delta_ys$ na 0, $\Delta x_d$ predpostavimo da ni 0. 
+\begin{equation}\label{equ:Bx_splosna}
+B_x(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta-\Delta x_d
+\end{equation}
+\begin{equation}\label{equ:By_splosna}
+B_y(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta-\Delta x_d
+\end{equation}
+Polji obdr"zita enako amplitudo ter fazo, vendar dobita enosmerno komponento, ki je premo sorazmerna z izmikom magneta iz osi vrtenja.
+
+Ekscentri"cnosti povzro"cijo spremembo zajetega polja.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Izra"cun kota}
+
+S poznavanjem potekov polja posamezne sonde sedaj s funkcijo $\arctan$ izra"cunamo kot.
+ 
+\begin{equation}\label{equ:izracun_kota_splosna}
+  \varphi(\theta,\Delta x_s, \Delta y_s, \Delta x_d)=\arctan\frac{B_y}{B_x}=\arctan\frac{r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d}{r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d}
+\end{equation}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.7)  12 DEC 2017 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.7)  12 JAN 2018 15:57
 entering extended mode
 **./Diploma_V2.tex
 (Diploma_V2.tex
@@ -707,7 +707,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip46
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 33.
- (Diploma_V2.aux (tex/Analiticna_izpeljava.aux))
+ (Diploma_V2.aux (tex/Analiticna_izpeljava.aux
+
+LaTeX Warning: Label `equ:Bx_splosna' multiply defined.
+
+
+LaTeX Warning: Label `equ:By_splosna' multiply defined.
+
+))
 \openout1 = `Diploma_V2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -1006,7 +1013,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 253.
 
-<./Slike/magnetno_polje.jpg, id=106, 1102.87032pt x 621.07031pt>
+<./Slike/magnetno_polje.jpg, id=114, 1102.87032pt x 621.07031pt>
 File: ./Slike/magnetno_polje.jpg Graphic file (type jpg)
 
 <use ./Slike/magnetno_polje.jpg>
@@ -1017,17 +1024,17 @@ Package pdftex.def Info: ./Slike/magnetno_polje.jpg used on input line 264.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 278.
+(babel)             in language  on input line 279.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 278.
+(babel)             in language  on input line 279.
 [9]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 278.
+(babel)             in language  on input line 279.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 278.
+(hyperref)                removing `\textasciicaron' on input line 279.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1041,43 +1048,80 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 325.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 325.
 [10 <./Slike/magnetno_polje.jpg>]
+Overfull \hbox (77.5619pt too wide) has occurred while \output is active
+[]\OT1/cmr/m/sl/12 2.2 Postavitev Hall-ovih sond za zajem polja in pomerjeno po
+lje v odvistnosti od ekscentricnosti \OT1/cmr/m/n/12 11
+ []
+
+
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 341.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 340.
-[11])
+(babel)             in language  on input line 341.
+[11]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 354.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 354.
+
+
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 370.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 370.
 [12]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 418.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 418.
+
+)
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 166.
+[13]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
  (Diploma_V2.aux (tex/Analiticna_izpeljava.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
 Package rerunfilecheck Info: File `Diploma_V2.out' has not changed.
-(rerunfilecheck)             Checksum: 46E34D27D54500B1B5E4C3E50D361BA9;834.
+(rerunfilecheck)             Checksum: F9BB88EA663456CDE896B15754478DDC;1024.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 411.
  ) 
 Here is how much of TeX's memory you used:
- 17821 strings out of 493323
- 337057 string characters out of 3130449
- 406975 words of memory out of 3000000
- 20999 multiletter control sequences out of 15000+200000
- 11658 words of font info for 42 fonts, out of 3000000 for 9000
+ 17840 strings out of 493323
+ 337331 string characters out of 3130449
+ 407454 words of memory out of 3000000
+ 21008 multiletter control sequences out of 15000+200000
+ 11965 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,10n,94p,637b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
@@ -1093,9 +1137,9 @@ s/cm/cmr17.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmr8.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/alic/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Diploma_V2.pdf (12 pages, 706089 bytes).
+Output written on Diploma_V2.pdf (13 pages, 713374 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
