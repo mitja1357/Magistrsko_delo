@@ -1,13 +1,22 @@
 % function narisi_grafe_potekov_ekscentricnosti(model,ekscentricnost)
 
 model='meritev';
-ekscentricnost='xd';
+ekscentricnost='xs';
 
 
 isci_string=strcat(model,'_',ekscentricnost);
 
-list=dir('Y:\Alic_Mitja\Magistrsko_delo\Meritve\Matlab\mat_datoteke');
+list=dir('C:\Users\alic\Documents\Magistrsko_delo\Za_slike\mat_datoteke');
+ime=cell(1);
+for i=1:length(list)
+    ime{i}=list(i).name;
+end
+ime=ime';
+cell2mat(ime(3:end,1))
 
+
+test=strfind(ime,isci_string)
+test=list(:,1).name;
 stevec=1;
 clear amplitude oddaljenost
 for i=1:max(size(list))
@@ -17,7 +26,7 @@ for i=1:max(size(list))
     
     ime=list(i).name;
    
-  cd Y:\Alic_Mitja\Magistrsko_delo\Meritve\Matlab\mat_datoteke
+  cd C:\Users\alic\Documents\Magistrsko_delo\Za_slike\mat_datoteke
   if size(ime,2)>6
    
    if ime(1:size(isci_string,2))==isci_string
@@ -41,7 +50,7 @@ for i=1:max(size(list))
    
 
 end
-cd Y:\Alic_Mitja\Magistrsko_delo\Meritve\Matlab
+cd C:\Users\alic\Documents\Magistrsko_delo\Meritve\Matlab
 clear i ime list stevec isci_string
 
 figure
@@ -49,4 +58,4 @@ plot(oddaljenost,amplitude(:,1)*360)
 hold on
 plot(oddaljenost,amplitude(:,2)*360,'r')
 plot(oddaljenost,amplitude(:,3)*360,'k')
-
+legend('1','2','3')

@@ -323,7 +323,7 @@ Projekcijo lahko pridobimo "ce opazujemo projekciji polo"zaja to"cke v koordinat
 
 Sedaj si predstavljajmo da ta poljubna to"cka predstavlja enega od polov magneta. Za poznavanje zasuka pola magneta, je dovolj od"citanje polja na koordinatnih oseh. Hall-ovi sondi ne smeti biti postavljeni na isto koordinatno os. Ni nujno da sta sondi postavljeni pravokotno druga na drugo, si pa s tem prihranimo korak v katerem bi bilo potrebno izra"cunati projekcijo na pravokotni koordinatni osi.
 
-Iz zgornjega razmisleka lahko sedaj smiselno postavimo Hall-ovi sondi v koordinatni sistem. Najprimerneje ju je postaviti na koordinatni osi (Slika \ref{fig:zacetna_postavitev_sond}). Sondi postavimo na enako razdaljo od izhodi"s"ca $r_0$. Tako bo zajem poteka polja ob rotaciji magneta enako, le fazno zamaknjeno.
+Iz zgornjega razmisleka lahko sedaj smiselno postavimo Hall-ovi sondi v koordinatni sistem. Najprimerneje ju je postaviti na koordinatni osi (Slika \ref{fig:zacetna_postavitev_sond}). Sondi postavimo na enako razdaljo od izhodi"s"ca $r_0$. Tako bo zajem poteka polja ob rotaciji magneta enak, le fazno zamaknjeno.
 
 
 
@@ -343,18 +343,19 @@ Iz zgornjega razmisleka lahko sedaj smiselno postavimo Hall-ovi sondi v koordina
 S poznavanjem lociranja sonde glede na magnet (\ref{equ:rotacija_hall_koncna}), funkcije polja (\ref{equ:poljeB}) ter za"cetne pozicije Hall-ovih sond lahko dolo"cimo potek polja sonde.
 
 \begin{equation}\label{equ:Bx_splosna}
-B_x(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d
+B_{H_1}=B_x(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d
 \end{equation}
 \begin{equation}\label{equ:By_splosna}
-B_y(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d
+B_{H_2}=B_y(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d
 \end{equation}
 
 
 
 \subsection{Sprememba magnetnega polja zaradi ekscentri"cnosti}
 
-Oglejmo si primer kak"sno polje zajameti Hall-ovi sondi, ko ekscentri"cnosti ni. Ena"cbi (\ref{equ:Bx_splosna}) in (\ref{equ:By_splosna}) se poenostavita in dobimo poteka v obliki sinusa ter kosinusa z enako amplitudo $r_0$.
+Oglejmo si primer kak"sno polje zajameti Hall-ovi sondi, ko ekscentri"cnosti ni. Ena"cbi (\ref{equ:Bx_splosna}) in (\ref{equ:By_splosna}) se poenostavita in dobimo poteka v obliki sinusa ter kosinusa z enako amplitudo $r_0$ (Slika \ref{sim_lin_polje_xs_000u_BxBy}).
 
+\slikaeps{Analogna signala senzorjev}{sim_lin_polje_xs_000u_BxBy}
 
 Upo"stevajmo sedaj le stati"cni ekscentri"cnosti $\Delta x_s$ in $\Delta y_s$. $\Delta x_d$ postavimo na 0.   Ena"cbi (\ref{equ:Bx_splosna}) in (\ref{equ:By_splosna}) lahko preuredimo v izraza:
 
@@ -366,19 +367,20 @@ B_x(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{(r_0+\Delta x_s)^2+\Delta y_s^2}\c
 B_y(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{\Delta x_s^2+(r_0+\Delta y_s)^2} \sin(\theta +\arctan \frac{\Delta x_s}{r_0+\Delta y_s})
 \end{equation}
 
-Iz njiju vidimo spremenjena poteka. Zajetima potekoma se spremeni amplituda in  fazni kot.
+Iz njiju vidimo spremenjena poteka. Zajetima potekoma se spremeni amplituda in  fazni kot (Slika \ref{sim_lin_polje_xs_200u_BxBy}).
 
-Postavimo sedaj vrednosti $\Delta x_s$ in $\Delta_ys$ na 0, $\Delta x_d$ predpostavimo da ni 0. 
-\begin{equation}\label{equ:Bx_splosna}
+\slikaeps{Analogna signala senzorjev}{sim_lin_polje_xs_200u_BxBy}
+
+Postavimo sedaj vrednosti $\Delta x_s$ in $\Delta_ys$ na 0, $\Delta x_d$ predpostavimo da ni 0.
+\begin{equation}\label{equ:Bx_din}
 B_x(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta-\Delta x_d
 \end{equation}
-\begin{equation}\label{equ:By_splosna}
+\begin{equation}\label{equ:By_din}
 B_y(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta-\Delta x_d
 \end{equation}
-Polji obdr"zita enako amplitudo ter fazo, vendar dobita enosmerno komponento, ki je premo sorazmerna z izmikom magneta iz osi vrtenja.
-
+Polji obdr"zita enako amplitudo ter fazo, vendar dobita enosmerno komponento, ki je premo sorazmerna z izmikom magneta iz osi vrtenja (Slika \ref{sim_lin_polje_xd_200u_BxBy}).
+\slikaeps{Analogna signala senzorjev}{sim_lin_polje_xd_200u_BxBy}
 Ekscentri"cnosti povzro"cijo spremembo zajetega polja.
-
 
 
 
@@ -418,8 +420,33 @@ Ekscentri"cnosti povzro"cijo spremembo zajetega polja.
 \section{Izra"cun kota}
 
 S poznavanjem potekov polja posamezne sonde sedaj s funkcijo $\arctan$ izra"cunamo kot.
- 
+
 \begin{equation}\label{equ:izracun_kota_splosna}
   \varphi(\theta,\Delta x_s, \Delta y_s, \Delta x_d)=\arctan\frac{B_y}{B_x}=\arctan\frac{r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d}{r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d}
 \end{equation}
+
+
+Iz podanega izraza (\ref{equ.izracun_kota_splosna}) je te"zko sklepati, kak"sen bo potek pomerjenega kota oz. kak"sna bo napaka. Podana signala imata periodo $360^\circ$ in sta zvezna. Iz tega sledi da bo tudi $\varphi$ imel periodo $360^\circ$.Pri"cakujem da bo potek kota $\varphi$ v obliki :
+\begin{equation}\label{equ:nastavek}
+\varphi=\theta+A_1 \cos \theta +B_1 \sin \theta+A_2 \cos 2\theta +B_2 \sin 2\theta+A_3 \cos 3\theta +B_3 \sin 3\theta
+\end{equation}
+
+ Za pribli"zek napake izraz  (\ref{equ.izracun_kota_splosna}) razvijmo v Taylorjevo vrsto. V taylorjevo vrsto razvjemo tudi nastavek pri"cakovanega poteka. Zaradi aproksimacije poteka merjenega kota se zadovoljimo z razvojem do petega reda. Za poenostavitev se bom ekscentri"cnosti lotil posamezno. V naslednjih podpoglavjih bom prikazal analiti"cne rezultate posameznega harmonika. Izpeljavo bom le teoreti"cno opisal.
+
+Oba izraza i (\ref{equ:izracun_kota_splosna} in \ref{equ:nastavek})razvijem do petega reda Taylorjeve vrste. Z zdru"zitvijo posameznih potenc $\Delta x_s$ pridobimo sistem petih en"cb s petimi neznankami. Da bodo rezultati bolj pregledni so rezultati za posamezno ekscentri"cnost.
+
+ 
+
+\subsection{Aproksimacija pomerjenega kota ob staticni ekscentri"cnosti x}
+
+V izrazu (\ref{equ:izracun_kota_splosna}) upo"stevamo le stati"cno ekscentri"cnost $\Delta x_s$.
+
+\begin{equation}\label{equ:izracun_kota_xs}
+\varphi=\arctan \frac{r_0 \sin\theta +\Delta x_s \cos\theta}{r_0 \cos\theta +\Delta x_s \cos\theta}
+\end{equation}
+
+
+
+
+
 

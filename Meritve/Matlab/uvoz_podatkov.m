@@ -1,4 +1,4 @@
-function varargout=uvoz_podatkov(ime)
+function varargout=uvoz_podatkov(filename)
 % Mitja Alic 2.8.2017
 % funkcija prebere csv file iz mape CSVfiles za magistrsko mitje alica
 % in vsako spremenljivko shrani v posamezen array
@@ -8,10 +8,7 @@ function varargout=uvoz_podatkov(ime)
 
 
 
-Path='Y:\Alic_Mitja\Magistrsko_delo\Meritve\CSVfiles\';
 
-
-filename=strcat(Path,ime);
 
 
 

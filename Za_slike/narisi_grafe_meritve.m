@@ -101,7 +101,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
             oddaljenost=round(oddaljenost*40)/40;
             if oddaljenost>0.5
                 oddaljenost=0.5;
-                warning('Najvecja pomerjenea ekscentricnost je 0.50 mm katera je tudi prikazana');
+                warning('Najvecja pomerjena ekscentricnost je 0.50 mm katera je tudi prikazana');
             end
             if oddaljenost<0
                 oddaljenost=0;
@@ -139,7 +139,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     end
     
     
-
+%% define .mat file and path
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%%%% sestavi ime structa %%%%%
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -147,6 +147,10 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     stevilka=num2str(oddaljenost*1000);
+    
+    if oddaljenost<99e-3
+        stevilka=strcat('0',stevilka);
+    end
     if oddaljenost==0;
         stevilka='000';
     end
@@ -169,7 +173,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
 
     eval(['clear ', ime_structa(1:end-4) ]);         % pobrisi uvozen struct; sedaj je v tmp
 
-
+%% ustvari sliko
     %%%%%%%%%%%%%%%%%%%%%%%%
     %%% definicija x osi %%%
     %%%%%%%%%%%%%%%%%%%%%%%%
@@ -179,7 +183,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
 
     % ko je senzor oz magnet v centru se lahko s zeroingom odstrani
     % enosmerno komponento
-    if oddaljenost==0
+    if tmp.oddaljenost==0
 
         tmp.napaka=tmp.napaka-tmp.fft_napake(1);
         tmp.fft_napake(1)=0;
@@ -222,7 +226,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     grid on
     xyaxis=axis;
     axis([0,360,xyaxis(3),xyaxis(4)])
-%     saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_BxBy'),'epsc')
+    saveas(gcf,strcat('Slike\',ime_structa(1:end-4),'_BxBy'),'epsc')
 
     %napaka
 
@@ -234,7 +238,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     grid on
     xyaxis=axis;
     axis([0,360,xyaxis(3),xyaxis(4)])
-%     saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_napaka'),'epsc')
+    saveas(gcf,strcat('Slike\',ime_structa(1:end-4),'_napaka'),'epsc')
 
 
     %fft_napake
@@ -244,7 +248,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     xlabel('harmonik')
     ylabel('amplituda harmonika napake / ^\circ')
     grid on
-%     saveas(gcf,strcat('Y:\Alic_Mitja\Magistrsko_delo\Za_slike\Slike\',ime_structa(1:end-4),'_fft'),'epsc')
+    saveas(gcf,strcat('Slike\',ime_structa(1:end-4),'_fft'),'epsc')
     
 
     

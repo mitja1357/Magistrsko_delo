@@ -55,12 +55,23 @@ switch size(stevilka_v_imenu,2)
     case 3
         stevilka_v_imenu=stevilka_v_imenu;
 end
-
+    napaka=kot_merjeni-theta;
+    
+    
+    
+    while mean(napaka)>pi/4
+        napaka=napaka-pi/2;
+        absA(1)=absA(1)-90;
+    end
+    while mean(napaka)<-pi/4
+        napaka=napaka+pi/2;
+        absA(1)=absA(1)+90;
+    end
     tmp=struct;
 
-    tmp.analog_sinus=Bx;                        % 2017.10.11 zamenjal Bx in By prej:tmp.analog_sinus=By;
-    tmp.analog_cosinus=By;
-    tmp.napaka=(kot_merjeni-theta)/(2*pi);      % v per unit
+    tmp.analog_sinus=By;                        % 2017.10.11 zamenjal Bx in By prej:tmp.analog_sinus=By;
+    tmp.analog_cosinus=Bx;
+    tmp.napaka=(napaka)/(2*pi);      % v per unit
     tmp.fft_napake=absA /360 ;           % v per unit
     tmp.fi=kotA/360;                        % v per unit
     
@@ -70,11 +81,11 @@ end
     
     eval(strcat(ime_structa,'=tmp;'));
     
-    cd Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke;
-
-    save(ime_structa,ime_structa)
     
-    cd Y:\Alic_Mitja\Magistrsko_delo\simulacije;
+
+    save(strcat('Z:\Home\Magistrsko_delo\Za_slike\mat_datoteke\',ime_structa),ime_structa)
+    
+    
     
 end
 

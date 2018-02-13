@@ -22,25 +22,8 @@ fig_protokol=figure('Name',strcat('Protokol, ',ime_slik),'numbertitle','off','Po
 clf
 hold on
 end
-Bx=zeros(size(theta));
-By=zeros(size(theta));
-stevec=1;
-for i=theta
-%   vrednosti rotacijske matrike 
-  rot_mat=[cos(i) sin(i);-sin(i) cos(i) ]; 
-
-
-%   pozicija hallove sonde
-  hallx=rot_mat*(zac_x+[xs;ys])-[xd;yd];
-  hally=rot_mat*(zac_y+[xs;ys])-[xd;yd];
-
-% shrani vrednost polja Bz
-
-Bx(stevec)=hallx(2);    % popravil polje da je odvisno od drufge komponente B(x,y)=y
-By(stevec)=hally(2);
-
-stevec=stevec+1;
-end
+Bx=r0.*cos(theta)+xs.*cos(theta)+ys.*sin(theta)-xd;
+By=r0.*sin(theta)+xs.*cos(theta)+ys.*sin(theta)-xd;
 
 if slike
 

@@ -27,7 +27,7 @@
 % narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
 
 
-function narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
+function [koeficienti]= narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
 
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,26 +93,29 @@ function narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
     amplitude(:,1)=amplitude(:,1)-amplitude(1,1);               % offset-e premakni tako da bo v izhodiscu nicla
 
     clear i ime list stevec isci_string;                        %pobrisi uporabljene spremenljivke
-
+   koeficienti=cell(1);
+   stevec=1;
+    for i=katere_harmonike_zelis
+        
+        koeficienti{stevec}= metoda_najmanjsih_kvadratov_polinom(oddaljenost', amplitude(:,i+1),3);
+        koeficienti{stevec}= koeficienti{stevec}*360;
+        stevec=stevec+1;
+    end
 
     %%%%%%%%%%%%%
     %%% slike %%%
     %%%%%%%%%%%%%
     
-
+    FigHandle=figure;
+    set(FigHandle, 'Position', [100, 100, 960, 720]);
+    set(gca, 'ColorOrder', jet(length(katere_harmonike_zelis)), 'NextPlot', 'replacechildren');
     
-    Barve;                                                      % zazeni skripto s podatki o barvah
-                                                                % vzemi cell kateri vsebuje toliko barv kolikor jih rabis
-    eval(strcat('barva=Barva',num2str(size(katere_harmonike_zelis,2)),';'));
-                                                                % pobrisi nalozene stringe
-    clear Barva1 Barva2 Barva3 Barva4 Barva5 Barva6 Barva7 Barva8 Barva9 Barva10 Barva11 Barva12;
-
-    figure
+   
     hold on
     st=1;
     imena_za_legendo=cell(size(katere_harmonike_zelis,2),1);    % definiraj prostor za imena v legendi
     for i=katere_harmonike_zelis
-        plot(oddaljenost,amplitude(:,i+1)*360,'Color',barva{st}/255);   % narisi poteke s nastavljenimi barvami
+        plot(oddaljenost,amplitude(:,i+1)*360);   % narisi poteke s nastavljenimi barvami
         
         
         imena_za_legendo{st}=['Harm ',num2str(i)];              % zapisi ime harmonika ki si ga narisal
@@ -123,6 +126,7 @@ function narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
         
     
     end
+    
     ylabel('amplituda harmonika napake / ^\circ')
     xlabel('ekscentricnost / mm')
     

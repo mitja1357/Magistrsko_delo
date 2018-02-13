@@ -5,7 +5,7 @@ load('Y_tmp.mat');
 load('Zmesh.mat');
 X_tmp=(round(X_tmp.*50)/50);
 Y_tmp=(round(Y_tmp.*50)/50);
-
+Zmesh=Zmesh';
 
 eks=['xs';'ys';'xd';'yd'];
 
