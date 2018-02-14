@@ -343,69 +343,48 @@ Iz zgornjega razmisleka lahko sedaj smiselno postavimo Hall-ovi sondi v koordina
 S poznavanjem lociranja sonde glede na magnet (\ref{equ:rotacija_hall_koncna}), funkcije polja (\ref{equ:poljeB}) ter za"cetne pozicije Hall-ovih sond lahko dolo"cimo potek polja sonde.
 
 \begin{equation}\label{equ:Bx_splosna}
-B_{H_1}=B_x(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d
+cos=B_{H_1}(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d
 \end{equation}
 \begin{equation}\label{equ:By_splosna}
-B_{H_2}=B_y(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d
+sin=B_{H_2}(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d
 \end{equation}
+
+Zajeta signala bom od tu naprej imenoval sinus ($sin$) in cosinu ($cos$), ker to je njuna osnovna oblika.
 
 
 
 \subsection{Sprememba magnetnega polja zaradi ekscentri"cnosti}
 
-Oglejmo si primer kak"sno polje zajameti Hall-ovi sondi, ko ekscentri"cnosti ni. Ena"cbi (\ref{equ:Bx_splosna}) in (\ref{equ:By_splosna}) se poenostavita in dobimo poteka v obliki sinusa ter kosinusa z enako amplitudo $r_0$ (Slika \ref{sim_lin_polje_xs_000u_BxBy}).
+Oglejmo si primer kak"sno polje zajameti Hall-ovi sondi, ko ekscentri"cnosti ni. $sin$ in $cos$ izraza se poenostavita in dobimo poteka v obliki sinusa ter kosinusa z enako amplitudo $r_0$ (Slika \ref{sim_lin_polje_xd_000u_BxBy}).
 
-\slikaeps{Analogna signala senzorjev}{sim_lin_polje_xs_000u_BxBy}
+\slikaeps{Poteka $sin$ in $cos$ brez ekscentri"cnosti}{sim_lin_polje_xd_000u_BxBy}
 
 Upo"stevajmo sedaj le stati"cni ekscentri"cnosti $\Delta x_s$ in $\Delta y_s$. $\Delta x_d$ postavimo na 0.   Ena"cbi (\ref{equ:Bx_splosna}) in (\ref{equ:By_splosna}) lahko preuredimo v izraza:
 
 
-\begin{equation}\label{equ:Bx_stat}
-B_x(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{(r_0+\Delta x_s)^2+\Delta y_s^2}\cos(\theta -\arctan \frac{\Delta y_s}{r_0+\Delta x_s})
+\begin{equation}
+\label{equ:Bx_stat}
+cos(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{(r_0+\Delta x_s)^2+\Delta y_s^2}\cos(\theta -\arctan \frac{\Delta y_s}{r_0+\Delta x_s})
 \end{equation}
 \begin{equation}\label{equ:By_stat}
-B_y(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{\Delta x_s^2+(r_0+\Delta y_s)^2} \sin(\theta +\arctan \frac{\Delta x_s}{r_0+\Delta y_s})
+sin(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{\Delta x_s^2+(r_0+\Delta y_s)^2} \sin(\theta +\arctan \frac{\Delta x_s}{r_0+\Delta y_s})
 \end{equation}
 
-Iz njiju vidimo spremenjena poteka. Zajetima potekoma se spremeni amplituda in  fazni kot (Slika \ref{sim_lin_polje_xs_200u_BxBy}).
+Iz njiju vidimo spremenjena poteka. Signaloma se je spremenila amplituda in fazni zamik (Slika \ref{sim_lin_polje_xs_200u_BxBy}).
 
-\slikaeps{Analogna signala senzorjev}{sim_lin_polje_xs_200u_BxBy}
+\slikaeps{Poteka $sin$ in $cos$ z upo"stevanjem 0,2 mm stati"cni ekscentri"cnosti v x-osi }{sim_lin_polje_xs_200u_BxBy}
 
 Postavimo sedaj vrednosti $\Delta x_s$ in $\Delta_ys$ na 0, $\Delta x_d$ predpostavimo da ni 0.
-\begin{equation}\label{equ:Bx_din}
-B_x(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta-\Delta x_d
+\begin{equation}
+\label{equ:Bx_din}
+cos(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta-\Delta x_d
 \end{equation}
-\begin{equation}\label{equ:By_din}
-B_y(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta-\Delta x_d
+\begin{equation}
+\label{equ:By_din}
+sin(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta-\Delta x_d
 \end{equation}
 Polji obdr"zita enako amplitudo ter fazo, vendar dobita enosmerno komponento, ki je premo sorazmerna z izmikom magneta iz osi vrtenja (Slika \ref{sim_lin_polje_xd_200u_BxBy}).
-\slikaeps{Analogna signala senzorjev}{sim_lin_polje_xd_200u_BxBy}
-Ekscentri"cnosti povzro"cijo spremembo zajetega polja.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\slikaeps{Poteka $sin$ in $cos$ z upo"stevanjem 0,2 mm dinami"cne ekscentri"cnosti v x-osi}{sim_lin_polje_xd_200u_BxBy}
 
 
 
@@ -421,29 +400,125 @@ Ekscentri"cnosti povzro"cijo spremembo zajetega polja.
 
 S poznavanjem potekov polja posamezne sonde sedaj s funkcijo $\arctan$ izra"cunamo kot.
 
-\begin{equation}\label{equ:izracun_kota_splosna}
-  \varphi(\theta,\Delta x_s, \Delta y_s, \Delta x_d)=\arctan\frac{B_y}{B_x}=\arctan\frac{r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d}{r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d}
+\begin{equation}
+\label{equ:izracun_kota_splosna}
+\varphi(\theta,\Delta x_s, \Delta y_s, \Delta x_d)=\arctan\frac{B_y}{B_x}=\arctan\frac{r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d}{r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d}
 \end{equation}
 
 
-Iz podanega izraza (\ref{equ.izracun_kota_splosna}) je te"zko sklepati, kak"sen bo potek pomerjenega kota oz. kak"sna bo napaka. Podana signala imata periodo $360^\circ$ in sta zvezna. Iz tega sledi da bo tudi $\varphi$ imel periodo $360^\circ$.Pri"cakujem da bo potek kota $\varphi$ v obliki :
-\begin{equation}\label{equ:nastavek}
-\varphi=\theta+A_1 \cos \theta +B_1 \sin \theta+A_2 \cos 2\theta +B_2 \sin 2\theta+A_3 \cos 3\theta +B_3 \sin 3\theta
+
+
+
+Iz podanega izraza (\ref{equ:izracun_kota_splosna}) je te"zko sklepati, kak"sen bo potek pomerjenega kota.
+Na tem mestu definirajmo napako merjenega kota:
+\begin{equation}
+\varepsilon=\varphi-\theta
+\end{equation}
+Signala $sin$ in $cos$ imata periodo $360^\circ$ in sta zvezna. Iz tega sledi, da bo tudi $\varepsilon$ zvezen in imel periodo $360^\circ $.Pri"cakujem da bo potek napake $\varepsilon$ v obliki :
+\begin{equation}
+\label{equ:nastavek}
+\varepsilon=A_0+A_1 \cos \theta +B_1 \sin \theta+A_2 \cos 2\theta +B_2 \sin 2\theta
 \end{equation}
 
- Za pribli"zek napake izraz  (\ref{equ.izracun_kota_splosna}) razvijmo v Taylorjevo vrsto. V taylorjevo vrsto razvjemo tudi nastavek pri"cakovanega poteka. Zaradi aproksimacije poteka merjenega kota se zadovoljimo z razvojem do petega reda. Za poenostavitev se bom ekscentri"cnosti lotil posamezno. V naslednjih podpoglavjih bom prikazal analiti"cne rezultate posameznega harmonika. Izpeljavo bom le teoreti"cno opisal.
+Za pribli"zek napake izraz  (\ref{equ:izracun_kota_splosna}) razvijmo v Taylorjevo vrsto po kotu $\theta$. V Taylorjevo vrsto razvjemo tudi nastavek pri"cakovanega poteka. Zaradi aproksimacije poteka merjenega kota se zadovoljimo z razvojem do petega reda. Za poenostavitev se bom ekscentri"cnosti lotil posamezno. V naslednjih podpoglavjih bom prikazal analiti"cne rezultate posameznega harmonika. Izpeljavo bom le teoreti"cno opisal.
 
-Oba izraza i (\ref{equ:izracun_kota_splosna} in \ref{equ:nastavek})razvijem do petega reda Taylorjeve vrste. Z zdru"zitvijo posameznih potenc $\Delta x_s$ pridobimo sistem petih en"cb s petimi neznankami. Da bodo rezultati bolj pregledni so rezultati za posamezno ekscentri"cnost.
+Oba izraza i (\ref{equ:izracun_kota_splosna} in \ref{equ:nastavek})razvijem do petega reda Taylorjeve vrste. Z zdru"zitvijo posameznih potenc $\theta$, pridobimo sistem petih en"cb s petimi neznankami. S tem pridobim neznane faktorje $A_0$, $A_1$, $A_2$, $B_1$ in $B_2$. S poznavanjem teh faktorjev lahko ocenimo kas"seni bodo poteki posameznih harmonikov, ob posameznih ekscentri"cnostih.
+
+
+
 
  
 
-\subsection{Aproksimacija pomerjenega kota ob staticni ekscentri"cnosti x}
+\subsection{Aproksimacija pomerjenega kota ob stati"cni ekscentri"cnosti x}
 
 V izrazu (\ref{equ:izracun_kota_splosna}) upo"stevamo le stati"cno ekscentri"cnost $\Delta x_s$.
 
-\begin{equation}\label{equ:izracun_kota_xs}
+\begin{equation}
+\label{equ:izracun_kota_xs}
 \varphi=\arctan \frac{r_0 \sin\theta +\Delta x_s \cos\theta}{r_0 \cos\theta +\Delta x_s \cos\theta}
 \end{equation}
+
+
+Z aproksimacijo po izrazu (\ref{equ:nastavek}) pridobimo koeficiente posameznega harmonika
+
+
+\begin{eqnarray}
+{A_0}&=\frac{-90 r_0^2  \Delta y_s (r_0^5+29 r_0^4 \Delta y_s+132 r_0^3  \Delta y_s^2+208 r_0 ^2  \Delta y_s^3+156 r_0  \Delta y_s^4+52 \Delta y_s^5)}{\pi (r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^4}+\arctan \frac{ \Delta y_s}{r_0+ \Delta y_s}\\
+{A_1}&=\frac{2280 r_0^2  \Delta y_s^2(r_0^4+5 r_0^3  \Delta y_s+8 r_0^2  \Delta y_s^2+6 r_0  \Delta y_s^3+2 \Delta y_s^4)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^4}\\
+{B_1}&=-\frac{240 \Delta y_s^3(7r_0^3+18 r_0^2  \Delta y_s+18 r_0^2  \Delta y_s+18 r_0  \Delta y_s^2+8 \Delta y_s^3)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^3}\\
+{A_2}&=\frac{90 r_0^2  \Delta y_s (r_0^5-3 r_0^4 \Delta y_s-28 r_0^3  \Delta y_s^2-48r_0 ^2  \Delta y_s^3-36 r_0  \Delta y_s^4-12 \Delta y_s^5)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^4}\\
+{B_2}&=\frac{30 \Delta y_s (-3r_0^5-18 r_0^4 \Delta y_s-20 r_0^3  \Delta y_s^2 +12 r_0  \Delta y_s^4+8 \Delta y_s^5)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^3}\\
+\end{eqnarray}
+
+Oglejmo si sliko potekov posameznih harmonikov.
+\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju stati"cne ekscentri"cnosti v x-osi}{potek_analitika_xs}
+
+
+Te rezultate Taylorjeve vrste lahko upo"stevam le v okolici ni"cle. Iz rezultatov lahko pri"cakujemo linearno nara"s"canje drugega harmonika ter nara"s"canje enosmerne komponete.
+
+
+
+
+
+
+\subsection{Aproksimacija pomerjenega kota ob stati"cni ekscentri"cnosti y}
+
+V izrazu (\ref{equ:izracun_kota_splosna}) upo"stevamo le stati"cno ekscentri"cnost $\Delta y_s$.
+
+\begin{equation}
+\label{equ:izracun_kota_ys}
+\varphi=\arctan \frac{r_0 \sin\theta +\Delta y_s \sin\theta}{r_0 \cos\theta +\Delta y_s \sin\theta}
+\end{equation}
+
+
+Z aproksimacijo po izrazu (\ref{equ:nastavek}) pridobimo koeficiente posameznega harmonika
+
+
+\begin{eqnarray}
+A_0&=\frac{-90 y_s (r_0^2-23r_0 y_s-24y _s^2)}{\pi r_0^3}\\
+A_1&=\frac{-1690 y_s^2(r_0+y_s)}{\pi r_0^3}\\
+A_2&=\frac{90 y_s(r_0^2+9r_0y_s+8y_s^2)}{\pi r_0^3}\\
+B_1&=\frac{240 y_s^3}{\pi r_0^3}\\
+B_2&=\frac{30 (3 r_0^2y_s-4 y_s^3)}{\pi r_0^3}
+\end{eqnarray}
+
+Oglejmo si sliko potekov posameznih harmonikov.
+\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju stati"cne ekscentri"cnosti v x-osi}{potek_analitika_ys}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

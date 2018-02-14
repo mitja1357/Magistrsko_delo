@@ -194,8 +194,8 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     %%%%%%%%%%%%%  
     switch tip
         case 'sim_lin_polje'
-            tmp.analog_sinus=tmp.analog_sinus*40/2.4;
-            tmp.analog_cosinus=tmp.analog_cosinus*40/2.4;
+            tmp.analog_sinus=tmp.analog_sinus;
+            tmp.analog_cosinus=tmp.analog_cosinus;
         case 'meritev'        
             tmp.analog_sinus=tmp.analog_sinus*80;
             tmp.analog_cosinus=tmp.analog_cosinus*80;

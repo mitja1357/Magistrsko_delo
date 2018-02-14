@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.7)  13 FEB 2018 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.7)  14 FEB 2018 15:14
 entering extended mode
 **./Diploma_V2.tex
 (Diploma_V2.tex
@@ -55,11 +55,12 @@ Package babel Info: Making " an active character on input line 79.
 UNI-LJ-FE-Diploma stilska opcija V.1.0 junij 2013
 Stilska opcija za diplome na Fakulteti za elektrotehniko Univerze v Ljubljani
 Izvedena iz DOKT-STYLE OPTION V.1.01 9.1.1992
-Avtor: Sa\v so Toma\v zi\v c
+Avtor: Sa\v d\.z\H {}o Toma\v d\.z\H {}i\v d\.z\H {}
 Dopolnil: Jus Kocijan 
 Dopolnil: Ales Hribar 2006
 Dopolnil: Sebastjan Slajpah, 2013
-Dopolnil in pre\v cistil: Sa\v so Toma\v zi\v c, 2013
+Dopolnil in pre\v d\.z\H {}istil: Sa\v d\.z\H {}o Toma\v d\.z\H {}i\v d\.z\H {}
+, 2013
 
 ("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
 "
@@ -707,7 +708,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip46
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 33.
- (Diploma_V2.aux)
+ (Diploma_V2.aux (tex/Analiticna_izpeljava.aux))
 \openout1 = `Diploma_V2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -791,9 +792,6 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 6.
-
-LaTeX Warning: Reference `fig:def_kks' on page 1 undefined on input line 8.
-
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
@@ -811,10 +809,6 @@ Package babel Info: Redefining slovene shorthand "|
 
 
 {C:/Users/alic/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-
-LaTeX Warning: Reference `equ:rotacija_hall' on page 2 undefined on input line 
-29.
-
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
@@ -835,10 +829,6 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                removing `\textasciicaron' on input line 80.
 
 
-LaTeX Warning: Reference `fig:def_din_eks' on page 2 undefined on input line 84
-.
-
-
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -856,26 +846,10 @@ Missing character: There is no ; in font nullfont!
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `fig:def_din_eks' on page 3 undefined on input line 12
-8.
-
-
-LaTeX Warning: Reference `fig:def_din_eks_na_stator' on page 3 undefined on inp
-ut line 128.
-
-
-LaTeX Warning: Reference `fig:def_din_eks' on page 3 undefined on input line 12
-8.
-
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `equ:rotacija_hall_simplify' on page 3 undefined on in
-put line 147.
 
 
 Overfull \hbox (15.84032pt too wide) has occurred while \output is active
@@ -893,11 +867,6 @@ Package babel Info: Redefining slovene shorthand "|
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 148.
 [3]
-
-LaTeX Warning: Reference `equ:rotacija_hall_din' on page 4 undefined on input l
-ine 158.
-
-
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -920,20 +889,12 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 169.
 
-
-LaTeX Warning: Reference `fig:def_sta_eks' on page 5 undefined on input line 17
-2.
-
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `equ:rotacija_hall_simplify' on page 5 undefined on in
-put line 211.
 
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 226.
@@ -1046,11 +1007,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 253.
 
-
-LaTeX Warning: Reference `fig:magnetno_polje' on page 9 undefined on input line
- 256.
-
-<./Slike/magnetno_polje.jpg, id=68, 1102.87032pt x 621.07031pt>
+<./Slike/magnetno_polje.jpg, id=122, 1102.87032pt x 621.07031pt>
 File: ./Slike/magnetno_polje.jpg Graphic file (type jpg)
 
 <use ./Slike/magnetno_polje.jpg>
@@ -1074,15 +1031,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                removing `\textasciicaron' on input line 279.
 
 
-LaTeX Warning: Reference `fig:dolocitev_kota' on page 10 undefined on input lin
-e 280.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `fig:dolocitev_kota_2' on page 10 undefined on input l
-ine 300.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1097,11 +1046,6 @@ Package babel Info: Redefining slovene shorthand "|
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 325.
 [10 <./Slike/magnetno_polje.jpg>]
-
-LaTeX Warning: Reference `fig:zacetna_postavitev_sond' on page 11 undefined on 
-input line 326.
-
-
 Overfull \hbox (77.5619pt too wide) has occurred while \output is active
 []\OT1/cmr/m/sl/12 2.2 Postavitev Hall-ovih sond za zajem polja in pomerjeno po
 lje v odvistnosti od ekscentricnosti \OT1/cmr/m/n/12 11
@@ -1117,128 +1061,84 @@ Package babel Info: Redefining slovene shorthand "|
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 341.
 [11]
-
-LaTeX Warning: Reference `equ:rotacija_hall_koncna' on page 12 undefined on inp
-ut line 343.
-
-
-LaTeX Warning: Reference `equ:poljeB' on page 12 undefined on input line 343.
-
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 354.
+(babel)             in language  on input line 356.
+
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 354.
+(hyperref)                removing `\textasciicaron' on input line 356.
 
-
-LaTeX Warning: Reference `equ:Bx_splosna' on page 12 undefined on input line 35
-6.
-
-
-LaTeX Warning: Reference `equ:By_splosna' on page 12 undefined on input line 35
-6.
-
-
-LaTeX Warning: Reference `sim_lin_polje_xs_000u_BxBy' on page 12 undefined on i
-nput line 356.
-
-Package epstopdf Info: Source file: <./Slike/sim_lin_polje_xs_000u_BxBy.eps>
-(epstopdf)                    date: 2018-02-12 14:43:43
-(epstopdf)                    size: 54174 bytes
-(epstopdf)             Output file: <./Slike/sim_lin_polje_xs_000u_BxBy-eps-con
+Package epstopdf Info: Source file: <./Slike/sim_lin_polje_xd_000u_BxBy.eps>
+(epstopdf)                    date: 2018-02-14 07:31:15
+(epstopdf)                    size: 54950 bytes
+(epstopdf)             Output file: <./Slike/sim_lin_polje_xd_000u_BxBy-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2018-02-13 07:38:22
-(epstopdf)                    size: 20813 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/sim_lin_polje_xs_00
-0u_BxBy-eps-converted-to.pdf ./Slike/sim_lin_polje_xs_000u_BxBy.eps>
-(epstopdf)             \includegraphics on input line 358.
+(epstopdf)                    date: 2018-02-14 12:56:37
+(epstopdf)                    size: 20790 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/sim_lin_polje_xd_00
+0u_BxBy-eps-converted-to.pdf ./Slike/sim_lin_polje_xd_000u_BxBy.eps>
+(epstopdf)             \includegraphics on input line 360.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/sim_lin_polje_xs_000u_BxBy-eps-converted-to.pdf, id=89, 360.34625pt x 
+<./Slike/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf, id=147, 363.3575pt x 
 294.09875pt>
-File: ./Slike/sim_lin_polje_xs_000u_BxBy-eps-converted-to.pdf Graphic file (typ
+File: ./Slike/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf Graphic file (typ
 e pdf)
- <use ./Slike/sim_lin_polje_xs_000u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/sim_lin_polje_xs_000u_BxBy-eps-converted-to.pd
-f used on input line 358.
-(pdftex.def)             Requested size: 360.34537pt x 294.09802pt.
-
-
-LaTeX Warning: Reference `equ:Bx_splosna' on page 12 undefined on input line 36
-0.
-
-
-LaTeX Warning: Reference `equ:By_splosna' on page 12 undefined on input line 36
-0.
-
-
-LaTeX Warning: Reference `sim_lin_polje_xs_200u_BxBy' on page 12 undefined on i
-nput line 370.
-
+ <use ./Slike/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pd
+f used on input line 360.
+(pdftex.def)             Requested size: 412.56496pt x 333.93427pt.
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 371.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 371.
+(babel)             in language  on input line 368.
 [12]
 Package epstopdf Info: Source file: <./Slike/sim_lin_polje_xs_200u_BxBy.eps>
-(epstopdf)                    date: 2018-02-12 14:43:50
-(epstopdf)                    size: 55021 bytes
+(epstopdf)                    date: 2018-02-14 07:31:54
+(epstopdf)                    size: 53331 bytes
 (epstopdf)             Output file: <./Slike/sim_lin_polje_xs_200u_BxBy-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2018-02-13 07:45:02
-(epstopdf)                    size: 20604 bytes
+(epstopdf)                    date: 2018-02-14 12:55:49
+(epstopdf)                    size: 20514 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/sim_lin_polje_xs_20
 0u_BxBy-eps-converted-to.pdf ./Slike/sim_lin_polje_xs_200u_BxBy.eps>
-(epstopdf)             \includegraphics on input line 372.
+(epstopdf)             \includegraphics on input line 375.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf, id=100, 360.34625pt x
- 294.09875pt>
+<./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf, id=159, 355.3275pt x 
+294.09875pt>
 File: ./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use ./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pd
-f used on input line 372.
-(pdftex.def)             Requested size: 360.34537pt x 294.09802pt.
-
-
-LaTeX Warning: Reference `sim_lin_polje_xd_200u_BxBy' on page 13 undefined on i
-nput line 381.
-
+f used on input line 375.
+(pdftex.def)             Requested size: 412.56496pt x 341.48238pt.
 Package epstopdf Info: Source file: <./Slike/sim_lin_polje_xd_200u_BxBy.eps>
-(epstopdf)                    date: 2018-02-12 14:43:50
-(epstopdf)                    size: 55021 bytes
+(epstopdf)                    date: 2018-02-14 07:31:23
+(epstopdf)                    size: 53484 bytes
 (epstopdf)             Output file: <./Slike/sim_lin_polje_xd_200u_BxBy-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2018-02-13 07:45:03
-(epstopdf)                    size: 20604 bytes
+(epstopdf)                    date: 2018-02-14 12:55:50
+(epstopdf)                    size: 20665 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/sim_lin_polje_xd_20
 0u_BxBy-eps-converted-to.pdf ./Slike/sim_lin_polje_xd_200u_BxBy.eps>
-(epstopdf)             \includegraphics on input line 382.
+(epstopdf)             \includegraphics on input line 387.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf, id=101, 360.34625pt x
- 294.09875pt>
+<./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf, id=161, 355.3275pt x 
+294.09875pt>
 File: ./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf Graphic file (typ
 e pdf)
  <use ./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pd
-f used on input line 382.
-(pdftex.def)             Requested size: 360.34537pt x 294.09802pt.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 420.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 420.
-
+f used on input line 387.
+(pdftex.def)             Requested size: 412.56496pt x 341.48238pt.
 
 Overfull \hbox (77.5619pt too wide) has occurred while \output is active
 []\OT1/cmr/m/sl/12 2.2 Postavitev Hall-ovih sond za zajem polja in pomerjeno po
@@ -1251,49 +1151,20 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 388.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 424.
-[13 <./Slike/sim_lin_polje_xs_000u_BxBy-eps-converted-to.pdf>]
-
-LaTeX Warning: Reference `equ.izracun_kota_splosna' on page 14 undefined on inp
-ut line 429.
-
-
-LaTeX Warning: Reference `equ.izracun_kota_splosna' on page 14 undefined on inp
-ut line 434.
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
+(babel)             in language  on input line 388.
+[13 <./Slike/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 435.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 435.
-[14 <./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf>]
+(babel)             in language  on input line 399.
 
-LaTeX Warning: Reference `equ:izracun_kota_splosna' on page 15 undefined on inp
-ut line 436.
-
-
-LaTeX Warning: Reference `equ:nastavek' on page 15 undefined on input line 436.
-
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 440.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 440.
+(hyperref)                removing `\textasciicaron' on input line 399.
 
 
-LaTeX Warning: Reference `equ:izracun_kota_splosna' on page 15 undefined on inp
-ut line 442.
-
-
-Underfull \vbox (badness 1360) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -1301,67 +1172,163 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 446.
+(babel)             in language  on input line 406.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 446.
-[15 <./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf>])
+(babel)             in language  on input line 406.
+[14 <./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 421.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 421.
+[15 <./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf>]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 432.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 432.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 432.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 451.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 451.
 [16]
+Package epstopdf Info: Source file: <./Slike/potek_analitika_xs.eps>
+(epstopdf)                    date: 2018-02-14 11:59:18
+(epstopdf)                    size: 21605 bytes
+(epstopdf)             Output file: <./Slike/potek_analitika_xs-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-02-14 14:38:41
+(epstopdf)                    size: 7778 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_analitika_xs-
+eps-converted-to.pdf ./Slike/potek_analitika_xs.eps>
+(epstopdf)             \includegraphics on input line 454.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/potek_analitika_xs-eps-converted-to.pdf, id=220, 722.7pt x 542.025pt>
+File: ./Slike/potek_analitika_xs-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./Slike/potek_analitika_xs-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/potek_analitika_xs-eps-converted-to.pdf used o
+n input line 454.
+(pdftex.def)             Requested size: 412.56496pt x 309.42061pt.
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 458.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 458.
+[17 <./Slike/potek_analitika_xs-eps-converted-to.pdf>]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 464.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 464.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 464.
+
+Package epstopdf Info: Source file: <./Slike/potek_analitika_ys.eps>
+(epstopdf)                    date: 2018-02-14 11:59:28
+(epstopdf)                    size: 21606 bytes
+(epstopdf)             Output file: <./Slike/potek_analitika_ys-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-02-14 15:09:46
+(epstopdf)                    size: 7800 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_analitika_ys-
+eps-converted-to.pdf ./Slike/potek_analitika_ys.eps>
+(epstopdf)             \includegraphics on input line 486.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/potek_analitika_ys-eps-converted-to.pdf, id=238, 722.7pt x 542.025pt>
+File: ./Slike/potek_analitika_ys-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./Slike/potek_analitika_ys-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/potek_analitika_ys-eps-converted-to.pdf used o
+n input line 486.
+(pdftex.def)             Requested size: 412.56496pt x 309.42061pt.
+)
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 166.
+[18]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 166.
+[19 <./Slike/potek_analitika_ys-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
- (Diploma_V2.aux (tex/Analiticna_izpeljava.aux))
+ (Diploma_V2.aux
+(tex/Analiticna_izpeljava.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
-
-
-Package rerunfilecheck Warning: File `Diploma_V2.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Diploma_V2.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  B9341FE05D5C18CB25FDE7CBB3FE52FC;1139.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `Diploma_V2.out' has not changed.
+(rerunfilecheck)             Checksum: 31239CD948595A6E7E15625423FC4912;1254.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 411.
  ) 
 Here is how much of TeX's memory you used:
- 17859 strings out of 493323
- 338210 string characters out of 3130449
- 404706 words of memory out of 3000000
- 21016 multiletter control sequences out of 15000+200000
+ 17897 strings out of 493323
+ 339088 string characters out of 3130449
+ 408527 words of memory out of 3000000
+ 21040 multiletter control sequences out of 15000+200000
  11965 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,10n,94p,637b,818s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,11n,94p,637b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx12.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmex10.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alic/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alic/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/alic/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Use
-rs/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alic/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
+rs/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
 pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr17.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/alic/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alic/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Diploma_V2.pdf (16 pages, 785377 bytes).
+s/cm/cmr12.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr17.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alic/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alic/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/alic/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
+/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b>
+Output written on Diploma_V2.pdf (19 pages, 824954 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 320 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 

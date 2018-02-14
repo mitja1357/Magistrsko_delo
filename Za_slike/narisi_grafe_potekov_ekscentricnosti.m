@@ -24,7 +24,7 @@
 % in
 % 
 % katere_harmonike_zelis=[0,1,2,3];
-% narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
+% narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis);
 
 
 function [koeficienti]= narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
@@ -108,7 +108,7 @@ function [koeficienti]= narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harm
     
     FigHandle=figure;
     set(FigHandle, 'Position', [100, 100, 960, 720]);
-    set(gca, 'ColorOrder', jet(length(katere_harmonike_zelis)), 'NextPlot', 'replacechildren');
+%     set(gca, 'ColorOrder', jet(length(katere_harmonike_zelis)), 'NextPlot', 'replacechildren');
     
    
     hold on
@@ -133,5 +133,5 @@ function [koeficienti]= narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harm
     
     legend(imena_za_legendo,'Location','NorthWest')
     grid on
-    
+    saveas(gcf,strcat('Z:\Home\Magistrsko_delo\Diploma_Latex_v2\Slike\potek_',tip,'_',eks),'epsc')
 end

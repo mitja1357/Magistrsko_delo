@@ -19,7 +19,7 @@ oddaljenost= 0:25e-3:500e-3;
 for i=oddaljenost
 %         tip=tip1{3};
 %         eks=eks1{2};
-        narisi_grafe_meritve('sim_lin_polje', 'xd',i)
+        narisi_grafe_meritve('sim_lin_polje', 'ys',i)
 end
 % end
 close all

@@ -3,11 +3,11 @@
 \typeout{Stilska opcija za diplome na Fakulteti za elektrotehniko Univerze v Ljubljani}
 \typeout{Izvedena iz DOKT-STYLE OPTION  V.1.01   9.1.1992}
 
-\typeout{Avtor: Sašo Tomažiè}
+\typeout{Avtor: Saï¿½o Tomaï¿½iï¿½}
 \typeout{Dopolnil: Jus Kocijan  }
 \typeout{Dopolnil: Ales Hribar  2006}
 \typeout{Dopolnil: Sebastjan Slajpah, 2013}
-\typeout{Dopolnil in preèistil: Sašo Tomažiè, 2013}
+\typeout{Dopolnil in preï¿½istil: Saï¿½o Tomaï¿½iï¿½, 2013}
 \typeout{}
 
 
@@ -21,7 +21,7 @@
 \ProcessOptions\relax
 
 
-% ----- VKLJUÈENI STILI -----------------------------------------------------------
+% ----- VKLJUï¿½ENI STILI -----------------------------------------------------------
 \usepackage{amsmath}
 \if@pdftex
    \usepackage{graphicx,epstopdf}
@@ -34,7 +34,7 @@
 \fi
 
 
-% ----- OŠTEVILÈENJE --------------------------------------------------------------
+% ----- Oï¿½TEVILï¿½ENJE --------------------------------------------------------------
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
@@ -43,7 +43,7 @@
 \oddsidemargin  13mm
 \evensidemargin 0mm
 
-% ----- NAVPIÈNI PRESLEDKI --------------------------------------------------------
+% ----- NAVPIï¿½NI PRESLEDKI --------------------------------------------------------
 \topmargin -5mm
 \headheight 6mm
 \headsep 20mm
@@ -168,10 +168,10 @@
 
 \def\kljucnebesede{
   \vspace{1cm}\noindent
-  \textbf{Kljuène besede:}\
+  \textbf{Kljuï¿½ne besede:}\
 }
 
-% ----- ANGLEšKI POVZETEK ---------------------------------------------------------
+% ----- ANGLEï¿½KI POVZETEK ---------------------------------------------------------
 %\def\abstract{%
 %  \chapter*{Abstract}
 %}
@@ -234,7 +234,7 @@
 %\markboth{{\appendixname}}{{#1}}}
 
 
-% ----- GLAVA STRANI S ÈRTO --------------------------------------------------------
+% ----- GLAVA STRANI S ï¿½RTO --------------------------------------------------------
 \def\ps@headings{\let\@mkboth\markboth
 \def\@oddfoot{}
 \def\@evenfoot{}
@@ -267,7 +267,7 @@
  \def\newblock{\hskip .11em plus .33em minus -.07em}
  \sloppy \sfcode`\.=1000\relax}
 
-% ----- ŠTEVILKA STRANI SPODAJ -----------------------------------------------------
+% ----- ï¿½TEVILKA STRANI SPODAJ -----------------------------------------------------
 \def\ps@myheadings{\let\@mkboth\@gobbletwo
 \def\@oddfoot{\hbox{}\hfil\rm\thepage}
 \def\@oddhead{}
@@ -303,7 +303,7 @@
       \closein1
       \if@pdftex
          \begin{center}
-           \includegraphics{\dirslike#2.eps}
+           \includegraphics[width=\textwidth]{\dirslike#2.eps}
          \end{center}
        \else
          {\center\leavevmode\epsfbox{\dirslike#2.eps}}
@@ -351,12 +351,12 @@
 % ----- PRAZNA STRAN ----------------------------------------------------------------
 \def\praznastran{\newpage \mbox{} \thispagestyle{empty} \newpage}
 
-% ----- URL se izpiše brez sprememb ----------------------------------------------------------------
-% èe v url nastopajo posebni zanki TeXa, jih lahko zamenjamo z ustreznimi znaki v datoteki,
-% ki ima enako konènico kot TeX datoteka diplome in konènico bbl (npr diploma.bbl. To je datoteka, ki jo ustvarimo z BibTeXom
+% ----- URL se izpiï¿½e brez sprememb ----------------------------------------------------------------
+% ï¿½e v url nastopajo posebni zanki TeXa, jih lahko zamenjamo z ustreznimi znaki v datoteki,
+% ki ima enako konï¿½nico kot TeX datoteka diplome in konï¿½nico bbl (npr diploma.bbl. To je datoteka, ki jo ustvarimo z BibTeXom
 \def\url#1{#1}
 
-% ----- ZAÈETNE NASTAVITVE ----------------------------------------------------------
+% ----- ZAï¿½ETNE NASTAVITVE ----------------------------------------------------------
 \sloppy
 \parskip 1ex
 \let\WriteBookmarks\relax
@@ -364,7 +364,7 @@
 
 
 %*******************************************************************************************************
-%   Epsf stil omogoèa branje bounding boksa eps slik.
+%   Epsf stil omogoï¿½a branje bounding boksa eps slik.
 %*******************************************************************************************************
 %
 %   Written by Tomas Rokicki of Radical Eye Software, 29 Mar 1989.
@@ -373,7 +373,7 @@
 %      space after the colon, 18 Jul 1990.
 %   Revised by Craig Barratt to support psfrag facility (changes should
 %      be upward compatable), 29 Feb 1992.
-%   Priredil za diplome UNI-LJ-FE Sašo Tomažiè 2013
+%   Priredil za diplome UNI-LJ-FE Saï¿½o Tomaï¿½iï¿½ 2013
 
 \newread\epsffilein    % file to \read
 \newif\ifepsffileok    % continue looking for the bounding box?
@@ -393,15 +393,15 @@
 \epsfysize=0pt         % ditto
 %----------------------------------------------
 %
-\newcount\xcelo         %širina slike v celih inèah
-\newcount\xdec         %decimalke širine slike
-\newcount\xxdec         %decimalke širine slike
-\newcount\xxxdec         %decimalke širine slike
-\newcount\ycelo         %višina slike v inèah
-\newcount\ydec         %decimalke višine slike
-\newcount\yydec         %decimalke višine slike
-\newcount\yyydec         %decimalke višine slike
-\newcount\tmpcount      %zaèasni števec za raèunanje
+\newcount\xcelo         %ï¿½irina slike v celih inï¿½ah
+\newcount\xdec         %decimalke ï¿½irine slike
+\newcount\xxdec         %decimalke ï¿½irine slike
+\newcount\xxxdec         %decimalke ï¿½irine slike
+\newcount\ycelo         %viï¿½ina slike v inï¿½ah
+\newcount\ydec         %decimalke viï¿½ine slike
+\newcount\yydec         %decimalke viï¿½ine slike
+\newcount\yyydec         %decimalke viï¿½ine slike
+\newcount\tmpcount      %zaï¿½asni ï¿½tevec za raï¿½unanje
 
 \def\epsfbox#1{\global\def\epsfllx{72}\global\def\epsflly{72}%
    \global\def\epsfurx{540}\global\def\epsfury{720}%
@@ -443,7 +443,7 @@
    }\closein\epsffilein\fi}%
 
 %
-%   Raèunanje dimenzij v inèah
+%   Raï¿½unanje dimenzij v inï¿½ah
 %
 \def\epsfsetgraph#1{%
 {%
