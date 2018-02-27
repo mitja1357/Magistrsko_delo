@@ -290,7 +290,7 @@
 
 
 \newcommand{\slikaeps}[2]{
-  \begin{figure}[htb]
+  \begin{figure}[h!]
     \openin1 \dirslike#2.eps
     \ifeof1
       \typeout{Ne najdem datoteke \dirslike#2.eps!}
@@ -303,7 +303,7 @@
       \closein1
       \if@pdftex
          \begin{center}
-           \includegraphics[width=\textwidth]{\dirslike#2.eps}
+           \includegraphics[width=0.6 \textwidth]{\dirslike#2.eps}
          \end{center}
        \else
          {\center\leavevmode\epsfbox{\dirslike#2.eps}}

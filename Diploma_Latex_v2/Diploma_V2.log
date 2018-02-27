@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.19)  22 FEB 2018 20:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.7)  27 FEB 2018 17:16
 entering extended mode
 **./Diploma_V2.tex
 (Diploma_V2.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk12.clo"
 File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -22,35 +22,35 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\cp1250.def"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\cp1250.def"
 File: cp1250.def 2015/03/17 v1.2c Input encoding file
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2017/05/19 3.10 The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-slovenian\Slovene.ldf"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-slovenian\Slo
+vene.ldf"
 Language: slovene 2005/03/31 v1.2m Slovene support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2017/05/19 3.10 Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
 Package babel Info: Making " an active character on input line 79.
-))
-(UNI-LJ-FE-Diploma.sty
+)) (UNI-LJ-FE-Diploma.sty
 
 UNI-LJ-FE-Diploma stilska opcija V.1.0 junij 2013
 Stilska opcija za diplome na Fakulteti za elektrotehniko Univerze v Ljubljani
@@ -62,24 +62,26 @@ Dopolnil: Sebastjan Slajpah, 2013
 Dopolnil in pre\v d\.z\H {}istil: Sa\v d\.z\H {}o Toma\v d\.z\H {}i\v d\.z\H {}
 , 2013
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+"
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+"
 Package: amstext 2000/06/29 v2.01 AMS text
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+ ("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen104
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+) ("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
+y"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count89
@@ -120,31 +122,38 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.s
+ty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
+"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.s
+ty"
 Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphi
+cs.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex
+.def"
 File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarer
+r.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.
+sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count101
@@ -152,28 +161,36 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.s
+ty"
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
+ase.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
+"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefine
+keys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.
+sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkey
+s.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds
+.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluatex
+.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -182,11 +199,13 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexcm
+ds.sty"
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.st
+y"
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -218,47 +237,62 @@ G,.JBIG2,.JB2,.eps]
 \yyydec=\count109
 \tmpcount=\count110
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.t
+ex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.
+tex"
 \XKV@toks=\toks22
 \XKV@tempa@toks=\toks23
 )
 \XKV@depth=\count111
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\t
+ikz.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.
+sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrc
+s.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-common.tex"
 \pgfutil@everybye=\toks24
 \pgfutil@tempdima=\dimen121
 \pgfutil@tempdimb=\dimen122
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common-lists.te
-x")) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-common-lists.tex"))
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+util-latex.def"
 \pgfutil@abb=\box28
-("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+rcs.code.tex"
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfc
+ore.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgf
+sys.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys.code.tex"
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keys.code.tex"
 \pgfkeys@pathtoks=\toks25
 \pgfkeys@temptoks=\toks26
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.code.te
-x"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks27
 ))
 \pgf@x=\dimen123
@@ -278,31 +312,36 @@ x"
 \t@pgf@toka=\toks28
 \t@pgf@tokb=\toks29
 \t@pgf@tokc=\toks30
- ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys-pdftex.def"
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
-"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
-ex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count116
 \pgfsyssoftpath@bigbuffer@items=\count117
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.t
-ex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
+gfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+))
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.
+cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -316,13 +355,18 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcore.code.tex"
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathc
+alc.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathu
+til.code.tex")
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathp
+arser.code.tex"
 \pgfmath@dimen=\dimen131
 \pgfmath@count=\count118
 \pgfmath@box=\box29
@@ -330,28 +374,30 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 \pgfmath@stack@operand=\toks32
 \pgfmath@stack@operation=\toks33
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic.code.
-tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigonometr
-ic.code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.random.code
-.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.comparison.
-code.tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.code.t
-ex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round.code.
-tex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.code.t
-ex")
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.integerarit
-hmetics.code.tex")))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.basic.code.tex")
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.trigonometric.code.tex")
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.random.code.tex")
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.comparison.code.tex")
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.base.code.tex")
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.round.code.tex")
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.misc.code.tex")
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+unctions.integerarithmetics.code.tex")))
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
+loat.code.tex"
 \c@pgfmathroundto@lastzeros=\count119
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
-"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen132
 \pgf@picmaxx=\dimen133
@@ -368,113 +414,128 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen144
 \pgf@zy=\dimen145
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.c
-ode.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen146
 \pgf@path@lasty=\dimen147
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.
-tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen148
 \pgf@shorten@start@additional=\dimen149
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
-"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box30
 \pgf@hbox=\box31
 \pgf@layerbox@main=\box32
 \pgf@picture@serial@count=\count120
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.co
-de.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen150
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransformations
-.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen151
 \pgf@pt@y=\dimen152
 \pgf@pt@temp=\dimen153
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.te
-x"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.
-code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepathprocessing.code.tex"
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
-"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen154
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen155
 \pgf@sys@shading@range@num=\count121
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.te
-x"
+)
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.t
-ex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box33
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
-"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.co
-de.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcoretransparency.code.tex"
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.t
-ex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
+fcorepatterns.code.tex"
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+duleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box34
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
+)
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+duleplot.code.tex"
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.
-sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
+gfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen156
 \pgf@nodesepend=\dimen157
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.
-sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
+gfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.sty"
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.tex"
+))
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgffo
+r.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfke
+ys.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+keys.code.tex"))
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.st
+y"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex"))
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
+for.code.tex"
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex")
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
+code.tex")
 \pgffor@iter=\dimen158
 \pgffor@skip=\dimen159
 \pgffor@stack=\toks34
 \pgffor@toks=\toks35
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\tikz.code.tex"
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
-code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
+libraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count122
 \pgfplotmarksize=\dimen160
@@ -494,7 +555,8 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count125
 \tikz@fig@count=\count126
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
+dulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count127
 \pgfmatrixcurrentcolumn=\count128
@@ -502,21 +564,24 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count130
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
-librarytopaths.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
-librarycalc.code.tex"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
+\tikz\libraries\tikzlibrarycalc.code.tex"
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.
+sty"
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
+"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.st
+y"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen167
@@ -532,14 +597,17 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \c@subfigure=\count132
 \c@subtable=\count133
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.s
+ty"
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-h
+yperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-g
+eneric.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -569,22 +637,26 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.s
+ty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.st
+y"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen174
 \Hy@linkcounter=\count134
 \Hy@pagecounter=\count135
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
+"
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count136
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.c
+fg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4498.
@@ -595,8 +667,7 @@ Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
 \c@Hy@tempcnt=\count137
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+ ("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -621,12 +692,15 @@ LaTeX Info: Redefining \pageref on input line 6432.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.de
+f"
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
 \Fld@listcount=\count142
 \c@bookmark@seq@number=\count143
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilec
+heck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -634,8 +708,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip46
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 33.
+ (Diploma_V2.aux (tex/Analiticna_izpeljava.aux)
+(tex/Linearni_model.aux
 
-(Diploma_V2.aux (tex/Analiticna_izpeljava.aux))
+LaTeX Warning: Label `./LIN/sim_lin_polje_xs_200u_BxBy' multiply defined.
+
+
+LaTeX Warning: Label `./LIN/sim_lin_polje_xd_200u_BxBy' multiply defined.
+
+))
 \openout1 = `Diploma_V2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -653,7 +734,8 @@ LaTeX Font Info:    ... okay on input line 53.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
 LaTeX Font Info:    ... okay on input line 53.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
+i"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count144
 \scratchdimen=\dimen178
@@ -673,10 +755,12 @@ Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box40
 Package hyperref Info: Link coloring ON on input line 53.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
+y"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitle
+string.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count150
@@ -684,8 +768,7 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 53.
 LaTeX Info: Redefining \pageref on input line 53.
 LaTeX Info: Redefining \nameref on input line 53.
-
-(Diploma_V2.out) (Diploma_V2.out)
+ (Diploma_V2.out) (Diploma_V2.out)
 \@outlinefile=\write4
 \openout4 = `Diploma_V2.out'.
 
@@ -733,7 +816,7 @@ Package babel Info: Redefining slovene shorthand "|
 
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/alic/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
@@ -859,7 +942,7 @@ Package babel Info: Redefining slovene shorthand "|
 [5]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 230.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -932,7 +1015,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 253.
 
-<./Slike/magnetno_polje.jpg, id=126, 1102.87032pt x 621.07031pt>
+<./Slike/magnetno_polje.jpg, id=150, 1102.87032pt x 621.07031pt>
 File: ./Slike/magnetno_polje.jpg Graphic file (type jpg)
 
 <use ./Slike/magnetno_polje.jpg>
@@ -943,9 +1026,9 @@ Package pdftex.def Info: ./Slike/magnetno_polje.jpg used on input line 264.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 278.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 279.
+(babel)             in language  on input line 278.
 [9]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 279.
@@ -982,88 +1065,111 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 341.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 341.
+(babel)             in language  on input line 327.
 [11]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 356.
+(babel)             in language  on input line 357.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 356.
+(hyperref)                removing `\textasciicaron' on input line 357.
 
-Package epstopdf Info: Source file: <./Slike/sim_lin_polje_xd_000u_BxBy.eps>
-(epstopdf)                    date: 2018-02-22 19:15:28
-(epstopdf)                    size: 57075 bytes
-(epstopdf)             Output file: <./Slike/sim_lin_polje_xd_000u_BxBy-eps-con
-verted-to.pdf>
-(epstopdf)                    date: 2018-02-22 19:15:28
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_000u_BxBy.e
+ps>
+(epstopdf)                    date: 2018-02-14 07:31:15
+(epstopdf)                    size: 54950 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 17:16:26
 (epstopdf)                    size: 20790 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/sim_lin_polje_xd_00
-0u_BxBy-eps-converted-to.pdf ./Slike/sim_lin_polje_xd_000u_BxBy.eps>
-(epstopdf)             \includegraphics on input line 360.
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_xd_000u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_000u_BxBy.eps
+>
+(epstopdf)             \includegraphics on input line 361.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf, id=151, 363.3575pt x 
-294.09875pt>
-File: ./Slike/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf Graphic file (typ
-e pdf)
- <use ./Slike/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pd
-f used on input line 360.
-(pdftex.def)             Requested size: 412.56496pt x 333.93427pt.
+<./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf, id=175, 363.357
+5pt x 294.09875pt>
+File: ./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use ./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted
+-to.pdf used on input line 361.
+(pdftex.def)             Requested size: 247.54149pt x 200.36145pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 368.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 368.
+(babel)             in language  on input line 364.
 [12]
-Package epstopdf Info: Source file: <./Slike/sim_lin_polje_xs_200u_BxBy.eps>
-(epstopdf)                    date: 2018-02-22 19:15:28
-(epstopdf)                    size: 55444 bytes
-(epstopdf)             Output file: <./Slike/sim_lin_polje_xs_200u_BxBy-eps-con
-verted-to.pdf>
-(epstopdf)                    date: 2018-02-22 19:15:28
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.e
+ps>
+(epstopdf)                    date: 2018-02-14 07:31:54
+(epstopdf)                    size: 53331 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 13:53:05
 (epstopdf)                    size: 20514 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/sim_lin_polje_xs_20
-0u_BxBy-eps-converted-to.pdf ./Slike/sim_lin_polje_xs_200u_BxBy.eps>
-(epstopdf)             \includegraphics on input line 375.
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_xs_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.eps
+>
+(epstopdf)             \includegraphics on input line 376.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf, id=163, 355.3275pt x 
-294.09875pt>
-File: ./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf Graphic file (typ
-e pdf)
- <use ./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pd
-f used on input line 375.
-(pdftex.def)             Requested size: 412.56496pt x 341.48238pt.
-Package epstopdf Info: Source file: <./Slike/sim_lin_polje_xd_200u_BxBy.eps>
-(epstopdf)                    date: 2018-02-22 19:15:28
-(epstopdf)                    size: 55597 bytes
-(epstopdf)             Output file: <./Slike/sim_lin_polje_xd_200u_BxBy-eps-con
-verted-to.pdf>
-(epstopdf)                    date: 2018-02-22 19:15:28
+<./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf, id=187, 355.327
+5pt x 294.09875pt>
+File: ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted
+-to.pdf used on input line 376.
+(pdftex.def)             Requested size: 247.54149pt x 204.8939pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.e
+ps>
+(epstopdf)                    date: 2018-02-14 07:31:23
+(epstopdf)                    size: 53484 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 16:11:51
 (epstopdf)                    size: 20665 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/sim_lin_polje_xd_20
-0u_BxBy-eps-converted-to.pdf ./Slike/sim_lin_polje_xd_200u_BxBy.eps>
-(epstopdf)             \includegraphics on input line 387.
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_xd_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.eps
+>
+(epstopdf)             \includegraphics on input line 388.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf, id=165, 355.3275pt x 
-294.09875pt>
-File: ./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf Graphic file (typ
-e pdf)
- <use ./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pd
-f used on input line 387.
-(pdftex.def)             Requested size: 412.56496pt x 341.48238pt.
+<./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf, id=189, 355.327
+5pt x 294.09875pt>
+File: ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted
+-to.pdf used on input line 388.
+(pdftex.def)             Requested size: 247.54149pt x 204.8939pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 394.
 
 Overfull \hbox (77.5619pt too wide) has occurred while \output is active
 []\OT1/cmr/m/sl/12 2.2 Postavitev Hall-ovih sond za zajem polja in pomerjeno po
@@ -1076,17 +1182,58 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 388.
+(babel)             in language  on input line 398.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 388.
-[13 <./Slike/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf>]
+(babel)             in language  on input line 398.
+[13 <./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 399.
+(babel)             in language  on input line 398.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 398.
+[14 <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf> <./Slike/./
+LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf>]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 414.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 399.
+(hyperref)                removing `\textasciicaron' on input line 414.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 414.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 438.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 438.
+[15]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 443.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 443.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 443.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1097,121 +1244,86 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 457.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 406.
-[14 <./Slike/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf>]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 421.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 421.
-[15 <./Slike/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf>]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 432.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 432.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 432.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 451.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 451.
+(babel)             in language  on input line 457.
 [16]
 Package epstopdf Info: Source file: <./Slike/potek_analitika_xs.eps>
-(epstopdf)                    date: 2018-02-22 19:15:28
-(epstopdf)                    size: 21793 bytes
+(epstopdf)                    date: 2018-02-14 11:59:18
+(epstopdf)                    size: 21605 bytes
 (epstopdf)             Output file: <./Slike/potek_analitika_xs-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2018-02-22 19:15:28
+(epstopdf)                    date: 2018-02-14 14:38:41
 (epstopdf)                    size: 7778 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/potek_analitika_xs-
 eps-converted-to.pdf ./Slike/potek_analitika_xs.eps>
-(epstopdf)             \includegraphics on input line 454.
+(epstopdf)             \includegraphics on input line 459.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_analitika_xs-eps-converted-to.pdf, id=224, 722.7pt x 542.025pt>
+<./Slike/potek_analitika_xs-eps-converted-to.pdf, id=255, 722.7pt x 542.025pt>
 File: ./Slike/potek_analitika_xs-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/potek_analitika_xs-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/potek_analitika_xs-eps-converted-to.pdf used o
-n input line 454.
-(pdftex.def)             Requested size: 412.56496pt x 309.42061pt.
+n input line 459.
+(pdftex.def)             Requested size: 247.54149pt x 185.65071pt.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 461.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 461.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 461.
+
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 474.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 474.
 [17 <./Slike/potek_analitika_xs-eps-converted-to.pdf>]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 464.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 464.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 464.
-
 Package epstopdf Info: Source file: <./Slike/potek_analitika_ys.eps>
-(epstopdf)                    date: 2018-02-22 19:15:28
-(epstopdf)                    size: 21794 bytes
+(epstopdf)                    date: 2018-02-14 11:59:28
+(epstopdf)                    size: 21606 bytes
 (epstopdf)             Output file: <./Slike/potek_analitika_ys-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2018-02-22 19:15:28
+(epstopdf)                    date: 2018-02-14 15:09:46
 (epstopdf)                    size: 7800 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/potek_analitika_ys-
 eps-converted-to.pdf ./Slike/potek_analitika_ys.eps>
-(epstopdf)             \includegraphics on input line 486.
+(epstopdf)             \includegraphics on input line 476.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_analitika_ys-eps-converted-to.pdf, id=242, 722.7pt x 542.025pt>
+<./Slike/potek_analitika_ys-eps-converted-to.pdf, id=274, 722.7pt x 542.025pt>
 File: ./Slike/potek_analitika_ys-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/potek_analitika_ys-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/potek_analitika_ys-eps-converted-to.pdf used o
-n input line 486.
-(pdftex.def)             Requested size: 412.56496pt x 309.42061pt.
+n input line 476.
+(pdftex.def)             Requested size: 247.54149pt x 185.65071pt.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 494.
+(babel)             in language  on input line 478.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 494.
+(hyperref)                removing `\textasciicaron' on input line 478.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 494.
+(hyperref)                removing `\textasciicaron' on input line 478.
 
 
-Underfull \vbox (badness 2828) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -1219,82 +1331,545 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 510.
+(babel)             in language  on input line 491.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 510.
-[18]
+(babel)             in language  on input line 491.
+[18 <./Slike/potek_analitika_ys-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/potek_analitika_xd.eps>
-(epstopdf)                    date: 2018-02-22 19:15:28
-(epstopdf)                    size: 22223 bytes
+(epstopdf)                    date: 2018-02-14 11:59:41
+(epstopdf)                    size: 22032 bytes
 (epstopdf)             Output file: <./Slike/potek_analitika_xd-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2018-02-22 20:04:36
+(epstopdf)                    date: 2018-02-27 09:23:45
 (epstopdf)                    size: 4227 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/potek_analitika_xd-
 eps-converted-to.pdf ./Slike/potek_analitika_xd.eps>
-(epstopdf)             \includegraphics on input line 513.
+(epstopdf)             \includegraphics on input line 492.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_analitika_xd-eps-converted-to.pdf, id=250, 722.7pt x 542.025pt>
+<./Slike/potek_analitika_xd-eps-converted-to.pdf, id=290, 722.7pt x 542.025pt>
 File: ./Slike/potek_analitika_xd-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/potek_analitika_xd-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/potek_analitika_xd-eps-converted-to.pdf used o
-n input line 513.
-(pdftex.def)             Requested size: 412.56496pt x 309.42061pt.
+n input line 492.
+(pdftex.def)             Requested size: 247.54149pt x 185.65071pt.
 )
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 170.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 166.
-[19 <./Slike/potek_analitika_ys-eps-converted-to.pdf>]
+(babel)             in language  on input line 170.
+[19 <./Slike/potek_analitika_xd-eps-converted-to.pdf>]
+\openout2 = `./tex/Linearni_model.aux'.
+
+ (tex/Linearni_model.tex
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 166.
-[20 <./Slike/potek_analitika_xd-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
+(babel)             in language  on input line 1.
+[20
+
+
+
+]
+  3.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 11.
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_000u_napaka
+.eps>
+(epstopdf)                    date: 2018-02-14 07:31:15
+(epstopdf)                    size: 37967 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_000u_napaka
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 13:40:19
+(epstopdf)                    size: 8554 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_xd_000u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_000u_napaka
+.eps>
+(epstopdf)             \includegraphics on input line 14.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf, id=309, 364.3
+6125pt x 304.13625pt>
+File: ./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use ./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-convert
+ed-to.pdf used on input line 14.
+(pdftex.def)             Requested size: 247.54149pt x 206.62427pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 20.
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 20.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 20.
+
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.e
+ps>
+(epstopdf)                    date: 2018-02-14 07:31:54
+(epstopdf)                    size: 53331 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 13:53:05
+(epstopdf)                    size: 20514 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_xs_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.eps
+>
+(epstopdf)             \includegraphics on input line 24.
+Package epstopdf Info: Output file is already uptodate.
+File: ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf Graphic fil
+e (type pdf)
+<use ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted
+-to.pdf used on input line 24.
+(pdftex.def)             Requested size: 247.54149pt x 204.8939pt.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 24.
+ [21]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 25.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 25.
+[22 <./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_napaka
+.eps>
+(epstopdf)                    date: 2018-02-14 07:31:54
+(epstopdf)                    size: 35809 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xs_200u_napaka
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 14:14:01
+(epstopdf)                    size: 14480 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_xs_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_napaka
+.eps>
+(epstopdf)             \includegraphics on input line 28.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-converted-to.pdf, id=330, 358.3
+3875pt x 294.09875pt>
+File: ./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use ./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-convert
+ed-to.pdf used on input line 28.
+(pdftex.def)             Requested size: 247.54149pt x 203.16618pt.
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_fft.ep
+s>
+(epstopdf)                    date: 2018-02-14 07:31:55
+(epstopdf)                    size: 20536 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xs_200u_fft-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 14:36:42
+(epstopdf)                    size: 7065 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_xs_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_fft.eps>
+(epstopdf)             \includegraphics on input line 31.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-to.pdf, id=332, 364.3612
+5pt x 292.09125pt>
+File: ./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use ./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-
+to.pdf used on input line 31.
+(pdftex.def)             Requested size: 247.54149pt x 198.44113pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/potek_sim_lin_polje_xs.eps>
+(epstopdf)                    date: 2018-02-14 11:42:20
+(epstopdf)                    size: 19570 bytes
+(epstopdf)             Output file: <./Slike/potek_sim_lin_polje_xs-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2018-02-27 14:40:57
+(epstopdf)                    size: 7708 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_lin_polje
+_xs-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_xs.eps>
+(epstopdf)             \includegraphics on input line 35.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/potek_sim_lin_polje_xs-eps-converted-to.pdf, id=334, 594.22pt x 475.77
+75pt>
+File: ./Slike/potek_sim_lin_polje_xs-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use ./Slike/potek_sim_lin_polje_xs-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/potek_sim_lin_polje_xs-eps-converted-to.pdf us
+ed on input line 35.
+(pdftex.def)             Requested size: 247.54149pt x 198.19899pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 67.
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 67.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 67.
+
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_ys_200u_BxBy.e
+ps>
+(epstopdf)                    date: 2018-02-14 07:32:27
+(epstopdf)                    size: 53350 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 15:27:21
+(epstopdf)                    size: 21493 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_ys_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_BxBy.eps
+>
+(epstopdf)             \includegraphics on input line 71.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf, id=336, 355.327
+5pt x 294.09875pt>
+File: ./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf Graphic fil
+e (type pdf)
+
+<use ./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted
+-to.pdf used on input line 71.
+(pdftex.def)             Requested size: 247.54149pt x 204.8939pt.
+
+Underfull \vbox (badness 6910) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 71.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 71.
+[23 <./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-converted-to.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_ys_200u_napaka
+.eps>
+(epstopdf)                    date: 2018-02-14 07:32:27
+(epstopdf)                    size: 35773 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_ys_200u_napaka
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 15:28:20
+(epstopdf)                    size: 14488 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_ys_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_napaka
+.eps>
+(epstopdf)             \includegraphics on input line 74.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf, id=354, 358.3
+3875pt x 294.09875pt>
+File: ./Slike/./LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use ./Slike/./LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_ys_200u_napaka-eps-convert
+ed-to.pdf used on input line 74.
+(pdftex.def)             Requested size: 247.54149pt x 203.16618pt.
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 75.
+[24 <./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-to.pdf> <./Slike/pot
+ek_sim_lin_polje_xs-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_ys_200u_fft.ep
+s>
+(epstopdf)                    date: 2018-02-14 07:32:27
+(epstopdf)                    size: 20532 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_ys_200u_fft-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 15:28:21
+(epstopdf)                    size: 7088 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_ys_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_fft.eps>
+(epstopdf)             \includegraphics on input line 77.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-to.pdf, id=376, 358.3387
+5pt x 292.09125pt>
+File: ./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use ./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-
+to.pdf used on input line 77.
+(pdftex.def)             Requested size: 247.54149pt x 201.77937pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 78.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 78.
+[25 <./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf> <./Slike/./
+LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Slike/potek_sim_lin_polje_ys.eps>
+(epstopdf)                    date: 2018-02-14 11:42:29
+(epstopdf)                    size: 19350 bytes
+(epstopdf)             Output file: <./Slike/potek_sim_lin_polje_ys-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2018-02-27 15:28:21
+(epstopdf)                    size: 7685 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_lin_polje
+_ys-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_ys.eps>
+(epstopdf)             \includegraphics on input line 85.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf, id=401, 597.23125pt x 475
+.7775pt>
+File: ./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use ./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf us
+ed on input line 85.
+(pdftex.def)             Requested size: 247.54149pt x 197.20439pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 123.
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 123.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 123.
+
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.e
+ps>
+(epstopdf)                    date: 2018-02-14 07:31:23
+(epstopdf)                    size: 53484 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 16:11:51
+(epstopdf)                    size: 20665 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_xd_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.eps
+>
+(epstopdf)             \includegraphics on input line 126.
+Package epstopdf Info: Output file is already uptodate.
+File: ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf Graphic fil
+e (type pdf)
+<use ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted
+-to.pdf used on input line 126.
+(pdftex.def)             Requested size: 247.54149pt x 204.8939pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 127.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 127.
+[26 <./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-to.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_200u_napaka
+.eps>
+(epstopdf)                    date: 2018-02-14 07:31:23
+(epstopdf)                    size: 36245 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_200u_napaka
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 16:11:51
+(epstopdf)                    size: 14531 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_xd_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_napaka
+.eps>
+(epstopdf)             \includegraphics on input line 128.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-converted-to.pdf, id=419, 358.3
+3875pt x 294.09875pt>
+File: ./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-converted-to.pdf Graphic f
+ile (type pdf)
+
+<use ./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-convert
+ed-to.pdf used on input line 128.
+(pdftex.def)             Requested size: 247.54149pt x 203.16618pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_200u_fft.ep
+s>
+(epstopdf)                    date: 2018-02-14 07:31:24
+(epstopdf)                    size: 21336 bytes
+(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_200u_fft-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2018-02-27 16:11:52
+(epstopdf)                    size: 7129 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
+_xd_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_fft.eps>
+(epstopdf)             \includegraphics on input line 132.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-to.pdf, id=421, 358.3387
+5pt x 292.09125pt>
+File: ./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use ./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-
+to.pdf used on input line 132.
+(pdftex.def)             Requested size: 247.54149pt x 201.77937pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/potek_sim_lin_polje_xd.eps>
+(epstopdf)                    date: 2018-02-27 16:47:16
+(epstopdf)                    size: 20597 bytes
+(epstopdf)             Output file: <./Slike/potek_sim_lin_polje_xd-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2018-02-27 16:59:20
+(epstopdf)                    size: 7847 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_lin_polje
+_xd-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_xd.eps>
+(epstopdf)             \includegraphics on input line 138.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/potek_sim_lin_polje_xd-eps-converted-to.pdf, id=423, 600.2425pt x 475.
+7775pt>
+File: ./Slike/potek_sim_lin_polje_xd-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use ./Slike/potek_sim_lin_polje_xd-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/potek_sim_lin_polje_xd-eps-converted-to.pdf us
+ed on input line 138.
+(pdftex.def)             Requested size: 247.54149pt x 196.20981pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 174.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 174.
+[27 <./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf>]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 174.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 174.
+[28 <./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-converted-to.pdf>]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 174.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 174.
+[29 <./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-to.pdf> <./Slike/pot
+ek_sim_lin_polje_xd-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 415.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 415.
  (Diploma_V2.aux
-(tex/Analiticna_izpeljava.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
+(tex/Analiticna_izpeljava.aux) (tex/Linearni_model.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 415.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 415.
 Package rerunfilecheck Info: File `Diploma_V2.out' has not changed.
-(rerunfilecheck)             Checksum: 2E3791452D52608A6642960F4C243FF9;1370.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 411.
+(rerunfilecheck)             Checksum: 16D1CD8C42809F1B40F1CE0A7EB57E57;1869.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 415.
  ) 
 Here is how much of TeX's memory you used:
- 17908 strings out of 493323
- 334050 string characters out of 3139065
- 408684 words of memory out of 3000000
- 21046 multiletter control sequences out of 15000+200000
+ 18026 strings out of 493323
+ 343694 string characters out of 3130449
+ 410974 words of memory out of 3000000
+ 21111 multiletter control sequences out of 15000+200000
  11965 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,11n,94p,637b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Diploma_V2.pdf (20 pages, 831409 bytes).
+ 59i,11n,94p,748b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alic/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alic/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alic/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
+rs/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr17.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alic/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alic/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/alic/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
+/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b>
+Output written on Diploma_V2.pdf (29 pages, 953737 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 541 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 255 words of extra memory for PDF output out of 10000 (max. 10000000)
 
