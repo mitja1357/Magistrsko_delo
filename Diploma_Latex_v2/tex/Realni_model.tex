@@ -1,58 +1,162 @@
 
 
-\chapter{Realni model}
+\chapter{Realni model magnetnega polja}
+
+V tem poglavju bom predstavil rezultate simulacij, v katerih sem uporabil realen model magnetnega polja. Podjetje RLS merilna tehnika, mi je posredovalo rezultate simulacije z komponente gostote magnetnega polja 2,55 mm nad magnetom.  Simulirano polje pokriva obmo"cje 20x20 mm nad magnetom s korakom 0,02 mm (Slika \ref{Realno_polje}).
+
+\slikaeps{Model z- komponente gostote magnetnega polja uporabljen v simulacijah}{Realno_polje}
+
+
+
 \section{Brez napake}
-\subsection{Sin\_cos}
-\subsection{napaka}
-\subsection{fft\_napake}
-\section{XS}
-\subsection{Sin\_cos}
-\subsection{napaka}
-\subsection{fft\_napake}
-\subsection{visanje\_napake}
+Kljub idealni monta"zi, se bo  v realnosti pojavila napaka. Magnet je lahko neenakomerno magnatiziran, kar nam "ze v za"cetku ustvari neko napako.
+Poglejmo si zato najprej zajeta signala $sin$ in $cos$ (Slika \ref{./Real/sim_real_polje_xd_000u_BxBy}).
 
-nastavek = 0.3352 xs^3-2.4826 xs^2+11.9361 xs+1.0156e-5
-H0	[-0,00699209073722017;11,6029221097184;1,83279480170159;-1,55042221235733]
-H1	[0,213427020213799;-0,763231162909124;4,37386076888708;-6,54664493553176]
-H2	[0,0160541277521412;12,0524850069422;-0,197016637153101;-0,147612052035732]
-H3	[0,102950730580531;-0,353882914777200;1,07051373889150;-1,42532588217098]
+\slikaeps{Poteka signala $sin$ in $cos$ pri simulacijah z realnim magnetnim poljem brez vplivov ekscentri"cnosti}{./Real/sim_real_polje_xd_000u_BxBy}
+Signala $sin$ in $cos$ nimata popolne oblike kot bi ju pri"cakovali. Napaka je tudi posledica numeri"cnega izra"cuna magnetnega polja. Ta nepopolnost analognih signalov se izra"za tudi v napaki (Slika \ref{./Real/sim_real_polje_xd_000u_napaka}).
+\slikaeps{Napaka pri simulacijah z realnim magnetnim poljem brez vplivov ekscentri"cnosti}{./Real/sim_real_polje_xd_000u_napaka}
+Napaka je bolj izrazita kot pri linearnem modelu polja. V napaki se pojavljajo tudi skoki (npr pri$105^{\circ}$ ), ki so posledica nepopolnega numeri"cno izra"cunanega modela magnetnega polja.
+Razvijmo napako v Fourierovo vrsto(Slika \ref{./Real/sim_real_polje_xd_000u_fft}).
+\slikaeps{Amplitude harmonikov napake  simulacijah z realnim magnetnim poljem brez ekscentri"cnosti}{./Real/sim_real_polje_xd_000u_fft}
+Prevladujeta prvi in "cetrti harmonik kar je pri"cakovano po podatkovnih listih citeAM8192.
 
-\section{YS}
-\subsection{Sin\_cos}
-\subsection{napaka}
-\subsection{fft\_napake}
-\subsection{visanje\_napake}
+\section{Simulacija stati"cne eksentri"cnosti}
 
+Oglejmo si sedaj rezultate ob upo"stevanju stati"cne ekscentri"cnosti. Po pr"cakovanjih se bo razlika pokazala v amplitudah in faznem zamiku analognih signalov. Slika \ref{./Real/sim_real_polje_xs_200u_BxBy} prikazuje poteka simuliranih signalov $sin$ in $cos$. Amlituda se ni opazno spremenila, spremenil pa se je fazni zamik.
+\slikaeps{Poteka signala $sin$ in $cos$ pri simulacijah z realnim magnetnim poljem s 0,2 mm stati"cne ekscentri"cnost v smeri xi}{./Real/sim_real_polje_xs_200u_BxBy}
+S prikazom napake (Slika \ref{./Real/sim_real_polje_xs_200u_napaka}) opazimo povi"sanje drugega harmonika. Z razvojem v Fourierovo vrsto lahko to tudi potrdimo (Slika \ref{./Real/sim_real_polje_xs_200u_fft}). 
+\slikaeps{Poteka napake pri simulacijah z realnim magnetnim poljem s 0,2 mm stati"cne ekscentri"cnost v smeri xi}{./Real/sim_real_polje_xs_200u_napaka}
 
-H0	[-0,000774350577012469;-12,4304703563319;2,74013123468618;-3,06353835179313]
-H1	[0,223167923323101;-1,33342694043456;4,20808447040165;-3,26357540021727]
-H2	[-0,0137732220186476;12,1366926708397;-0,744557116980244;2,04824841975282]
-H3	[0,101621076582716;-0,382265446928020;1,96243881009797;-2,61456623855890]
+\slikaeps{Amplitude harmonikov napake  simulacijah z realnim magnetnim poljem s 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Real/sim_real_polje_xs_200u_fft}
 
-\section{ZS}
-imam polje le v ravnini
-\section{Xd}
-\subsection{Sin\_cos}
-\subsection{napaka}
-\subsection{fft\_napake}
-\subsection{visanje\_napake      }  
+Po pri"cakovanjih iz simulacij z linearnim modela magnetnim poljem se napaka izra"za enako. Enosmerna komponenta in drugi harmonik imata manj"so amplitudo, kot simulacije z uporabo magnetnega polja aproksimiranega z ravnino, je pa ve"sji dele"z drugih harmonikov.
 
 
-H0	[0,0111510309383977;-0,894923054154696;5,27197808464260;-5,69819797482716]
-H1	[0,0143170544619670;22,9403542088781;9,15989005045333;-8,36409138223516]
-H2	[0,0189230245440221;-0,395754684442712;2,46036707596027;-1,75121765929075]
-H3	[0,0862709237403795;8,70777569715877;-1,31040329058477;1,03796682705842]
+Oglejmo si "se napako simulacije pri stati"cni ekscentri"cnosti v smeri y (Slika \ref{./Real/sim_real_polje_ys_200u_napaka}).Opazimo negativno enosmerno komponento ter izrazit drugi harmonik, kar je pri"cakovano.  Na sliki \ref{./Real/sim_real_polje_ys_200u_fft} vidimo napako razvito v Fourierovo vrsto, ki nam poka"ze pri"cakovane velikosti amplitud.
+\slikaeps{Napaka $\varepsilon$ pri simulacijah z realnim magnetnim poljem s 0,2 mm stati"cne ekscentri"cnosti v smeri y}{./Real/sim_real_polje_ys_200u_napaka}
 
-\section{YD}
-\subsection{Sin\_cos}
-\subsection{napaka}
-\subsection{fft\_napake}
-\subsection{visanje\_napake}
+\slikaeps{Amplitude harmonikov napake  simulacijah z realnim magnetnim poljem s 0,2 mm stati"cne ekscentri"cnosti  v smeri y}{./Real/sim_real_polje_ys_200u_fft}
 
-H0	[-0,0154347120752856;0,797779839901433;-1,86015520249516;2,13823367319206]
-H1	[0,120051243593169;6,18566630103253;10,1603842022267;-11,9616860661348]
-H2	[0,00846974696955741;-0,0715292486907690;0,746150539220961;-0,0208954190768071]
-H3	[0,00115885710505121;7,41365534917132;6,31804550306713;-8,33363124295160]
+\newpage
+Oglejmo si sedaj "se poteka spreminjanja velikosti amplitud od vi"sanja ekscentri"cnosti.
+
+\slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od stati"cne ekscentri"cnosti v smeri x}{potek_sim_real_polje_xs}
+
+\begin{eqnarray}
+&A_0=-1,55 \Delta x_s^3+1,83 \Delta x_s^2+11,60 \Delta x_s\\
+&C_1=-6,55\Delta x_s^3+4,37 \Delta x_s^2- 0,76\Delta x_s+0,2\\
+&C_2=-0,15\Delta x_s^3+0,20\Delta x_s^2+12,14\Delta x_s-0,01\\
+&C_3=-1,43\Delta x_s^3+1,07\Delta x_s^2-0,36\Delta x_s +0,10
+\end{eqnarray}
+Aproksimacije potekov s polinomom nam opi"sejo linearno nara"s"canje enesmerne komponente ter amplitude drugega harmonika, pri manj"sih odmikih.  Opazimo da  je amplituda prvega in tretjega harmonika dokaj konstantna.
 
 
+
+%\subsection{Sin\_cos}
+%\subsection{napaka}
+%\subsection{fft\_napake}
+%\subsection{visanje\_napake}
+%
+%nastavek = 0.3352 xs^3-2.4826 xs^2+11.9361 xs+1.0156e-5
+%H0	[-0,00699209073722017;11,6029221097184;1,83279480170159;-1,55042221235733]
+%H1	[0,213427020213799;-0,763231162909124;4,37386076888708;-6,54664493553176]
+%H2	[0,0160541277521412;12,0524850069422;-0,197016637153101;-0,147612052035732]
+%H3	[0,102950730580531;-0,353882914777200;1,07051373889150;-1,42532588217098]
+%
+%\section{YS}
+%\subsection{Sin\_cos}
+%\subsection{napaka}
+%\subsection{fft\_napake}
+%\subsection{visanje\_napake}
+%
+%
+
+Oglejmo si "se poteke spreminjnanja velikosti amplitud pri ekscentri"cnsoti v smeri y.
+
+\slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od stati"cne ekscentri"cnosti v smeri y}{potek_sim_real_polje_ys}
+
+\begin{eqnarray}
+&A_0=-3,06 \Delta x_s^3+2,74 \Delta x_s^2-12,43 \Delta x_s\\
+&C_1=3,26\Delta x_s^3+4,21 \Delta x_s^2- 1,33\Delta x_s+0,22\\
+&C_2=2,05\Delta x_s^3-0,74\Delta x_s^2+12,14\Delta x_s-0,01\\
+&C_3=-2,61\Delta x_s^3+1,96\Delta x_s^2-0,38\Delta x_s +0,10
+\end{eqnarray}
+
+
+Pri manj"sih odmikih stati"cne ekscentri"cnosti v smeri y, pridobiva negativno vrednost enosmerna komponenta in vi"sa se amplituda drugega harmonika. Poteki so pri"cakovani. Podrobnej"so primerjavo potekov obeh simulacij bom opravil na koncu poglavja.
+
+
+%H0	[-0,000774350577012469;-12,4304703563319;2,74013123468618;-3,06353835179313]
+%H1	[0,223167923323101;-1,33342694043456;4,20808447040165;-3,26357540021727]
+%H2	[-0,0137732220186476;12,1366926708397;-0,744557116980244;2,04824841975282]
+%H3	[0,101621076582716;-0,382265446928020;1,96243881009797;-2,61456623855890]
+%
+%\section{ZS}
+%imam polje le v ravnini
+\section{Simulacije dinam"cne ekscentri"cnosti }
+%\subsection{Sin\_cos}
+%\subsection{napaka}
+%\subsection{fft\_napake}
+%\subsection{visanje\_napake      }  
+%
+Poglejmo si sedaj "se dinami"cno ekscentir"cnost.Po simulacijah dinami"cne ekscentri"cnosti v smeri x pri linearnem polju, pri"cakujemo ob enosmerno komponento. Primer dinami"cne ekscentri"cnosti je na sliki \ref{./Real/sim_real_polje_xd_200u_BxBy}.
+\slikaeps{Poteka signala $sin$ in $cos$ pri simulacijah z realnim magnetnim poljem s 0,2 mm dinami"cne ekscentri"cnost v smeri xi}{./Real/sim_real_polje_xd_200u_BxBy}
+Velikost enosmerne komponente $sin$ je $-1,60\mathrm{mT}$ in $cos$ $-1,59\mathrm{mT}$. Enosmerna komponenta ni tako izrazita, kot pri simulacijah z linearnim poljem, vendar kljub temu povzro"ci napako (Slika \ref{./Real/sim_real_polje_xd_200u_napaka}).
+
+\slikaeps{Poteka napake pri simulacijah z realnim magnetnim poljem s 0,2 mm dinami"cne ekscentri"cnost v smeri x}{./Real/sim_real_polje_xd_200u_napaka}
+V napaki se izrazite poka"ze prvi harmonik kar je bilo pri"cakovati. Razvijmo napako "se v Fourierovo vrsto.
+\slikaeps{Amplitude harmonikov napake  simulacijah z realnim magnetnim poljem s 0,2 mm dinami"cne ekscentri"cnosti v smeri x}{./Real/sim_real_polje_xd_200u_fft}
+po pri"cakovanjih je najvi"sja amplituda prvega harmonika, narasel je tudi tretji harmonik.
+
+Poglejmo si sedaj "se spreminjanje velikosti amplitud s spreminjanjem velikosti dinami"cne ekscentri"cnosti v smeri x.
+
+\slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od dinamii"cne ekscentri"cnosti v smeri x}{potek_sim_real_polje_xd}
+
+Aproksimirajmo poteke s polinomo tretje stopnje. po pri"cakovanjih je izrazito nara"s"canje prvega harmonika.
+\begin{eqnarray}
+&A_0=-5,70 \Delta x_d^3+5,27 \Delta x_d^2-0,89 \Delta x_d+0,01\\
+&C_1=-8,36\Delta x_d^3+9,16 \Delta x_d^2-+22,94 \Delta x_d+0,01\\
+&C_2=-1,75\Delta x_d^3+2,46\Delta x_d^2-0,40\Delta x_d+0,02\\
+&C_3=1,04\Delta x_d^3-1,31\Delta x_d^2+8,71\Delta x_d+0,09
+\end{eqnarray}
+
+
+Simulacije dinami"cne ekscentri"cnosti v y smeri z aproksimacijo magnetnega polja z ravnino ni bilo mogo"ce. Z realnim modelom sem lahko opravil simulacije. Pri"cakovanja so, da se bo tudi tu izrazil prvi harmonik. Kot rezultat prilagam le poteke amplitud posameznega harmonika napake glede na ekscentri"cnost v smeri y.
+
+\slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od dinamii"cne ekscentri"cnosti v smeri y}{potek_sim_real_polje_yd}
+
+Aproksimirajmo poteke s polinomo tretje stopnje. Po pri"cakovanjih je izrazito nara"s"canje prvega harmonika. Amplituda prvega harmonika je pri dinami"cni ekscentri"cnosti v smeri y za faktor 3 ni"zja kot pri ekscentri"cnosti v x  smeri.
+\begin{eqnarray}
+&A_0=2,14 \Delta x_d^3-1,86\Delta x_d^2+0,80 \Delta x_d+0,02\\
+&C_1=-11,96\Delta x_d^3+10,16 \Delta x_d^2+6,19 \Delta x_d+0,12\\
+&C_2=-0,02\Delta x_d^3+0,75\Delta x_d^2-0,07\Delta x_d+0,01\\
+&C_3=-8,33\Delta x_d^3+6,32\Delta x_d^2+7,41\Delta x_d
+\end{eqnarray}
+
+%\slikaeps{Poteka signala $sin$ in $cos$ pri simulacijah z realnim magnetnim poljem s 0,2 mm dinami"cne ekscentri"cnost v smeri y}{./Real/sim_real_polje_yd_200u_BxBy}
+%
+%
+%\slikaeps{Poteka napake pri simulacijah z realnim magnetnim poljem s 0,2 mm dinami"cne ekscentri"cnost v smeri y}{./Real/sim_real_polje_yd_200u_napaka}
+%
+%\slikaeps{Amplitude harmonikov napake  simulacijah z realnim magnetnim poljem s 0,2 mm dinami"cne ekscentri"cnosti v smeri y}{./Real/sim_real_polje_yd_200u_fft}
+%
+%H0	[0,0111510309383977;-0,894923054154696;5,27197808464260;-5,69819797482716]
+%H1	[0,0143170544619670;22,9403542088781;9,15989005045333;-8,36409138223516]
+%H2	[0,0189230245440221;-0,395754684442712;2,46036707596027;-1,75121765929075]
+%H3	[0,0862709237403795;8,70777569715877;-1,31040329058477;1,03796682705842]
+%
+%\section{YD}
+%\subsection{Sin\_cos}
+%\subsection{napaka}
+%\subsection{fft\_napake}
+%\subsection{visanje\_napake}
+%
+%H0	[-0,0154347120752856;0,797779839901433;-1,86015520249516;2,13823367319206]
+%H1	[0,120051243593169;6,18566630103253;10,1603842022267;-11,9616860661348]
+%H2	[0,00846974696955741;-0,0715292486907690;0,746150539220961;-0,0208954190768071]
+%H3	[0,00115885710505121;7,41365534917132;6,31804550306713;-8,33363124295160]
+%
+%
 \section{Razlika med simulacijami}
+
+Sedaj si oglejmo "se primerjavo simulacij.

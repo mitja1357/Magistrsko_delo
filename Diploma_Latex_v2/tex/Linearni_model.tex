@@ -21,11 +21,11 @@ Numeri"cno napako lahko na pri"cakovano napako zaradi ekscnetri"cnosti zanemarim
 
 Oglejmo si rezultate simulacij stati"cne ekscentri"cnosti v smeri x. Po pri"cakovanjih se bo povi"sala amplituda $sin$ in $cos$ signala ter zmanj"sal njun fazni zamik (izraza (\ref{equ:Bx_stat}) in \ref{equ:By_stat}).
  
-\slikaeps{Signala $sin$ in $cos$ pri simulacijah z linearnim poljem pri 0.2 mm stati"cne ekscentri"cnosti v smeri x}{./LIN/sim_lin_polje_xs_200u_BxBy}
+\slikaeps{Signala $sin$ in $cos$ pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./LIN/sim_lin_polje_xs_200u_BxBy}
 \newpage
 Napaka $\varepsilon$  je prikazana na sliki \ref{./LIN/sim_lin_polje_xs_200u_napaka}.
 
-\slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0.2 mm stati"cne ekscentri"cnosti v smeri x}{./LIN/sim_lin_polje_xs_200u_napaka}
+\slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./LIN/sim_lin_polje_xs_200u_napaka}
 
 Napako razvijmo v Fourierovo vrsto in pridobimo amplitude posameznih harmonikov napake(Slika \ref{./LIN/sim_lin_polje_xs_200u_fft}).
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./LIN/sim_lin_polje_xs_200u_fft}
@@ -80,7 +80,7 @@ Tudi tu najbolj izstopata enosmerna komponenta in drugi harmonik. Za razliko od 
 
 
 
-Na sliki \ref{potek_sim_lin_polje_ys} vidimo odvisnost amplitud od spreminjanja ekscentri"cnosti.
+Na sliki \ref{potek_sim_lin_polje_ys} vidimo odvisnost amplitud od spreminjanja stati"cne ekscentri"cnosti v smeri y.
 
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od stati"cne ekscentri"cnosti v smeri y}{potek_sim_lin_polje_ys}
 
@@ -120,7 +120,7 @@ Poteke s slike \ref{potek_sim_lin_polje_ys} predstavimo s polinomom druge stopnj
 
 
 
-\section{Dinami"cna ekscentri"cnost v smeri x}
+\section{Dinami"cna ekscentri"cnost}
 
 Oglejmo si sedaj rezultate simulacij dinami"cne ekscentri"cnosti. V signalih $sin$ in $cos$ se pojavi enosmerna komponenta (Slika \ref{./LIN/sim_lin_polje_xd_200u_BxBy}).
 \slikaeps{Signala $sin$ in $cos$ pri simulacijah z linearnim poljem pri 0.2 mm dinami"cne ekscentri"cnosti v smeri x}{./LIN/sim_lin_polje_xd_200u_BxBy}
@@ -137,7 +137,7 @@ Na sliki \ref{potek_sim_lin_polje_ys} vidimo odvisnost amplitud od spreminjanja 
 
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od dinami"cne ekscentri"cnosti v smeri x}{potek_sim_lin_polje_xd}
 
-Poteke s slike \ref{potek_sim_lin_polje_xd} predstavimo  s polinomi.  Rezultati so bili pridobljeni s funkcijo Curve Fittinga
+Poteke s slike \ref{potek_sim_lin_polje_xd} aproksimiramo  s polinomi.  Rezultati so bili pridobljeni po metodi najmanj"sih kvadratov. Koeficienti ostalih potenc pri aproksimaciji $C_1$, $C_2$ in $C_3$ so bili zanemarljivi. 
 
 \begin{eqnarray}
 &A_0=1,01 10^{-11} \Delta x_d^3 -6,89 10^{-12} \Delta x_d^2+1,25 10^{-12} \Delta x_d+1,11 10^{-13}\\
@@ -146,7 +146,9 @@ Poteke s slike \ref{potek_sim_lin_polje_xd} predstavimo  s polinomi.  Rezultati 
 &C_3=3,91 \Delta x_d^3
 \end{eqnarray}
 
+Dinami"cna ekscentri"cnost v smeri y, pri simulacijah z linearnim poljem ni izra"zala napake, saj se polje ob tej ekscentri"cnosti zaradi aproksimacije z ravnino, za Hall-ove sonde ni spremenilo.
 
+V tem poglavju sem predstavil numeri"cne rezultate simulacij z magnetnim poljem aproksimiranega z ravnino. Rezultati so potrdili prevladujo"ce harmomnike, pojavljajo se tudi vi"sji. V nadaljevanju pri"cakujem, z bolj"sim modelom magnetnega polja manj"se napake.
 
 
 %H0	[1,10753993340810e-13;1,24706314026430e-12;-6,88797159092575e-12;1,01065478093830e-11]
