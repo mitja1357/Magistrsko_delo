@@ -9,8 +9,8 @@ iskany=min(abs(pozicija(2)-Y_tmp));
 iskanx=round(50*(iskanx+pozicija(1)))/50;
 iskany=round(50*(iskany+pozicija(2)))/50;
 
-x_tmp=find(X_tmp==iskanx);
-y_tmp=find(Y_tmp==iskany);
+x_tmp=find(abs(X_tmp-iskanx)<1e-6);
+y_tmp=find(abs(Y_tmp-iskany)<1e-6);
 
 B=Zmesh(x_tmp,y_tmp);
 

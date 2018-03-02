@@ -1,5 +1,5 @@
 r_0=2.4;
-y_s=-0.01:0.001:0.01;
+y_s=0:25e-3:500e-3;
 % plot(y_s,atan2d(y_s,(y_s+r_0)))
 % hold on
 % plot(y_s,(-90/pi*r_0^2.*y_s.*(r_0^5+29*r_0^4.*y_s+132*r_0^3.*y_s.^2+208*r_0^2.*y_s.^3 ...
@@ -39,40 +39,45 @@ xd.B_1=(y_s.* (3.* r_0.^5-18.* r_0.^4.* y_s+64.* r_0.^3.* y_s.^2 -108 ...
 xd.B_2=(2.* y_s.^3.* (-4.* r_0.^3+9.* r_0.^2.* y_s-6.* r_0.* y_s.^2+2.* y_s...
 .^3))./(3.* (r_0.^2-2.* r_0.* y_s+2.* y_s.^2).^3)*180/pi;
 
+rezultati
+
 
 
 FigHandle=figure;
 set(FigHandle, 'Position', [100, 100, 960, 720]);
 %set(gca, 'ColorOrder', jet(3), 'NextPlot', 'replacechildren');
 
-plot(y_s,xs.A_0);
+plot(y_s,xs.A_0,'LineWidth',2);
 hold on
-plot(y_s,sqrt(xs.A_1.^2+xs.B_1.^2));
-plot(y_s,sqrt(xs.A_2.^2+xs.B_2.^2));
+plot(y_s,sqrt(xs.A_1.^2+xs.B_1.^2),'LineWidth',2);
+plot(y_s,sqrt(xs.A_2.^2+xs.B_2.^2),'LineWidth',2);
 grid on
-    ylabel('amplituda harmonika napake / ^\circ')
-    xlabel('ekscentricnost / mm')
+    ylabel('amplituda harmonika napake / ^\circ','FontSize',16)
+    xlabel('ekscentriènost / mm','FontSize',16)
 
-legend('Enosmerna komp.','Harm 1','Harm 2','Location','NorthWest')
+lgd=legend('Enosmerna komp.','Harm 1','Harm 2','Location','NorthWest');
+lgd.FontSize=16;
 FigHandle=figure;
 set(FigHandle, 'Position', [100, 100, 960, 720]);
 %set(gca, 'ColorOrder', jet(3), 'NextPlot', 'replacechildren');
-plot(y_s,ys.A_0);
+plot(y_s,ys.A_0,'LineWidth',2);
 hold on
-plot(y_s,sqrt(ys.A_1.^2+ys.B_1.^2));
-plot(y_s,sqrt(ys.A_2.^2+ys.B_2.^2));
+plot(y_s,sqrt(ys.A_1.^2+ys.B_1.^2),'LineWidth',2);
+plot(y_s,sqrt(ys.A_2.^2+ys.B_2.^2),'LineWidth',2);
 grid on
-    ylabel('amplituda harmonika napake / ^\circ')
-    xlabel('ekscentricnost / mm')
-legend('Enosmerna komp.','Harm 1','Harm 2','Location','NorthWest')
+    ylabel('amplituda harmonika napake / ^\circ','FontSize',16)
+    xlabel('ekscentriènost / mm','FontSize',16)
+lgd=legend('Enosmerna komp.','Harm 1','Harm 2','Location','NorthWest');
+lgd.FontSize=16;
 FigHandle=figure;
 set(FigHandle, 'Position', [100, 100, 960, 720]);
 %set(gca, 'ColorOrder', jet(3), 'NextPlot', 'replacechildren');
-plot(y_s,xd.A_0);
+plot(y_s,xd.A_0,'LineWidth',2);
 hold on
-plot(y_s,sqrt(xd.A_1.^2+xd.B_1.^2));
-plot(y_s,sqrt(xd.A_2.^2+xd.B_2.^2));
+plot(y_s,sqrt(xd.A_1.^2+xd.B_1.^2),'LineWidth',2);
+plot(y_s,sqrt(xd.A_2.^2+xd.B_2.^2),'LineWidth',2);
 grid on
-legend('Enosmerna komp.','Harm 1','Harm 2','Location','NorthWest')
-    ylabel('amplituda harmonika napake / ^\circ')
-    xlabel('ekscentricnost / mm')
+lgd=legend('Enosmerna komp.','Harm 1','Harm 2','Location','NorthWest');
+lgd.FontSize=16;
+    ylabel('amplituda harmonika napake / ^\circ','FontSize',16)
+    xlabel('ekscentriènost / mm','FontSize',16)

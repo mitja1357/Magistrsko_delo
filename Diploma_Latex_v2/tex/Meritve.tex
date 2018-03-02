@@ -1,50 +1,183 @@
 \chapter{Meritve}
-\section{Brez napake}
-\subsection{Sin\_cos}
-\subsection{napaka}
-\subsection{fft\_napake}
-\section{XS}
-\subsection{Sin\_cos}
-\subsection{napaka}
-\subsection{fft\_napake}
-\subsection{visanje\_napake}
+%\section{Brez napake}
+%\subsection{Sin\_cos}
+%\subsection{napaka}
+%\subsection{fft\_napake}
+%\section{XS}
+%\subsection{Sin\_cos}
+%\subsection{napaka}
+%\subsection{fft\_napake}
+%\subsection{visanje\_napake}
+%
+%nastavek = 0.3352 xs^3-2.4826 xs^2+11.9361 xs+1.0156e-5
+%H0	[-0,0788300698956381;-0,244060204305370;-0,687148831322084;0,0103846445852245]
+%H1	[0,0676397954063620;0,341023878959022;2,17530863209977;0,380689577026790]
+%H2	[0,0321995432854790;2,97431457433791;-3,25440542919127;19,9501165528466]
+%H3	[0,161639792449458;-0,0674032561371874;0,396378799075362;-0,767078050899793]
+%
+%
+%
+%\section{YS}
+%\subsection{Sin\_cos}
+%\subsection{napaka}
+%\subsection{fft\_napake}
+%\subsection{visanje\_napake}
+%H0	[-0,125225617182917;5,45211948990653;-7,01270447995828;5,96652583236181]
+%H1	[0,0441520939449605;-0,212896911948413;12,7503402690231;-19,8802291697083]
+%H2	[0,0232360469649201;-0,425126668548418;24,9444995014035;-34,9921278370895]
+%H3	[0,152839960231160;-0,403917105230653;2,00190861822707;-2,53837100668412]
+%\section{ZS}
+%\subsection{Sin\_cos}
+%\subsection{napaka}
+%\subsection{fft\_napake}
+%\subsection{visanje\_napake}
+%
+%H0	[-0,133667645230547;0,0552962954246356;-0,943817911449795;0,698305490182285]
+%H1	[0,0403141624551963;0,180185960213708;0,129741148793180;0,0611532545109655]
+%H2	[0,0379918588235422;0,0463681332197860;-0,0603146120527139;0,0684982804818869]
+%H3	[0,139485505473835;0,0451213265486862;0,193417839376187;-0,147858653757135]
+%\section{Xd}
+%\subsection{Sin\_cos}
+%\subsection{napaka}
+%\subsection{fft\_napake}
+%\subsection{visanje\_napake}
+%
+%H0	[-0,0235614911086793;0,321071338576502;-1,84834137393735;1,46394619238393]
+%H1	[0,136347931291116;1,31166100194763;0,668435274468364;0,567598464373045]
+%H2	[0,126562221569952;0,0367924696515395;-0,138846754407765;0,0924108962295517]
+%H3	[0,152741191050619;0,0862732030589709;-0,153919077032749;0,217469596711140]
+%
+%\section{Rezultati med meritvami in simulacijami}
 
-nastavek = 0.3352 xs^3-2.4826 xs^2+11.9361 xs+1.0156e-5
-H0	[-0,0788300698956381;-0,244060204305370;-0,687148831322084;0,0103846445852245]
-H1	[0,0676397954063620;0,341023878959022;2,17530863209977;0,380689577026790]
-H2	[0,0321995432854790;2,97431457433791;-3,25440542919127;19,9501165528466]
-H3	[0,161639792449458;-0,0674032561371874;0,396378799075362;-0,767078050899793]
+
+
+Spoznali smo simulacijske rezultate in pridobili predstavo potekov napake ob posamezni ekscentri"cnosti. S simulacijskim modelom smo pridobili ob"cutek kaj naj pri"cakujemo pri meritvah. V tem poglavju bom opisal opravljene meritve. Spoznali se bomo s merilnim mestom in postopkom nastavljanja ekscentri"cnosti na merilni napravi.
+\section{Oprema in postavitev merilnega mesta}
+
+Merilno mesto je bilo sestavljala krmilna plos"ca za regulacijo motorskega pogona in obdelavo signalov enkoderjev ter konstrukcija z motorjem referen"cnim dajalniko TONiC podjetja Renishaw, magnetnim aktuatorjem za RM44 podjetja RLS  d.o.o., 6 osnim mikrometerskim nastavljalnikom pozicije HTIMS601 za premikanje senorja RM44 ter senzor RM44AC. Merilno mesto je prikazano na sliki \ref{postavitevmerilnegamesta}.
+
+\bitnaslika{Postavitev testnega mesta}{}{0.6\textwidth}{0.877\textwidth}% 1.46 je razmerje visina sirina
+Stati"cno ekscentri"cnost sem lahko nastavljal v "sestih prostorskih stopnjah. Na sliki \ref{HTIMS601.png} je prikazano kateri vijak je za nastavljanje posamezne prostorske osi. Vijaki poimenovani x-os, y-os in z-os so za nastavljanje translaciijo merjenca, rot x-osi, rot y-osi,rot z-osi so za nastavljanje rotacije merjenca. Motor se je pri vseh meritvah vrtel s hitrostjo 60 RPM.
+
+\bitnaslika{Naprava za nastavljanje stati"cne ekscentri"cnosti}{HTIMS601.png}{0.7\textwidth}{1.023\textwidth}
 
 
 
-\section{YS}
-\subsection{Sin\_cos}
-\subsection{napaka}
-\subsection{fft\_napake}
-\subsection{visanje\_napake}
-H0	[-0,125225617182917;5,45211948990653;-7,01270447995828;5,96652583236181]
-H1	[0,0441520939449605;-0,212896911948413;12,7503402690231;-19,8802291697083]
-H2	[0,0232360469649201;-0,425126668548418;24,9444995014035;-34,9921278370895]
-H3	[0,152839960231160;-0,403917105230653;2,00190861822707;-2,53837100668412]
-\section{ZS}
-\subsection{Sin\_cos}
-\subsection{napaka}
-\subsection{fft\_napake}
-\subsection{visanje\_napake}
+\section{Senzor v izhodi"s"cni poziciji}
+Za meritve ekscentri"cnosti je bilo potrebno senzor, kot magnetni aktuator nastaviti v "cim bolj idealno pozicijo. Ni"celna lega je prikazana na sliki \ref{./Meritve/meritev_ys_000u_BxBy}
 
-H0	[-0,133667645230547;0,0552962954246356;-0,943817911449795;0,698305490182285]
-H1	[0,0403141624551963;0,180185960213708;0,129741148793180;0,0611532545109655]
-H2	[0,0379918588235422;0,0463681332197860;-0,0603146120527139;0,0684982804818869]
-H3	[0,139485505473835;0,0451213265486862;0,193417839376187;-0,147858653757135]
-\section{Xd}
-\subsection{Sin\_cos}
-\subsection{napaka}
-\subsection{fft\_napake}
-\subsection{visanje\_napake}
+\slikaeps{Signala $sin$ in $cos$ pomerjena v izhodi"s"cni legi}{./Meritve/meritev_ys_000u_BxBy}
+Napaka $\varepsilon$, ki je bila pomerjena  je prikazana na sliki \ref{./Meritve/meritev_ys_000u_napaka}.
+\slikaeps{Napaka $\varepsilon$ pomerjena v izhodi"s"cni legi}{./Meritve/meritev_ys_000u_napaka}
+Napaka je po pri"cakovanjih manj"sa kot je bila pomerjena pri simulacijah. Z razvojem v Fourierovo vrsto (Slika \ref{./Meritve/meritev_ys_000u_fft}) se potrdi izstopanje "cetrtega harmonika, ki je bil izrazit tudi v simulacijah z realnim modelom polja.
+Napako razvijmo v Fourierovo vrsto in pridobimo amplitude posameznih harmonikov napake(Slika \ref{./Meritve/meritev_ys_000u_fft}).
+\slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Meritve/meritev_ys_000u_fft}
 
-H0	[-0,0235614911086793;0,321071338576502;-1,84834137393735;1,46394619238393]
-H1	[0,136347931291116;1,31166100194763;0,668435274468364;0,567598464373045]
-H2	[0,126562221569952;0,0367924696515395;-0,138846754407765;0,0924108962295517]
-H3	[0,152741191050619;0,0862732030589709;-0,153919077032749;0,217469596711140]
 
-\section{Rezultati med meritvami in simulacijami}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\slikaeps{Signala $sin$ in $cos$ pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Meritve/meritev_xs_200u_BxBy}
+
+\slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Meritve/meritev_xs_200u_napaka}
+
+\slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Meritve/meritev_xs_200u_fft}
+
+
+\slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od stati"cne ekscentri"cnosti v smeri x}{potek_meritev_xs}
+
+\begin{eqnarray}
+&A_0=11,94 \Delta x_s^2-2,48\Delta x_s+ 0,34\\
+&C_1=\sqrt{A_1^2+B_1^2}=1,58 10^{-13} \Delta x_s^2-6,52 10^{-13} \Delta x_s+ 9,47 10^{-13}\\
+&C_2=16,88 \Delta x_s^2-3,53  \Delta x_s+0,41\\
+&C_3=-2,43 10^{-14} \Delta x_s^2+3,52 10^{-13} \Delta x_s- 6,29 10^{-13}
+\end{eqnarray}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -25,7 +25,7 @@
 % 
 % in
 % 
-% oddaljenost= 0.1;
+% oddaljenost= 0.5;
 % 
 % narisi_grafe_meritve(tip, eks,oddaljenost);
 
@@ -199,6 +199,7 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
         case 'meritev'        
             tmp.analog_sinus=tmp.analog_sinus*80;
             tmp.analog_cosinus=tmp.analog_cosinus*80;
+            tmp.napaka=tmp.napaka./360;
         otherwise
     end
     
@@ -216,13 +217,14 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
     %Sin_cos
 
     figure
-    plot(x,tmp.analog_sinus)
+    plot(x,tmp.analog_sinus,'LineWidth',2)
     hold on
-    plot(x,tmp.analog_cosinus,'r')
-    legend('sin','cos')
+    plot(x,tmp.analog_cosinus,'r','LineWidth',2)
+    lgd=legend('sin','cos');
+    lgd.FontSize = 14;
 
-    xlabel('kot zasuka / ^\circ')
-    ylabel('B / mT')
+    xlabel('kot zasuka / ^\circ', 'FontSize', 14)
+    ylabel('B / mT', 'FontSize', 14)
     grid on
     xyaxis=axis;
     axis([0,360,xyaxis(3),xyaxis(4)])
@@ -232,9 +234,9 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
 
 
     figure
-    plot(x,(tmp.napaka)*360)
-    xlabel('kot zasuka / ^\circ')
-    ylabel('napaka / ^\circ')
+    plot(x,(tmp.napaka)*360,'LineWidth',2)
+    xlabel('kot zasuka / ^\circ', 'FontSize', 14)
+    ylabel('napaka / ^\circ', 'FontSize', 14)
     grid on
     xyaxis=axis;
     axis([0,360,xyaxis(3),xyaxis(4)])
@@ -245,8 +247,8 @@ function narisi_grafe_meritve(tip, eks,oddaljenost)
 
     figure
     bar(0:8,tmp.fft_napake*360)
-    xlabel('harmonik')
-    ylabel('amplituda harmonika napake / ^\circ')
+    xlabel('harmonik', 'FontSize', 14)
+    ylabel('amplituda harmonika napake / ^\circ', 'FontSize', 14)
     grid on
     saveas(gcf,strcat('Slike\',ime_structa(1:end-4),'_fft'),'epsc')
     

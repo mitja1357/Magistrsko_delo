@@ -25,7 +25,14 @@
 % 
 % katere_harmonike_zelis=[0,1,2,3];
 % narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis);
-
+% 
+% eks={'xs' 'ys' 'xd'};
+% tip={'meritev','sim_lin_polje','sim_real_polje'};
+% for i=1:3
+%     for j=1:3
+%         narisi_grafe_potekov_ekscentricnosti(tip{i},eks{j},katere_harmonike_zelis);
+%     end
+% end
 
 function [koeficienti]= narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
 
@@ -115,7 +122,7 @@ function [koeficienti]= narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harm
     st=1;
     imena_za_legendo=cell(size(katere_harmonike_zelis,2),1);    % definiraj prostor za imena v legendi
     for i=katere_harmonike_zelis
-        plot(oddaljenost,amplitude(:,i+1)*360);   % narisi poteke s nastavljenimi barvami
+        plot(oddaljenost,amplitude(:,i+1)*360,'LineWidth',2);   % narisi poteke s nastavljenimi barvami
         
         
         imena_za_legendo{st}=['Harm ',num2str(i)];              % zapisi ime harmonika ki si ga narisal
@@ -127,11 +134,12 @@ function [koeficienti]= narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harm
     
     end
     
-    ylabel('amplituda harmonika napake / ^\circ')
-    xlabel('ekscentricnost / mm')
+    ylabel('amplituda harmonika napake / ^\circ','FontSize', 16)
+    xlabel('ekscentriènost / mm','FontSize', 16)
     
     
-    legend(imena_za_legendo,'Location','NorthWest')
+    lgd=legend(imena_za_legendo,'Location','NorthWest');
+    lgd.FontSize=16;
     grid on
     saveas(gcf,strcat('Z:\Home\Magistrsko_delo\Diploma_Latex_v2\Slike\potek_',tip,'_',eks),'epsc')
 end
