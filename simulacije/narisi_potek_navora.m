@@ -16,12 +16,12 @@
 % in
 % 
 % oddaljenost= 0.5;
-% do_katerega_harmonika=8;
+% do_katerega_harmonika=4;
 % 
-% narisi_grafe_meritve(tip, eks,oddaljenost, do_katerega_harmonika);
+% narisi_potek_navora(tip, eks,oddaljenost, do_katerega_harmonika);
 
 
-function narisi_grafe_meritve(tip, eks,oddaljenost, do_katerega_harmonika)
+function narisi_potek_navora(tip, eks,oddaljenost, do_katerega_harmonika)
 
 %% check correct inputs
     switch tip
@@ -123,49 +123,24 @@ function narisi_grafe_meritve(tip, eks,oddaljenost, do_katerega_harmonika)
     %clear real_xs real_ys real_xd real_yd
     element=find(tmp.displacement==oddaljenost);
     
-    tmpfft=mojfft(tmp.protocol(element,:));
-    osnovni_offset=mean(tmp.protocol(1,:));
-    fft_protocola=tmpfft{1};
-    fft_protocola(element,1)=fft_protocola(element,1)-osnovni_offset;
+    J = 0.1474544 + 0.001682;                           % Vztrajnost motorja in gredi
     
-    %% analog signals
-    scrsz = get(0,'ScreenSize');
-    analog_fig=figure('Position',[10 scrsz(4)-10-80-600 800 600]);
-    plot(tmp.ref(element,:),tmp.sin(element,:),'LineWidth',2)
+    fft_protocola=mojfft(tmp.protocol(element,:)*pi/180);
+    
+    theta=tmp.ref(element,:);
+    w=(0:500);
+    
+    navoramps=-fft_protocola{1}.*((2*pi.*w).^2)';
+    dodan_navor=0;
+    for i=1:do_katerega_harmonika+1
+       dodan_navor=dodan_navor+navoramps(i).*(cosd(w(i).*theta+fft_protocola{2}(i)));
+    end
+    plot(theta,dodan_navor.*J)
     hold on
-    plot(tmp.ref(element,:),tmp.cos(element,:),'r','LineWidth',2)
-    legend({'sin','cos'} ,'FontSize',14);
-
-    xlabel('dejanski kot / ^\circ', 'FontSize', 16, 'FontName','Times New Roman')
-    ylabel('B / mT', 'FontSize', 14)
-    grid on
-    axis([0,360,-inf,inf])
-    hold off
-%     saveas(gcf,strcat('Slike\',ime_structa(1:end-4),'_BxBy'),'epsc')
-
-    %% napaka
-    
-
-
-    protocol_fig=figure('Position',[810+20 scrsz(4)-10-80-600 800 600]);
-    plot(tmp.ref(element,:),tmp.protocol(element,:)-osnovni_offset,'LineWidth',2)
-    xlabel('dejanski kot / ^\circ', 'FontSize', 16, 'FontName','Times New Roman')
-    ylabel('napaka / ^\circ', 'FontSize', 16,'FontName','Times New Roman')
-    grid on
-    axis([0,360,-inf,inf])
-    hold off
-%     saveas(gcf,strcat('Slike\',ime_structa(1:end-4),'_napaka'),'epsc')
-
-
-    %% fft_napake
+    plot(theta,tmp.protocol(element,:))
     
     
-    fft_fig=figure('Position',[1930 scrsz(4)-10-80-600 800 600]);
-    bar(0:do_katerega_harmonika,fft_protocola(1:do_katerega_harmonika+1))
-    xlabel('harmonik', 'FontSize', 16,'FontName','Times New Roman')
-    ylabel('amplituda harmonika napake / ^\circ', 'FontSize', 16,'FontName','Times New Roman')
-    grid on
-    hold off
-%     saveas(gcf,strcat('Slike\',ime_structa(1:end-4),'_fft'),'epsc')
     
+    
+   
 end

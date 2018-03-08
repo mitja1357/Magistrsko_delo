@@ -38,5 +38,5 @@ analitika.xd.B_1=(y_s.* (3.* r_0.^5-18.* r_0.^4.* y_s+64.* r_0.^3.* y_s.^2 ...
 analitika.xd.B_2=(2.* y_s.^3.* (-4.* r_0.^3+9.* r_0.^2.* y_s-6.* r_0.* y_s ...
     .^2+2.* y_s.^3))./(3.* (r_0.^2-2.* r_0.* y_s+2.* y_s.^2).^3)*180/pi;
 
-analitika.displace=y_s;
+analitika.displace=y_s';
 clear y_s r_0

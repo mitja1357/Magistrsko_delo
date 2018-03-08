@@ -1,6 +1,6 @@
-            ime='xs_000u.csv';
+            ime='xs_400u.csv';
 
-            path='Z:\Home\Magistrsko_delo\simulacije\Meritve\';
+            path='Z:\Home\Magistrsko_delo\Meritve\CSVfiles\2017_10_02\';
             filename=strcat(path,ime);
             
             matrika=csvread(filename,1,0);
@@ -33,11 +33,15 @@
             clear kot_ref referr ref1 kot_RM44_1           
             protocol(protocol>180)= protocol(protocol>180)-360;
             protocol(protocol<-180)= protocol(protocol<-180)+360;
-                        
-            harmonik_sin=mojfft(sinus1);
-            harmonik_cos=mojfft(cosinus1);
+                
+            
+            ffttmp=mojfft(sinus1);
+            harmonik_sin=ffttmp{1};
+            ffttmp=mojfft(cosinus1);
+            harmonik_cos=ffttmp{1};
             clear sinus1 cosinus1
-            harmonik_protocol=mojfft(protocol);
+            ffttmp=mojfft(protocol);
+            harmonik_protocol=ffttmp{1};
             disp(strvcat({['at ',newname],'      Offset          Amp',...
                 strcat('Sin |',num2str(harmonik_sin(1:2)')),...
                 strcat('Cos |',num2str(harmonik_cos(1:2)')),...
@@ -48,7 +52,7 @@
             hold on
             plot(protocol)
             legend('Nemec','Alic')
-           mean(protocol_nemec)
+           mean(protocol_nemec);
             
 % 	function amps=mojfft(Lincos)
 %             L=length(Lincos);

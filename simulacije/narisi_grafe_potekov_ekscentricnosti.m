@@ -53,11 +53,12 @@ function S=narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
     clear real_xs real_ys real_xd real_yd
     
     %% fft_napake    
-    
+    tmpfft=mojfft(tmp.protocol);
+    fft_protocola=tmpfft{1};
     scrsz = get(0,'ScreenSize');
-    tmp.fft_protocola(:,1)=tmp.fft_protocola(:,1)-tmp.fft_protocola(1,1);
+    fft_protocola(:,1)=fft_protocola(:,1)-fft_protocola(1,1);
     fft_fig=figure('Position',[10 scrsz(4)-10-80-600 800 600]);
-    plot(tmp.displacement,tmp.fft_protocola(:,(katere_harmonike_zelis+1)),'LineWidth',2)
+    plot(tmp.displacement,fft_protocola(:,(katere_harmonike_zelis+1)),'LineWidth',2)
     xlabel('ekscentriènost / mm', 'FontSize', 16,'FontName','Times New Roman')
     ylabel('amplituda harmonika napake / ^\circ', 'FontSize', 16,'FontName','Times New Roman')
     grid on
@@ -83,7 +84,7 @@ function S=narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
     
     S='';
     for i=katere_harmonike_zelis
-        P = polyfit(tmp.displacement,tmp.fft_protocola(:,i+1),3);
+        P = polyfit(tmp.displacement,fft_protocola(:,i+1),3);
         
         latex_eks=strcat(eks(1),'_',eks(2));
         for j=1:4

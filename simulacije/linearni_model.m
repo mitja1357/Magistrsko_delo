@@ -34,24 +34,13 @@ for j=1:4
     protocol_lin_all=RM44_lin_all-theta;
     
 
-    L=length(theta);
-    T=1/L;      %imam eno periodo
-    Fs=1/T;
-    n = 2^nextpow2(L);
-    dim = 2;
-    Y=fft(protocol_lin_all,n,dim);
-    P2 = abs(Y/n);
-    P1 = P2(:,1:n/2+1);
-    P1(:,2:end-1) = 2*P1(:,2:end-1);
-    fft_lin_all=P1;
-    fft_lin_all(:,1)=mean(protocol_lin_all,2);
+    
     tmp=struct;
     
     tmp.protocol=protocol_lin_all;
-    tmp.fft_protocola=fft_lin_all;
     tmp.sin=Sin_all;
     tmp.cos=Cos_all;
-    tmp.displacement=displace;
+    tmp.displacement=displace';
     tmp.ref=Ref_all;
 
     eval(strcat('lin_',ekcentric,'=tmp;'));

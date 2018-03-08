@@ -65,8 +65,10 @@ load('Zmesh.mat')
 %    figure
 %    mesh(Hall1_distx,Hall1_disty,Cos)
     
-    ampssin=mojfft(Sin');
-    ampscos=mojfft(Cos');
+    tmpfft=mojfft(Sin');
+    ampssin=tmpfft{1};
+    tmpfft=mojfft(Cos');
+    ampscos=tmpfft{1};
     figure
     plot(ampssin(:,2))
     hold on

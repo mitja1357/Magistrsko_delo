@@ -12,13 +12,18 @@ eval(strcat('Real.cos=real_',st,'.cos;'))
 eval(strcat('Lin.dist=lin_',st,'.displacement;'))
 eval(strcat('Lin.sin=lin_',st,'.sin;'))
 eval(strcat('Lin.cos=lin_',st,'.cos;'))
-
-Meritev.sinfft=mojfft(Meritev.sin);
-Meritev.cosfft=mojfft(Meritev.cos);
-Real.sinfft=mojfft(Real.sin);
-Real.cosfft=mojfft(Real.cos);
-Lin.sinfft=mojfft(Lin.sin);
-Lin.cosfft=mojfft(Lin.cos);
+tmpfft=mojfft(Meritev.sin);
+Meritev.sinfft=tmpfft{1};
+tmpfft=mojfft(Meritev.cos);
+Meritev.cosfft=tmpfft{1};
+tmpfft=mojfft(Real.sin);
+Real.sinfft=tmpfft{1};
+tmpfft=mojfft(Real.cos);
+Real.cosfft=tmpfft{1};
+tmpfft=mojfft(Lin.sin);
+Lin.sinfft=tmpfft{1};
+tmpfft=mojfft(Lin.cos);
+Lin.cosfft=tmpfft{1};
 
 Real.sinfft(:,2)=Real.sinfft(:,2).*Meritev.sinfft(1,2)./Real.sinfft(1,2);
 Real.cosfft(:,2)=Real.cosfft(:,2).*Meritev.cosfft(1,2)./Real.cosfft(1,2);
