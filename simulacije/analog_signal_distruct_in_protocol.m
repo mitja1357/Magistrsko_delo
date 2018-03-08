@@ -1,8 +1,8 @@
 theta=linspace(0,360,1000);
 
 offset_sin=0;
-offset_cos=0;
-faza=-0.3;
+offset_cos=0.1;
+faza=-0;
 amp_cos=0;
 
 Sin=2.4*sind(theta+faza)+offset_sin;

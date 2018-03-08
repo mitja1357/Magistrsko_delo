@@ -1,12 +1,12 @@
-            ime='xs_400u.csv';
+            ime='test3.csv';
 
-            path='Z:\Home\Magistrsko_delo\Meritve\CSVfiles\2017_10_02\';
+            path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\';
             filename=strcat(path,ime);
             
             matrika=csvread(filename,1,0);
             cas=clock;
             newname=strcat(num2str(cas(4)),'_',num2str(cas(5)),'_',num2str(cas(6),'%2.0f'));
-%             movefile(filename,strcat(path,newname,'.csv');
+           % rename(filename,strcat(path,newname,'.csv')
             clear ime path filename cas
             kot_ref=matrika(:,2);
             kot_RM44=matrika(:,4);
@@ -34,24 +34,26 @@
             protocol(protocol>180)= protocol(protocol>180)-360;
             protocol(protocol<-180)= protocol(protocol<-180)+360;
                 
-            
             ffttmp=mojfft(sinus1);
             harmonik_sin=ffttmp{1};
+            kotsin=ffttmp{2}(2);
             ffttmp=mojfft(cosinus1);
+            kotcos=ffttmp{2}(2);
             harmonik_cos=ffttmp{1};
             clear sinus1 cosinus1
             ffttmp=mojfft(protocol);
             harmonik_protocol=ffttmp{1};
-            disp(strvcat({['at ',newname],'      Offset          Amp',...
-                strcat('Sin |',num2str(harmonik_sin(1:2)')),...
-                strcat('Cos |',num2str(harmonik_cos(1:2)')),...
+            disp(strvcat({['at ',newname],'      Offset          Amp     Kot',...
+                strcat('Sin |',num2str(harmonik_sin(1:2)'),' |',num2str(kotsin-kotsin)),...
+                strcat('Cos |',num2str(harmonik_cos(1:2)'),'  |',num2str(kotcos-kotsin+360)),...
                 ' '...
                 'Offset          1          2           3            4',...
                         num2str(harmonik_protocol(1:5)') }))
-            plot(protocol_nemec)
-            hold on
-            plot(protocol)
-            legend('Nemec','Alic')
+          %  plot(protocol_nemec)
+           % hold on
+            plot(protocol+157)
+            grid on
+          %  legend('Nemec','Alic')
            mean(protocol_nemec);
             
 % 	function amps=mojfft(Lincos)
