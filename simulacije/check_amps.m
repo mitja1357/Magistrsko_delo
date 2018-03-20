@@ -1,4 +1,4 @@
-            ime='test9a.csv';
+            ime='xd_203u.csv';
 
             path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\';
             filename=strcat(path,ime);
@@ -15,7 +15,7 @@
             kot_RM44=matrika(:,4);
             
             sinus=matrika(:,8)*80;
-            cosinus=matrika(:,10)*80;
+            cosinus=matrika(:,10)*80-0.13;
             
             protocol_nemec=(kot_RM44-kot_ref).*360;
             protocol_nemec(protocol_nemec>90)=protocol_nemec( protocol_nemec>90)-360;
@@ -32,6 +32,7 @@
     ref1=-kot_ref(length(kot_ref):-1:1)-kot_ref(1)+kot_ref(end);
     ref1=ref1.*360;
   
+    ref1((find(diff(ref1)<-90)+1):end)= ref1((find(diff(ref1)<-90)+1):end)+360;
 novi_ref=linspace(0,360,1024);
 
 
@@ -77,10 +78,10 @@ cos_star=cosinus1;
 sinus1=Sin;
 cosinus1=Cos;
 ref1=novi_ref;
-figure
-plot(ref_star, cos_star)
-hold on
-plot(ref1, cosinus1,'-r')
+% figure
+% plot(ref_star, cos_star)
+% hold on
+% plot(ref1, cosinus1,'-r')
 
 
             kot_RM44_1=atan2d(sinus1,cosinus1);
@@ -113,7 +114,7 @@ plot(ref1, cosinus1,'-r')
             harmonik_protocol=ffttmp{1};
             disp(strvcat({['at ',newname],'      Offset          Amp     Kot',...
                 strcat('Sin |',num2str(harmonik_sin(1:2)'),' |',num2str(kotsin-kotsin)),...
-                strcat('Cos |',num2str(harmonik_cos(1:2)'),'  |',num2str(kotcos-kotsin)),...
+                strcat('Cos |',num2str(harmonik_cos(1:2)'),'  |',num2str(kotcos-kotsin+360)),...
                 ' '...
                 'Offset          1          2           3            4',...
                         num2str(harmonik_protocol(1:5)') }))
