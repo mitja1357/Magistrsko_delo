@@ -23,7 +23,7 @@ for j=1:4
     
     Hall1=[r0;0];  
     Hall2=[0;r0];
-
+    theta1=[];
     for i=displace
         eval(strcat(ekcentric,'=i;'))
         
@@ -48,7 +48,7 @@ for j=1:4
         Cos_all=[Cos_all;Cos];
         clear k rot_mat H1x H1y H2x H2y Hall1_k Hall2_k
         
-        
+        theta1=[theta1;theta];
 
         RM44_real=atan2d(Sin,Cos);
         RM44_real((find(diff(RM44_real)<-90)+1):end)=RM44_real((find(diff(RM44_real)<-90)+1):end)+360;
@@ -56,9 +56,10 @@ for j=1:4
         Ref_all=[Ref_all; theta];
     end
     clear i RM44_real Sin Cos Hall1 Hall2
-
-    protocol_real_all=RM44_real_all-theta;
-
+    
+    
+    protocol_real_all=RM44_real_all-theta1;
+    clear theta1
 %     L=length(theta);
 %     T=1/L;      %imam eno periodo
 %     Fs=1/T;

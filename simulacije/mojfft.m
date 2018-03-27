@@ -21,11 +21,11 @@
             else
                 Y=fft(Lincos,n,dim);
                 P2 = abs(Y/n);
-                phs=angle(fftshift(Y));
+                phs=angle(fftshift(Y,2));
                 P1 = P2(:,1:n/2+1);
                 P1(:,2:end-1) = 2.*P1(:,2:end-1);
                 P1(:,1)=mean(Lincos,2);
-                phase=[phs(:,n/2+1:end),-phs(:,1)];
+                phase=[phs(:,n/2+1:end),phs(:,1)];
                 
             end
             

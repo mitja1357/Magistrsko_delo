@@ -1,5 +1,5 @@
    theta=linspace(0,360,1000);
-   Lincos=sind(theta)+sind(10.*theta);
+   Lincos=[cosd(theta);cosd(theta+10)];
    
    
    
@@ -8,9 +8,9 @@
             Fs=1/T;
             n = L;
             dim = (min(size(Lincos))~=1)+1;
-            if size(Lincos,2)==L
-            Lincos=Lincos';
-            end
+%             if size(Lincos,2)==L
+%             Lincos=Lincos';
+%             end
             Y=fft(Lincos,n,dim);
             P2 = abs(Y/n);
             if dim==1

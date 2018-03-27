@@ -1,6 +1,6 @@
-            ime='xd_203u.csv';
+            ime='test.csv';
 
-            path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\';
+            path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\2018_03_27\';
             filename=strcat(path,ime);
             
    
@@ -15,7 +15,7 @@
             kot_RM44=matrika(:,4);
             
             sinus=matrika(:,8)*80;
-            cosinus=matrika(:,10)*80-0.13;
+            cosinus=matrika(:,10)*80-0.24;
             
             protocol_nemec=(kot_RM44-kot_ref).*360;
             protocol_nemec(protocol_nemec>90)=protocol_nemec( protocol_nemec>90)-360;
