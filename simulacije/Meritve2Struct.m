@@ -1,4 +1,4 @@
-path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\2018_03_27\';
+path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\2018_03_20\';
 list=dir(path);
 
 eks={'xs','ys','xd','zs'};

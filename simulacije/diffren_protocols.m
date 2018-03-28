@@ -4,7 +4,7 @@
 
 %% define ekscentric
 tip='meritev';
-eks='ys';
+eks='xd';
 
 
 
@@ -23,14 +23,19 @@ kateri=4;
 figure
 title([tip '  ' eks])
 hold on
-po_elementih=1:21;%[find(displace==0,1),find(displace>0.099,1),find(displace>0.299,1),find(displace>0.499,1)]+9;
+po_elementih=1:length(displace);%[find(displace==0,1),find(displace>0.099,1),find(displace>0.299,1),find(displace>0.499,1)]+9;
 for kateri=po_elementih
 potek_sinus=zeros(1,1000);
 potek_cosinus=zeros(1,1000);
 for i=1:koliko_harmonikov+1
     
-potek_sinus=potek_sinus+sinus{1}(kateri,i).*cosd((i-1).*theta+sinus{2}(kateri,i)-cosinus{2}(kateri,i));%+
-potek_cosinus=potek_cosinus+cosinus{1}(kateri,i).*cosd((i-1).*theta);%
+potek_sinus=potek_sinus+sinus{1}(kateri,i).*cosd((i-1).*theta+sinus{2}(kateri,i)-cosinus{2}(kateri,2));%+
+potek_cosinus=potek_cosinus+cosinus{1}(kateri,i).*cosd((i-1).*theta+cosinus{2}(kateri,i)-cosinus{2}(kateri,2));%
+if i==1
+    potek_sinus=sinus{1}(kateri,i).*cosd((i-1).*theta);%+
+    potek_cosinus=cosinus{1}(kateri,i).*cosd((i-1).*theta);%
+end
+    
 end
 
 kot=atan2d(potek_sinus,potek_cosinus);
@@ -39,6 +44,8 @@ protocol(protocol>180)= protocol(protocol>180)-360;
 protocol(protocol<-180)= protocol(protocol<-180)+360;
 
 plot(protocol)
+
+all_protocol(kateri,:)=protocol(:).';
 grid on
 grid minor
 podatki=[podatki;mean(protocol) max(protocol,[],2)-min(protocol,[],2)];

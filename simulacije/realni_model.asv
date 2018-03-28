@@ -1,6 +1,6 @@
 % clear
 theta=linspace(0,360,1000);
-eks={'xs','ys','xd','yd'};
+eks={'xs','ys'};%,'xd','yd'};
 %load('Rezultati_meritve');
 load('X_tmp.mat');
 load('Y_tmp.mat');
@@ -15,7 +15,7 @@ for j=1:4
     xd=0;
     yd=0;
 %     eval(strcat('displace=meritev_',ekcentric,'.displacement.*1e-3 -0.5e-3;'))
-    displace=-500e-3:50e-3:500e-3;
+    displace=-0.5e-3:50e-3:1000e-3;
     RM44_real_all=[];
     Sin_all=[];
     Cos_all=[];
