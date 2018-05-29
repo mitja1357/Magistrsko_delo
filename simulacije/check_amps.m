@@ -1,6 +1,6 @@
-            ime='test.csv';
-
-            path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\2018_03_27\';
+            ime='xd_501u.csv';
+            close all
+            path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\2018_03_20\';
             filename=strcat(path,ime);
             
    
@@ -120,10 +120,21 @@ ref1=novi_ref;
                         num2str(harmonik_protocol(1:5)') }))
           %  plot(protocol_nemec)
            % hold on
+           figure
             plot(ref1,protocol)
             grid on
           %  legend('Nemec','Alic')
           % mean(protocol_nemec);
+          figure
+          plot(Cos,Sin)
+          axis equal
+          grid on
+          grid minor
+          
+          figure
+          plot(Cos)
+          hold on
+          plot(Sin)
             
 % 	function amps=mojfft(Lincos)
 %             L=length(Lincos);

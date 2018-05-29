@@ -56,6 +56,7 @@ function S=narisi_grafe_potekov_ekscentricnosti(tip,eks,katere_harmonike_zelis)
     tmpfft=mojfft(tmp.protocol);
     fft_protocola=tmpfft{1};
     scrsz = get(0,'ScreenSize');
+    fft_protocola(:,1)=fft_protocola(:,1).*cosd(tmpfft{2}(:,1));
     fft_protocola(:,1)=fft_protocola(:,1)-fft_protocola(1,1);
     fft_fig=figure('Position',[10 scrsz(4)-10-80-600 800 600]);
     plot(tmp.displacement,fft_protocola(:,(katere_harmonike_zelis+1)),'LineWidth',2)

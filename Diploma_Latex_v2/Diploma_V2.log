@@ -1,12 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.11.7)  1 MAR 2018 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.12.8)  21 MAY 2018 12:30
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **./Diploma_V2.tex
-(Diploma_V2.tex
-LaTeX2e <2017-04-15>
-Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
+(./Diploma_V2.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(c:/texlive/2016/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk12.clo"
+(c:/texlive/2016/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -22,35 +24,28 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+(c:/texlive/2016/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\cp1250.def"
+(c:/texlive/2016/texmf-dist/tex/latex/base/cp1250.def
 File: cp1250.def 2015/03/17 v1.2c Input encoding file
 ))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2017/05/19 3.10 The Babel package
+(c:/texlive/2016/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/04/23 3.9r The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-slovenian\Slo
-vene.ldf"
+(c:/texlive/2016/texmf-dist/tex/generic/babel-slovenian/Slovene.ldf
 Language: slovene 2005/03/31 v1.2m Slovene support from the babel system
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2017/05/19 3.10 Babel common definitions
+(c:/texlive/2016/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
 Package babel Info: Making " an active character on input line 79.
-)) (UNI-LJ-FE-Diploma.sty
+))
+(./UNI-LJ-FE-Diploma.sty
 
 UNI-LJ-FE-Diploma stilska opcija V.1.0 junij 2013
 Stilska opcija za diplome na Fakulteti za elektrotehniko Univerze v Ljubljani
@@ -62,43 +57,41 @@ Dopolnil: Sebastjan Slajpah, 2013
 Dopolnil in pre\v d\.z\H {}istil: Sa\v d\.z\H {}o Toma\v d\.z\H {}i\v d\.z\H {}
 , 2013
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
-"
-Package: amsmath 2016/11/05 v2.16a AMS math features
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/10 v2.15b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
-"
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- ("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
-"
+
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen104
 ))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
-) ("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
-y"
+)
+(c:/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count89
-LaTeX Info: Redefining \frac on input line 213.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count90
 \leftroot@=\count91
-LaTeX Info: Redefining \overline on input line 375.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count92
 \DOTSCASE@=\count93
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen106
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \macc@depth=\count94
 \c@MaxMatrixCols=\count95
 \dotsspace@=\muskip10
@@ -119,41 +112,34 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.s
-ty"
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.sty
-"
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.s
-ty"
-Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(c:/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphi
-cs.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 96.
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex
-.def"
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+(c:/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwarer
-r.sty"
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.
-sty"
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count101
@@ -161,36 +147,28 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.s
-ty"
+(c:/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-b
-ase.sty"
+(c:/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
-"
+(c:/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefine
-keys.sty"
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.
-sty"
+(c:/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetkey
-s.sty"
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmds
-.sty"
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluatex
-.sty"
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -199,27 +177,27 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexcm
-ds.sty"
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.st
-y"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-))
+
+(c:/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
 \epsffilein=\read1
 \epsfxsize=\dimen115
 \epsfysize=\dimen116
@@ -237,62 +215,47 @@ G,.JBIG2,.JB2,.eps]
 \yyydec=\count109
 \tmpcount=\count110
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
-"
+(c:/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.t
-ex"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.
-tex"
+(c:/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks22
 \XKV@tempa@toks=\toks23
 )
 \XKV@depth=\count111
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendlayer\t
-ikz.sty"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.
-sty"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrc
-s.sty"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
-util-common.tex"
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks24
 \pgfutil@tempdima=\dimen121
 \pgfutil@tempdimb=\dimen122
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
-util-common-lists.tex"))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
-util-latex.def"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box28
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+(c:/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
-rcs.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfc
-ore.sty"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgf
-sys.sty"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
-gfsys.code.tex"
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
-keys.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks25
 \pgfkeys@temptoks=\toks26
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
-keysfiltered.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks27
 ))
 \pgf@x=\dimen123
@@ -312,36 +275,28 @@ keysfiltered.code.tex"
 \t@pgf@toka=\toks28
 \t@pgf@tokb=\toks29
 \t@pgf@tokc=\toks30
-
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
-gf.cfg"
+ (c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
-gfsys-pdftex.def"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
-gfsys-common-pdf.def"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
-gfsyssoftpath.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count116
 \pgfsyssoftpath@bigbuffer@items=\count117
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemlayer\p
-gfsysprotocol.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+)) (c:/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.
-cfg"
+(c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -355,18 +310,13 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcore.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
-code.tex"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathc
-alc.code.tex"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathu
-til.code.tex")
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathp
-arser.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen131
 \pgfmath@count=\count118
 \pgfmath@box=\box29
@@ -374,30 +324,27 @@ arser.code.tex"
 \pgfmath@stack@operand=\toks32
 \pgfmath@stack@operation=\toks33
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
-unctions.code.tex"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
-unctions.basic.code.tex")
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
-unctions.trigonometric.code.tex")
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
-unctions.random.code.tex")
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
-unctions.comparison.code.tex")
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
-unctions.base.code.tex")
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
-unctions.round.code.tex")
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
-unctions.misc.code.tex")
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
-unctions.integerarithmetics.code.tex")))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmathf
-loat.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count119
 ))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcorepoints.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen132
 \pgf@picmaxx=\dimen133
@@ -414,128 +361,108 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen144
 \pgf@zy=\dimen145
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcorepathconstruct.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen146
 \pgf@path@lasty=\dimen147
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcorepathusage.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen148
 \pgf@shorten@start@additional=\dimen149
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcorescopes.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box30
 \pgf@hbox=\box31
 \pgf@layerbox@main=\box32
 \pgf@picture@serial@count=\count120
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcoregraphicstate.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen150
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcoretransformations.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen151
 \pgf@pt@y=\dimen152
 \pgf@pt@temp=\dimen153
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcorequick.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcoreobjects.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcorepathprocessing.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcorearrows.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen154
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcoreshade.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen155
 \pgf@sys@shading@range@num=\count121
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcoreimage.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcoreexternal.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box33
 ))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcorelayers.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcoretransparency.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclayer\pg
-fcorepatterns.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
-duleshapes.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box34
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
-duleplot.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
-gfcomp-version-0-65.sty"
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen156
 \pgf@nodesepend=\dimen157
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibility\p
-gfcomp-version-1-18.sty"
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgffo
-r.sty"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\pgfke
-ys.sty"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
-keys.code.tex"))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfmath.st
-y"
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
-code.tex"))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilities\pgf
-for.code.tex"
+)) (c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2016/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.
-code.tex")
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen158
 \pgffor@skip=\dimen159
 \pgffor@stack=\toks34
 \pgffor@toks=\toks35
 ))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
-\tikz\tikz.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pgf
-libraryplothandlers.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count122
 \pgfplotmarksize=\dimen160
@@ -555,8 +482,7 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count125
 \tikz@fig@count=\count126
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmo
-dulematrix.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count127
 \pgfmatrixcurrentcolumn=\count128
@@ -564,25 +490,22 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count130
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
-\tikz\libraries\tikzlibrarytopaths.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer
-\tikz\libraries\tikzlibrarycalc.code.tex"
+(c:/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption.
-sty"
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+(c:/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.sty
-"
+(c:/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.st
-y"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+(c:/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen167
 \captionmargin@=\dimen168
@@ -597,17 +520,14 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \c@subfigure=\count132
 \c@subtable=\count133
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.s
-ty"
-Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+(c:/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-h
-yperref.sty"
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-g
-eneric.sty"
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -633,58 +553,55 @@ Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.s
-ty"
+(c:/texlive/2016/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.st
-y"
+(c:/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen174
 \Hy@linkcounter=\count134
 \Hy@pagecounter=\count135
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def
-"
-File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+(c:/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count136
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.c
-fg"
+(c:/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4498.
-Package hyperref Info: Link nesting OFF on input line 4503.
-Package hyperref Info: Hyper index ON on input line 4506.
-Package hyperref Info: Plain pages OFF on input line 4513.
-Package hyperref Info: Backreferencing OFF on input line 4518.
+Package hyperref Info: Hyper figures OFF on input line 4446.
+Package hyperref Info: Link nesting OFF on input line 4451.
+Package hyperref Info: Hyper index ON on input line 4454.
+Package hyperref Info: Plain pages OFF on input line 4461.
+Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4751.
+Package hyperref Info: Bookmarks ON on input line 4691.
 \c@Hy@tempcnt=\count137
- ("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+
+(c:/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5104.
+LaTeX Info: Redefining \url on input line 5044.
 \XeTeXLinkMargin=\dimen175
 \Fld@menulength=\count138
 \Field@Width=\dimen176
 \Fld@charsize=\dimen177
-Package hyperref Info: Hyper figures OFF on input line 6358.
-Package hyperref Info: Link nesting OFF on input line 6363.
-Package hyperref Info: Hyper index ON on input line 6366.
-Package hyperref Info: backreferencing OFF on input line 6373.
-Package hyperref Info: Link coloring OFF on input line 6378.
-Package hyperref Info: Link coloring with OCG OFF on input line 6383.
-Package hyperref Info: PDF/A mode OFF on input line 6388.
-LaTeX Info: Redefining \ref on input line 6428.
-LaTeX Info: Redefining \pageref on input line 6432.
+Package hyperref Info: Hyper figures OFF on input line 6298.
+Package hyperref Info: Link nesting OFF on input line 6303.
+Package hyperref Info: Hyper index ON on input line 6306.
+Package hyperref Info: backreferencing OFF on input line 6313.
+Package hyperref Info: Link coloring OFF on input line 6318.
+Package hyperref Info: Link coloring with OCG OFF on input line 6323.
+Package hyperref Info: PDF/A mode OFF on input line 6328.
+LaTeX Info: Redefining \ref on input line 6368.
+LaTeX Info: Redefining \pageref on input line 6372.
 \Hy@abspage=\count139
 \c@Item=\count140
 \c@Hfootnote=\count141
@@ -692,15 +609,12 @@ LaTeX Info: Redefining \pageref on input line 6432.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.de
-f"
-File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+(c:/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
 \Fld@listcount=\count142
 \c@bookmark@seq@number=\count143
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfilec
-heck.sty"
+(c:/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -708,15 +622,15 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip46
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 33.
- (Diploma_V2.aux (tex/Analiticna_izpeljava.aux)
-(tex/Linearni_model.aux
+
+(./Diploma_V2.aux (./tex/Analiticna_izpeljava.aux) (./tex/Linearni_model.aux
 
 LaTeX Warning: Label `./LIN/sim_lin_polje_xs_200u_BxBy' multiply defined.
 
 
 LaTeX Warning: Label `./LIN/sim_lin_polje_xd_200u_BxBy' multiply defined.
 
-) (tex/Realni_model.aux) (tex/Meritve.aux))
+) (./tex/Realni_model.aux) (./tex/Meritve.aux))
 \openout1 = `Diploma_V2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -734,8 +648,7 @@ LaTeX Font Info:    ... okay on input line 53.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
 LaTeX Font Info:    ... okay on input line 53.
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
-i"
+(c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count144
 \scratchdimen=\dimen178
@@ -755,12 +668,10 @@ Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box40
 Package hyperref Info: Link coloring ON on input line 53.
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
-y"
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+(c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitle
-string.sty"
+(c:/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count150
@@ -768,13 +679,14 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 53.
 LaTeX Info: Redefining \pageref on input line 53.
 LaTeX Info: Redefining \nameref on input line 53.
- (Diploma_V2.out) (Diploma_V2.out)
+
+(./Diploma_V2.out) (./Diploma_V2.out)
 \@outlinefile=\write4
 \openout4 = `Diploma_V2.out'.
 
 \openout2 = `./tex/Analiticna_izpeljava.aux'.
 
- (tex/Analiticna_izpeljava.tex
+ (./tex/Analiticna_izpeljava.tex
   1.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 1.
@@ -816,7 +728,7 @@ Package babel Info: Redefining slovene shorthand "|
 
 
 
-{C:/Users/alic/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
@@ -862,7 +774,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Overfull \hbox (15.84032pt too wide) has occurred while \output is active
 []\OT1/cmr/m/sl/12 1.2 Izpeljava gibanja lokacije Hall-ove sonde na magnet pri 
-dinamicni ekscentricnosti \OT1/cmr/m/n/12 3
+dinami^^Tcni ekscentri^^Tcnosti \OT1/cmr/m/n/12 3
  []
 
 
@@ -927,7 +839,7 @@ Underfull \vbox (badness 2012) has occurred while \output is active []
 
 Overfull \hbox (3.50294pt too wide) has occurred while \output is active
 []\OT1/cmr/m/sl/12 1.3 Izpeljava gibanja lokacije Hall-ove sonde na magnet pri 
-staticni ekscentricnosti \OT1/cmr/m/n/12 5
+stati^^Tcni ekscentri^^Tcnosti \OT1/cmr/m/n/12 5
  []
 
 
@@ -942,7 +854,7 @@ Package babel Info: Redefining slovene shorthand "|
 [5]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 230.
 
- ("C:\Users\alic\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ (c:/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -1015,7 +927,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 253.
 
-<./Slike/magnetno_polje.jpg, id=178, 1102.87032pt x 621.07031pt>
+<./Slike/magnetno_polje.jpg, id=180, 1102.87032pt x 621.07031pt>
 File: ./Slike/magnetno_polje.jpg Graphic file (type jpg)
 
 <use ./Slike/magnetno_polje.jpg>
@@ -1060,19 +972,19 @@ Package babel Info: Redefining slovene shorthand "|
 [10 <./Slike/magnetno_polje.jpg>]
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_000u_BxBy.e
 ps>
-(epstopdf)                    date: 2018-03-01 13:47:30
-(epstopdf)                    size: 54942 bytes
+(epstopdf)                    date: 2018-03-08 16:44:21
+(epstopdf)                    size: 57067 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-e
 ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:08
+(epstopdf)                    date: 2018-03-08 16:44:21
 (epstopdf)                    size: 20817 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xd_000u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_000u_BxBy.eps
->
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_xd_000u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_000u_BxBy.ep
+s>
 (epstopdf)             \includegraphics on input line 361.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf, id=196, 367.372
+<./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf, id=198, 367.372
 5pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1084,7 +996,7 @@ Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted
 
 Overfull \hbox (77.5619pt too wide) has occurred while \output is active
 []\OT1/cmr/m/sl/12 2.2 Postavitev Hall-ovih sond za zajem polja in pomerjeno po
-lje v odvistnosti od ekscentricnosti \OT1/cmr/m/n/12 11
+lje v odvistnosti od ekscentri^^Tcnosti \OT1/cmr/m/n/12 11
  []
 
 
@@ -1099,19 +1011,19 @@ Package babel Info: Redefining slovene shorthand "|
 [11 <./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.e
 ps>
-(epstopdf)                    date: 2018-03-01 13:46:36
-(epstopdf)                    size: 53328 bytes
+(epstopdf)                    date: 2018-03-08 16:44:22
+(epstopdf)                    size: 55441 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-e
 ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:09
+(epstopdf)                    date: 2018-03-08 16:44:22
 (epstopdf)                    size: 20481 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xs_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.eps
->
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_xs_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.ep
+s>
 (epstopdf)             \includegraphics on input line 376.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf, id=214, 359.342
+<./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf, id=216, 359.342
 5pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1122,19 +1034,19 @@ Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted
 (pdftex.def)             Requested size: 247.54149pt x 201.90927pt.
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.e
 ps>
-(epstopdf)                    date: 2018-03-01 13:47:37
-(epstopdf)                    size: 53457 bytes
+(epstopdf)                    date: 2018-03-08 16:44:21
+(epstopdf)                    size: 55570 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-e
 ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:09
+(epstopdf)                    date: 2018-03-08 16:44:21
 (epstopdf)                    size: 20711 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xd_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.eps
->
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_xd_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.ep
+s>
 (epstopdf)             \includegraphics on input line 388.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf, id=216, 359.342
+<./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf, id=218, 359.342
 5pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1208,18 +1120,18 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                removing `\textasciicaron' on input line 443.
 
 Package epstopdf Info: Source file: <./Slike/potek_analitika_xs.eps>
-(epstopdf)                    date: 2018-02-14 11:59:18
-(epstopdf)                    size: 21605 bytes
+(epstopdf)                    date: 2018-03-08 16:44:29
+(epstopdf)                    size: 21793 bytes
 (epstopdf)             Output file: <./Slike/potek_analitika_xs-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2018-02-14 14:38:41
+(epstopdf)                    date: 2018-03-08 16:44:29
 (epstopdf)                    size: 7778 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_analitika_xs-
-eps-converted-to.pdf ./Slike/potek_analitika_xs.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/potek_analitika_xs
+-eps-converted-to.pdf ./Slike/potek_analitika_xs.eps>
 (epstopdf)             \includegraphics on input line 459.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_analitika_xs-eps-converted-to.pdf, id=269, 722.7pt x 542.025pt>
+<./Slike/potek_analitika_xs-eps-converted-to.pdf, id=271, 722.7pt x 542.025pt>
 File: ./Slike/potek_analitika_xs-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/potek_analitika_xs-eps-converted-to.pdf>
@@ -1256,18 +1168,18 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 474.
 [15]
 Package epstopdf Info: Source file: <./Slike/potek_analitika_ys.eps>
-(epstopdf)                    date: 2018-02-14 11:59:28
-(epstopdf)                    size: 21606 bytes
+(epstopdf)                    date: 2018-03-08 16:44:29
+(epstopdf)                    size: 21794 bytes
 (epstopdf)             Output file: <./Slike/potek_analitika_ys-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2018-02-14 15:09:46
+(epstopdf)                    date: 2018-03-08 16:44:29
 (epstopdf)                    size: 7800 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_analitika_ys-
-eps-converted-to.pdf ./Slike/potek_analitika_ys.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/potek_analitika_ys
+-eps-converted-to.pdf ./Slike/potek_analitika_ys.eps>
 (epstopdf)             \includegraphics on input line 476.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_analitika_ys-eps-converted-to.pdf, id=280, 722.7pt x 542.025pt>
+<./Slike/potek_analitika_ys-eps-converted-to.pdf, id=282, 722.7pt x 542.025pt>
 File: ./Slike/potek_analitika_ys-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/potek_analitika_ys-eps-converted-to.pdf>
@@ -1304,18 +1216,24 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 491.
 [16 <./Slike/potek_analitika_xs-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/potek_analitika_xd.eps>
-(epstopdf)                    date: 2018-02-14 11:59:41
-(epstopdf)                    size: 22032 bytes
+(epstopdf)                    date: 2018-03-08 16:44:29
+(epstopdf)                    size: 22223 bytes
 (epstopdf)             Output file: <./Slike/potek_analitika_xd-eps-converted-t
 o.pdf>
-(epstopdf)                    date: 2018-02-27 09:23:45
+(epstopdf)                    date: 2018-03-08 16:44:28
 (epstopdf)                    size: 4227 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_analitika_xd-
-eps-converted-to.pdf ./Slike/potek_analitika_xd.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/potek_analitika_xd
+-eps-converted-to.pdf ./Slike/potek_analitika_xd.eps>
 (epstopdf)             \includegraphics on input line 492.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=./Slike/potek_analitika_xd-eps-converted-to.pdf .
+/Slike/potek_analitika_xd.eps)...executed safely (allowed).
 
-<./Slike/potek_analitika_xd-eps-converted-to.pdf, id=296, 722.7pt x 542.025pt>
+Package epstopdf Info: Result file: <./Slike/potek_analitika_xd-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-05-21 12:37:48
+(epstopdf)                    size: 8065 bytes.
+
+<./Slike/potek_analitika_xd-eps-converted-to.pdf, id=299, 722.7pt x 542.025pt>
 File: ./Slike/potek_analitika_xd-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/potek_analitika_xd-eps-converted-to.pdf>
@@ -1347,7 +1265,8 @@ Package babel Info: Redefining slovene shorthand "|
 [18 <./Slike/potek_analitika_xd-eps-converted-to.pdf>]
 \openout2 = `./tex/Linearni_model.aux'.
 
- (tex/Linearni_model.tex
+
+(./tex/Linearni_model.tex
   3.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 1.
@@ -1355,19 +1274,19 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 11.
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_000u_napaka
 .eps>
-(epstopdf)                    date: 2018-03-01 13:47:30
-(epstopdf)                    size: 37969 bytes
+(epstopdf)                    date: 2018-03-08 16:44:21
+(epstopdf)                    size: 39107 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_000u_napaka
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:10
+(epstopdf)                    date: 2018-03-08 16:44:21
 (epstopdf)                    size: 8553 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xd_000u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_000u_napaka
-.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_xd_000u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_000u_napak
+a.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf, id=323, 368.3
+<./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf, id=329, 368.3
 7625pt x 303.1325pt>
 File: ./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1394,15 +1313,15 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.e
 ps>
-(epstopdf)                    date: 2018-03-01 13:46:36
-(epstopdf)                    size: 53328 bytes
+(epstopdf)                    date: 2018-03-08 16:44:22
+(epstopdf)                    size: 55441 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-e
 ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:09
+(epstopdf)                    date: 2018-03-08 16:44:22
 (epstopdf)                    size: 20481 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xs_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.eps
->
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_xs_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.ep
+s>
 (epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
 File: ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf Graphic fil
@@ -1431,19 +1350,19 @@ Package babel Info: Redefining slovene shorthand "|
 [20 <./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_napaka
 .eps>
-(epstopdf)                    date: 2018-03-01 13:46:36
-(epstopdf)                    size: 35807 bytes
+(epstopdf)                    date: 2018-03-08 16:44:22
+(epstopdf)                    size: 36914 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xs_200u_napaka
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:10
+(epstopdf)                    date: 2018-03-08 16:44:22
 (epstopdf)                    size: 14439 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xs_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_napaka
-.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_xs_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_napak
+a.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-converted-to.pdf, id=345, 363.3
+<./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-converted-to.pdf, id=351, 363.3
 575pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1454,18 +1373,19 @@ ed-to.pdf used on input line 28.
 (pdftex.def)             Requested size: 247.54149pt x 199.67761pt.
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_fft.ep
 s>
-(epstopdf)                    date: 2018-03-01 13:46:37
-(epstopdf)                    size: 20716 bytes
+(epstopdf)                    date: 2018-03-08 16:44:22
+(epstopdf)                    size: 20900 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xs_200u_fft-ep
 s-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:11
+(epstopdf)                    date: 2018-03-08 16:44:22
 (epstopdf)                    size: 7097 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xs_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_fft.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_xs_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_fft.eps>
+
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-to.pdf, id=347, 367.3725
+<./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-to.pdf, id=353, 367.3725
 pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1479,18 +1399,18 @@ to.pdf used on input line 31.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/potek_sim_lin_polje_xs.eps>
-(epstopdf)                    date: 2018-03-01 14:24:34
-(epstopdf)                    size: 29191 bytes
+(epstopdf)                    date: 2018-03-08 16:44:29
+(epstopdf)                    size: 29761 bytes
 (epstopdf)             Output file: <./Slike/potek_sim_lin_polje_xs-eps-convert
 ed-to.pdf>
-(epstopdf)                    date: 2018-03-01 14:24:58
+(epstopdf)                    date: 2018-03-08 16:44:29
 (epstopdf)                    size: 12597 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_lin_polje
-_xs-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_xs.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/potek_sim_lin_polj
+e_xs-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_xs.eps>
 (epstopdf)             \includegraphics on input line 35.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_sim_lin_polje_xs-eps-converted-to.pdf, id=349, 600.2425pt x 480.
+<./Slike/potek_sim_lin_polje_xs-eps-converted-to.pdf, id=355, 600.2425pt x 480.
 79625pt>
 File: ./Slike/potek_sim_lin_polje_xs-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1516,19 +1436,19 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_ys_200u_BxBy.e
 ps>
-(epstopdf)                    date: 2018-03-01 13:47:05
-(epstopdf)                    size: 53374 bytes
+(epstopdf)                    date: 2018-03-08 16:44:23
+(epstopdf)                    size: 55487 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-e
 ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:11
+(epstopdf)                    date: 2018-03-08 16:44:23
 (epstopdf)                    size: 21547 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_ys_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_BxBy.eps
->
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_ys_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_BxBy.ep
+s>
 (epstopdf)             \includegraphics on input line 71.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf, id=351, 359.342
+<./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf, id=357, 359.342
 5pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1555,19 +1475,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_ys_200u_napaka
 .eps>
-(epstopdf)                    date: 2018-03-01 13:47:05
-(epstopdf)                    size: 35768 bytes
+(epstopdf)                    date: 2018-03-08 16:44:23
+(epstopdf)                    size: 36875 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_ys_200u_napaka
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:12
+(epstopdf)                    date: 2018-03-08 16:44:23
 (epstopdf)                    size: 14430 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_ys_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_napaka
-.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_ys_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_napak
+a.eps>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf, id=369, 363.3
+<./Slike/./LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf, id=375, 363.3
 575pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1589,18 +1509,19 @@ Package babel Info: Redefining slovene shorthand "|
 ek_sim_lin_polje_xs-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_ys_200u_fft.ep
 s>
-(epstopdf)                    date: 2018-03-01 13:47:05
-(epstopdf)                    size: 20924 bytes
+(epstopdf)                    date: 2018-03-08 16:44:23
+(epstopdf)                    size: 21108 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_ys_200u_fft-ep
 s-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:12
+(epstopdf)                    date: 2018-03-08 16:44:23
 (epstopdf)                    size: 7117 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_ys_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_fft.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_ys_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_fft.eps>
+
 (epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-to.pdf, id=391, 362.3537
+<./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-to.pdf, id=397, 362.3537
 4pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1621,18 +1542,18 @@ Package babel Info: Redefining slovene shorthand "|
 [23 <./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf> <./Slike/./
 LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/potek_sim_lin_polje_ys.eps>
-(epstopdf)                    date: 2018-03-01 14:24:34
-(epstopdf)                    size: 29055 bytes
+(epstopdf)                    date: 2018-03-08 16:44:29
+(epstopdf)                    size: 29623 bytes
 (epstopdf)             Output file: <./Slike/potek_sim_lin_polje_ys-eps-convert
 ed-to.pdf>
-(epstopdf)                    date: 2018-03-01 14:24:58
+(epstopdf)                    date: 2018-03-08 16:44:29
 (epstopdf)                    size: 12578 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_lin_polje
-_ys-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_ys.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/potek_sim_lin_polj
+e_ys-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_ys.eps>
 (epstopdf)             \includegraphics on input line 85.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf, id=415, 603.25375pt x 480
+<./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf, id=421, 603.25375pt x 480
 .79625pt>
 File: ./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1658,15 +1579,15 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.e
 ps>
-(epstopdf)                    date: 2018-03-01 13:47:37
-(epstopdf)                    size: 53457 bytes
+(epstopdf)                    date: 2018-03-08 16:44:21
+(epstopdf)                    size: 55570 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-e
 ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:09
+(epstopdf)                    date: 2018-03-08 16:44:21
 (epstopdf)                    size: 20711 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xd_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.eps
->
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_xd_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.ep
+s>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
 File: ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf Graphic fil
@@ -1693,19 +1614,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_200u_napaka
 .eps>
-(epstopdf)                    date: 2018-03-01 13:47:37
-(epstopdf)                    size: 36231 bytes
+(epstopdf)                    date: 2018-03-08 16:44:21
+(epstopdf)                    size: 37341 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_200u_napaka
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:13
+(epstopdf)                    date: 2018-03-08 16:44:21
 (epstopdf)                    size: 14480 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xd_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_napaka
-.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_xd_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_napak
+a.eps>
 (epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-converted-to.pdf, id=433, 363.3
+<./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-converted-to.pdf, id=440, 363.3
 575pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1720,18 +1641,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_200u_fft.ep
 s>
-(epstopdf)                    date: 2018-03-01 13:47:37
-(epstopdf)                    size: 21126 bytes
+(epstopdf)                    date: 2018-03-08 16:44:21
+(epstopdf)                    size: 21313 bytes
 (epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_200u_fft-ep
 s-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:14
+(epstopdf)                    date: 2018-03-08 16:44:21
 (epstopdf)                    size: 7125 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xd_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_fft.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./LIN/sim_lin_polj
+e_xd_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_fft.eps>
+
 (epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-to.pdf, id=435, 362.3537
+<./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-to.pdf, id=442, 362.3537
 4pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-to.pdf Graphic file
  (type pdf)
@@ -1745,18 +1667,18 @@ to.pdf used on input line 132.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/potek_sim_lin_polje_xd.eps>
-(epstopdf)                    date: 2018-03-01 14:24:35
-(epstopdf)                    size: 29634 bytes
+(epstopdf)                    date: 2018-03-08 16:44:29
+(epstopdf)                    size: 30206 bytes
 (epstopdf)             Output file: <./Slike/potek_sim_lin_polje_xd-eps-convert
 ed-to.pdf>
-(epstopdf)                    date: 2018-03-01 14:24:59
+(epstopdf)                    date: 2018-03-08 16:44:29
 (epstopdf)                    size: 12702 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_lin_polje
-_xd-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_xd.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/potek_sim_lin_polj
+e_xd-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_xd.eps>
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_sim_lin_polje_xd-eps-converted-to.pdf, id=437, 605.26125pt x 480
+<./Slike/potek_sim_lin_polje_xd-eps-converted-to.pdf, id=444, 605.26125pt x 480
 .79625pt>
 File: ./Slike/potek_sim_lin_polje_xd-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1814,22 +1736,22 @@ Package babel Info: Redefining slovene shorthand "|
 [28]
 \openout2 = `./tex/Realni_model.aux'.
 
- (tex/Realni_model.tex
+ (./tex/Realni_model.tex
   4.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 3.
 Package epstopdf Info: Source file: <./Slike/Realno_polje.eps>
-(epstopdf)                    date: 2018-02-28 09:25:30
-(epstopdf)                    size: 448092 bytes
+(epstopdf)                    date: 2018-03-08 16:44:28
+(epstopdf)                    size: 453591 bytes
 (epstopdf)             Output file: <./Slike/Realno_polje-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2018-02-28 09:25:37
+(epstopdf)                    date: 2018-03-08 16:44:28
 (epstopdf)                    size: 182145 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/Realno_polje-eps-co
-nverted-to.pdf ./Slike/Realno_polje.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/Realno_polje-eps-c
+onverted-to.pdf ./Slike/Realno_polje.eps>
 (epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
-<./Slike/Realno_polje-eps-converted-to.pdf, id=493, 1445.4pt x 816.04875pt>
+<./Slike/Realno_polje-eps-converted-to.pdf, id=500, 1445.4pt x 816.04875pt>
 File: ./Slike/Realno_polje-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/Realno_polje-eps-converted-to.pdf>
@@ -1840,19 +1762,19 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 11.
 Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_000u_BxBy
 .eps>
-(epstopdf)                    date: 2018-03-01 13:48:03
-(epstopdf)                    size: 54811 bytes
+(epstopdf)                    date: 2018-03-08 16:44:25
+(epstopdf)                    size: 56933 bytes
 (epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_000u_BxBy
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:14
+(epstopdf)                    date: 2018-03-08 16:44:25
 (epstopdf)                    size: 19228 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_000u_BxBy-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_000u_BxBy
-.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Real/sim_real_po
+lje_xd_000u_BxBy-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_000u_BxB
+y.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Real/sim_real_polje_xd_000u_BxBy-eps-converted-to.pdf, id=495, 364.3
+<./Slike/./Real/sim_real_polje_xd_000u_BxBy-eps-converted-to.pdf, id=502, 364.3
 6125pt x 293.095pt>
 File: ./Slike/./Real/sim_real_polje_xd_000u_BxBy-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1867,19 +1789,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_000u_napa
 ka.eps>
-(epstopdf)                    date: 2018-03-01 13:48:03
-(epstopdf)                    size: 35586 bytes
+(epstopdf)                    date: 2018-03-08 16:44:25
+(epstopdf)                    size: 36690 bytes
 (epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_000u_napa
 ka-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:15
+(epstopdf)                    date: 2018-03-08 16:44:25
 (epstopdf)                    size: 14018 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_000u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_000u_na
-paka.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Real/sim_real_po
+lje_xd_000u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_000u_n
+apaka.eps>
 (epstopdf)             \includegraphics on input line 17.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Real/sim_real_polje_xd_000u_napaka-eps-converted-to.pdf, id=497, 371
+<./Slike/./Real/sim_real_polje_xd_000u_napaka-eps-converted-to.pdf, id=504, 371
 .3875pt x 293.095pt>
 File: ./Slike/./Real/sim_real_polje_xd_000u_napaka-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -1890,19 +1812,19 @@ rted-to.pdf used on input line 17.
 (pdftex.def)             Requested size: 247.54149pt x 195.36188pt.
 Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_000u_fft.
 eps>
-(epstopdf)                    date: 2018-03-01 13:48:03
-(epstopdf)                    size: 20298 bytes
+(epstopdf)                    date: 2018-03-08 16:44:25
+(epstopdf)                    size: 20479 bytes
 (epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_000u_fft-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:15
+(epstopdf)                    date: 2018-03-08 16:44:25
 (epstopdf)                    size: 7083 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_000u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_000u_fft.e
-ps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Real/sim_real_po
+lje_xd_000u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_000u_fft.
+eps>
 (epstopdf)             \includegraphics on input line 20.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Real/sim_real_polje_xd_000u_fft-eps-converted-to.pdf, id=499, 373.39
+<./Slike/./Real/sim_real_polje_xd_000u_fft-eps-converted-to.pdf, id=506, 373.39
 5pt x 293.095pt>
 File: ./Slike/./Real/sim_real_polje_xd_000u_fft-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -1945,19 +1867,19 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xs_200u_BxBy
 .eps>
-(epstopdf)                    date: 2018-03-01 13:49:33
-(epstopdf)                    size: 54824 bytes
+(epstopdf)                    date: 2018-03-08 16:44:26
+(epstopdf)                    size: 56946 bytes
 (epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xs_200u_BxBy
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:16
+(epstopdf)                    date: 2018-03-08 16:44:26
 (epstopdf)                    size: 20539 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xs_200u_BxBy-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xs_200u_BxBy
-.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Real/sim_real_po
+lje_xs_200u_BxBy-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xs_200u_BxB
+y.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Real/sim_real_polje_xs_200u_BxBy-eps-converted-to.pdf, id=534, 364.3
+<./Slike/./Real/sim_real_polje_xs_200u_BxBy-eps-converted-to.pdf, id=541, 364.3
 6125pt x 293.095pt>
 File: ./Slike/./Real/sim_real_polje_xs_200u_BxBy-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -1968,19 +1890,19 @@ ed-to.pdf used on input line 26.
 (pdftex.def)             Requested size: 247.54149pt x 199.12306pt.
 Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xs_200u_napa
 ka.eps>
-(epstopdf)                    date: 2018-03-01 13:49:33
-(epstopdf)                    size: 35923 bytes
+(epstopdf)                    date: 2018-03-08 16:44:26
+(epstopdf)                    size: 37030 bytes
 (epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xs_200u_napa
 ka-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:16
+(epstopdf)                    date: 2018-03-08 16:44:26
 (epstopdf)                    size: 14406 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xs_200u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xs_200u_na
-paka.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Real/sim_real_po
+lje_xs_200u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xs_200u_n
+apaka.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Real/sim_real_polje_xs_200u_napaka-eps-converted-to.pdf, id=537, 363
+<./Slike/./Real/sim_real_polje_xs_200u_napaka-eps-converted-to.pdf, id=544, 363
 .3575pt x 293.095pt>
 File: ./Slike/./Real/sim_real_polje_xs_200u_napaka-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -1991,8 +1913,8 @@ rted-to.pdf used on input line 28.
 (pdftex.def)             Requested size: 247.54149pt x 199.67761pt.
 
 Underfull \hbox (badness 1831) in paragraph at lines 25--29
-\OT1/cmr/m/n/12 Oglejmo si se-daj re-zul-tate ob upostevanju staticne ek-s-ce
-n-tricnosti. Po
+\OT1/cmr/m/n/12 Oglejmo si se-daj re-zul-tate ob upo^^Tstevanju stati^^Tcne ek-
+s-cen-tri^^Tcnosti. Po
  []
 
 
@@ -2003,19 +1925,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xs_200u_fft.
 eps>
-(epstopdf)                    date: 2018-03-01 13:49:34
-(epstopdf)                    size: 19761 bytes
+(epstopdf)                    date: 2018-03-08 16:44:26
+(epstopdf)                    size: 19939 bytes
 (epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xs_200u_fft-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:17
+(epstopdf)                    date: 2018-03-08 16:44:26
 (epstopdf)                    size: 7046 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xs_200u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xs_200u_fft.e
-ps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Real/sim_real_po
+lje_xs_200u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xs_200u_fft.
+eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Real/sim_real_polje_xs_200u_fft-eps-converted-to.pdf, id=538, 367.37
+<./Slike/./Real/sim_real_polje_xs_200u_fft-eps-converted-to.pdf, id=545, 367.37
 25pt x 293.095pt>
 File: ./Slike/./Real/sim_real_polje_xs_200u_fft-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -2040,19 +1962,19 @@ Package babel Info: Redefining slovene shorthand "|
 [31 <./Slike/./Real/sim_real_polje_xd_000u_fft-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_ys_200u_napa
 ka.eps>
-(epstopdf)                    date: 2018-03-01 13:49:06
-(epstopdf)                    size: 35928 bytes
+(epstopdf)                    date: 2018-03-08 16:44:28
+(epstopdf)                    size: 37035 bytes
 (epstopdf)             Output file: <./Slike/./Real/sim_real_polje_ys_200u_napa
 ka-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:17
+(epstopdf)                    date: 2018-03-08 16:44:28
 (epstopdf)                    size: 14362 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_ys_200u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_ys_200u_na
-paka.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Real/sim_real_po
+lje_ys_200u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_ys_200u_n
+apaka.eps>
 (epstopdf)             \includegraphics on input line 36.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Real/sim_real_polje_ys_200u_napaka-eps-converted-to.pdf, id=558, 363
+<./Slike/./Real/sim_real_polje_ys_200u_napaka-eps-converted-to.pdf, id=566, 363
 .3575pt x 293.095pt>
 File: ./Slike/./Real/sim_real_polje_ys_200u_napaka-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -2080,19 +2002,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_ys_200u_fft.
 eps>
-(epstopdf)                    date: 2018-03-01 13:49:07
-(epstopdf)                    size: 20294 bytes
+(epstopdf)                    date: 2018-03-08 16:44:28
+(epstopdf)                    size: 20475 bytes
 (epstopdf)             Output file: <./Slike/./Real/sim_real_polje_ys_200u_fft-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:18
+(epstopdf)                    date: 2018-03-08 16:44:28
 (epstopdf)                    size: 7097 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_ys_200u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_ys_200u_fft.e
-ps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Real/sim_real_po
+lje_ys_200u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_ys_200u_fft.
+eps>
 (epstopdf)             \includegraphics on input line 38.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Real/sim_real_polje_ys_200u_fft-eps-converted-to.pdf, id=579, 362.35
+<./Slike/./Real/sim_real_polje_ys_200u_fft-eps-converted-to.pdf, id=587, 362.35
 374pt x 293.095pt>
 File: ./Slike/./Real/sim_real_polje_ys_200u_fft-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -2116,18 +2038,18 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 40.
 [33 <./Slike/./Real/sim_real_polje_xs_200u_fft-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/potek_sim_real_polje_xs.eps>
-(epstopdf)                    date: 2018-03-01 14:24:35
-(epstopdf)                    size: 29041 bytes
+(epstopdf)                    date: 2018-03-08 16:44:29
+(epstopdf)                    size: 29609 bytes
 (epstopdf)             Output file: <./Slike/potek_sim_real_polje_xs-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2018-03-01 14:25:00
+(epstopdf)                    date: 2018-03-08 16:44:29
 (epstopdf)                    size: 12692 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_real_polj
-e_xs-eps-converted-to.pdf ./Slike/potek_sim_real_polje_xs.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/potek_sim_real_pol
+je_xs-eps-converted-to.pdf ./Slike/potek_sim_real_polje_xs.eps>
 (epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_sim_real_polje_xs-eps-converted-to.pdf, id=594, 600.2425pt x 480
+<./Slike/potek_sim_real_polje_xs-eps-converted-to.pdf, id=602, 600.2425pt x 480
 .79625pt>
 File: ./Slike/potek_sim_real_polje_xs-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2154,18 +2076,18 @@ Package babel Info: Redefining slovene shorthand "|
 [34 <./Slike/./Real/sim_real_polje_ys_200u_napaka-eps-converted-to.pdf> <./Slik
 e/./Real/sim_real_polje_ys_200u_fft-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/potek_sim_real_polje_ys.eps>
-(epstopdf)                    date: 2018-03-01 14:24:36
-(epstopdf)                    size: 29053 bytes
+(epstopdf)                    date: 2018-03-08 16:44:29
+(epstopdf)                    size: 29621 bytes
 (epstopdf)             Output file: <./Slike/potek_sim_real_polje_ys-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2018-03-01 14:25:00
+(epstopdf)                    date: 2018-03-08 16:44:29
 (epstopdf)                    size: 12796 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_real_polj
-e_ys-eps-converted-to.pdf ./Slike/potek_sim_real_polje_ys.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/potek_sim_real_pol
+je_ys-eps-converted-to.pdf ./Slike/potek_sim_real_polje_ys.eps>
 (epstopdf)             \includegraphics on input line 76.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_sim_real_polje_ys-eps-converted-to.pdf, id=615, 603.25375pt x 48
+<./Slike/potek_sim_real_polje_ys-eps-converted-to.pdf, id=623, 603.25375pt x 48
 0.79625pt>
 File: ./Slike/potek_sim_real_polje_ys-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2205,19 +2127,19 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_200u_BxBy
 .eps>
-(epstopdf)                    date: 2018-03-01 13:48:10
-(epstopdf)                    size: 54222 bytes
+(epstopdf)                    date: 2018-03-08 16:44:25
+(epstopdf)                    size: 56341 bytes
 (epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_200u_BxBy
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:18
+(epstopdf)                    date: 2018-03-08 16:44:25
 (epstopdf)                    size: 19226 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_200u_BxBy-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_200u_BxBy
-.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Real/sim_real_po
+lje_xd_200u_BxBy-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_200u_BxB
+y.eps>
 (epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Real/sim_real_polje_xd_200u_BxBy-eps-converted-to.pdf, id=631, 364.3
+<./Slike/./Real/sim_real_polje_xd_200u_BxBy-eps-converted-to.pdf, id=639, 364.3
 6125pt x 293.095pt>
 File: ./Slike/./Real/sim_real_polje_xd_200u_BxBy-eps-converted-to.pdf Graphic f
 ile (type pdf)
@@ -2242,19 +2164,19 @@ Package babel Info: Redefining slovene shorthand "|
 [36 <./Slike/potek_sim_real_polje_ys-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_200u_napa
 ka.eps>
-(epstopdf)                    date: 2018-03-01 13:48:10
-(epstopdf)                    size: 35337 bytes
+(epstopdf)                    date: 2018-03-08 16:44:25
+(epstopdf)                    size: 36441 bytes
 (epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_200u_napa
 ka-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:19
+(epstopdf)                    date: 2018-03-08 16:44:25
 (epstopdf)                    size: 14349 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_200u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_200u_na
-paka.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Real/sim_real_po
+lje_xd_200u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_200u_n
+apaka.eps>
 (epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Real/sim_real_polje_xd_200u_napaka-eps-converted-to.pdf, id=648, 363
+<./Slike/./Real/sim_real_polje_xd_200u_napaka-eps-converted-to.pdf, id=656, 363
 .3575pt x 293.095pt>
 File: ./Slike/./Real/sim_real_polje_xd_200u_napaka-eps-converted-to.pdf Graphic
  file (type pdf)
@@ -2269,19 +2191,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_200u_fft.
 eps>
-(epstopdf)                    date: 2018-03-01 13:48:10
-(epstopdf)                    size: 20442 bytes
+(epstopdf)                    date: 2018-03-08 16:44:25
+(epstopdf)                    size: 20623 bytes
 (epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_200u_fft-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:19
+(epstopdf)                    date: 2018-03-08 16:44:25
 (epstopdf)                    size: 7095 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_200u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_200u_fft.e
-ps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Real/sim_real_po
+lje_xd_200u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_200u_fft.
+eps>
 (epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Real/sim_real_polje_xd_200u_fft-eps-converted-to.pdf, id=649, 362.35
+<./Slike/./Real/sim_real_polje_xd_200u_fft-eps-converted-to.pdf, id=657, 362.35
 374pt x 293.095pt>
 File: ./Slike/./Real/sim_real_polje_xd_200u_fft-eps-converted-to.pdf Graphic fi
 le (type pdf)
@@ -2295,18 +2217,18 @@ d-to.pdf used on input line 108.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/potek_sim_real_polje_xd.eps>
-(epstopdf)                    date: 2018-03-01 14:24:36
-(epstopdf)                    size: 29367 bytes
+(epstopdf)                    date: 2018-03-08 16:44:29
+(epstopdf)                    size: 29937 bytes
 (epstopdf)             Output file: <./Slike/potek_sim_real_polje_xd-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2018-03-01 14:25:01
+(epstopdf)                    date: 2018-03-08 16:44:29
 (epstopdf)                    size: 12830 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_real_polj
-e_xd-eps-converted-to.pdf ./Slike/potek_sim_real_polje_xd.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/potek_sim_real_pol
+je_xd-eps-converted-to.pdf ./Slike/potek_sim_real_polje_xd.eps>
 (epstopdf)             \includegraphics on input line 113.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_sim_real_polje_xd-eps-converted-to.pdf, id=650, 605.26125pt x 48
+<./Slike/potek_sim_real_polje_xd-eps-converted-to.pdf, id=658, 605.26125pt x 48
 0.79625pt>
 File: ./Slike/potek_sim_real_polje_xd-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2342,18 +2264,18 @@ Package babel Info: Redefining slovene shorthand "|
 [38 <./Slike/./Real/sim_real_polje_xd_200u_napaka-eps-converted-to.pdf> <./Slik
 e/./Real/sim_real_polje_xd_200u_fft-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/potek_sim_real_polje_yd.eps>
-(epstopdf)                    date: 2018-03-01 14:17:15
-(epstopdf)                    size: 20708 bytes
+(epstopdf)                    date: 2018-03-08 16:44:29
+(epstopdf)                    size: 20900 bytes
 (epstopdf)             Output file: <./Slike/potek_sim_real_polje_yd-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2018-03-01 14:18:58
+(epstopdf)                    date: 2018-03-08 16:44:29
 (epstopdf)                    size: 7722 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_real_polj
-e_yd-eps-converted-to.pdf ./Slike/potek_sim_real_polje_yd.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/potek_sim_real_pol
+je_yd-eps-converted-to.pdf ./Slike/potek_sim_real_polje_yd.eps>
 (epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_sim_real_polje_yd-eps-converted-to.pdf, id=687, 606.265pt x 478.
+<./Slike/potek_sim_real_polje_yd-eps-converted-to.pdf, id=696, 606.265pt x 478.
 78876pt>
 File: ./Slike/potek_sim_real_polje_yd-eps-converted-to.pdf Graphic file (type p
 df)
@@ -2386,7 +2308,7 @@ Package babel Info: Redefining slovene shorthand "|
 [40]
 \openout2 = `./tex/Meritve.aux'.
 
- (tex/Meritve.tex
+ (./tex/Meritve.tex
   5.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 1.
@@ -2405,7 +2327,7 @@ Package babel Info: Redefining slovene shorthand "|
 
 
 
-] <./Slike/HTIMS601.png, id=721, 864.22874pt x 1263.21938pt>
+] <./Slike/HTIMS601.png, id=730, 864.22874pt x 1263.21938pt>
 File: ./Slike/HTIMS601.png Graphic file (type png)
 
 <use ./Slike/HTIMS601.png>
@@ -2421,18 +2343,18 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 
 Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_ys_000u_BxBy.eps
 >
-(epstopdf)                    date: 2018-03-01 13:45:15
-(epstopdf)                    size: 54249 bytes
+(epstopdf)                    date: 2018-03-08 16:44:24
+(epstopdf)                    size: 56368 bytes
 (epstopdf)             Output file: <./Slike/./Meritve/meritev_ys_000u_BxBy-eps
 -converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:20
+(epstopdf)                    date: 2018-03-08 16:44:24
 (epstopdf)                    size: 21179 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_y
-s_000u_BxBy-eps-converted-to.pdf ./Slike/./Meritve/meritev_ys_000u_BxBy.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Meritve/meritev_
+ys_000u_BxBy-eps-converted-to.pdf ./Slike/./Meritve/meritev_ys_000u_BxBy.eps>
 (epstopdf)             \includegraphics on input line 69.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Meritve/meritev_ys_000u_BxBy-eps-converted-to.pdf, id=723, 364.36125
+<./Slike/./Meritve/meritev_ys_000u_BxBy-eps-converted-to.pdf, id=732, 364.36125
 pt x 293.095pt>
 File: ./Slike/./Meritve/meritev_ys_000u_BxBy-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -2456,19 +2378,19 @@ Package babel Info: Redefining slovene shorthand "|
 [42 <./Slike/HTIMS601.png>]
 Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_ys_000u_napaka.e
 ps>
-(epstopdf)                    date: 2018-03-01 13:45:16
-(epstopdf)                    size: 36499 bytes
+(epstopdf)                    date: 2018-03-08 16:44:24
+(epstopdf)                    size: 37609 bytes
 (epstopdf)             Output file: <./Slike/./Meritve/meritev_ys_000u_napaka-e
 ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:21
+(epstopdf)                    date: 2018-03-08 16:44:24
 (epstopdf)                    size: 14419 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_y
-s_000u_napaka-eps-converted-to.pdf ./Slike/./Meritve/meritev_ys_000u_napaka.eps
->
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Meritve/meritev_
+ys_000u_napaka-eps-converted-to.pdf ./Slike/./Meritve/meritev_ys_000u_napaka.ep
+s>
 (epstopdf)             \includegraphics on input line 71.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Meritve/meritev_ys_000u_napaka-eps-converted-to.pdf, id=730, 371.387
+<./Slike/./Meritve/meritev_ys_000u_napaka-eps-converted-to.pdf, id=739, 371.387
 5pt x 293.095pt>
 File: ./Slike/./Meritve/meritev_ys_000u_napaka-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -2479,18 +2401,18 @@ Package pdftex.def Info: ./Slike/./Meritve/meritev_ys_000u_napaka-eps-converted
 (pdftex.def)             Requested size: 247.54149pt x 195.36188pt.
 Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_ys_000u_fft.eps>
 
-(epstopdf)                    date: 2018-03-01 13:45:16
-(epstopdf)                    size: 20287 bytes
+(epstopdf)                    date: 2018-03-08 16:44:24
+(epstopdf)                    size: 20468 bytes
 (epstopdf)             Output file: <./Slike/./Meritve/meritev_ys_000u_fft-eps-
 converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:21
+(epstopdf)                    date: 2018-03-08 16:44:24
 (epstopdf)                    size: 7069 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_y
-s_000u_fft-eps-converted-to.pdf ./Slike/./Meritve/meritev_ys_000u_fft.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Meritve/meritev_
+ys_000u_fft-eps-converted-to.pdf ./Slike/./Meritve/meritev_ys_000u_fft.eps>
 (epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Meritve/meritev_ys_000u_fft-eps-converted-to.pdf, id=733, 373.395pt 
+<./Slike/./Meritve/meritev_ys_000u_fft-eps-converted-to.pdf, id=742, 373.395pt 
 x 293.095pt>
 File: ./Slike/./Meritve/meritev_ys_000u_fft-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -2507,18 +2429,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_xs_200u_BxBy.eps
 >
-(epstopdf)                    date: 2018-03-01 13:44:50
-(epstopdf)                    size: 54274 bytes
+(epstopdf)                    date: 2018-03-08 16:44:24
+(epstopdf)                    size: 56393 bytes
 (epstopdf)             Output file: <./Slike/./Meritve/meritev_xs_200u_BxBy-eps
 -converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:22
+(epstopdf)                    date: 2018-03-08 16:44:24
 (epstopdf)                    size: 21153 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_x
-s_200u_BxBy-eps-converted-to.pdf ./Slike/./Meritve/meritev_xs_200u_BxBy.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Meritve/meritev_
+xs_200u_BxBy-eps-converted-to.pdf ./Slike/./Meritve/meritev_xs_200u_BxBy.eps>
 (epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Meritve/meritev_xs_200u_BxBy-eps-converted-to.pdf, id=734, 364.36125
+<./Slike/./Meritve/meritev_xs_200u_BxBy-eps-converted-to.pdf, id=743, 364.36125
 pt x 293.095pt>
 File: ./Slike/./Meritve/meritev_xs_200u_BxBy-eps-converted-to.pdf Graphic file 
 (type pdf)
@@ -2533,19 +2455,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_xs_200u_napaka.e
 ps>
-(epstopdf)                    date: 2018-03-01 13:44:50
-(epstopdf)                    size: 35539 bytes
+(epstopdf)                    date: 2018-03-08 16:44:24
+(epstopdf)                    size: 36643 bytes
 (epstopdf)             Output file: <./Slike/./Meritve/meritev_xs_200u_napaka-e
 ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:22
+(epstopdf)                    date: 2018-03-08 16:44:24
 (epstopdf)                    size: 14055 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_x
-s_200u_napaka-eps-converted-to.pdf ./Slike/./Meritve/meritev_xs_200u_napaka.eps
->
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Meritve/meritev_
+xs_200u_napaka-eps-converted-to.pdf ./Slike/./Meritve/meritev_xs_200u_napaka.ep
+s>
 (epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Meritve/meritev_xs_200u_napaka-eps-converted-to.pdf, id=735, 371.387
+<./Slike/./Meritve/meritev_xs_200u_napaka-eps-converted-to.pdf, id=744, 371.387
 5pt x 293.095pt>
 File: ./Slike/./Meritve/meritev_xs_200u_napaka-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -2560,18 +2482,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_xs_200u_fft.eps>
 
-(epstopdf)                    date: 2018-03-01 13:44:50
-(epstopdf)                    size: 20930 bytes
+(epstopdf)                    date: 2018-03-08 16:44:24
+(epstopdf)                    size: 21114 bytes
 (epstopdf)             Output file: <./Slike/./Meritve/meritev_xs_200u_fft-eps-
 converted-to.pdf>
-(epstopdf)                    date: 2018-03-01 13:52:23
+(epstopdf)                    date: 2018-03-08 16:44:24
 (epstopdf)                    size: 7155 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_x
-s_200u_fft-eps-converted-to.pdf ./Slike/./Meritve/meritev_xs_200u_fft.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/./Meritve/meritev_
+xs_200u_fft-eps-converted-to.pdf ./Slike/./Meritve/meritev_xs_200u_fft.eps>
 (epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Meritve/meritev_xs_200u_fft-eps-converted-to.pdf, id=736, 370.38374p
+<./Slike/./Meritve/meritev_xs_200u_fft-eps-converted-to.pdf, id=745, 370.38374p
 t x 293.095pt>
 File: ./Slike/./Meritve/meritev_xs_200u_fft-eps-converted-to.pdf Graphic file (
 type pdf)
@@ -2585,18 +2507,18 @@ Package pdftex.def Info: ./Slike/./Meritve/meritev_xs_200u_fft-eps-converted-to
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <./Slike/potek_meritev_xs.eps>
-(epstopdf)                    date: 2018-03-01 14:24:32
-(epstopdf)                    size: 29664 bytes
+(epstopdf)                    date: 2018-03-08 16:44:29
+(epstopdf)                    size: 30232 bytes
 (epstopdf)             Output file: <./Slike/potek_meritev_xs-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2018-03-01 14:25:02
+(epstopdf)                    date: 2018-03-08 16:44:29
 (epstopdf)                    size: 12560 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_meritev_xs-ep
-s-converted-to.pdf ./Slike/potek_meritev_xs.eps>
+(epstopdf)             Command: <repstopdf --outfile=./Slike/potek_meritev_xs-e
+ps-converted-to.pdf ./Slike/potek_meritev_xs.eps>
 (epstopdf)             \includegraphics on input line 114.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_meritev_xs-eps-converted-to.pdf, id=737, 611.28375pt x 480.79625
+<./Slike/potek_meritev_xs-eps-converted-to.pdf, id=746, 611.28375pt x 480.79625
 pt>
 File: ./Slike/potek_meritev_xs-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/potek_meritev_xs-eps-converted-to.pdf>
@@ -2649,14 +2571,20 @@ Package babel Info: Redefining slovene shorthand "|
 _meritev_xs-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 415.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 415.
- (Diploma_V2.aux
-(tex/Analiticna_izpeljava.aux) (tex/Linearni_model.aux) (tex/Realni_model.aux)
-(tex/Meritve.aux))
+ (./Diploma_V2.aux
+(./tex/Analiticna_izpeljava.aux) (./tex/Linearni_model.aux)
+(./tex/Realni_model.aux) (./tex/Meritve.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 415.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 415.
-Package rerunfilecheck Info: File `Diploma_V2.out' has not changed.
-(rerunfilecheck)             Checksum: B7267AFC29264CBB41E16AE830689E4B;2357.
 
+
+Package rerunfilecheck Warning: File `Diploma_V2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Diploma_V2.out':
+(rerunfilecheck)             Before: B7267AFC29264CBB41E16AE830689E4B;2357
+(rerunfilecheck)             After:  2A2532D41EAF16D85E318EE8AEEA29E0;2331.
 
 LaTeX Warning: There were undefined references.
 
@@ -2666,33 +2594,30 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 415.
  ) 
 Here is how much of TeX's memory you used:
- 18233 strings out of 493323
- 351767 string characters out of 3130449
- 415812 words of memory out of 3000000
- 21225 multiletter control sequences out of 15000+200000
- 11965 words of font info for 43 fonts, out of 3000000 for 9000
+ 18168 strings out of 493014
+ 345213 string characters out of 6137001
+ 413553 words of memory out of 5000000
+ 21167 multiletter control sequences out of 15000+600000
+ 11965 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,11n,94p,759b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmex10.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alic/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/alic/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/alic/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
-rs/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr17.pfb><C:/Users/alic/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/alic/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alic/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/alic/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users
-/alic/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b>
-Output written on Diploma_V2.pdf (46 pages, 5029661 bytes).
+ 59i,11n,94p,759b,816s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb>
+Output written on Diploma_V2.pdf (46 pages, 4921763 bytes).
 PDF statistics:
- 900 PDF objects out of 1000 (max. 8388607)
+ 912 PDF objects out of 1000 (max. 8388607)
+ 718 compressed objects within 8 object streams
  158 named destinations out of 1000 (max. 500000)
  431 words of extra memory for PDF output out of 10000 (max. 10000000)
 

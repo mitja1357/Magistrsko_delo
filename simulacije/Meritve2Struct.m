@@ -1,4 +1,4 @@
-path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\2018_03_20\';
+path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\2018_03_27\';
 list=dir(path);
 
 eks={'xs','ys','xd','zs'};
@@ -24,6 +24,8 @@ for i=1:4
             matrika=csvread(filename,1,0);
             kot_ref=matrika(:,2);
             kot_RM44=matrika(:,4);
+            kot_ref(find(diff(kot_ref)<-0.5)+1:end)= ...
+                kot_ref(find(diff(kot_ref)<-0.5)+1:end)+1;
 %             kot_RM44_nem_all=[kot_RM44_nem_all,kot_RM44];
 %             protocol_nemec=(kot_RM44-kot_ref).*360;
 %             protocol_nemec(protocol_nemec>90)=protocol_nemec( protocol_nemec>90)-360;
@@ -45,14 +47,16 @@ for i=1:4
 
             kot_RM44_1=atan2d(sinus1,cosinus1);
             kot_RM44_1((find(diff(kot_RM44_1)<-90)+1):end)= kot_RM44_1((find(diff(kot_RM44_1)<-90)+1):end)+360;
-    
             
-            referr=kot_ref-linspace(0,1,1000)';
-            ref1=referr(1000:-1:1)+linspace(0,1,1000)';
+            frst_ref=kot_ref(1);
+            last_ref=kot_ref(end);
+            
+            referr=kot_ref-linspace(frst_ref,last_ref,length(kot_ref))';
+            ref1=referr(1000:-1:1)+linspace(frst_ref,last_ref,length(kot_ref))';
             ref1=ref1.*360;
             
             displace=str2num(filename(end-7:end-5))*1e-3;
-            
+            clear frst_ref last_ref
             Sin=sinus1;
             Cos=cosinus1;
             protocol=kot_RM44_1-ref1;

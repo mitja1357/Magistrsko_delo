@@ -4,7 +4,7 @@ close all;
 
 theta = linspace(0,360,8192);
 
-primer = 4;
+primer = 2;
 
 offset_cos = 0.0;
 offset_sin = 0.0;
@@ -12,8 +12,8 @@ offset_sin = 0.0;
 delta_amp_1_harm = 0.0;
 delta_faza_1_harm_deg = 0;
 
-amp_cos_2_harm = 0.0;
-amp_sin_2_harm = 0.0;
+amp_cos_2_harm = 0.6;
+amp_sin_2_harm = 0.1;
 delta_faza_2_harm_deg = 0;
 
 amp_cos_3_harm = 0.0;

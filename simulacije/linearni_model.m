@@ -1,4 +1,4 @@
-theta=linspace(0,360,1000);
+theta=linspace(0,360,1024);
 eks={'xs','ys','xd','yd'};
 
 
@@ -31,7 +31,7 @@ for j=1:4
     end
     clear i RM44_lin Sin Cos
 
-    protocol_lin_all=RM44_lin_all-theta;
+    protocol_lin_all=RM44_lin_all-Ref_all;
     
 
     
