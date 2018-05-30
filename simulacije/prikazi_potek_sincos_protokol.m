@@ -1,4 +1,4 @@
-function prikazi_spremembe_od_ekscentricnosti_meritve_real(varargin)
+function prikazi_potek_sincos_protokol(varargin)
 
 if nargin<1
     error('rabis vsaj podatke')
@@ -7,7 +7,14 @@ end
 if nargin==1
     eks=inputname(1);
     meritev=varargin{1};
+    slika=1;
 end
+if nargin==2
+    eks=inputname(1);
+    meritev=varargin{1};
+    slika=varargin{2};
+end
+    
 
 %faza
 fft_sin = mojfft(meritev.sin);
@@ -26,7 +33,7 @@ amp_m_s(1) = tmp_mnk(1);
 tmp_mnk = polyfit(meritev.displacement, fft_cos{1}(:,2),1);
 amp_m_c(1) = tmp_mnk(1);
 
-f1=figure(1);
+f1=figure(slika);
 set(f1,'Name',eks);
 
 subplot(2,3,1)
@@ -41,11 +48,8 @@ legend('sin','cos')
 grid on
 
 subplot(2,3,2)
-plot(meritev.displacement, fft_sin{1}(:,1).*cosd(fft_sin{2}(:,1)))
+plot(meritev.displacement, fft_sin{1}(:,1).*cosd(fft_sin{2}(:,1)),meritev.displacement, fft_cos{1}(:,1).*cosd(fft_cos{2}(:,1)))
 title('sin cos offset')
-hold on
-plot(meritev.displacement, fft_cos{1}(:,1).*cosd(fft_cos{2}(:,1)))
-title('cos offset')
 legend('sin','cos')
 hold off
 grid on

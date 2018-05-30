@@ -29,9 +29,9 @@ for i=1:4
     xs=0.0;
     ys=0.0;
     xd=0.0;
-    yd=-0.0;
+    yd=0.0;
 %     eval(strcat('displace=meritev_',ekcentric,'.displacement.*1e-3 -0.5e-3;'))
-    displace=-0:50e-3:500e-3;
+    displace=-0.5:25e-3:500e-3;
     
     
     RM44_real_all=[];
@@ -51,8 +51,8 @@ for i=1:4
             rot_mat=[ cosd(theta(k)), sind(theta(k)) ...
                     ;-sind(theta(k)), cosd(theta(k))];
             
-            Hall1_k=rot_mat*((Hall1+[xs;ys])-rot_mat*[xd;yd]);           
-            Hall2_k=rot_mat*((Hall2+[xs;ys])-rot_mat*[xd;yd]); 
+            Hall1_k=rot_mat*(Hall1+[xs;ys])-[xd;yd];           
+            Hall2_k=rot_mat*(Hall2+[xs;ys])-[xd;yd]; 
 
             H1x=round(50*(min(abs(Hall1_k(1)-X_tmp))+Hall1_k(1)))/50;
             H1y=round(50*(min(abs(Hall1_k(2)-Y_tmp))+Hall1_k(2)))/50;
