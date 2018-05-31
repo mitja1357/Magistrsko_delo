@@ -33,13 +33,28 @@ amp_m_s(1) = tmp_mnk(1);
 tmp_mnk = polyfit(meritev.displacement, fft_cos{1}(:,2),1);
 amp_m_c(1) = tmp_mnk(1);
 
+fft_prot=mojfft(meritev.protocol);
 f1=figure(slika);
 set(f1,'Name',eks);
 
 subplot(2,3,1)
-plot(meritev.displacement, fft_sin{2}(:,2)-fft_cos{2}(:,2));
+faza_sin = fft_sin{2}(:,2)-fft_prot{1}(1,1).*cosd(fft_prot{2}(1,1));
+faza_cos = fft_cos{2}(:,2)-fft_prot{1}(1,1).*cosd(fft_prot{2}(1,1));
+if faza_sin(1)<-180
+    faza_sin=faza_sin+360;
+elseif faza_sin(1)> 180;
+    faza_sin=faza_sin-360;
+end
+if faza_cos(1)<-180
+    faza_cos=faza_cos+360;
+elseif faza_cos(1)> 180;
+    faza_cos=faza_cos-360;
+end
+
+plot(meritev.displacement,faza_sin ,meritev.displacement,faza_cos);
 grid on
 title('faza')
+legend('sin','cos')
 
 subplot(2,3,3)
 plot(meritev.displacement,fft_sin{1}(:,2),meritev.displacement,fft_cos{1}(:,2) )
@@ -54,7 +69,7 @@ legend('sin','cos')
 hold off
 grid on
 
-fft_prot=mojfft(meritev.protocol);
+
 
 subplot(2,3,4)
 plot(meritev.displacement, fft_prot{1}(:,1).*cosd(fft_prot{2}(:,1)));
