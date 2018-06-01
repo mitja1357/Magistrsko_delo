@@ -31,8 +31,8 @@ for i=1:4
     xd=0.0;
     yd=0.0;
 %     eval(strcat('displace=meritev_',ekcentric,'.displacement.*1e-3 -0.5e-3;'))
-    displace=-0.5:25e-3:500e-3;
-    
+    displace=-0.5*2:2*25e-3:2*500e-3;
+      
     
     RM44_real_all=[];
     Sin_all=[];
@@ -86,6 +86,8 @@ for i=1:4
         end
         Sin_all=[Sin_all;Sin];
         Cos_all=[Cos_all;Cos];
+        
+        
         clear k rot_mat H1x H1y H2x H2y Hall1_k Hall2_k H1x2 H1y2 ...
             H2x2 H2y2 Hall1_k2 Hall2_k2 
         
@@ -97,6 +99,7 @@ for i=1:4
         RM44_real_all=[RM44_real_all;RM44_real];
         Ref_all=[Ref_all; theta];
     end
+
     clear i RM44_real Sin Cos Hall1 Hall2
     
     
