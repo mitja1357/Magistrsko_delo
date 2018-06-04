@@ -4,6 +4,7 @@ if nargin == 1
     if ~isstruct(varargin{1})
         error('rabis podatke');
     end
+    samo1slika=0;
 elseif nargin == 0
     error('rabis podatke');   
 end
