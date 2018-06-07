@@ -1,7 +1,7 @@
-path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\2018_03_20\';
+path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\2018_06_06\';
 list=dir(path);
 
-eks={'xs','ys','xd','zs'};
+eks={'xs','ys','xd','xr'};
 
 
 for i=1:4
@@ -35,8 +35,8 @@ for i=1:4
 %             ref_all1=[ref_all1,kot_ref];
 %             Rm44_all1=[Rm44_all1,kot_RM44];
             napaka=matrika(:,6);
-            sinus=matrika(:,8);
-            cosinus=matrika(:,10);
+            sinus=matrika(:,8)+0.0062;
+            cosinus=matrika(:,10)+0.0091;
             cosinus1=cosinus(length(cosinus):-1:1);
             sinus1=sinus(length(sinus):-1:1);
             

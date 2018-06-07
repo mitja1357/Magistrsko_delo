@@ -31,7 +31,7 @@ for i=1:4
     xd=0.0;
     yd=0.0;
 %     eval(strcat('displace=meritev_',ekcentric,'.displacement.*1e-3 -0.5e-3;'))
-    displace=-0.5*2:2*25e-3:2*500e-3;
+    displace=-0:25e-3:500e-3;
       
     
     RM44_real_all=[];

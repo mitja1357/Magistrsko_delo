@@ -1,6 +1,6 @@
 \chapter{Analiti"cna izpeljava vplivov dinami"cne in stati"cne ekscentri"cnosti}
 
-V tem poglavju bom analiti"cno prikazati vpliv napak omenjenih ekscentri"cnosti, ki se pojavita zaradi neprimerne vgradnje te vrste enkoderja. Napaki razli"cno vplivati na izhode senzorja, zato ju lahko obravnamvam posami"cno. Preko analiti"cne izpeljave bomo spoznali kako se spreminja lokacija Hall-ove sonde glede na magnet ob pravilni monta"zi. Z vpeljavo dodane ekscentri"cnosti v model bomo videli, kako se trajektorija gibanja Hall-ove sonde glede na magnet spremeni. S poznavanjem lokacije Hall-ove sonde nad magnetom bomo lahko od"citali vrednost \Bz.
+V tem poglavju bom analiti"cno prikazal vpliv napak omenjenih ekscentri"cnosti, ki se pojavita zaradi neprimerne vgradnje te vrste enkoderja. Napaki razli"cno vplivati na izhode senzorja, zato ju lahko obravnamvam posami"cno. Preko analiti"cne izpeljave bomo spoznali kako se spreminja lokacija Hall-ove sonde glede na magnet ob pravilni monta"zi. Z vpeljavo dodane ekscentri"cnosti v model bomo videli, kako se trajektorija gibanja Hall-ove sonde glede na magnet spremeni. S poznavanjem lokacije Hall-ove sonde nad magnetom bomo lahko od"citali vrednost \Bz.
 
 
 \section{Definicija koordinatnih sistemov}
@@ -17,7 +17,7 @@ Definirajmo kartezi"cni koordinatni sistem, ki ima v izhodi"scu postavljen radia
 	\label{fig:def_kks}
 \end{figure}
 
-Z rotacijo magneta za kot $\theta$, se lokacija Hall-ove sonde glede na magnet spremeni. Nova lokacija Hall-ove sonde glede na magnet je enaka, "ce namesto magnet, zarotiramo Hall-ovo sondo za kot $-\theta$ . Novo lokacjo Hall-ove sonde glede na magnet lahko zapi"semo z rotacijsko matriko.
+Z rotacijo magneta za kot $\theta$, se lokacija Hall-ove sonde glede na magnet spremeni. Nova lokacija Hall-ove sonde glede na magnet je enaka, kot "ce namesto magnet, zarotiramo Hall-ovo sondo za kot $-\theta$ . Novo lokacjo Hall-ove sonde glede na magnet lahko zapi"semo z rotacijsko matriko.
 
 \begin{equation}
 \label{equ:rotacija_hall}
@@ -169,7 +169,7 @@ V (\ref{equ:rotacija_hall_din}) lahko izrazimo - in izraz se poenostavi.
 \section{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri stati"cni ekscentri"cnosti}
 
 
-Postavimo sistem nazaj v izhodi"scno lego, brez ekscentri"cnosti. Tako sredisce magneta, kot os vrtenja postavimo v izhodi"sce. Hall-ova sonda je postavljena v to"cko $S_{h0}(x_0,y_0)$. Sedaj premaknimo Hall-ovo sondo za $(\Delta x_s, \Delta y_s)$, v novo to"cko $S_{h1}(x_0+\Delta x_s, y_0+\Delta y_s)$. Na sliki \ref{fig:def_sta_eks} je prikazana le stati"cna ekscentri"cnost v y-osi, vendar celotni razmislek velja za obe stati"cni ekscentri"cnosti enako.
+Postavimo sistem nazaj v izhodi"scno lego, brez ekscentri"cnosti. Tako sredščce magneta, kot os vrtenja postavimo v izhodi"sce. Hall-ova sonda je postavljena v to"cko $S_{h0}(x_0,y_0)$. Sedaj premaknimo Hall-ovo sondo za $(\Delta x_s, \Delta y_s)$, v novo to"cko $S_{h1}(x_0+\Delta x_s, y_0+\Delta y_s)$. Na sliki \ref{fig:def_sta_eks} je prikazana le stati"cna ekscentri"cnost v y-osi, vendar celotni razmislek velja za obe stati"cni ekscentri"cnosti enako.
 
 
 \begin{figure}[h!]
@@ -229,7 +229,7 @@ Do sedaj smo postopoma izpeljali ena"cbe za:
 \begin{itemize}
   \item sistem magneta in Hall-ove sonde ob pravilni monta"zi
   \item sistem magneta in Hall-ove sonde z dinami"cno ekscentri"cnostjo magneta
-  \item sistem magneta in Hall-ove sonde z stati"cno ekscentri"cnostjo Hall-ove sonde
+  \item sistem magneta in Hall-ove sonde s stati"cno ekscentri"cnostjo Hall-ove sonde
 \end{itemize}
 
 Ena"cbi sistema z ekscentri"cnostjo sti med seboj neodvisni zato lahko ena"cbe sistemov zdru"zimo. Uporabimo princip superpozicije in dobimo kon"cno ena"cbo za lociranje Hall-ove sonde glede na magnet v odvistnosti od zasuka magneta, z upo"stevanjem vpliva tako dinami"cne kot stati"cne ekscentri"cnosti. Kon"cna ena"cba se glasi:
@@ -248,12 +248,12 @@ Ogledali smo si, kako je ob rotaciji locirana Hall-ova sonda glede na magnet. Og
 
 \chapter{Izpeljava poteka polja $B_z(\theta)$ in ocena napake zaradi ekscentri"cnosti}
 
-V tem poglavju si bomo ogledali kak"snomagnetno polje  pomeri Hall-ova sonda. Ogledali si bomo magnet, ter kako senzor RM44 meri magnetno polje. Preko pomirjenega polja, bomo izra"cunali kak"sna je napake pomerjenega kota od referen"cnega in kako se napaka spreminja z ekscentri"cnostjo.
+V tem poglavju si bomo ogledali kak"sno magnetno polje  pomeri Hall-ova sonda. Ogledali si bomo magnet, ter kako senzor RM44 meri magnetno polje. Preko pomirjenega polja, bomo izra"cunali kak"sna je napake pomerjenega kota od referen"cnega in kako se napaka spreminja z ekscentri"cnostjo.
 
 \section{Definicija  gostote magnetnega polja $B_z$}
 
 Predlagan magnet s strani proizvajalca senzorja je radialno magnetiziran s premerom 4 mm.
-Dajalnik pozicije RM44 meri Z-komponento gostote magnetnega polja zato se lahko osredoto"cimo le nanjo citeAM8192. Potek komponente $B_z$ nad cilindri"cnim magnetom je prikazan na sliki \ref{fig:magnetno_polje}.
+Dajalnik pozicije RM44 meri Z-komponento gostote magnetnega polja, zato se lahko osredoto"cimo le nanjo citeAM8192. Potek komponente $B_z$ nad cilindri"cnim magnetom je prikazan na sliki \ref{fig:magnetno_polje}.
 
 %Magsnetno polje  v prostoru lahko izra"cunamo z Biot-Savartovim zakonom. Poznati moramo specifikacije trajnega magneta in izra"cunati integral po prostoru. Tako dobimo v poljubni to"cki v prostoru vrednost B.  Hall-ove sonde v senzorju RM44 merijo le z-komponento magnetnega polja, zato se lahko osredoto"cimo le nanjo. Odvistnost z-komponente vektorja B na konstantni vi"sini od magneta je vidno na sliki \ref{fig:magnetno_polje}.
 
@@ -368,7 +368,7 @@ Upo"stevajmo sedaj le stati"cni ekscentri"cnosti $\Delta x_s$ in $\Delta y_s$. $
 cos(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{(r_0+\Delta x_s)^2+\Delta y_s^2}\cos(\theta -\arctan \frac{\Delta y_s}{r_0+\Delta x_s})
 \end{equation}
 \begin{equation}\label{equ:By_stat}
-sin(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{\Delta x_s^2+(r_0+\Delta y_s)^2} \sin(\theta +\arctan \frac{\Delta x_s}{r_0+\Delta y_s})
+sin(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{\Delta x_s^2+(r_0+\Delta y_s)^2} \cos(\theta - 90 +\arctan \frac{\Delta x_s}{r_0+\Delta y_s})
 \end{equation}
 
 Iz njiju vidimo spremenjena poteka. Signaloma se je spremenila amplituda in fazni zamik (Slika \ref{./LIN/sim_lin_polje_xs_200u_BxBy}).
@@ -384,7 +384,7 @@ cos(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta-\Delta x_d
 \label{equ:By_din}
 sin(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta-\Delta x_d
 \end{equation}
-Polji obdr"zita enako amplitudo ter fazo, vendar dobita enosmerno komponento, ki je premo sorazmerna z izmikom magneta iz osi vrtenja (Slika \ref{./LIN/sim_lin_polje_xd_200u_BxBy}).
+Polji obdr"zita enako amplitudo ter fazo, vendar dobita enosmerno komponento (Slika \ref{./LIN/sim_lin_polje_xd_200u_BxBy}).
 \slikaeps{Poteka $sin$ in $cos$ z upo"stevanjem 0,2 mm dinami"cne ekscentri"cnosti v x-osi}{./LIN/sim_lin_polje_xd_200u_BxBy}
 
 
@@ -431,7 +431,7 @@ Na tem mestu definirajmo napako merjenega kota:
 
 Poglejmo si analiti"cen potek napake.  S spodaj opisanim postopkom se bomo izognili numeri"cnemu ra"cunanju funkcije $\arctan$.
 
-Signala $sin$ in $cos$ imata periodo $360^\circ$. Iz tega sledi, da bo tudi $\varepsilon$ imel periodo $360^\circ $.Pri"cakujem, da bo potek napake $\varepsilon$ v obliki :
+Signala $sin$ in $cos$ imata periodo $360^\circ$. Iz tega sledi, da bo tudi $\varepsilon$ imel periodo $360^\circ $. Pri"cakujem, da bo potek napake $\varepsilon$ v obliki :
 \begin{equation}
 \label{equ:nastavek}
 \varepsilon=A_0+A_1 \cos \theta +B_1 \sin \theta+A_2 \cos 2\theta +B_2 \sin 2\theta
