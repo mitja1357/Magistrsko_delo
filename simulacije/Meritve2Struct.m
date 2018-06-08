@@ -1,4 +1,4 @@
-path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\2018_06_06\';
+path='Y:\Alic_Mitja\Magistrsko_delo\simulacije\mat_datoteke\2018_06_08\';
 list=dir(path);
 
 eks={'xs','ys','xd','xr'};
@@ -35,8 +35,8 @@ for i=1:4
 %             ref_all1=[ref_all1,kot_ref];
 %             Rm44_all1=[Rm44_all1,kot_RM44];
             napaka=matrika(:,6);
-            sinus=matrika(:,8)+0.0062;
-            cosinus=matrika(:,10)+0.0091;
+            sinus=matrika(:,8)+0.0062 -0.004429770894629;
+            cosinus=matrika(:,10)+0.0091 -0.012764921998902;
             cosinus1=cosinus(length(cosinus):-1:1);
             sinus1=sinus(length(sinus):-1:1);
             
@@ -92,11 +92,11 @@ for i=1:4
     
     %% save to struct
     tmp=struct;
-    tmp.protocol=protocol_all;
-    tmp.sin=Sin_all;
-    tmp.cos=Cos_all;
-    tmp.displacement=displace_all;
-    tmp.ref=Ref_all;
+    tmp.protocol=protocol_all(SortedIndex,:);
+    tmp.sin=Sin_all(SortedIndex,:);
+    tmp.cos=Cos_all(SortedIndex,:);
+    tmp.displacement=displace_all(SortedIndex);
+    tmp.ref=Ref_all(SortedIndex,:);
 
     eval(strcat('meritev_',ekcentric,'=tmp;'));
     clear j L T Fs n dim Y P2 P1 tmp  ekcentric SortedIndex SortedArray ref1
