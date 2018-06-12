@@ -1,6 +1,6 @@
 \chapter{Analiti"cna izpeljava vplivov dinami"cne in stati"cne ekscentri"cnosti}
 
-V tem poglavju bom analiti"cno prikazal vpliv napak omenjenih ekscentri"cnosti, ki se pojavita zaradi neprimerne vgradnje te vrste enkoderja. Napaki razli"cno vplivati na izhode senzorja, zato ju lahko obravnamvam posami"cno. Preko analiti"cne izpeljave bomo spoznali kako se spreminja lokacija Hall-ove sonde glede na magnet ob pravilni monta"zi. Z vpeljavo dodane ekscentri"cnosti v model bomo videli, kako se trajektorija gibanja Hall-ove sonde glede na magnet spremeni. S poznavanjem lokacije Hall-ove sonde nad magnetom bomo lahko od"citali vrednost \Bz.
+V tem poglavju bom analiti"cno prikazal vpliv omenjenih ekscentri"cnosti, ki se pojavita zaradi neprimerne vgradnje. Napaki razli"cno vplivati na izhodni podatek, zato ju lahko obravnamvam posami"cno. Preko analiti"cne izpeljave bomo spoznali kako se spreminja lokacija Hall-ove sonde glede na magnet ob pravilni monta"zi. Z vpeljavo dodane ekscentri"cnosti v model bomo videli, kako se potek gibanja Hall-ove sonde glede na magnet spremeni. S poznavanjem lokacije Hall-ove sonde nad magnetom bomo lahko od"citali vrednost \Bz.
 
 
 \section{Definicija koordinatnih sistemov}
@@ -26,7 +26,7 @@ Z rotacijo magneta za kot $\theta$, se lokacija Hall-ove sonde glede na magnet s
 \begin{bmatrix} x_0\\y_0 \end{bmatrix}
 \end{equation}
 
-Argument rotacijske matrike je $-\theta$, pri "cemer vemo, da smo namesto magneta zarotirali Hall-ovo sondo v nasprotno smer. Z upo"stevanjem lihosti funkcije sinus in sodosti funkcije kosinus, se ena"cba \ref{equ:rotacija_hall} poenostavi v:
+Argument rotacijske matrike je $-\theta$, pri "cemer vemo, da smo namesto magneta zarotirali Hall-ovo sondo v nasprotno smer. Z upo"stevanjem lihosti funkcije sinus in sodosti funkcije kosinus\cite{Matematika1}, se ena"cba \ref{equ:rotacija_hall} poenostavi v:
 \begin{equation}
 \label{equ:rotacija_hall_simplify}
 \begin{bmatrix} x\\y \end{bmatrix}=
@@ -80,7 +80,7 @@ Argument rotacijske matrike je $-\theta$, pri "cemer vemo, da smo namesto magnet
 \section{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri dinami"cni ekscentri"cnosti}
 
 Opazujmo sedaj sistem gibanja Hall-ove sonde glede na magnet ter dinami"cno ekscentri"cnost. Magnet je
- postavljen v izhodi"sce koordinatnega sistema $S_m(0,0)$. Sedaj magnet izmaknemo v novo lego $S_{m1}(\Delta
+ postavljen v izhodi"sce koordinatnega sistema $S_m(0,0)$, kjre je tudi os vrtenja. Sedaj magnet izmaknemo v novo lego $S_{m1}(\Delta
   x_d,\Delta y_d)$ (Slika \ref{fig:def_din_eks}). Os vrtenja je "se vedno postavljena v izhodi"s"ce
    koordinatnega sistema. Sredi"sce magneta $S_{m1}(\Delta x_d,\Delta y_d)$ tako tekom vrtenja okoli
     koordinatnega izhodi"sca opi"se kro"znico z radijem $\sqrt{\Delta x_d^2+\Delta y_d^2}$. V sistem sedaj
@@ -144,7 +144,7 @@ Sistema prikazana na slikah \ref{fig:def_din_eks} in \ref{fig:def_din_eks_na_sta
 	\label{fig:potek_sonde_din_eks}
 \end{figure}
 
-Potek Hall-ove sonde ob rotaciji z upo"stevanjem dinami"cne ekscentri"cnosti lahko zapi"semo kot (\ref{equ:rotacija_hall_simplify}) z dodatkom enosmerne komponente dinami"cne ekscentri"cnosti.
+Potek Hall-ove sonde ob rotaciji z upo"stevanjem dinami"cne ekscentri"cnosti lahko zapi"semo kot rotacijo z dodatno enosmerno komponento(\ref{equ:rotacija_hall_simplify}).
 
 \begin{equation}
 \label{equ:rotacija_hall_din}
@@ -187,6 +187,7 @@ Postavimo sistem nazaj v izhodi"scno lego, brez ekscentri"cnosti. Tako sredščc
 
 Po enakem razmi"sljanju kot v zgornjih poglavjih, sedaj zarotirajmo Hall-ovo sondo za kot \kol{-\theta} okoli izhodi"s"ca. Hall-ova sonda se giblje po kro"znici z radijem $\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$.
 
+Statična ekscentričnost tako vpliva le na spremembo radija krožnice, ki jo opiše Hall-ova sonda ob rotaciji nad magnetom.
 
 \begin{figure}[h!]
 	\centering
@@ -253,7 +254,9 @@ V tem poglavju si bomo ogledali kak"sno magnetno polje  pomeri Hall-ova sonda. O
 \section{Definicija  gostote magnetnega polja $B_z$}
 
 Predlagan magnet s strani proizvajalca senzorja je radialno magnetiziran s premerom 4 mm.
-Dajalnik pozicije RM44 meri Z-komponento gostote magnetnega polja, zato se lahko osredoto"cimo le nanjo citeAM8192. Potek komponente $B_z$ nad cilindri"cnim magnetom je prikazan na sliki \ref{fig:magnetno_polje}.
+\bitnaslika{Primer magneta predlagan s strani proizvajalca}{magnet4mm}
+
+Dajalnik pozicije RM44 meri z-komponento gostote magnetnega polja, zato se lahko osredoto"cimo le nanjo \cite{AM8192}. Potek komponente $B_z$ nad cilindri"cnim magnetom je prikazan na sliki \ref{fig:magnetno_polje}.
 
 %Magsnetno polje  v prostoru lahko izra"cunamo z Biot-Savartovim zakonom. Poznati moramo specifikacije trajnega magneta in izra"cunati integral po prostoru. Tako dobimo v poljubni to"cki v prostoru vrednost B.  Hall-ove sonde v senzorju RM44 merijo le z-komponento magnetnega polja, zato se lahko osredoto"cimo le nanjo. Odvistnost z-komponente vektorja B na konstantni vi"sini od magneta je vidno na sliki \ref{fig:magnetno_polje}.
 
@@ -350,7 +353,7 @@ cos=B_{H_1}(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta +\Del
 sin=B_{H_2}(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d
 \end{equation}
 
-Zajeta signala bom od tu naprej imenoval sinus ($sin$) in cosinu ($cos$), ker to je njuna osnovna oblika.
+Zajeta signala bom od tu naprej imenoval sinus ($sin$) in cosinu ($cos$), ker je to njuna osnovna oblika.
 
 
 
@@ -393,7 +396,7 @@ Polji obdr"zita enako amplitudo ter fazo, vendar dobita enosmerno komponento (Sl
 
 \section{Premik senzorja po  v z smeri}
 
-Oglejmo si "se kako vpliva sprememba premikanja senzorja v z smeri.
+Poglejmo si "se kako vpliva sprememba premikanja senzorja v z smeri.
 Pri magnetnem polju aprokismiranem z ravnino (\ref{equ:lin_polje}), se gostota magnetnega polja pri obeh sondah spreminja enako. To se v ena"cbah odra"za le kot dodaten faktor. Upo"stevajmo spremembo polja zaradi premika senzorja po z osi. Zajeti polji imata naslednji potek:
 
 
@@ -405,6 +408,54 @@ sin=k_z( r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d
 \end{equation}
 
 Z vstavitvijo formul v $\arctan$ se faktor $k_z$ nahaj tako v "stevcu kot imenovalcu ter se lahko okraj"sa. Naj "se  enkrat poudarim, da to velja le za polje aproksimirano z ravnino.
+
+
+
+\chapter{Vpliv deformacije signala sinus in cosinus na izhodno napako}
+
+Da si lažje predstavljamo, kako se bo napaka odražala v obliki digitalnega izhoda, si oglejmo posamezno deformacijo signalov sinus in cosinus. Deformacija sinusa in cosinusa zaradi nepravilne montaže, vpliva le na enosmerno komponento, amplitudo in fazni kot med signaloma.
+
+Ogledali si bomo kako vplivajo na izraćunan kot, različne amplitude signalov sinus in cosinus, neortogonalost oz. fazni zamik sinusa in kosinusa različen od $90^\circ$. Ogledali si bomo tudi pojav enosmernih komponenet v sinusu in cosinusu, iin za konec še vpliv višjih harmonikov, ki niso posledica nepravilne montaže, vendar je prav da jih omenim.
+
+Za izračun kota se uporablja funkcijo atan2(); za izhodno vrednost kota v radianih oz. atan2d(); za vrednost v stopinjah \cite{atan2Matlab}\cite{atan2dMatlab}. 
+
+\section{Različne amplitude}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -16,25 +16,50 @@ Kot vsak merilni element ima tudi magnetni enkoder napako. Napaka se lahko pojav
 
 \chapter{Senzor RM44}
 
-Z merjenjem zasuka se ukvarjajo povsod po svetu. Eno od podjetij za izdelavo senzorjev se nahaja tudi v Sloveniji. Podjetje RLS merilna tehnika d.o.o. ustanovljeno leta 1989 v Ljubljani. Ukvarjajo se z razvojem in proizvodnjo merilne tehnike, potrebne za nadzor pomika in zasuka.
+Z merjenjem zasuka se ukvarjajo povsod po svetu. Eno od podjetij za izdelavo senzorjev se nahaja tudi v Sloveniji. Podjetje RLS merilna tehnika d.o.o. ustanovljeno leta 1989 v Ljubljani. Ukvarjajo se z razvojem in proizvodnjo merilne tehnike, potrebne za nadzor pomika in zasuka. Eden od izdelkov je tudi senzor RM44. Spada v družino "On-axis" senzorjev.
 
-Senzor RM44 meri magnetno polje radialno polariziranega magneta, pritrjenega na konec rotirajoče osi pogonskega sklopa. Ključni element senzorja je čip AM8192B, razvit znotraj podjetja RLS. V čipu so Hallovi senzorji za meritev z-komponente magnetnega pretoka. 
+Senzor RM44 meri magnetno polje radialno polariziranega magneta, pritrjenega na konec rotirajoče osi pogonskega sklopa. Ključni element senzorja je čip AM8192B, razvit znotraj podjetja RLS. V čipu so Hallovi senzorji za meritev z-komponente gostote magnetnega pretoka. Senzor preko zaznave gostote magnetnnega pretoka, izračuna kot. Obliko izhodnega podatka o zasuku, je prilagodljiva na sistem aplikacije v kateri bo uporabbljen. Senzor lahko izhodni podatek posreduje na več načinov. Izhod je lahko analogni, v obliki sinusa in cosinusa, inkrementalni s signaloma A in B s katerih lahko izračunamo smer vrtenja ter signal Ri kateri določa referenčno točko. Izhod je lahko tudi digitalen preko komunikacijo SSI ali analogna napetost, ki se linearno spreminja med potencialom GND in Vdd v odvistnosti od kota zasuka.
 
-
-
-
+\bitnaslika{Senzor RM44}{senzorRM44}
 
 
 
+\chapter{Zastavljena naloga}
+
+Senzor RM44 mora biti za pravilno delovnanje in točnost izhodnega podatka pravilno montiran. V podatkovnih listih je podana toleranca 100$\mathrm{\mu m}$. 
+
+V nalogi sem si zastavil kako vpliva nepravilno montiran senzor ali magnet na napako senzorja. V tem delu bom predstavil, kako nepravilna montaža vpliva na analogna signala sinus in cosinus. Ker je izhodni podatek senzorja lahko tudi digitalen, bom predstavil tudi kako deformacije analognih signalov sinus in cosinus  vplivajo na napako v digitalnem izhodu.
+
+Notranjost senzorja RM44 je poslovna skrivnost, zato bom postavil lasten model senzorja, s pričakovanji da bo rezultat nekoliko slabši od končnih meritev.
+
+V začetku bom izpeljal kako se giblje magnet ali senzor v sistemu z nepravilno montažo enega ali drugega. Opravil bom simulacije na linearno aproksimiranem magnetnem polju, ter na numerično izračunanem polju simuliranega realnega magneta. Opravil bom tudi meritve na in rezultate primerjal.
+
+
+Na tej točki bi bilo primerno definirati še pojme kateri se bodo uporabljali tekom izdelave dela.
+
+Izmik senzorja bo med spreminjanja kota zasuka postavljen fiksno in se njegova lokacija nebo spreminjala na os vrtenja. Ta izmik bom poimenoval statična ekscentričnost.
+
+V nalogi bom tudi preveril kako vpliva izmik magneta na točnost izhodnega podatka. Ob izmiku magneta iz osi vrtenja se bo pojavilo opletanje magneta. Lokacija središča magneta se bo spreminjala glede na določen zasuk magneta. Opletanje magneta bom v delu poimenoval kot dinamična ekscentričnost.
 
 
 
 
-Senzorji se delijo resolverje in enkoderje. Resolver ima unikatno oblikovan rotorski aktuator, kjer se med vretenjem zaradi posebne oblike, zračna reža spreminja sinusno. To ima za posledico istovrstno spreminjanje upornosti magnetnih poti fluksa med primarnimi in sekundarnimi glavami navitij ter nato induciranih napetosti \cite{Ursic}.
 
 
-delijo na absolutne ali inkrementalne merilnike. Inkrementalni nam sporočijo relativo spremembo zasuka, ob prehodu referenčne točke se lahko senzor šele inicializira in od takrat dalje je možen izračun dejsanskega zasuka. Primer takega senzorja je optični senzor zasuka.
 
-Absolutni dajalniki zasuka lahko neglede na dan zasuk razbere dejansko vrednost zasuka rotorja. Primera sta 
 
-Enkoder oz. rotacijski enkoder je naprava 
+
+
+
+
+
+
+%
+%Senzorji se delijo resolverje in enkoderje. Resolver ima unikatno oblikovan rotorski aktuator, kjer se med vretenjem zaradi posebne oblike, zračna reža spreminja sinusno. To ima za posledico istovrstno spreminjanje upornosti magnetnih poti fluksa med primarnimi in sekundarnimi glavami navitij ter nato induciranih napetosti \cite{Ursic}.
+%
+%
+%delijo na absolutne ali inkrementalne merilnike. Inkrementalni nam sporočijo relativo spremembo zasuka, ob prehodu referenčne točke se lahko senzor šele inicializira in od takrat dalje je možen izračun dejsanskega zasuka. Primer takega senzorja je optični senzor zasuka.
+%
+%Absolutni dajalniki zasuka lahko neglede na dan zasuk razbere dejansko vrednost zasuka rotorja. Primera sta 
+%
+%Enkoder oz. rotacijski enkoder je naprava 
