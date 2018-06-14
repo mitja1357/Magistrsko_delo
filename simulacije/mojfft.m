@@ -1,4 +1,7 @@
     function out=mojfft(Lincos)
+    % naredi ti clene cn in fn pri cemer velja cn*cosd(theta+fn)
+    % ce zelis dobit an= cn*sind(fn) in bn = cn*cosd(fn)
+    
       
             L=length(Lincos);
             T=1/L;      %imam eno periodo
