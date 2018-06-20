@@ -1,6 +1,6 @@
     function out=mojfft(Lincos)
     % naredi ti clene cn in fn pri cemer velja cn*cosd(theta+fn)
-    % ce zelis dobit an= cn*sind(fn) in bn = cn*cosd(fn)
+    % ce zelis dobit an= cn*cosd(fn) in bn = cn*sind(fn)
     
       
             L=length(Lincos);
