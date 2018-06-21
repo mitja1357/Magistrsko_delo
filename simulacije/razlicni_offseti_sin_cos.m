@@ -3,9 +3,9 @@ theta = linspace(0,2*pi,8192);
 
 
 
-% x = linspace(-2,2);
-x = [-3:0.1:-1.5,1.5:0.1:3];
-primer = 1;
+% x = sqrt(2)/2;
+x = linspace(-10,0,10);
+primer = 2;
 
 
 Sin = zeros(length(x),length(theta));
@@ -25,16 +25,22 @@ if primer == 1
     Sin = sin(theta1)+dodaj;
     Cos = cos(theta1);
     for i = 1:length(x)
-        if abs(x(i))<1
+        if abs(x(i)) <= 1
                     
             for n =1:60
                 predviden_err(i,:) = predviden_err(i,:) +...
                     x(i).^n./n.*sin(n.*theta+n.*pi/2);
             end
-        else
+        elseif x(i) <= -1
+            for n =1:60
+                predviden_err(i,:) = predviden_err(i,:) +...
+                    (2-abs(x(i)).^-n)./n.*sin(n.*theta-n.*pi/2);
+            end
+            
+        elseif x(i) > 1
             for n =1:150
                 predviden_err(i,:) = predviden_err(i,:) +...
-                    (2-abs(x(i)).^-n)./n.*sin(n.*theta+sign(x(i))*n.*pi/2);
+                    (2-x(i).^-n)./n.*sin(n.*theta+n.*pi/2);
             end
         end
     end
@@ -43,13 +49,19 @@ elseif primer == 2
     Sin = sin(theta1);
     Cos = cos(theta1)+dodaj;
     for i = 1:length(x)
-        if abs(x(i))<1
+        if abs(x(i)) <= 1
                     
-            for n =1:15
+            for n =1:60
                 predviden_err(i,:) = predviden_err(i,:) +...
                     x(i).^n./n.*sin(n.*theta+n.*pi);
             end
-        else
+        elseif x(i) < -1
+            for n =1:150
+                predviden_err(i,:) = predviden_err(i,:) +...
+                    (2-abs(x(i)).^-n)./n.*sin(n.*theta);
+            end
+            
+        elseif x(i) > 1
             for n =1:150
                 predviden_err(i,:) = predviden_err(i,:) +...
                     (2-x(i).^-n)./n.*sin(n.*theta+n.*pi);
@@ -61,14 +73,20 @@ elseif primer == 3
     Sin = sin(theta1)+dodaj;
     Cos = cos(theta1)+dodaj;
     for i = 1:length(x)
-        if abs(x(i))<1/sqrt(2)
+        if abs(x(i)) < sqrt(2)/2
                     
-            for n =1:15
+            for n =1:150
                 predviden_err(i,:) = predviden_err(i,:) +...
                     (sqrt(2)*x(i)).^n./n.*sin(n.*theta+n.*3*pi/4);
             end
-        else
+        elseif x(i) < -sqrt(2)/2
             for n =1:150
+                predviden_err(i,:) = predviden_err(i,:) +...
+                    (2-abs(sqrt(2)*x(i)).^-n)./n.*sin(n.*theta-n.*pi/4);
+            end
+            
+        elseif x(i) >= sqrt(2)/2
+            for n =1:120
                 predviden_err(i,:) = predviden_err(i,:) +...
                     (2-(sqrt(2)*x(i)).^-n)./n.*sin(n.*theta+n.*3*pi/4);
             end
@@ -86,7 +104,7 @@ err(err<-pi) = err(err<-pi)+2*pi;
 err(err> pi) = err(err> pi)-2*pi;
 
 
-figure(1)
+figure(2)
 subplot(3,1,1)
 plot(theta1'*180/pi,err'*180/pi)
 grid on

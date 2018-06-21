@@ -29,9 +29,9 @@ elseif(primer == 1)
     
     k = amp_sin/amp_cos;
     
-    k1 = (1-k)/(1+k);
+    k1 = (k-1)/(1+k);
     for i=1:15
-        faktor = 180/pi/i*k1^i*(-1)^i;
+        faktor = 180/pi/i*k1^i;
         predviden_error = predviden_error+faktor* sind(2*i*theta);
     end
     
