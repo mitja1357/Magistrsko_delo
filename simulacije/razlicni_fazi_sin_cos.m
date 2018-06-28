@@ -4,17 +4,22 @@ theta = linspace(0,2*pi,8192);
 primer = 2;
 
 
-x = linspace(-pi/2,pi/2,500);
+x = linspace(0,-45,46)*pi/180;
 
 
 
 Sin = zeros(length(x),length(theta));
 Cos = Sin;
 theta1 = Sin;
-predviden_err = Sin;
 dodajSin = Sin;
 dodajCos = Sin;
 tempSin = ones(1,length(theta));
+
+i1 = 1:length(x);
+harmoniki = 1: 100;
+PredErr = x'/2*ones(size(theta));
+
+
 
 
 for i = 1: length(x)
@@ -25,9 +30,22 @@ end
 if primer == 1
     Sin = dodajCos.*sin(theta1)+dodajSin.*cos(theta1);
     Cos = cos(theta1);
+    for i = i1
+        for n = harmoniki
+            PredErr(i,:) = PredErr(i,:)+ ...
+                (tan(x(i)/2)).^n/n.*sin(2*n*theta+(n)*pi/2+n*x(i));
+        end
+    end
 elseif primer == 2
     Sin = sin(theta1);
     Cos = dodajCos.*cos(theta1)-dodajSin.*sin(theta1);
+
+    for i = i1
+        for n = harmoniki
+            PredErr(i,:) = PredErr(i,:)+ ...
+                (tan(x(i)/2)).^n/n.*sin(2*n*theta-(n)*pi/2+n*x(i));
+        end
+    end
 end
 
 
@@ -37,32 +55,27 @@ err = kot -theta1;
 err(err<-pi) = err(err<-pi)+2*pi;
 err(err> pi) = err(err> pi)-2*pi;
 
-PredErr = pi/4.*ones(size(theta1));
-% for n = 1: 100
-% %     k(n) =  (2*(cos(n*pi/4))^2+3*cos(n*pi/2)+4*cos(3*n*pi/2)-1)./(4*n);
-%     PredErr = PredErr+1/n.*sin(2*n*theta+n*pi);
-% end
+
 
 figure(1)
-subplot(2,1,1)
+subplot(3,1,1)
 plot(theta1'.*180/pi,err'.*180/pi)
 grid on
 
-subplot(2,1,2)
+subplot(3,1,2)
 plot(theta1'.*180/pi,PredErr'.*180/pi)
 grid on
 
+subplot(3,1,3)
+plot(theta1'.*180/pi,(PredErr'-err').*180/pi)
+grid on
 fftErr = mojfft(err);
 fftPred = mojfft(PredErr);
-h = fftErr{1, 1}(3:2:30,:);
-xh = 2*(1:length(h))';
-x = x*180/pi;
+
 %%
-h0 = fftErr{1, 1}(:,1).*cosd(fftErr{2}(:,1));
-h2 = fftErr{1, 1}(:,3)*180/pi;
+h2 = fftErr{1, 1}(i1,3);
 h2(x<0) = -h2(x<0);
-h4 = fftErr{1, 1}(:,5);
-h6 = fftErr{1, 1}(:,7);
-h8 = fftErr{1, 1}(:,9);
-h10 = fftErr{1, 1}(:,11);
-h12 = fftErr{1, 1}(:,13);
+h4 = fftErr{1, 1}(i1,5);
+h6 = fftErr{1, 1}(i1,7);
+harmoniki1 = 2*harmoniki+1;
+najvecjiErr = fftErr{1, 1}(end,harmoniki1);

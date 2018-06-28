@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.19)  12 JUN 2018 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.19)  26 JUN 2018 14:01
 entering extended mode
 **./Diploma_V2.tex
 (Diploma_V2.tex
@@ -27,8 +27,318 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\cp1250.def"
-File: cp1250.def 2015/03/17 v1.2c Input encoding file
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2017/05/19 3.10 The Babel package
@@ -55,12 +365,42 @@ Package babel Info: Making " an active character on input line 79.
 UNI-LJ-FE-Diploma stilska opcija V.1.0 junij 2013
 Stilska opcija za diplome na Fakulteti za elektrotehniko Univerze v Ljubljani
 Izvedena iz DOKT-STYLE OPTION V.1.01 9.1.1992
-Avtor: Sa\v d\.z\H {}o Toma\v d\.z\H {}i\v d\.z\H {}
+Avtor: Sa\GenericError {(inputenc)                }{Package inputenc Error: Uni
+code char � (U+FFFD)\MessageBreak not set up for use with LaTeX}{See the inpu
+tenc package documentation for explanation.}{Your command was ignored.\MessageB
+reak Type  I <command> <return>  to replace it with another command,\MessageBre
+ak or  <return>  to continue without it.}o Toma\GenericError {(inputenc)       
+         }{Package inputenc Error: Unicode char � (U+FFFD)\MessageBreak not s
+et up for use with LaTeX}{See the inputenc package documentation for explanatio
+n.}{Your command was ignored.\MessageBreak Type  I <command> <return>  to repla
+ce it with another command,\MessageBreak or  <return>  to continue without it.}
+i\GenericError {(inputenc)                }{Package inputenc Error: Unicode cha
+r � (U+FFFD)\MessageBreak not set up for use with LaTeX}{See the inputenc pac
+kage documentation for explanation.}{Your command was ignored.\MessageBreak Typ
+e  I <command> <return>  to replace it with another command,\MessageBreak or  <
+return>  to continue without it.}
 Dopolnil: Jus Kocijan 
 Dopolnil: Ales Hribar 2006
 Dopolnil: Sebastjan Slajpah, 2013
-Dopolnil in pre\v d\.z\H {}istil: Sa\v d\.z\H {}o Toma\v d\.z\H {}i\v d\.z\H {}
-, 2013
+Dopolnil in pre\GenericError {(inputenc)                }{Package inputenc Erro
+r: Unicode char � (U+FFFD)\MessageBreak not set up for use with LaTeX}{See th
+e inputenc package documentation for explanation.}{Your command was ignored.\Me
+ssageBreak Type  I <command> <return>  to replace it with another command,\Mess
+ageBreak or  <return>  to continue without it.}istil: Sa\GenericError {(inputen
+c)                }{Package inputenc Error: Unicode char � (U+FFFD)\MessageBr
+eak not set up for use with LaTeX}{See the inputenc package documentation for e
+xplanation.}{Your command was ignored.\MessageBreak Type  I <command> <return> 
+ to replace it with another command,\MessageBreak or  <return>  to continue wit
+hout it.}o Toma\GenericError {(inputenc)                }{Package inputenc Erro
+r: Unicode char � (U+FFFD)\MessageBreak not set up for use with LaTeX}{See th
+e inputenc package documentation for explanation.}{Your command was ignored.\Me
+ssageBreak Type  I <command> <return>  to replace it with another command,\Mess
+ageBreak or  <return>  to continue without it.}i\GenericError {(inputenc)      
+          }{Package inputenc Error: Unicode char � (U+FFFD)\MessageBreak not 
+set up for use with LaTeX}{See the inputenc package documentation for explanati
+on.}{Your command was ignored.\MessageBreak Type  I <command> <return>  to repl
+ace it with another command,\MessageBreak or  <return>  to continue without it.
+}, 2013
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2016/11/05 v2.16a AMS math features
@@ -581,6 +921,8 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count136
 
@@ -635,15 +977,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 33.
 
-(Diploma_V2.aux (tex/Uvod.aux) (tex/Analiticna_izpeljava.aux)
-(tex/Linearni_model.aux
+(Diploma_V2.aux (tex/Analiticna_izpeljava.aux
 
-LaTeX Warning: Label `./LIN/sim_lin_polje_xs_200u_BxBy' multiply defined.
+LaTeX Warning: Label `vrsta_faza_sin' multiply defined.
 
-
-LaTeX Warning: Label `./LIN/sim_lin_polje_xd_200u_BxBy' multiply defined.
-
-) (tex/Realni_model.aux) (tex/Meritve.aux))
+))
 \openout1 = `Diploma_V2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -660,8 +998,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
 LaTeX Font Info:    ... okay on input line 53.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
 LaTeX Font Info:    ... okay on input line 53.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count144
 \scratchdimen=\dimen178
@@ -697,82 +1034,10 @@ LaTeX Info: Redefining \nameref on input line 53.
 \@outlinefile=\write4
 \openout4 = `Diploma_V2.out'.
 
-\openout2 = `./tex/Uvod.aux'.
-
- (tex/Uvod.tex
-  1.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1.
-
-LaTeX Warning: Citation `killer' on page 1 undefined on input line 11.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 16.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 16.
- [1
-
-
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 17.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 17.
-[2]
-  2.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 17.
-./Slike/senzorRM44 ne obstaja!
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
-[3
-
-]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
-[4]
-  3.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 43.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 43.
- [5
-
-])
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 158.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 158.
-[6]
 \openout2 = `./tex/Analiticna_izpeljava.aux'.
 
  (tex/Analiticna_izpeljava.tex
-  4.
+  1.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 1.
 
@@ -809,13 +1074,13 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 27.
- [7
+ [1
 
 
 
-]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
-LaTeX Warning: Citation `Matematika1' on page 8 undefined on input line 29.
+LaTeX Warning: Citation `Matematika1' on page 2 undefined on input line 29.
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -848,7 +1113,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 88.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 88.
-[8]
+[2]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -864,8 +1129,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Overfull \hbox (15.84032pt too wide) has occurred while \output is active
-[]\OT1/cmr/m/sl/12 4.2 Izpeljava gibanja lokacije Hall-ove sonde na magnet pri 
-dinamicni ekscentricnosti \OT1/cmr/m/n/12 9
+[]\OT1/cmr/m/sl/12 1.2 Izpeljava gibanja lokacije Hall-ove sonde na magnet pri 
+dinamicni ekscentricnosti \OT1/cmr/m/n/12 3
  []
 
 
@@ -877,7 +1142,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 148.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 148.
-[9]
+[3]
 Underfull \vbox (badness 3088) has occurred while \output is active []
 
 
@@ -889,7 +1154,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 167.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 167.
-[10]
+[4]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 169.
 
@@ -928,9 +1193,9 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                removing `\textasciicaron' on input line 227.
 
 
-Overfull \hbox (9.37788pt too wide) has occurred while \output is active
-[]\OT1/cmr/m/sl/12 4.3 Izpeljava gibanja lokacije Hall-ove sonde na magnet pri 
-staticni ekscentricnosti \OT1/cmr/m/n/12 11
+Overfull \hbox (3.50294pt too wide) has occurred while \output is active
+[]\OT1/cmr/m/sl/12 1.3 Izpeljava gibanja lokacije Hall-ove sonde na magnet pri 
+staticni ekscentricnosti \OT1/cmr/m/n/12 5
  []
 
 
@@ -942,7 +1207,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 231.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 231.
-[11]
+[5]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 231.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -959,7 +1224,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 248.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 248.
-[12]
+[6]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -968,7 +1233,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 250.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 250.
-[13]
+[7]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -977,10 +1242,10 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 250.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 250.
-[14
+[8
 
 ]
-  5.
+  2.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 250.
 
@@ -1020,9 +1285,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ./Slike/magnet4mm ne obstaja!
 
-LaTeX Warning: Citation `AM8192' on page 15 undefined on input line 259.
+LaTeX Warning: Citation `AM8192' on page 9 undefined on input line 259.
 
-<./Slike/magnetno_polje.jpg, id=220, 1102.87032pt x 621.07031pt>
+<./Slike/magnetno_polje.jpg, id=166, 1102.87032pt x 621.07031pt>
 File: ./Slike/magnetno_polje.jpg Graphic file (type jpg)
 
 <use ./Slike/magnetno_polje.jpg>
@@ -1036,7 +1301,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 274.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 274.
-[15]
+[9]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 282.
 
@@ -1057,7 +1322,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 348.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 348.
-[16 <./Slike/magnetno_polje.jpg>]
+[10 <./Slike/magnetno_polje.jpg>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 360.
 
@@ -1080,7 +1345,7 @@ _xd_000u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_000u_BxBy.eps
 (epstopdf)             \includegraphics on input line 364.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf, id=236, 367.372
+<./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf, id=182, 367.372
 5pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1095,8 +1360,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Overfull \hbox (77.5619pt too wide) has occurred while \output is active
-[]\OT1/cmr/m/sl/12 5.2 Postavitev Hall-ovih sond za zajem polja in pomerjeno po
-lje v odvistnosti od ekscentricnosti \OT1/cmr/m/n/12 17
+[]\OT1/cmr/m/sl/12 2.2 Postavitev Hall-ovih sond za zajem polja in pomerjeno po
+lje v odvistnosti od ekscentricnosti \OT1/cmr/m/n/12 11
  []
 
 
@@ -1108,7 +1373,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 375.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 375.
-[17]
+[11]
 Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.e
 ps>
 (epstopdf)                    date: 2018-03-24 09:59:25
@@ -1123,7 +1388,7 @@ _xs_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.eps
 (epstopdf)             \includegraphics on input line 379.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf, id=250, 359.342
+<./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf, id=196, 359.342
 5pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1150,7 +1415,7 @@ _xd_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.eps
 (epstopdf)             \includegraphics on input line 391.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf, id=252, 359.342
+<./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf, id=198, 359.342
 5pt x 293.095pt>
 File: ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf Graphic fil
 e (type pdf)
@@ -1166,6 +1431,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 397.
 
+LaTeX Warning: Reference `equ:lin_polje' on page 12 undefined on input line 400
+.
+
+
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -1174,7 +1443,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 403.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 403.
-[18 <./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf>]
+[12 <./Slike/./LIN/sim_lin_polje_xd_000u_BxBy-eps-converted-to.pdf>]
 Underfull \vbox (badness 6893) has occurred while \output is active []
 
 
@@ -1186,7 +1455,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 405.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 405.
-[19 <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf> <./Slike/./
+[13 <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf> <./Slike/./
 LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
@@ -1196,42 +1465,320 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 414.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 414.
-[20]
-  6.
+[14]
+  3.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 414.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 425.
 
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 425.
+LaTeX Warning: Citation `atan2Matlab' on page 15 undefined on input line 420.
 
 
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 425.
+LaTeX Warning: Citation `atan2dMatlab' on page 15 undefined on input line 420.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 446.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 446.
-[21
+(babel)             in language  on input line 426.
+ [15
 
 ]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 430.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 454.
+(hyperref)                removing `\textasciicaron' on input line 430.
+
+Package epstopdf Info: Source file: <./Slike/./Napake/k_lim.eps>
+(epstopdf)                    date: 2018-06-26 09:31:34
+(epstopdf)                    size: 28668 bytes
+(epstopdf)             Output file: <./Slike/./Napake/k_lim-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2018-06-26 11:44:17
+(epstopdf)                    size: 25135 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/k_lim-eps-
+converted-to.pdf ./Slike/./Napake/k_lim.eps>
+(epstopdf)             \includegraphics on input line 444.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/k_lim-eps-converted-to.pdf, id=248, 601.24625pt x 451.6875pt>
+File: ./Slike/./Napake/k_lim-eps-converted-to.pdf Graphic file (type pdf)
+<use ./Slike/./Napake/k_lim-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/k_lim-eps-converted-to.pdf used on in
+put line 444.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: Citation `fourierova_vrsta' on page 16 undefined on input line 4
+46.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 450.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 450.
+[16 <./Slike/./Napake/k_lim-eps-converted-to.pdf>]
+
+LaTeX Warning: Citation `matlab_fft' on page 17 undefined on input line 452.
+
+Package epstopdf Info: Source file: <./Slike/./Napake/napaka_amp11.eps>
+(epstopdf)                    date: 2018-06-26 09:58:56
+(epstopdf)                    size: 30545 bytes
+(epstopdf)             Output file: <./Slike/./Napake/napaka_amp11-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2018-06-26 11:44:17
+(epstopdf)                    size: 24466 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/napaka_amp
+11-eps-converted-to.pdf ./Slike/./Napake/napaka_amp11.eps>
+(epstopdf)             \includegraphics on input line 461.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/napaka_amp11-eps-converted-to.pdf, id=263, 601.24625pt x 451.
+6875pt>
+File: ./Slike/./Napake/napaka_amp11-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use ./Slike/./Napake/napaka_amp11-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/napaka_amp11-eps-converted-to.pdf use
+d on input line 461.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+Package epstopdf Info: Source file: <./Slike/./Napake/razlika_amp11.eps>
+(epstopdf)                    date: 2018-06-26 09:59:16
+(epstopdf)                    size: 38293 bytes
+(epstopdf)             Output file: <./Slike/./Napake/razlika_amp11-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2018-06-26 11:44:49
+(epstopdf)                    size: 21955 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/razlika_am
+p11-eps-converted-to.pdf ./Slike/./Napake/razlika_amp11.eps>
+(epstopdf)             \includegraphics on input line 462.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/razlika_amp11-eps-converted-to.pdf, id=264, 601.24625pt x 451
+.6875pt>
+File: ./Slike/./Napake/razlika_amp11-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use ./Slike/./Napake/razlika_amp11-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/razlika_amp11-eps-converted-to.pdf us
+ed on input line 462.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 463.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 463.
+[17 <./Slike/./Napake/napaka_amp11-eps-converted-to.pdf>]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 464.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 454.
+(hyperref)                removing `\textasciicaron' on input line 464.
 
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 468.
+Package epstopdf Info: Source file: <./Slike/./Napake/lim_sin.eps>
+(epstopdf)                    date: 2018-06-26 10:20:04
+(epstopdf)                    size: 28148 bytes
+(epstopdf)             Output file: <./Slike/./Napake/lim_sin-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2018-06-26 11:40:12
+(epstopdf)                    size: 25447 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/lim_sin-ep
+s-converted-to.pdf ./Slike/./Napake/lim_sin.eps>
+(epstopdf)             \includegraphics on input line 481.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/lim_sin-eps-converted-to.pdf, id=280, 601.24625pt x 451.6875p
+t>
+File: ./Slike/./Napake/lim_sin-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./Slike/./Napake/lim_sin-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/lim_sin-eps-converted-to.pdf used on 
+input line 481.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 487.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 487.
+[18 <./Slike/./Napake/razlika_amp11-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Slike/./Napake/napaka_sin01.eps>
+(epstopdf)                    date: 2018-06-26 11:20:48
+(epstopdf)                    size: 30373 bytes
+(epstopdf)             Output file: <./Slike/./Napake/napaka_sin01-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2018-06-26 11:58:23
+(epstopdf)                    size: 23912 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/napaka_sin
+01-eps-converted-to.pdf ./Slike/./Napake/napaka_sin01.eps>
+(epstopdf)             \includegraphics on input line 502.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/napaka_sin01-eps-converted-to.pdf, id=294, 601.24625pt x 451.
+6875pt>
+File: ./Slike/./Napake/napaka_sin01-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use ./Slike/./Napake/napaka_sin01-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/napaka_sin01-eps-converted-to.pdf use
+d on input line 502.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/./Napake/razlika_sin01.eps>
+(epstopdf)                    date: 2018-06-26 11:21:07
+(epstopdf)                    size: 38167 bytes
+(epstopdf)             Output file: <./Slike/./Napake/razlika_sin01-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2018-06-26 11:58:24
+(epstopdf)                    size: 21030 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/razlika_si
+n01-eps-converted-to.pdf ./Slike/./Napake/razlika_sin01.eps>
+(epstopdf)             \includegraphics on input line 503.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/razlika_sin01-eps-converted-to.pdf, id=295, 601.24625pt x 451
+.6875pt>
+File: ./Slike/./Napake/razlika_sin01-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use ./Slike/./Napake/razlika_sin01-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/razlika_sin01-eps-converted-to.pdf us
+ed on input line 503.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 508.
+Package epstopdf Info: Source file: <./Slike/./Napake/lim_cos.eps>
+(epstopdf)                    date: 2018-06-26 11:32:25
+(epstopdf)                    size: 28148 bytes
+(epstopdf)             Output file: <./Slike/./Napake/lim_cos-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2018-06-26 11:58:25
+(epstopdf)                    size: 25434 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/lim_cos-ep
+s-converted-to.pdf ./Slike/./Napake/lim_cos.eps>
+(epstopdf)             \includegraphics on input line 520.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/lim_cos-eps-converted-to.pdf, id=298, 601.24625pt x 451.6875p
+t>
+File: ./Slike/./Napake/lim_cos-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./Slike/./Napake/lim_cos-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/lim_cos-eps-converted-to.pdf used on 
+input line 520.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 521.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 521.
+[19 <./Slike/./Napake/lim_sin-eps-converted-to.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 530.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 530.
+[20 <./Slike/./Napake/napaka_sin01-eps-converted-to.pdf> <./Slike/./Napake/razl
+ika_sin01-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Slike/./Napake/napaka_cos01.eps>
+(epstopdf)                    date: 2018-06-26 11:21:43
+(epstopdf)                    size: 30371 bytes
+(epstopdf)             Output file: <./Slike/./Napake/napaka_cos01-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2018-06-26 11:58:25
+(epstopdf)                    size: 23653 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/napaka_cos
+01-eps-converted-to.pdf ./Slike/./Napake/napaka_cos01.eps>
+(epstopdf)             \includegraphics on input line 541.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/napaka_cos01-eps-converted-to.pdf, id=336, 601.24625pt x 451.
+6875pt>
+File: ./Slike/./Napake/napaka_cos01-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use ./Slike/./Napake/napaka_cos01-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/napaka_cos01-eps-converted-to.pdf use
+d on input line 541.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/./Napake/razlika_cos01.eps>
+(epstopdf)                    date: 2018-06-26 11:21:27
+(epstopdf)                    size: 38318 bytes
+(epstopdf)             Output file: <./Slike/./Napake/razlika_cos01-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2018-06-26 11:58:26
+(epstopdf)                    size: 21108 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/razlika_co
+s01-eps-converted-to.pdf ./Slike/./Napake/razlika_cos01.eps>
+(epstopdf)             \includegraphics on input line 542.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/razlika_cos01-eps-converted-to.pdf, id=337, 601.24625pt x 451
+.6875pt>
+File: ./Slike/./Napake/razlika_cos01-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use ./Slike/./Napake/razlika_cos01-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/razlika_cos01-eps-converted-to.pdf us
+ed on input line 542.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 544.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 544.
+[21 <./Slike/./Napake/lim_cos-eps-converted-to.pdf>]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 545.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1241,10 +1788,325 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 468.
+(babel)             in language  on input line 552.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 468.
-[22]
+(babel)             in language  on input line 552.
+[22 <./Slike/./Napake/napaka_cos01-eps-converted-to.pdf> <./Slike/./Napake/razl
+ika_cos01-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Slike/./Napake/lim_sincos.eps>
+(epstopdf)                    date: 2018-06-26 11:32:40
+(epstopdf)                    size: 28151 bytes
+(epstopdf)             Output file: <./Slike/./Napake/lim_sincos-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2018-06-26 11:58:27
+(epstopdf)                    size: 25291 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/lim_sincos
+-eps-converted-to.pdf ./Slike/./Napake/lim_sincos.eps>
+(epstopdf)             \includegraphics on input line 560.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/lim_sincos-eps-converted-to.pdf, id=370, 601.24625pt x 451.68
+75pt>
+File: ./Slike/./Napake/lim_sincos-eps-converted-to.pdf Graphic file (type pdf)
+ <use ./Slike/./Napake/lim_sincos-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/lim_sincos-eps-converted-to.pdf used 
+on input line 560.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+Package epstopdf Info: Source file: <./Slike/./Napake/napaka_sincos01.eps>
+(epstopdf)                    date: 2018-06-26 11:22:07
+(epstopdf)                    size: 30071 bytes
+(epstopdf)             Output file: <./Slike/./Napake/napaka_sincos01-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2018-06-26 11:58:27
+(epstopdf)                    size: 23647 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/napaka_sin
+cos01-eps-converted-to.pdf ./Slike/./Napake/napaka_sincos01.eps>
+(epstopdf)             \includegraphics on input line 582.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/napaka_sincos01-eps-converted-to.pdf, id=371, 601.24625pt x 4
+51.6875pt>
+File: ./Slike/./Napake/napaka_sincos01-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use ./Slike/./Napake/napaka_sincos01-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/napaka_sincos01-eps-converted-to.pdf 
+used on input line 582.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/./Napake/razlika_sincos01.eps>
+(epstopdf)                    date: 2018-06-26 11:23:45
+(epstopdf)                    size: 38175 bytes
+(epstopdf)             Output file: <./Slike/./Napake/razlika_sincos01-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2018-06-26 11:58:28
+(epstopdf)                    size: 20323 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/razlika_si
+ncos01-eps-converted-to.pdf ./Slike/./Napake/razlika_sincos01.eps>
+(epstopdf)             \includegraphics on input line 583.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/razlika_sincos01-eps-converted-to.pdf, id=372, 601.24625pt x 
+451.6875pt>
+File: ./Slike/./Napake/razlika_sincos01-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use ./Slike/./Napake/razlika_sincos01-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/razlika_sincos01-eps-converted-to.pdf
+ used on input line 583.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 588.
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 591.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 591.
+[23 <./Slike/./Napake/lim_sincos-eps-converted-to.pdf>]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 592.
+
+Underfull \vbox (badness 1028) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 598.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 598.
+[24 <./Slike/./Napake/napaka_sincos01-eps-converted-to.pdf> <./Slike/./Napake/r
+azlika_sincos01-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Slike/./Napake/lim_sinfaza.eps>
+(epstopdf)                    date: 2018-06-26 11:33:19
+(epstopdf)                    size: 28428 bytes
+(epstopdf)             Output file: <./Slike/./Napake/lim_sinfaza-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2018-06-26 13:45:58
+(epstopdf)                    size: 25402 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/lim_sinfaz
+a-eps-converted-to.pdf ./Slike/./Napake/lim_sinfaza.eps>
+(epstopdf)             \includegraphics on input line 603.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf, id=408, 601.24625pt x 451.6
+875pt>
+File: ./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf used
+ on input line 603.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+Package epstopdf Info: Source file: <./Slike/./Napake/napaka_fazasin1.eps>
+(epstopdf)                    date: 2018-06-26 11:34:57
+(epstopdf)                    size: 30598 bytes
+(epstopdf)             Output file: <./Slike/./Napake/napaka_fazasin1-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2018-06-26 14:01:29
+(epstopdf)                    size: 24417 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/napaka_faz
+asin1-eps-converted-to.pdf ./Slike/./Napake/napaka_fazasin1.eps>
+(epstopdf)             \includegraphics on input line 621.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/napaka_fazasin1-eps-converted-to.pdf, id=409, 601.24625pt x 4
+51.6875pt>
+File: ./Slike/./Napake/napaka_fazasin1-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use ./Slike/./Napake/napaka_fazasin1-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/napaka_fazasin1-eps-converted-to.pdf 
+used on input line 621.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/./Napake/razlika_fazasin1.eps>
+(epstopdf)                    date: 2018-06-26 11:34:44
+(epstopdf)                    size: 38080 bytes
+(epstopdf)             Output file: <./Slike/./Napake/razlika_fazasin1-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2018-06-26 14:01:29
+(epstopdf)                    size: 22722 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/razlika_fa
+zasin1-eps-converted-to.pdf ./Slike/./Napake/razlika_fazasin1.eps>
+(epstopdf)             \includegraphics on input line 622.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/razlika_fazasin1-eps-converted-to.pdf, id=410, 601.24625pt x 
+451.6875pt>
+File: ./Slike/./Napake/razlika_fazasin1-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use ./Slike/./Napake/razlika_fazasin1-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/razlika_fazasin1-eps-converted-to.pdf
+ used on input line 622.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 625.
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 631.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 631.
+[25 <./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 633.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 633.
+[26 <./Slike/./Napake/napaka_fazasin1-eps-converted-to.pdf> <./Slike/./Napake/r
+azlika_fazasin1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Slike/./Napake/lim_cosfaza.eps>
+(epstopdf)                    date: 2018-06-26 11:33:40
+(epstopdf)                    size: 28410 bytes
+(epstopdf)             Output file: <./Slike/./Napake/lim_cosfaza-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2018-06-26 14:01:30
+(epstopdf)                    size: 25204 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/lim_cosfaz
+a-eps-converted-to.pdf ./Slike/./Napake/lim_cosfaza.eps>
+(epstopdf)             \includegraphics on input line 636.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/lim_cosfaza-eps-converted-to.pdf, id=446, 601.24625pt x 451.6
+875pt>
+File: ./Slike/./Napake/lim_cosfaza-eps-converted-to.pdf Graphic file (type pdf)
+
+ <use ./Slike/./Napake/lim_cosfaza-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/lim_cosfaza-eps-converted-to.pdf used
+ on input line 636.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+Package epstopdf Info: Source file: <./Slike/./Napake/napaka_fazacos1.eps>
+(epstopdf)                    date: 2018-06-26 11:35:45
+(epstopdf)                    size: 30598 bytes
+(epstopdf)             Output file: <./Slike/./Napake/napaka_fazacos1-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2018-06-26 14:01:30
+(epstopdf)                    size: 24354 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/napaka_faz
+acos1-eps-converted-to.pdf ./Slike/./Napake/napaka_fazacos1.eps>
+(epstopdf)             \includegraphics on input line 654.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/napaka_fazacos1-eps-converted-to.pdf, id=447, 601.24625pt x 4
+51.6875pt>
+File: ./Slike/./Napake/napaka_fazacos1-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use ./Slike/./Napake/napaka_fazacos1-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/napaka_fazacos1-eps-converted-to.pdf 
+used on input line 654.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package epstopdf Info: Source file: <./Slike/./Napake/razlika_fazacos1.eps>
+(epstopdf)                    date: 2018-06-26 11:35:27
+(epstopdf)                    size: 38305 bytes
+(epstopdf)             Output file: <./Slike/./Napake/razlika_fazacos1-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2018-06-26 14:01:31
+(epstopdf)                    size: 23214 bytes
+(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/razlika_fa
+zacos1-eps-converted-to.pdf ./Slike/./Napake/razlika_fazacos1.eps>
+(epstopdf)             \includegraphics on input line 655.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Slike/./Napake/razlika_fazacos1-eps-converted-to.pdf, id=448, 601.24625pt x 
+451.6875pt>
+File: ./Slike/./Napake/razlika_fazacos1-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use ./Slike/./Napake/razlika_fazacos1-eps-converted-to.pdf>
+Package pdftex.def Info: ./Slike/./Napake/razlika_fazacos1-eps-converted-to.pdf
+ used on input line 655.
+(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 670.
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 670.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 670.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 684.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 684.
+[27 <./Slike/./Napake/lim_cosfaza-eps-converted-to.pdf>]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 690.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 690.
+[28 <./Slike/./Napake/napaka_fazacos1-eps-converted-to.pdf> <./Slike/./Napake/r
+azlika_fazacos1-eps-converted-to.pdf>]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 699.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 699.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 699.
+
+
+Underfull \vbox (badness 3557) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 713.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 713.
+[29]
 Package epstopdf Info: Source file: <./Slike/potek_analitika_xs.eps>
 (epstopdf)                    date: 2018-02-22 19:15:28
 (epstopdf)                    size: 21793 bytes
@@ -1254,28 +2116,28 @@ o.pdf>
 (epstopdf)                    size: 7778 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/potek_analitika_xs-
 eps-converted-to.pdf ./Slike/potek_analitika_xs.eps>
-(epstopdf)             \includegraphics on input line 470.
+(epstopdf)             \includegraphics on input line 715.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_analitika_xs-eps-converted-to.pdf, id=321, 722.7pt x 542.025pt>
+<./Slike/potek_analitika_xs-eps-converted-to.pdf, id=496, 722.7pt x 542.025pt>
 File: ./Slike/potek_analitika_xs-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/potek_analitika_xs-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/potek_analitika_xs-eps-converted-to.pdf used o
-n input line 470.
+n input line 715.
 (pdftex.def)             Requested size: 247.54149pt x 185.65071pt.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 472.
+(babel)             in language  on input line 717.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 472.
+(hyperref)                removing `\textasciicaron' on input line 717.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 472.
+(hyperref)                removing `\textasciicaron' on input line 717.
 
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -1283,10 +2145,10 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 485.
+(babel)             in language  on input line 730.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 485.
-[23 <./Slike/potek_analitika_xs-eps-converted-to.pdf>]
+(babel)             in language  on input line 730.
+[30 <./Slike/potek_analitika_xs-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/potek_analitika_ys.eps>
 (epstopdf)                    date: 2018-02-22 19:15:28
 (epstopdf)                    size: 21794 bytes
@@ -1296,28 +2158,28 @@ o.pdf>
 (epstopdf)                    size: 7800 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/potek_analitika_ys-
 eps-converted-to.pdf ./Slike/potek_analitika_ys.eps>
-(epstopdf)             \includegraphics on input line 487.
+(epstopdf)             \includegraphics on input line 732.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_analitika_ys-eps-converted-to.pdf, id=340, 722.7pt x 542.025pt>
+<./Slike/potek_analitika_ys-eps-converted-to.pdf, id=514, 722.7pt x 542.025pt>
 File: ./Slike/potek_analitika_ys-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/potek_analitika_ys-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/potek_analitika_ys-eps-converted-to.pdf used o
-n input line 487.
+n input line 732.
 (pdftex.def)             Requested size: 247.54149pt x 185.65071pt.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 489.
+(babel)             in language  on input line 734.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 489.
+(hyperref)                removing `\textasciicaron' on input line 734.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 489.
+(hyperref)                removing `\textasciicaron' on input line 734.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1328,10 +2190,10 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 502.
+(babel)             in language  on input line 747.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 502.
-[24 <./Slike/potek_analitika_ys-eps-converted-to.pdf>]
+(babel)             in language  on input line 747.
+[31 <./Slike/potek_analitika_ys-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/potek_analitika_xd.eps>
 (epstopdf)                    date: 2018-02-22 19:15:28
 (epstopdf)                    size: 22223 bytes
@@ -1341,15 +2203,15 @@ o.pdf>
 (epstopdf)                    size: 8065 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/potek_analitika_xd-
 eps-converted-to.pdf ./Slike/potek_analitika_xd.eps>
-(epstopdf)             \includegraphics on input line 503.
+(epstopdf)             \includegraphics on input line 748.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/potek_analitika_xd-eps-converted-to.pdf, id=356, 722.7pt x 542.025pt>
+<./Slike/potek_analitika_xd-eps-converted-to.pdf, id=531, 722.7pt x 542.025pt>
 File: ./Slike/potek_analitika_xd-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/potek_analitika_xd-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/potek_analitika_xd-eps-converted-to.pdf used o
-n input line 503.
+n input line 748.
 (pdftex.def)             Requested size: 247.54149pt x 185.65071pt.
 )
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -1360,1327 +2222,15 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 167.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 167.
-[25 <./Slike/potek_analitika_xd-eps-converted-to.pdf>]
-\openout2 = `./tex/Linearni_model.aux'.
-
- (tex/Linearni_model.tex
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1.
-[26
-
-
-
-]
-  7.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 11.
-Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_000u_napaka
-.eps>
-(epstopdf)                    date: 2018-03-24 09:59:24
-(epstopdf)                    size: 39107 bytes
-(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_000u_napaka
--eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:24
-(epstopdf)                    size: 8553 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xd_000u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_000u_napaka
-.eps>
-(epstopdf)             \includegraphics on input line 14.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf, id=378, 368.3
-7625pt x 303.1325pt>
-File: ./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf Graphic f
-ile (type pdf)
-
-<use ./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-convert
-ed-to.pdf used on input line 14.
-(pdftex.def)             Requested size: 247.54149pt x 203.69902pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 20.
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 20.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 20.
-
-Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.e
-ps>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 55441 bytes
-(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 20481 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xs_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy.eps
->
-(epstopdf)             \includegraphics on input line 24.
-Package epstopdf Info: Output file is already uptodate.
-File: ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf Graphic fil
-e (type pdf)
-<use ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xs_200u_BxBy-eps-converted
--to.pdf used on input line 24.
-(pdftex.def)             Requested size: 247.54149pt x 201.90927pt.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 24.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 24.
- [27]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 25.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 25.
-[28 <./Slike/./LIN/sim_lin_polje_xd_000u_napaka-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_napaka
-.eps>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 36914 bytes
-(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xs_200u_napaka
--eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 14439 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xs_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_napaka
-.eps>
-(epstopdf)             \includegraphics on input line 28.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-converted-to.pdf, id=399, 363.3
-575pt x 293.095pt>
-File: ./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-converted-to.pdf Graphic f
-ile (type pdf)
-
-<use ./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-convert
-ed-to.pdf used on input line 28.
-(pdftex.def)             Requested size: 247.54149pt x 199.67761pt.
-Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xs_200u_fft.ep
-s>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 20900 bytes
-(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xs_200u_fft-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 7097 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xs_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xs_200u_fft.eps>
-(epstopdf)             \includegraphics on input line 31.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-to.pdf, id=401, 367.3725
-pt x 293.095pt>
-File: ./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use ./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-
-to.pdf used on input line 31.
-(pdftex.def)             Requested size: 247.54149pt x 197.49515pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/potek_sim_lin_polje_xs.eps>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 29761 bytes
-(epstopdf)             Output file: <./Slike/potek_sim_lin_polje_xs-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 12597 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_lin_polje
-_xs-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_xs.eps>
-(epstopdf)             \includegraphics on input line 35.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/potek_sim_lin_polje_xs-eps-converted-to.pdf, id=403, 600.2425pt x 480.
-79625pt>
-File: ./Slike/potek_sim_lin_polje_xs-eps-converted-to.pdf Graphic file (type pd
-f)
- <use ./Slike/potek_sim_lin_polje_xs-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/potek_sim_lin_polje_xs-eps-converted-to.pdf us
-ed on input line 35.
-(pdftex.def)             Requested size: 247.54149pt x 198.27954pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 67.
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 67.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 67.
-
-Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_ys_200u_BxBy.e
-ps>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 55487 bytes
-(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 21547 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_ys_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_BxBy.eps
->
-(epstopdf)             \includegraphics on input line 71.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf, id=405, 359.342
-5pt x 293.095pt>
-File: ./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use ./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted
--to.pdf used on input line 71.
-(pdftex.def)             Requested size: 247.54149pt x 201.90927pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 71.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 71.
-[29 <./Slike/./LIN/sim_lin_polje_xs_200u_napaka-eps-converted-to.pdf>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_ys_200u_napaka
-.eps>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 36875 bytes
-(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_ys_200u_napaka
--eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 14430 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_ys_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_napaka
-.eps>
-(epstopdf)             \includegraphics on input line 74.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf, id=423, 363.3
-575pt x 293.095pt>
-File: ./Slike/./LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf Graphic f
-ile (type pdf)
-
-<use ./Slike/./LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_ys_200u_napaka-eps-convert
-ed-to.pdf used on input line 74.
-(pdftex.def)             Requested size: 247.54149pt x 199.67761pt.
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 75.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 75.
-[30 <./Slike/./LIN/sim_lin_polje_xs_200u_fft-eps-converted-to.pdf> <./Slike/pot
-ek_sim_lin_polje_xs-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_ys_200u_fft.ep
-s>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 21108 bytes
-(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_ys_200u_fft-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 7117 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_ys_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_ys_200u_fft.eps>
-(epstopdf)             \includegraphics on input line 77.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-to.pdf, id=445, 362.3537
-4pt x 293.095pt>
-File: ./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use ./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-
-to.pdf used on input line 77.
-(pdftex.def)             Requested size: 247.54149pt x 200.23218pt.
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 78.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 78.
-[31 <./Slike/./LIN/sim_lin_polje_ys_200u_BxBy-eps-converted-to.pdf> <./Slike/./
-LIN/sim_lin_polje_ys_200u_napaka-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Slike/potek_sim_lin_polje_ys.eps>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 29623 bytes
-(epstopdf)             Output file: <./Slike/potek_sim_lin_polje_ys-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 12578 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_lin_polje
-_ys-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_ys.eps>
-(epstopdf)             \includegraphics on input line 85.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf, id=470, 603.25375pt x 480
-.79625pt>
-File: ./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf Graphic file (type pd
-f)
- <use ./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf us
-ed on input line 85.
-(pdftex.def)             Requested size: 247.54149pt x 197.28912pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 123.
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 123.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 123.
-
-Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.e
-ps>
-(epstopdf)                    date: 2018-03-24 09:59:24
-(epstopdf)                    size: 55570 bytes
-(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:24
-(epstopdf)                    size: 20711 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xd_200u_BxBy-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy.eps
->
-(epstopdf)             \includegraphics on input line 126.
-Package epstopdf Info: Output file is already uptodate.
-File: ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf Graphic fil
-e (type pdf)
-<use ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xd_200u_BxBy-eps-converted
--to.pdf used on input line 126.
-(pdftex.def)             Requested size: 247.54149pt x 201.90927pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 127.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 127.
-[32 <./Slike/./LIN/sim_lin_polje_ys_200u_fft-eps-converted-to.pdf>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_200u_napaka
-.eps>
-(epstopdf)                    date: 2018-03-24 09:59:24
-(epstopdf)                    size: 37341 bytes
-(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_200u_napaka
--eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:24
-(epstopdf)                    size: 14480 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xd_200u_napaka-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_napaka
-.eps>
-(epstopdf)             \includegraphics on input line 128.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-converted-to.pdf, id=488, 363.3
-575pt x 293.095pt>
-File: ./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-converted-to.pdf Graphic f
-ile (type pdf)
-
-<use ./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-convert
-ed-to.pdf used on input line 128.
-(pdftex.def)             Requested size: 247.54149pt x 199.67761pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./LIN/sim_lin_polje_xd_200u_fft.ep
-s>
-(epstopdf)                    date: 2018-03-24 09:59:24
-(epstopdf)                    size: 21313 bytes
-(epstopdf)             Output file: <./Slike/./LIN/sim_lin_polje_xd_200u_fft-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:24
-(epstopdf)                    size: 7125 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./LIN/sim_lin_polje
-_xd_200u_fft-eps-converted-to.pdf ./Slike/./LIN/sim_lin_polje_xd_200u_fft.eps>
-(epstopdf)             \includegraphics on input line 132.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-to.pdf, id=490, 362.3537
-4pt x 293.095pt>
-File: ./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use ./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-
-to.pdf used on input line 132.
-(pdftex.def)             Requested size: 247.54149pt x 200.23218pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/potek_sim_lin_polje_xd.eps>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 30206 bytes
-(epstopdf)             Output file: <./Slike/potek_sim_lin_polje_xd-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 12702 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_lin_polje
-_xd-eps-converted-to.pdf ./Slike/potek_sim_lin_polje_xd.eps>
-(epstopdf)             \includegraphics on input line 138.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/potek_sim_lin_polje_xd-eps-converted-to.pdf, id=492, 605.26125pt x 480
-.79625pt>
-File: ./Slike/potek_sim_lin_polje_xd-eps-converted-to.pdf Graphic file (type pd
-f)
- <use ./Slike/potek_sim_lin_polje_xd-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/potek_sim_lin_polje_xd-eps-converted-to.pdf us
-ed on input line 138.
-(pdftex.def)             Requested size: 247.54149pt x 196.63618pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 150.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 150.
-[33 <./Slike/potek_sim_lin_polje_ys-eps-converted-to.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 151.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 151.
-[34 <./Slike/./LIN/sim_lin_polje_xd_200u_napaka-eps-converted-to.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 152.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 152.
-[35 <./Slike/./LIN/sim_lin_polje_xd_200u_fft-eps-converted-to.pdf> <./Slike/pot
-ek_sim_lin_polje_xd-eps-converted-to.pdf>])
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 171.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 171.
-[36]
-\openout2 = `./tex/Realni_model.aux'.
-
- (tex/Realni_model.tex
-  8.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 3.
-Package epstopdf Info: Source file: <./Slike/Realno_polje.eps>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 453591 bytes
-(epstopdf)             Output file: <./Slike/Realno_polje-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 182145 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/Realno_polje-eps-co
-nverted-to.pdf ./Slike/Realno_polje.eps>
-(epstopdf)             \includegraphics on input line 7.
-Package epstopdf Info: Output file is already uptodate.
-<./Slike/Realno_polje-eps-converted-to.pdf, id=547, 1445.4pt x 816.04875pt>
-File: ./Slike/Realno_polje-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Slike/Realno_polje-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/Realno_polje-eps-converted-to.pdf used on inpu
-t line 7.
-(pdftex.def)             Requested size: 247.54149pt x 139.7475pt.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 11.
-Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_000u_BxBy
-.eps>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 56933 bytes
-(epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_000u_BxBy
--eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 19228 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_000u_BxBy-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_000u_BxBy
-.eps>
-(epstopdf)             \includegraphics on input line 15.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Real/sim_real_polje_xd_000u_BxBy-eps-converted-to.pdf, id=549, 364.3
-6125pt x 293.095pt>
-File: ./Slike/./Real/sim_real_polje_xd_000u_BxBy-eps-converted-to.pdf Graphic f
-ile (type pdf)
-
-<use ./Slike/./Real/sim_real_polje_xd_000u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Real/sim_real_polje_xd_000u_BxBy-eps-convert
-ed-to.pdf used on input line 15.
-(pdftex.def)             Requested size: 247.54149pt x 199.12306pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_000u_napa
-ka.eps>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 36690 bytes
-(epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_000u_napa
-ka-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 14018 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_000u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_000u_na
-paka.eps>
-(epstopdf)             \includegraphics on input line 17.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Real/sim_real_polje_xd_000u_napaka-eps-converted-to.pdf, id=551, 371
-.3875pt x 293.095pt>
-File: ./Slike/./Real/sim_real_polje_xd_000u_napaka-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use ./Slike/./Real/sim_real_polje_xd_000u_napaka-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Real/sim_real_polje_xd_000u_napaka-eps-conve
-rted-to.pdf used on input line 17.
-(pdftex.def)             Requested size: 247.54149pt x 195.36188pt.
-Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_000u_fft.
-eps>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 20479 bytes
-(epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_000u_fft-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 7083 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_000u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_000u_fft.e
-ps>
-(epstopdf)             \includegraphics on input line 20.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Real/sim_real_polje_xd_000u_fft-eps-converted-to.pdf, id=553, 373.39
-5pt x 293.095pt>
-File: ./Slike/./Real/sim_real_polje_xd_000u_fft-eps-converted-to.pdf Graphic fi
-le (type pdf)
-
-<use ./Slike/./Real/sim_real_polje_xd_000u_fft-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Real/sim_real_polje_xd_000u_fft-eps-converte
-d-to.pdf used on input line 20.
-(pdftex.def)             Requested size: 247.54149pt x 194.30643pt.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 22.
- [37
-
-
-
- <./Slike/Realno_polje-eps-converted-to.pdf>]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 22.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 22.
-[38 <./Slike/./Real/sim_real_polje_xd_000u_BxBy-eps-converted-to.pdf> <./Slike/
-./Real/sim_real_polje_xd_000u_napaka-eps-converted-to.pdf>]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 23.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 23.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 23.
-
-Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xs_200u_BxBy
-.eps>
-(epstopdf)                    date: 2018-03-24 09:59:34
-(epstopdf)                    size: 56946 bytes
-(epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xs_200u_BxBy
--eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:34
-(epstopdf)                    size: 20539 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xs_200u_BxBy-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xs_200u_BxBy
-.eps>
-(epstopdf)             \includegraphics on input line 26.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Real/sim_real_polje_xs_200u_BxBy-eps-converted-to.pdf, id=589, 364.3
-6125pt x 293.095pt>
-File: ./Slike/./Real/sim_real_polje_xs_200u_BxBy-eps-converted-to.pdf Graphic f
-ile (type pdf)
-
-<use ./Slike/./Real/sim_real_polje_xs_200u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Real/sim_real_polje_xs_200u_BxBy-eps-convert
-ed-to.pdf used on input line 26.
-(pdftex.def)             Requested size: 247.54149pt x 199.12306pt.
-Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xs_200u_napa
-ka.eps>
-(epstopdf)                    date: 2018-03-24 09:59:34
-(epstopdf)                    size: 37030 bytes
-(epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xs_200u_napa
-ka-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:34
-(epstopdf)                    size: 14406 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xs_200u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xs_200u_na
-paka.eps>
-(epstopdf)             \includegraphics on input line 28.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Real/sim_real_polje_xs_200u_napaka-eps-converted-to.pdf, id=592, 363
-.3575pt x 293.095pt>
-File: ./Slike/./Real/sim_real_polje_xs_200u_napaka-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use ./Slike/./Real/sim_real_polje_xs_200u_napaka-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Real/sim_real_polje_xs_200u_napaka-eps-conve
-rted-to.pdf used on input line 28.
-(pdftex.def)             Requested size: 247.54149pt x 199.67761pt.
-
-Underfull \hbox (badness 1831) in paragraph at lines 25--29
-\OT1/cmr/m/n/12 Oglejmo si se-daj re-zul-tate ob upostevanju staticne ek-s-ce
-n-tricnosti. Po
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xs_200u_fft.
-eps>
-(epstopdf)                    date: 2018-03-24 09:59:34
-(epstopdf)                    size: 19939 bytes
-(epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xs_200u_fft-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:34
-(epstopdf)                    size: 7046 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xs_200u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xs_200u_fft.e
-ps>
-(epstopdf)             \includegraphics on input line 30.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Real/sim_real_polje_xs_200u_fft-eps-converted-to.pdf, id=593, 367.37
-25pt x 293.095pt>
-File: ./Slike/./Real/sim_real_polje_xs_200u_fft-eps-converted-to.pdf Graphic fi
-le (type pdf)
-
-<use ./Slike/./Real/sim_real_polje_xs_200u_fft-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Real/sim_real_polje_xs_200u_fft-eps-converte
-d-to.pdf used on input line 30.
-(pdftex.def)             Requested size: 247.54149pt x 197.49515pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 35.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 35.
-[39 <./Slike/./Real/sim_real_polje_xd_000u_fft-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_ys_200u_napa
-ka.eps>
-(epstopdf)                    date: 2018-03-24 09:59:40
-(epstopdf)                    size: 37035 bytes
-(epstopdf)             Output file: <./Slike/./Real/sim_real_polje_ys_200u_napa
-ka-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:40
-(epstopdf)                    size: 14362 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_ys_200u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_ys_200u_na
-paka.eps>
-(epstopdf)             \includegraphics on input line 36.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Real/sim_real_polje_ys_200u_napaka-eps-converted-to.pdf, id=612, 363
-.3575pt x 293.095pt>
-File: ./Slike/./Real/sim_real_polje_ys_200u_napaka-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use ./Slike/./Real/sim_real_polje_ys_200u_napaka-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Real/sim_real_polje_ys_200u_napaka-eps-conve
-rted-to.pdf used on input line 36.
-(pdftex.def)             Requested size: 247.54149pt x 199.67761pt.
-
-Underfull \vbox (badness 6708) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 37.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 37.
-[40 <./Slike/./Real/sim_real_polje_xs_200u_BxBy-eps-converted-to.pdf> <./Slike/
-./Real/sim_real_polje_xs_200u_napaka-eps-converted-to.pdf>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_ys_200u_fft.
-eps>
-(epstopdf)                    date: 2018-03-24 09:59:40
-(epstopdf)                    size: 20475 bytes
-(epstopdf)             Output file: <./Slike/./Real/sim_real_polje_ys_200u_fft-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:40
-(epstopdf)                    size: 7097 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_ys_200u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_ys_200u_fft.e
-ps>
-(epstopdf)             \includegraphics on input line 38.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Real/sim_real_polje_ys_200u_fft-eps-converted-to.pdf, id=633, 362.35
-374pt x 293.095pt>
-File: ./Slike/./Real/sim_real_polje_ys_200u_fft-eps-converted-to.pdf Graphic fi
-le (type pdf)
-
-<use ./Slike/./Real/sim_real_polje_ys_200u_fft-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Real/sim_real_polje_ys_200u_fft-eps-converte
-d-to.pdf used on input line 38.
-(pdftex.def)             Requested size: 247.54149pt x 200.23218pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 40.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 40.
-[41 <./Slike/./Real/sim_real_polje_xs_200u_fft-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Slike/potek_sim_real_polje_xs.eps>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 29609 bytes
-(epstopdf)             Output file: <./Slike/potek_sim_real_polje_xs-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 12692 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_real_polj
-e_xs-eps-converted-to.pdf ./Slike/potek_sim_real_polje_xs.eps>
-(epstopdf)             \includegraphics on input line 43.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/potek_sim_real_polje_xs-eps-converted-to.pdf, id=648, 600.2425pt x 480
-.79625pt>
-File: ./Slike/potek_sim_real_polje_xs-eps-converted-to.pdf Graphic file (type p
-df)
- <use ./Slike/potek_sim_real_polje_xs-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/potek_sim_real_polje_xs-eps-converted-to.pdf u
-sed on input line 43.
-(pdftex.def)             Requested size: 247.54149pt x 198.27954pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 50.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 50.
-[42 <./Slike/./Real/sim_real_polje_ys_200u_napaka-eps-converted-to.pdf> <./Slik
-e/./Real/sim_real_polje_ys_200u_fft-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Slike/potek_sim_real_polje_ys.eps>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 29621 bytes
-(epstopdf)             Output file: <./Slike/potek_sim_real_polje_ys-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 12796 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_real_polj
-e_ys-eps-converted-to.pdf ./Slike/potek_sim_real_polje_ys.eps>
-(epstopdf)             \includegraphics on input line 76.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/potek_sim_real_polje_ys-eps-converted-to.pdf, id=669, 603.25375pt x 48
-0.79625pt>
-File: ./Slike/potek_sim_real_polje_ys-eps-converted-to.pdf Graphic file (type p
-df)
- <use ./Slike/potek_sim_real_polje_ys-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/potek_sim_real_polje_ys-eps-converted-to.pdf u
-sed on input line 76.
-(pdftex.def)             Requested size: 247.54149pt x 197.28912pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 83.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 83.
-[43 <./Slike/potek_sim_real_polje_xs-eps-converted-to.pdf>]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 96.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 96.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 96.
-
-Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_200u_BxBy
-.eps>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 56341 bytes
-(epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_200u_BxBy
--eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 19226 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_200u_BxBy-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_200u_BxBy
-.eps>
-(epstopdf)             \includegraphics on input line 103.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Real/sim_real_polje_xd_200u_BxBy-eps-converted-to.pdf, id=686, 364.3
-6125pt x 293.095pt>
-File: ./Slike/./Real/sim_real_polje_xd_200u_BxBy-eps-converted-to.pdf Graphic f
-ile (type pdf)
-
-<use ./Slike/./Real/sim_real_polje_xd_200u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Real/sim_real_polje_xd_200u_BxBy-eps-convert
-ed-to.pdf used on input line 103.
-(pdftex.def)             Requested size: 247.54149pt x 199.12306pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 105.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 105.
-[44 <./Slike/potek_sim_real_polje_ys-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_200u_napa
-ka.eps>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 36441 bytes
-(epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_200u_napa
-ka-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 14349 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_200u_napaka-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_200u_na
-paka.eps>
-(epstopdf)             \includegraphics on input line 106.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Real/sim_real_polje_xd_200u_napaka-eps-converted-to.pdf, id=703, 363
-.3575pt x 293.095pt>
-File: ./Slike/./Real/sim_real_polje_xd_200u_napaka-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use ./Slike/./Real/sim_real_polje_xd_200u_napaka-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Real/sim_real_polje_xd_200u_napaka-eps-conve
-rted-to.pdf used on input line 106.
-(pdftex.def)             Requested size: 247.54149pt x 199.67761pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./Real/sim_real_polje_xd_200u_fft.
-eps>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 20623 bytes
-(epstopdf)             Output file: <./Slike/./Real/sim_real_polje_xd_200u_fft-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:26
-(epstopdf)                    size: 7095 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Real/sim_real_pol
-je_xd_200u_fft-eps-converted-to.pdf ./Slike/./Real/sim_real_polje_xd_200u_fft.e
-ps>
-(epstopdf)             \includegraphics on input line 108.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Real/sim_real_polje_xd_200u_fft-eps-converted-to.pdf, id=704, 362.35
-374pt x 293.095pt>
-File: ./Slike/./Real/sim_real_polje_xd_200u_fft-eps-converted-to.pdf Graphic fi
-le (type pdf)
-
-<use ./Slike/./Real/sim_real_polje_xd_200u_fft-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Real/sim_real_polje_xd_200u_fft-eps-converte
-d-to.pdf used on input line 108.
-(pdftex.def)             Requested size: 247.54149pt x 200.23218pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/potek_sim_real_polje_xd.eps>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 29937 bytes
-(epstopdf)             Output file: <./Slike/potek_sim_real_polje_xd-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 12830 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_real_polj
-e_xd-eps-converted-to.pdf ./Slike/potek_sim_real_polje_xd.eps>
-(epstopdf)             \includegraphics on input line 113.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/potek_sim_real_polje_xd-eps-converted-to.pdf, id=705, 605.26125pt x 48
-0.79625pt>
-File: ./Slike/potek_sim_real_polje_xd-eps-converted-to.pdf Graphic file (type p
-df)
- <use ./Slike/potek_sim_real_polje_xd-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/potek_sim_real_polje_xd-eps-converted-to.pdf u
-sed on input line 113.
-(pdftex.def)             Requested size: 247.54149pt x 196.63618pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 3657) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 125.
-[45 <./Slike/./Real/sim_real_polje_xd_200u_BxBy-eps-converted-to.pdf>]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 125.
-[46 <./Slike/./Real/sim_real_polje_xd_200u_napaka-eps-converted-to.pdf> <./Slik
-e/./Real/sim_real_polje_xd_200u_fft-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Slike/potek_sim_real_polje_yd.eps>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 20900 bytes
-(epstopdf)             Output file: <./Slike/potek_sim_real_polje_yd-eps-conver
-ted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 7722 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_sim_real_polj
-e_yd-eps-converted-to.pdf ./Slike/potek_sim_real_polje_yd.eps>
-(epstopdf)             \includegraphics on input line 126.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/potek_sim_real_polje_yd-eps-converted-to.pdf, id=741, 606.265pt x 478.
-78876pt>
-File: ./Slike/potek_sim_real_polje_yd-eps-converted-to.pdf Graphic file (type p
-df)
- <use ./Slike/potek_sim_real_polje_yd-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/potek_sim_real_polje_yd-eps-converted-to.pdf u
-sed on input line 126.
-(pdftex.def)             Requested size: 247.54149pt x 195.49371pt.
-
-Underfull \vbox (badness 6204) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 129.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 129.
-[47 <./Slike/potek_sim_real_polje_xd-eps-converted-to.pdf> <./Slike/potek_sim_r
-eal_polje_yd-eps-converted-to.pdf>])
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 175.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 175.
-[48]
-\openout2 = `./tex/Meritve.aux'.
-
- (tex/Meritve.tex
-  9.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 55.
-
-LaTeX Warning: Reference `postavitevmerilnegamesta' on page 49 undefined on inp
-ut line 57.
-
-./Slike/ ne obstaja!
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 61.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 61.
-[49
-
-
-
-] <./Slike/HTIMS601.png, id=776, 864.22874pt x 1263.21938pt>
-File: ./Slike/HTIMS601.png Graphic file (type png)
-
-<use ./Slike/HTIMS601.png>
-Package pdftex.def Info: ./Slike/HTIMS601.png used on input line 62.
-(pdftex.def)             Requested size: 288.79643pt x 422.0487pt.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 66.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 66.
-
-Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_ys_000u_BxBy.eps
->
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 56368 bytes
-(epstopdf)             Output file: <./Slike/./Meritve/meritev_ys_000u_BxBy-eps
--converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 21179 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_y
-s_000u_BxBy-eps-converted-to.pdf ./Slike/./Meritve/meritev_ys_000u_BxBy.eps>
-(epstopdf)             \includegraphics on input line 69.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Meritve/meritev_ys_000u_BxBy-eps-converted-to.pdf, id=778, 364.36125
-pt x 293.095pt>
-File: ./Slike/./Meritve/meritev_ys_000u_BxBy-eps-converted-to.pdf Graphic file 
-(type pdf)
-
-<use ./Slike/./Meritve/meritev_ys_000u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Meritve/meritev_ys_000u_BxBy-eps-converted-t
-o.pdf used on input line 69.
-(pdftex.def)             Requested size: 247.54149pt x 199.12306pt.
-
-Underfull \vbox (badness 4291) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 69.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 69.
-[50 <./Slike/HTIMS601.png>]
-Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_ys_000u_napaka.e
-ps>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 37609 bytes
-(epstopdf)             Output file: <./Slike/./Meritve/meritev_ys_000u_napaka-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 14419 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_y
-s_000u_napaka-eps-converted-to.pdf ./Slike/./Meritve/meritev_ys_000u_napaka.eps
->
-(epstopdf)             \includegraphics on input line 71.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Meritve/meritev_ys_000u_napaka-eps-converted-to.pdf, id=785, 371.387
-5pt x 293.095pt>
-File: ./Slike/./Meritve/meritev_ys_000u_napaka-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use ./Slike/./Meritve/meritev_ys_000u_napaka-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Meritve/meritev_ys_000u_napaka-eps-converted
--to.pdf used on input line 71.
-(pdftex.def)             Requested size: 247.54149pt x 195.36188pt.
-Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_ys_000u_fft.eps>
-
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 20468 bytes
-(epstopdf)             Output file: <./Slike/./Meritve/meritev_ys_000u_fft-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 7069 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_y
-s_000u_fft-eps-converted-to.pdf ./Slike/./Meritve/meritev_ys_000u_fft.eps>
-(epstopdf)             \includegraphics on input line 74.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Meritve/meritev_ys_000u_fft-eps-converted-to.pdf, id=788, 373.395pt 
-x 293.095pt>
-File: ./Slike/./Meritve/meritev_ys_000u_fft-eps-converted-to.pdf Graphic file (
-type pdf)
- <use ./Slike/./Meritve/meritev_ys_000u_fft-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Meritve/meritev_ys_000u_fft-eps-converted-to
-.pdf used on input line 74.
-(pdftex.def)             Requested size: 247.54149pt x 194.30643pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_xs_200u_BxBy.eps
->
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 56393 bytes
-(epstopdf)             Output file: <./Slike/./Meritve/meritev_xs_200u_BxBy-eps
--converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 21153 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_x
-s_200u_BxBy-eps-converted-to.pdf ./Slike/./Meritve/meritev_xs_200u_BxBy.eps>
-(epstopdf)             \includegraphics on input line 107.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Meritve/meritev_xs_200u_BxBy-eps-converted-to.pdf, id=789, 364.36125
-pt x 293.095pt>
-File: ./Slike/./Meritve/meritev_xs_200u_BxBy-eps-converted-to.pdf Graphic file 
-(type pdf)
-
-<use ./Slike/./Meritve/meritev_xs_200u_BxBy-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Meritve/meritev_xs_200u_BxBy-eps-converted-t
-o.pdf used on input line 107.
-(pdftex.def)             Requested size: 247.54149pt x 199.12306pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_xs_200u_napaka.e
-ps>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 36643 bytes
-(epstopdf)             Output file: <./Slike/./Meritve/meritev_xs_200u_napaka-e
-ps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 14055 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_x
-s_200u_napaka-eps-converted-to.pdf ./Slike/./Meritve/meritev_xs_200u_napaka.eps
->
-(epstopdf)             \includegraphics on input line 109.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Meritve/meritev_xs_200u_napaka-eps-converted-to.pdf, id=790, 371.387
-5pt x 293.095pt>
-File: ./Slike/./Meritve/meritev_xs_200u_napaka-eps-converted-to.pdf Graphic fil
-e (type pdf)
-
-<use ./Slike/./Meritve/meritev_xs_200u_napaka-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Meritve/meritev_xs_200u_napaka-eps-converted
--to.pdf used on input line 109.
-(pdftex.def)             Requested size: 247.54149pt x 195.36188pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./Meritve/meritev_xs_200u_fft.eps>
-
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 21114 bytes
-(epstopdf)             Output file: <./Slike/./Meritve/meritev_xs_200u_fft-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2018-03-24 09:59:25
-(epstopdf)                    size: 7155 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Meritve/meritev_x
-s_200u_fft-eps-converted-to.pdf ./Slike/./Meritve/meritev_xs_200u_fft.eps>
-(epstopdf)             \includegraphics on input line 111.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Meritve/meritev_xs_200u_fft-eps-converted-to.pdf, id=791, 370.38374p
-t x 293.095pt>
-File: ./Slike/./Meritve/meritev_xs_200u_fft-eps-converted-to.pdf Graphic file (
-type pdf)
-
-<use ./Slike/./Meritve/meritev_xs_200u_fft-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Meritve/meritev_xs_200u_fft-eps-converted-to
-.pdf used on input line 111.
-(pdftex.def)             Requested size: 247.54149pt x 195.88962pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/potek_meritev_xs.eps>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 30232 bytes
-(epstopdf)             Output file: <./Slike/potek_meritev_xs-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2018-03-24 09:59:41
-(epstopdf)                    size: 12560 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/potek_meritev_xs-ep
-s-converted-to.pdf ./Slike/potek_meritev_xs.eps>
-(epstopdf)             \includegraphics on input line 114.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/potek_meritev_xs-eps-converted-to.pdf, id=792, 611.28375pt x 480.79625
-pt>
-File: ./Slike/potek_meritev_xs-eps-converted-to.pdf Graphic file (type pdf)
- <use ./Slike/potek_meritev_xs-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/potek_meritev_xs-eps-converted-to.pdf used on 
-input line 114.
-(pdftex.def)             Requested size: 247.54149pt x 194.6994pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 179.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 179.
-[51 <./Slike/./Meritve/meritev_ys_000u_BxBy-eps-converted-to.pdf>]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 179.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 179.
-[52 <./Slike/./Meritve/meritev_ys_000u_napaka-eps-converted-to.pdf> <./Slike/./
-Meritve/meritev_ys_000u_fft-eps-converted-to.pdf>]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 179.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 179.
-[53 <./Slike/./Meritve/meritev_xs_200u_BxBy-eps-converted-to.pdf> <./Slike/./Me
-ritve/meritev_xs_200u_napaka-eps-converted-to.pdf>]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 179.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 179.
-[54 <./Slike/./Meritve/meritev_xs_200u_fft-eps-converted-to.pdf> <./Slike/potek
-_meritev_xs-eps-converted-to.pdf>]
+[32 <./Slike/potek_analitika_xd-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 412.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
- (Diploma_V2.aux (tex/Uvod.aux)
-(tex/Analiticna_izpeljava.aux) (tex/Linearni_model.aux) (tex/Realni_model.aux)
-(tex/Meritve.aux))
+ (Diploma_V2.aux
+(tex/Analiticna_izpeljava.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 412.
 Package rerunfilecheck Info: File `Diploma_V2.out' has not changed.
-(rerunfilecheck)             Checksum: 04FC5F4ABC2C95605BBA45ACFFB2C61D;2598.
+(rerunfilecheck)             Checksum: 2EBF7498EEF0D0B89A6670E9E5CF8FF4;2203.
 
 
 LaTeX Warning: There were undefined references.
@@ -2691,13 +2241,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 412.
  ) 
 Here is how much of TeX's memory you used:
- 18272 strings out of 493323
- 346805 string characters out of 3139065
- 415377 words of memory out of 3000000
- 21241 multiletter control sequences out of 15000+200000
+ 18363 strings out of 493323
+ 341540 string characters out of 3139065
+ 413216 words of memory out of 3000000
+ 21407 multiletter control sequences out of 15000+200000
  11965 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,11n,94p,876b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,11n,94p,776b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
@@ -2710,10 +2260,11 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Diploma_V2.pdf (54 pages, 5051637 bytes).
+ts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy8.pfb>
+Output written on Diploma_V2.pdf (32 pages, 1276386 bytes).
 PDF statistics:
- 956 PDF objects out of 1000 (max. 8388607)
- 172 named destinations out of 1000 (max. 500000)
- 463 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 624 PDF objects out of 1000 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
+ 322 words of extra memory for PDF output out of 10000 (max. 10000000)
 

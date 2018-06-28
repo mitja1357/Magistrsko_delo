@@ -415,39 +415,244 @@ Z vstavitvijo formul v $\arctan$ se faktor $k_z$ nahaj tako v "stevcu kot imenov
 
 Da si lažje predstavljamo, kako se bo napaka odražala v obliki digitalnega izhoda, si oglejmo posamezno deformacijo signalov sinus in cosinus. Deformacija sinusa in cosinusa zaradi nepravilne montaže, vpliva le na enosmerno komponento, amplitudo in fazni kot med signaloma.
 
-Ogledali si bomo kako vplivajo na izraćunan kot, različne amplitude signalov sinus in cosinus, neortogonalost oz. fazni zamik sinusa in kosinusa različen od $90^\circ$. Ogledali si bomo tudi pojav enosmernih komponenet v sinusu in cosinusu, iin za konec še vpliv višjih harmonikov, ki niso posledica nepravilne montaže, vendar je prav da jih omenim.
+Ogledali si bomo kako vplivajo na izračunan kot, različne amplitude signalov sinus in cosinus, neortogonalost oz. fazni zamik sinusa in kosinusa različen od $90^\circ$. Ogledali si bomo tudi pojav enosmernih komponenet v sinusu in cosinusu, in za konec še vpliv višjih harmonikov, ki niso posledica nepravilne montaže, vendar je prav da jih omenim.
 
-Za izračun kota se uporablja funkcijo atan2(); za izhodno vrednost kota v radianih oz. atan2d(); za vrednost v stopinjah \cite{atan2Matlab}\cite{atan2dMatlab}. 
+Za izračun kota se uporablja funkcijo atan2(); za izhodno vrednost kota v radianih oz. atan2d(); za vrednost v stopinjah \cite{atan2Matlab}\cite{atan2dMatlab}. Različne literature (citiraj iz clanaka od rls) opisujejo napake zaradi popačitve signalov sin cos. Napaka je izražena v obliki enosmerne komponente ter prvega oz drugega harmonika, kateri od primera do primera najbolj izstopa. V nadaljeevanju bom prikazal kako popačen signal kot vhod v funkcijo atan2(); vpliva na napako ter kako se odraža tudi na visjih harmonikih napake. Za majhne popačenja signalov, literatura nakazuje na linearno naraščanje napake, vendar predvidevam, da bo napaka z večjo deformacijo naraščala eksponentno.
+
+Na tej točki je prav da definiram še napako pomejrenega kota $\varepsilon$, ki predstavlja razliko med merjenim in referenčnim kotom.
+
+\begin{equation}
+\varepsilon = \varphi - \mathrm{atan2}(\sin{\theta},\cos{\theta})
+\end{equation}
+
+Enačbe so izpeljane v radianih, na slikah je prikazano v kotnih stopinjah, zaradi lažjega odčitavanja.
 
 \section{Različne amplitude}
 
+Vzemimo signal sinus z amplitudo $A_{sin}$ in signal cosinus z amplitude $A_{cos}$. Vstavimo signala v funkcijo $atan2$.
+
+Opazimo, da lahhko razmerje amplitud nadomestimo s koeficientom $k$. Kot, ki bo izhodna funkcija lahko nadosmetimo s:
+\begin{equation}
+\varphi =  \mathrm{atan2}(A_{sin} \sin{\theta}, A_{cos} \cos{\theta}) = \mathrm{atan2}(k \sin{\theta},\cos{\theta})
+\end{equation}
+
+k limitirajmo v neskončnost:
+\begin{equation}
+\lim_{k \rightarrow \infty} \mathrm{atan2}(k \sin{\theta},\cos{\theta})
+\end{equation}
+
+\slikaeps{$\varepsilon$ ob limiti k v neskončnost }{./Napake/k_lim}
+
+Kot $\varepsilon$, se bo ob limiti  izrazila v obliki , ki jo lahko izrazimo z vrsto \cite{fourierova_vrsta}:
+
+\begin{equation}
+\varepsilon = \sum_{n=1}^{\infty}\frac{1}{n} \sin 2 n \theta
+\end{equation}
+
+Nato sem izračunal napaka pri različnih k in naredil fft napake $\varepsilon$ \cite{matlab_fft}.
+
+Harmonike napake sem aproksimiral z racionalno funkcijo in končna napaka za katerikoli k se je izrazila z vrsto:
+
+\begin{equation}
+\label{vrsta_k}
+\varepsilon_p =\sum_{n=1}^{\infty}\frac{1}{n}(\frac{k-1}{k+1})^n \sin 2 n \theta
+\end{equation}
+
+\slikaeps{$\varepsilon$ ob k 1.1 }{./Napake/napaka_amp11}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_k}) pri k= 1.1 }{./Napake/razlika_amp11}
+\newpage
+\section{Različne enosmerne komponente}
+
+Enosmerna komponenta se lahko pojavi tako v sinusu, cosinusu ali v obeh. V naslednjih podpoglavjih bom prikazal kako se napaka spreminja glede na enosmerno komponeno le v enem od signalov in nakoncu kako se napaka izrazi, če imate oba signala enake enosmerne komponente.
+
+\subsection{Enosmerna komponenta sinusa}
+
+Poglejmo kako se bo izrazala napaka $\varepsilon$ v naslednjem izrazu:
+\begin{equation}
+\varphi = \mathrm{atan2}(\sin{\theta} + b_0,\cos{\theta})
+\end{equation}
+
+Postopajmo kot v prejčnjem poglavju in limitirajmo $b_0$ v neskončnost:
+
+\begin{equation}
+\lim_{b_0 \rightarrow \infty} \mathrm{atan2}(\sin{\theta}+b_0,\cos{\theta})
+\end{equation}
+
+\slikaeps{$\varepsilon$ ob limiti $b_0$ v neskončnost }{./Napake/lim_sin}
+
+Napaka se izrazi v obliki:
+
+\begin{equation}
+\varepsilon = \sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta + n \frac{\pi}{2})
+\end{equation}
+
+
+Tudi tu naredimo fft napake pri različnih enosmernih komponentah. Napako lahko opišemo z naslednjo enačbo:
+
+\begin{equation}
+\label{vrsta_sinoff}
+\varepsilon_p=
+\begin{cases}
+\sum_{n=1}^{\infty}\frac{2-|b_0|^{-n}}{n} \sin (n \theta - n \frac{\pi}{2}), & b_0\leq -1 \\
+\sum_{n=1}^{\infty}\frac{b_0^n}{n} \sin (n \theta + n \frac{\pi}{2}), & |b_0|\leq 1 \\
+\sum_{n=1}^{\infty}\frac{2-b_0^{-n}}{n} \sin (n \theta + n \frac{\pi}{2}), & b_0\geq 1
+\end{cases}
+\end{equation}
+
+\slikaeps{$\varepsilon$ ob $b_0$ 0,1 }{./Napake/napaka_sin01}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_sinoff}) pri$b_0=$ 0,1 in $n < 20$}{./Napake/razlika_sin01}
 
 
 
 
+\subsection{Enosmerna komponenta cosinusa}
+
+Sedaj poglejom napako pri enosmerni komponenti cosinusa
+\begin{equation}
+\varphi = \mathrm{atan2}(\sin{\theta},\cos{\theta} + a_0)
+\end{equation}
+
+Postopajmo kot v prejčnjem poglavju in limitirajmo $a_0$ v neskončnost:
+
+\begin{equation}
+\lim_{a_0 \rightarrow \infty} \mathrm{atan2}(\sin{\theta},\cos{\theta} + a_0)
+\end{equation}
+\slikaeps{$\varepsilon$ ob limiti $a_0$ v neskončnost }{./Napake/lim_cos}
+
+Napaka se izrazi v obliki:
+
+\begin{equation}
+\varepsilon = \sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta+ n \pi)
+\end{equation}
+
+
+Tudi tu naredimo fft napake pri različnih enosmernih komponentah. Napako lahko opišemo z naslednjo enačbo:
+
+\begin{equation}
+\label{vrsta_cosoff}
+\varepsilon_p=
+\begin{cases}
+\sum_{n=1}^{\infty}\frac{2-|a_0|^{-n}}{n} \sin (n \theta - n \pi), & a_0\leq -1 \\
+\sum_{n=1}^{\infty}\frac{a_0^n}{n} \sin (n \theta + n \pi), & |a_0|\leq 1 \\
+\sum_{n=1}^{\infty}\frac{2-a_0^{-n}}{n} \sin (n \theta + n \pi), & a_0\geq 1
+\end{cases}
+\end{equation}
+
+\slikaeps{$\varepsilon$ ob $a_0$ 0,1 }{./Napake/napaka_cos01}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_cosoff}) pri$a_0=$ 0,1 in $n < 20$ }{./Napake/razlika_cos01}
+
+\newpage
+\subsection{Enosmerna komponenta pri obeh signalih}
+
+Oglejmo si še napako, če imate oba signala, sinus in cosinus, enako enosmerno komponento.
+
+
+\begin{equation}
+\varphi = \mathrm{atan2}(\sin{\theta} + c_0,\cos{\theta} + c_0)
+\end{equation}
+
+Limitirajmo:
+
+\begin{equation}
+\lim_{c_0 \rightarrow \infty} \mathrm{atan2}(\sin{\theta} + c_0,\cos{\theta}+ c_0) 
+\end{equation}
+
+\slikaeps{$\varepsilon$ ob limiti $c_0$ v neskončnost }{./Napake/lim_sincos}
+
+in napako $\varepsilon$ zapišemo kot:
+
+\begin{equation}
+\varepsilon = \sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta+ n \frac{3\pi}{4})
+\end{equation}
+
+
+Z enakimi postopki kot zgoraj sem tudi tu določil potek napake.
+
+
+\begin{equation}
+\label{vrsta_sincosoff}
+\varepsilon_p=
+\begin{cases}
+\sum_{n=1}^{\infty}\frac{2-|\sqrt{2}c_0|^{-n}}{n} \sin (n \theta - n \frac{3\pi}{4}), & c_0\leq -\frac{\sqrt{2}}{2} \\
+\sum_{n=1}^{\infty}\frac{(\sqrt{2}c_0)^n}{n} \sin (n \theta +  n \frac{3\pi}{4}), & |c_0|\leq \frac{\sqrt{2}}{2} \\
+\sum_{n=1}^{\infty}\frac{2-(\sqrt{2}c_0)^{-n}}{n} \sin (n \theta +  n \frac{3\pi}{4}), & c_0\geq \frac{\sqrt{2}}{2}
+\end{cases}
+\end{equation}
+
+\slikaeps{$\varepsilon$ ob $c_0$ 0,1 }{./Napake/napaka_sincos01}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_sincosoff}) pri $c_0=$ 0,1 in $n < 20$}{./Napake/razlika_sincos01}
 
 
 
 
+\section{Neorotogonalnost signalov}
+
+Napaka se pojavi lahko tudi, če signala sinus in cosinus nista zamaknjena za točno $90^\circ$. Z enakim postopkom kot v prejšnjih poglavjih, bom tudi tu, določil napako z vrsto, za vsak zamaknjen signal posebaj.
+
+\subsection{Fazni zamik sinusa}
+
+Poglejmo najprej zamaknjen sinusni signal. Tudi tu napravimo limito vendar le do $90^\circ$, saj se siganl kasneje začne ponavljati.
 
 
 
+\begin{equation}
+\lim_{\varphi_{sin} \rightarrow 90} \mathrm{atan2}(\sin{\theta+\varphi_{sin}} ,\cos{\theta}) 
+\end{equation}
+
+
+\slikaeps{$\varepsilon$ pri  $\varphi_{sin}= 90^\circ$  }{./Napake/lim_sinfaza}
+
+Napaka se izrazi v vrsti:
+
+\begin{equation}
+\varepsilon = \frac{\pi}{4} - \sum_{n=1}^{\infty}\frac{1}{n} \sin (2n \theta)
+\end{equation}
+
+
+Napravil sem izračune napake pri različnih $\varphi_{sin}$, naredil fft signala in pogledal odvistnost amplitude harmonika od $\varphi_{sin}$. Harmonike sem lahko aprokismiral z višjimi potencami funkcije tangens, ter dobil končno enačbo.
+
+
+\begin{equation}
+\label{vrsta_faza_sin}
+\varepsilon_p = \frac{\varphi_{sin}}{2} + \sum_{n=1}^{\infty}\frac{1}{n} \mathrm{tan}(\frac{\varphi_{sin}}{2})^n \sin (2n \theta+n \frac{\pi}{2}+n \varphi_{sin})
+\end{equation}
+
+
+\slikaeps{$\varepsilon$ ob $\varphi_{sin} = 1^\circ$ }{./Napake/napaka_fazasin1}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_faza_sin}) pri  $\varphi_{sin} = 1^\circ$ in $n < 20$}{./Napake/razlika_fazasin1}
+
+
+\subsection{Fazni zamik cosinusa}
+
+Poglejmo najprej zamaknjen sinusni signal. Tudi tu napravimo limito vendar le do $90^\circ$, saj se siganl kasneje začne ponavljati.
 
 
 
+\begin{equation}
+\lim_{\varphi_{sin} \rightarrow 90} \mathrm{atan2}(\sin{\theta+\varphi_{cos}} ,\cos{\theta}) 
+\end{equation}
 
 
+\slikaeps{$\varepsilon$ pri  $\varphi_{cos}= 90^\circ$  }{./Napake/lim_cosfaza}
+
+Napaka se izrazi v vrsti:
+
+\begin{equation}
+\varepsilon = \frac{\pi}{4} + \sum_{n=1}^{\infty}\frac{1}{n} \sin (2n \theta)
+\end{equation}
 
 
+Ponovil pri različnih kotih, naredil fft, aproksimiral posamezni harmonik napake in dobil izraz:
 
 
+\begin{equation}
+\label{vrsta_faza_sin}
+\varepsilon_p = \frac{\varphi_{cos}}{2} + \sum_{n=1}^{\infty}\frac{1}{n} \mathrm{tan}(\frac{\varphi_{cos}}{2})^n \sin (2n \theta-n \frac{\pi}{2}+n \varphi_{cos})
+\end{equation}
 
 
-
-
-
-
-
+\slikaeps{$\varepsilon$ ob $\varphi_{cos} = 1^\circ$ }{./Napake/napaka_fazacos1}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_faza_sin}) pri  $\varphi_{cos} = 1^\circ$ in $n < 20$}{./Napake/razlika_fazacos1}
 
 
 
