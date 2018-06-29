@@ -1,4 +1,4 @@
-theta=linspace(0,360,1024);
+theta=linspace(0,360,8192);
 eks={'xs','ys','xd','yd'};
 
 
@@ -11,7 +11,7 @@ for j=1:4
     xd=0;
     yd=0;
 
-    displace=0:25e-3:500e-3;
+    displace=0:1e-2:0.5;
     RM44_lin_all=[];
     Sin_all=[];
     Cos_all=[];

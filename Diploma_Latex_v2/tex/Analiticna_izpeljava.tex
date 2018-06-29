@@ -425,7 +425,6 @@ Na tej točki je prav da definiram še napako pomejrenega kota $\varepsilon$, ki
 \varepsilon = \varphi - \mathrm{atan2}(\sin{\theta},\cos{\theta})
 \end{equation}
 
-Enačbe so izpeljane v radianih, na slikah je prikazano v kotnih stopinjah, zaradi lažjega odčitavanja.
 
 \section{Različne amplitude}
 
@@ -446,7 +445,7 @@ k limitirajmo v neskončnost:
 Kot $\varepsilon$, se bo ob limiti  izrazila v obliki , ki jo lahko izrazimo z vrsto \cite{fourierova_vrsta}:
 
 \begin{equation}
-\varepsilon = \sum_{n=1}^{\infty}\frac{1}{n} \sin 2 n \theta
+\varepsilon = \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \sin 2 n \theta
 \end{equation}
 
 Nato sem izračunal napaka pri različnih k in naredil fft napake $\varepsilon$ \cite{matlab_fft}.
@@ -455,10 +454,10 @@ Harmonike napake sem aproksimiral z racionalno funkcijo in končna napaka za kat
 
 \begin{equation}
 \label{vrsta_k}
-\varepsilon_p =\sum_{n=1}^{\infty}\frac{1}{n}(\frac{k-1}{k+1})^n \sin 2 n \theta
+\varepsilon_p =\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n}(\frac{k-1}{k+1})^n \sin 2 n \theta
 \end{equation}
 
-\slikaeps{$\varepsilon$ ob k 1.1 }{./Napake/napaka_amp11}
+\slikaeps{$\varepsilon$ pri k=1.1 }{./Napake/napaka_amp11}
 \slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_k}) pri k= 1.1 }{./Napake/razlika_amp11}
 \newpage
 \section{Različne enosmerne komponente}
@@ -483,7 +482,7 @@ Postopajmo kot v prejčnjem poglavju in limitirajmo $b_0$ v neskončnost:
 Napaka se izrazi v obliki:
 
 \begin{equation}
-\varepsilon = \sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta + n \frac{\pi}{2})
+\varepsilon = \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta + 90 n)
 \end{equation}
 
 
@@ -493,14 +492,14 @@ Tudi tu naredimo fft napake pri različnih enosmernih komponentah. Napako lahko 
 \label{vrsta_sinoff}
 \varepsilon_p=
 \begin{cases}
-\sum_{n=1}^{\infty}\frac{2-|b_0|^{-n}}{n} \sin (n \theta - n \frac{\pi}{2}), & b_0\leq -1 \\
-\sum_{n=1}^{\infty}\frac{b_0^n}{n} \sin (n \theta + n \frac{\pi}{2}), & |b_0|\leq 1 \\
-\sum_{n=1}^{\infty}\frac{2-b_0^{-n}}{n} \sin (n \theta + n \frac{\pi}{2}), & b_0\geq 1
+\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2-|b_0|^{-n}}{n} \sin (n \theta -  90 n), & b_0\leq -1 \\
+\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{b_0^n}{n} \sin (n \theta + 90 n), & |b_0|\leq 1 \\
+\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2-b_0^{-n}}{n} \sin (n \theta + 90 n), & b_0\geq 1
 \end{cases}
 \end{equation}
 
-\slikaeps{$\varepsilon$ ob $b_0$ 0,1 }{./Napake/napaka_sin01}
-\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_sinoff}) pri$b_0=$ 0,1 in $n < 20$}{./Napake/razlika_sin01}
+\slikaeps{$\varepsilon$ pri $b_0=$ 0,1 }{./Napake/napaka_sin01}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_sinoff}) pri $b_0=$ 0,1 in $n < 20$}{./Napake/razlika_sin01}
 
 
 
@@ -522,7 +521,7 @@ Postopajmo kot v prejčnjem poglavju in limitirajmo $a_0$ v neskončnost:
 Napaka se izrazi v obliki:
 
 \begin{equation}
-\varepsilon = \sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta+ n \pi)
+\varepsilon = \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta+ 90 n)
 \end{equation}
 
 
@@ -532,18 +531,18 @@ Tudi tu naredimo fft napake pri različnih enosmernih komponentah. Napako lahko 
 \label{vrsta_cosoff}
 \varepsilon_p=
 \begin{cases}
-\sum_{n=1}^{\infty}\frac{2-|a_0|^{-n}}{n} \sin (n \theta - n \pi), & a_0\leq -1 \\
-\sum_{n=1}^{\infty}\frac{a_0^n}{n} \sin (n \theta + n \pi), & |a_0|\leq 1 \\
-\sum_{n=1}^{\infty}\frac{2-a_0^{-n}}{n} \sin (n \theta + n \pi), & a_0\geq 1
+\frac{180}{\pi}\sum_{n=1}^{\infty}(-1)^n\frac{2-|a_0|^{-n}}{n} \sin (n \theta ), & a_0\leq -1 \\
+\frac{180}{\pi}\sum_{n=1}^{\infty}(-1)^n\frac{a_0^n}{n} \sin (n \theta ), & |a_0|\leq 1 \\
+\frac{180}{\pi}\sum_{n=1}^{\infty}(-1)^n\frac{2-a_0^{-n}}{n} \sin (n \theta ), & a_0\geq 1
 \end{cases}
 \end{equation}
 
-\slikaeps{$\varepsilon$ ob $a_0$ 0,1 }{./Napake/napaka_cos01}
-\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_cosoff}) pri$a_0=$ 0,1 in $n < 20$ }{./Napake/razlika_cos01}
+\slikaeps{$\varepsilon$ pri $a_=0$ 0,1 }{./Napake/napaka_cos01}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_cosoff}) pri $a_0=$ 0,1 in $n < 20$ }{./Napake/razlika_cos01}
 
 \newpage
 \subsection{Enosmerna komponenta pri obeh signalih}
-
+\label{2_offseta}
 Oglejmo si še napako, če imate oba signala, sinus in cosinus, enako enosmerno komponento.
 
 
@@ -562,7 +561,7 @@ Limitirajmo:
 in napako $\varepsilon$ zapišemo kot:
 
 \begin{equation}
-\varepsilon = \sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta+ n \frac{3\pi}{4})
+\varepsilon = \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta- 90 n)
 \end{equation}
 
 
@@ -573,13 +572,13 @@ Z enakimi postopki kot zgoraj sem tudi tu določil potek napake.
 \label{vrsta_sincosoff}
 \varepsilon_p=
 \begin{cases}
-\sum_{n=1}^{\infty}\frac{2-|\sqrt{2}c_0|^{-n}}{n} \sin (n \theta - n \frac{3\pi}{4}), & c_0\leq -\frac{\sqrt{2}}{2} \\
-\sum_{n=1}^{\infty}\frac{(\sqrt{2}c_0)^n}{n} \sin (n \theta +  n \frac{3\pi}{4}), & |c_0|\leq \frac{\sqrt{2}}{2} \\
-\sum_{n=1}^{\infty}\frac{2-(\sqrt{2}c_0)^{-n}}{n} \sin (n \theta +  n \frac{3\pi}{4}), & c_0\geq \frac{\sqrt{2}}{2}
+\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2-|\sqrt{2}c_0|^{-n}}{n} \sin (n \theta + 90 n), & c_0\leq -\frac{\sqrt{2}}{2} \\
+\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{(\sqrt{2}c_0)^n}{n} \sin (n \theta - 90 n), & |c_0|\leq \frac{\sqrt{2}}{2} \\
+\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2-(\sqrt{2}c_0)^{-n}}{n} \sin (n \theta - 90 n), & c_0\geq \frac{\sqrt{2}}{2}
 \end{cases}
 \end{equation}
 
-\slikaeps{$\varepsilon$ ob $c_0$ 0,1 }{./Napake/napaka_sincos01}
+\slikaeps{$\varepsilon$ pri $c_0=$ 0,1 }{./Napake/napaka_sincos01}
 \slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_sincosoff}) pri $c_0=$ 0,1 in $n < 20$}{./Napake/razlika_sincos01}
 
 
@@ -605,7 +604,7 @@ Poglejmo najprej zamaknjen sinusni signal. Tudi tu napravimo limito vendar le do
 Napaka se izrazi v vrsti:
 
 \begin{equation}
-\varepsilon = \frac{\pi}{4} - \sum_{n=1}^{\infty}\frac{1}{n} \sin (2n \theta)
+\varepsilon = 45^\circ - \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \sin (2n \theta)
 \end{equation}
 
 
@@ -614,22 +613,22 @@ Napravil sem izračune napake pri različnih $\varphi_{sin}$, naredil fft signal
 
 \begin{equation}
 \label{vrsta_faza_sin}
-\varepsilon_p = \frac{\varphi_{sin}}{2} + \sum_{n=1}^{\infty}\frac{1}{n} \mathrm{tan}(\frac{\varphi_{sin}}{2})^n \sin (2n \theta+n \frac{\pi}{2}+n \varphi_{sin})
+\varepsilon_p = \frac{\varphi_{sin}}{2} + \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \mathrm{tan}(\frac{\varphi_{sin}}{2})^n \sin (2n \theta+90 n +n \varphi_{sin})
 \end{equation}
 
 
-\slikaeps{$\varepsilon$ ob $\varphi_{sin} = 1^\circ$ }{./Napake/napaka_fazasin1}
+\slikaeps{$\varepsilon$ pri $\varphi_{sin} = 1^\circ$ }{./Napake/napaka_fazasin1}
 \slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_faza_sin}) pri  $\varphi_{sin} = 1^\circ$ in $n < 20$}{./Napake/razlika_fazasin1}
 
 
 \subsection{Fazni zamik cosinusa}
 
-Poglejmo najprej zamaknjen sinusni signal. Tudi tu napravimo limito vendar le do $90^\circ$, saj se siganl kasneje začne ponavljati.
+Enako posotopamo tudi pri faznem zamiku cosinusa.
 
 
 
 \begin{equation}
-\lim_{\varphi_{sin} \rightarrow 90} \mathrm{atan2}(\sin{\theta+\varphi_{cos}} ,\cos{\theta}) 
+\lim_{\varphi_{cos} \rightarrow 90} \mathrm{atan2}(\sin{\theta+\varphi_{cos}} ,\cos{\theta}) 
 \end{equation}
 
 
@@ -638,117 +637,94 @@ Poglejmo najprej zamaknjen sinusni signal. Tudi tu napravimo limito vendar le do
 Napaka se izrazi v vrsti:
 
 \begin{equation}
-\varepsilon = \frac{\pi}{4} + \sum_{n=1}^{\infty}\frac{1}{n} \sin (2n \theta)
+\varepsilon = 45^\circ + \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \sin (2n \theta)
 \end{equation}
 
 
-Ponovil pri različnih kotih, naredil fft, aproksimiral posamezni harmonik napake in dobil izraz:
+Ponovil pri različnih $\varphi_{cos}$, naredil fft, aproksimiral posamezni harmonik napake in dobil izraz:
 
 
 \begin{equation}
 \label{vrsta_faza_sin}
-\varepsilon_p = \frac{\varphi_{cos}}{2} + \sum_{n=1}^{\infty}\frac{1}{n} \mathrm{tan}(\frac{\varphi_{cos}}{2})^n \sin (2n \theta-n \frac{\pi}{2}+n \varphi_{cos})
+\varepsilon_p = \frac{\varphi_{cos}}{2} + \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \mathrm{tan}(\frac{\varphi_{cos}}{2})^n \sin (2n \theta- 90 n+n \varphi_{cos})
 \end{equation}
 
 
-\slikaeps{$\varepsilon$ ob $\varphi_{cos} = 1^\circ$ }{./Napake/napaka_fazacos1}
+\slikaeps{$\varepsilon$ pri $\varphi_{cos} = 1^\circ$ }{./Napake/napaka_fazacos1}
 \slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_faza_sin}) pri  $\varphi_{cos} = 1^\circ$ in $n < 20$}{./Napake/razlika_fazacos1}
 
 
+\newpage
+\section{Potek napake pri statični ekscentričnosti v smeri x}
 
+V zgornjih poglavjih smo spoznali, kakšne oblike je napaka pri določeni deformaciji analognega signala.
+Zgornji poteki napake veljajo le za eno vrsto deformacije, njihovih odvistnosti nisem raziskal.
 
-
-
-
-
-
-
-
-
-
-
-\section{Analiti"cen potek napake posamezne ekscentri"cnosti}
-
-S poznavanjem potekov polja posamezne sonde sedaj s funkcijo $\arctan$ izra"cunamo kot.
-
-\begin{equation}
-\label{equ:izracun_kota_splosna}
-\varphi(\theta,\Delta x_s, \Delta y_s, \Delta x_d)=\arctan\frac{B_y}{B_x}=\arctan\frac{r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d}{r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d}
-\end{equation}
-
-
-
-
-Iz podanega izraza (\ref{equ:izracun_kota_splosna}) je te"zko sklepati, kak"sen bo potek pomerjenega kota.
-Na tem mestu definirajmo napako merjenega kota:
-\begin{equation}
-\varepsilon=\varphi-\theta
-\end{equation}
-
-Poglejmo si analiti"cen potek napake.  S spodaj opisanim postopkom se bomo izognili numeri"cnemu ra"cunanju funkcije $\arctan$.
-
-Signala $sin$ in $cos$ imata periodo $360^\circ$. Iz tega sledi, da bo tudi $\varepsilon$ imel periodo $360^\circ $. Pri"cakujem, da bo potek napake $\varepsilon$ v obliki :
-\begin{equation}
-\label{equ:nastavek}
-\varepsilon=A_0+A_1 \cos \theta +B_1 \sin \theta+A_2 \cos 2\theta +B_2 \sin 2\theta
-\end{equation}
-Tak nastavek sem vzel zaradi predvidene napake v podatkovnih listih citeAM8192.
-Za pribli"zek napake izraz  (\ref{equ:izracun_kota_splosna}) razvijmo v Taylorjevo vrsto po kotu $\theta$. V Taylorjevo vrsto razvjemo tudi nastavek pri"cakovanega poteka. Zaradi aproksimacije poteka merjenega kota se zadovoljimo z razvojem do petega reda. Za poenostavitev se bom ekscentri"cnosti lotil posamezno. V naslednjih podpoglavjih bom prikazal analiti"cne rezultate posameznega harmonika. Izpeljavo bom le teoreti"cno opisal.
-
-Oba izraza (\ref{equ:izracun_kota_splosna} in \ref{equ:nastavek} )razvijem do petega reda Taylorjeve vrste  po kotu $\theta$. Z zdru"zitvijo posameznih potenc $\theta$, pridobimo sistem petih en"cb s petimi neznankami. S tem pridobim neznane faktorje $A_0$, $A_1$, $A_2$, $B_1$ in $B_2$. S poznavanjem teh faktorjev lahko ocenimo ka"skni bodo poteki posameznih harmonikov, ob posameznih ekscentri"cnostih. Te rezultate Taylorjeve vrste lahko upo"stevam le v okolici ni"cle. Izrazi so izpeljani za stati"cni ekscentri"cnosti ter dinami"cno ekscentri"cnost v smeri x. Potekov dinami"cne ekscentri"cnosti v smeri y ni, saj ta ne nastopa v izrazu (\ref{equ:izracun_kota_splosna}).
-\subsection{Aproksimacija pomerjenega kota ob stati"cni ekscentri"cnosti x}
-V izrazu (\ref{equ:izracun_kota_splosna}) upo"stevamo le stati"cno ekscentri"cnost $\Delta x_s$.
-\begin{equation}
-\label{equ:izracun_kota_xs}
-\varphi=\arctan \frac{r_0 \sin\theta +\Delta x_s \cos\theta}{r_0 \cos\theta +\Delta x_s \cos\theta}
-\end{equation}
-Z aproksimacijo po izrazu (\ref{equ:nastavek}) pridobimo koeficiente posameznega harmonika
+Sedaj se osredotočimo na potek napake ob izraženi statični ekscentričnosti v smeri x. Signala $sin$ in $cos$ imate naslednji potek:
 
 \begin{eqnarray}
-&A_0=\frac{-90 r_0^2  \Delta y_s (r_0^5+29 r_0^4 \Delta y_s+132 r_0^3  \Delta y_s^2+208 r_0 ^2  \Delta y_s^3+156 r_0  \Delta y_s^4+52 \Delta y_s^5)}{\pi (r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^4}+\arctan \frac{ \Delta y_s}{r_0+ \Delta y_s}\\
-&A_1=\frac{2280 r_0^2  \Delta y_s^2(r_0^4+5 r_0^3  \Delta y_s+8 r_0^2  \Delta y_s^2+6 r_0  \Delta y_s^3+2 \Delta y_s^4)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^4}\\
-&B_1=-\frac{240 \Delta y_s^3(7r_0^3+18 r_0^2  \Delta y_s+18 r_0^2  \Delta y_s+18 r_0  \Delta y_s^2+8 \Delta y_s^3)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^3}\\
-&A_2=\frac{90 r_0^2  \Delta y_s (r_0^5-3 r_0^4 \Delta y_s-28 r_0^3  \Delta y_s^2-48r_0 ^2  \Delta y_s^3-36 r_0  \Delta y_s^4-12 \Delta y_s^5)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^4}\\
-&B_2=\frac{30 \Delta y_s (-3r_0^5-18 r_0^4 \Delta y_s-20 r_0^3  \Delta y_s^2 +12 r_0  \Delta y_s^4+8 \Delta y_s^5)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^3}\\
+\label{xs_analit}
+sin = r_0 \sin(\theta) + \Delta x_s \cos(\theta) \\
+cos = r_0 \cos(\theta) + \Delta x_s \cos(\theta)
 \end{eqnarray}
-Oglejmo si sliko potekov posameznih harmonikov.
-\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju stati"cne ekscentri"cnosti v x-osi}{potek_analitika_xs}
-Iz rezultatov lahko pri"cakujemo nara"s"canje drugega harmonika ter nara"s"canje enosmerne komponete.
-\subsection{Aproksimacija pomerjenega kota ob stati"cni ekscentri"cnosti y}
-V izrazu (\ref{equ:izracun_kota_splosna}) upo"stevamo le stati"cno ekscentri"cnost $\Delta y_s$.
+
+Kot $\varphi$ bomo pridobili s funkcijo atan2(). Zgornja izraza vstavimo v atan2() in ju delimo z $r_0$.
+ 
+ \begin{equation}
+ \varphi = \mathrm{atan2}(\sin(\theta) + \frac{\Delta x_s}{r_0} \cos(\theta),\cos(\theta) + \frac{\Delta x_s}{r_0} \cos(\theta))
+ \end{equation}
+ 
+ Napako sem izpelajal po enakih postopkih kot zgoraj.
+ Napaka sem izrazil z vrsto:
+ 
+ \begin{equation}
+ \label{vrsta:xs}
+ \varepsilon_p = \mathrm{atan}\frac{-\Delta x _s}{\Delta x _s+2r_0}+\frac{180}{\pi} \sum_{n=1}^{\infty}\frac{1}{n} (\frac{\Delta x _s}{\sqrt{\Delta x _s^2+2 r_0 \Delta x _s+2r_0^2}})^n \sin (2n \theta+n (90+ \mathrm{ atan}(\frac{\Delta x _s+r_0}{r_0})))
+ \end{equation}
+ 
+ Pri čemer:
+ $$\Delta x_s > -r_0$$
+ 
+ Napaka se je izrazila z enosmerno komponento in drugim harmonikom, po pričakovanju. V enačbi (\ref{xs_analit}) vidimo, da nastopati v analognih signalih razilčni amplitudi in fazna zamika. Napaka  je bila pričakovana.
+ 
+ 
+ 
+ \section{Potek napake pri statični ekscentričnosti v smeri y}
+ 
+ Postopek enako ponovimo za ekscentričnost v y smeri. Pričakujem, da se bo napaka izrazila podobno kot, pri ekscentričnosti v x smeri.
+ 
+ Izpeljal sem napako z vrsto in rezultat je: 
+ 
+  \begin{equation}
+   \label{vrsta:ys}
+ \varepsilon_p = \mathrm{atan}\frac{-\Delta y _s}{\Delta y _s+2r_0}+\frac{180}{\pi} \sum_{n=1}^{\infty}\frac{1}{n} (\frac{\Delta y _s}{\sqrt{\Delta y _s^2+2 r_0 \Delta y _s+2r_0^2}})^n \sin (2n \theta+n (90+ \mathrm{ atan}(\frac{\Delta y _s+r_0}{r_0})))
+ \end{equation}
+
+ Pri čemer:
+$$\Delta y_s > -r_0$$
+
+\section{Potek napake pri dinamični ekscentričnosti v smeri x}
+
+Analogna signala se izrazita z naslednjim potekom:
+
+\begin{eqnarray}
+sin = r_0 \sin(\theta) - \Delta x_d \\
+cos = r_0 \cos(\theta) - \Delta x_d
+\end{eqnarray}
+
+Signala nas spomnita na poteka, ki smo ju obravnavali že v poglavju \ref{2_offseta}, zato bom tu napisal le rezultat. Razlikuje se le v predznaku.
+
 \begin{equation}
-\label{equ:izracun_kota_ys}
-\varphi=\arctan \frac{r_0 \sin\theta +\Delta y_s \sin\theta}{r_0 \cos\theta +\Delta y_s \sin\theta}
+\varepsilon_p=
+\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n}( \frac{-\sqrt{2}}{r_0}\Delta x_d)^n \sin (n \theta -  90 n)
 \end{equation}
-Z aproksimacijo po izrazu (\ref{equ:nastavek}) pridobimo koeficiente posameznega harmonika
-\begin{eqnarray}
-&A_0=\frac{-90 y_s (r_0^2-23r_0 y_s-24y _s^2)}{\pi r_0^3}\\
-&A_1=\frac{-1690 y_s^2(r_0+y_s)}{\pi r_0^3}\\
-&A_2=\frac{90 y_s(r_0^2+9r_0y_s+8y_s^2)}{\pi r_0^3}\\
-&B_1=\frac{240 y_s^3}{\pi r_0^3}\\
-&B_2=\frac{30 (3 r_0^2y_s-4 y_s^3)}{\pi r_0^3}
-\end{eqnarray}
-Oglejmo si sliko potekov posameznih harmonikov.
-\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju stati"cne ekscentri"cnosti v y-osi}{potek_analitika_ys}
-Iz grafa je razvidno, da do enosmerna komponenta upadala, drugi harmonik bo najbolj izrazit.
-\subsection{Aproksimacija pomerjenega kota ob dinami"cni ekscentri"cnosti x}
-Izraz  (\ref{equ:izracun_kota_splosna}) kjer upo"stevamo le dinami"cno ekscentri"cnost se poenostavi v:
-\begin{eqnarray}
-&A_0=\frac{180(r_0 \Delta x_d(r_0^6-7r_0^5 \Delta x_d+18r_0^4 \Delta x_d^2-36r_0^2 \Delta x_d^4 +28r_0 \Delta x_d^5-8 \Delta x_d^6))}{\pi(r_0^2-2r_0 \Delta x_d+2 \Delta x_d^2)^4}-\arctan \frac{\Delta x_d}{r_0- \Delta x_d}\\
-&A_1=\frac{-180(r_0 \Delta x_d(r_0^6-8r_0^5 \Delta x_d+22r_0^4 \Delta x_d^2-44r_0^2 \Delta x_d^4 
-	+32r_0 \Delta x_d^5-8 \Delta x_d^6)}{\pi (r_0^2-2r_0 \Delta x_d+2 \Delta x_d^2)^4)}\\
-&A_2=\frac{-180(r_0^2 \Delta x_d^2 (r_0^4-4 r_0^3  \Delta x_d+8 r_0  \Delta x_d^3-4 
-	\Delta x_d^4)}{\pi (r_0^2-2 r_0  \Delta x_d+2  \Delta x_d^2)^4)}\\
-&B_1=\frac{60( \Delta x_d (3 r_0^5-18 r_0^4  \Delta x_d+64 r_0^3  \Delta x_d^2 -108 
-	r_0^2  \Delta x_d^3+84 r_0  \Delta x_d^4-32  \Delta x_d^5))}{\pi (r_0^2-2 r_0 
-	\Delta x_d+2  \Delta x_d^2)^3}\\
-&B_2=\frac{60 (2  \Delta x_d^3 (-4 r_0^3+9 r_0^2  \Delta x_d-6 r_0  \Delta x_d^2+2  \Delta x_d
-	^3))}{\pi(r_0^2-2 r_0  \Delta x_d+2  \Delta x_d^2)^3}
-\end{eqnarray}
-\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju dinami"cne ekscentri"cnosti v x-osi}{potek_analitika_xd}
-S slike \ref{potek_analitika_xd} vidimo da bo izrazit le prvi harmonik, ki pri majhnih odmikih nara"s"ca linearno, kar je pri"cakovano po citeAM8192. 
 
-V tem poglavju smo si ogledali kak"sno magnetno polje ustvari magnet in kako ga Hall-ove sonde zaznavajo. magnetno polje smo aproksimirali z ravnino in si ogledali poteke napake.  Spoznali smo tudi kako se bo izra"zala napaka pri posamezni ekscentri"cnosti.
+
+$$|\Delta x_d|\leq \frac{r_0}{\sqrt{2}}$$
+
+
+V tem poglavju smo pogledali, poteke napake ob deformaciji analognih signalov. Ogledali smo si tudi, kako se bo napaka izrazila ob ekcentričnosti senzorja ter magneta. Za majhne odmike, je dovolj upoštevanje le prvega člena vrste, pri katerih lahko tudi predpostavimo linearno naraščanje napake. V nadaljevanju bom velikost harmonika v odvistnosti od povzročene ekscentričnosti aproksimiral s kubičnim polinomom, ter jih primerjal z izpeljavo v tem poglavju. Harmoniki katerih potek je npr racionalna funkcija (primer (\ref{vrsta:xs})), bom razvil v Taylorjevo vrsto do tretje stopnje, katero bom lahko primerjal s kubičnimi polinomi.
+ 
 
 
 
@@ -758,6 +734,97 @@ V tem poglavju smo si ogledali kak"sno magnetno polje ustvari magnet in kako ga 
 
 
 
+%\section{Analiti"cen potek napake posamezne ekscentri"cnosti}
+%
+%S poznavanjem potekov polja posamezne sonde sedaj s funkcijo $\arctan$ izra"cunamo kot.
+%
+%\begin{equation}
+%\label{equ:izracun_kota_splosna}
+%\varphi(\theta,\Delta x_s, \Delta y_s, \Delta x_d)=\arctan\frac{B_y}{B_x}=\arctan\frac{r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d}{r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d}
+%\end{equation}
+%
+%
+%
+%
+%Iz podanega izraza (\ref{equ:izracun_kota_splosna}) je te"zko sklepati, kak"sen bo potek pomerjenega kota.
+%Na tem mestu definirajmo napako merjenega kota:
+%\begin{equation}
+%\varepsilon=\varphi-\theta
+%\end{equation}
+%
+%Poglejmo si analiti"cen potek napake.  S spodaj opisanim postopkom se bomo izognili numeri"cnemu ra"cunanju funkcije $\arctan$.
+%
+%Signala $sin$ in $cos$ imata periodo $360^\circ$. Iz tega sledi, da bo tudi $\varepsilon$ imel periodo $360^\circ $. Pri"cakujem, da bo potek napake $\varepsilon$ v obliki :
+%\begin{equation}
+%\label{equ:nastavek}
+%\varepsilon=A_0+A_1 \cos \theta +B_1 \sin \theta+A_2 \cos 2\theta +B_2 \sin 2\theta
+%\end{equation}
+%Tak nastavek sem vzel zaradi predvidene napake v podatkovnih listih citeAM8192.
+%Za pribli"zek napake izraz  (\ref{equ:izracun_kota_splosna}) razvijmo v Taylorjevo vrsto po kotu $\theta$. V Taylorjevo vrsto razvjemo tudi nastavek pri"cakovanega poteka. Zaradi aproksimacije poteka merjenega kota se zadovoljimo z razvojem do petega reda. Za poenostavitev se bom ekscentri"cnosti lotil posamezno. V naslednjih podpoglavjih bom prikazal analiti"cne rezultate posameznega harmonika. Izpeljavo bom le teoreti"cno opisal.
+%
+%Oba izraza (\ref{equ:izracun_kota_splosna} in \ref{equ:nastavek} )razvijem do petega reda Taylorjeve vrste  po kotu $\theta$. Z zdru"zitvijo posameznih potenc $\theta$, pridobimo sistem petih en"cb s petimi neznankami. S tem pridobim neznane faktorje $A_0$, $A_1$, $A_2$, $B_1$ in $B_2$. S poznavanjem teh faktorjev lahko ocenimo ka"skni bodo poteki posameznih harmonikov, ob posameznih ekscentri"cnostih. Te rezultate Taylorjeve vrste lahko upo"stevam le v okolici ni"cle. Izrazi so izpeljani za stati"cni ekscentri"cnosti ter dinami"cno ekscentri"cnost v smeri x. Potekov dinami"cne ekscentri"cnosti v smeri y ni, saj ta ne nastopa v izrazu (\ref{equ:izracun_kota_splosna}).
+%\subsection{Aproksimacija pomerjenega kota ob stati"cni ekscentri"cnosti x}
+%V izrazu (\ref{equ:izracun_kota_splosna}) upo"stevamo le stati"cno ekscentri"cnost $\Delta x_s$.
+%\begin{equation}
+%\label{equ:izracun_kota_xs}
+%\varphi=\arctan \frac{r_0 \sin\theta +\Delta x_s \cos\theta}{r_0 \cos\theta +\Delta x_s \cos\theta}
+%\end{equation}
+%Z aproksimacijo po izrazu (\ref{equ:nastavek}) pridobimo koeficiente posameznega harmonika
+%
+%\begin{eqnarray}
+%&A_0=\frac{-90 r_0^2  \Delta y_s (r_0^5+29 r_0^4 \Delta y_s+132 r_0^3  \Delta y_s^2+208 r_0 ^2  \Delta y_s^3+156 r_0  \Delta y_s^4+52 \Delta y_s^5)}{\pi (r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^4}+\arctan \frac{ \Delta y_s}{r_0+ \Delta y_s}\\
+%&A_1=\frac{2280 r_0^2  \Delta y_s^2(r_0^4+5 r_0^3  \Delta y_s+8 r_0^2  \Delta y_s^2+6 r_0  \Delta y_s^3+2 \Delta y_s^4)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^4}\\
+%&B_1=-\frac{240 \Delta y_s^3(7r_0^3+18 r_0^2  \Delta y_s+18 r_0^2  \Delta y_s+18 r_0  \Delta y_s^2+8 \Delta y_s^3)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^3}\\
+%&A_2=\frac{90 r_0^2  \Delta y_s (r_0^5-3 r_0^4 \Delta y_s-28 r_0^3  \Delta y_s^2-48r_0 ^2  \Delta y_s^3-36 r_0  \Delta y_s^4-12 \Delta y_s^5)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^4}\\
+%&B_2=\frac{30 \Delta y_s (-3r_0^5-18 r_0^4 \Delta y_s-20 r_0^3  \Delta y_s^2 +12 r_0  \Delta y_s^4+8 \Delta y_s^5)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^3}\\
+%\end{eqnarray}
+%Oglejmo si sliko potekov posameznih harmonikov.
+%\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju stati"cne ekscentri"cnosti v x-osi}{potek_analitika_xs}
+%Iz rezultatov lahko pri"cakujemo nara"s"canje drugega harmonika ter nara"s"canje enosmerne komponete.
+%\subsection{Aproksimacija pomerjenega kota ob stati"cni ekscentri"cnosti y}
+%V izrazu (\ref{equ:izracun_kota_splosna}) upo"stevamo le stati"cno ekscentri"cnost $\Delta y_s$.
+%\begin{equation}
+%\label{equ:izracun_kota_ys}
+%\varphi=\arctan \frac{r_0 \sin\theta +\Delta y_s \sin\theta}{r_0 \cos\theta +\Delta y_s \sin\theta}
+%\end{equation}
+%Z aproksimacijo po izrazu (\ref{equ:nastavek}) pridobimo koeficiente posameznega harmonika
+%\begin{eqnarray}
+%&A_0=\frac{-90 y_s (r_0^2-23r_0 y_s-24y _s^2)}{\pi r_0^3}\\
+%&A_1=\frac{-1690 y_s^2(r_0+y_s)}{\pi r_0^3}\\
+%&A_2=\frac{90 y_s(r_0^2+9r_0y_s+8y_s^2)}{\pi r_0^3}\\
+%&B_1=\frac{240 y_s^3}{\pi r_0^3}\\
+%&B_2=\frac{30 (3 r_0^2y_s-4 y_s^3)}{\pi r_0^3}
+%\end{eqnarray}
+%Oglejmo si sliko potekov posameznih harmonikov.
+%\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju stati"cne ekscentri"cnosti v y-osi}{potek_analitika_ys}
+%Iz grafa je razvidno, da do enosmerna komponenta upadala, drugi harmonik bo najbolj izrazit.
+%\subsection{Aproksimacija pomerjenega kota ob dinami"cni ekscentri"cnosti x}
+%Izraz  (\ref{equ:izracun_kota_splosna}) kjer upo"stevamo le dinami"cno ekscentri"cnost se poenostavi v:
+%\begin{eqnarray}
+%&A_0=\frac{180(r_0 \Delta x_d(r_0^6-7r_0^5 \Delta x_d+18r_0^4 \Delta x_d^2-36r_0^2 \Delta x_d^4 +28r_0 \Delta x_d^5-8 \Delta x_d^6))}{\pi(r_0^2-2r_0 \Delta x_d+2 \Delta x_d^2)^4}-\arctan \frac{\Delta x_d}{r_0- \Delta x_d}\\
+%&A_1=\frac{-180(r_0 \Delta x_d(r_0^6-8r_0^5 \Delta x_d+22r_0^4 \Delta x_d^2-44r_0^2 \Delta x_d^4 
+%	+32r_0 \Delta x_d^5-8 \Delta x_d^6)}{\pi (r_0^2-2r_0 \Delta x_d+2 \Delta x_d^2)^4)}\\
+%&A_2=\frac{-180(r_0^2 \Delta x_d^2 (r_0^4-4 r_0^3  \Delta x_d+8 r_0  \Delta x_d^3-4 
+%	\Delta x_d^4)}{\pi (r_0^2-2 r_0  \Delta x_d+2  \Delta x_d^2)^4)}\\
+%&B_1=\frac{60( \Delta x_d (3 r_0^5-18 r_0^4  \Delta x_d+64 r_0^3  \Delta x_d^2 -108 
+%	r_0^2  \Delta x_d^3+84 r_0  \Delta x_d^4-32  \Delta x_d^5))}{\pi (r_0^2-2 r_0 
+%	\Delta x_d+2  \Delta x_d^2)^3}\\
+%&B_2=\frac{60 (2  \Delta x_d^3 (-4 r_0^3+9 r_0^2  \Delta x_d-6 r_0  \Delta x_d^2+2  \Delta x_d
+%	^3))}{\pi(r_0^2-2 r_0  \Delta x_d+2  \Delta x_d^2)^3}
+%\end{eqnarray}
+%\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju dinami"cne ekscentri"cnosti v x-osi}{potek_analitika_xd}
+%S slike \ref{potek_analitika_xd} vidimo da bo izrazit le prvi harmonik, ki pri majhnih odmikih nara"s"ca linearno, kar je pri"cakovano po citeAM8192. 
+%
+%V tem poglavju smo si ogledali kak"sno magnetno polje ustvari magnet in kako ga Hall-ove sonde zaznavajo. magnetno polje smo aproksimirali z ravnino in si ogledali poteke napake.  Spoznali smo tudi kako se bo izra"zala napaka pri posamezni ekscentri"cnosti.
+%
+%
+%
+%
+%
+%
+%
+%
+%
 
 
 

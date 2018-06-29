@@ -1,7 +1,7 @@
 clear
 theta = linspace(0,2*pi,8192);
 
-x = -0.1;
+x = 0.1;
 
 ysKot= atan2(sin(theta)+x*sin(theta),cos(theta)+x*sin(theta));
 ref = atan2(sin(theta),cos(theta));
@@ -19,6 +19,31 @@ for n = 1:15
     
 end
 
-figure(1)
-plot(theta',ysErr'-pred')
+scrsz = get(0,'ScreenSize');
+figure('Position', ...
+       [10 scrsz(4)-10-80-600 800 600]);
+axes1 = axes('Parent',gcf,...
+        'YGrid','on',...
+        'XGrid','on',...
+        'FontSize',16,...
+        'FontName','Times New Roman');
+plot(theta*180/pi,ysErr*180/pi,'LineWidth',2);
+axis( [0,360,-Inf,Inf])
 grid on
+xlabel('\theta / ^\circ')
+ylabel('\epsilon  / ^\circ')
+
+
+
+figure('Position', ...
+       [10 scrsz(4)-10-80-600 800 600]);
+axes1 = axes('Parent',gcf,...
+        'YGrid','on',...
+        'XGrid','on',...
+        'FontSize',16,...
+        'FontName','Times New Roman');
+plot(theta*180/pi,(ysErr-pred)*180/pi,'LineWidth',2);
+axis( [0,360,-Inf,Inf])
+grid on
+xlabel('\theta / ^\circ')
+ylabel('\epsilon-\epsilon_p  / ^\circ')
