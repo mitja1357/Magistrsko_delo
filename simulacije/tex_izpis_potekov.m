@@ -5,12 +5,12 @@
 % enacbe kar je v command window skopiras v eqarray v latex in lahko
 % compilas
 %
-
+% 2018.07.02 dodal if stavek ki C0 popravi predznak
+function tex_izpis_potekov(meritev)
 load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
 
-meritev = 'lin_xd';
-
+% meritev = 'lin_xd';
 
 
 eval(strcat('podatki=',meritev,';'))
@@ -23,6 +23,9 @@ fftp= mojfft(podatki.protocol);
 
 for i = 1:5
     C0 = fftp{1, 1}(:,i);
+    if i==1
+        C0 = C0.*cosd(fftp{1, 2}(:,1));
+    end
     fitC0=polyfit(x,C0,3);
     potencaC0 = floor(log10(abs(fitC0)));
     fitC0str = fitC0.*10.^-potencaC0;

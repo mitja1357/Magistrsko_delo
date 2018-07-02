@@ -3,12 +3,17 @@
 % funkcija izrise potek napake najblizje 0,24mm zaradi razmerja proti 
 % radiju hallovih sond. Razmerje je tako 0.1
 % izrisem napako in poteka analognih signalov
-
+% 
+% 
+% 2018.07.02 dodal da se mi shrani v mapo na racunalniku
+function potek_napake(meritev)
 load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
 
-meritev = 'lin_xd';
-
+% meritev = 'lin_xd';
+filename= ...
+    ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
+    upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
 eval(strcat('podatki=',meritev,';'))
 
 el = find(min(abs(podatki.displacement-0.24))== ...
@@ -32,6 +37,7 @@ axis( [0,360,-Inf,Inf])
 grid on
 xlabel('\theta / ^\circ')
 ylabel('\epsilon / ^\circ')
+saveas(gcf,[filename, 'napaka'],'epsc')
 
 figure('Name', meritev ,'Position', ...
        [10 scrsz(4)-10-80-600 800 600]);
@@ -46,6 +52,8 @@ axis( [0,360,-Inf,Inf])
 grid on
 xlabel('\theta / ^\circ')
 ylabel('B / mT')
+saveas(gcf,[filename, 'sincos'],'epsc')
+
 
 
 fftp = mojfft(prot);
@@ -63,6 +71,7 @@ bar(0:4,fftp{1}(1:5),'LineWidth',2);
 grid on
 xlabel('harmonik')
 ylabel('amplituda harmonika / ^\circ')
+saveas(gcf,[filename, 'fft'],'epsc')
 
 
 
@@ -71,3 +80,4 @@ ylabel('amplituda harmonika / ^\circ')
 clear lin_xs lin_xd lin_ys lin_yd real_xs real_xd real_ys real_yd ...
     meritev_xs meritev_ys meritev_xd meritev_zs
 clear el ref prot Sin Cos scrsz axes1 podatki meritev fftp
+end

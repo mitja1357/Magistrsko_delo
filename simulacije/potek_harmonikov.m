@@ -2,13 +2,17 @@
 % Notranje Gorice 2018.06.29 
 % funkcija narise graf potekov prvih stirih harmonikov glede na katero
 % meritev to zelimo
-
+%
+% 2018.07.02 dodal da se mi shrani v mapo na racunalniku
+function potek_harmonikov(meritev)
 load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
 
-meritev = 'lin_ys';
+% meritev = 'lin_ys';
 
-
+filename= ...
+    ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
+    upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
 
 eval(strcat('podatki=',meritev,';'))
 
@@ -36,9 +40,9 @@ axis( [0,0.5,-Inf,Inf])
 grid on
 xlabel([tx,' / mm'])
 ylabel('\epsilon / ^\circ')
-
+saveas(gcf,[filename, 'potek'],'epsc')
 clear lin_xs lin_xd lin_ys lin_yd real_xs real_xd real_ys real_yd ...
     meritev_xs meritev_ys meritev_xd meritev_zs
 clear meritev podatki tx fftp y x scrsz axes1
 
-
+end

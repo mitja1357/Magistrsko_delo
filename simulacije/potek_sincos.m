@@ -2,12 +2,17 @@
 % Notranje Gorice 2018.06.29 
 % funkcija izrise potek analognih signalov offseta in prvega harmonika kako
 % se spreminja od ekscentricnosti ki jo vpises kot vhod
+%
+% 2018.07.02 dodal da se mi shrani v mapo na racunalniku
+function potek_sincos(meritev)
 
 load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
 
-meritev = 'lin_xd';
-
+% meritev = 'lin_xd';
+filename= ...
+    ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
+    upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
 eval(strcat('podatki=',meritev,';'))
 tx = ['\Delta ',meritev(end-1),'_',meritev(end)];
 
@@ -45,6 +50,8 @@ legend('sin','cos','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
 ylabel('B / mT')
+saveas(gcf,[filename, 'sincos_off'],'epsc')
+
 
 figure('Name', [meritev, ' 1st harmonic'] ,'Position', ...
        [10 scrsz(4)-10-80-600 800 600]);
@@ -64,6 +71,8 @@ legend('sin','cos','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
 ylabel('B / mT')
+saveas(gcf,[filename, 'sincos_amp'],'epsc')
+
 
 figure('Name', [meritev, ' 1st harmonic phase'] ,'Position', ...
        [10 scrsz(4)-10-80-600 800 600]);
@@ -82,7 +91,11 @@ legend('sin','cos','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
 ylabel('fazni zamik / ^\circ')
+saveas(gcf,[filename, 'sincos_phase'],'epsc')
+
 
 
 
 clear axes1 scrsz meritev x y1st yOff tx y1stPh
+
+end
