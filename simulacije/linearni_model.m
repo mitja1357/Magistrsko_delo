@@ -1,4 +1,5 @@
-theta=linspace(0,360,8192);
+n = 8192;
+theta = linspace(0,360-360/(n),n);
 eks={'xs','ys','xd','yd'};
 
 
@@ -50,5 +51,5 @@ end
 
 clear j L T Fs n dim Y P2 P1 tmp X_tmp Y_tmp Zmesh ekcentric RM44_lin_all 
 clear protocol_lin_all fft_lin_all Sin_all Cos_all displace xd xs yd ys 
-clear Ref_all theta r0 eks ans
+clear Ref_all theta r0 eks ans n
 

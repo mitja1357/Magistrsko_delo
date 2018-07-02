@@ -7,11 +7,11 @@
 load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
 
-meritev = 'lin_ys';
+meritev = 'lin_xd';
 
 eval(strcat('podatki=',meritev,';'))
 
-el = find(min(abs(podatki.displacement-0.0))== ...
+el = find(min(abs(podatki.displacement-0.24))== ...
     abs(podatki.displacement-0.24));
 podatki.displacement(el)
 ref = podatki.ref(el, :);
@@ -41,7 +41,7 @@ axes1 = axes('Parent',gcf,...
         'FontSize',16,...
         'FontName','Times New Roman');
 plot(ref,Sin,ref,Cos,'LineWidth',2);
-legend('sin','cos','Location','northwest')
+legend('sin','cos','Location','northeast')
 axis( [0,360,-Inf,Inf])
 grid on
 xlabel('\theta / ^\circ')

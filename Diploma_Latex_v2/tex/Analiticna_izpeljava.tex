@@ -359,10 +359,10 @@ Zajeta signala bom od tu naprej imenoval sinus ($sin$) in cosinu ($cos$), ker je
 
 \subsection{Sprememba magnetnega polja zaradi ekscentri"cnosti}
 
-Oglejmo si primer kak"sno polje zajameti Hall-ovi sondi, ko ekscentri"cnosti ni. $sin$ in $cos$ izraza se poenostavita in dobimo poteka v obliki sinusa ter kosinusa z enako amplitudo $r_0$ (Slika \ref{./LIN/sim_lin_polje_xd_000u_BxBy}).
+Oglejmo si primer kak"sno polje zajameti Hall-ovi sondi, ko ekscentri"cnosti ni. $sin$ in $cos$ izraza se poenostavita in dobimo poteka v obliki sinusa ter kosinusa z enako amplitudo (Slika \ref{./Napake/sincos_00}).
 
-\slikaeps{Poteka $sin$ in $cos$ brez ekscentri"cnosti}{./LIN/sim_lin_polje_xd_000u_BxBy}
-
+\slikaeps{Poteka $sin$ in $cos$ brez ekscentri"cnosti pri $r_0 = 1$ mm}{./Napake/sincos_00}
+\newpage
 Upo"stevajmo sedaj le stati"cni ekscentri"cnosti $\Delta x_s$ in $\Delta y_s$. $\Delta x_d$ postavimo na 0.   Ena"cbi (\ref{equ:Bx_splosna}) in (\ref{equ:By_splosna}) lahko preuredimo v izraza:
 
 
@@ -374,10 +374,10 @@ cos(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{(r_0+\Delta x_s)^2+\Delta y_s^2}\c
 sin(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{\Delta x_s^2+(r_0+\Delta y_s)^2} \cos(\theta - 90 +\arctan \frac{\Delta x_s}{r_0+\Delta y_s})
 \end{equation}
 
-Iz njiju vidimo spremenjena poteka. Signaloma se je spremenila amplituda in fazni zamik (Slika \ref{./LIN/sim_lin_polje_xs_200u_BxBy}).
+Iz njiju vidimo spremenjena poteka. Signaloma se je spremenila amplituda in fazni zamik (Slika \ref{./Napake/sincos_xs}).
 
-\slikaeps{Poteka $sin$ in $cos$ z upo"stevanjem 0,2 mm stati"cni ekscentri"cnosti v x-osi }{./LIN/sim_lin_polje_xs_200u_BxBy}
-
+\slikaeps{Poteka $sin$ in $cos$ pri $r_0 = 1$ mm in upo"stevanjem 0,1 mm stati"cni ekscentri"cnosti v x-osi }{./Napake/sincos_xs}
+\newpage
 Postavimo sedaj vrednosti $\Delta x_s$ in $\Delta_ys$ na 0, $\Delta x_d$ predpostavimo da ni 0.
 \begin{equation}
 \label{equ:Bx_din}
@@ -387,14 +387,9 @@ cos(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta-\Delta x_d
 \label{equ:By_din}
 sin(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta-\Delta x_d
 \end{equation}
-Polji obdr"zita enako amplitudo ter fazo, vendar dobita enosmerno komponento (Slika \ref{./LIN/sim_lin_polje_xd_200u_BxBy}).
-\slikaeps{Poteka $sin$ in $cos$ z upo"stevanjem 0,2 mm dinami"cne ekscentri"cnosti v x-osi}{./LIN/sim_lin_polje_xd_200u_BxBy}
-
-
-
-
-
-\section{Premik senzorja po  v z smeri}
+Polji obdr"zita enako amplitudo ter fazo, vendar dobita enosmerno komponento (Slika \ref{./Napake/sincos_xd}).
+\slikaeps{Poteka $sin$ in $cos$ pri $r_0 = 1$ mm in upo"stevanjem 0,1 dinami"cne ekscentri"cnosti v x-osi}{./Napake/sincos_xd}\newpage
+\section{Premik senzorja v z smeri}
 
 Poglejmo si "se kako vpliva sprememba premikanja senzorja v z smeri.
 Pri magnetnem polju aprokismiranem z ravnino (\ref{equ:lin_polje}), se gostota magnetnega polja pri obeh sondah spreminja enako. To se v ena"cbah odra"za le kot dodaten faktor. Upo"stevajmo spremembo polja zaradi premika senzorja po z osi. Zajeti polji imata naslednji potek:

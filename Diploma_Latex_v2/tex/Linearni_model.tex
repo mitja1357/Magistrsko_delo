@@ -5,14 +5,14 @@ V prej"snjem poglavju smo magnetno polje magneta aproksimirali z ravnino ter nap
 \label{equ:lin_polje}
 B(x,y)= x
 \end{equation}
-Hall-ovi sondi sti postavljeni na kro"znico z radijem 2,4 mm.
+Hall-ovi sondi sti postavljeni na kro"znico z radijem 2,4 mm \cite{AM8192}.
 
 
 \section{Brez napake}
 
 Za za"cetek si poglejmo idealno montriran tako senzor kot magnet. Signala $sin$ in $cos$ imata enaki amplitudi in sta fazno zamaknjena za $90^{\circ}$. Napaka $\varepsilon$, ki se pojavi pri izra"cunu je tako le numeri"cna napaka funkcije atan2d (Slika \ref{./LIN/lin_00_napaka}).
-\slikaeps{Potek signalov $sin$ in $cos$ ob idealni montaži}{./LIN/lin_00_sincos}
-\slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim magnetnim poljem pri idealni monta"zi}{./LIN/lin_00_napaka}
+\slikaeps{Potek signalov $sin$ in $cos$ brez ekscentričnosti}{./LIN/lin_00_sincos}
+\slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim magnetnim poljem brez ekscentričnosti}{./LIN/lin_00_napaka}
 
 Numeri"cno napako lahko na pri"cakovano napako zaradi ekscnetri"cnosti zanemarim.
 
@@ -24,6 +24,8 @@ Oglejmo si rezultate simulacij stati"cne ekscentri"cnosti v smeri x. Po pri"cako
  
 \slikaeps{Signala $sin$ in $cos$ pri simulacijah z linearnim poljem pri 0,24 mm stati"cne ekscentri"cnosti v smeri x}{./LIN/lin_xs_sincos}
 \newpage
+
+
 Napaka $\varepsilon$  je prikazana na sliki \ref{./LIN/lin_xs_napaka}.
 
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0,24 mm stati"cne ekscentri"cnosti v smeri x}{./LIN/lin_xs_napaka}
@@ -31,7 +33,17 @@ Napaka $\varepsilon$  je prikazana na sliki \ref{./LIN/lin_xs_napaka}.
 Napako razvijmo v Fourierovo vrsto in pridobimo amplitude posameznih harmonikov napake(Slika \ref{./LIN/lin_xs_fft}).
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z linearnim poljem pri 0,24 mm stati"cne ekscentri"cnosti v smeri x}{./LIN/lin_xs_fft}
 
-Po pri"cakovanjih najbolj izstopata enosmerna komponenta (harmonik 0) in drugi harmonik. Na sliki \ref{./LIN/lin_xs_potek} vidimo odvisnost amplitud od spreminjanja ekscentri"cnosti.
+Po pri"cakovanjih najbolj izstopata enosmerna komponenta (harmonik 0) in drugi harmonik.
+
+
+\subsection{Sprememba $sin$, $cos$ ter napake od $\Delta_xs$}
+
+Poglejmo tudi kako se bo spreminjala amplituda in faza osnovnega harmonika ter enosmerna komponenta signalov $sin$ in $cos$, od spremembi ekscentričnosti. Potek amplitude  osnovnega harmonika je prikazan na sliki \ref{./LIN/lin_xs_sincos_amp}. Amplituda $cos$ se spreminja hitreje, kot amplituda $sin$ (\ref{equ:Bx_stat})(\ref{equ:By_stat}).
+
+\slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri simulacijah z linearnim poljem stati"cne ekscentri"cnosti v smeri x}{./LIN/lin_xs_sincos_amp}
+
+
+Na sliki \ref{./LIN/lin_xs_potek} vidimo odvisnost amplitud od spreminjanja ekscentri"cnosti.
 
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od stati"cne ekscentri"cnosti v smeri x}{./LIN/lin_xs_potek}
 

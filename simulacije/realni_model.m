@@ -1,5 +1,6 @@
 % clear
-theta=linspace(0,360,8192);
+n = 8192;
+theta = linspace(0,360-360/(n),n);
 eks={'xs','ys','xd','yd'};
 %load('Rezultati_meritve');
 load('X_tmp.mat');
@@ -130,7 +131,7 @@ end
 clear cos1 cos2 sin1 sin2 di complex_H1 complex_H2
 clear j L T Fs n dim Y P2 P1 tmp X_tmp Y_tmp Zmesh ekcentric RM44_real_all 
 clear protocol_real_all fft_real_all Sin_all Cos_all displace xd xs yd ys 
-clear theta r0 eks ans r0 Ref_all
+clear theta r0 eks ans r0 Ref_all n
 
 
 

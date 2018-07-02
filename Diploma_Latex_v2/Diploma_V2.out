@@ -7,7 +7,7 @@
 \BOOKMARK [1][-]{section.2.1}{Definicija gostote magnetnega polja Bz}{chapter.2}% 7
 \BOOKMARK [1][-]{section.2.2}{Postavitev Hall-ovih sond za zajem polja in pomerjeno polje v odvistnosti od ekscentricnosti}{chapter.2}% 8
 \BOOKMARK [2][-]{subsection.2.2.1}{Sprememba magnetnega polja zaradi ekscentricnosti}{section.2.2}% 9
-\BOOKMARK [1][-]{section.2.3}{Premik senzorja po v z smeri}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Premik senzorja v z smeri}{chapter.2}% 10
 \BOOKMARK [0][-]{chapter.3}{Vpliv deformacije signala sinus in cosinus na izhodno napako}{}% 11
 \BOOKMARK [1][-]{section.3.1}{Razlicne amplitude}{chapter.3}% 12
 \BOOKMARK [1][-]{section.3.2}{Razlicne enosmerne komponente}{chapter.3}% 13
@@ -23,5 +23,6 @@
 \BOOKMARK [0][-]{chapter.4}{Linearni model}{}% 23
 \BOOKMARK [1][-]{section.4.1}{Brez napake}{chapter.4}% 24
 \BOOKMARK [1][-]{section.4.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.4}{Dinamicna ekscentricnost}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.2.1}{Sprememba sin, cos ter napake od xs}{section.4.2}% 26
+\BOOKMARK [1][-]{section.4.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.4}{Dinamicna ekscentricnost}{chapter.4}% 28
