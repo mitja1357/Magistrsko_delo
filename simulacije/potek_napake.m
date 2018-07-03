@@ -10,7 +10,7 @@ function potek_napake(meritev)
 load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
 
-% meritev = 'lin_xd';
+% meritev = 'real_xd';
 filename= ...
     ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];

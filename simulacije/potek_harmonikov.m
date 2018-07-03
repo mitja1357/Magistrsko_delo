@@ -40,7 +40,7 @@ axis( [0,0.5,-Inf,Inf])
 grid on
 xlabel([tx,' / mm'])
 ylabel('\epsilon / ^\circ')
-saveas(gcf,[filename, 'potek'],'epsc')
+% saveas(gcf,[filename, 'potek'],'epsc')
 clear lin_xs lin_xd lin_ys lin_yd real_xs real_xd real_ys real_yd ...
     meritev_xs meritev_ys meritev_xd meritev_zs
 clear meritev podatki tx fftp y x scrsz axes1

@@ -29,4 +29,15 @@
 \BOOKMARK [2][-]{subsection.7.2.1}{Sprememba sin, cos ter napake od xs}{section.7.2}% 29
 \BOOKMARK [1][-]{section.7.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.7}% 30
 \BOOKMARK [2][-]{subsection.7.3.1}{Sprememba sin, cos ter napake od ys}{section.7.3}% 31
-\BOOKMARK [1][-]{section.7.4}{Dinamicna ekscentricnost}{chapter.7}% 32
+\BOOKMARK [1][-]{section.7.4}{Dinamicna ekscentricnost v smeri x osi}{chapter.7}% 32
+\BOOKMARK [2][-]{subsection.7.4.1}{Sprememba sin, cos ter napake od xd}{section.7.4}% 33
+\BOOKMARK [0][-]{chapter.8}{Realni model magnetnega polja}{}% 34
+\BOOKMARK [1][-]{section.8.1}{Brez napake}{chapter.8}% 35
+\BOOKMARK [1][-]{section.8.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.8}% 36
+\BOOKMARK [2][-]{subsection.8.2.1}{Sprememba sin, cos ter napake od xs}{section.8.2}% 37
+\BOOKMARK [1][-]{section.8.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.8}% 38
+\BOOKMARK [2][-]{subsection.8.3.1}{Sprememba sin, cos ter napake od ys}{section.8.3}% 39
+\BOOKMARK [1][-]{section.8.4}{Dinamicna ekscentricnost v smeri x}{chapter.8}% 40
+\BOOKMARK [2][-]{subsection.8.4.1}{Sprememba sin, cos ter napake od xd}{section.8.4}% 41
+\BOOKMARK [1][-]{section.8.5}{Dinamicna ekscentricnost v smeri y}{chapter.8}% 42
+\BOOKMARK [2][-]{subsection.8.5.1}{Sprememba sin, cos ter napake od yd}{section.8.5}% 43
