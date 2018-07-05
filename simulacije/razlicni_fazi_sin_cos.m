@@ -1,10 +1,10 @@
 clear
 theta = linspace(0,2*pi,8192);
 
-primer = 2;
+primer = 1;
 
 
-x = linspace(0,-45,46)*pi/180;
+x = linspace(0,90,91)*pi/180;
 
 
 

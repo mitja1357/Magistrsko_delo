@@ -4,8 +4,8 @@
 % signalov.
 clear
 
-sinOff = 0.0;
-cosOff = -0.1;
+sinOff = 0;
+cosOff = 0.1;
 
 sinAmp = 1.0;
 cosAmp = 1;
@@ -24,14 +24,14 @@ theta = 0:pi/2048:2*pi;
 Sin = sinOff+ sinAmp.*sin(theta+sinFaza);
 Cos = cosOff+ cosAmp.*cos(theta+cosFaza);
 
-Err = atan2(Sin,Cos);
-
+kot = atan2(Sin,Cos);
+Err = kot - atan2(sin(theta),cos(theta));
 
 PredErr = zeros(size(theta));
 PredErr = PredErr+(sinFaza+cosFaza)/2+atan2(sin(theta),cos(theta));
 
 razAmp = sinAmp/cosAmp;
-for n = 1:1500
+for n = 1:15
     
     PredErr = PredErr+ ...
         1/n.*((razAmp-1)/(razAmp+1))^n*sin(2*n*theta)+...
@@ -43,7 +43,7 @@ end
 
 figure(1)
 subplot(3,1,1)
-plot(theta,Err)
+plot(theta,kot)
 grid on
 title('Numericni Error')
 
@@ -53,10 +53,11 @@ grid on
 title('Predviden Error')
 
 subplot(3,1,3)
-plot(theta,PredErr-Err)
+plot(theta,PredErr-kot)
 grid on
 title('Razlika napak')
 
-fftRazlike = mojfft(PredErr-Err);
+fftRazlike = mojfft(PredErr-kot);
 
-
+figure(2)
+plot(theta,Err)

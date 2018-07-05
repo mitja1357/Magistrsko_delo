@@ -4,12 +4,12 @@
 % se spreminja od ekscentricnosti ki jo vpises kot vhod
 %
 % 2018.07.02 dodal da se mi shrani v mapo na racunalniku
-function potek_sincos(meritev)
+% function potek_sincos(meritev)
 
-load Rezultati_simulacij.mat
-load Rezultati_meritve.mat
+% load Rezultati_simulacij.mat
+% load Rezultati_meritve.mat
 
-% meritev = 'lin_xd';
+meritev = 'meritev_ys';
 filename= ...
     ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
@@ -28,7 +28,7 @@ y1stPh =[fftSin{2}(:,2)+90, fftCos{2}(:,2)];
 x = [podatki.displacement, podatki.displacement];
 
 clear lin_xs lin_xd lin_ys lin_yd real_xs real_xd real_ys real_yd ...
-    meritev_xs meritev_ys meritev_xd meritev_zs
+    %meritev_xs meritev_ys meritev_xd meritev_zs
 clear podatki fftSin fftCos
 
 
@@ -50,7 +50,7 @@ legend('sin','cos','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
 ylabel('B / mT')
-saveas(gcf,[filename, 'sincos_off'],'epsc')
+% saveas(gcf,[filename, 'sincos_off'],'epsc')
 
 
 figure('Name', [meritev, ' 1st harmonic'] ,'Position', ...
@@ -71,7 +71,7 @@ legend('sin','cos','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
 ylabel('B / mT')
-saveas(gcf,[filename, 'sincos_amp'],'epsc')
+% saveas(gcf,[filename, 'sincos_amp'],'epsc')
 
 
 figure('Name', [meritev, ' 1st harmonic phase'] ,'Position', ...
@@ -91,11 +91,11 @@ legend('sin','cos','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
 ylabel('fazni zamik / ^\circ')
-saveas(gcf,[filename, 'sincos_phase'],'epsc')
+% saveas(gcf,[filename, 'sincos_phase'],'epsc')
 
 
 
 
 clear axes1 scrsz meritev x y1st yOff tx y1stPh
 
-end
+% end
