@@ -1,6 +1,16 @@
-path='C:\Users\mitja\Documents\Magistrsko_delo\Meritve\CSVfiles\2017_10_02\';
-list=dir(path);
 
+datum='2018_06_11';
+
+currentFolder = pwd;
+path = [currentFolder(1:end-10),'Meritve\CSVfiles\',datum,'\'];
+if exist(path)==0    
+    path = [currentFolder,'\mat_datoteke\',datum,'\'];
+    if exist(path)==0 
+        error('Vpisal si napaèen datum')
+    end
+end
+list=dir(path);
+clear datum currentFolder
 eks={'xs','ys','xd','zs'};
 
 
@@ -97,8 +107,9 @@ for i=1:4
     tmp.cos=Cos_all(SortedIndex,:);
     tmp.displacement=displace_all(SortedIndex);
     tmp.ref=Ref_all(SortedIndex,:);
-
-    eval(strcat('meritev_',ekcentric,'=tmp;'));
+    if length(tmp.displacement)
+        eval(strcat('meritev_',ekcentric,'=tmp;'));
+    end
     clear j L T Fs n dim Y P2 P1 tmp  ekcentric SortedIndex SortedArray ref1
     clear protocol_all fft_all Sin_all Cos_all displace_all ans Ref_all fft_lin_all
     

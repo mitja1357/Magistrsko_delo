@@ -9,7 +9,7 @@
 % load Rezultati_simulacij.mat
 % load Rezultati_meritve.mat
 
-meritev = 'meritev_ys';
+meritev = 'real_xs85';
 filename= ...
     ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
@@ -27,7 +27,7 @@ y1stPh =[fftSin{2}(:,2)+90, fftCos{2}(:,2)];
 
 x = [podatki.displacement, podatki.displacement];
 
-clear lin_xs lin_xd lin_ys lin_yd real_xs real_xd real_ys real_yd ...
+% clear lin_xs lin_xd lin_ys lin_yd real_xs real_xd real_ys real_yd ...
     %meritev_xs meritev_ys meritev_xd meritev_zs
 clear podatki fftSin fftCos
 
