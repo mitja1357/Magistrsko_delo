@@ -20,18 +20,19 @@ har4 = fftErr{1}(:,5);%.*cosd(fftErr{2}(:,5));
 har2(k<1) = -har2(k<1);
 % har4(k>1) = -har4(k>1);
 %%
-figure(1)
-plot(k,har2,'Linewidth',2)
+scrsz = get(0,'ScreenSize');
+figure('Position', ...
+       [10 scrsz(4)-10-80-600 800 400]);
+axes1 = axes('Parent',gcf,...
+        'YGrid','on',...
+        'XGrid','on',...
+        'FontSize',16,...
+        'FontName','Times New Roman');
+plot(k,har2, 'LineWidth',2, 'Color', [215,25,28]/255);
+
+
+legend('C_{1}', 'Location','northwest')
 grid on
-grid minor
-hold on
-
-%%
-a2= 180/pi;
-a4 = 90/pi;
-
-fit2 = a2.*(k-1)./(1+k);
-
-fit4 = a4.*((k-1)./(1+k)).^2;
-plot(k,fit2,'-r');
+xlabel('$k$','interpreter', 'latex')
+ylabel('$\varepsilon / ^\circ$','interpreter', 'latex')
 

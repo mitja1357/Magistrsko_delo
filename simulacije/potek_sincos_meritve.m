@@ -1,4 +1,4 @@
-meritev ='xd';
+meritev ='xs';
 eval(strcat('m = meritev_',meritev,';'));
 dis = m.displacement;
 x = m.ref;
@@ -23,6 +23,8 @@ for i = 1:length(dis)
     sinA2(i)= fitresult{2}.a2;
     sinf2(i)= fitresult{2}.f2;
 end
+
+%%
 scrsz = get(0,'ScreenSize');
 figure('Name',[meritev , ' offset'],'Position', ...
        [10 scrsz(4)-10-80-600 800 600]);
@@ -45,7 +47,7 @@ axes1 = axes('Parent',gcf,...
         'XGrid','on',...
         'FontSize',16,...
         'FontName','Times New Roman');
-plot(dis,sinA1,dis,cosA1,'LineWidth',2);
+plot(dis,abs(sinA1),dis,abs(cosA1),'LineWidth',2);
 
 legend('sin','cos','Location','northeast')
 grid on
@@ -78,6 +80,7 @@ legend('sin','cos','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
 ylabel('B / mT')
+%%
 clear i axes1 scrsz tx meritev m dis x y1 y2 fitresult gof 
 clear cosA0 cosA1 cosf1 cosw cosA2 cosf2 sinA0 sinA1 sinf1 sinw sinA2 sinf2 
 

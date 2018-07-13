@@ -1,5 +1,5 @@
-
-datum='2018_06_11';
+clear
+datum='2017_10_02';
 
 currentFolder = pwd;
 path = [currentFolder(1:end-10),'Meritve\CSVfiles\',datum,'\'];
@@ -107,7 +107,7 @@ for i=1:4
     tmp.cos=Cos_all(SortedIndex,:);
     tmp.displacement=displace_all(SortedIndex);
     tmp.ref=Ref_all(SortedIndex,:);
-    if length(tmp.displacement)
+    if ~isempty(tmp.displacement)
         eval(strcat('meritev_',ekcentric,'=tmp;'));
     end
     clear j L T Fs n dim Y P2 P1 tmp  ekcentric SortedIndex SortedArray ref1

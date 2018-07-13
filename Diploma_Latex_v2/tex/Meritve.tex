@@ -50,18 +50,35 @@
 %\section{Rezultati med meritvami in simulacijami}
 
 
+Simulacije so prikazale okvirne poteke analognih signalov ter napake  ob posamezni ekscentri"cnosti.
+Na merilni napravi so bile opravljene meritve ekscentričnosti. V tem poglavju je opisana sama merilna naprava, zajem podatkov ter izvedba meritev.
 
-Spoznali smo simulacijske rezultate in pridobili predstavo potekov napake ob posamezni ekscentri"cnosti. S simulacijskim modelom smo pridobili ob"cutek kaj naj pri"cakujemo pri meritvah. V tem poglavju bom opisal opravljene meritve. Spoznali se bomo s merilnim mestom in postopkom nastavljanja ekscentri"cnosti na merilni napravi.
 \section{Oprema in postavitev merilnega mesta}
 
-Merilno mesto je bilo sestavljala krmilna plos"ca za regulacijo motorskega pogona in obdelavo signalov enkoderjev ter konstrukcija z motorjem referen"cnim dajalniko TONiC podjetja Renishaw, magnetnim aktuatorjem za RM44 podjetja RLS  d.o.o., 6 osnim mikrometerskim nastavljalnikom pozicije HTIMS601 za premikanje senorja RM44 ter senzor RM44AC. Merilno mesto je prikazano na sliki \ref{postavitevmerilnegamesta}.
+Merilno mesto sestavljala krmilna plošča za regulacijo motorskega pogona in obdelavo signalov sestavljena v LRTME.
+Vsebuje elektromotorski pogon z inkrementalnim, referen"cnim dajalnikom zasuka TONiC podjetja Renishaw in magnetnim aktuatorjem za RM44 podjetja RLS  d.o.o.
+Magnetni aktuator je možno premikati le v eni prostorski osi (slika \ref{premikanjeMagneta.png}).
+Senzor RM44 je pritrjen na konstrukcijo 6 osnega mikrometrskega nastavljalnika pozicije HTIMS601.
+Celotno merilno mesto je prikazano na sliki \ref{postavitevmerilnegamesta.png}.
 
-\bitnaslika{Postavitev testnega mesta}{}{0.6\textwidth}{0.877\textwidth}% 1.46 je razmerje visina sirina
-Stati"cno ekscentri"cnost sem lahko nastavljal v "sestih prostorskih stopnjah. Na sliki \ref{HTIMS601.png} je prikazano kateri vijak je za nastavljanje posamezne prostorske osi. Vijaki poimenovani x-os, y-os in z-os so za nastavljanje translaciijo merjenca, rot x-osi, rot y-osi,rot z-osi so za nastavljanje rotacije merjenca. Motor se je pri vseh meritvah vrtel s hitrostjo 60 RPM.
+\bitnaslika{Dinamično ekscentričnost se lahko izmeri le v eni smeri}{premikanjeMagneta.png}
 
+\bitnaslika{Postavitev testnega mesta}{postavitevmerilnegamesta.png}%{0.6\textwidth}{0.877\textwidth}% 1.46 je razmerje visina sirina
+
+Za manevriranje s HTIMS601 je potrebno nastaviti 6 osi.
+Vsako os se nastavlja s enim od vijakov (\ref{HTIMS601.png}).
+S postavitvijo koordinatnega sistema, je vsak od vijakov definiral premik senzorja. 
+S spremembo vrtenja vijakov translacijskih osi, se je lokacija senzorja pred magnetom spreminjala z enako spremembo. S spremembo vrtenja rotacijskih vijakov, se je zaradi ročice na katero je pritrjen senzor, senzor zarotiral in hkrati tudi premaknil iz dotedanje lege. S spremembo rotacije je potrebno popraviti tudi nastavitve vijakovm, ki senzor premikajo v translacijskih oseh.
+Na sliki \ref{HTIMS601.png} je prikazano kateri vijak je za nastavljanje posamezne prostorske osi. Vijaki poimenovani x-os, y-os in z-os so za nastavljanje translaciijo merjenca, rot x-osi, rot y-osi in rot z-osi so za nastavljanje rotacije premikajoče plošče na vrhu HTIMS601.
+Senzor se je posledično ob premiku vijakov rot x-osi, rot y-osi in rot z-osi, glede na magnet vrtel in premikal.
+S potenciometrom se nastavlja hitrost vrtenja motorja.
+Hitrost vrtenja je nastavljena na 60 RPM (slika \ref{hitrost}). Hitrost ni popolnoma konstantna. Vzrok je v vztrajnosti pogona. Mitja Nemec je problem skušal čimbolje odpraviti, z dodajanjem primernih uteži na primerna mesta na vztrajniku.
+ 
 \bitnaslika{Naprava za nastavljanje stati"cne ekscentri"cnosti}{HTIMS601.png}{0.7\textwidth}{1.023\textwidth}
+\slikaeps{Potek hitrosti od zasuka}{hitrost}
+\section{Zajem podatkov}
 
-
+Mitja Nemec je pripravil tudi grafični uporabniški vmesnik za prikazovanje meritev.
 
 \section{Senzor v izhodi"s"cni poziciji}
 Za meritve ekscentri"cnosti je bilo potrebno senzor, kot magnetni aktuator nastaviti v "cim bolj idealno pozicijo. Ni"celna lega je prikazana na sliki \ref{./Meritve/meritev_ys_000u_BxBy}
