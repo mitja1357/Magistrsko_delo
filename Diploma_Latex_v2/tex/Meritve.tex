@@ -73,15 +73,30 @@ Na sliki \ref{HTIMS601.png} je prikazano kateri vijak je za nastavljanje posamez
 Senzor se je posledično ob premiku vijakov rot x-osi, rot y-osi in rot z-osi, glede na magnet vrtel in premikal.
 S potenciometrom se nastavlja hitrost vrtenja motorja.
 Hitrost vrtenja je nastavljena na 60 RPM (slika \ref{hitrost}). Hitrost ni popolnoma konstantna. Vzrok je v vztrajnosti pogona. Mitja Nemec je problem skušal čimbolje odpraviti, z dodajanjem primernih uteži na primerna mesta na vztrajniku.
+
+Za senzor RM4 sem postavil koordinati sistem prikazan na sliki \ref{koordinatnisistem.png}
  
 \bitnaslika{Naprava za nastavljanje stati"cne ekscentri"cnosti}{HTIMS601.png}{0.7\textwidth}{1.023\textwidth}
 \slikaeps{Potek hitrosti od zasuka}{hitrost}
+\bitnaslika{Postavitev koordinatnega sistema}{koordinatnisistem.png}
+
+
 \section{Zajem podatkov}
 
-Mitja Nemec je pripravil tudi grafični uporabniški vmesnik za prikazovanje meritev.
+Mitja Nemec je pripravil tudi grafični uporabniški vmesnik za prikazovanje meritev (slika \ref{GUI.png}).
+Vmesnik lahko prikazuje potek refernečnega kota, merjenega kota senzorja RM44, analognih signalov sinus in kosinus senzorja RM44, napako med senzorjem in refernčnim dajalnikom, hitrost vrtenja ter tok prve faze motorskega pogona.
+Krmilna plošča zajema podatke s pogona s frekvenco 1kHz. Podatki so bili v obliki enega paketa poslani s krmilne plošče na 1 sekundo. Pri frekvenci vrtenja 1 Hz, grafišni vmesnik prikaže en obrat.
+Podatke se lahko izvozi v obliki .csv datoteke in nato poljubno obdela.
+
+Na sliki  \ref{GUI.png} je prikazan sinusni signal prikazan kot da je zamaknjen za 180$\mathrm{^\circ}$. To je posledica pozitvne smeri vrtenja senzorja \cite{RM44}. Senzorju se lahko nastavi v katero smer narašča izhod. To sem rešil tako, da sem obrnil podatke. Popraviti je bilo potrebno tudi potek referenčnega dajalnika.
+
+
+\bitnaslika{Grafični vmesnik s potiki signalov}{GUI.png}
+
+
 
 \section{Senzor v izhodi"s"cni poziciji}
-Za meritve ekscentri"cnosti je bilo potrebno senzor, kot magnetni aktuator nastaviti v "cim bolj idealno pozicijo. Ni"celna lega je prikazana na sliki \ref{./Meritve/meritev_ys_000u_BxBy}
+Za meritve ekscentri"cnosti je bilo potrebno senzor, kot magnetni aktuator nastaviti v "cim bolj idealno pozicijo. Signala sin in cos sta prikazana na sliki \ref{./meritve/00_sincos}. 
 
 \slikaeps{Signala $sin$ in $cos$ pomerjena v izhodi"s"cni legi}{./Meritve/meritev_ys_000u_BxBy}
 Napaka $\varepsilon$, ki je bila pomerjena  je prikazana na sliki \ref{./Meritve/meritev_ys_000u_napaka}.
