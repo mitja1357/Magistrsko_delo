@@ -1,4 +1,4 @@
-meritev ='xs';
+meritev ='ys';
 eval(strcat('m = meritev_',meritev,';'));
 dis = m.displacement;
 x = m.ref;

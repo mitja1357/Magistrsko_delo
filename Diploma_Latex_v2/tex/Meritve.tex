@@ -80,12 +80,16 @@ Za senzor RM4 sem postavil koordinati sistem prikazan na sliki \ref{koordinatnis
 \slikaeps{Potek hitrosti od zasuka}{hitrost}
 \bitnaslika{Postavitev koordinatnega sistema}{koordinatnisistem.png}
 
-
+\newpage
 \section{Zajem podatkov}
 
 Mitja Nemec je pripravil tudi grafični uporabniški vmesnik za prikazovanje meritev (slika \ref{GUI.png}).
-Vmesnik lahko prikazuje potek refernečnega kota, merjenega kota senzorja RM44, analognih signalov sinus in kosinus senzorja RM44, napako med senzorjem in refernčnim dajalnikom, hitrost vrtenja ter tok prve faze motorskega pogona.
-Krmilna plošča zajema podatke s pogona s frekvenco 1kHz. Podatki so bili v obliki enega paketa poslani s krmilne plošče na 1 sekundo. Pri frekvenci vrtenja 1 Hz, grafišni vmesnik prikaže en obrat.
+Vmesnik lahko prikazuje potek refernečnega kota, analognih signalov sinus in kosinus senzorja RM44, izračunanega kota iz sin in cos signala, napako med izračunanim kotom senzorja in refernčnim dajalnikom, hitrost vrtenja ter tok prve faze motorskega pogona. Signaloma sin in cos se v programu prištejeti enosmerni komponenti, ki bi popravili izhodna signala.
+Krmilna plošča zajema podatke s pogona s frekvenco 1kHz.
+Referenčni inkrementalni dajalnik, se ob zagonu inicializira. V programu se podatek o kotu deli s 12595200. Definicijsko območje referenčnega kota se giblje med 0 in 1.
+Signala sin in cos se na krmilni plošči ojačata in pretvorita z 12 bitnim AD pretvornikom. Izhodu AD pretvornika se odšteje 2048 in deli s 4096. Definicijsko območje sin in cos signala se gibljeta med $\pm0,5$.
+Hitrost in napaka sta izračunana iz zajetih signalov.
+Podatki so v obliki enega paketa poslani s krmilne plošče na 1 sekundo. Pri frekvenci vrtenja 1 Hz, grafični vmesnik prikaže en obrat.
 Podatke se lahko izvozi v obliki .csv datoteke in nato poljubno obdela.
 
 Na sliki  \ref{GUI.png} je prikazan sinusni signal prikazan kot da je zamaknjen za 180$\mathrm{^\circ}$. To je posledica pozitvne smeri vrtenja senzorja \cite{RM44}. Senzorju se lahko nastavi v katero smer narašča izhod. To sem rešil tako, da sem obrnil podatke. Popraviti je bilo potrebno tudi potek referenčnega dajalnika.
@@ -94,66 +98,74 @@ Na sliki  \ref{GUI.png} je prikazan sinusni signal prikazan kot da je zamaknjen 
 \bitnaslika{Grafični vmesnik s potiki signalov}{GUI.png}
 
 
+\newpage
+\section{Senzor v izhodiščni legi}
 
-\section{Senzor v izhodi"s"cni poziciji}
-Za meritve ekscentri"cnosti je bilo potrebno senzor, kot magnetni aktuator nastaviti v "cim bolj idealno pozicijo. Signala sin in cos sta prikazana na sliki \ref{./meritve/00_sincos}. 
+Senzor in magnet se lahko gibljeta, najprimernejša, izhodiščna lega, ni definirana. Z merilno urico Mitutoyo 543-391B se je dinamično ekscentričnost magneta nastavilo na najmanjšo.
+S prilagajanjem vijakov HTIMS601 in opazovanjem signalov sin in cos ter napake sem nastavil senzor v najboljšo lego.
 
-\slikaeps{Signala $sin$ in $cos$ pomerjena v izhodi"s"cni legi}{./Meritve/meritev_ys_000u_BxBy}
-Napaka $\varepsilon$, ki je bila pomerjena  je prikazana na sliki \ref{./Meritve/meritev_ys_000u_napaka}.
-\slikaeps{Napaka $\varepsilon$ pomerjena v izhodi"s"cni legi}{./Meritve/meritev_ys_000u_napaka}
-Napaka je po pri"cakovanjih manj"sa kot je bila pomerjena pri simulacijah. Z razvojem v Fourierovo vrsto (Slika \ref{./Meritve/meritev_ys_000u_fft}) se potrdi izstopanje "cetrtega harmonika, ki je bil izrazit tudi v simulacijah z realnim modelom polja.
-Napako razvijmo v Fourierovo vrsto in pridobimo amplitude posameznih harmonikov napake(Slika \ref{./Meritve/meritev_ys_000u_fft}).
-\slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Meritve/meritev_ys_000u_fft}
+Signala sin in cos sta prikazana na sliki \ref{./meritve/00_sincos}. 
 
+\slikaeps{Signala $sin$ in $cos$ pomerjena v izhodi"s"cni legi}{./meritve/00_sincos}
 
 
-
-
-
-
-
-
+Pomerjene napaka $\varepsilon$, je prikazana na sliki \ref{./meritve/00_napaka}.
+\slikaeps{Napaka $\varepsilon$ pomerjena v izhodi"s"cni legi}{./meritve/00_napaka}
+V napaki izstopa četrti harmonik.
+V primerjavi s sliko \ref{./rea/00_napaka}, pomerjena napaka vsebuje nižje amplitude višjih harmonikov.
+Z razvojem v Fourierovo vrsto (Slika \ref{./meritve/00_fft}) se izkaže, da so si amplitude podobne.
+\slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri meritvah v izhodiščni legi}{./meritve/00_fft}
 
 
 
+\section{Meritve statične ekscentričnosti v smeri x-osi}
 
 
 
+\slikaeps{Signala $sin$ in $cos$ merjena pri 0,25 mm statične ekscentičnosti v smeri x}{./meritve/xs_sincos}
+
+\slikaeps{Napaka $\varepsilon$ merjena pri 0,25 mm statične ekscentičnosti v smeri x}{./meritve/xs_napaka}
+
+\slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto merjeno pri 0,25 mm statične ekscentičnosti v smeri x}{./meritve/xs_fft}
 
 
+\slikaeps{Signala $sin$ in $cos$ merjena pri 0,25 mm statične ekscentičnosti v smeri y}{./meritve/ys_sincos}
 
+\slikaeps{Napaka $\varepsilon$ merjena pri 0,25 mm statične ekscentičnosti v smeri y}{./meritve/ys_napaka}
 
-
-
-
-
-
-
-
-
-
+\slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto merjeno pri 0,25 mm statične ekscentičnosti v smeri y}{./meritve/ys_fft}
 
 
 
 
-\slikaeps{Signala $sin$ in $cos$ pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Meritve/meritev_xs_200u_BxBy}
-
-\slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Meritve/meritev_xs_200u_napaka}
-
-\slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Meritve/meritev_xs_200u_fft}
-
-
-\slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od stati"cne ekscentri"cnosti v smeri x}{potek_meritev_xs}
-
-\begin{eqnarray}
-&A_0=11,94 \Delta x_s^2-2,48\Delta x_s+ 0,34\\
-&C_1=\sqrt{A_1^2+B_1^2}=1,58 10^{-13} \Delta x_s^2-6,52 10^{-13} \Delta x_s+ 9,47 10^{-13}\\
-&C_2=16,88 \Delta x_s^2-3,53  \Delta x_s+0,41\\
-&C_3=-2,43 10^{-14} \Delta x_s^2+3,52 10^{-13} \Delta x_s- 6,29 10^{-13}
-\end{eqnarray}
 
 
 
+
+
+
+
+
+%
+%
+%\slikaeps{Signala $sin$ in $cos$ pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Meritve/meritev_xs_200u_BxBy}
+%
+%\slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Meritve/meritev_xs_200u_napaka}
+%
+%\slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z linearnim poljem pri 0,2 mm stati"cne ekscentri"cnosti v smeri x}{./Meritve/meritev_xs_200u_fft}
+%
+%
+%\slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od stati"cne ekscentri"cnosti v smeri x}{potek_meritev_xs}
+%
+%\begin{eqnarray}
+%&A_0=11,94 \Delta x_s^2-2,48\Delta x_s+ 0,34\\
+%&C_1=\sqrt{A_1^2+B_1^2}=1,58 10^{-13} \Delta x_s^2-6,52 10^{-13} \Delta x_s+ 9,47 10^{-13}\\
+%&C_2=16,88 \Delta x_s^2-3,53  \Delta x_s+0,41\\
+%&C_3=-2,43 10^{-14} \Delta x_s^2+3,52 10^{-13} \Delta x_s- 6,29 10^{-13}
+%\end{eqnarray}
+%
+%
+%
 
 
 

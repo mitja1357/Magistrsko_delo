@@ -34,7 +34,7 @@ if frek
 ft = fittype( 'a0 + a1*cosd(x*w+f1) + a2*cosd(2*x*w+f2)+ a3*cosd(3*x*w+f3)', 'independent', 'x', 'dependent', 'y' );
 opts = fitoptions( 'Method', 'NonlinearLeastSquares' );
 opts.Display = 'Off';
-opts.Lower = [-Inf -Inf -Inf -Inf  -Inf -Inf -Inf 0.9];
+opts.Lower = [-Inf 0 0 0  -Inf -Inf -Inf 0.9];
 opts.StartPoint = [0.141886338627215 0.421761282626275 0.933993247757551 0.915735525189067 0.678735154857773 0.915735525189067 0.678735154857773 1];
 opts.Upper = [Inf Inf Inf Inf Inf Inf Inf 1.1];
 else
@@ -45,7 +45,7 @@ else
 ft = fittype( 'a0 + a1*cosd(x*w+f1) + a2*cosd(2*x*w+f2)+ a3*cosd(3*x*w+f3)', 'independent', 'x', 'dependent', 'y' );
 opts = fitoptions( 'Method', 'NonlinearLeastSquares' );
 opts.Display = 'Off';
-opts.Lower = [-Inf -Inf -Inf -Inf  -Inf -Inf -Inf 0.9999999999999999999];
+opts.Lower = [-Inf 0 0 0  -Inf -Inf -Inf 0.9999999999999999999];
 opts.StartPoint = [0.141886338627215 0.421761282626275 0.933993247757551 0.915735525189067 0.678735154857773 1];
 opts.Upper = [Inf Inf Inf Inf Inf Inf Inf 1.000000000000001];
 end
@@ -72,7 +72,7 @@ if frek
 ft = fittype( enacba, 'independent', 'x', 'dependent', 'y' );
 opts = fitoptions( 'Method', 'NonlinearLeastSquares' );
 opts.Display = 'Off';
-opts.Lower = [-Inf -Inf -Inf -Inf  -Inf -Inf -Inf];
+opts.Lower = [-Inf 0 0 0 -Inf -Inf -Inf];
 opts.StartPoint = [0.141886338627215 0.421761282626275 0.933993247757551 0.915735525189067 0.678735154857773 0.915735525189067 0.678735154857773];
 opts.Upper = [Inf Inf Inf Inf Inf Inf Inf];
 else
@@ -83,7 +83,7 @@ else
 ft = fittype( enacba , 'independent', 'x', 'dependent', 'y' );
 opts = fitoptions( 'Method', 'NonlinearLeastSquares' );
 opts.Display = 'Off';
-opts.Lower = [-Inf -Inf -Inf -Inf  -Inf];
+opts.Lower = [-Inf 0 0 0 -Inf];
 opts.StartPoint = [0.141886338627215 0.421761282626275 0.933993247757551 0.915735525189067 0.678735154857773];
 opts.Upper = [Inf Inf Inf Inf Inf];
 end
