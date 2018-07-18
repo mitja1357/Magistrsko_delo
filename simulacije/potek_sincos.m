@@ -4,12 +4,13 @@
 % se spreminja od ekscentricnosti ki jo vpises kot vhod
 %
 % 2018.07.02 dodal da se mi shrani v mapo na racunalniku
-% function potek_sincos(meritev)
+% 2018.07.18 poravil da sharnim ?e želim, pri meritvah ni y skale pri amp
+% in off
+function potek_sincos(meritev,shrani)
 
-% load Rezultati_simulacij.mat
-% load Rezultati_meritve.mat
+load Rezultati_simulacij.mat
+load Rezultati_meritve.mat
 
-meritev = 'real_xs85';
 filename= ...
     ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
@@ -49,8 +50,14 @@ end
 legend('sin','cos','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
+if ~strfind(meritev,'mer')
 ylabel('B / mT')
-% saveas(gcf,[filename, 'sincos_off'],'epsc')
+end
+if exist('shrani')
+    if shrani
+        saveas(gcf,[filename, 'sincos_phase'],'epsc')
+    end
+end
 
 
 figure('Name', [meritev, ' 1st harmonic'] ,'Position', ...
@@ -70,8 +77,14 @@ end
 legend('sin','cos','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
+if ~strfind(meritev,'mer')
 ylabel('B / mT')
-% saveas(gcf,[filename, 'sincos_amp'],'epsc')
+end
+if exist('shrani')
+    if shrani
+        saveas(gcf,[filename, 'sincos_phase'],'epsc')
+    end
+end
 
 
 figure('Name', [meritev, ' 1st harmonic phase'] ,'Position', ...
@@ -91,11 +104,15 @@ legend('sin','cos','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
 ylabel('fazni zamik / ^\circ')
-% saveas(gcf,[filename, 'sincos_phase'],'epsc')
+if exist('shrani')
+    if shrani
+        saveas(gcf,[filename, 'sincos_phase'],'epsc')
+    end
+end
 
 
 
 
 clear axes1 scrsz meritev x y1st yOff tx y1stPh
 
-% end
+end

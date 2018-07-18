@@ -1,5 +1,5 @@
 clear
-datum='2018_03_20';
+datum='najboljse';
 
 currentFolder = pwd;
 path = [currentFolder(1:end-10),'Meritve\CSVfiles\',datum,'\'];
@@ -10,7 +10,7 @@ if exist(path)==0
     end
 end
 list=dir(path);
-clear datum currentFolder
+clear currentFolder
 eks={'xs','ys','xd','zs'};
 
 
@@ -34,8 +34,8 @@ for i=1:4
             matrika=csvread(filename,1,0);
             kot_ref=matrika(:,2);
             kot_RM44=matrika(:,4);
-            kot_ref(find(diff(kot_ref)<-0.5)+1:end)= ...
-                kot_ref(find(diff(kot_ref)<-0.5)+1:end)+1;
+           kot_ref(find(diff(kot_ref)<-0.5)+1:end)= ...
+               kot_ref(find(diff(kot_ref)<-0.5)+1:end)+1;
 %             kot_RM44_nem_all=[kot_RM44_nem_all,kot_RM44];
 %             protocol_nemec=(kot_RM44-kot_ref).*360;
 %             protocol_nemec(protocol_nemec>90)=protocol_nemec( protocol_nemec>90)-360;
@@ -55,8 +55,8 @@ for i=1:4
 %             cosinus1=cosinus1([ele:length(sinus1),1:(ele-1)]);
            
 
-            kot_RM44_1=atan2d(sinus1,cosinus1);
-            kot_RM44_1((find(diff(kot_RM44_1)<-90)+1):end)= kot_RM44_1((find(diff(kot_RM44_1)<-90)+1):end)+360;
+           kot_RM44_1=atan2d(sinus1,cosinus1);
+           kot_RM44_1((find(diff(kot_RM44_1)<-90)+1):end)= kot_RM44_1((find(diff(kot_RM44_1)<-90)+1):end)+360;
             
             frst_ref=kot_ref(1);
             last_ref=kot_ref(end);
@@ -69,10 +69,7 @@ for i=1:4
             clear frst_ref last_ref
             Sin=sinus1;
             Cos=cosinus1;
-            protocol=kot_RM44_1-ref1;
             
-            protocol(protocol>180)= protocol(protocol>180)-360;
-            protocol(protocol<-180)= protocol(protocol<-180)+360;
             ref1(ref1<-180)=ref1(ref1<-180)+360;
             clear matrika kot_ref kot_RM44 napaka sinus cosinus cosinus1 sinus1
             clear filename referr kot_RM44_1
@@ -80,7 +77,6 @@ for i=1:4
             Ref_all=[Ref_all;ref1'];
             Sin_all=[Sin_all;Sin'];
             Cos_all=[Cos_all;Cos'];
-            protocol_all=[protocol_all;protocol'];
             displace_all=[displace_all;displace];
 %             RM44_1_all=[RM44_1_all , kot_RM44_1];
 %             RM44_2_all=[RM44_2_all , protocol_nemec];
@@ -93,26 +89,48 @@ for i=1:4
     
     
     [~,SortedIndex]=sort(displace_all);
-    
-    displace_all(SortedIndex);
-    Sin_all(SortedIndex,:);
-    Cos_all(SortedIndex,:);
-    protocol_all(SortedIndex,:);
 
-    
+    if strcmp(datum,'najboljse') && strcmp(ekcentric,'xd')
+        Cos_all = Cos_all.*1.6;
+        Sin_all = Sin_all.*1.6;
+    end
     %% save to struct
     tmp=struct;
-    tmp.protocol=protocol_all(SortedIndex,:);
+    
     tmp.sin=Sin_all(SortedIndex,:);
     tmp.cos=Cos_all(SortedIndex,:);
     tmp.displacement=displace_all(SortedIndex);
     tmp.ref=Ref_all(SortedIndex,:);
     if ~isempty(tmp.displacement)
+        el1 = find(min(abs(tmp.displacement)) == abs(tmp.displacement));
+
+
+        prvi_el = find(min(abs(tmp.sin(el1, (tmp.cos(el1, :)>0))))== ...
+            abs(tmp.sin(el1, (tmp.cos(el1, :)>0))))+...
+            find(tmp.cos(el1, :)>0,1,'first')-2;
+
+        if (prvi_el-1)>1
+            tmp.sin = tmp.sin(:, [prvi_el:1000,(1:prvi_el-1)]);
+            tmp.cos = tmp.cos(:, [prvi_el:1000,(1:prvi_el-1)]);
+            tmp.ref = tmp.ref(:, [prvi_el:1000,(1:prvi_el-1)]);
+            tmp.ref = tmp.ref - tmp.ref(:, 1)*ones(1,length(tmp.ref));
+            tmp.ref(tmp.ref<0) = tmp.ref(tmp.ref<0) +360; 
+        else
+            tmp.sin = tmp.sin;
+            tmp.cos = tmp.cos;
+            tmp.ref = tmp.ref;
+        end
+        tmp.protocol=atan2d(tmp.sin, tmp.cos)-tmp.ref;
+        tmp.protocol(tmp.protocol>180)= tmp.protocol(tmp.protocol>180)-360;
+        tmp.protocol(tmp.protocol<-180)= tmp.protocol(tmp.protocol<-180)+360;
+        
+        
+        
         eval(strcat('meritev_',ekcentric,'=tmp;'));
     end
-    clear j L T Fs n dim Y P2 P1 tmp  ekcentric SortedIndex SortedArray ref1
+    clear j L T Fs n dim Y P2 P1 tmp  ekcentric SortedIndex SortedArray ref1 el1 prvi_el
     clear protocol_all fft_all Sin_all Cos_all displace_all ans Ref_all fft_lin_all
     
 end
 
-clear i list eks path
+clear i list eks path datum

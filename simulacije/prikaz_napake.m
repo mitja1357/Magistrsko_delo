@@ -5,7 +5,7 @@
 % meritev to zelimo
 %
 % 2018.07.02 dodal da se mi shrani v mapo na racunalniku
-function prikaz_napake(meritev, eks)
+function prikaz_napake(meritev, eks, shrani)
 %%
 load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
@@ -13,24 +13,11 @@ load Rezultati_meritve.mat
 %  meritev = 'meritev_xs';
 %  eks = 0.0;
 
-% filename= ...
-%     ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
-%     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
+filename= ...
+    ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
+    upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
 
 eval(strcat('podatki=',meritev,';'))
-el1 = find(min(abs(podatki.displacement)) == abs(podatki.displacement));
-
-
-prvi_el = find(min(abs(podatki.sin(el1, (podatki.cos(el1, :)>0))))== ...
-    abs(podatki.sin(el1, (podatki.cos(el1, :)>0))))+...
-    find(podatki.cos(el1, :)>0,1,'first')-2;
-
-
-element = find(min(abs(podatki.displacement-eks)) == abs(podatki.displacement-eks));
-
-Sin = podatki.sin(element, [prvi_el:1000,(1:prvi_el-1)]);
-Cos = podatki.cos(element, [prvi_el:1000,(1:prvi_el-1)]);
-Ref = podatki.ref(element, [prvi_el:1000,(1:prvi_el-1)]);
 
 [fitresult, gof] = createFits(Ref, Sin, Cos, 1);
 
@@ -78,6 +65,11 @@ axis( [0,360,-Inf,Inf])
 grid on
 xlabel(' \theta / ^\circ')
 
+if exist('shrani')
+    if shrani
+        saveas(gcf,[filename, 'sincos'],'epsc')
+    end
+end
 
 figure('Name', [meritev, ' ', num2str(eks), ' napaka'] ,'Position', ...
        [10 scrsz(4)-10-80-600 800 600]);
@@ -91,7 +83,11 @@ axis( [0,360,-Inf,Inf])
 grid on
 xlabel(' \theta / ^\circ')
 ylabel('\epsilon / ^\circ')
-
+if exist('shrani')
+    if shrani
+        saveas(gcf,[filename, 'napaka'],'epsc')
+    end
+end
 figure('Name', [meritev, ' ', num2str(eks), ' fft'] ,'Position', ...
        [10 scrsz(4)-10-80-600 800 600]);
 axes1 = axes('Parent',gcf,...
@@ -105,8 +101,11 @@ grid on
 xlabel(' harmonik')
 ylabel('\epsilon / ^\circ')
 
-
-% saveas(gcf,[filename, 'potek'],'epsc')
+if exist('shrani')
+    if shrani
+        saveas(gcf,[filename, 'fft'],'epsc')
+    end
+end
 %%
 clear lin_xs lin_xd lin_ys lin_yd real_xs real_xd real_ys real_yd ...
     meritev_xs meritev_ys meritev_xd meritev_zs
