@@ -1,5 +1,5 @@
 clear
-datum='najboljse';
+datum='2018_07_19';
 
 currentFolder = pwd;
 path = [currentFolder(1:end-10),'Meritve\CSVfiles\',datum,'\'];
