@@ -101,16 +101,16 @@ Na sliki  \ref{GUI.png} je prikazan sinusni signal prikazan kot da je zamaknjen 
 \newpage
 \section{Senzor v izhodiščni legi}
 
-Senzor in magnet se lahko gibljeta, najprimernejša, izhodiščna lega, ni definirana. Z merilno urico Mitutoyo 543-391B se je dinamično ekscentričnost magneta nastavilo na najmanjšo.
-S prilagajanjem vijakov HTIMS601 in opazovanjem signalov sin in cos ter napake sem nastavil senzor v lego kjer je bila statična ekscentričnost najmanjša.
-Signala sin in cos sta prikazana na sliki \ref{./MER/00_sincos}.
+Senzor in magnet se lahko gibljeta, najprimernejša, izhodiščna lega, ni definirana. Z merilno urico Mitutoyo 543-391B se je dinamično ekscentričnost magneta nastavilo na najmanjšo. Oplet z merilno urico je bil pomerjen $\pm 6 \mu m_{pp}$ .
+S prilagajanjem vijakov HTIMS601 in opazovanjem signalov sin in cos ter napake sem nastavil senzor v lego kjer je bila statična ekscentričnost najmanjša. Najprimernejšo lego sem iskal glede na največjo vrednost amplitud  $sin$ in $cos$ signalov ter fazni zamik. Opazovati je bilo potrebno  da se je signal nahajal v definicijskem območju zajema z AD pretvornikom.
 
+Signala sin in cos sta prikazana na sliki \ref{./MER/00_sincos}.
 S slike \ref{./MER/00_sincos} vidimo prisotnost enosmernih komponent. Posledično se izrazi v napaki prvi harmonik (slika \ref{./MER/00_napaka}).
 Z razvojem napake v Fourierovo vrsto (slika \ref{./MER/00_fft}) vidimo velikosti posameznih amplitud napake. 
 Enosmerna komponenta je posledica sofaznih zamikov obeh signalov $sin$ in $cos$. 
-Prvi harmonik je posledica ensmermih komponent $sin$ in $cos$. Z matematično obdelavo siganlov $sin$ in $cos$ sem komponenti odstranil,vendar se prvi harmonik napake še vedno izrazi. Prvi harmonik napake je odvisen tudi od drugega harmonika v signalih $sin$ in $cos$.
+Prvi harmonik je posledica ensmermih komponent $sin$ in $cos$. Z matematično obdelavo siganlov $sin$ in $cos$ sem enosmerni komponenti odstranil,vendar se prvi harmonik napake še vedno izrazi. Prvi harmonik napake je odvisen tudi od drugega harmonika v signalih $sin$ in $cos$.
 Z odstranitvijo tudi drugega harmnonika iz signalov $sin$ in $cos$ je bil  prvi harmonik v napaki odstranjen.
-Signala  $sin$ in $cos$ med obdelavo ne bom popravljal. Spreminjanje signalov  $sin$ in $cos$ in napake se bo opazovalo glede na potek, ki je bil pomerjen v izhodiščni legi.
+Signala  $sin$ in $cos$ med obdelavo ne bosta popravljena. Spreminjanje signalov  $sin$ in $cos$ in napake se bo opazovalo glede na potek, ki je bil pomerjen v izhodiščni legi.
 \slikaeps{Signala $sin$ in $cos$ pomerjena v izhodi"s"cni legi}{./MER/00_sincos}
 \slikaeps{Napaka $\varepsilon$ pomerjena v izhodi"s"cni legi}{./MER/00_napaka}
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri meritvah v izhodiščni legi}{./MER/00_fft}
