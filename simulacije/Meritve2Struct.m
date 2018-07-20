@@ -91,8 +91,8 @@ for i=1:4
     [~,SortedIndex]=sort(displace_all);
 
     if strcmp(datum,'najboljse') && strcmp(ekcentric,'xd')
-        Cos_all = Cos_all.*1.6;
-        Sin_all = Sin_all.*1.6;
+        Cos_all = Cos_all.*1;
+        Sin_all = Sin_all.*1;
     end
     %% save to struct
     tmp=struct;
@@ -103,12 +103,21 @@ for i=1:4
     tmp.ref=Ref_all(SortedIndex,:);
     if ~isempty(tmp.displacement)
         el1 = find(min(abs(tmp.displacement)) == abs(tmp.displacement));
-
-
-        prvi_el = find(min(abs(tmp.sin(el1, (tmp.cos(el1, :)>0))))== ...
-            abs(tmp.sin(el1, (tmp.cos(el1, :)>0))))+...
-            find(tmp.cos(el1, :)>0,1,'first')-2;
-
+            
+%         tmp.sin= tmp.sin-mean(tmp.sin(1,:));
+%         tmp.cos= tmp.cos-mean(tmp.cos(1,:));
+%%
+        pogoji = (tmp.cos(el1, :)>0).*([diff(tmp.sin(el1, :)),100]>0);
+        pog(1)=0;
+        a=0.2;
+        for i = 2:(length(pogoji))
+        pog(i) = (1/(1000*a+1))*pogoji(i-1) + (a/(a+0.001))*pog(i-1);
+        end
+        kateri=sign(pog-0.5)*1e10-1e10+1;        
+        prvi_el = find(min(abs(tmp.sin(el1, :).*kateri))== ...
+            abs(tmp.sin(el1, :).*kateri)...
+            );
+%%
         if (prvi_el-1)>1
             tmp.sin = tmp.sin(:, [prvi_el:1000,(1:prvi_el-1)]);
             tmp.cos = tmp.cos(:, [prvi_el:1000,(1:prvi_el-1)]);
@@ -133,4 +142,4 @@ for i=1:4
     
 end
 
-clear i list eks path datum
+clear i list eks path datum a kateri pog pogoji

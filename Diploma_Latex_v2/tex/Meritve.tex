@@ -102,18 +102,17 @@ Na sliki  \ref{GUI.png} je prikazan sinusni signal prikazan kot da je zamaknjen 
 \section{Senzor v izhodiščni legi}
 
 Senzor in magnet se lahko gibljeta, najprimernejša, izhodiščna lega, ni definirana. Z merilno urico Mitutoyo 543-391B se je dinamično ekscentričnost magneta nastavilo na najmanjšo.
-S prilagajanjem vijakov HTIMS601 in opazovanjem signalov sin in cos ter napake sem nastavil senzor v najboljšo lego.
+S prilagajanjem vijakov HTIMS601 in opazovanjem signalov sin in cos ter napake sem nastavil senzor v lego kjer je bila statična ekscentričnost najmanjša.
+Signala sin in cos sta prikazana na sliki \ref{./MER/00_sincos}.
 
-Signala sin in cos sta prikazana na sliki \ref{./MER/00_sincos}. 
-
+S slike \ref{./MER/00_sincos} vidimo prisotnost enosmernih komponent. Posledično se izrazi v napaki prvi harmonik (slika \ref{./MER/00_napaka}).
+Z razvojem napake v Fourierovo vrsto (slika \ref{./MER/00_fft}) vidimo velikosti posameznih amplitud napake. 
+Enosmerna komponenta je posledica sofaznih zamikov obeh signalov $sin$ in $cos$. 
+Prvi harmonik je posledica ensmermih komponent $sin$ in $cos$. Z matematično obdelavo siganlov $sin$ in $cos$ sem komponenti odstranil,vendar se prvi harmonik napake še vedno izrazi. Prvi harmonik napake je odvisen tudi od drugega harmonika v signalih $sin$ in $cos$.
+Z odstranitvijo tudi drugega harmnonika iz signalov $sin$ in $cos$ je bil  prvi harmonik v napaki odstranjen.
+Signala  $sin$ in $cos$ med obdelavo ne bom popravljal. Spreminjanje signalov  $sin$ in $cos$ in napake se bo opazovalo glede na potek, ki je bil pomerjen v izhodiščni legi.
 \slikaeps{Signala $sin$ in $cos$ pomerjena v izhodi"s"cni legi}{./MER/00_sincos}
-
-
-Pomerjene napaka $\varepsilon$, je prikazana na sliki \ref{./MER/00_napaka}.
 \slikaeps{Napaka $\varepsilon$ pomerjena v izhodi"s"cni legi}{./MER/00_napaka}
-V napaki izstopa četrti harmonik.
-V primerjavi s sliko \ref{./rea/00_napaka}, pomerjena napaka vsebuje nižje amplitude višjih harmonikov.
-Z razvojem v Fourierovo vrsto (Slika \ref{./MER/00_fft}) se izkaže, da so si amplitude podobne.
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri meritvah v izhodiščni legi}{./MER/00_fft}
 
 
@@ -186,10 +185,10 @@ Poteke s slik \ref{./MER/ys_sincos_amp} \ref{./MER/ys_sincos_off} in \ref{./MER/
 \end{eqnarray}
 
 Majhne spremembe pri potekih signalov $sin$ in $cos$, so vidne tudi na napaki. Do  
-\begin{eqnarray}
-&C_0 =-5,36\cdot 10^{-1}\Delta x_s^{3}+5,10\cdot 10^{-1}\Delta x_s^{2}-1,32\cdot 10^{-2}\Delta x_s+1,75\cdot 10^{-1} \\
-
-\end{eqnarray}
+%\begin{eqnarray}
+%&C_0 =-5,36\cdot 10^{-1}\Delta x_s^{3}+5,10\cdot 10^{-1}\Delta x_s^{2}-1,32\cdot 10^{-2}\Delta x_s+1,75\cdot 10^{-1} \\
+%
+%\end{eqnarray}
 
 
 

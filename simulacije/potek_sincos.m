@@ -45,7 +45,9 @@ plot(x,yOff,'LineWidth',2);
 if (max(yOff(:))-min(yOff(:)))<1e-14;
     axis( [0,0.5,-0.5+mean(yOff(:)),0.5+mean(yOff(:))])
 else
-    axis( [0,0.5,-Inf,Inf])
+    maxi = max(yOff(:))+0.2.*abs(max(yOff(:)));
+    mini = min(yOff(:))-0.2.*abs(min(yOff(:)));
+    axis( [0,0.5,mini,maxi]);
 end
 legend('sin','cos','Location','northeast')
 grid on
@@ -71,7 +73,9 @@ plot(x,y1st,'LineWidth',2);
 if (max(y1st(:))-min(y1st(:)))<1e-14;
     axis( [0,0.5,-0.5+mean(y1st(:)),0.5+mean(y1st(:))])
 else
-    axis( [0,0.5,-Inf,Inf])
+    maxi = max(y1st(:))+0.2.*abs(max(y1st(:)));
+    mini = min(y1st(:))-0.2.*abs(min(y1st(:)));
+    axis( [0,0.5,mini,maxi]);
 end
 
 legend('sin','cos','Location','northeast')
@@ -98,7 +102,9 @@ plot(x,y1stPh,'LineWidth',2);
 if (max(y1stPh(:))-min(y1stPh(:)))<1e-14;
     axis( [0,0.5,-0.5+mean(y1stPh(:)),0.5+mean(y1stPh(:))])
 else
-    axis( [0,0.5,-Inf,Inf])
+    maxi = max(y1stPh(:))+0.2.*abs(max(y1stPh(:)));
+    mini = min(y1stPh(:))-0.2.*abs(min(y1stPh(:)));
+    axis( [0,0.5,mini,maxi]);
 end
 legend('sin','cos','Location','northeast')
 grid on

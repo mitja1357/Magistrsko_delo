@@ -19,30 +19,12 @@ filename= ...
 
 eval(strcat('podatki=',meritev,';'))
 
-[fitresult, gof] = createFits(Ref, Sin, Cos, 1);
+el = find(min(abs(podatki.displacement-eks))==abs(podatki.displacement-eks));
+Ref = podatki.ref(el,:);
+Err = podatki.protocol(el,:);
 
-disp(strvcat({'      Offset          Amp       Faza',...
-                ['Sin |',num2str(fitresult{1}.a0),'   ',num2str(fitresult{1}.a1),'   ',num2str(fitresult{1}.f1-fitresult{2}.f1)],...
-                ['Cos |',num2str(fitresult{2}.a0),'   ',num2str(fitresult{2}.a1),'   '],...
-                }))
-
-Ref = Ref - Ref(1);
-
-Ref(Ref<0) = Ref(Ref<0) +360;
-
-Err = atan2d(Sin,Cos)-Ref;
-
-Err(Err < -180) = Err(Err < -180) +360;
-Err(Err >  180) = Err(Err > 180) -360;
-
-
-
-
-
-
-
-
-
+Sin = podatki.sin(el,:);
+Cos = podatki.cos(el,:);
 fftp= mojfft(Err);
 
 y = fftp{1}(1:5);
