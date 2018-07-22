@@ -18,7 +18,7 @@ filename= ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
 
 eval(strcat('podatki=',meritev,';'))
-
+%%
 el = find(min(abs(podatki.displacement-eks))==abs(podatki.displacement-eks));
 Ref = podatki.ref(el,:);
 Err = podatki.protocol(el,:);
@@ -31,7 +31,7 @@ y = fftp{1}(1:5);
 y(1)=y(1).*cosd(fftp{2}(1));
 
 
-%%
+
 scrsz = get(0,'ScreenSize');
 
 figure('Name', [meritev, ' ', num2str(eks), ' sin cos'] ,'Position', ...
@@ -92,5 +92,5 @@ end
 clear lin_xs lin_xd lin_ys lin_yd real_xs real_xd real_ys real_yd ...
     meritev_xs meritev_ys meritev_xd meritev_zs
 clear meritev podatki tx fftp y x scrsz axes1
-
+%%
 end

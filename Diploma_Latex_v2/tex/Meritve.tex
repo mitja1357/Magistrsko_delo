@@ -93,14 +93,8 @@ Podatki so v obliki enega paketa poslani s krmilne plošče na 1 sekundo. Pri fr
 Podatke se lahko izvozi v obliki .csv datoteke in nato poljubno obdela.
 
 Na sliki  \ref{GUI.png} je prikazan sinusni signal prikazan kot da je zamaknjen za 180$\mathrm{^\circ}$. To je posledica pozitvne smeri vrtenja senzorja \cite{RM44}. Senzorju se lahko nastavi v katero smer narašča izhod. To sem rešil tako, da sem obrnil podatke. Popraviti je bilo potrebno tudi potek referenčnega dajalnika.
-
-
-\bitnaslika{Grafični vmesnik s potiki signalov}{GUI.png}
-
-
-\newpage
+%\bitnaslika{Grafični vmesnik s potiki signalov}{GUI.png}
 \section{Senzor v izhodiščni legi}
-
 Senzor in magnet se lahko gibljeta, najprimernejša, izhodiščna lega, ni definirana. Z merilno urico Mitutoyo 543-391B se je dinamično ekscentričnost magneta nastavilo na najmanjšo. Oplet z merilno urico je bil pomerjen $\pm 6 \mu m_{pp}$ .
 S prilagajanjem vijakov HTIMS601 in opazovanjem signalov sin in cos ter napake sem nastavil senzor v lego kjer je bila statična ekscentričnost najmanjša. Najprimernejšo lego sem iskal glede na največjo vrednost amplitud  $sin$ in $cos$ signalov ter fazni zamik. Opazovati je bilo potrebno  da se je signal nahajal v definicijskem območju zajema z AD pretvornikom.
 
@@ -114,6 +108,10 @@ Signala  $sin$ in $cos$ med obdelavo ne bosta popravljena. Spreminjanje signalov
 \slikaeps{Signala $sin$ in $cos$ pomerjena v izhodi"s"cni legi}{./MER/00_sincos}
 \slikaeps{Napaka $\varepsilon$ pomerjena v izhodi"s"cni legi}{./MER/00_napaka}
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri meritvah v izhodiščni legi}{./MER/00_fft}
+
+\subsection{Meritve v izhodišni legi}
+
+V izhodiščni legi sem opravil več meritev. Osredotočil sem se na enosmerni komponenti  in amplitudi osnovnega harmonika signalov $sin$ in $cos$. Rezultati so predstavljeni v nadaljevanju.
 
 
 \newpage
@@ -184,22 +182,33 @@ Poteke s slik \ref{./MER/ys_sincos_amp} \ref{./MER/ys_sincos_off} in \ref{./MER/
 &\delta_{cos} = -3,04\cdot 10\Delta y_s^3+2,45\cdot 10\Delta y_s^2-3,13\Delta y_s-5,46\cdot 10^{-1} 
 \end{eqnarray}
 
-Majhne spremembe pri potekih signalov $sin$ in $cos$, so vidne tudi na napaki. Do  
-%\begin{eqnarray}
-%&C_0 =-5,36\cdot 10^{-1}\Delta x_s^{3}+5,10\cdot 10^{-1}\Delta x_s^{2}-1,32\cdot 10^{-2}\Delta x_s+1,75\cdot 10^{-1} \\
-%
-%\end{eqnarray}
 
 
 
 
+\section{Meritve dinamične ekscentričnosti}
 
 
+\slikaeps{Signala $sin$ in $cos$ merjena pri 0,19 mm dinamične ekscentričnosti}{./MER/xd_sincos}
+\slikaeps{Napaka $\varepsilon$ merjena pri 0,19 mm statične ekscentičnosti v smeri y}{./MER/xd_napaka}
+\slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto merjeno pri 0,19 mm statične ekscentičnosti v smeri y}{./MER/xd_fft}
+\subsection{Sprememba $sin$, $cos$ ter napake od $\Delta y_s$}
 
 
+\slikaeps{Potek amplitud osnovnega harmonika signalov $sin$ in $cos$ pri meritvah dinamične ekscentričnosti}{./MER/xd_sincos_amp}
+\slikaeps{Potek enosmerne komponente signalov $sin$ in $cos$ pri meritvah  dinamične ekscentričnosti}{./MER/xd_sincos_off}
+\slikaeps{Potek faznega zamika osnovnega harmonika signalov $sin$ in $cos$ pri meritvah dinamične ekscentričnosti}{./MER/xd_sincos_phase}
+
+\begin{eqnarray}   
+aa
+\end{eqnarray}
 
 
+\slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ ob dinamične ekscentričnosti}{./MER/xd_potek}
 
+\begin{eqnarray}   
+aa
+\end{eqnarray}
 
 
 

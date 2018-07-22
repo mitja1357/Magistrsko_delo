@@ -1,5 +1,5 @@
 clear
-datum='2018_07_20';
+datum='najboljse';
 
 currentFolder = pwd;
 path = [currentFolder(1:end-10),'Meritve\CSVfiles\',datum,'\'];
@@ -90,10 +90,6 @@ for i=1:4
     
     [~,SortedIndex]=sort(displace_all);
 
-    if strcmp(datum,'najboljse') && strcmp(ekcentric,'xd')
-        Cos_all = Cos_all.*1;
-        Sin_all = Sin_all.*1;
-    end
     %% save to struct
     tmp=struct;
     
@@ -129,6 +125,9 @@ for i=1:4
             tmp.cos = tmp.cos;
             tmp.ref = tmp.ref;
         end
+        tmp.sin = tmp.sin -mean(tmp.sin(1,:));
+        tmp.cos = tmp.cos -mean(tmp.cos(1,:));
+        
         tmp.protocol=atan2d(tmp.sin, tmp.cos)-tmp.ref;
         tmp.protocol(tmp.protocol>180)= tmp.protocol(tmp.protocol>180)-360;
         tmp.protocol(tmp.protocol<-180)= tmp.protocol(tmp.protocol<-180)+360;
