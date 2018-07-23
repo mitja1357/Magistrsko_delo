@@ -1,4 +1,4 @@
-clear
+
 currentFolder = pwd;
 path = [currentFolder(1:end-10),'simulacije\mat_datoteke\2018_07_20\vse_v_izhodiscu'];
 list=dir(path);
@@ -40,18 +40,54 @@ clear currentFolder path list ime filename matrika kot_ref sinus...
 %%
 fftC = mojfft(Cos);
 fftS = mojfft(Sin);
+fftC{1}=fftC{1};
+fftS{1}=fftS{1};
+meanS0 = mean(fftS{1}(:,1));
+meanC0 = mean(fftC{1}(:,1));
+meanS1 = mean(fftS{1}(:,2));
+meanC1 = mean(fftC{1}(:,2));
 
-figure(1)
+stdvS0 = sqrt(sum((fftS{1}(:,1)-meanS0).^2)/100);
+stdvC0 = sqrt(sum((fftC{1}(:,1)-meanC0).^2)/100);
+stdvS1 = sqrt(sum((fftS{1}(:,2)-meanS1).^2)/100);
+stdvC1 = sqrt(sum((fftC{1}(:,2)-meanC1).^2)/100);
 
-subplot(1,4,1)
-hist(fftC{1}(1,:))
+%%
 
-subplot(1,4,2)
-hist(fftS{1}(1,:))
+scrsz = get(0,'ScreenSize');
 
-subplot(1,4,3)
-hist(fftC{1}(2,:))
+figure('Name', 'Offset','Position', ...
+       [10 scrsz(4)-10-80-600 800 600]);
+subplot(1,2,1)
+hist(fftS{1}(:,1))
+grid on
+xlabel('Enosmerna komponenta sin')
+ylabel('Število meritev')
+subplot(1,2,2)
+hist(fftC{1}(:,1))
+grid on
+xlabel('Enosmerna komponenta cos')
+ylabel('Število meritev')
 
-subplot(1,4,4)
-hist(fftS{1}(2,:))
+
+
+figure('Name', 'Amp','Position', ...
+       [910 scrsz(4)-10-80-600 800 600]);
+subplot(1,2,1)
+hist(fftC{1}(:,2))
+grid on
+xlabel('Amplituda osnovnega harmonika sin')
+ylabel('Število meritev')
+
+subplot(1,2,2)
+hist(fftS{1}(:,2))
+grid on
+xlabel('Amplituda osnovnega harmonika cos')
+ylabel('Število meritev')
+
+%%
+display(strvcat('          S0       C0       S1       C1',...
+    ['mean | ', num2str([meanS0,meanC0, meanC1, meanS1],' %.2e')],...
+    ['stdv | ', num2str([stdvS0,stdvC0, stdvC1, stdvS1],' %.2e')]))
+
 

@@ -1,4 +1,4 @@
-\chapter{Meritve}
+﻿\chapter{Meritve}
 %\section{Brez napake}
 %\subsection{Sin\_cos}
 %\subsection{napaka}
@@ -110,14 +110,19 @@ Signala  $sin$ in $cos$ med obdelavo ne bosta popravljena. Spreminjanje signalov
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri meritvah v izhodiščni legi}{./MER/00_fft}
 
 \subsection{Meritve v izhodišni legi}
+V izhodiščni legi sem opravil več meritev. Osredotočil sem se na enosmerni komponenti  in amplitudi osnovnega harmonika signalov $sin$ in $cos$. 
+Porazdelitev enosmerne komponente signala $sin$ in $cos$ je prikazana na sliki \ref{./MER/00_off}.
+Srednja vrednost enosmerne komponente $sin$ je $8,85 \cdot 10^{-4}$, standardna deviacija je $1,08\cdot 10^{-4}$.
+Srednja vrednost enosmerne komponente $cos$ je $4,20 \cdot 10^{-3}$, standardna deviacija je $5,20\cdot 10^{-5}$.
+\slikaeps{Porazdelitev meritev enosmerne komponente signalov $sin$ in $cos$}{./MER/00_off}
+Porazdelitev amplitude osnovnega harmonika signala $sin$ in $cos$ je prikazana na sliki \ref{./MER/00_off}.
+Srednja vrednost amplitude osnovnega harmonika $sin$ je $0,451$, standardna deviacija je $2,20\cdot 10^{-4}$.
+Srednja vrednost amplitude osnovnega harmonika $cos$ je $0,449$, standardna deviacija je $1,95\cdot 10^{-4}$.
+\slikaeps{Porazdelitev meritev amplitude osnovnega harmonika signalov $sin$ in $cos$}{./MER/00_amp}
 
-V izhodiščni legi sem opravil več meritev. Osredotočil sem se na enosmerni komponenti  in amplitudi osnovnega harmonika signalov $sin$ in $cos$. Rezultati so predstavljeni v nadaljevanju.
-
-
-\newpage
 \section{Meritve statične ekscentričnosti v smeri x-osi}
 
-Napako meritve povzročene zaradi statični ekscentričnosti v smeri x pričakujemo nižjo kot je bila v simulacijah. Na sliki \ref{./MER/xs_sincos} sta prikazana analogna signala. 
+Napako meritve povzročene zaradi statični ekscentričnosti v smeri x se pričakuje nižjo kot je bila v simulacijah. Na sliki \ref{./MER/xs_sincos} sta prikazana analogna signala $sin$ in $cos$. 
 
 \slikaeps{Signala $sin$ in $cos$ merjena pri 0,2 mm statične ekscentičnosti v smeri x}{./MER/xs_sincos}
 
@@ -161,13 +166,17 @@ Poteke amplitud posameznih harmonikov napake aproksimiramo s kubičnimi polinmi.
 
 \section{Meritve statične ekscentričnosti v smeri y-osi}
 Oglejmo si meritve statične eskscentričnosti v smeri y.
-Na sliki \ref{./MER/ys_sincos} sta prikazana analogna signala. Med signaloma ni posebne razlike. V napaki (slika \ref{./MER/ys_napaka}) vidimo le negativno enosmerno komponento, potek napake je podben napaki brez ekscentričnosti (slika \ref{./MER/00_napaka}). Razvoj napake v Fourierovo vrsto (slika \ref{./MER/ys_fft}) prikaže negativno enosmerno komponento in rahlo povečanje ostalih amplitud.
+Na sliki \ref{./MER/ys_sincos} sta prikazana analogna signala. Med signaloma ni posebne razlike. 
+V napaki (slika \ref{./MER/ys_napaka}) vidimo le negativno enosmerno komponento, potek napake je podben napaki brez ekscentričnosti (slika \ref{./MER/00_napaka}). 
+Razvoj napake v Fourierovo vrsto (slika \ref{./MER/ys_fft}) prikaže negativno enosmerno komponento in rahlo povečanje ostalih amplitud.
 
 \slikaeps{Signala $sin$ in $cos$ merjena pri 0,2 mm statične ekscentičnosti v smeri y}{./MER/ys_sincos}
 \slikaeps{Napaka $\varepsilon$ merjena pri 0,2 mm statične ekscentičnosti v smeri y}{./MER/ys_napaka}
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto merjeno pri 0,2 mm statične ekscentičnosti v smeri y}{./MER/ys_fft}
 \subsection{Sprememba $sin$, $cos$ ter napake od $\Delta y_s$}
-Po nepričakovanih rezulatih si oglejmo potek analognih signalov $sin$ in $cos$ v odvisnosti od ekscentričnosti. Slika \ref{./MER/ys_sincos_amp} prikazuje odvistnost amplitude osnovnega harrmonika od ekscentrilnosti. S slike je opaziti povečevanje razlike med amplitudama $sin$ in $cos$. Enosmerni komponenti signalov imati pričakovan potek. Fazni zamik signalov je tudi nepričakovan. Od večanju statične ekscentričnosti v smeri y je v simulacijah razlika med faznima zamikoma naraščala zaradi spremembe faze signala $cos$.
+Po nepričakovanih rezulatih si oglejmo potek analognih signalov $sin$ in $cos$ v odvisnosti od ekscentričnosti. Slika \ref{./MER/ys_sincos_amp} prikazuje odvistnost amplitude osnovnega harrmonika od ekscentrilnosti. 
+S slike je opaziti povečevanje razlike med amplitudama $sin$ in $cos$. Enosmerni komponenti signalov imati pričakovan potek. Fazni zamik signalov je tudi nepričakovan. 
+Od večanju statične ekscentričnosti v smeri y je v simulacijah razlika med faznima zamikoma naraščala zaradi spremembe faze signala $cos$.
 Pri meritvah je razlika nižja in narašča z nasprotnim predznakom.
 \slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri meritvah stati"cne ekscentri"cnosti v smeri y}{./MER/ys_sincos_amp}
 \slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri meritvah stati"cne ekscentri"cnosti v smeri y}{./MER/ys_sincos_off}
