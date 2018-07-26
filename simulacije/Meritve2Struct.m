@@ -1,6 +1,11 @@
 clear
-datum='najboljse';
-
+datum='2018_07_26\xs9,00';
+xs = 8,915
+ys = 9,525
+z=min
+xr= 12,02
+yr=359
+zr=11,855 
 currentFolder = pwd;
 path = [currentFolder(1:end-10),'Meritve\CSVfiles\',datum,'\'];
 if exist(path)==0    
