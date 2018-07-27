@@ -1,4 +1,4 @@
-podatki = meritev_xd;
+podatki = meritev_xs;
 
 fftS = mojfft(podatki.sin);
 fftC = mojfft(podatki.cos);
@@ -7,7 +7,7 @@ ref = podatki.ref;
 nS  = ref.*0;
 nC  = ref.*0;
 
-harmoniki = [0,1];
+harmoniki = [0:500];
 
 
 for dis = 1 : length(podatki.displacement)
