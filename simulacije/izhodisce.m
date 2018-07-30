@@ -34,14 +34,18 @@ for j=1:length(list)
     end
 
 end
+
+Err = atan2d(Sin, Cos) - Ref;
+Err(Err<-180) = Err(Err<-180) +360;
+Err(Err> 180) = Err(Err> 180) -360;
 %%
 clear currentFolder path list ime filename matrika kot_ref sinus...
     cosinus frst_ref last_ref referr ref j st
 %%
 fftC = mojfft(Cos);
 fftS = mojfft(Sin);
-fftC{1}=fftC{1};
-fftS{1}=fftS{1};
+fftC{1}(:,1)=fftC{1}(:,1).*cosd(fftC{2}(:,1));
+fftS{1}(:,1)=fftS{1}(:,1).*cosd(fftS{2}(:,1));
 meanS0 = mean(fftS{1}(:,1));
 meanC0 = mean(fftC{1}(:,1));
 meanS1 = mean(fftS{1}(:,2));
