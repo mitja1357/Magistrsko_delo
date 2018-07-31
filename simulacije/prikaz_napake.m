@@ -26,7 +26,11 @@ Err = podatki.protocol(el,:);
 Sin = podatki.sin(el,:);
 Cos = podatki.cos(el,:);
 fftp= mojfft(Err);
-
+fftS = mojfft(Sin);
+fftC = mojfft(Cos);
+display(strvcat('          S        C',...
+    ['off | ', num2str([fftS{1}(1),fftC{1}(1)],' %.2e')],...
+    ['1st | ', num2str([fftS{1}(2),fftC{1}(2)],' %.2e')]))
 y = fftp{1}(1:5);
 y(1)=y(1).*cosd(fftp{2}(1));
 

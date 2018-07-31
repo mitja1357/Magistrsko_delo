@@ -1,5 +1,5 @@
 clear
-datum='2017_07_27';
+datum='najboljse';
 % xs = 8,915
 % ys = 9,525
 % z=min
@@ -130,8 +130,8 @@ for i=1:4
             tmp.cos = tmp.cos;
             tmp.ref = tmp.ref;
         end
-        tmp.sin = tmp.sin -mean(tmp.sin(1,:));
-        tmp.cos = tmp.cos -mean(tmp.cos(1,:));
+%         tmp.sin = tmp.sin -mean(tmp.sin(1,:));
+%         tmp.cos = tmp.cos -mean(tmp.cos(1,:));
         
         tmp.protocol=atan2d(tmp.sin, tmp.cos)-tmp.ref;
         tmp.protocol(tmp.protocol>180)= tmp.protocol(tmp.protocol>180)-360;

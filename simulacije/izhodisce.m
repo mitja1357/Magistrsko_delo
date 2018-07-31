@@ -50,11 +50,15 @@ meanS0 = mean(fftS{1}(:,1));
 meanC0 = mean(fftC{1}(:,1));
 meanS1 = mean(fftS{1}(:,2));
 meanC1 = mean(fftC{1}(:,2));
+meanSf= mean(fftS{2}(:,2));
+meanCf= mean(fftC{2}(:,2));
 
 stdvS0 = sqrt(sum((fftS{1}(:,1)-meanS0).^2)/100);
 stdvC0 = sqrt(sum((fftC{1}(:,1)-meanC0).^2)/100);
 stdvS1 = sqrt(sum((fftS{1}(:,2)-meanS1).^2)/100);
 stdvC1 = sqrt(sum((fftC{1}(:,2)-meanC1).^2)/100);
+stdvSf = sqrt(sum((fftS{2}(:,2)-meanSf).^2)/100);
+stdvCf = sqrt(sum((fftC{2}(:,2)-meanCf).^2)/100);
 
 %%
 
