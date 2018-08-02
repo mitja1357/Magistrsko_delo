@@ -1,4 +1,4 @@
-podatki = meritev_ys;
+podatki = meritev_xs;
 
 fftS = mojfft(podatki.sin);
 fftC = mojfft(podatki.cos);
