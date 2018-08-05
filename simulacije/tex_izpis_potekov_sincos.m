@@ -39,11 +39,14 @@ for i = 1:6
     end
     test{i}= [test{i},'\\'];
     test{i}(strfind(test{i},'.')) = ',';
-    test{i}(strfind(test{i},'\Delta x_s^0'):...
-        (strfind(test{i},'\Delta x_s^0')+11)) = '            ';
-    if strfind(test{i},'\cdot 10^{1}')
+    test{i}(strfind(test{i},strcat(tx,'^0')):...
+        (strfind(test{i},strcat(tx,'^0'))+11)) = '            ';
+    if strfind(test{i},'\cdot 10^{0}')
     test{i}(strfind(test{i},'\cdot 10^{0}'):...
         (strfind(test{i},'\cdot 10^{0}')+11)) = '            ';
+    end
+    if strfind(test{i},'^{1}')
+    test{i}(strfind(test{i},'^{1}'):strfind(test{i},'^{1}')+3) = '    ';
     end
 end
 

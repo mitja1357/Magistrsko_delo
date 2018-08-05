@@ -99,7 +99,8 @@ Senzor in magnet se lahko gibljeta, najprimernejša, izhodiščna lega, ni defin
 S prilagajanjem vijakov HTIMS601, opazovanjem signalov $sin$ in $cos$ ter napake sem nastavil senzor v lego kjer je bila statična ekscentričnost najmanjša. Najprimernejšo lego sem iskal glede na največjo vrednost amplitud in ortogonalnost  $sin$ in $cos$ signalov. Signala $sin$ in $cos$ sta morala ustrezati definicijskem območju zajema AD pretvornika.
 
 
-NA sliki \ref{./MER/00_sincos} je opaziti prisotnost enosmernih komponent signalov $sin$ in $cos$. Posledično se izrazi v napaki prvi harmonik (slika \ref{./MER/00_napaka}).
+NA sliki \ref{./MER/00_sincos} sta predstavljena signala $sin$ in $cos$. Enosmerni komponenti sta prisotni v obeh signaloih, posledično se izrazi v napaki prvi harmonik (slika \ref{./MER/00_napaka}).
+V napaki se pojavi med $\mathrm{95^\circ}$ in $\mathrm{140^\circ}$ preskok napake. V signalih $sin$ in $cos$ se v tem območju pojavi fazni zamik, $sin$ pri $\mathrm{95^\circ}$ in nato $cos$ pri $\mathrm{160^\circ}$
 Z razvojem napake v Fourierovo vrsto (slika \ref{./MER/00_fft}) vidimo velikosti posameznih amplitud napake.
 Enosmerna komponenta je posledica sofaznih zamikov obeh signalov $sin$ in $cos$. 
 Prvi harmonik je posledica ensmermih komponent $sin$ in $cos$. Z matematično obdelavo siganlov $sin$ in $cos$ sem enosmerni komponenti odstranil,vendar se prvi harmonik napake še vedno izrazi. Prvi harmonik napake je odvisen tudi od drugega harmonika v signalih $sin$ in $cos$.
@@ -127,25 +128,27 @@ Napaka je prikazana na sliki \ref{./MER/xs_napaka}. Med 95 in 175$^\circ$ se sig
 \slikaeps{Napaka $\varepsilon$ merjena pri 0,2 mm statične ekscentičnosti v smeri x}{./MER/xs_napaka}
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto merjeno pri 0,2 mm statične ekscentičnosti v smeri x}{./MER/xs_fft}
 \subsection{Sprememba $sin$, $cos$ ter napake od $\Delta x_s$}
-Iz simulacij se pričakuje nižanje amplitude osnovnega harmonika $cos$ signala- Sprememba amplitud osnovnih harmonikov je prikazana na sliki \ref{./MER/xs_sincos_amp}. Amplituda signala $cos$ pada pričakovano, pada tudi ampituda signala $sin$. Signala nimata enake amplitude v izhodišču, kar je posledica nepopolne izhodiščne lege. Potek enosmerne komponente je prikazan na sliki \ref{./MER/xs_sincos_off}. Komopnenta $cos$ signala pada po kot je bilo predvideno v simulacijah. Fazni zamik signalov je prikazan na sliki \ref{./MER/xs_sincos_phase}. Pričakovano po simulacijah se fazni zamik med signaloma povečuje. Rezultati simulacij so prikazovali konstanten fazni kot signala $cos$ in spreminjanje le faznega kota $sin$. Pri meritvah se je fazni kot $cos$ zmanjševal, fazni kot $sin$ povečeval. Razlika med njima je majša, kot je bila posimulirana. Vsota faznih zamikov je konstantna 
+Iz simulacij se pričakuje nižanje amplitude osnovnega harmonika $cos$ signala- Sprememba amplitud osnovnih harmonikov je prikazana na sliki \ref{./MER/xs_sincos_amp}. Amplituda signala $cos$ pada pričakovano, pada tudi ampituda signala $sin$. Signala nimata enake amplitude v izhodišču, kar je posledica nepopolne izhodiščne lege. Potek enosmerne komponente je prikazan na sliki \ref{./MER/xs_sincos_off}. Komopnenta $cos$ signala pada po kot je bilo predvideno v simulacijah. Fazni zamik signalov je prikazan na sliki \ref{./MER/xs_sincos_phase}. Pričakovano po simulacijah se fazni zamik med signaloma povečuje. Rezultati simulacij so prikazovali konstanten fazni kot signala $cos$ in spreminjanje le faznega kota $sin$. Pri meritvah se je fazni kot $cos$ zmanjševal, fazni kot $sin$ naraščal. Razlika med njima je majša, kot je bila posimulirana. Vsota faznih zamikov je konstantna, zato se enosmerna komponenta v napaki ne spreminja.
+Poteke signalov $sin$ in $cos$, ter poteke amplitud posameznih harmonikov napake, se aproksimira s kubičnimi polinomi.
 \slikaeps{Potek amplitude osnovnega harmonika $sin$ in $cos$ pri meritvah stati"cne ekscentri"cnosti v smeri x}{./MER/xs_sincos_amp}
 \slikaeps{Potek enosmerne komponente $sin$ in $cos$ pri meritvah stati"cne ekscentri"cnosti v smeri x}{./MER/xs_sincos_off}
 \slikaeps{Fazni zamik osnovnega harmonika  $sin$ in $cos$ pri meritvah stati"cne ekscentri"cnosti v smeri x glede na izhodiščno lego}{./MER/xs_sincos_phase}
 \begin{eqnarray}
-&A_{sin} = \\     
-&Off_{sin} = \\   
-&\delta_{sin} = \\
-&A_{cos} = \\     
-&Off_{cos} = \\   
-&\delta_{cos} =
+&A_{sin} = -5,56\cdot 10^{-2}\Delta x_s^3-1,99\cdot 10^{-2}\Delta x_s^2-1,18\cdot 10^{-2}\Delta x_s^1+4,84\cdot 10^{-1}            \\    
+&Off_{sin} = -3,70\cdot 10^{-2}\Delta x_s^3+2,18\cdot 10^{-2}\Delta x_s^2-1,91\cdot 10^{-3}\Delta x_s^1+6,63\cdot 10^{-4}            \\  
+&\delta_{sin} = +1,44\cdot 10^{-2}\Delta x_s^3-4,63\cdot 10^{-1}\Delta x_s^2+3,33            \Delta x_s^1+6,56\cdot 10^{-1}            \\
+&A_{cos} = -3,41\cdot 10^{-3}\Delta x_s^3-1,74\cdot 10^{-1}\Delta x_s^2+7,75\cdot 10^{-3}\Delta x_s^1+4,88\cdot 10^{-1}            \\    
+&Off_{cos} = +4,03\cdot 10^{-3}\Delta x_s^3-2,06\cdot 10^{-4}\Delta x_s^2-7,75\cdot 10^{-3}\Delta x_s^1+5,81\cdot 10^{-3}            \\  
+&\delta_{cos} = +2,43            \Delta x_s^3-1,35\cdot 10^{0}\Delta x_s^2-3,16\cdot 10^{0}\Delta x_s^1+7,71\cdot 10^{-1} 
 \end{eqnarray}
+Slika prikazuje poteke amplitud posameznih harmonikov napake v odvisnosti od statične ekscentričnosti v smeri x. Kvadratično narašča amplituda drugega harmonika, medtem ko so enosmerna komponenta in ostali harmoniki konstantni. Poteke se lahko aproksimira s kubičnimi polinomi.
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ pri meritvah stati"cne ekscentri"cnosti v smeri x}{./MER/xs_potek}
 \begin{eqnarray}
-&C_0 =- \\
-&C_1 =-\\             
-&C_2 =\\                  
-&C_3 = \\ 
-&C_4 =
+&C_0 =2,42\Delta x_s^{3}-1,71\Delta x_s^{2}+2,45\cdot 10^{-1}\Delta x_s+1,15 \\              
+&C_1 =-3,03\Delta x_s^{3}+2,34\Delta x_s^{2}-6,19\cdot 10^{-1}\Delta x_s+1,21 \\             
+&C_2 =-1,41\Delta x_s^{3}+5,31\Delta x_s^{2}+9,48\cdot 10^{-1}\Delta x_s+1,14\cdot 10^{-1} \\
+&C_3 =-2,04\Delta x_s^{3}+1,54\Delta x_s^{2}-5,12\cdot 10^{-1}\Delta x_s+3,62\cdot 10^{-1} \\
+&C_4 =-3,23\Delta x_s^{3}+2,30\Delta x_s^{2}-4,77\cdot 10^{-1}\Delta x_s+4,12\cdot 10^{-1}
 \end{eqnarray}
 
 
@@ -153,30 +156,36 @@ Iz simulacij se pričakuje nižanje amplitude osnovnega harmonika $cos$ signala-
 
 
 
-
+\newpage
 \section{Meritve statične ekscentričnosti v smeri y-osi}
+Senzor sem vrnil v izhodiščno lego in opravil meritve statične ekscentričnosti v smeri y-osi. Slika \ref{./MER/ys_sincos} prikazuje zajeta signala $sin$ in $cos$. Amplituda $sin$ se je zmanjšala, kot je bilo pričakovati po rezultatih simulacij. POsledično se izraazi v napaki višji drugi harmonik (slika \ref{./MER/ys_napaka}). Z razvojem napake v Fourierovo vrsto se amplitude posameznih harmonikov lažje razberejo. Očitno je narasla amplituda drugega harmonika, enosmerna komponenta in ostali harmoniki so ohranili enake amplitude.
 \slikaeps{Signala $sin$ in $cos$ merjena pri 0,2 mm statične ekscentičnosti v smeri y}{./MER/ys_sincos}
 \slikaeps{Napaka $\varepsilon$ merjena pri 0,2 mm statične ekscentičnosti v smeri y}{./MER/ys_napaka}
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto merjeno pri 0,2 mm statične ekscentičnosti v smeri y}{./MER/ys_fft}
 \subsection{Sprememba $sin$, $cos$ ter napake od $\Delta y_s$}
+Slika \ref{./MER/ys_sincos_amp} prikazuje potek amplitud osnovnega hamonika napake v odvisnosti statične ekscentričnosti v smeri y. S potekov se opazi padanje amplitud. Razlika med signaloma linearno narašča. 
+Slika \ref{./MER/ys_sincos_off} prikazuje potek enosmernih komponent. Pri meritvi 0,15 mm se pojavi skok enosmernih komponent, vendar razlika ostaja enaka.
+Fazni kot se v pri manjših odmikih ne spreminja kot je bilo pričakovati po rezultatih simulacij. Pri večjih odmikih se sprememba faznih kotov izrazi kot se je pričakovalo. Vsota faznih zamikov $sin$ in $cos$ je kolikortoliko konstantna, zato ni sprememb v enosmerni komponenti.
 \slikaeps{Potek amplitude osnovnega harmonika $sin$ in $cos$ pri meritvah stati"cne ekscentri"cnosti v smeri y}{./MER/ys_sincos_amp}
 \slikaeps{Potek enosmerne komponente $sin$ in $cos$ pri meritvah stati"cne ekscentri"cnosti v smeri y}{./MER/ys_sincos_off}
 \slikaeps{Fazni zamik osnovnega harmonika  $sin$ in $cos$ pri meritvah stati"cne ekscentri"cnosti v smeri y glede na izhodiščno lego}{./MER/ys_sincos_phase}
 \begin{eqnarray}
-&A_{sin} = \\     
-&Off_{sin} = \\   
-&\delta_{sin} = \\
-&A_{cos} = \\     
-&Off_{cos} = \\   
-&\delta_{cos} =
+&A_{sin} = +1,72            \Delta y_s^3-6,43\cdot 10^{-1}\Delta y_s^2-2,61\cdot 10^{-1}\Delta y_s^1+4,94\cdot 10^{-1}            \\   
+&Off_{sin} = +5,41\cdot 10^{-2}\Delta y_s^3+9,26\cdot 10^{-3}\Delta y_s^2-2,32\cdot 10^{-2}\Delta y_s^1+2,34\cdot 10^{-3}            \\
+&\delta_{sin} = +3,54\cdot 10    \Delta y_s^3-2,24\cdot 10^{1}\Delta y_s^2+3,99            \Delta y_s^1+4,23\cdot 10^{-1}            \\
+&A_{cos} = +1,96            \Delta y_s^3-9,09\cdot 10^{-1}\Delta y_s^2-8,19\cdot 10^{-2}\Delta y_s^1+4,91\cdot 10^{-1}            \\   
+&Off_{cos} = +1,33\cdot 10^{-1}\Delta y_s^3-4,01\cdot 10^{-2}\Delta y_s^2-1,67\cdot 10^{-2}\Delta y_s^1+9,17\cdot 10^{-3}            \\
+&\delta_{cos} = -3,90\cdot 10    \Delta y_s^3+1,54\cdot 10^{1}\Delta y_s^2+1,23            \Delta y_s^1-8,16\cdot 10^{-2}
 \end{eqnarray}
+
+Slika \ref{./MER/ys_potek} prikazuje poteke amplitude posameznih harmonikov napake. Kot je bilo pričakovano se spreminja le amplituda drugega harmonika. 
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ pri meritvah stati"cne ekscentri"cnosti v smeri y}{./MER/ys_potek}
 \begin{eqnarray}
-&C_0 =- \\
-&C_1 =-\\             
-&C_2 =\\                  
-&C_3 = \\ 
-&C_4 =
+&C_0 =-3,24\Delta y_s^{3}-3,13\Delta y_s^{2}+2,68\Delta y_s+5,96\cdot 10^{-1} \\                         
+&C_1 =-3,14\Delta y_s^{3}+3,90\Delta y_s^{2}-1,56\Delta y_s+1,12 \\                                      
+&C_2 =-3,90\Delta y_s^{3}-1,82\Delta y_s^{2}+8,25\Delta y_s+7,49\cdot 10^{-2} \\                         
+&C_3 =2,57\Delta y_s^{3}-3,24\cdot 10^{-1}\Delta y_s^{2}-2,36\cdot 10^{-1}\Delta y_s+1,81\cdot 10^{-1} \\
+&C_4 =1,24\Delta y_s^{3}-3,91\cdot 10^{-1}\Delta y_s^{2}-2,78\cdot 10^{-1}\Delta y_s+3,18\cdot 10^{-1}
 \end{eqnarray}
 
 
@@ -194,20 +203,20 @@ Iz simulacij se pričakuje nižanje amplitude osnovnega harmonika $cos$ signala-
 \slikaeps{Potek enosmerne komponente $sin$ in $cos$ pri meritvah dinami"cne ekscentri"cnosti v smeri x}{./MER/xd_sincos_off}
 \slikaeps{Fazni zamik osnovnega harmonika  $sin$ in $cos$ pri meritvah dinami"cne ekscentri"cnosti v smeri x glede na izhodiščno lego}{./MER/xd_sincos_phase}
 \begin{eqnarray}
-&A_{sin} = \\     
-&Off_{sin} = \\   
-&\delta_{sin} = \\
-&A_{cos} = \\     
-&Off_{cos} = \\   
-&\delta_{cos} =
+&A_{sin} = -7,93\cdot 10^{-1}\Delta x_d^3+4,04\cdot 10^{-1}\Delta x_d^2-1,06\cdot 10^{-1}\Delta x_d^1+4,68\cdot 10^{-1}            \\  
+&Off_{sin} = -8,32\cdot 10^{-3}\Delta x_d^3+1,06\cdot 10^{-2}\Delta x_d^2-6,41\cdot 10^{-3}\Delta x_d^1-9,26\cdot 10^{-4}            \\
+&\delta_{sin} = +1,69\cdot 10    \Delta x_d^3-2,37            \Delta x_d^2+1,27\cdot 10^{0}\Delta x_d^1+4,49\cdot 10^{-1}            \\
+&A_{cos} = -7,92\cdot 10^{-1}\Delta x_d^3+4,00\cdot 10^{-1}\Delta x_d^2-1,04\cdot 10^{-1}\Delta x_d^1+4,70\cdot 10^{-1}            \\  
+&Off_{cos} = -2,16\cdot 10^{-2}\Delta x_d^3+1,42\cdot 10^{-2}\Delta x_d^2-1,65\cdot 10^{-2}\Delta x_d^1+4,30\cdot 10^{-3}            \\
+&\delta_{cos} = +2,46\cdot 10    \Delta x_d^3-8,80            \Delta x_d^2+2,13\cdot 10^{0}\Delta x_d^1+5,46\cdot 10^{-1}
 \end{eqnarray}
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ pri meritvah dinami"cne ekscentri"cnosti v smeri x}{./MER/xd_potek}
 \begin{eqnarray}
-&C_0 =- \\
-&C_1 =-\\             
-&C_2 =\\                  
-&C_3 = \\ 
-&C_4 =
+&C_0 =2,03\cdot 10\Delta x_d^{3}-5,19\Delta x_d^{2}+1,57\Delta x_d+9,18\cdot 10^{-1} \\                                
+&C_1 =-5,15\cdot 10^{-1}\Delta x_d^{3}+6,79\cdot 10^{-1}\Delta x_d^{2}-2,35\cdot 10^{-1}\Delta x_d+1,07 \\             
+&C_2 =5,14\cdot 10^{-2}\Delta x_d^{3}-2,01\cdot 10^{-1}\Delta x_d^{2}+7,16\cdot 10^{-2}\Delta x_d+1,29\cdot 10^{-1} \\ 
+&C_3 =-5,69\cdot 10^{-1}\Delta x_d^{3}+4,35\cdot 10^{-1}\Delta x_d^{2}-6,56\cdot 10^{-2}\Delta x_d+1,38\cdot 10^{-1} \\
+&C_4 =-9,45\cdot 10^{-1}\Delta x_d^{3}+9,30\cdot 10^{-1}\Delta x_d^{2}-8,31\cdot 10^{-2}\Delta x_d+2,89\cdot 10^{-1}
 \end{eqnarray}
 
 

@@ -30,7 +30,8 @@ for i = 1:5
     potencaC0 = floor(log10(abs(fitC0)));
     fitC0str = fitC0.*10.^-potencaC0;
     
-    
+    figure
+    plot(x, C0,x ,fitC0(1).*x.^3+fitC0(2).*x.^2+fitC0(3).*x+fitC0(4))
     
     mojstring = strcat('&C_',num2str(i-1),' = ');
     for j = 1:4
