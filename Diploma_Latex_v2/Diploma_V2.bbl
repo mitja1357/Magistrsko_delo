@@ -1,0 +1,55 @@
+\begin{thebibliography}{1}
+
+\bibitem{killer}
+S.~Ju{\v{z}}ni{\v{c}}, B.~Marki{\v{c}}  in P.~Ju{\v{z}}ni{\v{c}}, {\em
+  Diplomska naloga: napotki za izdelavo}.
+\newblock Ljubljana: Založba Amalietti \& Amalietti, 1992.
+
+\bibitem{Matematika1}
+T.~Oetiker, H.~Partl, I.~Hyna  in E.~Schlegl, {\em Ne najkrajši uvod v LaTeX
+  $2\varepsilon$, {The not so short introduction to {LaTeX} 2$\varepsilon$}}.
+\newblock Elektronska verzija dostopna na
+  http://www-lp.fmf.uni-lj.si/plestenjak/vaje/latex/lshort.pdf, 2006.
+\newblock Bor Plestenjak, Slovenski prevod in priredba.
+
+\bibitem{AM8192}
+R.~merilna~tehnika d.o.o., ``Am8192b – angular magnetic sensor chip.''
+  Dosegljivo:
+  \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom\%2Fupload\%2FData-sheet-AM8192B-chip.pdf}.
+\newblock [Dostopano: 28. 4. 2017].
+
+\bibitem{atan2Matlab}
+MathWorks, ``{MathWorks Documentation matlab functions atan2d [Online]}.''
+  Dosegljivo: \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
+\newblock [Dostopano: 27. 2. 2018].
+
+\bibitem{atan2dMatlab}
+MathWorks, ``{MathWorks Documentation matlab functions atan2d [Online]}.''
+  Dosegljivo: \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
+\newblock [Dostopano: 27. 2. 2018].
+
+\bibitem{fourierova_vrsta}
+T.~Oetiker, H.~Partl, I.~Hyna  in E.~Schlegl, {\em Ne najkraj uvod v LaTeX
+  $2\varepsilon$, {The not so short introduction to {LaTeX} 2$\varepsilon$}}.
+\newblock Elektronska verzija dostopna na
+  http://www-lp.fmf.uni-lj.si/plestenjak/vaje/latex/lshort.pdf, 2006.
+\newblock Bor Plestenjak, Slovenski prevod in priredba.
+
+\bibitem{matlab_fft}
+MathWorks, ``{MathWorks Documentation matlab functions atan2d [Online]}.''
+  Dosegljivo: \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
+\newblock [Dostopano: 27. 2. 2018].
+
+\bibitem{RM44}
+R.~merilna~tehnika d.o.o., ``Am8192b – angular magnetic sensor chip.''
+  Dosegljivo:
+  \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom\%2Fupload\%2FData-sheet-AM8192B-chip.pdf}.
+\newblock [Dostopano: 28. 4. 2017].
+
+\bibitem{iCMHM}
+R.~merilna~tehnika d.o.o., ``Am8192b – angular magnetic sensor chip.''
+  Dosegljivo:
+  \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom\%2Fupload\%2FData-sheet-AM8192B-chip.pdf}.
+\newblock [Dostopano: 28. 4. 2017].
+
+\end{thebibliography}

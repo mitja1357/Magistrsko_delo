@@ -24,6 +24,7 @@ complex_H2=complex_H2.*exp(1j.*kot.*pi/180);
 array_pozicij=[];
 
 for i=1:4
+% for i = 3 % za meritve xd kjer je magnet zarotiran
     ekcentric=eks{i};
 
     r0=2.4;
@@ -46,12 +47,13 @@ for i=1:4
     for j=1:length(displace)
         di=displace(j);
         eval(strcat(ekcentric,'=di;'))
-        
+%             yd = -sind(32.4)*xd; xd = cosd(32.4)*xd; % meritve so bile
+%             narejene pri 32.4 stopinjah zamaknjenem magnetu        
             
         for k=1:length(theta)
             rot_mat=[ cosd(theta(k)), sind(theta(k)) ...
                     ;-sind(theta(k)), cosd(theta(k))];
-            
+
             Hall1_k=rot_mat*(Hall1+[xs;ys])-[xd;yd];           
             Hall2_k=rot_mat*(Hall2+[xs;ys])-[xd;yd]; 
 

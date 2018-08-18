@@ -12,13 +12,17 @@ load Rezultati_meritve.mat
 
 % meritev = 'lin_xd';
 
-
+%%
 eval(strcat('podatki=',meritev,';'))
 
 tx = ['\Delta ',meritev(end-1),'_',meritev(end)];
 
 x = podatki.displacement;
-fftp= mojfft(podatki.protocol);
+if strfind(meritev,'merit')
+    fftp= createFit(podatki.ref, podatki.protocol);
+else
+    fftp= mojfft(podatki.protocol);
+end
 
 
 for i = 1:5
@@ -72,8 +76,9 @@ end
 
 tmp = strvcat(test{1},test{2},test{3},test{4},test{5});
 eval(strcat(meritev,'=tmp'))
-
+%%
 clear lin_xs lin_xd lin_ys lin_yd real_xs real_xd real_ys real_yd ...
     meritev_xs meritev_ys meritev_xd meritev_zs podatki ...
     tx x fftp  i C0 fitC0 potencaC0 fitC0str mojstring j predznak osnova ...
     potenca clen test tmp meritev
+end

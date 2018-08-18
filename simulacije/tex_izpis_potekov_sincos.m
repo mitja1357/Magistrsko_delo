@@ -2,13 +2,16 @@ function tex_izpis_potekov_sincos(meritev)
 load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
 
-
+%%
 eval(strcat('podatki=',meritev,';'))
 tx = ['\Delta ',meritev(end-1),'_',meritev(end)];
-
-fftSin = mojfft(podatki.sin);
-fftCos = mojfft(podatki.cos);
-
+if strfind(meritev,'merit')
+    fftSin = createFit(podatki.ref, podatki.sin);
+    fftCos = createFit(podatki.ref, podatki.cos);
+else
+    fftSin = mojfft(podatki.sin);
+    fftCos = mojfft(podatki.cos);
+end
 yOff = [fftSin{1}(:,1).* cosd(fftSin{2}(:,1)), ...
     fftCos{1}(:,1).* cosd(fftCos{2}(:,1))];
 
@@ -53,4 +56,5 @@ end
 
 
 strvcat(test{1},test{2},test{3},test{4},test{5},test{6})
+%%
 end

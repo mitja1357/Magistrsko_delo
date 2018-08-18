@@ -15,8 +15,13 @@ filename= ...
 
 tx = '\Delta ';
 
-fftSin = mojfft(podatki.sin);
-fftCos = mojfft(podatki.cos);
+if strfind(meritev,'merit')
+    fftSin = createFit(podatki.ref, podatki.sin);
+    fftCos = createFit(podatki.ref, podatki.cos);
+else
+    fftSin = mojfft(podatki.sin);
+    fftCos = mojfft(podatki.cos);
+end
 
 yOff = [fftSin{1}(:,1).* cosd(fftSin{2}(:,1)), ...
     fftCos{1}(:,1).* cosd(fftCos{2}(:,1))];

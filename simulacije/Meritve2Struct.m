@@ -1,5 +1,5 @@
 clear
-datum='najboljse';
+datum='2018_03_20';
 % xs = 8,915
 % ys = 9,525
 % z=min

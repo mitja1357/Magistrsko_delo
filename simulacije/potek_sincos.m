@@ -17,14 +17,20 @@ filename= ...
 eval(strcat('podatki=',meritev,';'))
 tx = ['\Delta ',meritev(end-1),'_',meritev(end)];
 
-fftSin = mojfft(podatki.sin);
-fftCos = mojfft(podatki.cos);
+if strfind(meritev,'merit')
+    fftSin = createFit(podatki.ref, podatki.sin);
+    fftCos = createFit(podatki.ref, podatki.cos);
+else
+    fftSin = mojfft(podatki.sin);
+    fftCos = mojfft(podatki.cos);
+end
 
 yOff = [fftSin{1}(:,1).* cosd(fftSin{2}(:,1)), ...
     fftCos{1}(:,1).* cosd(fftCos{2}(:,1))];
 
 y1st =[fftSin{1}(:,2), fftCos{1}(:,2)];
 y1stPh =[fftSin{2}(:,2)+90, fftCos{2}(:,2)];
+y2nd =[fftSin{1}(:,3), fftCos{1}(:,3)];
 
 x = [podatki.displacement, podatki.displacement];
 
@@ -114,9 +120,42 @@ xlabel([tx ' / mm'])
 ylabel('fazni zamik / ^\circ')
 if exist('shrani')
     if shrani
+        saveas(gcf,[filename, 'sincos_2nd'],'epsc')
+    end
+end
+
+
+
+
+figure('Name', [meritev, ' 2nd harmonic amp'] ,'Position', ...
+       [10 scrsz(4)-10-80-600 800 600]);
+axes1 = axes('Parent',gcf,...
+        'YGrid','on',...
+        'XGrid','on',...
+        'FontSize',16,...
+        'FontName','Times New Roman');
+plot(x,y2nd,'LineWidth',2);
+if (max(y2nd(:))-min(y2nd(:)))<1e-14;
+    axis( [0,0.5,-0.5+mean(y2nd(:)),0.5+mean(y2nd(:))])
+else
+    maxi = max(y2nd(:))+0.05.*abs(max(y2nd(:))-min(y2nd(:)));
+    mini = min(y2nd(:))-0.05.*abs(max(y2nd(:))-min(y2nd(:)));
+    axis( [0,0.5,mini,maxi]);
+
+end
+legend('sin','cos','Location','northeast')
+grid on
+xlabel([tx ' / mm'])
+if ~strfind(meritev,'mer')
+    ylabel('B / mT')
+end
+if exist('shrani')
+    if shrani
         saveas(gcf,[filename, 'sincos_phase'],'epsc')
     end
 end
+
+
 
 
 

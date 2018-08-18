@@ -17,9 +17,15 @@ filename= ...
 eval(strcat('podatki=',meritev,';'))
 
 tx = ['\Delta ',meritev(end-1),'_',meritev(end)];
+protokol = atan2d(podatki.sin,podatki.cos)-podatki.ref;
+protokol(protokol > 180) = protokol(protokol > 180) -360;
+protokol(protokol <-180) = protokol(protokol <-180) +360;
 
-fftp= mojfft(podatki.protocol);
-
+if strfind(meritev,'merit')
+    fftp= createFit(podatki.ref, protokol);
+else
+    fftp= mojfft(protokol);
+end
 y = fftp{1}(:, 1:5);
 y(:,1)=y(:,1).*cosd(fftp{2}(:, 1));
 x = [podatki.displacement,podatki.displacement,podatki.displacement,podatki.displacement,podatki.displacement];
