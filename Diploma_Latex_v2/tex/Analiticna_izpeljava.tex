@@ -1,11 +1,11 @@
-\chapter{Analiti"cna izpeljava vplivov dinami"cne in stati"cne ekscentri"cnosti}
+\chapter{Analitična izpeljava vplivov dinamične in statične ekscentričnosti}
 
-V tem poglavju bom analiti"cno prikazal vpliv omenjenih ekscentri"cnosti, ki se pojavita zaradi neprimerne vgradnje. Napaki razli"cno vplivati na izhodni podatek, zato ju lahko obravnamvam posami"cno. Preko analiti"cne izpeljave bomo spoznali kako se spreminja lokacija Hall-ove sonde glede na magnet ob pravilni monta"zi. Z vpeljavo dodane ekscentri"cnosti v model bomo videli, kako se potek gibanja Hall-ove sonde glede na magnet spremeni. S poznavanjem lokacije Hall-ove sonde nad magnetom bomo lahko od"citali vrednost \Bz.
+V tem poglavju je analitično izpeljan vpliv ekscentričnosti, ki se pojavita zaradi neprimerne vgradnje. Napaki različno vplivati na izhodni podatek, zato se ju lahko obravna posamično. Preko analitične izpeljave je prikazano, kako se spreminja lokacija Hall-ove sonde glede na magnet ob pravilni montaži. Z vpeljavo dodatne ekscentričnosti v model se potek gibanja sonde glede na magnet spremeni. S poznavanjem lokacije sonde nad magnetom se lahko odčita pomerjena vrednost \Bz.
 
 
 \section{Definicija koordinatnih sistemov}
 
-Definirajmo kartezi"cni koordinatni sistem, ki ima v izhodi"scu postavljen radialno magnetiziran magnet. Na poljubno to"cko $S_{h0}(x_0,y_0)$, vendar ne v izhodi"s"ce postavimo Hall-ovo sondo. Na sliki \ref{fig:def_kks} je prikazan tak sistem. Hall-ova sonda je postavljena na abcisno os za la"zje razumevanje. Vrednost $y_0$ je lahko poljubna in kon"cna re"sitev izpeljave bo splo"sna za poljubno lokacijo Hall-ove sonde v za"cetni legi.
+Definiran kartezični koordinatni sistem, ima v izhodišcu postavljen radialno magnetiziran magnet. Na poljubno točko $S_{h0}(x_0,y_0)$, vendar ne v izhodišče je postavljena Hall-ova sonda (slika \ref{fig:def_kks}). Za lažjo predstavo se Hall-ova sonda nahaja na abcisno osi.
 
 \begin{figure}[h!]
 	\centering
@@ -17,7 +17,7 @@ Definirajmo kartezi"cni koordinatni sistem, ki ima v izhodi"scu postavljen radia
 	\label{fig:def_kks}
 \end{figure}
 
-Z rotacijo magneta za kot $\theta$, se lokacija Hall-ove sonde glede na magnet spremeni. Nova lokacija Hall-ove sonde glede na magnet je enaka, kot "ce namesto magnet, zarotiramo Hall-ovo sondo za kot $-\theta$ . Novo lokacjo Hall-ove sonde glede na magnet lahko zapi"semo z rotacijsko matriko.
+Z rotacijo magneta za kot $\theta$, se položa sonde glede na magnet spremeni. Nov položaj sonde glede na magnet je enaka, če namesto magnet, zavrtimo sondo za kot $-\theta$ . Nov položaj sonde glede na magnet lahko zapišemo z (\ref{equ:rotacija_hall}).
 
 \begin{equation}
 \label{equ:rotacija_hall}
@@ -26,7 +26,7 @@ Z rotacijo magneta za kot $\theta$, se lokacija Hall-ove sonde glede na magnet s
 \begin{bmatrix} x_0\\y_0 \end{bmatrix}
 \end{equation}
 
-Argument rotacijske matrike je $-\theta$, pri "cemer vemo, da smo namesto magneta zarotirali Hall-ovo sondo v nasprotno smer. Z upo"stevanjem lihosti funkcije sinus in sodosti funkcije kosinus\cite{Matematika1}, se ena"cba \ref{equ:rotacija_hall} poenostavi v:
+Argument rotacijske matrike je $-\theta$. Z upoštevanjem lihosti funkcije sinus in sodosti funkcije kosinus\cite{Matematika1}, se (\ref{equ:rotacija_hall}) poenostavi v:
 \begin{equation}
 \label{equ:rotacija_hall_simplify}
 \begin{bmatrix} x\\y \end{bmatrix}=
@@ -70,24 +70,16 @@ Argument rotacijske matrike je $-\theta$, pri "cemer vemo, da smo namesto magnet
 	\label{subfig:zasuk_hall}
 \end{subfigure}
 
-\caption{Sprememba lokacije glede na magnet ob rotaciji}
+\caption{Sprememba položaja glede na magnet ob rotaciji}
 \label{fig:zasuk_magneta}
 
 \end{figure}
 
 
 
-\section{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri dinami"cni ekscentri"cnosti}
+\section{Izpeljava gibanja položaja Hallove sonde na magnet pri dinamični ekscentričnosti}
 
-Opazujmo sedaj sistem gibanja Hall-ove sonde glede na magnet ter dinami"cno ekscentri"cnost. Magnet je
- postavljen v izhodi"sce koordinatnega sistema $S_m(0,0)$, kjre je tudi os vrtenja. Sedaj magnet izmaknemo v novo lego $S_{m1}(\Delta
-  x_d,\Delta y_d)$ (Slika \ref{fig:def_din_eks}). Os vrtenja je "se vedno postavljena v izhodi"s"ce
-   koordinatnega sistema. Sredi"sce magneta $S_{m1}(\Delta x_d,\Delta y_d)$ tako tekom vrtenja okoli
-    koordinatnega izhodi"sca opi"se kro"znico z radijem $\sqrt{\Delta x_d^2+\Delta y_d^2}$. V sistem sedaj
-     dodajmo Hall-ovo sondo v njeno za"cetno lego glede na izhodi"sce $S_{h0}(x_0,y_0)$.
-
-
-
+Magnet je postavljen v izhodišce koordinatnega sistema $S_m(0,0)$, kjer je os vrtenja. Vpliv dinamične ekscentričnosti je sprememba središča magneta v točko $S_{m1}(\Delta x_d,\Delta y_d)$ (Slika \ref{fig:def_din_eks}). Os vrtenja je ostaja v izhodišču koordinatnega sistema. Središce magneta $S_{m1}(\Delta x_d,\Delta y_d)$ ob rotaciji opiše okoli osi vrtenja krožnico z radijem $\sqrt{\Delta x_d^2+\Delta y_d^2}$.
 
 \begin{figure}[h!]
 	\centering
@@ -100,94 +92,114 @@ Opazujmo sedaj sistem gibanja Hall-ove sonde glede na magnet ter dinami"cno eksc
 		\hall {2.3}{0} {0};
 		\kks{3}
 	\end{tikzpicture}
-	\caption{Shema definicije dinami"cne ekscentri"cnosti vpliva na magnet}
+	\caption{Definicije dinamične ekscentričnosti}
 	\label{fig:def_din_eks}
 \end{figure}
 
+\begin{equation}
+\label{equ:rotacija_hall_din_sonda}
+\begin{bmatrix} x\\y \end{bmatrix}=
+\begin{bmatrix} x_0\\y_0 \end{bmatrix}+
+\begin{bmatrix} \cos(\theta)&\sin(\theta)\\-\sin(\theta)&\cos(\theta) \end{bmatrix}\cdot
+\begin{bmatrix} x_d\\y_d \end{bmatrix}
+\end{equation}
+S (\ref{equ:rotacija_hall_din_sonda}) je izraženo gibanje središče magneta na Hallovo sondo. Celoten sistem se vrti okoli osi vrtenja $S_0(0,0)$. Velja enak razmislek kot v prejšnjem poglavju z vrtenjem sonde za kot  $-\theta$:
+ 
+\begin{equation}
+\label{equ:rotacija_hall_din_1}
+\begin{bmatrix} x\\y \end{bmatrix}=
+\begin{bmatrix} \cos(\theta)&-\sin(\theta)\\ \sin(\theta)&\cos(\theta) \end{bmatrix}
+\cdot \begin{pmatrix}
+\begin{bmatrix} x_0\\y_0 \end{bmatrix}+
+\begin{bmatrix} \cos(\theta)&\sin(\theta)\\-\sin(\theta)&\cos(\theta) \end{bmatrix}\cdot
+\begin{bmatrix} x_d\\y_d \end{bmatrix}\end{pmatrix}
+\end{equation}
 
-
-
-Enako gibanje Hall-ove sonde na magnet lahko dose"zemo tudi z obrnjenim sistemom. Vrnimo magnet v izhodi"s"cno lego $S_m(0,0)$. Sedaj postavimo os vrtenja magneta v to"cko $(-\Delta x_d,-\Delta y_d)$. Hall-ovo sondo postavimo v to"cko $S_{h1}(x_0-\Delta x_d,y_0 - \Delta y_d).$
-
-
-
-\begin{figure}[h!]
-	\centering
-	\begin{tikzpicture}
-		\magnet {0} {0} {0}{$S_{m}(0,0)$}{1};
-		\draw (0,0)--(-0.6,-0.3);
-		\fill (-0.6,-0.3) circle [radius=1pt];
-		\node at (0,-0.6){$S_0(-\Delta x_d,-\Delta y_d)$};
-		\hall {1.7}{-0.3} {0};
-		\kks{3}
-	\end{tikzpicture}
-	\caption{Shema definicije dinami"cne ekscentri"cnosti vpliva na Hall-ovo sondo}
-	\label{fig:def_din_eks_na_stator}
-\end{figure}
-
-Sistema prikazana na slikah \ref{fig:def_din_eks} in \ref{fig:def_din_eks_na_stator}, se v za"cetnih legah ne razlikujeta. Sedaj zarotirajmo Hall-ovo sondo okoli osi vrtenja $S_0(-\Delta x_d,-\Delta y_d)$. Hall-ova sonda se giblje glede na magnet enako, kot "ce bi magnet zavrteli z dinami"cno ekscentri"cnostjo (Slika \ref{fig:def_din_eks}). Gibanje Hall-ove sonde na magnet je izra"zeno kot gibanje po kro"znici s sredi"s"cem v to"cki $(-\Delta x_d,-\Delta y_d)$.
-
-\begin{figure}[h!]
-	\centering
-	\begin{tikzpicture}
-		\magnet {0} {0} {0}{}{1};
-		\draw [dotted]  (-0.6,-0.3) circle (2.3);
-		\draw (0,0)--(-0.6,-0.3);
-		\fill (-0.6,-0.3) circle [radius=1pt];
-		\hall {1.39}{-1.45} {-30};
-		\draw [dashed](-0.6,-0.3)--(1.7,-0.3) arc(0:-30:2.3)--(-0.6,-0.3);
-		\node at(0.4,-0.6){$-\theta$};
-        \draw [->] (0.9,-0.3) arc (0:-30:1.5);
-		\kks{3}
-	\end{tikzpicture}
-	\caption{Potek Hall-ove sonde ob rotaciji glede na magnet ob dinami"cni ekscentri"cnosti}
-	\label{fig:potek_sonde_din_eks}
-\end{figure}
-
-Potek Hall-ove sonde ob rotaciji z upo"stevanjem dinami"cne ekscentri"cnosti lahko zapi"semo kot rotacijo z dodatno enosmerno komponento(\ref{equ:rotacija_hall_simplify}).
-
+(\ref{equ:rotacija_hall_din_1}) se poenostavi:
 \begin{equation}
 \label{equ:rotacija_hall_din}
 \begin{bmatrix} x\\y \end{bmatrix}=
 \begin{bmatrix} \cos(\theta)&\sin(\theta)\\-\sin(\theta)&\cos(\theta) \end{bmatrix}
 \begin{bmatrix} x_0\\y_0 \end{bmatrix}
-+
-\begin{bmatrix} -\Delta x_d\\-\Delta y_d \end{bmatrix}
-\end{equation}
-
-V (\ref{equ:rotacija_hall_din}) lahko izrazimo - in izraz se poenostavi.
-
-\begin{equation}
-\label{equ:rotacija_hall_din_simplify}
-\begin{bmatrix} x\\y \end{bmatrix}=
-\begin{bmatrix} \cos(\theta)&-\sin(\theta)\\\sin(\theta)&\cos(\theta) \end{bmatrix}
-\begin{bmatrix} x_0\\y_0 \end{bmatrix}
 -
 \begin{bmatrix} \Delta x_d\\\Delta y_d \end{bmatrix}
 \end{equation}
 
-\section{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri stati"cni ekscentri"cnosti}
+Dinamična ekscentričnost na gibanje sonde vpliva kot enosmerna komponenta  $(-\Delta x_d,-\Delta y_d)$. Enak učinek se doseže, z izmikom Hallove sonde in osi vrtenja v novo točko $S_{h1}(-\Delta x_d,-\Delta y_d), S_0(x_0-\Delta x_d,y_0-\Delta y_d)$  in zavrti sondo okoli osi vrtenja za  $-\theta$. 
 
 
-Postavimo sistem nazaj v izhodi"scno lego, brez ekscentri"cnosti. Tako sredščce magneta, kot os vrtenja postavimo v izhodi"sce. Hall-ova sonda je postavljena v to"cko $S_{h0}(x_0,y_0)$. Sedaj premaknimo Hall-ovo sondo za $(\Delta x_s, \Delta y_s)$, v novo to"cko $S_{h1}(x_0+\Delta x_s, y_0+\Delta y_s)$. Na sliki \ref{fig:def_sta_eks} je prikazana le stati"cna ekscentri"cnost v y-osi, vendar celotni razmislek velja za obe stati"cni ekscentri"cnosti enako.
+%
+%\begin{figure}[h!]
+%	\centering
+%	\begin{tikzpicture}
+%		\magnet {0} {0} {0}{$S_{m}(0,0)$}{1};
+%		\draw (0,0)--(-0.6,-0.3);
+%		\fill (-0.6,-0.3) circle [radius=1pt];
+%		\node at (0,-0.6){$S_0(-\Delta x_d,-\Delta y_d)$};
+%		\hall {1.7}{-0.3} {0};
+%		\kks{3}
+%	\end{tikzpicture}
+%	\caption{Shema definicije dinamične ekscentričnosti vpliva na Hall-ovo sondo}
+%	\label{fig:def_din_eks_na_stator}
+%\end{figure}
+%
+%Sistema prikazana na slikah \ref{fig:def_din_eks} in \ref{fig:def_din_eks_na_stator}, se v začetnih legah ne razlikujeta. Sedaj zarotirajmo Hall-ovo sondo okoli osi vrtenja $S_0(-\Delta x_d,-\Delta y_d)$. Hall-ova sonda se giblje glede na magnet enako, kot če bi magnet zavrteli z dinamično ekscentričnostjo (Slika \ref{fig:def_din_eks}). Gibanje Hall-ove sonde na magnet je izraženo kot gibanje po krožnici s središčem v točki $(-\Delta x_d,-\Delta y_d)$.
+%
+%\begin{figure}[h!]
+%	\centering
+%	\begin{tikzpicture}
+%		\magnet {0} {0} {0}{}{1};
+%		\draw [dotted]  (-0.6,-0.3) circle (2.3);
+%		\draw (0,0)--(-0.6,-0.3);
+%		\fill (-0.6,-0.3) circle [radius=1pt];
+%		\hall {1.39}{-1.45} {-30};
+%		\draw [dashed](-0.6,-0.3)--(1.7,-0.3) arc(0:-30:2.3)--(-0.6,-0.3);
+%		\node at(0.4,-0.6){$-\theta$};
+%        \draw [->] (0.9,-0.3) arc (0:-30:1.5);
+%		\kks{3}
+%	\end{tikzpicture}
+%	\caption{Potek Hall-ove sonde ob rotaciji glede na magnet ob dinamični ekscentričnosti}
+%	\label{fig:potek_sonde_din_eks}
+%\end{figure}
+%
+%Potek Hall-ove sonde ob rotaciji z upoštevanjem dinamične ekscentričnosti lahko zapišemo kot rotacijo z dodatno enosmerno komponento(\ref{equ:rotacija_hall_simplify}).
+%
+%
+%
+%V (\ref{equ:rotacija_hall_din}) lahko izrazimo - in izraz se poenostavi.
+%
+%\begin{equation}
+%\label{equ:rotacija_hall_din_simplify}
+%\begin{bmatrix} x\\y \end{bmatrix}=
+%\begin{bmatrix} \cos(\theta)&-\sin(\theta)\\\sin(\theta)&\cos(\theta) \end{bmatrix}
+%\begin{bmatrix} x_0\\y_0 \end{bmatrix}
+%-
+%\begin{bmatrix} \Delta x_d\\\Delta y_d \end{bmatrix}
+%\end{equation}
+
+\section{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri statični ekscentričnosti}
+
+Statična ekscentričnost se pojavi, ob izmiku Hallove sonde iz njene osnovne lege v  $S_{h1}(x_0+\Delta x_s, y_0+\Delta y_s)$. Z vrtenjem magneta je sonda ves čas enako oddaljena od središča magneta. Z miselnim obratom vrtenja sonde v nasprotni smeri se gibanje sonde izrazi kot gibanje po krožnici z radijem $\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$ (\ref{equ:rotacija_hall_simplify}).
 
 
 \begin{figure}[h!]
 	\centering
 	\begin{tikzpicture}
 	\magnet {0} {0} {0}{}{1};
-	\hall {2.4}{-0.6} {0};
+	\hall {3.0}{-0.6} {0};
 	\draw[<->,dotted] (0,0)--(0,-0.6);
-	\draw[dotted] (2.3,-0.6)--(0,-0.6);
+	\draw[<->,dotted] (0, -0.6)--(0.6,-0.6);
+	\draw[dotted] (2.9,-0.6)--(0.6,-0.6);
 	\node at (0.4,-0.3){$\Delta y_s$};
+	\node at (0.4,-0.8){$\Delta x_s$};
 	\end{tikzpicture}
-	\caption{Shema definicije stati"cne ekscentri"cnosti}
+	\caption{Shema definicije statične ekscentričnosti}
 	\label{fig:def_sta_eks}
 \end{figure}
 
-Po enakem razmi"sljanju kot v zgornjih poglavjih, sedaj zarotirajmo Hall-ovo sondo za kot \kol{-\theta} okoli izhodi"s"ca. Hall-ova sonda se giblje po kro"znici z radijem $\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$.
+%Po enakem razmišljanju kot v zgornjih poglavjih, sedaj zarotirajmo Hall-ovo sondo za kot \kol{-\theta} okoli izhodišča. Hall-ova sonda se giblje po krožnici z radijem $\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$.
 
-Statična ekscentričnost tako vpliva le na spremembo radija krožnice, ki jo opiše Hall-ova sonda ob rotaciji nad magnetom.
+%Statična ekscentričnost tako vpliva le na spremembo radija krožnice, ki jo opiše Hall-ova sonda ob rotaciji nad magnetom.
 
 \begin{figure}[h!]
 	\centering
@@ -204,12 +216,11 @@ Statična ekscentričnost tako vpliva le na spremembo radija krožnice, ki jo op
 	\draw [dotted, <->] (0,0)--(1.69,-1.67);
     \draw [->] (1.5,0) arc (0:-30:1.5);
 	\end{tikzpicture}
-	\caption{Potek Hall-ove sonde ob rotaciji glede na magnet ob stati"cni ekscentri"cnosti}
+	\caption{Potek sonde ob vrtenju glede na magnet ob statični ekscentričnosti}
 	\label{fig:def_sta_eks_stat}
 \end{figure}
 
 
-To lahko zapi"semo v izraz (\ref{equ:rotacija_hall_simplify}) kot:
 
 \begin{equation}
 \label{equ:rotacija_hall_stat}
@@ -224,16 +235,16 @@ To lahko zapi"semo v izraz (\ref{equ:rotacija_hall_simplify}) kot:
 
 
 
-\section{Kon"cna ena"cba za dolo"canje lokacije Hall-ove sonde}
+\section{Končna enačba za določanje lokacije Hall-ove sonde}
 
-Do sedaj smo postopoma izpeljali ena"cbe za:
-\begin{itemize}
-  \item sistem magneta in Hall-ove sonde ob pravilni monta"zi
-  \item sistem magneta in Hall-ove sonde z dinami"cno ekscentri"cnostjo magneta
-  \item sistem magneta in Hall-ove sonde s stati"cno ekscentri"cnostjo Hall-ove sonde
-\end{itemize}
+%Do sedaj smo postopoma izpeljali enačbe za:
+%\begin{itemize}
+%  \item sistem magneta in Hall-ove sonde ob pravilni montaži
+%  \item sistem magneta in Hall-ove sonde z dinamično ekscentričnostjo magneta
+%  \item sistem magneta in Hall-ove sonde s statično ekscentričnostjo Hall-ove sonde
+%\end{itemize}
 
-Ena"cbi sistema z ekscentri"cnostjo sti med seboj neodvisni zato lahko ena"cbe sistemov zdru"zimo. Uporabimo princip superpozicije in dobimo kon"cno ena"cbo za lociranje Hall-ove sonde glede na magnet v odvistnosti od zasuka magneta, z upo"stevanjem vpliva tako dinami"cne kot stati"cne ekscentri"cnosti. Kon"cna ena"cba se glasi:
+(\ref{equ:rotacija_hall_din}) in (\ref{equ:rotacija_hall_simplify}) sta med seboj neodvisni zato se ju lahko združi.
 
 \begin{equation}
 \label{equ:rotacija_hall_koncna}
@@ -244,44 +255,44 @@ Ena"cbi sistema z ekscentri"cnostjo sti med seboj neodvisni zato lahko ena"cbe s
 \end{equation}
 
 
-Ogledali smo si, kako je ob rotaciji locirana Hall-ova sonda glede na magnet. Ogledali smo si tudi, kako na lokacijo sonde vplivati dinami"cna in stati"cna ekscentri"cnost. S poznavanjem magnetnega polje $B_z=B_z(x , y)$, lahko dolo"cimo kak"sno vrendost polja $B_z$ pomeri Hall-ova sonda ob rotaciji ($B_z=B_z(\theta)$). Ob poznavanju polja $B_z$, lahko dolo"cimo zasuk magneta glede na postavitev Hallove sonde.
+%Ogledali smo si, kako je ob rotaciji locirana Hall-ova sonda glede na magnet. Ogledali smo si tudi, kako na lokacijo sonde vplivati dinamična in statična ekscentričnost. S poznavanjem magnetnega polje $B_z=B_z(x , y)$, lahko določimo kakšno vrendost polja $B_z$ pomeri Hall-ova sonda ob rotaciji ($B_z=B_z(\theta)$). Ob poznavanju polja $B_z$, lahko določimo zasuk magneta glede na postavitev Hallove sonde.
 
 
-\chapter{Izpeljava poteka polja $B_z(\theta)$ in ocena napake zaradi ekscentri"cnosti}
+\chapter{Izpeljava poteka polja $B_z(\theta)$ in ocena napake zaradi ekscentričnosti}
 
-V tem poglavju si bomo ogledali kak"sno magnetno polje  pomeri Hall-ova sonda. Ogledali si bomo magnet, ter kako senzor RM44 meri magnetno polje. Preko pomirjenega polja, bomo izra"cunali kak"sna je napake pomerjenega kota od referen"cnega in kako se napaka spreminja z ekscentri"cnostjo.
+%V tem poglavju si bomo ogledali kakšno magnetno polje  pomeri Hall-ova sonda. Ogledali si bomo magnet, ter kako senzor RM44 meri magnetno polje. Preko pomirjenega polja, bomo izračunali kakšna je napake pomerjenega kota od referenčnega in kako se napaka spreminja z ekscentričnostjo.
 
 \section{Definicija  gostote magnetnega polja $B_z$}
 
 Predlagan magnet s strani proizvajalca senzorja je radialno magnetiziran s premerom 4 mm.
 \bitnaslika{Primer magneta predlagan s strani proizvajalca}{magnet4mm}
 
-Dajalnik pozicije RM44 meri z-komponento gostote magnetnega polja, zato se lahko osredoto"cimo le nanjo \cite{AM8192}. Potek komponente $B_z$ nad cilindri"cnim magnetom je prikazan na sliki \ref{fig:magnetno_polje}.
+Dajalnik pozicije RM44 meri z-komponento gostote magnetnega polja \cite{AM8192}. Potek komponente $B_z$ nad cilindričnim magnetom je prikazan na sliki \ref{fig:magnetno_polje}.
 
-%Magsnetno polje  v prostoru lahko izra"cunamo z Biot-Savartovim zakonom. Poznati moramo specifikacije trajnega magneta in izra"cunati integral po prostoru. Tako dobimo v poljubni to"cki v prostoru vrednost B.  Hall-ove sonde v senzorju RM44 merijo le z-komponento magnetnega polja, zato se lahko osredoto"cimo le nanjo. Odvistnost z-komponente vektorja B na konstantni vi"sini od magneta je vidno na sliki \ref{fig:magnetno_polje}.
+%Magsnetno polje  v prostoru lahko izračunamo z Biot-Savartovim zakonom. Poznati moramo specifikacije trajnega magneta in izračunati integral po prostoru. Tako dobimo v poljubni točki v prostoru vrednost B.  Hall-ove sonde v senzorju RM44 merijo le z-komponento magnetnega polja, zato se lahko osredotočimo le nanjo. Odvistnost z-komponente vektorja B na konstantni višini od magneta je vidno na sliki \ref{fig:magnetno_polje}.
 
 
 
 \begin{figure}[h]
 	\centering
 		\includegraphics[width=0.75\columnwidth]{./Slike/magnetno_polje.jpg}
-	\caption{z-komponenta vektorja gostote magnetnega polja nad cilindri"cnim magnetom citeAM8192}
+	\caption{z-komponenta vektorja gostote magnetnega polja nad cilindričnim magnetom \cite{AM8192}}
 	\label{fig:magnetno_polje}
 \end{figure}
 
 
-Potek z-komponente lahko izra"cunamo po Biot-Savartovim zakonom oz. numeri"cno se"stejemo prispevke posameznih del"ckov magneta. Tako dobimo vrednost celotnega vektorja gostote magnetnga polja v posamezni to"cki. Magnetno polje z komponente v okolici osi vrtenja magneta lahko aproksimiramo z ravnino
+Potek z-komponente se lahko izračuna po Biot-Savartovim zakonom oz. z numerično seštevanjem prispevke posameznih delčkov magneta. Za oceno napake, se magnetno polje z komponente v okolici osi vrtenja magneta aproksimira z ravnino (\ref{equ:poljeB}).
 
 \begin{equation}
 \label{equ:poljeB}
 B_z(x,y)=k\cdot x.
 \end{equation}
 
-Tak"sna aproksimacija zadostuje za ocenitev poteka napake. S poznavanjem lokacije Hall-ove sonde, kar smo si ogledali v prej"snjem poglavju, sedaj dobimo potek pomerjene komponente gostote magnetnega polja. Aprokisirano polje je linearno odvisno od x komponente. Za la"zje razumevanje definirajmo konstanto $k$ enako 1.
+Aproksimacija zadostuje za oceno napake. S poznavanjem lokacije sonde glede na magnet, se lahko izračuna merjena komponenta magnetnega polja. Aprokisimirano polje je linearno odvisno od x komponente (\ref{equ:poljeB}). Za lažje razumevanje naj bo $k$ enak 1.
 
-\section{Postavitev Hall-ovih sond za zajem polja in pomerjeno polje v odvistnosti od ekscentri"cnosti}
-%Sedaj si oglejmo, kako bi dolo"cili kot zasuka poljubne to"cke okoli izhodi"s"ca. Definirajmo kartezi"cni koordinatni sistem, in v njem poljubno to"cko $(x_0,y_0)$, ki ni v izhodi"s"cu(Slika \ref{fig:dolocitev_kota}).
-%Za dolo"canje kota $\varphi$ je potrebno poznati poznati polo"zaj to"cke. Kot $\varphi$ dolo"cimo preko trigonometri"cne funkcije $\arctan$: $$\varphi=\arctan\frac{y_0}{x_0}$$
+\section{Postavitev Hallovih sond in pomerjeno polje v odvistnosti od ekscentričnosti}
+%Sedaj si oglejmo, kako bi določili kot zasuka poljubne točke okoli izhodišča. Definirajmo kartezični koordinatni sistem, in v njem poljubno točko $(x_0,y_0)$, ki ni v izhodišču(Slika \ref{fig:dolocitev_kota}).
+%Za določanje kota $\varphi$ je potrebno poznati poznati položaj točke. Kot $\varphi$ določimo preko trigonometrične funkcije $\arctan$: $$\varphi=\arctan\frac{y_0}{x_0}$$
 %
 %
 %
@@ -295,12 +306,12 @@ Tak"sna aproksimacija zadostuje za ocenitev poteka napake. S poznavanjem lokacij
 %%	\node at (-0.5,0.285) {\textbullet};
 %	\node at (-0.32,0.35) {($x_0$,$y_0$)};
 %	\end{tikzpicture}
-%	\caption{Slika za pomo"c pri dolo"canju kota}
+%	\caption{Slika za pomoč pri določanju kota}
 %	\label{fig:dolocitev_kota}
 %\end{figure}
 %
 %
-%Za dolo"citev kota $\varphi$  je dovolj poznati "ze projekciji vektorja na koordinatni osi(slika \ref{fig:dolocitev_kota_2}),
+%Za določitev kota $\varphi$  je dovolj poznati že projekciji vektorja na koordinatni osi(slika \ref{fig:dolocitev_kota_2}),
 %
 %\begin{figure}[h!]
 %	\centering
@@ -316,20 +327,20 @@ Tak"sna aproksimacija zadostuje za ocenitev poteka napake. S poznavanjem lokacij
 %	\node at(-0.5,-0.1){$x_0$} ;
 %	\node at(0.1,0.2855){$y_0$};
 %	\end{tikzpicture}
-%	\caption{Slika za pomo"c pri dolo"canju kota}
+%	\caption{Slika za pomoč pri določanju kota}
 %	\label{fig:dolocitev_kota_2}
 %\end{figure}
 %
 %
-%"Ce poznamo projekciji to"cke na koordinatni osi, je to zadosten pogoj za dolo"citev kota $\varphi$.
-%Projekcijo lahko pridobimo "ce opazujemo projekciji polo"zaja to"cke v koordinatnih oseh.
+%če poznamo projekciji točke na koordinatni osi, je to zadosten pogoj za določitev kota $\varphi$.
+%Projekcijo lahko pridobimo če opazujemo projekciji položaja točke v koordinatnih oseh.
 %
-%Sedaj si predstavljajmo da ta poljubna to"cka predstavlja enega od polov magneta. Za poznavanje zasuka pola magneta, je dovolj od"citanje polja na koordinatnih oseh. Hall-ovi sondi ne smeti biti postavljeni na isto koordinatno os. Ni nujno da sta sondi postavljeni pravokotno druga na drugo, si pa s tem prihranimo korak v katerem bi bilo potrebno izra"cunati projekcijo na pravokotni koordinatni osi.
+%Sedaj si predstavljajmo da ta poljubna točka predstavlja enega od polov magneta. Za poznavanje zasuka pola magneta, je dovolj odčitanje polja na koordinatnih oseh. Hall-ovi sondi ne smeti biti postavljeni na isto koordinatno os. Ni nujno da sta sondi postavljeni pravokotno druga na drugo, si pa s tem prihranimo korak v katerem bi bilo potrebno izračunati projekcijo na pravokotni koordinatni osi.
 %
-%Iz zgornjega razmisleka lahko sedaj smiselno postavimo Hall-ovi sondi v koordinatni sistem. Najprimerneje ju je postaviti na koordinatni osi (Slika \ref{fig:zacetna_postavitev_sond}). Sondi postavimo na enako razdaljo od izhodi"s"ca $r_0$. Tako bo zajem poteka polja ob rotaciji magneta enak, le fazno zamaknjeno.
+%Iz zgornjega razmisleka lahko sedaj smiselno postavimo Hall-ovi sondi v koordinatni sistem. Najprimerneje ju je postaviti na koordinatni osi (Slika \ref{fig:zacetna_postavitev_sond}). Sondi postavimo na enako razdaljo od izhodišča $r_0$. Tako bo zajem poteka polja ob rotaciji magneta enak, le fazno zamaknjeno.
 
 
-Za izra"cun kota potrebujem poznati polje v vsaj dveh to"ckah nad magnetom. Da si ena"cbe olaj"samo postavimo 2 Hall-ovi sondi na koordinatni osi, oddaljeni od izhodi"s"ca za $r_0$.
+Za izračun kota je potrebno poznati polje v vsaj dveh točkah nad magnetom. Simulacijski model vsebuje 2 Hallovi sondi na koordinatnih oseh, oddaljeni od izhodišča za $r_0$.
 
 \begin{figure}[h!]
 	\centering
@@ -340,11 +351,11 @@ Za izra"cun kota potrebujem poznati polje v vsaj dveh to"ckah nad magnetom. Da s
 	\node at (2.0,-0.5){$\mathrm{H}_1(r_0,0)$};
 	\node at (-1,2.3){$\mathrm{H}_2(0, r_0)$};
 	\end{tikzpicture}
-	\caption{Za"cetna postavitev Hallovih sond}
+	\caption{Začetna postavitev Hallovih sond}
 	\label{fig:zacetna_postavitev_sond}
 \end{figure}
 
-S poznavanjem lociranja sonde glede na magnet (\ref{equ:rotacija_hall_koncna}), funkcije polja (\ref{equ:poljeB}) ter za"cetne pozicije Hall-ovih sond lahko dolo"cimo potek polja sonde.
+S poznavanjem položaja sonde glede na magnet (\ref{equ:rotacija_hall_koncna}) in funkcije polja (\ref{equ:poljeB}) se lahko določi potek polja sonde. Sondi ob obratu vsaka pomeri svoje polje. Potek polja pomerjen s sondo v abcisni osi ($H_1$), je v idealni montaži podoben signalu kosinus, zato je poimenovan $cos$. Potek polja pomerjenega s sondo v ordinatni osi ($H_2$) je za $90^\circ$ zamaknjeno proti $cos$, zato je potek imenovan $sin$.
 
 \begin{equation}\label{equ:Bx_splosna}
 cos=B_{H_1}(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d
@@ -353,17 +364,16 @@ cos=B_{H_1}(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta +\Del
 sin=B_{H_2}(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d
 \end{equation}
 
-Zajeta signala bom od tu naprej imenoval sinus ($sin$) in cosinu ($cos$), ker je to njuna osnovna oblika.
+%Zajeta signala bom od tu naprej imenoval sinus ($sin$) in cosinu ($cos$), ker je to njuna osnovna oblika.
+\subsection{Sprememba magnetnega polja zaradi ekscentričnosti}
 
+%Oglejmo si primer kakšno polje zajameti Hall-ovi sondi, ko ekscentričnosti ni. $sin$ in $cos$ izraza se poenostavita in dobimo poteka v obliki sinusa ter kosinusa z enako amplitudo (Slika \ref{./Napake/sincos_00}).
 
+%\slikaeps{Poteka $sin$ in $cos$ brez ekscentričnosti pri $r_0 = 1$ mm}{./Napake/sincos_00}
+%\newpage
+%Upoštevajmo sedaj le statični ekscentričnosti $\Delta x_s$ in $\Delta y_s$. $\Delta x_d$ postavimo na 0.   Enačbi (\ref{equ:Bx_splosna}) in (\ref{equ:By_splosna}) lahko preuredimo v izraza:
 
-\subsection{Sprememba magnetnega polja zaradi ekscentri"cnosti}
-
-Oglejmo si primer kak"sno polje zajameti Hall-ovi sondi, ko ekscentri"cnosti ni. $sin$ in $cos$ izraza se poenostavita in dobimo poteka v obliki sinusa ter kosinusa z enako amplitudo (Slika \ref{./Napake/sincos_00}).
-
-\slikaeps{Poteka $sin$ in $cos$ brez ekscentri"cnosti pri $r_0 = 1$ mm}{./Napake/sincos_00}
-\newpage
-Upo"stevajmo sedaj le stati"cni ekscentri"cnosti $\Delta x_s$ in $\Delta y_s$. $\Delta x_d$ postavimo na 0.   Ena"cbi (\ref{equ:Bx_splosna}) in (\ref{equ:By_splosna}) lahko preuredimo v izraza:
+Iz izrazov (\ref{equ:Bx_splosna}) in (\ref{equ:Bx_splosna}) brez upoštevanja ekscentričnosti sta $sin$ in $cos$ enake amplitude ter fazno zamaknjena za $90^\circ$. Z upoštevanjem statične ekscentričnosti se med $sin$ in $cos$ zmanjša fazni kot ter spremni amplituda (\ref{equ:Bx_stat}) (\ref{equ:By_stat}). Ob dinamični ekscentričnosti signala pridobita enosmerni komponenti (\ref{equ:Bx_din}) (\ref{equ:By_din}).
 
 
 \begin{equation}
@@ -374,11 +384,11 @@ cos(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{(r_0+\Delta x_s)^2+\Delta y_s^2}\c
 sin(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{\Delta x_s^2+(r_0+\Delta y_s)^2} \sin(\theta +\arctan \frac{\Delta x_s}{r_0+\Delta y_s})
 \end{equation}
 
-Iz njiju vidimo spremenjena poteka. Signaloma se je spremenila amplituda in fazni zamik (Slika \ref{./Napake/sincos_xs}).
+%Iz njiju vidimo spremenjena poteka. Signaloma se je spremenila amplituda in fazni zamik (Slika \ref{./Napake/sincos_xs}).
 
-\slikaeps{Poteka $sin$ in $cos$ pri $r_0 = 1$ mm in upo"stevanjem 0,1 mm stati"cni ekscentri"cnosti v x-osi }{./Napake/sincos_xs}
-\newpage
-Postavimo sedaj vrednosti $\Delta x_s$ in $\Delta_ys$ na 0, $\Delta x_d$ predpostavimo da ni 0.
+%\slikaeps{Poteka $sin$ in $cos$ pri $r_0 = 1$ mm in upoštevanjem 0,1 mm statični ekscentričnosti v x-osi }{./Napake/sincos_xs}
+%\newpage
+%Postavimo sedaj vrednosti $\Delta x_s$ in $\Delta_ys$ na 0, $\Delta x_d$ predpostavimo da ni 0.
 \begin{equation}
 \label{equ:Bx_din}
 cos(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta-\Delta x_d
@@ -387,14 +397,12 @@ cos(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta-\Delta x_d
 \label{equ:By_din}
 sin(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta-\Delta x_d
 \end{equation}
-Polji obdr"zita enako amplitudo ter fazo, vendar dobita enosmerno komponento (Slika \ref{./Napake/sincos_xd}).
-\slikaeps{Poteka $sin$ in $cos$ pri $r_0 = 1$ mm in upo"stevanjem 0,1 dinami"cne ekscentri"cnosti v x-osi}{./Napake/sincos_xd}\newpage
+%Polji obdržita enako amplitudo ter fazo, vendar dobita enosmerno komponento (Slika \ref{./Napake/sincos_xd}).
+%\slikaeps{Poteka $sin$ in $cos$ pri $r_0 = 1$ mm in upoštevanjem 0,1 dinamične ekscentričnosti v x-osi}{./Napake/sincos_xd}\newpage
 \section{Premik senzorja v z smeri}
 
-Poglejmo si "se kako vpliva sprememba premikanja senzorja v z smeri.
-Pri magnetnem polju aprokismiranem z ravnino (\ref{equ:lin_polje}), se gostota magnetnega polja pri obeh sondah spreminja enako. To se v ena"cbah odra"za le kot dodaten faktor. Upo"stevajmo spremembo polja zaradi premika senzorja po z osi. Zajeti polji imata naslednji potek:
-
-
+%Poglejmo si še kako vpliva sprememba premikanja senzorja v z smeri.
+Pri magnetnem polju aprokismiranem z ravnino (\ref{equ:lin_polje}), se gostota magnetnega polja pri obeh sondah spreminja enako. To se v enačbah odraža le kot dodaten faktor. Upoštevano spremembo polja zaradi premika senzorja po z osi se izrazi kot:
 \begin{equation}\label{equ:Bx_z}
 cos=k_z( r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d)
 \end{equation}
@@ -402,50 +410,48 @@ cos=k_z( r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_
 sin=k_z( r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d)
 \end{equation}
 
-Z vstavitvijo formul v $\arctan$ se faktor $k_z$ nahaj tako v "stevcu kot imenovalcu ter se lahko okraj"sa. Naj "se  enkrat poudarim, da to velja le za polje aproksimirano z ravnino.
+Z vstavitvijo formul v $\arctan$ se faktor $k_z$ nahaj tako v števcu kot imenovalcu ter se okrajša. Ti poteki polj veljajo le z upoštevanjem aprokismiranega polja (\ref{equ:poljeB}).
 
 
 
-\chapter{Vpliv deformacije signala sinus in cosinus na izhodno napako}
+\chapter{Potek napake funkcije atan2 ob popačenju vhodnih signalov}
+Izhod enkoderja je podatek o zasuku. Iz pomerjenega polja, sledi izračun kota preko inverza funkcije tangens.
+% preko funkcija $\arctan$\cite{Matematika1}. V programskem poaketu MATLAB se za izračun inverzne funkcije tangens na območju 4 kvadrantov uporalblja funkcija atan2d()\cite{atan2dMatlab}.
+%Da si lažje predstavljamo, kako se bo napaka odražala v obliki digitalnega izhoda, si oglejmo posamezno deformacijo signalov sinus in cosinus. Deformacija sinusa in cosinusa zaradi nepravilne montaže, vpliva le na enosmerno komponento, amplitudo in fazni kot med signaloma.
+%Ogledali si bomo kako vplivajo na izračunan kot, različne amplitude signalov sinus in cosinus, neortogonalost oz. fazni zamik sinusa in kosinusa različen od $90^\circ$. Ogledali si bomo tudi pojav enosmernih komponenet v sinusu in cosinusu, in za konec še vpliv višjih harmonikov, ki niso posledica nepravilne montaže, vendar je prav da jih omenim.
+V programu MATLAB se za izračun kota uporablja funkcijo atan2(); za izhodno vrednost kota v radianih oz. atan2d(); za vrednost v stopinjah \cite{atan2Matlab}\cite{atan2dMatlab}. Različne literature \cite{Napaka_osnova} opisujejo napake zaradi popačitve signalov $sin$ $cos$. Napaka je izražena v obliki enosmerne komponente ter prvega oz drugega harmonika, kateri od primera do primera najbolj izstopa. V nadaljevanju je prikazano, kako popačen signal kot vhod v funkcijo atan2d(); vpliva na napako ter kako se odraža tudi na višjih harmonikih. Za majhne popačenja signalov, literatura nakazuje linearno naraščanje napake.
 
-Da si lažje predstavljamo, kako se bo napaka odražala v obliki digitalnega izhoda, si oglejmo posamezno deformacijo signalov sinus in cosinus. Deformacija sinusa in cosinusa zaradi nepravilne montaže, vpliva le na enosmerno komponento, amplitudo in fazni kot med signaloma.
+%Na tej točki je prav da definiram še napako pomejrenega kota $\varepsilon$, ki predstavlja razliko med merjenim in referenčnim kotom.
 
-Ogledali si bomo kako vplivajo na izračunan kot, različne amplitude signalov sinus in cosinus, neortogonalost oz. fazni zamik sinusa in kosinusa različen od $90^\circ$. Ogledali si bomo tudi pojav enosmernih komponenet v sinusu in cosinusu, in za konec še vpliv višjih harmonikov, ki niso posledica nepravilne montaže, vendar je prav da jih omenim.
-
-Za izračun kota se uporablja funkcijo atan2(); za izhodno vrednost kota v radianih oz. atan2d(); za vrednost v stopinjah \cite{atan2Matlab}\cite{atan2dMatlab}. Različne literature (citiraj iz clanaka od rls) opisujejo napake zaradi popačitve signalov sin cos. Napaka je izražena v obliki enosmerne komponente ter prvega oz drugega harmonika, kateri od primera do primera najbolj izstopa. V nadaljeevanju bom prikazal kako popačen signal kot vhod v funkcijo atan2(); vpliva na napako ter kako se odraža tudi na visjih harmonikih napake. Za majhne popačenja signalov, literatura nakazuje na linearno naraščanje napake, vendar predvidevam, da bo napaka z večjo deformacijo naraščala eksponentno.
-
-Na tej točki je prav da definiram še napako pomejrenega kota $\varepsilon$, ki predstavlja razliko med merjenim in referenčnim kotom.
-
-\begin{equation}
-\varepsilon = \varphi - \mathrm{atan2}(\sin{\theta},\cos{\theta})
-\end{equation}
+%\begin{equation}
+%\varepsilon = \varphi - \mathrm{atan2}(\sin{\theta},\cos{\theta})
+%\end{equation}
 
 
 \section{Različne amplitude}
 
-Vzemimo signal sinus z amplitudo $A_{sin}$ in signal cosinus z amplitude $A_{cos}$. Vstavimo signala v funkcijo $atan2$.
+Vhodna signala v atan2d();, sta:
+\begin{eqnarray}
+\label{equ:def_sin_ama}
+&Sin = k \sin(\theta)\\
+\label{equ:def_cos_amp}
+&Cos =\cos(\theta)
+\end{eqnarray}
 
-Opazimo, da lahhko razmerje amplitud nadomestimo s koeficientom $k$. Kot, ki bo izhodna funkcija lahko nadosmetimo s:
-\begin{equation}
-\varphi =  \mathrm{atan2}(A_{sin} \sin{\theta}, A_{cos} \cos{\theta}) = \mathrm{atan2}(k \sin{\theta},\cos{\theta})
-\end{equation}
-
-k limitirajmo v neskončnost:
+limita ko gre k proti neskončnost:
 \begin{equation}
 \lim_{k \rightarrow \infty} \mathrm{atan2}(k \sin{\theta},\cos{\theta})
 \end{equation}
 
 \slikaeps{$\varepsilon$ ob limiti k v neskončnost }{./Napake/k_lim}
 
-Kot $\varepsilon$, se bo ob limiti  izrazila v obliki , ki jo lahko izrazimo z vrsto \cite{fourierova_vrsta}:
+Kot $\varepsilon$, se bo ob limiti  izrazila v obliki , ki jo lahko izrazimo z Fourierovo vrsto \cite{fourierova_vrsta}:
 
 \begin{equation}
 \varepsilon = \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \sin 2 n \theta
 \end{equation}
 
-Nato sem izračunal napaka pri različnih k in naredil fft napake $\varepsilon$ \cite{matlab_fft}.
-
-Harmonike napake sem aproksimiral z racionalno funkcijo in končna napaka za katerikoli k se je izrazila z vrsto:
+V napaki nastopajo le sodi harmoniki. S opazovanjem sodih harmonikov napake pri različnih k-jih in uporabo funkcije Curve Fitting tool \cite{cftool}, sem določil fukcijo poteka napake v odvistnosti od k. 
 
 \begin{equation}
 \label{vrsta_k}
@@ -453,114 +459,108 @@ Harmonike napake sem aproksimiral z racionalno funkcijo in končna napaka za kat
 \end{equation}
 
 \slikaeps{$\varepsilon$ pri k=1.1 }{./Napake/napaka_amp11}
-\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_k}) pri k= 1.1 }{./Napake/razlika_amp11}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto (prvih 15 členov) po (\ref{vrsta_k}) pri k= 1.1 }{./Napake/razlika_amp11}
+
+
 \newpage
+
+
 \section{Različne enosmerne komponente}
 
-Enosmerna komponenta se lahko pojavi tako v sinusu, cosinusu ali v obeh. V naslednjih podpoglavjih bom prikazal kako se napaka spreminja glede na enosmerno komponeno le v enem od signalov in nakoncu kako se napaka izrazi, če imate oba signala enake enosmerne komponente.
+Enosmerna komponenta se lahko pojavi tako v $sin$, $cos$ ali v obeh.
 
-\subsection{Enosmerna komponenta sinusa}
+Vhodna signala v atan2d();, sta:
+\begin{eqnarray}
+\label{equ:def_sin_ama}
+&Sin = \sin(\theta) + B_0\\
+\label{equ:def_cos_amp}
+&Cos =\cos(\theta) +A_0
+\end{eqnarray}
 
-Poglejmo kako se bo izrazala napaka $\varepsilon$ v naslednjem izrazu:
-\begin{equation}
-\varphi = \mathrm{atan2}(\sin{\theta} + b_0,\cos{\theta})
-\end{equation}
+V podpoglavjih so obrvnavani različni primeri enosmernih komponent v signalih $sin$ in $cos$.
+\subsection{Enosmerna komponenta le v signalu $sin$}
 
-Postopajmo kot v prejčnjem poglavju in limitirajmo $b_0$ v neskončnost:
+Z limito $B_0$ v neskončnost, in izpeljavi napake v obliko Fourierove vrste, se napaka izrazi kot:
 
-\begin{equation}
-\lim_{b_0 \rightarrow \infty} \mathrm{atan2}(\sin{\theta}+b_0,\cos{\theta})
-\end{equation}
-
-\slikaeps{$\varepsilon$ ob limiti $b_0$ v neskončnost }{./Napake/lim_sin}
-
-Napaka se izrazi v obliki:
+\slikaeps{$\varepsilon$ ob limiti $B_0$ v neskončnost }{./Napake/lim_sin}
 
 \begin{equation}
 \varepsilon = \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta + 90 n)
 \end{equation}
 
 
-Tudi tu naredimo fft napake pri različnih enosmernih komponentah. Napako lahko opišemo z naslednjo enačbo:
+Z analizo potekov posameznega harmonika napake in uporabe Curve Fitting tool je bila najdena funkcija, ki opiše odvisnost napake od enosmerne komponente v signalu $sin$.
 
 \begin{equation}
 \label{vrsta_sinoff}
 \varepsilon_p=
 \begin{cases}
-\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2-|b_0|^{-n}}{n} \sin (n \theta -  90 n), & b_0\leq -1 \\
-\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{b_0^n}{n} \sin (n \theta + 90 n), & |b_0|\leq 1 \\
-\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2-b_0^{-n}}{n} \sin (n \theta + 90 n), & b_0\geq 1
+\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2-|B_0|^{-n}}{n} \sin (n \theta -  90 n), & B_0\leq -1 \\
+\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{B_0^n}{n} \sin (n \theta + 90 n), & |B_0|\leq 1 \\
+\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2-B_0^{-n}}{n} \sin (n \theta + 90 n), & B_0\geq 1
 \end{cases}
 \end{equation}
 
-\slikaeps{$\varepsilon$ pri $b_0=$ 0,1 }{./Napake/napaka_sin01}
-\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_sinoff}) pri $b_0=$ 0,1 in $n < 20$}{./Napake/razlika_sin01}
+\slikaeps{$\varepsilon$ pri $B_0=$ 0,1 }{./Napake/napaka_sin01}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2d in napako izračunano z (\ref{vrsta_sinoff}) pri $B_0=$ 0,1 in $n < 20$}{./Napake/razlika_sin01}
 
 
 
 
-\subsection{Enosmerna komponenta cosinusa}
+\subsection{Enosmerna komponenta signala $cos$}
 
-Sedaj poglejom napako pri enosmerni komponenti cosinusa
-\begin{equation}
-\varphi = \mathrm{atan2}(\sin{\theta},\cos{\theta} + a_0)
-\end{equation}
+Postopek je ponovljen tudi za enosmerno komponento v signalu $cos$
 
-Postopajmo kot v prejčnjem poglavju in limitirajmo $a_0$ v neskončnost:
 
 \begin{equation}
-\lim_{a_0 \rightarrow \infty} \mathrm{atan2}(\sin{\theta},\cos{\theta} + a_0)
+\lim_{a_0 \rightarrow \infty} \mathrm{atan2}(\sin{\theta},\cos{\theta} + A_0)
 \end{equation}
-\slikaeps{$\varepsilon$ ob limiti $a_0$ v neskončnost }{./Napake/lim_cos}
+\slikaeps{$\varepsilon$ ob limiti $A_0$ v neskončnost }{./Napake/lim_cos}
 
-Napaka se izrazi v obliki:
-
+Napaka (slika \ref{./Napake/lim_cos}) je proti napaki na  sliki \ref{./Napake/lim_sin} le fazno zamaknjena.
+To se izrazi tudi v Fourierovi vrsti.
 \begin{equation}
 \varepsilon = \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta+ 90 n)
 \end{equation}
 
-
-Tudi tu naredimo fft napake pri različnih enosmernih komponentah. Napako lahko opišemo z naslednjo enačbo:
+Potek napake v odvisnosti od $A_0$ je (\ref{vrsta_cosoff})
 
 \begin{equation}
 \label{vrsta_cosoff}
 \varepsilon_p=
 \begin{cases}
-\frac{180}{\pi}\sum_{n=1}^{\infty}(-1)^n\frac{2-|a_0|^{-n}}{n} \sin (n \theta ), & a_0\leq -1 \\
-\frac{180}{\pi}\sum_{n=1}^{\infty}(-1)^n\frac{a_0^n}{n} \sin (n \theta ), & |a_0|\leq 1 \\
-\frac{180}{\pi}\sum_{n=1}^{\infty}(-1)^n\frac{2-a_0^{-n}}{n} \sin (n \theta ), & a_0\geq 1
+\frac{180}{\pi}\sum_{n=1}^{\infty}(-1)^n\frac{2-|A_0|^{-n}}{n} \sin (n \theta ), & A_0\leq -1 \\
+\frac{180}{\pi}\sum_{n=1}^{\infty}(-1)^n\frac{A_0^n}{n} \sin (n \theta ), & |A_0|\leq 1 \\
+\frac{180}{\pi}\sum_{n=1}^{\infty}(-1)^n\frac{2-A_0^{-n}}{n} \sin (n \theta ), & A_0\geq 1
 \end{cases}
 \end{equation}
 
-\slikaeps{$\varepsilon$ pri $a_=0$ 0,1 }{./Napake/napaka_cos01}
-\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_cosoff}) pri $a_0=$ 0,1 in $n < 20$ }{./Napake/razlika_cos01}
+\slikaeps{$\varepsilon$ pri $A_0=$ 0,1 }{./Napake/napaka_cos01}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2d in napako izračunano z (\ref{vrsta_sinoff}) pri $A_0=$ 0,1 in $n < 20$}{./Napake/razlika_cos01}
 
 \newpage
 \subsection{Enosmerna komponenta pri obeh signalih}
 \label{2_offseta}
-Oglejmo si še napako, če imate oba signala, sinus in cosinus, enako enosmerno komponento.
+Enosmerna komponenta pri obeh signalih je označena z $C_0$.
+%\begin{equation}
+%\varphi = \mathrm{atan2}(\sin{\theta} + c_0,\cos{\theta} + c_0)
+%\end{equation}
 
+Limita napake ko gre $C?0$ proti neskončnosti se v Fourierovi vrsti izrazi kot:
 
-\begin{equation}
-\varphi = \mathrm{atan2}(\sin{\theta} + c_0,\cos{\theta} + c_0)
-\end{equation}
-
-Limitirajmo:
-
-\begin{equation}
-\lim_{c_0 \rightarrow \infty} \mathrm{atan2}(\sin{\theta} + c_0,\cos{\theta}+ c_0) 
-\end{equation}
+%\begin{equation}
+%\lim_{c_0 \rightarrow \infty} \mathrm{atan2}(\sin{\theta} + c_0,\cos{\theta}+ c_0) 
+%\end{equation}
 
 \slikaeps{$\varepsilon$ ob limiti $c_0$ v neskončnost }{./Napake/lim_sincos}
 
-in napako $\varepsilon$ zapišemo kot:
 
 \begin{equation}
 \varepsilon = \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{2}{n} \sin (n \theta- 90 n)
 \end{equation}
 
 
-Z enakimi postopki kot zgoraj sem tudi tu določil potek napake.
+Odvisnost napake ob spreminjanju enosmernih komponent pri obeh signalih se je izrazilo v (\ref{vrsta_sincosoff}).
 
 
 \begin{equation}
@@ -573,105 +573,57 @@ Z enakimi postopki kot zgoraj sem tudi tu določil potek napake.
 \end{cases}
 \end{equation}
 
-\slikaeps{$\varepsilon$ pri $c_0=$ 0,1 }{./Napake/napaka_sincos01}
-\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_sincosoff}) pri $c_0=$ 0,1 in $n < 20$}{./Napake/razlika_sincos01}
+\slikaeps{$\varepsilon$ pri $C_0=$ 0,1 }{./Napake/napaka_sincos01}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2d in napako izračunano z (\ref{vrsta_sincosoff}) pri $C_0=$ 0,1 in $n < 20$}{./Napake/razlika_sincos01}
 
 
 
 
 \section{Neorotogonalnost signalov}
 
-Napaka se pojavi lahko tudi, če signala sinus in cosinus nista zamaknjena za točno $90^\circ$. Z enakim postopkom kot v prejšnjih poglavjih, bom tudi tu, določil napako z vrsto, za vsak zamaknjen signal posebaj.
+Napaka se pojavi tudi, če signala $sin$ in $cos$ nista fazno zamaknjena za točno $90^\circ$.
+Vhodna signala imata obliko:
+\begin{eqnarray}
+\label{equ:def_sin_fis}
+&Sin = \sin(\theta + \varphi_{s})\\
+\label{equ:def_cos_fis}
+&Cos =\cos(\theta+\varphi_{c})
+\end{eqnarray}
 
-\subsection{Fazni zamik sinusa}
-
-Poglejmo najprej zamaknjen sinusni signal. Tudi tu napravimo limito vendar le do $90^\circ$, saj se siganl kasneje začne ponavljati.
-
-
-
+Napako se določi posamično za vsakega od parametrov. Drugi je takrat enak 0. Na koncu se enačbi združi. Za določanje limite ni potrebno iti proti neskončnosti, ampak le do najslabše možnosti, ki je pri $\pm 90^\circ$:
 \begin{equation}
-\lim_{\varphi_{sin} \rightarrow 90} \mathrm{atan2}(\sin{\theta+\varphi_{sin}} ,\cos{\theta}) 
+\label{equ:fis_lim}
+\varepsilon = \lim_{\varphi_{s} \rightarrow 90^\circ} \mathrm{atan2}(Sin ,Cos)- \mathrm{atan2d}(\sin(\theta),\cos(\theta))
 \end{equation}
-
-
-\slikaeps{$\varepsilon$ pri  $\varphi_{sin}= 90^\circ$  }{./Napake/lim_sinfaza}
-
-Napaka se izrazi v vrsti:
+Potek napake $\varepsilon$ s slike \ref{fig:lim_sin_fis} predstavi vrsta (\ref{equ:lim_fis_vrsta}).
+\slikaeps{Napaka $\varepsilon$ ob limiti $\varphi_{s} \rightarrow 90^\circ$}{./Napake/lim_sinfaza}
 
 \begin{equation}
+\label{equ:lim_fis_vrsta}
 \varepsilon = 45^\circ - \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \sin (2n \theta)
-\end{equation}
+\end{equation} 
+Iz  izraza je vidno nastopanje enosmerne komponente in sodih harmonikov. Z opazovanjem sodih harmonikov napake pri različnih faznih kotih je bil dobljen izraz napake v odvistnosti od faznih zamikov $sin$ in $cos$ na idealna signala.
 
-
-Napravil sem izračune napake pri različnih $\varphi_{sin}$, naredil fft signala in pogledal odvistnost amplitude harmonika od $\varphi_{sin}$. Harmonike sem lahko aprokismiral z višjimi potencami funkcije tangens, ter dobil končno enačbo.
-
-
-\begin{equation}
-\label{vrsta_faza_sin}
-\varepsilon_p = \frac{\varphi_{sin}}{2} + \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \mathrm{tan}(\frac{\varphi_{sin}}{2})^n \sin (2n \theta+90 n +n \varphi_{sin})
-\end{equation}
-
-
-\slikaeps{$\varepsilon$ pri $\varphi_{sin} = 1^\circ$ }{./Napake/napaka_fazasin1}
-\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_faza_sin}) pri  $\varphi_{sin} = 1^\circ$ in $n < 20$}{./Napake/razlika_fazasin1}
-
-
-\subsection{Fazni zamik cosinusa}
-
-Enako posotopamo tudi pri faznem zamiku cosinusa.
-
-
-
-\begin{equation}
-\lim_{\varphi_{cos} \rightarrow 90} \mathrm{atan2}(\sin{\theta+\varphi_{cos}} ,\cos{\theta}) 
-\end{equation}
-
-
-\slikaeps{$\varepsilon$ pri  $\varphi_{cos}= 90^\circ$  }{./Napake/lim_cosfaza}
-
-Napaka se izrazi v vrsti:
-
-\begin{equation}
-\varepsilon = 45^\circ + \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \sin (2n \theta)
-\end{equation}
-
-
-Ponovil pri različnih $\varphi_{cos}$, naredil fft, aproksimiral posamezni harmonik napake in dobil izraz:
-
-
-\begin{equation}
-\label{vrsta_faza_sin}
-\varepsilon_p = \frac{\varphi_{cos}}{2} + \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \mathrm{tan}(\frac{\varphi_{cos}}{2})^n \sin (2n \theta- 90 n+n \varphi_{cos})
-\end{equation}
-
-
-\slikaeps{$\varepsilon$ pri $\varphi_{cos} = 1^\circ$ }{./Napake/napaka_fazacos1}
-\slikaeps{Razlika med napako izračunano s funkcijo atan2 in izračnunano napako z vrsto po (\ref{vrsta_faza_sin}) pri  $\varphi_{cos} = 1^\circ$ in $n < 20$}{./Napake/razlika_fazacos1}
+\begin{multline}
+\label{equ:fis_err}
+\varepsilon(\varphi_{s},\varphi_{c}) = \frac{\varphi_{s}+\varphi_{c}}{2}+\\ \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} (\mathrm{tan}\frac{\varphi_{s}-\varphi_{c}}{2})^n \sin (2n \theta+n(90^\circ +\varphi_{s}+\varphi_{c}))
+\end{multline}
 
 
 \newpage
 \section{Potek napake pri statični ekscentričnosti v smeri x}
 
-V zgornjih poglavjih smo spoznali, kakšne oblike je napaka pri določeni deformaciji analognega signala.
-Zgornji poteki napake veljajo le za eno vrsto deformacije, njihovih odvistnosti nisem raziskal.
+Statična ekscentričnost povzroči v $sin$ in $cos$ razliko amplitud kot spremembo faz. Za vsako ekscentričnost posebaj je bil izračunan potek napake aproksimirn z racionalno funkcijo.
 
-Sedaj se osredotočimo na potek napake ob izraženi statični ekscentričnosti v smeri x. Signala $sin$ in $cos$ imate naslednji potek:
-
+Definirana vhodna signala:
 \begin{eqnarray}
 \label{xs_analit}
 sin = r_0 \sin(\theta) + \Delta x_s \cos(\theta) \\
 cos = r_0 \cos(\theta) + \Delta x_s \cos(\theta)
 \end{eqnarray}
 
-Kot $\varphi$ bomo pridobili s funkcijo atan2(). Zgornja izraza vstavimo v atan2() in ju delimo z $r_0$.
- 
- \begin{equation}
- \varphi = \mathrm{atan2}(\sin(\theta) + \frac{\Delta x_s}{r_0} \cos(\theta),\cos(\theta) + \frac{\Delta x_s}{r_0} \cos(\theta))
- \end{equation}
- 
- Napako sem izpelajal po enakih postopkih kot zgoraj.
- Napaka sem izrazil z vrsto:
- 
+Opravljena je bila limita $\Delta x_s$ v neskončnost. V napaki nastopa enosmerna komponenta in sodi harmoniki. Funkcija ki predstavlja odvisnost napake od statične ekscentričnosti je (\ref{vrsta:xs}).
+
  \begin{equation}
  \label{vrsta:xs}
  \varepsilon_p = \mathrm{atan}\frac{\Delta x _s}{\Delta x _s+2r_0}+\frac{180}{\pi} \sum_{n=1}^{\infty}\frac{1}{n} (\frac{\Delta x _s}{\sqrt{\Delta x _s^2+2 r_0 \Delta x _s+2r_0^2}})^n \sin (2n \theta+n (90+ \mathrm{ atan}(\frac{\Delta x _s+r_0}{r_0})))
@@ -679,16 +631,12 @@ Kot $\varphi$ bomo pridobili s funkcijo atan2(). Zgornja izraza vstavimo v atan2
  
  Pri čemer:
  $$\Delta x_s > -r_0$$
- 
- Napaka se je izrazila z enosmerno komponento in drugim harmonikom, po pričakovanju. V enačbi (\ref{xs_analit}) vidimo, da nastopati v analognih signalih razilčni amplitudi in fazna zamika. Napaka  je bila pričakovana.
- 
- 
- 
+
  \section{Potek napake pri statični ekscentričnosti v smeri y}
  
- Postopek enako ponovimo za ekscentričnost v y smeri. Pričakujem, da se bo napaka izrazila podobno kot, pri ekscentričnosti v x smeri.
+ Postopek ponovljen za  ekscentričnost v y smeri. Pričakovan je podoben potek kot pri ekscentričnosti v x smeri.
  
- Izpeljal sem napako z vrsto in rezultat je: 
+Izračunana vrsta napake v odvisnosti od  $\Delta y_s$ je:
  
   \begin{equation}
    \label{vrsta:ys}
@@ -700,39 +648,44 @@ $$\Delta y_s > -r_0$$
 
 \section{Potek napake pri dinamični ekscentričnosti v smeri x}
 
-Analogna signala se izrazita z naslednjim potekom:
+$sin$ in $cos$ se pri dinamični ekscentričnosti spreminjata, kot je bilo opisano pri napaki z enakima enosmernima komponentama. Rezultat napake v odvisnosti od dinamične ekscentričnosti je:
 
-\begin{eqnarray}
-sin = r_0 \sin(\theta) - \Delta x_d \\
-cos = r_0 \cos(\theta) - \Delta x_d
-\end{eqnarray}
 
-Signala nas spomnita na poteka, ki smo ju obravnavali že v poglavju \ref{2_offseta}, zato bom tu napisal le rezultat. Razlikuje se le v predznaku.
-
+%Analogna signala se izrazita z naslednjim potekom:
+%
+%\begin{eqnarray}
+%sin = r_0 \sin(\theta) - \Delta x_d \\
+%cos = r_0 \cos(\theta) - \Delta x_d
+%\end{eqnarray}
+%
+%Signala nas spomnita na poteka, ki smo ju obravnavali že v poglavju \ref{2_offseta}, zato bom tu napisal le rezultat. Razlikuje se le v predznaku.
+%
 \begin{equation}
 \label{vrsta_xd}
 \varepsilon_p=
 \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n}( \frac{-\sqrt{2}}{r_0}\Delta x_d)^n \sin (n \theta -  90 n)
 \end{equation}
 
-
+Pri čemer velja
 $$|\Delta x_d|\leq \frac{r_0}{\sqrt{2}}$$
-
-
-V tem poglavju smo pogledali, poteke napake ob deformaciji analognih signalov. Ogledali smo si tudi, kako se bo napaka izrazila ob ekcentričnosti senzorja ter magneta. Za majhne odmike, je dovolj upoštevanje le prvega člena vrste, pri katerih lahko tudi predpostavimo linearno naraščanje napake. V nadaljevanju bom velikost harmonika v odvistnosti od povzročene ekscentričnosti aproksimiral s kubičnim polinomom, ter jih primerjal z izpeljavo v tem poglavju. Harmoniki katerih potek je npr racionalna funkcija (primer (\ref{vrsta:xs})), bom razvil v Taylorjevo vrsto do tretje stopnje, katero bom lahko primerjal s kubičnimi polinomi.
- 
-
-
-
-
-
-
-
-
-
-%\section{Analiti"cen potek napake posamezne ekscentri"cnosti}
 %
-%S poznavanjem potekov polja posamezne sonde sedaj s funkcijo $\arctan$ izra"cunamo kot.
+%
+%V tem poglavju smo pogledali, poteke napake ob deformaciji analognih signalov. Ogledali smo si tudi, kako se bo napaka izrazila ob ekcentričnosti senzorja ter magneta. 
+Za majhne odmike, je dovolj upoštevanje le prvega člena vrste, pri katerih se tudi predpostavi linearno naraščanje napake. V nadaljevanju bodo velikosti harmonikov v odvistnosti od povzročene ekscentričnosti aproksimirani s kubičnim polinomi. Da bo primerjava možna bodo poteki izračunani v tem poglavju razviti v Taylorjevo vrsto do tretje stopnje.
+%, ter jih primerjal z izpeljavo v tem poglavju. Harmoniki katerih potek je npr racionalna funkcija (primer (\ref{vrsta:xs})), bom razvil v Taylorjevo vrsto do tretje stopnje, katero bom lahko primerjal s kubičnimi polinomi.
+% 
+
+
+
+
+
+
+
+
+
+%\section{Analitičen potek napake posamezne ekscentričnosti}
+%
+%S poznavanjem potekov polja posamezne sonde sedaj s funkcijo $\arctan$ izračunamo kot.
 %
 %\begin{equation}
 %\label{equ:izracun_kota_splosna}
@@ -742,25 +695,25 @@ V tem poglavju smo pogledali, poteke napake ob deformaciji analognih signalov. O
 %
 %
 %
-%Iz podanega izraza (\ref{equ:izracun_kota_splosna}) je te"zko sklepati, kak"sen bo potek pomerjenega kota.
+%Iz podanega izraza (\ref{equ:izracun_kota_splosna}) je težko sklepati, kakšen bo potek pomerjenega kota.
 %Na tem mestu definirajmo napako merjenega kota:
 %\begin{equation}
 %\varepsilon=\varphi-\theta
 %\end{equation}
 %
-%Poglejmo si analiti"cen potek napake.  S spodaj opisanim postopkom se bomo izognili numeri"cnemu ra"cunanju funkcije $\arctan$.
+%Poglejmo si analitičen potek napake.  S spodaj opisanim postopkom se bomo izognili numeričnemu računanju funkcije $\arctan$.
 %
-%Signala $sin$ in $cos$ imata periodo $360^\circ$. Iz tega sledi, da bo tudi $\varepsilon$ imel periodo $360^\circ $. Pri"cakujem, da bo potek napake $\varepsilon$ v obliki :
+%Signala $sin$ in $cos$ imata periodo $360^\circ$. Iz tega sledi, da bo tudi $\varepsilon$ imel periodo $360^\circ $. Pričakujem, da bo potek napake $\varepsilon$ v obliki :
 %\begin{equation}
 %\label{equ:nastavek}
 %\varepsilon=A_0+A_1 \cos \theta +B_1 \sin \theta+A_2 \cos 2\theta +B_2 \sin 2\theta
 %\end{equation}
 %Tak nastavek sem vzel zaradi predvidene napake v podatkovnih listih citeAM8192.
-%Za pribli"zek napake izraz  (\ref{equ:izracun_kota_splosna}) razvijmo v Taylorjevo vrsto po kotu $\theta$. V Taylorjevo vrsto razvjemo tudi nastavek pri"cakovanega poteka. Zaradi aproksimacije poteka merjenega kota se zadovoljimo z razvojem do petega reda. Za poenostavitev se bom ekscentri"cnosti lotil posamezno. V naslednjih podpoglavjih bom prikazal analiti"cne rezultate posameznega harmonika. Izpeljavo bom le teoreti"cno opisal.
+%Za približek napake izraz  (\ref{equ:izracun_kota_splosna}) razvijmo v Taylorjevo vrsto po kotu $\theta$. V Taylorjevo vrsto razvjemo tudi nastavek pričakovanega poteka. Zaradi aproksimacije poteka merjenega kota se zadovoljimo z razvojem do petega reda. Za poenostavitev se bom ekscentričnosti lotil posamezno. V naslednjih podpoglavjih bom prikazal analitične rezultate posameznega harmonika. Izpeljavo bom le teoretično opisal.
 %
-%Oba izraza (\ref{equ:izracun_kota_splosna} in \ref{equ:nastavek} )razvijem do petega reda Taylorjeve vrste  po kotu $\theta$. Z zdru"zitvijo posameznih potenc $\theta$, pridobimo sistem petih en"cb s petimi neznankami. S tem pridobim neznane faktorje $A_0$, $A_1$, $A_2$, $B_1$ in $B_2$. S poznavanjem teh faktorjev lahko ocenimo ka"skni bodo poteki posameznih harmonikov, ob posameznih ekscentri"cnostih. Te rezultate Taylorjeve vrste lahko upo"stevam le v okolici ni"cle. Izrazi so izpeljani za stati"cni ekscentri"cnosti ter dinami"cno ekscentri"cnost v smeri x. Potekov dinami"cne ekscentri"cnosti v smeri y ni, saj ta ne nastopa v izrazu (\ref{equ:izracun_kota_splosna}).
-%\subsection{Aproksimacija pomerjenega kota ob stati"cni ekscentri"cnosti x}
-%V izrazu (\ref{equ:izracun_kota_splosna}) upo"stevamo le stati"cno ekscentri"cnost $\Delta x_s$.
+%Oba izraza (\ref{equ:izracun_kota_splosna} in \ref{equ:nastavek} )razvijem do petega reda Taylorjeve vrste  po kotu $\theta$. Z združitvijo posameznih potenc $\theta$, pridobimo sistem petih enčb s petimi neznankami. S tem pridobim neznane faktorje $A_0$, $A_1$, $A_2$, $B_1$ in $B_2$. S poznavanjem teh faktorjev lahko ocenimo kaškni bodo poteki posameznih harmonikov, ob posameznih ekscentričnostih. Te rezultate Taylorjeve vrste lahko upoštevam le v okolici ničle. Izrazi so izpeljani za statični ekscentričnosti ter dinamično ekscentričnost v smeri x. Potekov dinamične ekscentričnosti v smeri y ni, saj ta ne nastopa v izrazu (\ref{equ:izracun_kota_splosna}).
+%\subsection{Aproksimacija pomerjenega kota ob statični ekscentričnosti x}
+%V izrazu (\ref{equ:izracun_kota_splosna}) upoštevamo le statično ekscentričnost $\Delta x_s$.
 %\begin{equation}
 %\label{equ:izracun_kota_xs}
 %\varphi=\arctan \frac{r_0 \sin\theta +\Delta x_s \cos\theta}{r_0 \cos\theta +\Delta x_s \cos\theta}
@@ -775,10 +728,10 @@ V tem poglavju smo pogledali, poteke napake ob deformaciji analognih signalov. O
 %&B_2=\frac{30 \Delta y_s (-3r_0^5-18 r_0^4 \Delta y_s-20 r_0^3  \Delta y_s^2 +12 r_0  \Delta y_s^4+8 \Delta y_s^5)}{\pi(r_0^2+2 r_0 \Delta y_s+2 \Delta y_s^2)^3}\\
 %\end{eqnarray}
 %Oglejmo si sliko potekov posameznih harmonikov.
-%\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju stati"cne ekscentri"cnosti v x-osi}{potek_analitika_xs}
-%Iz rezultatov lahko pri"cakujemo nara"s"canje drugega harmonika ter nara"s"canje enosmerne komponete.
-%\subsection{Aproksimacija pomerjenega kota ob stati"cni ekscentri"cnosti y}
-%V izrazu (\ref{equ:izracun_kota_splosna}) upo"stevamo le stati"cno ekscentri"cnost $\Delta y_s$.
+%\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju statične ekscentričnosti v x-osi}{potek_analitika_xs}
+%Iz rezultatov lahko pričakujemo naraščanje drugega harmonika ter naraščanje enosmerne komponete.
+%\subsection{Aproksimacija pomerjenega kota ob statični ekscentričnosti y}
+%V izrazu (\ref{equ:izracun_kota_splosna}) upoštevamo le statično ekscentričnost $\Delta y_s$.
 %\begin{equation}
 %\label{equ:izracun_kota_ys}
 %\varphi=\arctan \frac{r_0 \sin\theta +\Delta y_s \sin\theta}{r_0 \cos\theta +\Delta y_s \sin\theta}
@@ -792,10 +745,10 @@ V tem poglavju smo pogledali, poteke napake ob deformaciji analognih signalov. O
 %&B_2=\frac{30 (3 r_0^2y_s-4 y_s^3)}{\pi r_0^3}
 %\end{eqnarray}
 %Oglejmo si sliko potekov posameznih harmonikov.
-%\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju stati"cne ekscentri"cnosti v y-osi}{potek_analitika_ys}
+%\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju statične ekscentričnosti v y-osi}{potek_analitika_ys}
 %Iz grafa je razvidno, da do enosmerna komponenta upadala, drugi harmonik bo najbolj izrazit.
-%\subsection{Aproksimacija pomerjenega kota ob dinami"cni ekscentri"cnosti x}
-%Izraz  (\ref{equ:izracun_kota_splosna}) kjer upo"stevamo le dinami"cno ekscentri"cnost se poenostavi v:
+%\subsection{Aproksimacija pomerjenega kota ob dinamični ekscentričnosti x}
+%Izraz  (\ref{equ:izracun_kota_splosna}) kjer upoštevamo le dinamično ekscentričnost se poenostavi v:
 %\begin{eqnarray}
 %&A_0=\frac{180(r_0 \Delta x_d(r_0^6-7r_0^5 \Delta x_d+18r_0^4 \Delta x_d^2-36r_0^2 \Delta x_d^4 +28r_0 \Delta x_d^5-8 \Delta x_d^6))}{\pi(r_0^2-2r_0 \Delta x_d+2 \Delta x_d^2)^4}-\arctan \frac{\Delta x_d}{r_0- \Delta x_d}\\
 %&A_1=\frac{-180(r_0 \Delta x_d(r_0^6-8r_0^5 \Delta x_d+22r_0^4 \Delta x_d^2-44r_0^2 \Delta x_d^4 
@@ -808,10 +761,10 @@ V tem poglavju smo pogledali, poteke napake ob deformaciji analognih signalov. O
 %&B_2=\frac{60 (2  \Delta x_d^3 (-4 r_0^3+9 r_0^2  \Delta x_d-6 r_0  \Delta x_d^2+2  \Delta x_d
 %	^3))}{\pi(r_0^2-2 r_0  \Delta x_d+2  \Delta x_d^2)^3}
 %\end{eqnarray}
-%\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju dinami"cne ekscentri"cnosti v x-osi}{potek_analitika_xd}
-%S slike \ref{potek_analitika_xd} vidimo da bo izrazit le prvi harmonik, ki pri majhnih odmikih nara"s"ca linearno, kar je pri"cakovano po citeAM8192. 
+%\slikaeps{Poteki amplitud prvega in drugega harmonika ter enosmerne komponente ob spreminjanju dinamične ekscentričnosti v x-osi}{potek_analitika_xd}
+%S slike \ref{potek_analitika_xd} vidimo da bo izrazit le prvi harmonik, ki pri majhnih odmikih narašča linearno, kar je pričakovano po citeAM8192. 
 %
-%V tem poglavju smo si ogledali kak"sno magnetno polje ustvari magnet in kako ga Hall-ove sonde zaznavajo. magnetno polje smo aproksimirali z ravnino in si ogledali poteke napake.  Spoznali smo tudi kako se bo izra"zala napaka pri posamezni ekscentri"cnosti.
+%V tem poglavju smo si ogledali kakšno magnetno polje ustvari magnet in kako ga Hall-ove sonde zaznavajo. magnetno polje smo aproksimirali z ravnino in si ogledali poteke napake.  Spoznali smo tudi kako se bo izražala napaka pri posamezni ekscentričnosti.
 %
 %
 %

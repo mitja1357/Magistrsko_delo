@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.19)  18 AUG 2018 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.19)  27 AUG 2018 21:15
 entering extended mode
 **./Diploma_V2.tex
 (Diploma_V2.tex
@@ -979,7 +979,10 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 33.
 
 (Diploma_V2.aux (tex/Uvod.aux) (tex/Analiticna_izpeljava.aux
 
-LaTeX Warning: Label `vrsta_faza_sin' multiply defined.
+LaTeX Warning: Label `equ:def_sin_ama' multiply defined.
+
+
+LaTeX Warning: Label `equ:def_cos_amp' multiply defined.
 
 ) (tex/Linearni_model.aux) (tex/Realni_model.aux
 
@@ -1052,9 +1055,9 @@ Package babel Info: Redefining slovene shorthand "|
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 15.
  [1
 
 
@@ -1072,48 +1075,55 @@ Package babel Info: Redefining slovene shorthand "|
   2.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 17.
-./Slike/senzorRM44 ne obstaja!
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
-[3
+<./Slike/senzorRM44.jpg, id=254, 1164.60094pt x 764.8575pt>
+File: ./Slike/senzorRM44.jpg Graphic file (type jpg)
 
-]
+<use ./Slike/senzorRM44.jpg>
+Package pdftex.def Info: ./Slike/senzorRM44.jpg used on input line 25.
+(pdftex.def)             Requested size: 206.28247pt x 135.4743pt.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 32.
+ [3
+
+ <./Slike/senzorRM44.jpg>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
-[4]
+(babel)             in language  on input line 32.
+[4
+
+]
   3.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 32.
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 158.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 158.
- [5
-
-]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 158.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 158.
-[6]
+ [5]
 \openout2 = `./tex/Analiticna_izpeljava.aux'.
 
  (tex/Analiticna_izpeljava.tex
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 1.
+[6
+
+
+
+]
   4.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 1.
@@ -1144,18 +1154,11 @@ Missing character: There is no ; in font nullfont!
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 1062) has occurred while \output is active []
-
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 30.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 27.
- [7
-
-
-
-]
+(babel)             in language  on input line 30.
+[7]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
@@ -1175,35 +1178,34 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 80.
 
-
-Underfull \vbox (badness 2503) has occurred while \output is active []
-
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 97.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 97.
 [8]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 180.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 180.
 
 
-Overfull \hbox (15.84032pt too wide) has occurred while \output is active
-[]\OT1/cmr/m/sl/12 4.2 Izpeljava gibanja lokacije Hall-ove sonde na magnet pri 
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 180.
+
+
+Overfull \hbox (17.14586pt too wide) has occurred while \output is active
+[]\OT1/cmr/m/sl/12 4.2 Izpeljava gibanja polozaja Hallove sonde na magnet pri 
 dinamicni ekscentricnosti \OT1/cmr/m/n/12 9
  []
 
@@ -1213,11 +1215,34 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 183.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 183.
 [9]
-Underfull \vbox (badness 3088) has occurred while \output is active []
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 238.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 238.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 238.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 238.
+
+
+Underfull \vbox (badness 2237) has occurred while \output is active []
 
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -1225,326 +1250,155 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 167.
+(babel)             in language  on input line 249.
 [10]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 169.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 169.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 169.
-
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 227.
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 227.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 227.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 227.
-
-
-Overfull \hbox (9.37788pt too wide) has occurred while \output is active
-[]\OT1/cmr/m/sl/12 4.3 Izpeljava gibanja lokacije Hall-ove sonde na magnet pri 
-staticni ekscentricnosti \OT1/cmr/m/n/12 11
- []
-
-
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 231.
+(babel)             in language  on input line 261.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 231.
+(babel)             in language  on input line 261.
 [11]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 231.
-
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 231.
-
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 261.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 248.
-[12]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 250.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 250.
-[13]
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 250.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 250.
-[14
+(babel)             in language  on input line 261.
+[12
 
 ]
   5.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 261.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 250.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 250.
+(hyperref)                removing `math shift' on input line 261.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\theta' on input line 250.
+(hyperref)                removing `subscript' on input line 261.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 250.
+(hyperref)                removing `\theta' on input line 261.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 261.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 250.
+(hyperref)                removing `\textasciicaron' on input line 261.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 254.
+(babel)             in language  on input line 265.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 254.
+(hyperref)                removing `math shift' on input line 265.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 254.
+(hyperref)                removing `subscript' on input line 265.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 265.
 
 ./Slike/magnet4mm ne obstaja!
-<./Slike/magnetno_polje.jpg, id=345, 1102.87032pt x 621.07031pt>
+<./Slike/magnetno_polje.jpg, id=333, 1102.87032pt x 621.07031pt>
 File: ./Slike/magnetno_polje.jpg Graphic file (type jpg)
 
 <use ./Slike/magnetno_polje.jpg>
-Package pdftex.def Info: ./Slike/magnetno_polje.jpg used on input line 267.
+Package pdftex.def Info: ./Slike/magnetno_polje.jpg used on input line 278.
 (pdftex.def)             Requested size: 309.4237pt x 174.24913pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 292.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 274.
-[15]
+(babel)             in language  on input line 292.
+[13]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 282.
+(babel)             in language  on input line 293.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 282.
+(hyperref)                removing `\textasciicaron' on input line 293.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 348.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 348.
-[16 <./Slike/magnetno_polje.jpg>]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 360.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 360.
-
-Package epstopdf Info: Source file: <./Slike/./Napake/sincos_00.eps>
-(epstopdf)                    date: 2018-07-02 09:56:36
-(epstopdf)                    size: 82298 bytes
-(epstopdf)             Output file: <./Slike/./Napake/sincos_00-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2018-07-02 10:01:10
-(epstopdf)                    size: 64660 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/sincos_00-
-eps-converted-to.pdf ./Slike/./Napake/sincos_00.eps>
-(epstopdf)             \includegraphics on input line 364.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Napake/sincos_00-eps-converted-to.pdf, id=362, 601.24625pt x 451.687
-5pt>
-File: ./Slike/./Napake/sincos_00-eps-converted-to.pdf Graphic file (type pdf)
- <use ./Slike/./Napake/sincos_00-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Napake/sincos_00-eps-converted-to.pdf used o
-n input line 364.
-(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (77.5619pt too wide) has occurred while \output is active
-[]\OT1/cmr/m/sl/12 5.2 Postavitev Hall-ovih sond za zajem polja in pomerjeno po
-lje v odvistnosti od ekscentricnosti \OT1/cmr/m/n/12 17
- []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 365.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 365.
-[17]
-Package epstopdf Info: Source file: <./Slike/./Napake/sincos_xs.eps>
-(epstopdf)                    date: 2018-07-02 09:57:10
-(epstopdf)                    size: 82048 bytes
-(epstopdf)             Output file: <./Slike/./Napake/sincos_xs-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2018-07-02 10:01:11
-(epstopdf)                    size: 64052 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/sincos_xs-
-eps-converted-to.pdf ./Slike/./Napake/sincos_xs.eps>
-(epstopdf)             \includegraphics on input line 379.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Napake/sincos_xs-eps-converted-to.pdf, id=375, 601.24625pt x 451.687
-5pt>
-File: ./Slike/./Napake/sincos_xs-eps-converted-to.pdf Graphic file (type pdf)
- <use ./Slike/./Napake/sincos_xs-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Napake/sincos_xs-eps-converted-to.pdf used o
-n input line 379.
-(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 380.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 380.
-[18 <./Slike/./Napake/sincos_00-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Slike/./Napake/sincos_xd.eps>
-(epstopdf)                    date: 2018-07-02 09:57:54
-(epstopdf)                    size: 82303 bytes
-(epstopdf)             Output file: <./Slike/./Napake/sincos_xd-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2018-07-02 10:01:12
-(epstopdf)                    size: 64658 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/sincos_xd-
-eps-converted-to.pdf ./Slike/./Napake/sincos_xd.eps>
-(epstopdf)             \includegraphics on input line 391.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Napake/sincos_xd-eps-converted-to.pdf, id=390, 601.24625pt x 451.687
-5pt>
-File: ./Slike/./Napake/sincos_xd-eps-converted-to.pdf Graphic file (type pdf)
- <use ./Slike/./Napake/sincos_xd-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Napake/sincos_xd-eps-converted-to.pdf used o
-n input line 391.
-(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (77.5619pt too wide) has occurred while \output is active
-[]\OT1/cmr/m/sl/12 5.2 Postavitev Hall-ovih sond za zajem polja in pomerjeno po
-lje v odvistnosti od ekscentricnosti \OT1/cmr/m/n/12 19
- []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 391.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 391.
-[19 <./Slike/./Napake/sincos_xs-eps-converted-to.pdf>]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 392.
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 409.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 409.
-[20 <./Slike/./Napake/sincos_xd-eps-converted-to.pdf>]
-  6.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 409.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 421.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 421.
- [21
 
-]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 362.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 362.
+[14 <./Slike/magnetno_polje.jpg>]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 368.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 424.
+(hyperref)                removing `\textasciicaron' on input line 368.
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 402.
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 406.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 406.
+[15]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 417.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 417.
+[16]
+  6.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 417.
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 417.
+
+
+LaTeX Warning: Citation `Napaka_osnova' on page 17 undefined on input line 422.
+
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 431.
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 431.
 
 Package epstopdf Info: Source file: <./Slike/./Napake/k_lim.eps>
 (epstopdf)                    date: 2018-06-29 21:10:20
@@ -1555,25 +1409,26 @@ f>
 (epstopdf)                    size: 25140 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/k_lim-eps-
 converted-to.pdf ./Slike/./Napake/k_lim.eps>
-(epstopdf)             \includegraphics on input line 438.
+(epstopdf)             \includegraphics on input line 446.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/k_lim-eps-converted-to.pdf, id=428, 601.24625pt x 451.6875pt>
+<./Slike/./Napake/k_lim-eps-converted-to.pdf, id=383, 601.24625pt x 451.6875pt>
 File: ./Slike/./Napake/k_lim-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./Napake/k_lim-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./Napake/k_lim-eps-converted-to.pdf used on in
-put line 438.
+put line 446.
 (pdftex.def)             Requested size: 247.54149pt x 185.965pt.
 
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 448.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 448.
-[22 <./Slike/./Napake/k_lim-eps-converted-to.pdf>]
+(babel)             in language  on input line 452.
+[17
+
+]
 Package epstopdf Info: Source file: <./Slike/./Napake/napaka_amp11.eps>
 (epstopdf)                    date: 2018-06-29 21:09:53
 (epstopdf)                    size: 30551 bytes
@@ -1583,17 +1438,21 @@ d-to.pdf>
 (epstopdf)                    size: 24470 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/napaka_amp
 11-eps-converted-to.pdf ./Slike/./Napake/napaka_amp11.eps>
-(epstopdf)             \includegraphics on input line 455.
+(epstopdf)             \includegraphics on input line 461.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/napaka_amp11-eps-converted-to.pdf, id=447, 601.24625pt x 451.
+<./Slike/./Napake/napaka_amp11-eps-converted-to.pdf, id=395, 601.24625pt x 451.
 6875pt>
 File: ./Slike/./Napake/napaka_amp11-eps-converted-to.pdf Graphic file (type pdf
 )
  <use ./Slike/./Napake/napaka_amp11-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./Napake/napaka_amp11-eps-converted-to.pdf use
-d on input line 455.
+d on input line 461.
 (pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package epstopdf Info: Source file: <./Slike/./Napake/razlika_amp11.eps>
 (epstopdf)                    date: 2018-06-29 21:04:20
 (epstopdf)                    size: 38299 bytes
@@ -1603,16 +1462,16 @@ ed-to.pdf>
 (epstopdf)                    size: 21960 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/razlika_am
 p11-eps-converted-to.pdf ./Slike/./Napake/razlika_amp11.eps>
-(epstopdf)             \includegraphics on input line 456.
+(epstopdf)             \includegraphics on input line 462.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/razlika_amp11-eps-converted-to.pdf, id=448, 601.24625pt x 451
+<./Slike/./Napake/razlika_amp11-eps-converted-to.pdf, id=396, 601.24625pt x 451
 .6875pt>
 File: ./Slike/./Napake/razlika_amp11-eps-converted-to.pdf Graphic file (type pd
 f)
  <use ./Slike/./Napake/razlika_amp11-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./Napake/razlika_amp11-eps-converted-to.pdf us
-ed on input line 456.
+ed on input line 462.
 (pdftex.def)             Requested size: 247.54149pt x 185.965pt.
 
 
@@ -1624,20 +1483,43 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 457.
+(babel)             in language  on input line 465.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 457.
-[23 <./Slike/./Napake/napaka_amp11-eps-converted-to.pdf>]
+(babel)             in language  on input line 465.
+[18 <./Slike/./Napake/k_lim-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 458.
+(babel)             in language  on input line 468.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 458.
+(hyperref)                removing `\textasciicaron' on input line 468.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 462.
+(babel)             in language  on input line 478.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 478.
+[19 <./Slike/./Napake/napaka_amp11-eps-converted-to.pdf> <./Slike/./Napake/razl
+ika_amp11-eps-converted-to.pdf>]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 481.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 481.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 481.
+
 Package epstopdf Info: Source file: <./Slike/./Napake/lim_sin.eps>
 (epstopdf)                    date: 2018-06-29 21:03:33
 (epstopdf)                    size: 28154 bytes
@@ -1647,30 +1529,26 @@ pdf>
 (epstopdf)                    size: 25452 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/lim_sin-ep
 s-converted-to.pdf ./Slike/./Napake/lim_sin.eps>
-(epstopdf)             \includegraphics on input line 475.
+(epstopdf)             \includegraphics on input line 485.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/lim_sin-eps-converted-to.pdf, id=464, 601.24625pt x 451.6875p
+<./Slike/./Napake/lim_sin-eps-converted-to.pdf, id=432, 601.24625pt x 451.6875p
 t>
 File: ./Slike/./Napake/lim_sin-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./Napake/lim_sin-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./Napake/lim_sin-eps-converted-to.pdf used on 
-input line 475.
+input line 485.
 (pdftex.def)             Requested size: 247.54149pt x 185.965pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 481.
+(babel)             in language  on input line 502.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 481.
-[24 <./Slike/./Napake/razlika_amp11-eps-converted-to.pdf>]
+(babel)             in language  on input line 502.
+[20 <./Slike/./Napake/lim_sin-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./Napake/napaka_sin01.eps>
 (epstopdf)                    date: 2018-06-29 21:03:48
 (epstopdf)                    size: 30379 bytes
@@ -1680,21 +1558,17 @@ d-to.pdf>
 (epstopdf)                    size: 23916 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/napaka_sin
 01-eps-converted-to.pdf ./Slike/./Napake/napaka_sin01.eps>
-(epstopdf)             \includegraphics on input line 496.
+(epstopdf)             \includegraphics on input line 504.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/napaka_sin01-eps-converted-to.pdf, id=478, 601.24625pt x 451.
+<./Slike/./Napake/napaka_sin01-eps-converted-to.pdf, id=446, 601.24625pt x 451.
 6875pt>
 File: ./Slike/./Napake/napaka_sin01-eps-converted-to.pdf Graphic file (type pdf
 )
  <use ./Slike/./Napake/napaka_sin01-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./Napake/napaka_sin01-eps-converted-to.pdf use
-d on input line 496.
+d on input line 504.
 (pdftex.def)             Requested size: 247.54149pt x 185.965pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Package epstopdf Info: Source file: <./Slike/./Napake/razlika_sin01.eps>
 (epstopdf)                    date: 2018-06-29 21:05:02
 (epstopdf)                    size: 38173 bytes
@@ -1704,23 +1578,39 @@ ed-to.pdf>
 (epstopdf)                    size: 21034 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/razlika_si
 n01-eps-converted-to.pdf ./Slike/./Napake/razlika_sin01.eps>
-(epstopdf)             \includegraphics on input line 497.
+(epstopdf)             \includegraphics on input line 505.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/razlika_sin01-eps-converted-to.pdf, id=479, 601.24625pt x 451
+<./Slike/./Napake/razlika_sin01-eps-converted-to.pdf, id=447, 601.24625pt x 451
 .6875pt>
 File: ./Slike/./Napake/razlika_sin01-eps-converted-to.pdf Graphic file (type pd
 f)
  <use ./Slike/./Napake/razlika_sin01-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./Napake/razlika_sin01-eps-converted-to.pdf us
-ed on input line 497.
+ed on input line 505.
 (pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 510.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 510.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 510.
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 502.
+(babel)             in language  on input line 515.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 515.
+[21 <./Slike/./Napake/napaka_sin01-eps-converted-to.pdf> <./Slike/./Napake/razl
+ika_sin01-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./Napake/lim_cos.eps>
 (epstopdf)                    date: 2018-06-29 21:05:38
 (epstopdf)                    size: 28154 bytes
@@ -1730,40 +1620,16 @@ pdf>
 (epstopdf)                    size: 25439 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/lim_cos-ep
 s-converted-to.pdf ./Slike/./Napake/lim_cos.eps>
-(epstopdf)             \includegraphics on input line 514.
+(epstopdf)             \includegraphics on input line 518.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/lim_cos-eps-converted-to.pdf, id=482, 601.24625pt x 451.6875p
+<./Slike/./Napake/lim_cos-eps-converted-to.pdf, id=471, 601.24625pt x 451.6875p
 t>
 File: ./Slike/./Napake/lim_cos-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./Napake/lim_cos-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./Napake/lim_cos-eps-converted-to.pdf used on 
-input line 514.
+input line 518.
 (pdftex.def)             Requested size: 247.54149pt x 185.965pt.
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 515.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 515.
-[25 <./Slike/./Napake/lim_sin-eps-converted-to.pdf>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 524.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 524.
-[26 <./Slike/./Napake/napaka_sin01-eps-converted-to.pdf> <./Slike/./Napake/razl
-ika_sin01-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./Napake/napaka_cos01.eps>
 (epstopdf)                    date: 2018-06-29 21:09:41
 (epstopdf)                    size: 30377 bytes
@@ -1773,16 +1639,16 @@ d-to.pdf>
 (epstopdf)                    size: 23658 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/napaka_cos
 01-eps-converted-to.pdf ./Slike/./Napake/napaka_cos01.eps>
-(epstopdf)             \includegraphics on input line 535.
+(epstopdf)             \includegraphics on input line 538.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/napaka_cos01-eps-converted-to.pdf, id=520, 601.24625pt x 451.
+<./Slike/./Napake/napaka_cos01-eps-converted-to.pdf, id=475, 601.24625pt x 451.
 6875pt>
 File: ./Slike/./Napake/napaka_cos01-eps-converted-to.pdf Graphic file (type pdf
 )
  <use ./Slike/./Napake/napaka_cos01-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./Napake/napaka_cos01-eps-converted-to.pdf use
-d on input line 535.
+d on input line 538.
 (pdftex.def)             Requested size: 247.54149pt x 185.965pt.
 
 
@@ -1797,16 +1663,16 @@ ed-to.pdf>
 (epstopdf)                    size: 21112 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/razlika_co
 s01-eps-converted-to.pdf ./Slike/./Napake/razlika_cos01.eps>
-(epstopdf)             \includegraphics on input line 536.
+(epstopdf)             \includegraphics on input line 539.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/razlika_cos01-eps-converted-to.pdf, id=521, 601.24625pt x 451
+<./Slike/./Napake/razlika_cos01-eps-converted-to.pdf, id=476, 601.24625pt x 451
 .6875pt>
 File: ./Slike/./Napake/razlika_cos01-eps-converted-to.pdf Graphic file (type pd
 f)
  <use ./Slike/./Napake/razlika_cos01-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./Napake/razlika_cos01-eps-converted-to.pdf us
-ed on input line 536.
+ed on input line 539.
 (pdftex.def)             Requested size: 247.54149pt x 185.965pt.
 
 
@@ -1818,26 +1684,12 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 538.
+(babel)             in language  on input line 541.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 538.
-[27 <./Slike/./Napake/lim_cos-eps-converted-to.pdf>]
+(babel)             in language  on input line 541.
+[22 <./Slike/./Napake/lim_cos-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 539.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 546.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 546.
-[28 <./Slike/./Napake/napaka_cos01-eps-converted-to.pdf> <./Slike/./Napake/razl
-ika_cos01-eps-converted-to.pdf>]
+(babel)             in language  on input line 542.
 Package epstopdf Info: Source file: <./Slike/./Napake/lim_sincos.eps>
 (epstopdf)                    date: 2018-06-29 21:10:11
 (epstopdf)                    size: 28157 bytes
@@ -1847,16 +1699,34 @@ to.pdf>
 (epstopdf)                    size: 25295 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/lim_sincos
 -eps-converted-to.pdf ./Slike/./Napake/lim_sincos.eps>
-(epstopdf)             \includegraphics on input line 554.
+(epstopdf)             \includegraphics on input line 555.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/lim_sincos-eps-converted-to.pdf, id=554, 601.24625pt x 451.68
+<./Slike/./Napake/lim_sincos-eps-converted-to.pdf, id=493, 601.24625pt x 451.68
 75pt>
 File: ./Slike/./Napake/lim_sincos-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./Napake/lim_sincos-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./Napake/lim_sincos-eps-converted-to.pdf used 
-on input line 554.
+on input line 555.
 (pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 560.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 560.
+[23 <./Slike/./Napake/napaka_cos01-eps-converted-to.pdf> <./Slike/./Napake/razl
+ika_cos01-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./Napake/napaka_sincos01.eps>
 (epstopdf)                    date: 2018-06-29 21:03:57
 (epstopdf)                    size: 30077 bytes
@@ -1869,7 +1739,7 @@ cos01-eps-converted-to.pdf ./Slike/./Napake/napaka_sincos01.eps>
 (epstopdf)             \includegraphics on input line 576.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/napaka_sincos01-eps-converted-to.pdf, id=555, 601.24625pt x 4
+<./Slike/./Napake/napaka_sincos01-eps-converted-to.pdf, id=513, 601.24625pt x 4
 51.6875pt>
 File: ./Slike/./Napake/napaka_sincos01-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -1893,7 +1763,7 @@ ncos01-eps-converted-to.pdf ./Slike/./Napake/razlika_sincos01.eps>
 (epstopdf)             \includegraphics on input line 577.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/razlika_sincos01-eps-converted-to.pdf, id=556, 601.24625pt x 
+<./Slike/./Napake/razlika_sincos01-eps-converted-to.pdf, id=514, 601.24625pt x 
 451.6875pt>
 File: ./Slike/./Napake/razlika_sincos01-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -1913,26 +1783,14 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 585.
+(babel)             in language  on input line 594.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 585.
-[29 <./Slike/./Napake/lim_sincos-eps-converted-to.pdf>]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 594.
+[24 <./Slike/./Napake/lim_sincos-eps-converted-to.pdf>]
 
-Underfull \vbox (badness 1028) has occurred while \output is active []
+LaTeX Warning: Reference `fig:lim_sin_fis' on page 25 undefined on input line 5
+98.
 
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 592.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 592.
-[30 <./Slike/./Napake/napaka_sincos01-eps-converted-to.pdf> <./Slike/./Napake/r
-azlika_sincos01-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./Napake/lim_sinfaza.eps>
 (epstopdf)                    date: 2018-06-29 21:10:02
 (epstopdf)                    size: 28434 bytes
@@ -1942,96 +1800,16 @@ Package epstopdf Info: Source file: <./Slike/./Napake/lim_sinfaza.eps>
 (epstopdf)                    size: 25407 bytes
 (epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/lim_sinfaz
 a-eps-converted-to.pdf ./Slike/./Napake/lim_sinfaza.eps>
-(epstopdf)             \includegraphics on input line 597.
+(epstopdf)             \includegraphics on input line 599.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf, id=592, 601.24625pt x 451.6
+<./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf, id=532, 601.24625pt x 451.6
 875pt>
 File: ./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf Graphic file (type pdf)
 
  <use ./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf used
- on input line 597.
-(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
-Package epstopdf Info: Source file: <./Slike/./Napake/napaka_fazasin1.eps>
-(epstopdf)                    date: 2018-06-29 21:09:16
-(epstopdf)                    size: 30604 bytes
-(epstopdf)             Output file: <./Slike/./Napake/napaka_fazasin1-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2018-06-29 21:10:37
-(epstopdf)                    size: 24421 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/napaka_faz
-asin1-eps-converted-to.pdf ./Slike/./Napake/napaka_fazasin1.eps>
-(epstopdf)             \includegraphics on input line 615.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Napake/napaka_fazasin1-eps-converted-to.pdf, id=593, 601.24625pt x 4
-51.6875pt>
-File: ./Slike/./Napake/napaka_fazasin1-eps-converted-to.pdf Graphic file (type 
-pdf)
- <use ./Slike/./Napake/napaka_fazasin1-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Napake/napaka_fazasin1-eps-converted-to.pdf 
-used on input line 615.
-(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./Napake/razlika_fazasin1.eps>
-(epstopdf)                    date: 2018-06-29 21:04:54
-(epstopdf)                    size: 38086 bytes
-(epstopdf)             Output file: <./Slike/./Napake/razlika_fazasin1-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2018-06-29 21:06:23
-(epstopdf)                    size: 22727 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/razlika_fa
-zasin1-eps-converted-to.pdf ./Slike/./Napake/razlika_fazasin1.eps>
-(epstopdf)             \includegraphics on input line 616.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Napake/razlika_fazasin1-eps-converted-to.pdf, id=594, 601.24625pt x 
-451.6875pt>
-File: ./Slike/./Napake/razlika_fazasin1-eps-converted-to.pdf Graphic file (type
- pdf)
- <use ./Slike/./Napake/razlika_fazasin1-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Napake/razlika_fazasin1-eps-converted-to.pdf
- used on input line 616.
-(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 619.
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 625.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 625.
-[31 <./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Slike/./Napake/lim_cosfaza.eps>
-(epstopdf)                    date: 2018-06-29 21:05:48
-(epstopdf)                    size: 28416 bytes
-(epstopdf)             Output file: <./Slike/./Napake/lim_cosfaza-eps-converted
--to.pdf>
-(epstopdf)                    date: 2018-06-29 21:06:24
-(epstopdf)                    size: 25209 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/lim_cosfaz
-a-eps-converted-to.pdf ./Slike/./Napake/lim_cosfaza.eps>
-(epstopdf)             \includegraphics on input line 630.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Napake/lim_cosfaza-eps-converted-to.pdf, id=612, 601.24625pt x 451.6
-875pt>
-File: ./Slike/./Napake/lim_cosfaza-eps-converted-to.pdf Graphic file (type pdf)
-
- <use ./Slike/./Napake/lim_cosfaza-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Napake/lim_cosfaza-eps-converted-to.pdf used
- on input line 630.
+ on input line 599.
 (pdftex.def)             Requested size: 247.54149pt x 185.965pt.
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -2039,58 +1817,68 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 630.
+(babel)             in language  on input line 600.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 630.
-[32 <./Slike/./Napake/napaka_fazasin1-eps-converted-to.pdf> <./Slike/./Napake/r
-azlika_fazasin1-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./Slike/./Napake/napaka_fazacos1.eps>
-(epstopdf)                    date: 2018-06-29 21:09:03
-(epstopdf)                    size: 30604 bytes
-(epstopdf)             Output file: <./Slike/./Napake/napaka_fazacos1-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2018-06-29 21:10:38
-(epstopdf)                    size: 24358 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/napaka_faz
-acos1-eps-converted-to.pdf ./Slike/./Napake/napaka_fazacos1.eps>
-(epstopdf)             \includegraphics on input line 648.
-Package epstopdf Info: Output file is already uptodate.
+(babel)             in language  on input line 600.
+[25 <./Slike/./Napake/napaka_sincos01-eps-converted-to.pdf> <./Slike/./Napake/r
+azlika_sincos01-eps-converted-to.pdf>]
+Overfull \hbox (2.61108pt too wide) has occurred while \output is active
+[] 
+ []
 
-<./Slike/./Napake/napaka_fazacos1-eps-converted-to.pdf, id=632, 601.24625pt x 4
-51.6875pt>
-File: ./Slike/./Napake/napaka_fazacos1-eps-converted-to.pdf Graphic file (type 
-pdf)
- <use ./Slike/./Napake/napaka_fazacos1-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Napake/napaka_fazacos1-eps-converted-to.pdf 
-used on input line 648.
-(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 613.
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 613.
+[26 <./Slike/./Napake/lim_sinfaza-eps-converted-to.pdf>]
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 614.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./Slike/./Napake/razlika_fazacos1.eps>
-(epstopdf)                    date: 2018-06-29 21:04:42
-(epstopdf)                    size: 38311 bytes
-(epstopdf)             Output file: <./Slike/./Napake/razlika_fazacos1-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2018-06-29 21:06:26
-(epstopdf)                    size: 23218 bytes
-(epstopdf)             Command: <epstopdf --outfile=./Slike/./Napake/razlika_fa
-zacos1-eps-converted-to.pdf ./Slike/./Napake/razlika_fazacos1.eps>
-(epstopdf)             \includegraphics on input line 649.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Slike/./Napake/razlika_fazacos1-eps-converted-to.pdf, id=633, 601.24625pt x 
-451.6875pt>
-File: ./Slike/./Napake/razlika_fazacos1-eps-converted-to.pdf Graphic file (type
- pdf)
- <use ./Slike/./Napake/razlika_fazacos1-eps-converted-to.pdf>
-Package pdftex.def Info: ./Slike/./Napake/razlika_fazacos1-eps-converted-to.pdf
- used on input line 649.
-(pdftex.def)             Requested size: 247.54149pt x 185.965pt.
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 614.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 614.
+
+
+Overfull \hbox (52.62958pt too wide) detected at line 630
+[]\OML/cmm/m/it/12 "[] \OT1/cmr/m/n/12 = [][] + [] [] []([])[] [](2\OML/cmm/m/i
+t/12 n \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 n\OT1/cmr/m/n/12 (90 + []([])))
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 635.
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 635.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 635.
+
+
+Overfull \hbox (49.26839pt too wide) detected at line 644
+[]\OML/cmm/m/it/12 "[] \OT1/cmr/m/n/12 = [][] + [] [] []([])[] [](2\OML/cmm/m/i
+t/12 n \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 n\OT1/cmr/m/n/12 (90 + []([])))
+ []
+
+Package babel Info: Redefining slovene shorthand "|
+(babel)             in language  on input line 649.
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 649.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 649.
 
 
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -2101,81 +1889,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 652.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 652.
-[33 <./Slike/./Napake/lim_cosfaza-eps-converted-to.pdf>]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 653.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 653.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 653.
-
-
-Underfull \vbox (badness 1028) has occurred while \output is active []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 659.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 659.
-[34 <./Slike/./Napake/napaka_fazacos1-eps-converted-to.pdf> <./Slike/./Napake/r
-azlika_fazacos1-eps-converted-to.pdf>]
-Overfull \hbox (52.62958pt too wide) detected at line 678
-[]\OML/cmm/m/it/12 "[] \OT1/cmr/m/n/12 = [][] + [] [] []([])[] [](2\OML/cmm/m/i
-t/12 n \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 n\OT1/cmr/m/n/12 (90 + []([])))
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 687.
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 687.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 687.
-
-
-Overfull \hbox (49.26839pt too wide) detected at line 696
-[]\OML/cmm/m/it/12 "[] \OT1/cmr/m/n/12 = [][] + [] [] []([])[] [](2\OML/cmm/m/i
-t/12 n \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 n\OT1/cmr/m/n/12 (90 + []([])))
- []
-
-
-Overfull \hbox (2.61108pt too wide) has occurred while \output is active
-[] 
- []
-
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 696.
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 696.
-[35]
-Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 701.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 701.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 701.
-
-)
+[27])
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -2184,7 +1898,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 160.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 160.
-[36]
+[28]
 \openout2 = `./tex/Linearni_model.aux'.
 
  (tex/Linearni_model.tex
@@ -2194,7 +1908,7 @@ Package babel Info: Redefining slovene shorthand "|
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 11.
 
-LaTeX Warning: Reference `./LIN/00_napaka' on page 37 undefined on input line 1
+LaTeX Warning: Reference `./LIN/00_napaka' on page 29 undefined on input line 1
 3.
 
 Package epstopdf Info: Source file: <./Slike/./LIN/yd_sincos.eps>
@@ -2209,7 +1923,7 @@ df>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/yd_sincos-eps-converted-to.pdf, id=683, 489.83pt x 410.53375pt>
+<./Slike/./LIN/yd_sincos-eps-converted-to.pdf, id=580, 489.83pt x 410.53375pt>
 File: ./Slike/./LIN/yd_sincos-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./LIN/yd_sincos-eps-converted-to.pdf>
@@ -2228,7 +1942,7 @@ df>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/yd_napaka-eps-converted-to.pdf, id=684, 505.89pt x 426.59375pt>
+<./Slike/./LIN/yd_napaka-eps-converted-to.pdf, id=581, 505.89pt x 426.59375pt>
 File: ./Slike/./LIN/yd_napaka-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./LIN/yd_napaka-eps-converted-to.pdf>
@@ -2246,7 +1960,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 20.
-[37
+[29
 
 
 
@@ -2276,7 +1990,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 24.
-[38 <./Slike/./LIN/yd_sincos-eps-converted-to.pdf> <./Slike/./LIN/yd_napaka-eps
+[30 <./Slike/./LIN/yd_sincos-eps-converted-to.pdf> <./Slike/./LIN/yd_napaka-eps
 -converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./LIN/xs_sincos.eps>
 (epstopdf)                    date: 2018-07-18 09:07:25
@@ -2290,7 +2004,7 @@ df>
 (epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xs_sincos-eps-converted-to.pdf, id=710, 489.83pt x 410.53375pt>
+<./Slike/./LIN/xs_sincos-eps-converted-to.pdf, id=606, 489.83pt x 410.53375pt>
 File: ./Slike/./LIN/xs_sincos-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./LIN/xs_sincos-eps-converted-to.pdf>
@@ -2306,7 +2020,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 26.
-[39 <./Slike/./LIN/xs_sincos-eps-converted-to.pdf>]
+[31 <./Slike/./LIN/xs_sincos-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./LIN/xs_napaka.eps>
 (epstopdf)                    date: 2018-07-18 09:07:26
 (epstopdf)                    size: 48699 bytes
@@ -2319,7 +2033,7 @@ df>
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xs_napaka-eps-converted-to.pdf, id=723, 496.85625pt x 402.50375p
+<./Slike/./LIN/xs_napaka-eps-converted-to.pdf, id=620, 496.85625pt x 402.50375p
 t>
 File: ./Slike/./LIN/xs_napaka-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./LIN/xs_napaka-eps-converted-to.pdf>
@@ -2338,7 +2052,7 @@ nverted-to.pdf ./Slike/./LIN/xs_fft.eps>
 (epstopdf)             \includegraphics on input line 34.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xs_fft-eps-converted-to.pdf, id=725, 508.90125pt x 406.51875pt>
+<./Slike/./LIN/xs_fft-eps-converted-to.pdf, id=622, 508.90125pt x 406.51875pt>
 File: ./Slike/./LIN/xs_fft-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./LIN/xs_fft-eps-converted-to.pdf>
@@ -2358,7 +2072,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 37.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 37.
-[40 <./Slike/./LIN/xs_napaka-eps-converted-to.pdf>]
+[32 <./Slike/./LIN/xs_napaka-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 38.
 
@@ -2406,7 +2120,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xs_sincos_amp-eps-converted-to.pdf, id=742, 522.95375pt x 413.54
+<./Slike/./LIN/xs_sincos_amp-eps-converted-to.pdf, id=639, 522.95375pt x 413.54
 5pt>
 File: ./Slike/./LIN/xs_sincos_amp-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./LIN/xs_sincos_amp-eps-converted-to.pdf>
@@ -2429,7 +2143,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 45.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xs_sincos_off-eps-converted-to.pdf, id=743, 522.95375pt x 413.54
+<./Slike/./LIN/xs_sincos_off-eps-converted-to.pdf, id=640, 522.95375pt x 413.54
 5pt>
 File: ./Slike/./LIN/xs_sincos_off-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./LIN/xs_sincos_off-eps-converted-to.pdf>
@@ -2452,7 +2166,7 @@ se-eps-converted-to.pdf ./Slike/./LIN/xs_sincos_phase.eps>
 (epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xs_sincos_phase-eps-converted-to.pdf, id=744, 514.92375pt x 412.
+<./Slike/./LIN/xs_sincos_phase-eps-converted-to.pdf, id=641, 514.92375pt x 412.
 54124pt>
 File: ./Slike/./LIN/xs_sincos_phase-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2476,7 +2190,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 58.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 58.
-[41 <./Slike/./LIN/xs_fft-eps-converted-to.pdf>]
+[33 <./Slike/./LIN/xs_fft-eps-converted-to.pdf>]
 Overfull \vbox (84.77367pt too high) has occurred while \output is active []
 
 
@@ -2488,7 +2202,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 58.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 58.
-[42 <./Slike/./LIN/xs_sincos_amp-eps-converted-to.pdf> <./Slike/./LIN/xs_sincos
+[34 <./Slike/./LIN/xs_sincos_amp-eps-converted-to.pdf> <./Slike/./LIN/xs_sincos
 _off-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./LIN/xs_potek.eps>
 (epstopdf)                    date: 2018-07-02 15:50:28
@@ -2502,7 +2216,7 @@ converted-to.pdf ./Slike/./LIN/xs_potek.eps>
 (epstopdf)             \includegraphics on input line 64.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xs_potek-eps-converted-to.pdf, id=776, 506.89375pt x 412.54124pt
+<./Slike/./LIN/xs_potek-eps-converted-to.pdf, id=673, 506.89375pt x 412.54124pt
 >
 File: ./Slike/./LIN/xs_potek-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./LIN/xs_potek-eps-converted-to.pdf>
@@ -2525,7 +2239,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 87.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 87.
-[43 <./Slike/./LIN/xs_sincos_phase-eps-converted-to.pdf>]
+[35 <./Slike/./LIN/xs_sincos_phase-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 111.
 
@@ -2551,7 +2265,7 @@ df>
 (epstopdf)             \includegraphics on input line 115.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/ys_sincos-eps-converted-to.pdf, id=791, 489.83pt x 410.53375pt>
+<./Slike/./LIN/ys_sincos-eps-converted-to.pdf, id=687, 489.83pt x 410.53375pt>
 File: ./Slike/./LIN/ys_sincos-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./LIN/ys_sincos-eps-converted-to.pdf>
@@ -2567,7 +2281,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 115.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 115.
-[44 <./Slike/./LIN/xs_potek-eps-converted-to.pdf>]
+[36 <./Slike/./LIN/xs_potek-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./LIN/ys_napaka.eps>
 (epstopdf)                    date: 2018-07-18 09:07:29
 (epstopdf)                    size: 48651 bytes
@@ -2580,7 +2294,7 @@ df>
 (epstopdf)             \includegraphics on input line 118.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/ys_napaka-eps-converted-to.pdf, id=803, 505.89pt x 402.50375pt>
+<./Slike/./LIN/ys_napaka-eps-converted-to.pdf, id=699, 505.89pt x 402.50375pt>
 File: ./Slike/./LIN/ys_napaka-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./LIN/ys_napaka-eps-converted-to.pdf>
@@ -2599,7 +2313,7 @@ nverted-to.pdf ./Slike/./LIN/ys_fft.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/ys_fft-eps-converted-to.pdf, id=805, 504.88625pt x 406.51875pt>
+<./Slike/./LIN/ys_fft-eps-converted-to.pdf, id=701, 504.88625pt x 406.51875pt>
 File: ./Slike/./LIN/ys_fft-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./LIN/ys_fft-eps-converted-to.pdf>
@@ -2622,7 +2336,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 123.
-[45 <./Slike/./LIN/ys_sincos-eps-converted-to.pdf>]
+[37 <./Slike/./LIN/ys_sincos-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 124.
 
@@ -2670,7 +2384,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 127.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 127.
-[46 <./Slike/./LIN/ys_napaka-eps-converted-to.pdf> <./Slike/./LIN/ys_fft-eps-co
+[38 <./Slike/./LIN/ys_napaka-eps-converted-to.pdf> <./Slike/./LIN/ys_fft-eps-co
 nverted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./LIN/ys_sincos_amp.eps>
 (epstopdf)                    date: 2018-07-02 15:50:05
@@ -2684,7 +2398,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 128.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/ys_sincos_amp-eps-converted-to.pdf, id=835, 522.95375pt x 413.54
+<./Slike/./LIN/ys_sincos_amp-eps-converted-to.pdf, id=732, 522.95375pt x 413.54
 5pt>
 File: ./Slike/./LIN/ys_sincos_amp-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./LIN/ys_sincos_amp-eps-converted-to.pdf>
@@ -2703,7 +2417,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 129.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/ys_sincos_off-eps-converted-to.pdf, id=836, 522.95375pt x 413.54
+<./Slike/./LIN/ys_sincos_off-eps-converted-to.pdf, id=733, 522.95375pt x 413.54
 5pt>
 File: ./Slike/./LIN/ys_sincos_off-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./LIN/ys_sincos_off-eps-converted-to.pdf>
@@ -2726,7 +2440,7 @@ se-eps-converted-to.pdf ./Slike/./LIN/ys_sincos_phase.eps>
 (epstopdf)             \includegraphics on input line 130.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/ys_sincos_phase-eps-converted-to.pdf, id=837, 523.9575pt x 413.5
+<./Slike/./LIN/ys_sincos_phase-eps-converted-to.pdf, id=734, 523.9575pt x 413.5
 45pt>
 File: ./Slike/./LIN/ys_sincos_phase-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2750,7 +2464,7 @@ converted-to.pdf ./Slike/./LIN/ys_potek.eps>
 (epstopdf)             \includegraphics on input line 144.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/ys_potek-eps-converted-to.pdf, id=838, 515.9275pt x 412.54124pt>
+<./Slike/./LIN/ys_potek-eps-converted-to.pdf, id=735, 515.9275pt x 412.54124pt>
 File: ./Slike/./LIN/ys_potek-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./LIN/ys_potek-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./LIN/ys_potek-eps-converted-to.pdf used on in
@@ -2769,7 +2483,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 147.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 147.
-[47 <./Slike/./LIN/ys_sincos_amp-eps-converted-to.pdf>]
+[39 <./Slike/./LIN/ys_sincos_amp-eps-converted-to.pdf>]
 Underfull \vbox (badness 1062) has occurred while \output is active []
 
 
@@ -2781,7 +2495,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 155.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 155.
-[48 <./Slike/./LIN/ys_sincos_off-eps-converted-to.pdf> <./Slike/./LIN/ys_sincos
+[40 <./Slike/./LIN/ys_sincos_off-eps-converted-to.pdf> <./Slike/./LIN/ys_sincos
 _phase-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 184.
@@ -2808,7 +2522,7 @@ df>
 (epstopdf)             \includegraphics on input line 187.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xd_sincos-eps-converted-to.pdf, id=871, 489.83pt x 410.53375pt>
+<./Slike/./LIN/xd_sincos-eps-converted-to.pdf, id=768, 489.83pt x 410.53375pt>
 File: ./Slike/./LIN/xd_sincos-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./LIN/xd_sincos-eps-converted-to.pdf>
@@ -2831,7 +2545,7 @@ df>
 (epstopdf)             \includegraphics on input line 190.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xd_napaka-eps-converted-to.pdf, id=873, 505.89pt x 402.50375pt>
+<./Slike/./LIN/xd_napaka-eps-converted-to.pdf, id=770, 505.89pt x 402.50375pt>
 File: ./Slike/./LIN/xd_napaka-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./LIN/xd_napaka-eps-converted-to.pdf>
@@ -2854,7 +2568,7 @@ nverted-to.pdf ./Slike/./LIN/xd_fft.eps>
 (epstopdf)             \includegraphics on input line 193.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xd_fft-eps-converted-to.pdf, id=874, 504.88625pt x 406.51875pt>
+<./Slike/./LIN/xd_fft-eps-converted-to.pdf, id=771, 504.88625pt x 406.51875pt>
 File: ./Slike/./LIN/xd_fft-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./LIN/xd_fft-eps-converted-to.pdf>
@@ -2874,7 +2588,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 196.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 196.
-[49 <./Slike/./LIN/ys_potek-eps-converted-to.pdf>]
+[41 <./Slike/./LIN/ys_potek-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 197.
 
@@ -2922,7 +2636,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xd_sincos_amp-eps-converted-to.pdf, id=889, 513.92pt x 413.545pt
+<./Slike/./LIN/xd_sincos_amp-eps-converted-to.pdf, id=785, 513.92pt x 413.545pt
 >
 File: ./Slike/./LIN/xd_sincos_amp-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./LIN/xd_sincos_amp-eps-converted-to.pdf>
@@ -2941,7 +2655,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 200.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xd_sincos_off-eps-converted-to.pdf, id=890, 531.9875pt x 413.545
+<./Slike/./LIN/xd_sincos_off-eps-converted-to.pdf, id=786, 531.9875pt x 413.545
 pt>
 File: ./Slike/./LIN/xd_sincos_off-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./LIN/xd_sincos_off-eps-converted-to.pdf>
@@ -2960,7 +2674,7 @@ se-eps-converted-to.pdf ./Slike/./LIN/xd_sincos_phase.eps>
 (epstopdf)             \includegraphics on input line 201.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xd_sincos_phase-eps-converted-to.pdf, id=891, 527.9725pt x 413.5
+<./Slike/./LIN/xd_sincos_phase-eps-converted-to.pdf, id=787, 527.9725pt x 413.5
 45pt>
 File: ./Slike/./LIN/xd_sincos_phase-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -2980,7 +2694,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 203.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 203.
-[50 <./Slike/./LIN/xd_sincos-eps-converted-to.pdf> <./Slike/./LIN/xd_napaka-eps
+[42 <./Slike/./LIN/xd_sincos-eps-converted-to.pdf> <./Slike/./LIN/xd_napaka-eps
 -converted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -3003,7 +2717,7 @@ converted-to.pdf ./Slike/./LIN/xd_potek.eps>
 (epstopdf)             \includegraphics on input line 215.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./LIN/xd_potek-eps-converted-to.pdf, id=909, 515.9275pt x 412.54124pt>
+<./Slike/./LIN/xd_potek-eps-converted-to.pdf, id=805, 515.9275pt x 412.54124pt>
 File: ./Slike/./LIN/xd_potek-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./LIN/xd_potek-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./LIN/xd_potek-eps-converted-to.pdf used on in
@@ -3022,7 +2736,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 226.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 226.
-[51 <./Slike/./LIN/xd_fft-eps-converted-to.pdf>]
+[43 <./Slike/./LIN/xd_fft-eps-converted-to.pdf>]
 Overfull \vbox (61.58733pt too high) has occurred while \output is active []
 
 
@@ -3034,7 +2748,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 226.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 226.
-[52 <./Slike/./LIN/xd_sincos_amp-eps-converted-to.pdf> <./Slike/./LIN/xd_sincos
+[44 <./Slike/./LIN/xd_sincos_amp-eps-converted-to.pdf> <./Slike/./LIN/xd_sincos
 _off-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3047,7 +2761,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 237.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 237.
-[53 <./Slike/./LIN/xd_sincos_phase-eps-converted-to.pdf> <./Slike/./LIN/xd_pote
+[45 <./Slike/./LIN/xd_sincos_phase-eps-converted-to.pdf> <./Slike/./LIN/xd_pote
 k-eps-converted-to.pdf>])
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
@@ -3057,7 +2771,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 162.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 162.
-[54]
+[46]
 \openout2 = `./tex/Realni_model.aux'.
 
  (tex/Realni_model.tex
@@ -3075,7 +2789,7 @@ Package epstopdf Info: Source file: <./Slike/Realno_polje.eps>
 nverted-to.pdf ./Slike/Realno_polje.eps>
 (epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
-<./Slike/Realno_polje-eps-converted-to.pdf, id=965, 1445.4pt x 816.04875pt>
+<./Slike/Realno_polje-eps-converted-to.pdf, id=862, 1445.4pt x 816.04875pt>
 File: ./Slike/Realno_polje-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/Realno_polje-eps-converted-to.pdf>
@@ -3086,7 +2800,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 11.
- [55
+ [47
 
 
 
@@ -3105,7 +2819,7 @@ df>
 (epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/00_sincos-eps-converted-to.pdf, id=979, 601.24625pt x 451.6875pt
+<./Slike/./rea/00_sincos-eps-converted-to.pdf, id=875, 601.24625pt x 451.6875pt
 >
 File: ./Slike/./rea/00_sincos-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/00_sincos-eps-converted-to.pdf>
@@ -3124,7 +2838,7 @@ df>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/00_napaka-eps-converted-to.pdf, id=981, 601.24625pt x 451.6875pt
+<./Slike/./rea/00_napaka-eps-converted-to.pdf, id=877, 601.24625pt x 451.6875pt
 >
 File: ./Slike/./rea/00_napaka-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/00_napaka-eps-converted-to.pdf>
@@ -3143,7 +2857,7 @@ nverted-to.pdf ./Slike/./rea/00_fft.eps>
 (epstopdf)             \includegraphics on input line 21.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/00_fft-eps-converted-to.pdf, id=983, 601.24625pt x 451.6875pt>
+<./Slike/./rea/00_fft-eps-converted-to.pdf, id=879, 601.24625pt x 451.6875pt>
 File: ./Slike/./rea/00_fft-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./rea/00_fft-eps-converted-to.pdf>
@@ -3166,7 +2880,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 27.
-[56 <./Slike/./rea/00_sincos-eps-converted-to.pdf>]
+[48 <./Slike/./rea/00_sincos-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 28.
 
@@ -3192,7 +2906,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 31.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 31.
-[57 <./Slike/./rea/00_napaka-eps-converted-to.pdf> <./Slike/./rea/00_fft-eps-co
+[49 <./Slike/./rea/00_napaka-eps-converted-to.pdf> <./Slike/./rea/00_fft-eps-co
 nverted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./rea/xs_sincos.eps>
 (epstopdf)                    date: 2018-07-18 09:07:39
@@ -3206,10 +2920,9 @@ df>
 (epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xs_sincos-eps-converted-to.pdf, id=1019, 485.815pt x 410.53375pt
->
+<./Slike/./rea/xs_sincos-eps-converted-to.pdf, id=916, 485.815pt x 410.53375pt>
 File: ./Slike/./rea/xs_sincos-eps-converted-to.pdf Graphic file (type pdf)
- <use ./Slike/./rea/xs_sincos-eps-converted-to.pdf>
+<use ./Slike/./rea/xs_sincos-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./rea/xs_sincos-eps-converted-to.pdf used on i
 nput line 32.
 (pdftex.def)             Requested size: 247.54149pt x 209.1815pt.
@@ -3225,8 +2938,8 @@ df>
 (epstopdf)             \includegraphics on input line 34.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xs_napaka-eps-converted-to.pdf, id=1020, 496.85625pt x 402.50375
-pt>
+<./Slike/./rea/xs_napaka-eps-converted-to.pdf, id=917, 496.85625pt x 402.50375p
+t>
 File: ./Slike/./rea/xs_napaka-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/xs_napaka-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./rea/xs_napaka-eps-converted-to.pdf used on i
@@ -3248,8 +2961,9 @@ nverted-to.pdf ./Slike/./rea/xs_fft.eps>
 (epstopdf)             \includegraphics on input line 36.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xs_fft-eps-converted-to.pdf, id=1021, 508.90125pt x 406.51875pt>
+<./Slike/./rea/xs_fft-eps-converted-to.pdf, id=918, 508.90125pt x 406.51875pt>
 File: ./Slike/./rea/xs_fft-eps-converted-to.pdf Graphic file (type pdf)
+
 <use ./Slike/./rea/xs_fft-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./rea/xs_fft-eps-converted-to.pdf used on inpu
 t line 36.
@@ -3267,7 +2981,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 38.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 38.
-[58 <./Slike/./rea/xs_sincos-eps-converted-to.pdf>]
+[50 <./Slike/./rea/xs_sincos-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 39.
 
@@ -3315,7 +3029,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 42.
-[59 <./Slike/./rea/xs_napaka-eps-converted-to.pdf> <./Slike/./rea/xs_fft-eps-co
+[51 <./Slike/./rea/xs_napaka-eps-converted-to.pdf> <./Slike/./rea/xs_fft-eps-co
 nverted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./rea/xs_sincos_amp.eps>
 (epstopdf)                    date: 2018-07-02 15:53:25
@@ -3329,8 +3043,8 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xs_sincos_amp-eps-converted-to.pdf, id=1052, 522.95375pt x 412.5
-4124pt>
+<./Slike/./rea/xs_sincos_amp-eps-converted-to.pdf, id=949, 522.95375pt x 412.54
+124pt>
 File: ./Slike/./rea/xs_sincos_amp-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/xs_sincos_amp-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./rea/xs_sincos_amp-eps-converted-to.pdf used 
@@ -3348,8 +3062,8 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xs_sincos_off-eps-converted-to.pdf, id=1053, 531.9875pt x 412.54
-124pt>
+<./Slike/./rea/xs_sincos_off-eps-converted-to.pdf, id=950, 531.9875pt x 412.541
+24pt>
 File: ./Slike/./rea/xs_sincos_off-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/xs_sincos_off-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./rea/xs_sincos_off-eps-converted-to.pdf used 
@@ -3371,8 +3085,8 @@ se-eps-converted-to.pdf ./Slike/./rea/xs_sincos_phase.eps>
 (epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xs_sincos_phase-eps-converted-to.pdf, id=1054, 514.92375pt x 412
-.54124pt>
+<./Slike/./rea/xs_sincos_phase-eps-converted-to.pdf, id=951, 514.92375pt x 412.
+54124pt>
 File: ./Slike/./rea/xs_sincos_phase-eps-converted-to.pdf Graphic file (type pdf
 )
  <use ./Slike/./rea/xs_sincos_phase-eps-converted-to.pdf>
@@ -3392,7 +3106,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 51.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 51.
-[60 <./Slike/./rea/xs_sincos_amp-eps-converted-to.pdf>]
+[52 <./Slike/./rea/xs_sincos_amp-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3404,7 +3118,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 59.
-[61 <./Slike/./rea/xs_sincos_off-eps-converted-to.pdf> <./Slike/./rea/xs_sincos
+[53 <./Slike/./rea/xs_sincos_off-eps-converted-to.pdf> <./Slike/./rea/xs_sincos
 _phase-eps-converted-to.pdf>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
@@ -3414,7 +3128,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 61.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 61.
-[62]
+[54]
 Package epstopdf Info: Source file: <./Slike/./rea/xs_potek.eps>
 (epstopdf)                    date: 2018-07-02 15:53:21
 (epstopdf)                    size: 14099 bytes
@@ -3427,8 +3141,8 @@ converted-to.pdf ./Slike/./rea/xs_potek.eps>
 (epstopdf)             \includegraphics on input line 65.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xs_potek-eps-converted-to.pdf, id=1090, 506.89375pt x 412.54124p
-t>
+<./Slike/./rea/xs_potek-eps-converted-to.pdf, id=986, 506.89375pt x 412.54124pt
+>
 File: ./Slike/./rea/xs_potek-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/xs_potek-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./rea/xs_potek-eps-converted-to.pdf used on in
@@ -3456,7 +3170,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 103.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 103.
-[63 <./Slike/./rea/xs_potek-eps-converted-to.pdf>]
+[55 <./Slike/./rea/xs_potek-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./rea/ys_sincos.eps>
 (epstopdf)                    date: 2018-07-18 09:07:42
 (epstopdf)                    size: 63362 bytes
@@ -3469,7 +3183,7 @@ df>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/ys_sincos-eps-converted-to.pdf, id=1104, 485.815pt x 410.53375pt
+<./Slike/./rea/ys_sincos-eps-converted-to.pdf, id=1001, 485.815pt x 410.53375pt
 >
 File: ./Slike/./rea/ys_sincos-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/ys_sincos-eps-converted-to.pdf>
@@ -3488,7 +3202,7 @@ df>
 (epstopdf)             \includegraphics on input line 106.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/ys_napaka-eps-converted-to.pdf, id=1105, 505.89pt x 411.5375pt>
+<./Slike/./rea/ys_napaka-eps-converted-to.pdf, id=1002, 505.89pt x 411.5375pt>
 File: ./Slike/./rea/ys_napaka-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./rea/ys_napaka-eps-converted-to.pdf>
@@ -3511,7 +3225,7 @@ nverted-to.pdf ./Slike/./rea/ys_fft.eps>
 (epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/ys_fft-eps-converted-to.pdf, id=1106, 504.88625pt x 406.51875pt>
+<./Slike/./rea/ys_fft-eps-converted-to.pdf, id=1003, 504.88625pt x 406.51875pt>
 File: ./Slike/./rea/ys_fft-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./rea/ys_fft-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./rea/ys_fft-eps-converted-to.pdf used on inpu
@@ -3530,7 +3244,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 110.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 110.
-[64 <./Slike/./rea/ys_sincos-eps-converted-to.pdf>]
+[56 <./Slike/./rea/ys_sincos-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 111.
 
@@ -3578,7 +3292,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 114.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 114.
-[65 <./Slike/./rea/ys_napaka-eps-converted-to.pdf> <./Slike/./rea/ys_fft-eps-co
+[57 <./Slike/./rea/ys_napaka-eps-converted-to.pdf> <./Slike/./rea/ys_fft-eps-co
 nverted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./rea/ys_sincos_amp.eps>
 (epstopdf)                    date: 2018-07-02 15:53:31
@@ -3592,7 +3306,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 115.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/ys_sincos_amp-eps-converted-to.pdf, id=1137, 522.95375pt x 412.5
+<./Slike/./rea/ys_sincos_amp-eps-converted-to.pdf, id=1034, 522.95375pt x 412.5
 4124pt>
 File: ./Slike/./rea/ys_sincos_amp-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/ys_sincos_amp-eps-converted-to.pdf>
@@ -3611,7 +3325,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 116.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/ys_sincos_off-eps-converted-to.pdf, id=1138, 531.9875pt x 412.54
+<./Slike/./rea/ys_sincos_off-eps-converted-to.pdf, id=1035, 531.9875pt x 412.54
 124pt>
 File: ./Slike/./rea/ys_sincos_off-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/ys_sincos_off-eps-converted-to.pdf>
@@ -3634,7 +3348,7 @@ se-eps-converted-to.pdf ./Slike/./rea/ys_sincos_phase.eps>
 (epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/ys_sincos_phase-eps-converted-to.pdf, id=1139, 523.9575pt x 412.
+<./Slike/./rea/ys_sincos_phase-eps-converted-to.pdf, id=1036, 523.9575pt x 412.
 54124pt>
 File: ./Slike/./rea/ys_sincos_phase-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -3655,7 +3369,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 129.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 129.
-[66 <./Slike/./rea/ys_sincos_amp-eps-converted-to.pdf>]
+[58 <./Slike/./rea/ys_sincos_amp-eps-converted-to.pdf>]
 Underfull \vbox (badness 3482) has occurred while \output is active []
 
 
@@ -3667,7 +3381,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 129.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 129.
-[67 <./Slike/./rea/ys_sincos_off-eps-converted-to.pdf> <./Slike/./rea/ys_sincos
+[59 <./Slike/./rea/ys_sincos_off-eps-converted-to.pdf> <./Slike/./rea/ys_sincos
 _phase-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./rea/ys_potek.eps>
 (epstopdf)                    date: 2018-07-02 15:53:27
@@ -3681,7 +3395,7 @@ converted-to.pdf ./Slike/./rea/ys_potek.eps>
 (epstopdf)             \includegraphics on input line 130.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/ys_potek-eps-converted-to.pdf, id=1170, 515.9275pt x 412.54124pt
+<./Slike/./rea/ys_potek-eps-converted-to.pdf, id=1066, 515.9275pt x 412.54124pt
 >
 File: ./Slike/./rea/ys_potek-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/ys_potek-eps-converted-to.pdf>
@@ -3713,7 +3427,7 @@ df>
 (epstopdf)             \includegraphics on input line 172.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xd_sincos-eps-converted-to.pdf, id=1175, 485.815pt x 410.53375pt
+<./Slike/./rea/xd_sincos-eps-converted-to.pdf, id=1071, 485.815pt x 410.53375pt
 >
 File: ./Slike/./rea/xd_sincos-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/xd_sincos-eps-converted-to.pdf>
@@ -3732,7 +3446,7 @@ df>
 (epstopdf)             \includegraphics on input line 173.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xd_napaka-eps-converted-to.pdf, id=1176, 505.89pt x 402.50375pt>
+<./Slike/./rea/xd_napaka-eps-converted-to.pdf, id=1072, 505.89pt x 402.50375pt>
 File: ./Slike/./rea/xd_napaka-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./rea/xd_napaka-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./rea/xd_napaka-eps-converted-to.pdf used on i
@@ -3747,7 +3461,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 174.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 174.
-[68 <./Slike/./rea/ys_potek-eps-converted-to.pdf>]
+[60 <./Slike/./rea/ys_potek-eps-converted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -3763,7 +3477,7 @@ nverted-to.pdf ./Slike/./rea/xd_fft.eps>
 (epstopdf)             \includegraphics on input line 175.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xd_fft-eps-converted-to.pdf, id=1189, 504.88625pt x 406.51875pt>
+<./Slike/./rea/xd_fft-eps-converted-to.pdf, id=1085, 504.88625pt x 406.51875pt>
 File: ./Slike/./rea/xd_fft-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./rea/xd_fft-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./rea/xd_fft-eps-converted-to.pdf used on inpu
@@ -3782,7 +3496,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 178.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 178.
-[69 <./Slike/./rea/xd_sincos-eps-converted-to.pdf>]
+[61 <./Slike/./rea/xd_sincos-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 179.
 
@@ -3830,7 +3544,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 182.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xd_sincos_amp-eps-converted-to.pdf, id=1203, 522.95375pt x 412.5
+<./Slike/./rea/xd_sincos_amp-eps-converted-to.pdf, id=1100, 522.95375pt x 412.5
 4124pt>
 File: ./Slike/./rea/xd_sincos_amp-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/xd_sincos_amp-eps-converted-to.pdf>
@@ -3849,7 +3563,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 183.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xd_sincos_off-eps-converted-to.pdf, id=1204, 522.95375pt x 412.5
+<./Slike/./rea/xd_sincos_off-eps-converted-to.pdf, id=1101, 522.95375pt x 412.5
 4124pt>
 File: ./Slike/./rea/xd_sincos_off-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/xd_sincos_off-eps-converted-to.pdf>
@@ -3868,7 +3582,7 @@ se-eps-converted-to.pdf ./Slike/./rea/xd_sincos_phase.eps>
 (epstopdf)             \includegraphics on input line 184.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xd_sincos_phase-eps-converted-to.pdf, id=1205, 537.00626pt x 412
+<./Slike/./rea/xd_sincos_phase-eps-converted-to.pdf, id=1102, 537.00626pt x 412
 .54124pt>
 File: ./Slike/./rea/xd_sincos_phase-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -3888,7 +3602,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 185.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 185.
-[70 <./Slike/./rea/xd_napaka-eps-converted-to.pdf> <./Slike/./rea/xd_fft-eps-co
+[62 <./Slike/./rea/xd_napaka-eps-converted-to.pdf> <./Slike/./rea/xd_fft-eps-co
 nverted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -3908,7 +3622,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 197.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 197.
-[71 <./Slike/./rea/xd_sincos_amp-eps-converted-to.pdf>]
+[63 <./Slike/./rea/xd_sincos_amp-eps-converted-to.pdf>]
 Overfull \vbox (78.71198pt too high) has occurred while \output is active []
 
 
@@ -3920,7 +3634,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 197.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 197.
-[72 <./Slike/./rea/xd_sincos_off-eps-converted-to.pdf> <./Slike/./rea/xd_sincos
+[64 <./Slike/./rea/xd_sincos_off-eps-converted-to.pdf> <./Slike/./rea/xd_sincos
 _phase-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./rea/xd_potek.eps>
 (epstopdf)                    date: 2018-07-02 15:53:33
@@ -3934,7 +3648,7 @@ converted-to.pdf ./Slike/./rea/xd_potek.eps>
 (epstopdf)             \includegraphics on input line 201.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/xd_potek-eps-converted-to.pdf, id=1253, 515.9275pt x 412.54124pt
+<./Slike/./rea/xd_potek-eps-converted-to.pdf, id=1150, 515.9275pt x 412.54124pt
 >
 File: ./Slike/./rea/xd_potek-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/xd_potek-eps-converted-to.pdf>
@@ -3966,7 +3680,7 @@ df>
 (epstopdf)             \includegraphics on input line 220.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/yd_sincos-eps-converted-to.pdf, id=1257, 485.815pt x 410.53375pt
+<./Slike/./rea/yd_sincos-eps-converted-to.pdf, id=1154, 485.815pt x 410.53375pt
 >
 File: ./Slike/./rea/yd_sincos-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/yd_sincos-eps-converted-to.pdf>
@@ -3985,7 +3699,7 @@ df>
 (epstopdf)             \includegraphics on input line 221.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/yd_napaka-eps-converted-to.pdf, id=1258, 505.89pt x 402.50375pt>
+<./Slike/./rea/yd_napaka-eps-converted-to.pdf, id=1155, 505.89pt x 402.50375pt>
 File: ./Slike/./rea/yd_napaka-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./rea/yd_napaka-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./rea/yd_napaka-eps-converted-to.pdf used on i
@@ -4020,7 +3734,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 223.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 223.
-[73 <./Slike/./rea/xd_potek-eps-converted-to.pdf>]
+[65 <./Slike/./rea/xd_potek-eps-converted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -4036,7 +3750,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 225.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 225.
-[74 <./Slike/./rea/yd_sincos-eps-converted-to.pdf>]
+[66 <./Slike/./rea/yd_sincos-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 226.
 
@@ -4084,7 +3798,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/yd_sincos_amp-eps-converted-to.pdf, id=1284, 522.95375pt x 412.5
+<./Slike/./rea/yd_sincos_amp-eps-converted-to.pdf, id=1180, 522.95375pt x 412.5
 4124pt>
 File: ./Slike/./rea/yd_sincos_amp-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/yd_sincos_amp-eps-converted-to.pdf>
@@ -4103,7 +3817,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 230.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/yd_sincos_off-eps-converted-to.pdf, id=1285, 531.9875pt x 412.54
+<./Slike/./rea/yd_sincos_off-eps-converted-to.pdf, id=1181, 531.9875pt x 412.54
 124pt>
 File: ./Slike/./rea/yd_sincos_off-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/yd_sincos_off-eps-converted-to.pdf>
@@ -4122,7 +3836,7 @@ se-eps-converted-to.pdf ./Slike/./rea/yd_sincos_phase.eps>
 (epstopdf)             \includegraphics on input line 231.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/yd_sincos_phase-eps-converted-to.pdf, id=1286, 537.00626pt x 412
+<./Slike/./rea/yd_sincos_phase-eps-converted-to.pdf, id=1182, 537.00626pt x 412
 .54124pt>
 File: ./Slike/./rea/yd_sincos_phase-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -4142,7 +3856,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 232.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 232.
-[75 <./Slike/./rea/yd_napaka-eps-converted-to.pdf>]
+[67 <./Slike/./rea/yd_napaka-eps-converted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -4161,7 +3875,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 242.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 242.
-[76 <./Slike/./rea/yd_sincos_amp-eps-converted-to.pdf>]
+[68 <./Slike/./rea/yd_sincos_amp-eps-converted-to.pdf>]
 Overfull \vbox (75.39458pt too high) has occurred while \output is active []
 
 
@@ -4173,7 +3887,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 242.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 242.
-[77 <./Slike/./rea/yd_sincos_off-eps-converted-to.pdf> <./Slike/./rea/yd_sincos
+[69 <./Slike/./rea/yd_sincos_off-eps-converted-to.pdf> <./Slike/./rea/yd_sincos
 _phase-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./rea/yd_potek.eps>
 (epstopdf)                    date: 2018-07-02 15:53:40
@@ -4187,7 +3901,7 @@ converted-to.pdf ./Slike/./rea/yd_potek.eps>
 (epstopdf)             \includegraphics on input line 245.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./rea/yd_potek-eps-converted-to.pdf, id=1326, 519.9425pt x 412.54124pt
+<./Slike/./rea/yd_potek-eps-converted-to.pdf, id=1223, 519.9425pt x 412.54124pt
 >
 File: ./Slike/./rea/yd_potek-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./rea/yd_potek-eps-converted-to.pdf>
@@ -4203,7 +3917,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 164.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 164.
-[78 <./Slike/./rea/yd_potek-eps-converted-to.pdf>]
+[70 <./Slike/./rea/yd_potek-eps-converted-to.pdf>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -4212,7 +3926,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 164.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 164.
-[79]
+[71]
 \openout2 = `./tex/Meritve.aux'.
 
  (tex/Meritve.tex
@@ -4224,7 +3938,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 1.
-[80
+[72
 
 
 
@@ -4235,29 +3949,29 @@ Package babel Info: Redefining slovene shorthand "|
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 6.
 
-LaTeX Warning: Reference `premikanjeMagneta.png' on page 81 undefined on input 
+LaTeX Warning: Reference `premikanjeMagneta.png' on page 73 undefined on input 
 line 10.
 
 
-LaTeX Warning: Reference `postavitevmerilnegamesta.png' on page 81 undefined on
+LaTeX Warning: Reference `postavitevmerilnegamesta.png' on page 73 undefined on
  input line 12.
 
 
-LaTeX Warning: Reference `HTIMS601.png' on page 81 undefined on input line 19.
+LaTeX Warning: Reference `HTIMS601.png' on page 73 undefined on input line 19.
 
 
-LaTeX Warning: Reference `HTIMS601.png' on page 81 undefined on input line 22.
+LaTeX Warning: Reference `HTIMS601.png' on page 73 undefined on input line 22.
 
 
-LaTeX Warning: Reference `hitrost' on page 81 undefined on input line 25.
+LaTeX Warning: Reference `hitrost' on page 73 undefined on input line 25.
 
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 26.
-[81]
+[73]
 
-LaTeX Warning: Reference `koordinatnisistem.png' on page 82 undefined on input 
+LaTeX Warning: Reference `koordinatnisistem.png' on page 74 undefined on input 
 line 27.
 
 
@@ -4269,15 +3983,15 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 33.
-[82]
+[74]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 34.
 
 
-LaTeX Warning: Reference `GUI.png' on page 83 undefined on input line 36.
+LaTeX Warning: Reference `GUI.png' on page 75 undefined on input line 36.
 
 
-LaTeX Warning: Reference `GUI.png' on page 83 undefined on input line 45.
+LaTeX Warning: Reference `GUI.png' on page 75 undefined on input line 45.
 
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 47.
@@ -4295,7 +4009,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 50.
-[83]
+[75]
 Package epstopdf Info: Source file: <./Slike/./MER/00_sincos.eps>
 (epstopdf)                    date: 2018-08-02 20:43:21
 (epstopdf)                    size: 21866 bytes
@@ -4308,7 +4022,7 @@ df>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/00_sincos-eps-converted-to.pdf, id=1364, 601.24625pt x 451.6875p
+<./Slike/./MER/00_sincos-eps-converted-to.pdf, id=1260, 601.24625pt x 451.6875p
 t>
 File: ./Slike/./MER/00_sincos-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/00_sincos-eps-converted-to.pdf>
@@ -4327,7 +4041,7 @@ df>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/00_napaka-eps-converted-to.pdf, id=1365, 601.24625pt x 451.6875p
+<./Slike/./MER/00_napaka-eps-converted-to.pdf, id=1261, 601.24625pt x 451.6875p
 t>
 File: ./Slike/./MER/00_napaka-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/00_napaka-eps-converted-to.pdf>
@@ -4346,7 +4060,7 @@ nverted-to.pdf ./Slike/./MER/00_fft.eps>
 (epstopdf)             \includegraphics on input line 61.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/00_fft-eps-converted-to.pdf, id=1366, 601.24625pt x 451.6875pt>
+<./Slike/./MER/00_fft-eps-converted-to.pdf, id=1262, 601.24625pt x 451.6875pt>
 File: ./Slike/./MER/00_fft-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./MER/00_fft-eps-converted-to.pdf>
@@ -4373,7 +4087,7 @@ Package epstopdf Info: Source file: <./Slike/./MER/00_off.eps>
 nverted-to.pdf ./Slike/./MER/00_off.eps>
 (epstopdf)             \includegraphics on input line 68.
 Package epstopdf Info: Output file is already uptodate.
-<./Slike/./MER/00_off-eps-converted-to.pdf, id=1368, 602.25pt x 451.6875pt>
+<./Slike/./MER/00_off-eps-converted-to.pdf, id=1264, 602.25pt x 451.6875pt>
 File: ./Slike/./MER/00_off-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./MER/00_off-eps-converted-to.pdf>
@@ -4392,7 +4106,7 @@ nverted-to.pdf ./Slike/./MER/00_amp.eps>
 (epstopdf)             \includegraphics on input line 72.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/00_amp-eps-converted-to.pdf, id=1370, 602.25pt x 451.6875pt>
+<./Slike/./MER/00_amp-eps-converted-to.pdf, id=1266, 602.25pt x 451.6875pt>
 File: ./Slike/./MER/00_amp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./Slike/./MER/00_amp-eps-converted-to.pdf>
@@ -4411,7 +4125,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 73.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 73.
-[84 <./Slike/./MER/00_sincos-eps-converted-to.pdf>]
+[76 <./Slike/./MER/00_sincos-eps-converted-to.pdf>]
 Underfull \vbox (badness 2689) has occurred while \output is active []
 
 
@@ -4423,7 +4137,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 73.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 73.
-[85 <./Slike/./MER/00_napaka-eps-converted-to.pdf> <./Slike/./MER/00_fft-eps-co
+[77 <./Slike/./MER/00_napaka-eps-converted-to.pdf> <./Slike/./MER/00_fft-eps-co
 nverted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -4437,7 +4151,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 73.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 73.
-[86 <./Slike/./MER/00_off-eps-converted-to.pdf>]
+[78 <./Slike/./MER/00_off-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 74.
 
@@ -4463,7 +4177,7 @@ df>
 (epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xs_sincos-eps-converted-to.pdf, id=1410, 489.83pt x 410.53375pt>
+<./Slike/./MER/xs_sincos-eps-converted-to.pdf, id=1305, 489.83pt x 410.53375pt>
 File: ./Slike/./MER/xs_sincos-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./MER/xs_sincos-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./MER/xs_sincos-eps-converted-to.pdf used on i
@@ -4481,7 +4195,7 @@ df>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xs_napaka-eps-converted-to.pdf, id=1411, 518.93875pt x 402.50375
+<./Slike/./MER/xs_napaka-eps-converted-to.pdf, id=1306, 518.93875pt x 402.50375
 pt>
 File: ./Slike/./MER/xs_napaka-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/xs_napaka-eps-converted-to.pdf>
@@ -4500,7 +4214,7 @@ nverted-to.pdf ./Slike/./MER/xs_fft.eps>
 (epstopdf)             \includegraphics on input line 79.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xs_fft-eps-converted-to.pdf, id=1412, 508.90125pt x 406.51875pt>
+<./Slike/./MER/xs_fft-eps-converted-to.pdf, id=1307, 508.90125pt x 406.51875pt>
 File: ./Slike/./MER/xs_fft-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./MER/xs_fft-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./MER/xs_fft-eps-converted-to.pdf used on inpu
@@ -4562,7 +4276,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xs_sincos_amp-eps-converted-to.pdf, id=1416, 601.24625pt x 451.6
+<./Slike/./MER/xs_sincos_amp-eps-converted-to.pdf, id=1311, 601.24625pt x 451.6
 875pt>
 File: ./Slike/./MER/xs_sincos_amp-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/xs_sincos_amp-eps-converted-to.pdf>
@@ -4581,7 +4295,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 84.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xs_sincos_off-eps-converted-to.pdf, id=1417, 601.24625pt x 451.6
+<./Slike/./MER/xs_sincos_off-eps-converted-to.pdf, id=1312, 601.24625pt x 451.6
 875pt>
 File: ./Slike/./MER/xs_sincos_off-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/xs_sincos_off-eps-converted-to.pdf>
@@ -4600,7 +4314,7 @@ se-eps-converted-to.pdf ./Slike/./MER/xs_sincos_phase.eps>
 (epstopdf)             \includegraphics on input line 85.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xs_sincos_phase-eps-converted-to.pdf, id=1418, 601.24625pt x 451
+<./Slike/./MER/xs_sincos_phase-eps-converted-to.pdf, id=1313, 601.24625pt x 451
 .6875pt>
 File: ./Slike/./MER/xs_sincos_phase-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -4617,7 +4331,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 86.
-[87 <./Slike/./MER/00_amp-eps-converted-to.pdf>]
+[79 <./Slike/./MER/00_amp-eps-converted-to.pdf>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -4626,7 +4340,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 86.
-[88 <./Slike/./MER/xs_sincos-eps-converted-to.pdf> <./Slike/./MER/xs_napaka-eps
+[80 <./Slike/./MER/xs_sincos-eps-converted-to.pdf> <./Slike/./MER/xs_napaka-eps
 -converted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -4643,7 +4357,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 93.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 93.
-[89 <./Slike/./MER/xs_fft-eps-converted-to.pdf> <./Slike/./MER/xs_sincos_amp-ep
+[81 <./Slike/./MER/xs_fft-eps-converted-to.pdf> <./Slike/./MER/xs_sincos_amp-ep
 s-converted-to.pdf>]
 Overfull \vbox (39.89493pt too high) has occurred while \output is active []
 
@@ -4656,7 +4370,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 93.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 93.
-[90 <./Slike/./MER/xs_sincos_off-eps-converted-to.pdf> <./Slike/./MER/xs_sincos
+[82 <./Slike/./MER/xs_sincos_off-eps-converted-to.pdf> <./Slike/./MER/xs_sincos
 _phase-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./MER/xs_potek.eps>
 (epstopdf)                    date: 2018-08-14 17:51:56
@@ -4670,7 +4384,7 @@ converted-to.pdf ./Slike/./MER/xs_potek.eps>
 (epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xs_potek-eps-converted-to.pdf, id=1480, 601.24625pt x 451.6875pt
+<./Slike/./MER/xs_potek-eps-converted-to.pdf, id=1376, 601.24625pt x 451.6875pt
 >
 File: ./Slike/./MER/xs_potek-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/xs_potek-eps-converted-to.pdf>
@@ -4686,7 +4400,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 109.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 109.
-[91 <./Slike/./MER/xs_potek-eps-converted-to.pdf>]
+[83 <./Slike/./MER/xs_potek-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 110.
 
@@ -4712,7 +4426,7 @@ df>
 (epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/ys_sincos-eps-converted-to.pdf, id=1495, 489.83pt x 410.53375pt>
+<./Slike/./MER/ys_sincos-eps-converted-to.pdf, id=1390, 489.83pt x 410.53375pt>
 File: ./Slike/./MER/ys_sincos-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./MER/ys_sincos-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./MER/ys_sincos-eps-converted-to.pdf used on i
@@ -4730,7 +4444,7 @@ df>
 (epstopdf)             \includegraphics on input line 113.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/ys_napaka-eps-converted-to.pdf, id=1496, 518.93875pt x 402.50375
+<./Slike/./MER/ys_napaka-eps-converted-to.pdf, id=1391, 518.93875pt x 402.50375
 pt>
 File: ./Slike/./MER/ys_napaka-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/ys_napaka-eps-converted-to.pdf>
@@ -4749,7 +4463,7 @@ nverted-to.pdf ./Slike/./MER/ys_fft.eps>
 (epstopdf)             \includegraphics on input line 114.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/ys_fft-eps-converted-to.pdf, id=1497, 508.90125pt x 406.51875pt>
+<./Slike/./MER/ys_fft-eps-converted-to.pdf, id=1392, 508.90125pt x 406.51875pt>
 File: ./Slike/./MER/ys_fft-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./MER/ys_fft-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./MER/ys_fft-eps-converted-to.pdf used on inpu
@@ -4808,7 +4522,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/ys_sincos_amp-eps-converted-to.pdf, id=1500, 601.24625pt x 451.6
+<./Slike/./MER/ys_sincos_amp-eps-converted-to.pdf, id=1395, 601.24625pt x 451.6
 875pt>
 File: ./Slike/./MER/ys_sincos_amp-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/ys_sincos_amp-eps-converted-to.pdf>
@@ -4827,7 +4541,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/ys_sincos_off-eps-converted-to.pdf, id=1501, 601.24625pt x 451.6
+<./Slike/./MER/ys_sincos_off-eps-converted-to.pdf, id=1396, 601.24625pt x 451.6
 875pt>
 File: ./Slike/./MER/ys_sincos_off-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/ys_sincos_off-eps-converted-to.pdf>
@@ -4846,7 +4560,7 @@ se-eps-converted-to.pdf ./Slike/./MER/ys_sincos_phase.eps>
 (epstopdf)             \includegraphics on input line 121.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/ys_sincos_phase-eps-converted-to.pdf, id=1502, 601.24625pt x 451
+<./Slike/./MER/ys_sincos_phase-eps-converted-to.pdf, id=1397, 601.24625pt x 451
 .6875pt>
 File: ./Slike/./MER/ys_sincos_phase-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -4863,7 +4577,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 122.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 122.
-[92 <./Slike/./MER/ys_sincos-eps-converted-to.pdf>]
+[84 <./Slike/./MER/ys_sincos-eps-converted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -4885,7 +4599,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 129.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 129.
-[93 <./Slike/./MER/ys_napaka-eps-converted-to.pdf> <./Slike/./MER/ys_fft-eps-co
+[85 <./Slike/./MER/ys_napaka-eps-converted-to.pdf> <./Slike/./MER/ys_fft-eps-co
 nverted-to.pdf>]
 Overfull \vbox (39.89493pt too high) has occurred while \output is active []
 
@@ -4898,7 +4612,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 129.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 129.
-[94 <./Slike/./MER/ys_sincos_amp-eps-converted-to.pdf> <./Slike/./MER/ys_sincos
+[86 <./Slike/./MER/ys_sincos_amp-eps-converted-to.pdf> <./Slike/./MER/ys_sincos
 _off-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./MER/ys_potek.eps>
 (epstopdf)                    date: 2018-08-14 17:52:09
@@ -4912,7 +4626,7 @@ converted-to.pdf ./Slike/./MER/ys_potek.eps>
 (epstopdf)             \includegraphics on input line 132.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/ys_potek-eps-converted-to.pdf, id=1550, 601.24625pt x 451.6875pt
+<./Slike/./MER/ys_potek-eps-converted-to.pdf, id=1446, 601.24625pt x 451.6875pt
 >
 File: ./Slike/./MER/ys_potek-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/ys_potek-eps-converted-to.pdf>
@@ -4931,7 +4645,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 139.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 139.
-[95 <./Slike/./MER/ys_sincos_phase-eps-converted-to.pdf> <./Slike/./MER/ys_pote
+[87 <./Slike/./MER/ys_sincos_phase-eps-converted-to.pdf> <./Slike/./MER/ys_pote
 k-eps-converted-to.pdf>]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 147.
@@ -4958,9 +4672,9 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 164.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 164.
-[96]
+[88]
 
-LaTeX Warning: Reference `./MER/xd_fft' on page 97 undefined on input line 167.
+LaTeX Warning: Reference `./MER/xd_fft' on page 89 undefined on input line 167.
 
 
 Package epstopdf Info: Source file: <./Slike/./MER/xd_sincos.eps>
@@ -4975,7 +4689,7 @@ df>
 (epstopdf)             \includegraphics on input line 168.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xd_sincos-eps-converted-to.pdf, id=1575, 489.83pt x 410.53375pt>
+<./Slike/./MER/xd_sincos-eps-converted-to.pdf, id=1471, 489.83pt x 410.53375pt>
 File: ./Slike/./MER/xd_sincos-eps-converted-to.pdf Graphic file (type pdf)
 <use ./Slike/./MER/xd_sincos-eps-converted-to.pdf>
 Package pdftex.def Info: ./Slike/./MER/xd_sincos-eps-converted-to.pdf used on i
@@ -4993,7 +4707,7 @@ df>
 (epstopdf)             \includegraphics on input line 169.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xd_napaka-eps-converted-to.pdf, id=1576, 509.905pt x 406.51875pt
+<./Slike/./MER/xd_napaka-eps-converted-to.pdf, id=1472, 509.905pt x 406.51875pt
 >
 File: ./Slike/./MER/xd_napaka-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/xd_napaka-eps-converted-to.pdf>
@@ -5070,7 +4784,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xd_sincos_amp-eps-converted-to.pdf, id=1579, 601.24625pt x 451.6
+<./Slike/./MER/xd_sincos_amp-eps-converted-to.pdf, id=1475, 601.24625pt x 451.6
 875pt>
 File: ./Slike/./MER/xd_sincos_amp-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/xd_sincos_amp-eps-converted-to.pdf>
@@ -5089,7 +4803,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 175.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xd_sincos_off-eps-converted-to.pdf, id=1580, 601.24625pt x 451.6
+<./Slike/./MER/xd_sincos_off-eps-converted-to.pdf, id=1476, 601.24625pt x 451.6
 875pt>
 File: ./Slike/./MER/xd_sincos_off-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/xd_sincos_off-eps-converted-to.pdf>
@@ -5108,7 +4822,7 @@ se-eps-converted-to.pdf ./Slike/./MER/xd_sincos_phase.eps>
 (epstopdf)             \includegraphics on input line 176.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xd_sincos_phase-eps-converted-to.pdf, id=1581, 601.24625pt x 451
+<./Slike/./MER/xd_sincos_phase-eps-converted-to.pdf, id=1477, 601.24625pt x 451
 .6875pt>
 File: ./Slike/./MER/xd_sincos_phase-eps-converted-to.pdf Graphic file (type pdf
 )
@@ -5125,7 +4839,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 177.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 177.
-[97 <./Slike/./MER/xd_sincos-eps-converted-to.pdf>]
+[89 <./Slike/./MER/xd_sincos-eps-converted-to.pdf>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -5134,7 +4848,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 177.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 177.
-[98 <./Slike/./MER/xd_napaka-eps-converted-to.pdf>]
+[90 <./Slike/./MER/xd_napaka-eps-converted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -5147,7 +4861,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 186.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 186.
-[99 <./Slike/./MER/xd_sincos_amp-eps-converted-to.pdf> <./Slike/./MER/xd_sincos
+[91 <./Slike/./MER/xd_sincos_amp-eps-converted-to.pdf> <./Slike/./MER/xd_sincos
 _off-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./Slike/./MER/xd_potek.eps>
 (epstopdf)                    date: 2018-08-14 17:52:23
@@ -5161,7 +4875,7 @@ converted-to.pdf ./Slike/./MER/xd_potek.eps>
 (epstopdf)             \includegraphics on input line 188.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Slike/./MER/xd_potek-eps-converted-to.pdf, id=1627, 601.24625pt x 451.6875pt
+<./Slike/./MER/xd_potek-eps-converted-to.pdf, id=1523, 601.24625pt x 451.6875pt
 >
 File: ./Slike/./MER/xd_potek-eps-converted-to.pdf Graphic file (type pdf)
  <use ./Slike/./MER/xd_potek-eps-converted-to.pdf>
@@ -5181,7 +4895,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 166.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 166.
-[100 <./Slike/./MER/xd_sincos_phase-eps-converted-to.pdf>]
+[92 <./Slike/./MER/xd_sincos_phase-eps-converted-to.pdf>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -5190,7 +4904,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 166.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 166.
-[101 <./Slike/./MER/xd_potek-eps-converted-to.pdf>]
+[93 <./Slike/./MER/xd_potek-eps-converted-to.pdf>]
 \openout2 = `./tex/Sklep.aux'.
 
  (tex/Sklep.tex
@@ -5202,7 +4916,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 1.
-[102
+[94
 
 
 
@@ -5223,7 +4937,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 9.
- [103]
+ [95]
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining slovene shorthand "|
@@ -5237,12 +4951,12 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 168.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 168.
-[104] (Diploma_V2.bbl
+[96] (Diploma_V2.bbl
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 42.
- [105
+(babel)             in language  on input line 39.
+ [97
 
 
 ])
@@ -5254,7 +4968,7 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 173.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 173.
-[106]
+[98]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
  (Diploma_V2.aux (tex/Uvod.aux) (tex/Analiticna_izpeljava.aux)
@@ -5263,7 +4977,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
 Package rerunfilecheck Info: File `Diploma_V2.out' has not changed.
-(rerunfilecheck)             Checksum: 0CC78C2575464B3D90A39F64223ED5F6;4995.
+(rerunfilecheck)             Checksum: EB9AA7E0291F0EC6FC24A5A8D286981A;4843.
 
 
 LaTeX Warning: There were undefined references.
@@ -5274,13 +4988,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 173.
  ) 
 Here is how much of TeX's memory you used:
- 19112 strings out of 493323
- 362786 string characters out of 3139065
- 426668 words of memory out of 3000000
- 21860 multiletter control sequences out of 15000+200000
+ 19022 strings out of 493323
+ 360072 string characters out of 3139065
+ 426012 words of memory out of 3000000
+ 21808 multiletter control sequences out of 15000+200000
  13087 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,11n,94p,1223b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,13n,94p,1223b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
@@ -5297,9 +5011,9 @@ ts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmtt12.pfb>
-Output written on Diploma_V2.pdf (106 pages, 2615863 bytes).
+Output written on Diploma_V2.pdf (98 pages, 3158085 bytes).
 PDF statistics:
- 1815 PDF objects out of 2073 (max. 8388607)
- 359 named destinations out of 1000 (max. 500000)
- 998 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1708 PDF objects out of 1728 (max. 8388607)
+ 332 named destinations out of 1000 (max. 500000)
+ 947 words of extra memory for PDF output out of 10000 (max. 10000000)
 
