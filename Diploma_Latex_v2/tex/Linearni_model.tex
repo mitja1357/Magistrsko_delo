@@ -1,52 +1,32 @@
 \chapter{Linearni model}
-
-V prejšnjem poglavju smo magnetno polje magneta aproksimirali z ravnino ter napako izračunali z neskončno vrsto. V tem poglavju bom predstavil simulacije opravljene na magnetnem polju aproksimiranega z ravnino, izračnan kot $\varphi$ je rezultat numerične funkicje atan2d(y,x) citeatan2d. Predstavil bom napako, jo razstavil na posamezne harmonike, ter prikazal spreminjanje amplitud glede na spremembo ekscentričnosti. Ravnina aproksimiranega magnetnega polja je: 
+V tem poglavju so prikazani rezultati simulacij z aproksimiranim poljem (\ref{equ:lin_polje}). 
 \begin{equation}
 \label{equ:lin_polje}
 B(x,y)= x
 \end{equation}
-Hall-ovi sondi sti postavljeni na krožnico z radijem 2,4 mm \cite{AM8192}.
-
-
-\section{Brez napake}
-
-Za začetek si poglejmo idealno montriran tako senzor kot magnet. Signala $sin$ in $cos$ imata enaki amplitudi in sta fazno zamaknjena za $90^{\circ}$. Napaka $\varepsilon$, ki se pojavi pri izračunu je tako le numerična napaka funkcije atan2d (Slika \ref{./LIN/00_napaka}).
-\slikaeps{Potek signalov $sin$ in $cos$ brez ekscentričnosti}{./LIN/yd_sincos}
+Prikazan je potek napake pri različnih izmikih, ter potek amplitud posameznih haarmonikov napake v odvisnosti od ekscentričnosti.
+Hall-ovi sondi sta postavljeni na krožnico z radijem 2,4 mm \cite{AM8192}.
+\section{Brez ekscentričnosti}
+Signala $sin$ in $cos$ pomerjena v stanju brez ekscentričnosti imata enaki amplitudi in sta fazno zamaknjena za $90^{\circ}$. Napaka $\varepsilon$, ki se pojavi pri izračunu je le numerična napaka funkcije atan2d (Slika \ref{./LIN/yd_napaka}). Numerična napaka je proti pričakovani napaki zaradi ekscnetričnosti zanemarljiva.
+\slikaeps{$sin$ in $cos$ brez ekscentričnosti}{./LIN/yd_sincos}
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim magnetnim poljem brez ekscentričnosti}{./LIN/yd_napaka}
-
-Numerično napako lahko na pričakovano napako zaradi ekscnetričnosti zanemarim.
-
-
-\newpage
+%\newpage
 \section{Simulacija statične ekscentričnosti v smeri x-osi}
-
-Oglejmo si rezultate simulacij statične ekscentričnosti v smeri x. Po pričakovanjih se bo povišala amplituda $sin$ in $cos$ signala ter zmanjšal njun fazni zamik (izraza (\ref{equ:Bx_stat}) in \ref{equ:By_stat}).
- 
-\slikaeps{Signala $sin$ in $cos$ pri simulacijah z linearnim poljem pri 0,24 mm statične ekscentričnosti v smeri x}{./LIN/xs_sincos}
-\newpage
-
-
-Napaka $\varepsilon$  je prikazana na sliki \ref{./LIN/xs_napaka}.
-
+Po pričakovanjih se bo povišala amplituda $sin$ in $cos$ signala ter zmanjšal njun fazni zamik (\ref{equ:Bx_stat})  (\ref{equ:By_stat}). Po pričakovanjih najbolj izstopata enosmerna komponenta (harmonik 0) in drugi harmonik.
+\slikaeps{$sin$ in $cos$ pri simulacijah z linearnim poljem pri 0,24 mm statične ekscentričnosti v smeri x}{./LIN/xs_sincos}
+%Napaka $\varepsilon$  je prikazana na sliki \ref{./LIN/xs_napaka}.
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0,24 mm statične ekscentričnosti v smeri x}{./LIN/xs_napaka}
-
-Napako razvijmo v Fourierovo vrsto in pridobimo amplitude posameznih harmonikov napake(Slika \ref{./LIN/xs_fft}).
+%Napako razvijmo v Fourierovo vrsto in pridobimo amplitude posameznih harmonikov napake(Slika \ref{./LIN/xs_fft}).
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z linearnim poljem pri 0,24 mm statične ekscentričnosti v smeri x}{./LIN/xs_fft}
+%\newpage
+\subsection{Sprememba $sin$, $cos$ ter napake v odvisnosti od $\Delta x_s$}
+Na sliki \ref{./LIN/xs_sincos_amp} je prikazana sprememba amplitude prvega harmonika signalov $sin$ in $cos$. Razvidno iz (\ref{equ:Bx_stat})  (\ref{equ:By_stat}) se linearno narašča amplituda $cos$. Slika \ref{./LIN/xs_sincos_off} prikazuje enosmerni komponenti, ki od statične ekscentričnosti nista odvisni. Slika \ref{./LIN/xs_sincos_phase} prikazuje fazni zamik signalov glede na njuno idealno poravnavo. Po (\ref{equ:By_stat}) je pričakovano spreminjanje faze $sin$.
 
-Po pričakovanjih najbolj izstopata enosmerna komponenta (harmonik 0) in drugi harmonik.
-\newpage
-\subsection{Sprememba $sin$, $cos$ ter napake od $\Delta x_s$}
-
-Poglejmo tudi kako se spreminjata analogna signala $sin$ in $cos$ ob spreminjanju ekscentričnosti. Na sliki \ref{./LIN/xs_sincos_amp} je prikazana sprememba amplitude prvega harmonika, na sliki \ref{./LIN/xs_sincos_off} enosmerni komponenti in na sliki \ref{./LIN/xs_sincos_phase} fazni zamik signalov glede na njuno idealno poravnavo. Iz slik vidimo kar nam opišeti enačbi (\ref{equ:Bx_stat})(\ref{equ:By_stat}). Spremeniti se amplitudi, pri čemer se amplituda $cos$ signala spreminja hitreje, ter fazni zamik $sin$.
-
+Spreminjanje amplitude prvega harmonika, enosmerne kompoonente in faznega zamika $sin$ in $cos$ signalov je opisano z (\ref{equ:Bx_stat}) in (\ref{equ:By_stat}). Tu so poteki razviti v Taylorjevo vrsto do tretje stopnje.
  %\ref{./LIN/xs_sincos_amp}. Amplituda $cos$ se spreminja hitreje, kot amplituda $sin$ .
-
-\slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri x}{./LIN/xs_sincos_amp}
-\slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri x}{./LIN/xs_sincos_off}
-\slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri x}{./LIN/xs_sincos_phase}
-
-Kako se spreminjajo amplituda prvega harmonika, enosmerna kompoonenta in fazni zamik $sin$ in $cos$ signalov lahko razberemo iz enačb (\ref{equ:Bx_stat}) in (\ref{equ:By_stat}). Tu poteke razvijem v Taylorjevo vrsto do tretje stopnje, kar bom lahko imel za primerjavo.
-
+\slikaeps{Amplituda osnovnega harmonika  $sin$ in $cos$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri x}{./LIN/xs_sincos_amp}
+\slikaeps{Enosmerna komponenta $sin$ in $cos$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri x}{./LIN/xs_sincos_off}
+\slikaeps{Fazni zamik $sin$ in $cos$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri x glede na idealna signala $sin$ in $cos$}{./LIN/xs_sincos_phase}
 \begin{eqnarray}
 \label{analog_lin_xs}
 &A_{sin} = 2,08 \cdot 10^{-1} \Delta x_s^2+2,4\\
@@ -56,79 +36,51 @@ Kako se spreminjajo amplituda prvega harmonika, enosmerna kompoonenta in fazni z
 &Off_{cos} = 0 \\
 &\delta_{cos} = 0
 \end{eqnarray}
-
 \newpage
 Spremembi signalov $sin$ in $cos$ se odrazita tudi pri izračunu kota $\varphi$ in napake $\varepsilon$.
-Na sliki \ref{./LIN/xs_potek} vidimo odvisnost amplitud posameznega harmonika od spreminjanja statične ekscentričnosti v smeri x.
-
+Na sliki \ref{./LIN/xs_potek} vidimo odvisnost amplitud posameznega harmonika od spreminjanja statične ekscentričnosti v smeri x. Poteke s slike \ref{./LIN/xs_potek} aproksimiramo s polinomi.
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od statične ekscentričnosti v smeri x}{./LIN/xs_potek}
 
-Poteke s slike \ref{./LIN/xs_potek} aproksimiramo s kubičnimi polinomi in dobimo naslednje poteke:
-
 %predstavimo enako kot (\ref{vrsta:xs}).
-
 \begin{eqnarray}
 \label{nap_lin_xs}
-&C_0 =3,35\cdot 10^{-1}\Delta x_s^{3}-2,48\Delta x_s^{2}+1,19\cdot 10\Delta x_s+1,23\cdot 10^{-5} \\
+&C_0 =3,35\cdot 10^{-1}\Delta x_s^{3}-2,48\Delta x_s^{2}+11,9\Delta x_s+1,23\cdot 10^{-5} \\
 &C_1 =5,56\cdot 10^{-4}\Delta x_s^{3}-2,00\cdot 10^{-3}\Delta x_s^{2}+4,34\cdot 10^{-3}\Delta x_s+7,67\cdot 10^{-8} \\
-&C_2 =4,13\cdot 10^{-1}\Delta x_s^{3}-3,53\Delta x_s^{2}+1,69\cdot 10\Delta x_s-2,31\cdot 10^{-5} \\
-&C_3 =-2,17\cdot 10^{-4}\Delta x_s^{3}+2,57\cdot 10^{-4}\Delta x_s^{2}+4,20\cdot 10^{-3}\Delta x_s+4,51\cdot 10^{-8} \\
+&C_2 =4,13\cdot 10^{-1}\Delta x_s^{3}-3,53\Delta x_s^{2}+16,9\Delta x_s-2,31\cdot 10^{-5} \\
+&C_3 =-2,17\cdot 10^{-4}\Delta x_s^{3}+2,57\cdot 10^{-4}\Delta x_s^{2}+0,0042\Delta x_s+4,51\cdot 10^{-8} \\
 &C_4 =-8,27\cdot 10^{-1}\Delta x_s^{3}+2,42\Delta x_s^{2}+8,08\cdot 10^{-3}\Delta x_s-1,60\cdot 10^{-4}
 \end{eqnarray}
 
-Za primerjavo, dodam tudi enačbe potekov amplitude posameznega harmonika razvitega v Taylorjevo vrsto, katere sledijo iz ( \ref{vrsta:xs}):
+Za primerjavo, s dodane tudi enačbe potekov amplitud posameznega harmonika razvitega v Taylorjevo vrsto, katere sledijo iz (\ref{vrsta:xs}):
 
 \begin{eqnarray}
-&C_0 =3,45\cdot 10^{-1}\Delta x_s^{3}-2,49\Delta x_s^{2}+1,19\cdot 10\Delta x_s \\
+&C_0 =3,45\cdot 10^{-1}\Delta x_s^{3}-2,49\Delta x_s^{2}+11,9\Delta x_s \\
 &C_1 = 0\\
-&C_2 =3,66\cdot 10^{-1}\Delta x_s^{3}-3,51\Delta x_s^{2}+1,69\cdot 10\Delta x_s\\
+&C_2 =3,66\cdot 10^{-1}\Delta x_s^{3}-3,51\Delta x_s^{2}+16,9\Delta x_s\\
 &C_3 = 0\\
 &C_4 =-1,04\Delta x_s^{3}+2,49\Delta x_s^{2}
 \end{eqnarray}
 
-Rezultati se ujemajo s pričakovanimi. Enosmerna komponenta in amplituda prvega harmonika naračšata linearno, četrti harmonik narašča s kvadratom ekscentričnosti, lihi harmoniki, so zanemarljivi.
+Rezultati so pričakovani. Enosmerna komponenta in amplituda prvega harmonika naračšata linearno, četrti harmonik narašča s kvadratom ekscentričnosti, lihi harmoniki, so zanemarljivi.
 
-
-
-%
-%\subsection{Sin\_cos}
-%\subsection{napaka}
-%\subsection{fft\_napake}
-%\section{XS}
-%\subsection{Sin\_cos}
-%\subsection{napaka}
-%\subsection{fft\_napake}
-%\subsection{visanje\_napake}
-%nastavek = 0.3352 xs^3-2.4826 xs^2+11.9361 xs+1.0156e-5
-%H0	[1,01555901858575e-05;11,9361321852939;-2,48260332886115;0,335183727157872]
-%H1	[2,34507105720499e-14;1,58051177708914e-13;-6,51993471506150e-13;9,46713162781764e-13]
-%H2	[-1,86535135849702e-05;16,8819884980667;-3,52835647417836;0,412029175485044]
-%H3	[1,30048463315339e-14;-2,42620430114880e-14;3,51682497683473e-13;-6,28770756738832e-13]
-%
-%
 
 
 \section{Simulacija statične ekscentričnosti v smeri y-osi}
 
-Oglejmo si še rezultate simulacij statične ekscentričnosti v smeri y. Pričakujem podobne rezultate kot pri statični ekscentričnosti v smeri x, le da bo tu hitreje naračšala amplituda $sin$ signala, spreminjal se bo fazni zamik $cos$.
+Pričakovani so podobni rezultati kot pri statični ekscentričnosti v smeri x, le da bo tu hitreje naraščala amplituda $sin$ in spreminjal se bo fazni zamik $cos$.
  
-\slikaeps{Signala $sin$ in $cos$ pri simulacijah z linearnim poljem pri 0,24 mm statične ekscentričnosti v smeri y}{./LIN/ys_sincos}
+\slikaeps{$sin$ in $cos$ pri simulacijah z linearnim poljem pri 0,24 mm statične ekscentričnosti v smeri y}{./LIN/ys_sincos}
 
-Napaka je prikazana na sliki \ref{./LIN/ys_napaka}. Sestavlja jo negativna enosmerna komponenta in izrazit drugi harmonik.
+Napaka je prikazana na sliki \ref{./LIN/ys_napaka}. Sestavlja jo negativna enosmerna komponenta in izrazit drugi harmonik. Iz napake razvite v vrsto (\ref{./LIN/ys_fft}) je vidna enaka amplituda drugega harmonika, kot pri ekscentričnosti v smeri x. Enosmerna komponenta se razlikuje v predznaku.
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0,24 mm statične ekscentričnosti v smeri y}{./LIN/ys_napaka}
-Razvijmo jo v Fourierovo vrsto in pridobimo amplitude posameznih harmonikov napake (Slika \ref{./LIN/ys_fft}).
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z linearnim poljem pri 0,24 mm statične ekscentričnosti v smeri y}{./LIN/ys_fft}
-
-Iz fft-ja napake je vidna enaka amplituda drugega harmonika kot pri enaki ekscentričnosti v smeri x. Enosmerna komponenta se razlikuje le v predznaku.
 \newpage
 \subsection{Sprememba $sin$, $cos$ ter napake od $\Delta y_s$}
 
-Oglejmo si sedaj poteke amplitude, enosmerne komponente in faznega zamika pri statični ekscentričnosti v smeri y. Poteki so podobni kot pri ekscentričnosti v semeri x.
-
+Potek hitrejšega spreminjanja amplitude $sin$ je pričakovan. Enosmerna komponenta signalov se prav tako ni spremenila. Fazni zamik signala $cos$ se je zmanjševal, posledično tudi fazna razlika med signaloma. Poteki so opisani s kubičnimi polinomi. Na sliki \ref{./LIN/ys_potek} so prikazani poteki amplitud posameznih harmonikov v odvisnosti od statične ekscentričnosti v smeri y. Poteki so aproksimirani z kubičnimi polinomi. Potek amplitud harmonikov je enak potekom simuliranih s statično ekscentričnostjo v smeri x, razlikuje se enosmerna komponenta z nasprotnim predznakom.
 \slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri y}{./LIN/ys_sincos_amp}
-\slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri y}{./LIN/ys_sincos_off}
-\slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri y}{./LIN/ys_sincos_phase}
-Poteke zapišimo še s kubičnimi polinomi.
+\slikaeps{Enosmerna komponenta $sin$ in $cos$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri y}{./LIN/ys_sincos_off}
+\slikaeps{Fazni zamik $sin$ in $cos$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri y glede na idealna signala $sin$ in $cos$}{./LIN/ys_sincos_phase}
 \begin{eqnarray}
 \label{analog_lin_ys}
  &A_{sin} = \Delta x_s+2,4\\
@@ -139,66 +91,34 @@ Poteke zapišimo še s kubičnimi polinomi.
  &\delta_{cos} = 1,38 \Delta x_s^3- 23,9 \Delta x_s
 \end{eqnarray}
 
-Iz potekov signalov $sin$ in $cos$ lahko predvidimo, da bo potek podoben le enosmerna komponenta bo negativna.
-
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od statične ekscentričnosti v smeri y}{./LIN/ys_potek}
 
-Poteke s slike \ref{./LIN/ys_potek}, predstavimo s polinomom tretje stopnje. Aproksimacije pokažejo enake amplitude posameznih harmonikov, le enosmerna komponenta je dobila negativen predznak.
 
 \begin{eqnarray}
 \label{nap_lin_ys}
-&C_0 =-3,35\cdot 10^{-1}\Delta y_s^{3}+2,48\Delta y_s^{2}-1,19\cdot 10\Delta y_s-1,22\cdot 10^{-5} \\                  
-&C_1 =1,09\cdot 10^{-4}\Delta y_s^{3}-8,69\cdot 10^{-4}\Delta y_s^{2}+4,34\cdot 10^{-3}\Delta y_s+7,62\cdot 10^{-10} \\
+&C_0 =-3,35\cdot 10^{-1}\Delta y_s^{3}+2,48\Delta y_s^{2}-11,9\Delta y_s-1,22\cdot 10^{-5}\\                  
+&C_1 =1,09\cdot 10^{-4}\Delta y_s^{3}-8,69\cdot 10^{-4}\Delta y_s^{2}+0,00434\Delta y_s+7,62\cdot 10^{-10} \\
 &C_2 =4,12\cdot 10^{-1}\Delta y_s^{3}-3,53\Delta y_s^{2}+1,69\cdot 10\Delta y_s-2,31\cdot 10^{-5} \\                   
-&C_3 =2,43\cdot 10^{-4}\Delta y_s^{3}-1,30\cdot 10^{-3}\Delta y_s^{2}+4,20\cdot 10^{-3}\Delta y_s+1,83\cdot 10^{-8} \\ 
+&C_3 =2,43\cdot 10^{-4}\Delta y_s^{3}-0,00130\Delta y_s^{2}+0,00420\Delta y_s+1,83\cdot 10^{-8} \\ 
 &C_4 =-8,26\cdot 10^{-1}\Delta y_s^{3}+2,42\Delta y_s^{2}+6,13\cdot 10^{-3}\Delta y_s-1,60\cdot 10^{-4}            
 \end{eqnarray}
-%
-%
-%
-%
-%%
-%%
-%%
-%%\section{YS}
-%%\subsection{Sin\_cos}
-%%\subsection{napaka}
-%%\subsection{fft\_napake}
-%%\subsection{visanje\_napake}
-%%
-%%H0	[-1,01555899896284e-05;-11,9361321852922;2,48260332885533;-0,335183727150766]
-%%H1	[2,04074110999664e-14;3,79449756434155e-13;-2,10317924735210e-12;2,95771540643260e-12]
-%%H2	[-1,86535135760308e-05;16,8819884980664;-3,52835647417692;0,412029175482732]
-%%H3	[1,26502083464184e-14;1,05725909044143e-14;-1,64647766137320e-14;1,89710785932321e-14]
-%%
-%%\section{ZS}
-%%ni nic ker je atan(k/k)
-%%\section{Xd}
-%%\subsection{Sin\_cos}
-%%\subsection{napaka}
-%%\subsection{fft\_napake}
-%%\subsection{visanje\_napake}    
-%
-%
-%
+
 \section{Dinamična ekscentričnost v smeri x osi}
 %
-Oglejmo si sedaj rezultate simulacij dinamične ekscentričnosti. V signalih $sin$ in $cos$ se pojavi enosmerna komponenta (Slika \ref{./LIN/xd_sincos}).
-\slikaeps{Signala $sin$ in $cos$ pri simulacijah z linearnim poljem pri 0,24 mm dinamične ekscentričnosti v smeri x}{./LIN/xd_sincos}
-
- Na sliki \ref{./LIN/xd_napaka} je vidna napaka v obliki prvega harmonika, kar smo pričakovali.
+Dinamična ekscentričnost pričakovano povzroči v $sin$ in $cos$ enosmerno komponento (Slika \ref{./LIN/xd_sincos}).
+\slikaeps{$sin$ in $cos$ pri simulacijah z linearnim poljem pri 0,24 mm dinamične ekscentričnosti v smeri x}{./LIN/xd_sincos}
+ Na sliki \ref{./LIN/xd_napaka} je vidna napaka v obliki prvega harmonika, kar je bilo pričakovati.
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0,24 mm dinamične ekscentričnosti v smeri y}{./LIN/xd_napaka}
-
-Po fft-ju napake se vidi izrazit prvi harmonik, enosmerne komponente je nič.
+Z razvojem napake v Fourierovo vrsto je nejizrazitejši prvi harmonik, enosmerna komponenta je nič (slika \ref{./LIN/xd_fft}).
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ pri simulacijah z linearnim poljem pri 0,24 mm dinamične ekscentričnosti v smeri x}{./LIN/xd_fft}
 
 
 \newpage
 \subsection{Sprememba $sin$, $cos$ ter napake od $\Delta x_d$}
-Oglejmo si, kako se spreminjata signala $sin$ $cos$ po pričakovanjih se bo najbolj izrazito spreminjala enosmerna komponenta.
-\slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri simulacijah z linearnim poljem dinamične ekscentričnosti v smeri x}{./LIN/xd_sincos_amp}
-\slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri simulacijah z linearnim poljem dinamične ekscentričnosti v smeri x}{./LIN/xd_sincos_off}
-\slikaeps{Amplituda osnovnega harmonika signalov $sin$ in $cos$ pri simulacijah z linearnim poljem dinamične ekscentričnosti v smeri x}{./LIN/xd_sincos_phase}
+Dinamična ekscentričnost vpliva na enosmerni komponenti $sin$ in $cos$.
+\slikaeps{Amplituda osnovnega harmonika  $sin$ in $cos$ pri simulacijah z linearnim poljem dinamične ekscentričnosti v smeri x}{./LIN/xd_sincos_amp}
+\slikaeps{Enosmerna komponenta $sin$ in $cos$ pri simulacijah z linearnim poljem dinamične ekscentričnosti v smeri x}{./LIN/xd_sincos_off}
+\slikaeps{Fazni zamik $sin$ in $cos$ pri simulacijah z linearnim poljem dinamične ekscentričnosti v smeri x glede na idealna signala $sin$ in $cos$}{./LIN/xd_sincos_phase}
 Poteke zapišimo še s kubičnimi polinomi. Amplituda prvega harmonika in fazni zamik so nespremenjeni, spreminja se le enosmerna komponenta.
 \begin{eqnarray}
 \label{analog_lin_xd}

@@ -22,9 +22,9 @@
 \BOOKMARK [1][-]{section.6.5}{Potek napake pri staticni ekscentricnosti v smeri y}{chapter.6}% 22
 \BOOKMARK [1][-]{section.6.6}{Potek napake pri dinamicni ekscentricnosti v smeri x}{chapter.6}% 23
 \BOOKMARK [0][-]{chapter.7}{Linearni model}{}% 24
-\BOOKMARK [1][-]{section.7.1}{Brez napake}{chapter.7}% 25
+\BOOKMARK [1][-]{section.7.1}{Brez ekscentricnosti}{chapter.7}% 25
 \BOOKMARK [1][-]{section.7.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.7}% 26
-\BOOKMARK [2][-]{subsection.7.2.1}{Sprememba sin, cos ter napake od xs}{section.7.2}% 27
+\BOOKMARK [2][-]{subsection.7.2.1}{Sprememba sin, cos ter napake v odvisnosti od xs}{section.7.2}% 27
 \BOOKMARK [1][-]{section.7.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.7}% 28
 \BOOKMARK [2][-]{subsection.7.3.1}{Sprememba sin, cos ter napake od ys}{section.7.3}% 29
 \BOOKMARK [1][-]{section.7.4}{Dinamicna ekscentricnost v smeri x osi}{chapter.7}% 30
