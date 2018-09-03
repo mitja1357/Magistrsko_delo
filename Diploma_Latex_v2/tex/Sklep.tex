@@ -7,12 +7,12 @@ Nepravilno montriran senzor, se izrazi kot statična eksecentričnost. Hallova s
 \section{Oblika napake}
 Zaradi nepravilnega zajema magnetnega polja, podatek o kotu vsebuje napako. Napaka zaradi dinamične ekscentričnosti se izrazi kot sinusni signal. Napaka zaradi statične ekscentričnosti se izrazi z sinusnim signalom dvojne frekvence in dodano enosmerno komponento.
 \section{Izvedba meritev}
-Delovnje senzorja nam je nepoznano (black-box). Senzor vrne izmerjena signala $sin$ in $cos$ iz katerih se s funkcijo $atan2$ izračuna kot. Na napravi izdelani v LRTME na fakulteti, so bile opravljene meritve. Meritve statične ekscentričnosti so simulacije potrdile. Pri meritvah dinamične ekscentričnosti je v napaki naraščala le enosmerna komponenta.
+Delovnje senzorja nam je nepoznano (black-box). Senzor vrne izmerjena signala $sin$ in $cos$ iz katerih se s funkcijo $atan2$ izračuna kot. Na napravi izdelani v LRTME na fakulteti, so bile opravljene meritve. Meritve statične ekscentričnosti so simulacije potrdile. Pri meritvah dinamične ekscentričnosti je v napaki naraščala le enosmerna komponenta. Senzor bi se dalo postaviti tudi v boljšo lego. To bi bilo mogoče z uporabo Evaluation boarda RMK2. RMK2 vsebuje enka čip AM256, uporabniku so navoljo vsi pini čipa. Čip ima analogni signal Error, s katerim se lahko preveri poravnavo med magnetom in čipom.
 \section{Komentar rezultatov}
-Zgradba in podrobnejše delovanje senzorja je poslovna skrinost, zato sem predvideval da bo napaka pri meritvah manjša kot so pokazali rezultati simulacij. Simulacijski model je bil sestavljen iz dveh Hallovih sond, neposredno iz zajetega polja je bil izračunan kot. 
-Podobni senzorji \cite{iCMHM}, omogočajo popravljanje enosmernih komponent in razmerij amplitud osnovega harmonika signalov $sin$ in $cos$. S kalibracijo senzorja bi bila napaka manjša.
+Zgradba in podrobnejše delovanje senzorja je poslovna skrinost, zato sem predvideval, da bo napaka pri meritvah manjša kot so pokazali rezultati simulacij. Simulacijski model je bil sestavljen iz dveh Hallovih sond, neposredno iz zajetega polja je bil izračunan kot. 
+Podobni senzorji \cite{iCMHM}, omogočajo popravljanje enosmernih komponent in razmerija amplitud osnovega harmonika signalov $sin$ in $cos$. S kalibracijo senzorja bi bila napaka manjša.
 
-Pri projektu sem se osredotočil le na parametre enosmerne komponente, amplitude in faze osnovnega harmonika $sin$ in $cos$. Signala v realnosti vsebujeta tudi višje harmonike, kateri tu niso obravnavani.
+Pri projektu sem se osredotočil le na parametre enosmerne komponente, amplitude in faze osnovnega harmonika $sin$ in $cos$. Signala v realnosti vsebujeta tudi višje harmonike, kateri tu niso bili obravnavani.
 
 
 
