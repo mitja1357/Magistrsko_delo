@@ -3,7 +3,7 @@ theta = linspace(0,360,8192);
 
 
 
-k = -180:5:180;
+k = -90:5:90;
 primer = 2;
 Sin = zeros(length(k),length(theta));
 Cos = Sin;
@@ -60,11 +60,13 @@ har10(k<0) = -har10(k<0);
 
 %%
 figure;
-plot(k,har0,k,har1,k,har2,k,har3,k,har4,k,har5,k,har6,k,har7,k,har8, ...
-     k,har9,k,har10)
+plot(k,har0,k,har1,k,har2,k,har3,k,har4, 'Linewidth',3)%,k,har3,k,har4,k,har5,k,har6,k,har7,k,har8, ...
+     %k,har9,k,har10)
 grid on
-grid minor
-legend(num2str([0:10]'))
+set(gca,'FontSize',22);
+xlabel('$\mathrm{\varphi_{sin}/^\circ}$','Interpreter','latex','FontSize', 28)
+ylabel('amplituda harmonika napake$/^\circ$','Interpreter','latex','FontSize', 28)
+legend('Enosmerna komponenta', '1 harmonik', '2 harmonik','3 harmonik', '4 harmonik', 'Location','NorthWest')
 %%
 figure(primer);
 subplot(2,2,2)

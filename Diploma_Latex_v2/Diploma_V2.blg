@@ -7,6 +7,104 @@ A level-1 auxiliary file: ./tex/Meritve.aux
 A level-1 auxiliary file: ./tex/Sklep.aux
 The style file: ieeetrslo.bst
 Database file #1: literatura.bib
-Warning--I didn't find a database entry for "Napaka_osnova"
-Warning--I didn't find a database entry for "cftool"
-(There were 2 warnings)
+You're missing a field name---line 15 of file literatura.bib
+ : 
+ : %type     = "diploma thesis",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 25 of file literatura.bib
+ : 
+ : %editor   = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 40 of file literatura.bib
+ : 
+ : %address = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 51 of file literatura.bib
+ : 
+ : %volume   = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 64 of file literatura.bib
+ : 
+ : %year     = "XXXX",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 72 of file literatura.bib
+ : 
+ : %editor   = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 87 of file literatura.bib
+ : 
+ : %year     = "XXXX",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 95 of file literatura.bib
+ : 
+ : %editor   = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 110 of file literatura.bib
+ : 
+ : %editor   = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 124 of file literatura.bib
+ : journal   = 37
+ :               "IEEE Transactions on Industrial",
+I'm skipping whatever remains of this entry
+You're missing a field name---line 136 of file literatura.bib
+ : 
+ : %month = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 142 of file literatura.bib
+ : 
+ : %year     = "XXXX",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 151 of file literatura.bib
+ : 
+ : %year     = "XXXX",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 159 of file literatura.bib
+ : 
+ : %year     = "XXXX",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 169 of file literatura.bib
+ : 
+ : %volume   = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 185 of file literatura.bib
+ : 
+ : %editor   = "",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 203 of file literatura.bib
+ : 
+ : %year     = "XXXX",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty year in killer
+Warning--empty year in enkoder
+Warning--empty year in RLS3
+Warning--empty year in Ambrozic
+Warning--empty year in inkrementalni
+Warning--empty year in osnova
+Warning--empty year in RLS1
+Warning--empty year in RLS2
+Warning--empty note in ursic
+Warning--empty year in Matematika1
+Name 1 in "MathWorks," has a comma at the end for entry atan2Matlab
+while executing---line 963 of file ieeetrslo.bst
+Name 1 in "MathWorks," has a comma at the end for entry atan2dMatlab
+while executing---line 963 of file ieeetrslo.bst
+Name 1 in "MathWorks," has a comma at the end for entry cftool
+while executing---line 963 of file ieeetrslo.bst
+(There were 20 error messages)

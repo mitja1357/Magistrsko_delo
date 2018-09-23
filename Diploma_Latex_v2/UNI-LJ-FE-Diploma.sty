@@ -168,7 +168,7 @@
 
 \def\kljucnebesede{
   \vspace{1cm}\noindent
-  \textbf{Klju�ne besede:}\
+  \textbf{Ključne besede:}\
 }
 
 % ----- ANGLE�KI POVZETEK ---------------------------------------------------------
@@ -565,7 +565,7 @@
 	\draw [dashed, thick](#1,#2)--(#1-2.2*\Sinb ,#2+2.2*\Cosb );
 }
 
-\newcommand{\hall}[3]{
+\newcommand{\hall}[4]{
 	
 	\pgfmathsetmacro{\Cosd}{cos(#3)}
 	\pgfmathsetmacro{\Sind}{sin(#3)}
@@ -579,6 +579,7 @@
 	
 	\draw (#1-0.1*\Cosd -0.1*\Sind,#2+0.1*\Cosd-0.1*\Sind) --(#1+0.1*\Cosd +0.1*\Sind,#2-0.1*\Cosd+0.1*\Sind);
 	\draw (#1+0.1*\Cosd -0.1*\Sind,#2+0.1*\Cosd+0.1*\Sind)-- (#1-0.1*\Cosd +0.1*\Sind,#2-0.1*\Cosd-0.1*\Sind);
+
 }
 \newcommand{\CaCS}[3]{% razdalja od izhodisca do x max, x komponenta izhodisca, y komponenta izhodisca
 	

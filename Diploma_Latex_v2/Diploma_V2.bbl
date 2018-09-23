@@ -1,96 +1,79 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-iCHaus
-naslov = 14-BIT ABSOLUTE ANGLE HALL ENCODER
-avtor iCHaus
-dostoano 13.8.2018
-link = http://www.ichaus.de/upload/pdf/MHM_datasheet_D2en.pdf
+\bibitem{AM8192}
+{RLS~Merilna~tehnika~d.o.o.}, ``Am256 – angular magnetic encoder ic.''
+  Dosegljivo:
+  \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom%2Fupload%2FAM256D01_13_bookmark.pdf}.
 
-ursic
-naslov = Seminar: Analitičen pogled na statično in dinamično ekscentričnost VR resolverja
-avtor Luka Uršič
-leto prašaj Nemca
+\bibitem{uporabaSenzorjev}
+J.~Gachter, M.~Hirz  in R.~Seebacher, ``Impact of rotor position sensor errors
+  on speed controlled permanent magnetized synchronous machines,'' v {\em IEEE
+  12th International Conference on Power Electronics and Drive Systems (PEDS)},
+  str.~pp.822--830, Dec. 2017.
 
-killer
-Barbara Killer
-Diplomsko delo ABSOLUTNI MAGNETNI DAJALNIK ZASUKA Z UPORABO PRINCIPA NONIJ
-Ljubljana 2008
+\bibitem{killer}
+B.~Killer, ``Diplomsko delo absolutni magnetni dajalnik zasuka z uporabo
+  principa nonij,'' Master's thesis, Univerza v Ljubljani.
 
-AM8192,
-author = "RLS Merilna tehnika d.o.o.",
-title = "Am8192b – angular magnetic sensor chip",
-howpublished = "Dosegljivo: \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom\%2Fupload\%2FData-sheet-AM8192B-chip.pdf}",
-note = "[Dostopano: 28. 4. 2017]"
+\bibitem{enkoder}
+Z.~Zhang, F.~Ni, H.~Liu  in M.~Jin, ``Theory analysis of a new absolute
+  position sensor based on electromagnetism,'' v {\em International Conference
+  on Automatic Control and Artificial Intelligence}.
 
-RM44,
-author = "RLS Merilna tehnika d.o.o.",
-title = "RM44 magnetic encoder base unit",
-howpublished = "Dosegljivo: \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom\%2Fupload\%2FData-sheet-AM8192B-chip.pdf}",
-note = "[Dostopano: 28. 4. 2017]"
+\bibitem{RLS3}
+M.~Demierre, {\em Improvements of CMOS Hall Microsystems and Application for
+  Absolute Angular Position Measurements}.
+\newblock PhD thesis, Federal Polytechnic School of Lausanne, Switzerland.
 
-osnova
-author = "J.~Lara",
-title = "Position Error Compensation in Quadrature Analog Magnetic Encoders through an Iterative Optimization Algorithm",
-journal = "IECON 2014 - 40th Annual Conference of the IEEE Industrial Electronics Society",
-pages = {3043--3048},
-year = {2014}
+\bibitem{RM44}
+{RLS~Merilna~tehnika~d.o.o.}, ``Rm44 magnetic encoder base unit.'' Dosegljivo:
+  \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom%2Fupload%2FRM44D01_10.pdf}.
 
-uporaba_senzorjev
-Gachter J., Hirz M.,Seebacher R.,
-Impact of Rotor Position Sensor Errors on Speed Controlled Permanent Magnetized Synchronous Machines
-IEEE 12th International Conference on Power Electronics and Drive Systems (PEDS)
-pp.822-830, 12-15 Dec. 2017
+\bibitem{Ambrozic}
+V.~Ambrožič in P.~Zajec, {\em Električni servo pogoni}.
+\newblock Slovensko Združenje elektroenergetikov CIGR\'{E}-CIRED.
 
-inkrementalni
-Brugnano F., Concari C., Imamovic E., Savi F., Toscani  A., Zanichelli R.
-A simple and accurate algorithm for speed measurement in electric drives using incremental encoder
-IECON 2017 - 43rd Annual Conference of the IEEE Industrial Electronics Society
-pp. 8551-8556, 29 Oct.-1 Nov. 2017
+\bibitem{inkrementalni}
+F.~Brugnano, C.~Concari, E.~Imamovic, F.~Savi, A.~Toscani  in R.~Zanichelli,
+  ``A simple and accurate algorithm for speed measurement in electric drives
+  using incremental encoder,'' v {\em IECON 2017 - 43rd Annual Conference of
+  the IEEE Industrial Electronics Society}.
 
-resolver 
-Reddy B.P., Murali A., Shaga G., 
-Low Cost Planar Coil Structure for Inductive Sensors to Measure Absolute Angular Position
-2017 2nd International Conference on Frontiers of Sensors Technologies (ICFST)
-pp.14-18, 14-16 April 2017
+\bibitem{osnova}
+J.~Lara, ``Position error compensation in quadrature analog magnetic encoders
+  through an iterative optimization algorithm,'' v {\em IECON 2014 - 40th
+  Annual Conference of the IEEE Industrial Electronics Society}.
 
-enkoder 
-Zhang Z., Ni F., Liu H., Jin M.
-Theory analysis of a new absolute position sensor based on electromagnetism
-International Conference on Automatic Control and Artificial Intelligence
-pp.2204-208, 3-5 Mar. 2012
+\bibitem{RLS1}
+Q.~Lin, T.~Li  in Z.~Zhou, ``Error analysis and compensation of the orthogonal
+  magnetic encoder,'' v {\em IEEE ICMCC Conference}.
 
-RLS1 
-Qi Lin, T. Li, Z. Zhou
-Error Analysis and Compensation of the Orthogonal Magnetic Encoder
-Proceedings of IEEE ICMCC Conference
-pp.11-14, 21-23 Oct. 2011
+\bibitem{RLS2}
+D.~Hanselman, ``Resolver signal requirements for high accuracy
+  resolver-to-digital conversion,'' {\em 37}.
 
-RLS2
-Hanselman D.C.
-Resolver Signal Requirements for High Accuracy Resolver-to-Digital Conversion
-IEEE Transactions on Industrial
-Electronics, vol.37, no.6, pp.556-561, Dec. 1990 
+\bibitem{ursic}
+L.~Uršič, ``Seminar: Analitičen pogled na statično in dinamično
+  ekscentričnost vr resolverja.'' ????
 
-RLS3 
-Demierre M.
-mprovements of CMOS Hall Microsystems and Application for Absolute Angular Position Measurements,
-PhD. thesis,
-pp. 152-161, Federal Polytechnic School of Lausanne, Switzerland, 2003
+\bibitem{Matematika1}
+G.~Dolinar, {\em Matematika 1}.
+\newblock Založba FE in FRI.
 
-Matematika1
-Gregor Dolinar 
-Matematika 1
-Fakulteta za elektrotehniko
-Založba FE in FRI, 2010
+\bibitem{atan2Matlab}
+MathWorks. Dosegljivo:
+  \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
 
-atan2Matlab
-MathWorks
-Dosegljivo: \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
-Dostopano: 27. 2. 2018
+\bibitem{atan2dMatlab}
+MathWorks. Dosegljivo:
+  \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
 
-atan2dMatlab
-MathWorks,
-Dosegljivo: \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
-Dostopano: 27. 2. 2018
+\bibitem{cftool}
+MathWorks. Dosegljivo:
+  \url{https://www.mathworks.com/products/curvefitting.html}.
+
+\bibitem{iCMHM}
+iCHaus, ``14-bit absolute angle hall encoder.'' Dosegljivo:
+  \url{http://www.ichaus.de/upload/pdf/MHM_datasheet_D2en.pdf}.
 
 \end{thebibliography}

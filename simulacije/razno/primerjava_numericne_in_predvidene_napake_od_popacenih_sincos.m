@@ -7,10 +7,10 @@ clear
 sinOff = 0.0;
 cosOff = 0.0;
 
-sinAmp = 1.1;
+sinAmp = 1.0;
 cosAmp = 1;
 
-sinFaza = 0*pi/180;
+sinFaza = 90*pi/180;
 cosFaza = 0*pi/180;
 
 
@@ -63,5 +63,27 @@ fftErr = mojfft(Err);
 
 fftAmp= [fftErr{1},fftPred{1},fftErr{1}-fftPred{1}];
 fftPh= [fftErr{2},fftPred{2},fftErr{2}-fftPred{2}];
+
+%%
+figure
+plot(theta*180/pi,(Err)*180/pi,'Linewidth',3)
+axis([0,360,-50,140])
+grid on
+set(gca,'FontSize',22);
+xlabel('$\mathrm{\theta/^\circ}$','Interpreter','latex','FontSize', 28)
+ylabel('napaka$/^\circ$','Interpreter','latex','FontSize', 28)
+%%
+
+figure
+plot(theta*180/pi,(PredErr-Err)*180/pi)
+axis([0,360,-4e-14,8e-14])
+grid on
+set(gca,'FontSize',22);
+xlabel('$\mathrm{\theta/^\circ}$','Interpreter','latex','FontSize', 28)
+ylabel('razlika med predvideno in dejansko napako$/^\circ$','Interpreter','latex','FontSize', 28)
+
+
+
+
 
 

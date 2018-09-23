@@ -10,14 +10,16 @@ Definiran kartezični koordinatni sistem, ima v izhodišcu postavljen radialno m
 \begin{figure}[h!]
 	\centering
 	\begin{tikzpicture}
+
 	\magnet {0} {0} {0}{$S_r(0, 0)$}{1};
 	\hall {2.3}{0} {0};
+	
 	\end{tikzpicture}
 	\caption{Definicija koordinatnega sistema z magnetom in Hall-ovo sondo}
 	\label{fig:def_kks}
 \end{figure}
 
-Z rotacijo magneta za kot $\theta$, se položa sonde glede na magnet spremeni. Nov položaj sonde glede na magnet je enaka, če namesto magnet, zavrtimo sondo za kot $-\theta$ . Nov položaj sonde glede na magnet lahko zapišemo z (\ref{equ:rotacija_hall}).
+Z rotacijo magneta za kot $\theta$, se položa sonde glede na magnet spremeni. Nov položaj sonde glede na magnet je enak, če se namesto magnet, zavrti sondo za kot $-\theta$ . Nov položaj sonde glede na magnet je (\ref{equ:rotacija_hall}).
 
 \begin{equation}
 \label{equ:rotacija_hall}
@@ -179,7 +181,7 @@ Dinamična ekscentričnost na gibanje sonde vpliva kot enosmerna komponenta  $(-
 
 \section{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri statični ekscentričnosti}
 
-Statična ekscentričnost se pojavi, ob izmiku Hallove sonde iz njene osnovne lege v  $S_{h1}(x_0+\Delta x_s, y_0+\Delta y_s)$. Z vrtenjem magneta je sonda ves čas enako oddaljena od središča magneta. Z miselnim obratom vrtenja sonde v nasprotni smeri se gibanje sonde izrazi kot gibanje po krožnici z radijem $\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$ (\ref{equ:rotacija_hall_simplify}).
+Statična ekscentričnost se pojavi, ob izmiku Hallove sonde iz njene osnovne lege v  $S_{h1}(x_0+\Delta x_s, y_0+\Delta y_s)$. Z vrtenjem magneta je sonda ves čas enako oddaljena od središča magneta. Z miselnim obratom vrtenja sonde v nasprotni smeri se gibanje sonde izrazi kot gibanje po krožnici z radijem $\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$ (\ref{equ:rotacija_hall_stat}).
 
 
 \begin{figure}[h!]
@@ -288,7 +290,7 @@ Dajalnik pozicije RM44 meri z-komponento gostote magnetnega polja \cite{AM8192}.
 Potek z-komponente se lahko izračuna po Biot-Savartovim zakonom oz. z numerično seštevanjem prispevke posameznih delčkov magneta. Za oceno napake, se magnetno polje z komponente v okolici osi vrtenja magneta aproksimira z ravnino (\ref{equ:poljeB}).
 
 \begin{equation}
-\label{equ:poljeB}
+\label{equ:poljeB1}
 B_z(x,y)=k\cdot x.
 \end{equation}
 
@@ -350,7 +352,7 @@ Za izračun kota je potrebno poznati polje v vsaj dveh točkah nad magnetom. Sim
 	\centering
 	\begin{tikzpicture}[scale=1]
 	\CaCS{3}{0}{0}
-	\senzorja{0}{0}{0}{}
+	\senzorja{0}{0}{0}
 %	\magnet {0} {0} {10}{ }{0}
 	\node at (2.0,-0.5){$\mathrm{H}_1(r_0,0)$};
 	\node at (-1,2.3){$\mathrm{H}_2(0, r_0)$};
@@ -395,18 +397,18 @@ sin(\theta,r_0,\Delta x_s, \Delta y_s)= \sqrt{\Delta x_s^2+(r_0+\Delta y_s)^2} \
 %Postavimo sedaj vrednosti $\Delta x_s$ in $\Delta_ys$ na 0, $\Delta x_d$ predpostavimo da ni 0.
 \begin{equation}
 \label{equ:Bx_din}
-cos(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \cos\theta-\Delta x_d
+cos(\theta,r_0, \Delta x_d, \Delta y_d)= r_0 \cos\theta-\Delta x_d
 \end{equation}
 \begin{equation}
 \label{equ:By_din}
-sin(\theta,r_0,\Delta x_s, \Delta y_s, \Delta x_d)= r_0 \sin\theta-\Delta x_d
+sin(\theta,r_0, \Delta x_d, \Delta y_d)= r_0 \sin\theta-\Delta x_d
 \end{equation}
 %Polji obdržita enako amplitudo ter fazo, vendar dobita enosmerno komponento (Slika \ref{./Napake/sincos_xd}).
 %\slikaeps{Poteka $sin$ in $cos$ pri $r_0 = 1$ mm in upoštevanjem 0,1 dinamične ekscentričnosti v x-osi}{./Napake/sincos_xd}\newpage
 \section{Premik senzorja v z smeri}
 
 %Poglejmo si še kako vpliva sprememba premikanja senzorja v z smeri.
-Pri magnetnem polju aprokismiranem z ravnino (\ref{equ:lin_polje}), se gostota magnetnega polja pri obeh sondah spreminja enako. To se v enačbah odraža le kot dodaten faktor. Upoštevano spremembo polja zaradi premika senzorja po z osi se izrazi kot:
+Pri magnetnem polju aprokismiranem z ravnino (\ref{equ:lin_polje1}), se gostota magnetnega polja pri obeh sondah spreminja enako. To se v enačbah odraža le kot dodaten faktor. Upoštevano spremembo polja zaradi premika senzorja po z osi se izrazi kot:
 \begin{equation}\label{equ:Bx_z}
 cos=k_z( r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_d)
 \end{equation}
@@ -414,7 +416,7 @@ cos=k_z( r_0 \cos\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta -\Delta x_
 sin=k_z( r_0 \sin\theta +\Delta x_s \cos\theta +\Delta y_s \sin\theta-\Delta x_d)
 \end{equation}
 
-Z vstavitvijo formul v $\arctan$ se faktor $k_z$ nahaj tako v števcu kot imenovalcu ter se okrajša. Ti poteki polj veljajo le z upoštevanjem aprokismiranega polja (\ref{equ:poljeB}).
+Z vstavitvijo formul v $\arctan$ se faktor $k_z$ nahaj tako v števcu kot imenovalcu ter se okrajša. Ti poteki polj veljajo le z upoštevanjem aproksimiranega polja (\ref{equ:poljeB}).
 
 
 
@@ -423,7 +425,7 @@ Izhod enkoderja je podatek o zasuku. Iz pomerjenega polja, sledi izračun kota p
 % preko funkcija $\arctan$\cite{Matematika1}. V programskem poaketu MATLAB se za izračun inverzne funkcije tangens na območju 4 kvadrantov uporalblja funkcija atan2d()\cite{atan2dMatlab}.
 %Da si lažje predstavljamo, kako se bo napaka odražala v obliki digitalnega izhoda, si oglejmo posamezno deformacijo signalov sinus in cosinus. Deformacija sinusa in cosinusa zaradi nepravilne montaže, vpliva le na enosmerno komponento, amplitudo in fazni kot med signaloma.
 %Ogledali si bomo kako vplivajo na izračunan kot, različne amplitude signalov sinus in cosinus, neortogonalost oz. fazni zamik sinusa in kosinusa različen od $90^\circ$. Ogledali si bomo tudi pojav enosmernih komponenet v sinusu in cosinusu, in za konec še vpliv višjih harmonikov, ki niso posledica nepravilne montaže, vendar je prav da jih omenim.
-V programu MATLAB se za izračun kota uporablja funkcijo atan2(); za izhodno vrednost kota v radianih oz. atan2d(); za vrednost v stopinjah \cite{atan2Matlab}\cite{atan2dMatlab}. Različne literature \cite{Napaka_osnova} opisujejo napake zaradi popačitve signalov $sin$ $cos$. Napaka je izražena v obliki enosmerne komponente ter prvega oz drugega harmonika, kateri od primera do primera najbolj izstopa. V nadaljevanju je prikazano, kako popačen signal kot vhod v funkcijo atan2d(); vpliva na napako ter kako se odraža tudi na višjih harmonikih. Za majhne popačenja signalov, literatura nakazuje linearno naraščanje napake.
+V programu MATLAB se za izračun kota uporablja funkcijo atan2(); za izhodno vrednost kota v radianih oz. atan2d(); za vrednost v stopinjah \cite{atan2Matlab}\cite{atan2dMatlab}. Različne literature \cite{RLS3} \cite{osnova} \cite{RLS1} \cite{RLS2} opisujejo napake zaradi popačitve signalov $sin$ $cos$. Napaka je izražena v obliki enosmerne komponente ter prvega oz drugega harmonika, kateri od primera do primera najbolj izstopa. V nadaljevanju je prikazano, kako popačen signal kot vhod v funkcijo atan2d(); vpliva na napako ter kako se odraža tudi na višjih harmonikih. Za majhne popačenja signalov, literatura nakazuje linearno naraščanje napake.
 
 %Na tej točki je prav da definiram še napako pomejrenega kota $\varepsilon$, ki predstavlja razliko med merjenim in referenčnim kotom.
 
@@ -449,7 +451,7 @@ limita ko gre k proti neskončnost:
 
 \slikaeps{$\varepsilon$ ob limiti k v neskončnost }{./Napake/k_lim}
 
-Kot $\varepsilon$, se bo ob limiti  izrazila v obliki , ki jo lahko izrazimo z Fourierovo vrsto \cite{fourierova_vrsta}:
+Kot $\varepsilon$, se bo ob limiti  izrazila v obliki , ki jo lahko izrazimo z Fourierovo vrsto \cite{Matematika1}:
 
 \begin{equation}
 \varepsilon = \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \sin 2 n \theta
