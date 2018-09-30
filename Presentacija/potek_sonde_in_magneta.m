@@ -1,10 +1,10 @@
 function potek_sonde_in_magneta(varargin)
-
+% input je dva arraya [xs,ys] in [xd,yd]
 if nargin == 0
     error('rabis vhode');
 elseif nargin == 1
     if ismatrix(varargin{1})
-        if length(varargin{1}) > 2
+        if length(varargin{1}) == 2
             varargin{1}=varargin{1}(:);
             if size(varargin{1},2) ~= 1
                 error('vhod mora bit vektor');
