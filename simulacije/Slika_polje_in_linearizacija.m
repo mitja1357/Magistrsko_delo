@@ -6,7 +6,7 @@ X = X_tmp(1+n:(1001-n));
 Y = Y_tmp(1+n:(1001-n));
 Z = Zmesh(1+n:(1001-n),1+n:(1001-n));
 % reduciraj sliko
-vsako = 25;
+vsako = 20;
 Xn = [];
 Yn = [];
 Zij = zeros(size(Z));
@@ -29,7 +29,7 @@ Zn =[];
 for i = 0:length(Yn)-1
    Zn(i+1,:) = Znx(1+i*length(Yn):(1+i)*length(Yn))'; 
 end
-n = 15;
+n = 20;
 X = Xn(1+n:(length(Xn)-n));
 n = 10;
 Y = Yn(1+n:(length(Xn)-n));
@@ -40,10 +40,10 @@ t =  linspace(-130,-50,1000000);
 [Xc,Yc,Zc] = cylinder(r,100);
 
 %%
-h = figure('Color',[1 1 1],'Position',[100,100,500,500]);
+h = figure('Color',[1 1 1],'Position',[50,100,800,4000]);
 
 
-filename = 'testAnimated3.gif';
+filename = 'testAnimated1.gif';
 clf
 % Create axes
 axes1 = axes('Visible','off','Parent',h);
@@ -92,14 +92,14 @@ axis vis3d
 
 for i = 1:360
     
-    set(h, 'Position',[100,100,500,500])
+    set(h, 'Position',[50,100,800,4000])
     view([75*cosd(i),75*sind(i),20])
     
 % Capture the plot as an image 
     
     frame = getframe(h); 
     im = frame2im(frame); 
-    [imind,cm] = rgb2ind(im,256); 
+    [imind,cm] = rgb2ind(im,65536); 
      % this ensures that getframe() returns a consistent size
     
     %Write to the GIF File 

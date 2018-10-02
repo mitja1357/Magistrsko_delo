@@ -57,9 +57,8 @@ drug_tocka_sredinske_crte=[r_mag;0]+dina_eks;
 
 textN=[0;0.8.*r_mag]+dina_eks;
 textS=[0;-0.8.*r_mag]+dina_eks;
-
 f1=figure(1);
-set(f1,'Position',[1,41,1920,964])
+set(f1,'Color',[1 1 1],'Position',[50,100,800,4000])
 clf(f1)
 
 sredina_magneta = zeros(2,length(theta));
@@ -114,10 +113,7 @@ for zasuk=1:length(theta)
     
     %% draw images
         
-    ax(1)  = subplot(2,2,1);
-    ax(2)  = subplot(2,2,3);
-    ax(3) = subplot(2,2,2);
-    ax(4) = subplot(2,2,4);
+    
     
     % k.s. osi vrtenja magnet se vrti kot je to videti v realnosti
     subplot(2,2,1);
@@ -184,8 +180,7 @@ for zasuk=1:length(theta)
     grid on
     title('senzor vrtim')
     legend('x','y')   
-    
-    set(ax([3,4]),'xtick',0:30:360)
+   
     drawnow
 
 %% finish for
