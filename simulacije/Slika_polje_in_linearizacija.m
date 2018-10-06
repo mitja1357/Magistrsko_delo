@@ -1,6 +1,8 @@
 load('X_tmp.mat');
 load('Y_tmp.mat');
 load('Zmesh.mat');
+ravnina = 0;
+gif = 0;
 n= 30;
 X = X_tmp(1+n:(1001-n));
 Y = Y_tmp(1+n:(1001-n));
@@ -43,7 +45,7 @@ t =  linspace(-130,-50,1000000);
 h = figure('Color',[1 1 1],'Position',[50,100,800,4000]);
 
 
-filename = 'testAnimated1.gif';
+filename = 'polje_z_ravnino.gif';
 clf
 % Create axes
 axes1 = axes('Visible','off','Parent',h);
@@ -56,9 +58,11 @@ surf(Xn,Yn,Zn,'Parent',axes1,'FaceColor',[0 0 1],...
 surf(Xc,Yc,4*Zc-50-4,'FaceColor',...
      [0.5686274766922 0.521568655967712 0.458823531866074],'EdgeColor','none');
 % Create ravnina
-% surf(Y,X,Zravn,'Parent',axes1,'FaceColor',[1 0 0],...
-%     'FaceAlpha',0.5,...
-%     'EdgeColor','none');
+if ravnina
+    surf(Y,X,Zravn,'Parent',axes1,'FaceColor',[1 0 0],...
+        'FaceAlpha',0.5,...
+        'EdgeColor','none');
+end
 
 theta = linspace(0, 2*pi, 100);
 
@@ -101,11 +105,12 @@ for i = 1:360
     im = frame2im(frame); 
     [imind,cm] = rgb2ind(im,65536); 
      % this ensures that getframe() returns a consistent size
-    
+    if gif
     %Write to the GIF File 
-    if i == 1
-        imwrite(imind,cm,filename,'gif', 'Loopcount',inf);
-    else
-        imwrite(imind,cm,filename,'gif','WriteMode','append');
-    end 
+        if i == 1
+            imwrite(imind,cm,filename,'gif', 'Loopcount',inf);
+        else
+            imwrite(imind,cm,filename,'gif','WriteMode','append');
+        end 
+    end
 end

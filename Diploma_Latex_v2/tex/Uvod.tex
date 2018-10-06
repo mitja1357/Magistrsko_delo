@@ -22,9 +22,26 @@ Cilj naloge je analizirtai kako različne napake pri montaži, vplivajo na napak
 
 Senzor RM44 je 13 bitni enkoder, primeren za merjenje zasuka in hitrosti elektromotorskega pogona\cite{RM44}.
 Enkoder se nahaja v robustem ohišju, zato je primeren za delovanje v težkem industrijskem okolju. % , pritrjenega na konec rotirajoče osi pogonskega sklopa.
-Obliko izhodnega podatka o zasuku, je prilagodljiva na sistem aplikacije v kateri bo uporabljen\cite{Ambrozic}. Izhod senzorja je lahko analogni, v obliki sinusa in cosinusa, inkrementalni \cite{inkrementalni} s signaloma A in B s katerih lahko izračunamo smer vrtenja ter signal Ri kateri določa referenčno točko. Izhod je lahko tudi digitalen preko komunikacijo SSI ali analogna napetost, ki se linearno spreminja med potencialom GND in Vdd v odvistnosti od kota zasuka. Senzor ima možnost nastavitev resolucije od 5 do 13 bitov \cite{RM44}\cite{AM8192}. Senzor na katerem so bile opravljene meritve je imel na voljo analogna signala sinus in kosinus. Točno ime senzorja je RM44AC0001S20F2E10, v delu bo poimenovan okrajšano RM44.
+Oblika izhodnega podatka o zasuku, je prilagodljiva na sistem aplikacije v kateri bo uporabljen\cite{Ambrozic}. Izhod senzorja je lahko analogni v obliki sinusnega in cosinusnega signala ali linearno spreminjajče se napetosti med potencialoma GND in VDD v odvisnosti od kota zasuka.
+Izhod je lahko tudi v oliki inkrementalnih signalov A in B s katerih se lahko izračuna smer vrtenja ter signal Ri kateri določa referenčno točko. Izhod je možen tudi preko SSI vodila. Senzor ima možnost nastavitev resolucije od 5 do 13 bitov \cite{AM8192}\cite{RM44}. Senzor na katerem so bile opravljene meritve je imel na voljo analogna signala sinus in kosinus. Točno ime senzorja je RM44AC0001S20F2E10, v delu bo poimenovan okrajšano RM44.
 
-Ključni element senzorja je čip AM512. V čipu so Hallove sonde za meritev z-komponente gostote magnetnega pretoka. 
+Ključni element senzorja je čip AM256. Čip se nahaja nad radialno polariziranim cilindričnim magnetom(slika \ref{stranski_ris}). Magnet je pritrjen na os vrtenja. Magnet v svoji okolici poveča gostoto magnetnega pretoka. Hallove sonde v čipu so orientirane tako, da merijo Z-komponento gostote magnetnega pretoka. Na sliki 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\columnwidth]{./Slike/stranski_ris.png}
+	\caption{Nahajanje radialno polariziranega magneta nad čipom AM256}
+	\label{stranski_ris}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\columnwidth]{./Slike/polje_brez_ravnine.eps}
+	\caption{Oblika Z komponente gostote magnetnega pretoka nad magnetom}
+	\label{polje_brez_ravnine}
+\end{figure}
+
+V čipu so Hallove sonde za merjenje gostote magnetnega pretoka.
 
 \begin{figure}[h]
 	\centering
@@ -32,6 +49,13 @@ Ključni element senzorja je čip AM512. V čipu so Hallove sonde za meritev z-k
 	\caption{Senzor RM44}
 	\label{RM44}
 \end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\columnwidth]{./Slike/polje_z_ravnino.eps}
+	\caption{Oblika Z komponente gostote magnetnega pretoka nad magnetom s aproksimirano ravnino}
+	\label{polje_brez_ravnine}
+\end{figure}
+
 
 
 
