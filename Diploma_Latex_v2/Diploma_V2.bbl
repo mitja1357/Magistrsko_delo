@@ -33,11 +33,14 @@ M.~Demierre, {\em Improvements of CMOS Hall Microsystems and Application for
 V.~Ambrožič in P.~Zajec, {\em Električni servo pogoni}.
 \newblock Slovensko Združenje elektroenergetikov CIGR\'{E}-CIRED.
 
-\bibitem{inkrementalni}
-F.~Brugnano, C.~Concari, E.~Imamovic, F.~Savi, A.~Toscani  in R.~Zanichelli,
-  ``A simple and accurate algorithm for speed measurement in electric drives
-  using incremental encoder,'' v {\em IECON 2017 - 43rd Annual Conference of
-  the IEEE Industrial Electronics Society}.
+\bibitem{ICHaus_interpolate}
+{iC Haus}, ``High-precision sine/cosine interpolation / white paper.''
+  Dosegljivo:
+  \url{http://www.ichaus.de/upload/pdf/WP7en_High-Precision_Interpolation_140124.pdf}.
+
+\bibitem{atan2Matlab}
+MathWorks. Dosegljivo:
+  \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
 
 \bibitem{osnova}
 J.~Lara, ``Position error compensation in quadrature analog magnetic encoders
@@ -59,10 +62,6 @@ L.~Uršič, ``Seminar: Analitičen pogled na statično in dinamično
 \bibitem{Matematika1}
 G.~Dolinar, {\em Matematika 1}.
 \newblock Založba FE in FRI.
-
-\bibitem{atan2Matlab}
-MathWorks. Dosegljivo:
-  \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
 
 \bibitem{atan2dMatlab}
 MathWorks. Dosegljivo:

@@ -10,9 +10,15 @@ Pri magnetnem principu senzor dajalnika zaznava spremembo jakosti in smeri
 magnetnega polja. 
 Magnetno polje se ustvari z aktuatorjem radialno polariziranega magneta. Meri se s Hallovimi sondami ali AMR senzorji. Iz zajetega polja sledi izračun dejanskega položaja. Dajalnik položaja, ki pretvarja merjeno magnetno polje v informacijo o položaju imenujemo enkoder\cite{enkoder}.
 
-Kot vsak merilni element, ima tudi magnetni enkoder napako. Napaka se lahko pojavi ob narobe merjenem magnetnem polju\cite{RLS3}. Napako lahko povzroči tudi napačno pomerjeno polje. To se zgodi ob nepravilni montaži enkoderja ali magnetnega aktuatorja na pogon. S poznavanjem vplivov nepravilne montaže na napako pomerjenega položaja, se napako lahko predvivi in odstrani.
+Kot vsak merilni element, ima tudi magnetni enkoder napako. Napaka se lahko pojavi ob narobe merjenem magnetnem polju\cite{RLS3}. Napako lahko povzroči tudi napačno pomerjeno polje. To se zgodi ob nepravilni montaži enkoderja ali magnetnega aktuatorja na pogon. S poznavanjem vplivov nepravilne montaže na napako pomerjenega položaja, se napako lahko predvivi in odpravi.
+
 Cilj naloge je analizirtai kako različne napake pri montaži, vplivajo na napako v signalih kota.
 Želi se predstaviti čimbolj preprost model, ki bo dovolj točno opisal dogajanje ob prisotnosti napake in to prekontrolirati.
+
+Senzor RM44 mora biti za pravilno delovnanje in točnost izhodnega podatka pravilno montiran.% V podatkovnih listih je podana toleranca $\pm100\mathrm{\mu m}$. 
+
+Magistrsko delo predstavlja vpliv nepravilno montiranega senzorja ali nepravilno montiranega magneta na napako. Kako nepravilna montaža vpliva na izhodna signala sinus in kosinus ter neposredno iz tega tudi na napako.
+Različne literature so ocenjevale vpliv neidealnih analognih signalov za izračun kota\cite{osnova}\cite{RLS1}\cite{RLS2}. V delu je predstavljena odvisnost napake pri spremembi idealnih signalov sinus in kosinus na izračunan kot.
 
 
 %V tej magistrski nalogi je predstavljen vpliv napačno merjenega magnetnega polja. Predstavljen je simulacijski model enkoderja, ter odvistnost napake na nepravilno montažo. Simulacije so primerjane z meritvami na enkoderju RM44\cite{RM44}.
@@ -25,7 +31,9 @@ Enkoder se nahaja v robustem ohišju, zato je primeren za delovanje v težkem in
 Oblika izhodnega podatka o zasuku, je prilagodljiva na sistem aplikacije v kateri bo uporabljen\cite{Ambrozic}. Izhod senzorja je lahko analogni v obliki sinusnega in cosinusnega signala ali linearno spreminjajče se napetosti med potencialoma GND in VDD v odvisnosti od kota zasuka.
 Izhod je lahko tudi v oliki inkrementalnih signalov A in B s katerih se lahko izračuna smer vrtenja ter signal Ri kateri določa referenčno točko. Izhod je možen tudi preko SSI vodila. Senzor ima možnost nastavitev resolucije od 5 do 13 bitov \cite{AM8192}\cite{RM44}. Senzor na katerem so bile opravljene meritve je imel na voljo analogna signala sinus in kosinus. Točno ime senzorja je RM44AC0001S20F2E10, v delu bo poimenovan okrajšano RM44.
 
-Ključni element senzorja je čip AM256. Čip se nahaja nad radialno polariziranim cilindričnim magnetom(slika \ref{stranski_ris}). Magnet je pritrjen na os vrtenja. Magnet v svoji okolici poveča gostoto magnetnega pretoka. Hallove sonde v čipu so orientirane tako, da merijo Z-komponento gostote magnetnega pretoka. Na sliki 
+Ključni element senzorja je čip AM256. Čip se nahaja nad radialno polariziranim cilindričnim magnetom(slika \ref{stranski_ris}). Magnet je pritrjen na os vrtenja. Na sliki \ref{polje_brez_ravnine}  je prikazana oblika Z komponente vektorja gostote magnetnega pretoka. V čipu so na siliciju Hallove sonde za meritev Z-komponento gostote magnetnega pretoka. Ob prostorskem zajemu Z komponente gostote magnetnega pretoka, zajame Hallova sonda polje v obliki cosinusnega oz. sinusnega signala. S pravilno postavitvijo Hallovih sond se ob prostorskem zajemu zajame 2 signala, ki sta za 90$^\circ$ fazno zamaknjena na drugega. Signala imata obliko cosinusa in sinusa (slika \ref{BxBy}). Prvi signal, katerega osnovna oblika je cosinus, je v delu poimenovan $B_x$, drugi signal, osnovne oblike sinus, je poimenovan $B_y$.
+
+Iz signalov, zajetih s Hallovih sond, se izračuna kot. Metod, za numeričen izračun kota iz podatkov kot sta signala $B_x$ in $B_y$ je več (CORDIC, SAR, sledilna metoda, itd \cite{ICHaus_interpolate}). Osnovni princip metode je izračun funkcije atan2() \cite{atan2Matlab}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\columnwidth]{./Slike/stranski_ris.png}
@@ -41,7 +49,13 @@ Ključni element senzorja je čip AM256. Čip se nahaja nad radialno polariziran
 	\label{polje_brez_ravnine}
 \end{figure}
 
-V čipu so Hallove sonde za merjenje gostote magnetnega pretoka.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\columnwidth]{./Slike/BxBy.png}
+	\caption{Analogna signala zajeta s Hallovimi sondami}
+	\label{BxBy}
+\end{figure}
+
 
 \begin{figure}[h]
 	\centering
@@ -61,10 +75,7 @@ V čipu so Hallove sonde za merjenje gostote magnetnega pretoka.
 
 \chapter{Zastavljena naloga}
 
-Senzor RM44 mora biti za pravilno delovnanje in točnost izhodnega podatka pravilno montiran.% V podatkovnih listih je podana toleranca $\pm100\mathrm{\mu m}$. 
 
-Magistrsko delo predstavlja vpliv nepravilno montiranega senzorja ali nepravilno montiranega magneta na napako. Kako nepravilna montaža vpliva na izhodna signala sinus in kosinus ter neposredno iz tega tudi na napako.
-Različne literature so ocenjevale vpliv neidealnih analognih signalov za izračun kota\cite{osnova}\cite{RLS1}\cite{RLS2}. V delu je predstavljena odvisnost napake pri spremembi idealnih signalov sinus in kosinus na izračunan kot.
 
 V začetku je bila opravljena  izpeljava kako se giblje magnet ali senzor v sistemu z nepravilno montažo\cite{ursic}. Opravil sem simulacije na linearno aproksimiranem magnetnem polju, ter na numerično izračunanem polju simuliranega realnega magneta.
 Tehnologija senzorja RM44 je poslovna skrivnost, zato je bil postavljen lasten simulacijski model senzorja, s pričakovanji, da bo rezultat  slabši od končnih meritev.
