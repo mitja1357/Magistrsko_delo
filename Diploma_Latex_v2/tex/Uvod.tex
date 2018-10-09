@@ -10,15 +10,17 @@ Pri magnetnem principu senzor dajalnika zaznava spremembo jakosti in smeri
 magnetnega polja. 
 Magnetno polje se ustvari z aktuatorjem radialno polariziranega magneta. Meri se s Hallovimi sondami ali AMR senzorji. Iz zajetega polja sledi izračun dejanskega položaja. Dajalnik položaja, ki pretvarja merjeno magnetno polje v informacijo o položaju imenujemo enkoder\cite{enkoder}.
 
-Kot vsak merilni element, ima tudi magnetni enkoder napako. Napaka se lahko pojavi ob narobe merjenem magnetnem polju\cite{RLS3}. Napako lahko povzroči tudi napačno pomerjeno polje. To se zgodi ob nepravilni montaži enkoderja ali magnetnega aktuatorja na pogon. S poznavanjem vplivov nepravilne montaže na napako pomerjenega položaja, se napako lahko predvivi in odpravi.
+Kot vsak merilni element, ima tudi magnetni enkoder napako. Napaka se lahko pojavi ob narobe merjenem magnetnem polju\cite{RLS3}. Napako lahko povzroči tudi napačno pomerjeno polje. To se zgodi ob nepravilni montaži enkoderja ali magnetnega aktuatorja na pogon. S poznavanjem vplivov nepravilne montaže na napako pomerjenega položaja, se napako lahko predvidi in odpravi.
 
 Cilj naloge je analizirtai kako različne napake pri montaži, vplivajo na napako v signalih kota.
 Želi se predstaviti čimbolj preprost model, ki bo dovolj točno opisal dogajanje ob prisotnosti napake in to prekontrolirati.
 
-Senzor RM44 mora biti za pravilno delovnanje in točnost izhodnega podatka pravilno montiran.% V podatkovnih listih je podana toleranca $\pm100\mathrm{\mu m}$. 
+%Senzor RM44 mora biti za pravilno delovnanje in točnost izhodnega podatka pravilno montiran.% V podatkovnih listih je podana toleranca $\pm100\mathrm{\mu m}$. 
 
-Magistrsko delo predstavlja vpliv nepravilno montiranega senzorja ali nepravilno montiranega magneta na napako. Kako nepravilna montaža vpliva na izhodna signala sinus in kosinus ter neposredno iz tega tudi na napako.
-Različne literature so ocenjevale vpliv neidealnih analognih signalov za izračun kota\cite{osnova}\cite{RLS1}\cite{RLS2}. V delu je predstavljena odvisnost napake pri spremembi idealnih signalov sinus in kosinus na izračunan kot.
+%Magistrsko delo predstavlja vpliv nepravilno montiranega senzorja ali nepravilno montiranega magneta na napako.
+
+
+
 
 
 %V tej magistrski nalogi je predstavljen vpliv napačno merjenega magnetnega polja. Predstavljen je simulacijski model enkoderja, ter odvistnost napake na nepravilno montažo. Simulacije so primerjane z meritvami na enkoderju RM44\cite{RM44}.
@@ -26,75 +28,48 @@ Različne literature so ocenjevale vpliv neidealnih analognih signalov za izrač
 
 \chapter{Senzor RM44}
 
-Senzor RM44 je 13 bitni enkoder, primeren za merjenje zasuka in hitrosti elektromotorskega pogona\cite{RM44}.
+Senzor RM44 je 13 bitni enkoder, primeren za merjenje zasuka rotirajočega pogona\cite{RM44}.
 Enkoder se nahaja v robustem ohišju, zato je primeren za delovanje v težkem industrijskem okolju. % , pritrjenega na konec rotirajoče osi pogonskega sklopa.
 Oblika izhodnega podatka o zasuku, je prilagodljiva na sistem aplikacije v kateri bo uporabljen\cite{Ambrozic}. Izhod senzorja je lahko analogni v obliki sinusnega in cosinusnega signala ali linearno spreminjajče se napetosti med potencialoma GND in VDD v odvisnosti od kota zasuka.
-Izhod je lahko tudi v oliki inkrementalnih signalov A in B s katerih se lahko izračuna smer vrtenja ter signal Ri kateri določa referenčno točko. Izhod je možen tudi preko SSI vodila. Senzor ima možnost nastavitev resolucije od 5 do 13 bitov \cite{AM8192}\cite{RM44}. Senzor na katerem so bile opravljene meritve je imel na voljo analogna signala sinus in kosinus. Točno ime senzorja je RM44AC0001S20F2E10, v delu bo poimenovan okrajšano RM44.
-
-Ključni element senzorja je čip AM256. Čip se nahaja nad radialno polariziranim cilindričnim magnetom(slika \ref{stranski_ris}). Magnet je pritrjen na os vrtenja. Na sliki \ref{polje_brez_ravnine}  je prikazana oblika Z komponente vektorja gostote magnetnega pretoka. V čipu so na siliciju Hallove sonde za meritev Z-komponento gostote magnetnega pretoka. Ob prostorskem zajemu Z komponente gostote magnetnega pretoka, zajame Hallova sonda polje v obliki cosinusnega oz. sinusnega signala. S pravilno postavitvijo Hallovih sond se ob prostorskem zajemu zajame 2 signala, ki sta za 90$^\circ$ fazno zamaknjena na drugega. Signala imata obliko cosinusa in sinusa (slika \ref{BxBy}). Prvi signal, katerega osnovna oblika je cosinus, je v delu poimenovan $B_x$, drugi signal, osnovne oblike sinus, je poimenovan $B_y$.
-
-Iz signalov, zajetih s Hallovih sond, se izračuna kot. Metod, za numeričen izračun kota iz podatkov kot sta signala $B_x$ in $B_y$ je več (CORDIC, SAR, sledilna metoda, itd \cite{ICHaus_interpolate}). Osnovni princip metode je izračun funkcije atan2() \cite{atan2Matlab}.
+Izhod je lahko tudi v oliki inkrementalnih signalov A in B s katerih se lahko določi smer in relativni zasuk vrtenja ter signal Ri kateri določa referenčno točko. Izhod je možen tudi preko SSI vodila. Senzor ima možnost nastavitev resolucije od 5 do 13 bitov \cite{AM8192}\cite{RM44}. Senzor na katerem so bile opravljene meritve je imel na voljo analogna signala sinus in kosinus. Točno ime senzorja je RM44AC0001S20F2E10, v delu bo poimenovan okrajšano RM44.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\columnwidth]{./Slike/stranski_ris.png}
-	\caption{Nahajanje radialno polariziranega magneta nad čipom AM256}
-	\label{stranski_ris}
-\end{figure}
-
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\columnwidth]{./Slike/polje_brez_ravnine.eps}
-	\caption{Oblika Z komponente gostote magnetnega pretoka nad magnetom}
-	\label{polje_brez_ravnine}
-\end{figure}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\columnwidth]{./Slike/BxBy.png}
-	\caption{Analogna signala zajeta s Hallovimi sondami}
-	\label{BxBy}
-\end{figure}
-
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\columnwidth]{./Slike/senzorRM44.jpg}
+	\includegraphics[width=0.4\columnwidth]{./Slike/senzorRM44.jpg}
 	\caption{Senzor RM44}
 	\label{RM44}
 \end{figure}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\columnwidth]{./Slike/polje_z_ravnino.eps}
-	\caption{Oblika Z komponente gostote magnetnega pretoka nad magnetom s aproksimirano ravnino}
+	\includegraphics[width=0.5\columnwidth]{./Slike/polje_brez_ravnine.eps}
+	\caption{Oblika Z komponente gostote magnetnega pretoka nad magnetom}
 	\label{polje_brez_ravnine}
+\end{figure}
+Ključni element senzorja je čip AM256. Za odčitavnaje zasuka, se mora nahajati nad radialno polariziranim cilindričnim magnetom, ki je pritrjen na os vrtenja(slika \ref{stranski_ris}). Na sliki \ref{polje_brez_ravnine}  je prikazana oblika Z komponente vektorja gostote magnetnega pretoka. V čipu so na siliciju Hallove sonde za meritev Z-komponento gostote magnetnega pretoka, povzročena zaradi radialno polariziranega magneta v okolici. Ob prostorskem zajemu Z komponente gostote magnetnega pretoka, zajame Hallova sonda polje v obliki cosinusnega oz. sinusnega signala. S pravilno postavitvijo Hallovih sond se ob prostorskem zajemu zajame 2 signala, ki sta za 90$^\circ$ prostorsko zamaknjena drug na drugega. Signala imata obliko cosinusa in sinusa (slika \ref{BxBy}). Prvi signal, kateri je zajet iz Z komponente gostote magnetnega pretoka in je njegova osnovna oblika cosinus, je v delu poimenovan $B_x$, drugi signal, ki prostorsko zaostaja za 90$^\circ$, je poimenovan $B_y$.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\columnwidth]{./Slike/stranski_ris.png}
+	\caption{Nahajanje radialno polariziranega magneta nad čipom AM256 \cite{AM8192}}
+	\label{stranski_ris}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\columnwidth]{./Slike/BxBy.png}
+	\caption{Analogna signala zajeta s Hallovimi sondami \cite{AM8192}}
+	\label{BxBy}
 \end{figure}
 
 
+Iz signalov, zajetih s Hallovih sond, se izračuna kot. Metod, za numeričen izračun kota iz podatkov kot sta signala $B_x$ in $B_y$ je več (CORDIC, SAR, sledilna metoda, itd \cite{ICHaus_interpolate}). Osnovni princip metode je izračun funkcije atan2() \cite{atan2Matlab}.
 
+Osnovno delovanje senzorja se lahko ponazori, z dvema Hallovima sondama ki sta postavljeni prostorsko zamaknjeni za 90$^\circ$ (Hallovi sondi sta označeni na sliki \ref{opis_modela}). Hallovi sondi meriti Z komponento gostote magnetnega pretoka, radialno polariziranega magneta ki se nahaja, pod sondam. Ob konstantnem vrtenju in pravilni postavitvi sond nad magnet, sondi zajameti signala $B_x$ in $B_y$. Signala sta vhod v funkcijo atan2(), ki izračuna kot zasuka (slika \ref{opis_modela}).
 
-\chapter{Zastavljena naloga}
-
-
-
-V začetku je bila opravljena  izpeljava kako se giblje magnet ali senzor v sistemu z nepravilno montažo\cite{ursic}. Opravil sem simulacije na linearno aproksimiranem magnetnem polju, ter na numerično izračunanem polju simuliranega realnega magneta.
-Tehnologija senzorja RM44 je poslovna skrivnost, zato je bil postavljen lasten simulacijski model senzorja, s pričakovanji, da bo rezultat  slabši od končnih meritev.
-
-Na tej točki bi bilo primerno definirati pojme, kateri se bodo uporabljali tekom izdelave dela.
-Izmik senzorja bo med spreminjanja kota zasuka postavljen fiksno in se njegova lokacija nebo spreminjala na os vrtenja. Ta izmik je poimenovan statična ekscentričnost.
-V nalogi bo preverjeno kako vpliva izmik magneta na točnost izhodnega podatka. Ob izmiku magneta iz osi vrtenja se pojavi opletanje magneta. Lokacija središča magneta se spreminja glede na določen zasuk magneta. Opletanje magneta je poimenovano dinamična ekscentričnost.
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\columnwidth]{./Slike/opis_modela.png}
+	\caption{Osnovni model, za izračun kot zasuka}
+	\label{opis_modela}
+\end{figure}
 
 
 %

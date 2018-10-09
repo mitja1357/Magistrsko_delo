@@ -6,7 +6,7 @@ eks={'xs','ys','xd','yd'};
 for j=1:4
     ekcentric=eks{j};
 
-    r0=2.4;
+    r0=1.5;
     xs=0;
     ys=0;
     xd=0;

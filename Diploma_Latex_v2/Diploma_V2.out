@@ -1,58 +1,57 @@
 \BOOKMARK [0][-]{chapter.1}{Uvod}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Senzor RM44}{}% 2
-\BOOKMARK [0][-]{chapter.3}{Zastavljena naloga}{}% 3
-\BOOKMARK [0][-]{chapter.4}{Analiticna izpeljava vplivov dinamicne in staticne ekscentricnosti}{}% 4
-\BOOKMARK [1][-]{section.4.1}{Definicija koordinatnih sistemov}{chapter.4}% 5
-\BOOKMARK [1][-]{section.4.2}{Izpeljava gibanja polo\236aja Hallove sonde na magnet pri dinamicni ekscentricnosti}{chapter.4}% 6
-\BOOKMARK [1][-]{section.4.3}{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri staticni ekscentricnosti}{chapter.4}% 7
-\BOOKMARK [1][-]{section.4.4}{Koncna enacba za dolocanje lokacije Hall-ove sonde}{chapter.4}% 8
-\BOOKMARK [0][-]{chapter.5}{Izpeljava poteka polja Bz\(\) in ocena napake zaradi ekscentricnosti}{}% 9
-\BOOKMARK [1][-]{section.5.1}{Definicija gostote magnetnega polja Bz}{chapter.5}% 10
-\BOOKMARK [1][-]{section.5.2}{Postavitev Hallovih sond in pomerjeno polje v odvistnosti od ekscentricnosti}{chapter.5}% 11
-\BOOKMARK [2][-]{subsection.5.2.1}{Sprememba magnetnega polja zaradi ekscentricnosti}{section.5.2}% 12
-\BOOKMARK [1][-]{section.5.3}{Premik senzorja v z smeri}{chapter.5}% 13
-\BOOKMARK [0][-]{chapter.6}{Potek napake funkcije atan2 ob popacenju vhodnih signalov}{}% 14
-\BOOKMARK [1][-]{section.6.1}{Razlicne amplitude}{chapter.6}% 15
-\BOOKMARK [1][-]{section.6.2}{Razlicne enosmerne komponente}{chapter.6}% 16
-\BOOKMARK [2][-]{subsection.6.2.1}{Enosmerna komponenta le v signalu sin}{section.6.2}% 17
-\BOOKMARK [2][-]{subsection.6.2.2}{Enosmerna komponenta signala cos}{section.6.2}% 18
-\BOOKMARK [2][-]{subsection.6.2.3}{Enosmerna komponenta pri obeh signalih}{section.6.2}% 19
-\BOOKMARK [1][-]{section.6.3}{Neorotogonalnost signalov}{chapter.6}% 20
-\BOOKMARK [1][-]{section.6.4}{Potek napake pri staticni ekscentricnosti v smeri x}{chapter.6}% 21
-\BOOKMARK [1][-]{section.6.5}{Potek napake pri staticni ekscentricnosti v smeri y}{chapter.6}% 22
-\BOOKMARK [1][-]{section.6.6}{Potek napake pri dinamicni ekscentricnosti v smeri x}{chapter.6}% 23
-\BOOKMARK [0][-]{chapter.7}{Linearni model}{}% 24
-\BOOKMARK [1][-]{section.7.1}{Brez ekscentricnosti}{chapter.7}% 25
-\BOOKMARK [1][-]{section.7.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.7}% 26
-\BOOKMARK [2][-]{subsection.7.2.1}{Sprememba sin, cos ter napake v odvisnosti od xs}{section.7.2}% 27
-\BOOKMARK [1][-]{section.7.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.7}% 28
-\BOOKMARK [2][-]{subsection.7.3.1}{Sprememba sin, cos ter napake od ys}{section.7.3}% 29
-\BOOKMARK [1][-]{section.7.4}{Dinamicna ekscentricnost v smeri x osi}{chapter.7}% 30
-\BOOKMARK [2][-]{subsection.7.4.1}{Sprememba sin, cos ter napake od xd}{section.7.4}% 31
-\BOOKMARK [0][-]{chapter.8}{Realni model magnetnega polja}{}% 32
-\BOOKMARK [1][-]{section.8.1}{Brez napake}{chapter.8}% 33
-\BOOKMARK [1][-]{section.8.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.8}% 34
-\BOOKMARK [2][-]{subsection.8.2.1}{Sprememba sin, cos ter napake od xs}{section.8.2}% 35
-\BOOKMARK [1][-]{section.8.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.8}% 36
-\BOOKMARK [2][-]{subsection.8.3.1}{Sprememba sin, cos ter napake od ys}{section.8.3}% 37
-\BOOKMARK [1][-]{section.8.4}{Dinamicna ekscentricnost v smeri x}{chapter.8}% 38
-\BOOKMARK [2][-]{subsection.8.4.1}{Sprememba sin, cos ter napake od xd}{section.8.4}% 39
-\BOOKMARK [1][-]{section.8.5}{Dinamicna ekscentricnost v smeri y}{chapter.8}% 40
-\BOOKMARK [2][-]{subsection.8.5.1}{Sprememba sin, cos ter napake od yd}{section.8.5}% 41
-\BOOKMARK [0][-]{chapter.9}{Meritve}{}% 42
-\BOOKMARK [1][-]{section.9.1}{Oprema in postavitev merilnega mesta}{chapter.9}% 43
-\BOOKMARK [1][-]{section.9.2}{Zajem podatkov}{chapter.9}% 44
-\BOOKMARK [1][-]{section.9.3}{Senzor v izhodi\235cni legi}{chapter.9}% 45
-\BOOKMARK [2][-]{subsection.9.3.1}{Meritve v izhodi\235ni legi}{section.9.3}% 46
-\BOOKMARK [1][-]{section.9.4}{Meritve staticne ekscentricnosti v smeri x-osi}{chapter.9}% 47
-\BOOKMARK [2][-]{subsection.9.4.1}{Sprememba sin, cos ter napake od xs}{section.9.4}% 48
-\BOOKMARK [1][-]{section.9.5}{Meritve staticne ekscentricnosti v smeri y-osi}{chapter.9}% 49
-\BOOKMARK [2][-]{subsection.9.5.1}{Sprememba sin, cos ter napake od ys}{section.9.5}% 50
-\BOOKMARK [1][-]{section.9.6}{Meritve dinamicne ekscentricnosti v smeri x-osi}{chapter.9}% 51
-\BOOKMARK [2][-]{subsection.9.6.1}{Sprememba sin, cos ter napake od xd}{section.9.6}% 52
-\BOOKMARK [0][-]{chapter.10}{Sklep}{}% 53
-\BOOKMARK [1][-]{section.10.1}{Merjenje kota in vpliv na napako}{chapter.10}% 54
-\BOOKMARK [1][-]{section.10.2}{Nepravilna monta\236a}{chapter.10}% 55
-\BOOKMARK [1][-]{section.10.3}{Oblika napake}{chapter.10}% 56
-\BOOKMARK [1][-]{section.10.4}{Izvedba meritev}{chapter.10}% 57
-\BOOKMARK [1][-]{section.10.5}{Komentar rezultatov}{chapter.10}% 58
+\BOOKMARK [0][-]{chapter.3}{Izpeljava gibanja sonde relativno na magnet ob nepravilni monta\236i}{}% 3
+\BOOKMARK [1][-]{section.3.1}{Definicija koordinatnih sistemov}{chapter.3}% 4
+\BOOKMARK [1][-]{section.3.2}{Izpeljava gibanja polo\236aja Hallove sonde na magnet pri dinamicni ekscentricnosti}{chapter.3}% 5
+\BOOKMARK [1][-]{section.3.3}{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri staticni ekscentricnosti}{chapter.3}% 6
+\BOOKMARK [1][-]{section.3.4}{Koncna enacba za dolocanje lokacije Hall-ove sonde}{chapter.3}% 7
+\BOOKMARK [0][-]{chapter.4}{Izpeljava poteka polja Bz\(\) in ocena napake zaradi ekscentricnosti}{}% 8
+\BOOKMARK [1][-]{section.4.1}{Definicija gostote magnetnega polja Bz}{chapter.4}% 9
+\BOOKMARK [1][-]{section.4.2}{Postavitev Hallovih sond in pomerjeno polje v odvistnosti od ekscentricnosti}{chapter.4}% 10
+\BOOKMARK [2][-]{subsection.4.2.1}{Sprememba magnetnega polja zaradi ekscentricnosti}{section.4.2}% 11
+\BOOKMARK [1][-]{section.4.3}{Premik senzorja v z smeri}{chapter.4}% 12
+\BOOKMARK [0][-]{chapter.5}{Potek napake funkcije atan2 ob popacenju vhodnih signalov}{}% 13
+\BOOKMARK [1][-]{section.5.1}{Razlicne amplitude}{chapter.5}% 14
+\BOOKMARK [1][-]{section.5.2}{Razlicne enosmerne komponente}{chapter.5}% 15
+\BOOKMARK [2][-]{subsection.5.2.1}{Enosmerna komponenta le v signalu sin}{section.5.2}% 16
+\BOOKMARK [2][-]{subsection.5.2.2}{Enosmerna komponenta signala cos}{section.5.2}% 17
+\BOOKMARK [2][-]{subsection.5.2.3}{Enosmerna komponenta pri obeh signalih}{section.5.2}% 18
+\BOOKMARK [1][-]{section.5.3}{Neorotogonalnost signalov}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.4}{Potek napake pri staticni ekscentricnosti v smeri x}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.5}{Potek napake pri staticni ekscentricnosti v smeri y}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.6}{Potek napake pri dinamicni ekscentricnosti v smeri x}{chapter.5}% 22
+\BOOKMARK [0][-]{chapter.6}{Linearni model}{}% 23
+\BOOKMARK [1][-]{section.6.1}{Brez ekscentricnosti}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.6}% 25
+\BOOKMARK [2][-]{subsection.6.2.1}{Sprememba sin, cos ter napake v odvisnosti od xs}{section.6.2}% 26
+\BOOKMARK [1][-]{section.6.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.6}% 27
+\BOOKMARK [2][-]{subsection.6.3.1}{Sprememba sin, cos ter napake od ys}{section.6.3}% 28
+\BOOKMARK [1][-]{section.6.4}{Dinamicna ekscentricnost v smeri x osi}{chapter.6}% 29
+\BOOKMARK [2][-]{subsection.6.4.1}{Sprememba sin, cos ter napake od xd}{section.6.4}% 30
+\BOOKMARK [0][-]{chapter.7}{Realni model magnetnega polja}{}% 31
+\BOOKMARK [1][-]{section.7.1}{Brez napake}{chapter.7}% 32
+\BOOKMARK [1][-]{section.7.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.7}% 33
+\BOOKMARK [2][-]{subsection.7.2.1}{Sprememba sin, cos ter napake od xs}{section.7.2}% 34
+\BOOKMARK [1][-]{section.7.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.7}% 35
+\BOOKMARK [2][-]{subsection.7.3.1}{Sprememba sin, cos ter napake od ys}{section.7.3}% 36
+\BOOKMARK [1][-]{section.7.4}{Dinamicna ekscentricnost v smeri x}{chapter.7}% 37
+\BOOKMARK [2][-]{subsection.7.4.1}{Sprememba sin, cos ter napake od xd}{section.7.4}% 38
+\BOOKMARK [1][-]{section.7.5}{Dinamicna ekscentricnost v smeri y}{chapter.7}% 39
+\BOOKMARK [2][-]{subsection.7.5.1}{Sprememba sin, cos ter napake od yd}{section.7.5}% 40
+\BOOKMARK [0][-]{chapter.8}{Meritve}{}% 41
+\BOOKMARK [1][-]{section.8.1}{Oprema in postavitev merilnega mesta}{chapter.8}% 42
+\BOOKMARK [1][-]{section.8.2}{Zajem podatkov}{chapter.8}% 43
+\BOOKMARK [1][-]{section.8.3}{Senzor v izhodi\235cni legi}{chapter.8}% 44
+\BOOKMARK [2][-]{subsection.8.3.1}{Meritve v izhodi\235ni legi}{section.8.3}% 45
+\BOOKMARK [1][-]{section.8.4}{Meritve staticne ekscentricnosti v smeri x-osi}{chapter.8}% 46
+\BOOKMARK [2][-]{subsection.8.4.1}{Sprememba sin, cos ter napake od xs}{section.8.4}% 47
+\BOOKMARK [1][-]{section.8.5}{Meritve staticne ekscentricnosti v smeri y-osi}{chapter.8}% 48
+\BOOKMARK [2][-]{subsection.8.5.1}{Sprememba sin, cos ter napake od ys}{section.8.5}% 49
+\BOOKMARK [1][-]{section.8.6}{Meritve dinamicne ekscentricnosti v smeri x-osi}{chapter.8}% 50
+\BOOKMARK [2][-]{subsection.8.6.1}{Sprememba sin, cos ter napake od xd}{section.8.6}% 51
+\BOOKMARK [0][-]{chapter.9}{Sklep}{}% 52
+\BOOKMARK [1][-]{section.9.1}{Merjenje kota in vpliv na napako}{chapter.9}% 53
+\BOOKMARK [1][-]{section.9.2}{Nepravilna monta\236a}{chapter.9}% 54
+\BOOKMARK [1][-]{section.9.3}{Oblika napake}{chapter.9}% 55
+\BOOKMARK [1][-]{section.9.4}{Izvedba meritev}{chapter.9}% 56
+\BOOKMARK [1][-]{section.9.5}{Komentar rezultatov}{chapter.9}% 57

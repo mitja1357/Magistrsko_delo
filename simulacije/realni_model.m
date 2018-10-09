@@ -15,8 +15,8 @@ y=Y_tmp;
 X_tmp=x;
 Y_tmp=y;
 clear x y
-complex_H1=2.4;
-complex_H2=2.4.*1j;
+complex_H1=1.5;
+complex_H2=1.5.*1j;
 kot=0;
 complex_H1=complex_H1.*exp(1j.*kot.*pi/180);
 complex_H2=complex_H2.*exp(1j.*kot.*pi/180);
@@ -27,7 +27,6 @@ for i=1:4
 % for i = 3 % za meritve xd kjer je magnet zarotiran
     ekcentric=eks{i};
 
-    r0=2.4;
     xs=0.0;
     ys=0.0;
     xd=0.0;
