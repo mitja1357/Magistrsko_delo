@@ -12,14 +12,25 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="203.2196mm"
-   height="114.70517mm"
-   viewBox="0 0 203.2196 114.70518"
+   height="123.52506mm"
+   viewBox="0 0 203.2196 123.52507"
    version="1.1"
    id="svg8"
    sodipodi:docname="opis modela.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\opis modela.png"
+   inkscape:export-xdpi="161.37199"
+   inkscape:export-ydpi="161.37199">
   <defs
      id="defs2">
+    <linearGradient
+       id="linearGradient946"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop944" />
+    </linearGradient>
     <marker
        inkscape:stockid="Arrow1Lstart"
        orient="auto"
@@ -128,6 +139,15 @@
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
          transform="matrix(0.8,0,0,0.8,10,0)" />
     </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient946"
+       id="linearGradient948"
+       x1="14.488173"
+       y1="7.6331255"
+       x2="58.223661"
+       y2="7.6331255"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -136,9 +156,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="519.13324"
-     inkscape:cy="269.17443"
+     inkscape:zoom="0.70000001"
+     inkscape:cx="201.1822"
+     inkscape:cy="374.02397"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -162,7 +182,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-0.67906685,-6.503059)">
+     transform="translate(-0.67906685,2.3168351)">
     <path
        style="fill:none;stroke:#000000;stroke-width:0.74727309;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.74727307, 0.74727307;stroke-dashoffset:0;stroke-opacity:1"
        d="m 23.328611,30.518915 v 28.924968 l 28.884976,-0.09772"
@@ -348,7 +368,7 @@
            height="57.857143"
            x="440"
            y="322.51968" /></flowRegion><flowPara
-         id="flowPara7267"></flowPara></flowRoot>    <image
+         id="flowPara7267" /></flowRoot>    <image
        y="17.627497"
        x="66.100082"
        id="image7258"
@@ -373,15 +393,15 @@
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="12.195538"
-       y="11.863627"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;opacity:1;"
+       x="13.799154"
+       y="10.260011"
        id="text8404"><tspan
          sodipodi:role="line"
          id="tspan8402"
-         x="12.195538"
-         y="11.863627"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">Hallovi sondi</tspan></text>
+         x="13.799154"
+         y="10.260011"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332;fill-opacity:1;fill:#000000;">Hallovi sondi</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.39023942;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart-8)"
        d="M 72.018029,67.932256 61.521041,61.166553"
