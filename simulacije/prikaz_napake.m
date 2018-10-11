@@ -13,8 +13,7 @@ load Rezultati_meritve.mat
 %  meritev = 'meritev_xs';
 %  eks = 0.0;
 
-filename= ...
-    ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
+filename= [pwd, '\Slike\', ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
 
 eval(strcat('podatki=',meritev,';'))

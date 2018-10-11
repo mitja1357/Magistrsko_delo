@@ -6,13 +6,12 @@
 % 2018.07.02 dodal da se mi shrani v mapo na racunalniku
 % 2018.07.18 poravil da sharnim ?e želim, pri meritvah ni y skale pri amp
 % in off
+% 2018.10.11 popravil directorij kam se shranjujejo slike
 function potek_sincos(meritev,shrani)
 
 load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
-
-filename= ...
-    ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
+filename= [pwd, '\Slike\', ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
 eval(strcat('podatki=',meritev,';'))
 tx = ['\Delta ',meritev(end-1),'_',meritev(end)];

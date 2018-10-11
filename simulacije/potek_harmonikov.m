@@ -4,14 +4,14 @@
 % meritev to zelimo
 %
 % 2018.07.02 dodal da se mi shrani v mapo na racunalniku
+% 2018.10.11 popravil directorij kam se shranjujejo slike
 function potek_harmonikov(meritev)
 load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
 
 % meritev = 'lin_ys';
 
-filename= ...
-    ['C:\Users\mitja\Documents\Magistrsko_delo\Diploma_Latex_v2\Slike\', ...
+filename= [pwd, '\Slike\', ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
 
 eval(strcat('podatki=',meritev,';'))
