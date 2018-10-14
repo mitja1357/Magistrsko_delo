@@ -1,58 +1,24 @@
 \select@language {slovene}
 \contentsline {chapter}{\numberline {1}Uvod}{5}{chapter.1}
 \contentsline {chapter}{\numberline {2}Senzor RM44}{7}{chapter.2}
-\contentsline {chapter}{\numberline {3}Izpeljava gibanja sonde relativno na magnet ob nepravilni monta\IeC {\v z}i}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Definicija koordinatnih sistemov}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Izpeljava gibanja polo\IeC {\v z}aja Hallove sonde na magnet pri dinami\IeC {\v c}ni ekscentri\IeC {\v c}nosti}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}Izpeljava gibanja lokacije Hall-ove sonde na magnet pri stati\IeC {\v c}ni ekscentri\IeC {\v c}nosti}{14}{section.3.3}
-\contentsline {section}{\numberline {3.4}Kon\IeC {\v c}na ena\IeC {\v c}ba za dolo\IeC {\v c}anje lokacije Hall-ove sonde}{15}{section.3.4}
-\contentsline {chapter}{\numberline {4}Izpeljava poteka polja $B_z(\theta )$ in ocena napake zaradi ekscentri\IeC {\v c}nosti}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Definicija gostote magnetnega polja $B_z$}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Postavitev Hallovih sond in pomerjeno polje v odvistnosti od ekscentri\IeC {\v c}nosti}{18}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Sprememba magnetnega polja zaradi ekscentri\IeC {\v c}nosti}{19}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Premik senzorja v z smeri}{20}{section.4.3}
-\contentsline {chapter}{\numberline {5}Potek napake funkcije atan2 ob popa\IeC {\v c}enju vhodnih signalov}{21}{chapter.5}
-\contentsline {section}{\numberline {5.1}Razli\IeC {\v c}ne amplitude}{21}{section.5.1}
-\contentsline {section}{\numberline {5.2}Razli\IeC {\v c}ne enosmerne komponente}{23}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Enosmerna komponenta le v signalu $sin$}{24}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Enosmerna komponenta signala $cos$}{26}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Enosmerna komponenta pri obeh signalih}{27}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Neorotogonalnost signalov}{28}{section.5.3}
-\contentsline {section}{\numberline {5.4}Potek napake pri stati\IeC {\v c}ni ekscentri\IeC {\v c}nosti v smeri x}{31}{section.5.4}
-\contentsline {section}{\numberline {5.5}Potek napake pri stati\IeC {\v c}ni ekscentri\IeC {\v c}nosti v smeri y}{31}{section.5.5}
-\contentsline {section}{\numberline {5.6}Potek napake pri dinami\IeC {\v c}ni ekscentri\IeC {\v c}nosti v smeri x}{32}{section.5.6}
-\contentsline {chapter}{\numberline {6}Linearni model}{33}{chapter.6}
-\contentsline {section}{\numberline {6.1}Brez ekscentri\IeC {\v c}nosti}{33}{section.6.1}
-\contentsline {section}{\numberline {6.2}Simulacija stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x-osi}{33}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Sprememba $sin$, $cos$ ter napake v odvisnosti od $\Delta x_s$}{35}{subsection.6.2.1}
-\contentsline {section}{\numberline {6.3}Simulacija stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri y-osi}{39}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Sprememba $sin$, $cos$ ter napake od $\Delta y_s$}{41}{subsection.6.3.1}
-\contentsline {section}{\numberline {6.4}Dinami\IeC {\v c}na ekscentri\IeC {\v c}nost v smeri x osi}{44}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Sprememba $sin$, $cos$ ter napake od $\Delta x_d$}{46}{subsection.6.4.1}
-\contentsline {chapter}{\numberline {7}Realni model magnetnega polja}{49}{chapter.7}
-\contentsline {section}{\numberline {7.1}Brez napake}{50}{section.7.1}
-\contentsline {section}{\numberline {7.2}Simulacija stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x-osi}{51}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Sprememba $sin$, $cos$ ter napake od $\Delta x_s$}{54}{subsection.7.2.1}
-\contentsline {section}{\numberline {7.3}Simulacija stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri y-osi}{57}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Sprememba $sin$, $cos$ ter napake od $\Delta y_s$}{59}{subsection.7.3.1}
-\contentsline {section}{\numberline {7.4}Dinami\IeC {\v c}na ekscentri\IeC {\v c}nost v smeri x}{61}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Sprememba $sin$, $cos$ ter napake od $\Delta x_d$}{64}{subsection.7.4.1}
-\contentsline {section}{\numberline {7.5}Dinami\IeC {\v c}na ekscentri\IeC {\v c}nost v smeri y}{66}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Sprememba $sin$, $cos$ ter napake od $\Delta y_d$}{68}{subsection.7.5.1}
-\contentsline {chapter}{\numberline {8}Meritve}{73}{chapter.8}
-\contentsline {section}{\numberline {8.1}Oprema in postavitev merilnega mesta}{73}{section.8.1}
-\contentsline {section}{\numberline {8.2}Zajem podatkov}{77}{section.8.2}
-\contentsline {section}{\numberline {8.3}Senzor v izhodi\IeC {\v s}\IeC {\v c}ni legi}{79}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Meritve v izhodi\IeC {\v s}ni legi}{80}{subsection.8.3.1}
-\contentsline {section}{\numberline {8.4}Meritve stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x-osi}{83}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}Sprememba $sin$, $cos$ ter napake od $\Delta x_s$}{84}{subsection.8.4.1}
-\contentsline {section}{\numberline {8.5}Meritve stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri y-osi}{87}{section.8.5}
-\contentsline {subsection}{\numberline {8.5.1}Sprememba $sin$, $cos$ ter napake od $\Delta y_s$}{89}{subsection.8.5.1}
-\contentsline {section}{\numberline {8.6}Meritve dinami\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x-osi}{92}{section.8.6}
-\contentsline {subsection}{\numberline {8.6.1}Sprememba $sin$, $cos$ ter napake od $\Delta x_d$}{94}{subsection.8.6.1}
-\contentsline {chapter}{\numberline {9}Sklep}{99}{chapter.9}
-\contentsline {section}{\numberline {9.1}Merjenje kota in vpliv na napako}{99}{section.9.1}
-\contentsline {section}{\numberline {9.2}Nepravilna monta\IeC {\v z}a}{99}{section.9.2}
-\contentsline {section}{\numberline {9.3}Oblika napake}{100}{section.9.3}
-\contentsline {section}{\numberline {9.4}Izvedba meritev}{100}{section.9.4}
-\contentsline {section}{\numberline {9.5}Komentar rezultatov}{100}{section.9.5}
+\contentsline {chapter}{\numberline {3}Izpeljava gibanja sonde relativno na magnet ob nepravilni monta\IeC {\v z}i}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Definicija koordinatnega sistema}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Izpeljava gibanja lokacije Hallove sonde na magnet pri dinami\IeC {\v c}ni ekscentri\IeC {\v c}nosti}{15}{section.3.2}
+\contentsline {section}{\numberline {3.3}Izpeljava gibanja lokacije Hall-ove sonde na magnet pri stati\IeC {\v c}ni ekscentri\IeC {\v c}nosti}{16}{section.3.3}
+\contentsline {section}{\numberline {3.4}Kon\IeC {\v c}na ena\IeC {\v c}ba za dolo\IeC {\v c}anje lokacije Hall-ove sonde}{17}{section.3.4}
+\contentsline {chapter}{\numberline {4}Potek napake funkcije atan2 ob popa\IeC {\v c}enju vhodnih signalov}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Razli\IeC {\v c}ne amplitude}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Razli\IeC {\v c}ne enosmerne komponente}{22}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Enosmerna komponenta v signalu $B_{sin}$}{22}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Enosmerna komponenta signala $B_{cos}$}{23}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Enosmerna komponenta pri obeh signalih}{26}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Neorotogonalnost signalov}{28}{section.4.3}
+\contentsline {section}{\numberline {4.4}Napaka zaradi spremembe amplitude in faze zaradi enega parametra}{29}{section.4.4}
+\contentsline {chapter}{\numberline {5}Linearni model}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Brez ekscentri\IeC {\v c}nosti}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}Simulacija stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x-osi}{31}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Sprememba $sin$, $cos$ ter napake v odvisnosti od $\Delta x_s$}{33}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Simulacija stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri y-osi}{37}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Sprememba $sin$, $cos$ ter napake od $\Delta y_s$}{39}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Dinami\IeC {\v c}na ekscentri\IeC {\v c}nost v smeri x osi}{42}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Sprememba $sin$, $cos$ ter napake od $\Delta x_d$}{44}{subsection.5.4.1}

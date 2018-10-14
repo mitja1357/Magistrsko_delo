@@ -1,3 +1,4 @@
+close all
 load('X_tmp.mat');
 load('Y_tmp.mat');
 load('Zmesh.mat');
@@ -43,27 +44,32 @@ t =  linspace(-130,-50,1000000);
 
 %%
 h = figure('Color',[1 1 1],'Position',[50,100,800,4000]);
-
-
-filename = 'polje_z_ravnino.gif';
+barva = linspace(0,1,128);
+cmap = [0.9*[barva(:),barva(:),barva(:)];[zeros(128,1),zeros(128,1),zeros(128,1)+barva(:)]];
+colormap(cmap)
+filename = 'polje_brez_ravnino.gif';
 clf
 % Create axes
 axes1 = axes('Visible','off','Parent',h);
 view(axes1,[80 8]);
 hold(axes1,'all');
 
+barvapolje = 1+127*(Zn-min(Zn(:)))/(max(Zn(:))-min(Zn(:)));
+
 % Create polje
-surf(Xn,Yn,Zn,'Parent',axes1,'FaceColor',[0 0 1],...
-    'FaceAlpha',0.8);
+surf(Xn,Yn,Zn,'Parent',axes1,'cdata',...
+    round(barvapolje),'cdatamapping','direct');
+
 surf(Xc,Yc,4*Zc-50-4,'FaceColor',...
      [0.5686274766922 0.521568655967712 0.458823531866074],'EdgeColor','none');
 % Create ravnina
 if ravnina
-    surf(Y,X,Zravn,'Parent',axes1,'FaceColor',[1 0 0],...
-        'FaceAlpha',0.5,...
-        'EdgeColor','none');
+    filename = 'polje_z_ravnino.gif';
+    barvapolje_rav = 160+127*(Zravn-min(Zravn(:)))/(max(Zravn(:))-min(Zravn(:)));
+    surf(Y,X,Zravn,'Parent',axes1,'cdata',...
+    round(barvapolje_rav),'cdatamapping','direct');
 end
-
+%%
 theta = linspace(0, 2*pi, 100);
 
 text(0,2,-49,'S','FontSize',8);
@@ -93,24 +99,25 @@ plot3(xr,yr,-50+0.*t,'LineWidth',1,'Color',[0 0 0]);
 view([75*cosd(-35),75*sind(-35),15])
 axis vis3d
 %% gif
+if gif
+    for i = 0:360
 
-for i = 1:360
-    
-    set(h, 'Position',[50,100,800,4000])
-    view([75*cosd(i),75*sind(i),20])
-    
-% Capture the plot as an image 
-    
-    frame = getframe(h); 
-    im = frame2im(frame); 
-    [imind,cm] = rgb2ind(im,65536); 
-     % this ensures that getframe() returns a consistent size
-    if gif
-    %Write to the GIF File 
-        if i == 1
-            imwrite(imind,cm,filename,'gif', 'Loopcount',inf);
-        else
-            imwrite(imind,cm,filename,'gif','WriteMode','append');
-        end 
+        set(h, 'Position',[50,100,800,4000])
+        view([75*cosd(i),75*sind(i),20])
+        pause(0.1)
+
+    % Capture the plot as an image 
+
+        frame = getframe(h); 
+        im = frame2im(frame); 
+        [imind,cm] = rgb2ind(im,65536); 
+         % this ensures that getframe() returns a consistent size
+
+        %Write to the GIF File 
+            if i == 0
+                imwrite(imind,cm,filename,'gif', 'Loopcount',inf);
+            else
+                imwrite(imind,cm,filename,'gif','WriteMode','append');
+            end 
     end
 end
