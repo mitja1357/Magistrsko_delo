@@ -10,8 +10,10 @@ load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
 
 % meritev = 'lin_ys';
+pathfolder = pwd;
 
-filename= [pwd, '\Slike\', ...
+filename= [pathfolder(1:end-10), ...
+    'Diploma_Latex_v2\Slike\', ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
 
 eval(strcat('podatki=',meritev,';'))

@@ -1,9 +1,39 @@
 \chapter{Linearni model}
-V tem poglavju so prikazani rezultati simulacij z aproksimiranim poljem (\ref{equ:lin_polje}). 
+
+Prve simulacije in predvideni poteki napake so bili opravljeni na Z-komponenti gostote magnetnega pretoka aprokimiranega z ravnino (\ref{equ:lin_polje}).
 \begin{equation}
 \label{equ:lin_polje}
 B(x,y)= x
 \end{equation}
+Simulacijski model sestavljati dve Hallovi sondi postavljeni na krožnico z radijem $r_0$ in sta prostorsko zamaknjeni za $90^\circ$ (slika \ref{lin_simul}). Lokacija predstavlja začetno lego Hallovih sond. 
+Ob zasuku magneta, se sondi relativno gibljeti na magnet v nasprotni smeri kot se vrti magnet. 
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}
+	\magnet {0} {0} {0}{ }{1};
+	\hall {1}{0} {0};
+	\hall {0}{1} {0};
+	\draw [dotted](0,1)--(0,0)--(1,0);
+	\draw [decorate,decoration={brace,amplitude=5pt},xshift= 0pt,yshift=0pt]
+	(-0.25,0) -- (-0.25,1) node [black,midway,xshift= -0.4cm] 
+	{\footnotesize $r_0$};
+		\draw [decorate,decoration={brace,amplitude=5pt,mirror},xshift= 0pt,yshift=0pt]
+	(0,-0.25) -- (1,-0.25) node [black,midway,yshift= -0.4cm] 
+	{\footnotesize $r_0$};
+	\draw[<-](1.2,0.3)--(2.1,1)node[anchor = west]{$H_1(r_0,0)$};
+	\draw[<-](-0.25,1.1)--(-1,2.2)node[anchor = south]{$H_2(0,r_0)$};
+	\end{tikzpicture}
+	\caption{Shema simulacijskega modela}
+	\label{lin_simul}
+\end{figure}
+
+Z upoštevanjem vplivov ekscentričnosti iz izraza (\ref{equ:rotacija_hall_koncna}) in enačbe polja se lahko izrazi potek polja, ki ga meriti sondi ob vrtenju. Sonda $H_1$ brez upoštevanja ekscentričnosti zajame signal kosinusne oblike, zato je signal v nadaljevanju poimenovan $B_{cos}$. Sonda $H_2$ brez upoštevanja ekscentričnosti zajame signal sinusne oblike, zato je signal v nadaljevanju poimenovan $B_{sin}$.
+\begin{eqnarray}
+B_{H_1}= B_{cos}= r_0 \cos \theta + \Delta x_s \cos \theta+ \Delta y_s \sin \theta -\Delta x_d\\
+B_{H_2}= B_{sin}= r_0 \sin \theta + \Delta x_s \cos \theta+ \Delta y_s \sin \theta -\Delta x_d
+\end{eqnarray}
+
+
 Prikazan je potek napake pri različnih izmikih, ter potek amplitud posameznih haarmonikov napake v odvisnosti od ekscentričnosti.
 Hall-ovi sondi sta postavljeni na krožnico z radijem 2,4 mm \cite{AM8192}.
 \section{Brez ekscentričnosti}

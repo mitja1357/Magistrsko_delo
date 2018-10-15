@@ -11,7 +11,10 @@ function potek_sincos(meritev,shrani)
 
 load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
-filename= [pwd, '\Slike\', ...
+pathfolder = pwd;
+
+filename= [pathfolder(1:end-10), ...
+    'Diploma_Latex_v2\Slike\', ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
 eval(strcat('podatki=',meritev,';'))
 tx = ['\Delta ',meritev(end-1),'_',meritev(end)];
@@ -55,15 +58,17 @@ else
     axis( [0,0.5,mini,maxi]);
 
 end
-legend('sin','cos','Location','northeast')
+legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
-if ~strfind(meritev,'mer')
-ylabel('B / mT')
+
+
+if isempty(strfind(meritev,'mer'))
+    ylabel('B / mT')
 end
 if exist('shrani')
     if shrani
-        saveas(gcf,[filename, 'sincos_phase'],'epsc')
+        saveas(gcf,[filename, 'sincos_off'],'epsc')
     end
 end
 
@@ -84,15 +89,15 @@ else
     axis( [0,0.5,mini,maxi]);
 end
 
-legend('sin','cos','Location','northeast')
+legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
-if ~strfind(meritev,'mer')
-ylabel('B / mT')
+if isempty(strfind(meritev,'mer'))
+    ylabel('B / mT')
 end
 if exist('shrani')
     if shrani
-        saveas(gcf,[filename, 'sincos_phase'],'epsc')
+        saveas(gcf,[filename, 'sincos_amp'],'epsc')
     end
 end
 
@@ -105,7 +110,7 @@ axes1 = axes('Parent',gcf,...
         'FontSize',16,...
         'FontName','Times New Roman');
 plot(x,y1stPh,'LineWidth',2);
-if (max(y1stPh(:))-min(y1stPh(:)))<1e-14;
+if (max(y1stPh(:))-min(y1stPh(:)))<1e-10;
     axis( [0,0.5,-0.5+mean(y1stPh(:)),0.5+mean(y1stPh(:))])
 else
     maxi = max(y1stPh(:))+0.05.*abs(max(y1stPh(:))-min(y1stPh(:)));
@@ -113,13 +118,13 @@ else
     axis( [0,0.5,mini,maxi]);
 
 end
-legend('sin','cos','Location','northeast')
+legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
 ylabel('fazni zamik / ^\circ')
 if exist('shrani')
     if shrani
-        saveas(gcf,[filename, 'sincos_2nd'],'epsc')
+        saveas(gcf,[filename, 'sincos_phase'],'epsc')
     end
 end
 
@@ -142,15 +147,16 @@ else
     axis( [0,0.5,mini,maxi]);
 
 end
-legend('sin','cos','Location','northeast')
+legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
 xlabel([tx ' / mm'])
-if ~strfind(meritev,'mer')
+
+if isempty(strfind(meritev,'mer'))
     ylabel('B / mT')
 end
 if exist('shrani')
     if shrani
-        saveas(gcf,[filename, 'sincos_phase'],'epsc')
+        saveas(gcf,[filename, 'sincos_2nd'],'epsc')
     end
 end
 

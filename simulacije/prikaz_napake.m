@@ -12,8 +12,10 @@ load Rezultati_meritve.mat
 
 %  meritev = 'meritev_xs';
 %  eks = 0.0;
+pathfolder = pwd;
 
-filename= [pwd, '\Slike\', ...
+filename= [pathfolder(1:end-10), ...
+    'Diploma_Latex_v2\Slike\', ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
 
 eval(strcat('podatki=',meritev,';'))
@@ -45,11 +47,13 @@ axes1 = axes('Parent',gcf,...
         'FontSize',16,...
         'FontName','Times New Roman');
 plot(Ref, Sin, Ref, Cos, 'LineWidth',2);
-legend('sin','cos','Location','northwest')
+legend('B_{sin}','B_{cos}','Location','northwest')
 axis( [0,360,-Inf,Inf])
 grid on
 xlabel(' \theta / ^\circ')
-
+if isempty(strfind(meritev,'mer'))
+    ylabel('B / mT')
+end
 if exist('shrani')
     if shrani
         saveas(gcf,[filename, 'sincos'],'epsc')
