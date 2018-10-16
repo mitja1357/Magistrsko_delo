@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{AM8192}
-{RLS~Merilna~tehnika~d.o.o.}, ``Am256 – angular magnetic encoder ic.''
-  Dosegljivo:
-  \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom%2Fupload%2FAM256D01_13_bookmark.pdf}.
-
 \bibitem{uporabaSenzorjev}
 J.~Gachter, M.~Hirz  in R.~Seebacher, ``Impact of rotor position sensor errors
   on speed controlled permanent magnetized synchronous machines,'' v {\em IEEE
@@ -33,12 +28,29 @@ M.~Demierre, {\em Improvements of CMOS Hall Microsystems and Application for
 V.~Ambrožič in P.~Zajec, {\em Električni servo pogoni}.
 \newblock Slovensko Združenje elektroenergetikov CIGR\'{E}-CIRED.
 
+\bibitem{AM8192}
+{RLS~Merilna~tehnika~d.o.o.}, ``Am256 – angular magnetic encoder ic.''
+  Dosegljivo:
+  \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom%2Fupload%2FAM256D01_13_bookmark.pdf}.
+
 \bibitem{ICHaus_interpolate}
 {iC Haus}, ``High-precision sine/cosine interpolation / white paper.''
   Dosegljivo:
   \url{http://www.ichaus.de/upload/pdf/WP7en_High-Precision_Interpolation_140124.pdf}.
 
 \bibitem{atan2Matlab}
+MathWorks. Dosegljivo:
+  \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
+
+\bibitem{Ursic}
+L.~Uršič, ``Seminar: Analitičen pogled na statično in dinamično
+  ekscentričnost vr resolverja.'' ????
+
+\bibitem{Matematika1}
+G.~Dolinar, {\em Matematika 1}.
+\newblock Založba FE in FRI.
+
+\bibitem{atan2dMatlab}
 MathWorks. Dosegljivo:
   \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
 
@@ -55,24 +67,8 @@ Q.~Lin, T.~Li  in Z.~Zhou, ``Error analysis and compensation of the orthogonal
 D.~Hanselman, ``Resolver signal requirements for high accuracy
   resolver-to-digital conversion,'' {\em 37}.
 
-\bibitem{ursic}
-L.~Uršič, ``Seminar: Analitičen pogled na statično in dinamično
-  ekscentričnost vr resolverja.'' ????
-
-\bibitem{Matematika1}
-G.~Dolinar, {\em Matematika 1}.
-\newblock Založba FE in FRI.
-
-\bibitem{atan2dMatlab}
-MathWorks. Dosegljivo:
-  \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
-
 \bibitem{cftool}
 MathWorks. Dosegljivo:
   \url{https://www.mathworks.com/products/curvefitting.html}.
-
-\bibitem{iCMHM}
-iCHaus, ``14-bit absolute angle hall encoder.'' Dosegljivo:
-  \url{http://www.ichaus.de/upload/pdf/MHM_datasheet_D2en.pdf}.
 
 \end{thebibliography}

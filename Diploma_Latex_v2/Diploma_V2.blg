@@ -2,9 +2,6 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: Diploma_V2.aux
 A level-1 auxiliary file: ./tex/Uvod.aux
 A level-1 auxiliary file: ./tex/Analiticna_izpeljava.aux
 A level-1 auxiliary file: ./tex/Linearni_model.aux
-A level-1 auxiliary file: ./tex/Realni_model.aux
-A level-1 auxiliary file: ./tex/Meritve.aux
-A level-1 auxiliary file: ./tex/Sklep.aux
 The style file: ieeetrslo.bst
 Database file #1: literatura.bib
 You're missing a field name---line 18 of file literatura.bib
@@ -102,13 +99,13 @@ Warning--empty year in RLS3
 Warning--empty year in Ambrozic
 Name 1 in "MathWorks," has a comma at the end for entry atan2Matlab
 while executing---line 963 of file ieeetrslo.bst
-Warning--empty year in osnova
-Warning--empty year in RLS1
-Warning--empty year in RLS2
-Warning--empty note in ursic
+Warning--empty note in Ursic
 Warning--empty year in Matematika1
 Name 1 in "MathWorks," has a comma at the end for entry atan2dMatlab
 while executing---line 963 of file ieeetrslo.bst
+Warning--empty year in osnova
+Warning--empty year in RLS1
+Warning--empty year in RLS2
 Name 1 in "MathWorks," has a comma at the end for entry cftool
 while executing---line 963 of file ieeetrslo.bst
 (There were 21 error messages)
