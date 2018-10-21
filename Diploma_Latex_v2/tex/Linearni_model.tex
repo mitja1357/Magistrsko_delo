@@ -157,7 +157,6 @@ Potek hitrejšega spreminjanja amplitude $B_{sin}$ je pričakovan. Enosmerna kom
 \slikaeps{Fazni zamik $B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri y glede na idealna signala $B_{sin}$ in $B_{cos}$}{./LIN/ys_sincos_phase}
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od statične ekscentričnosti v smeri y pri simulacijah z linearnim poljem}{./LIN/ys_potek}
 
-
 \begin{eqnarray}
 \label{nap_lin_ys}
 &C_0(\Delta y_s) =-3,35\cdot 10^{-1}\Delta y_s^{3}+2,48\Delta y_s^{2}-11,9\Delta y_s-1,22\cdot 10^{-5}\\                  
@@ -167,18 +166,24 @@ Potek hitrejšega spreminjanja amplitude $B_{sin}$ je pričakovan. Enosmerna kom
 &C_4(\Delta y_s) =-8,26\cdot 10^{-1}\Delta y_s^{3}+2,42\Delta y_s^{2}+6,13\cdot 10^{-3}\Delta y_s-0,00016            
 \end{eqnarray}
 
+Tu so priloženi tudi poteki izraza (\ref{vrsta:ys}), razviti v Taylorjevo vrsto okoli ničle do tretje potence. (\ref{vrsta:ys}) opisuje napako funkcije atan2d() v primeru vhodnih signalov, kakršna sta $B_{sin}$ in $B_{cos}$ s statično ekscentričnostjo v smeri y.
+\begin{eqnarray}
+&C_0(\Delta y_s) =-1,41\Delta y_s^{3}+6,37\Delta y_s^{2}-19,10\Delta y_s \\
+&C_1(\Delta y_s) = 0\\
+&C_2(\Delta y_s) =1,50\Delta y_s^{3}-9,00\Delta y_s^{2}+27,01\Delta y_s\\
+&C_3(\Delta y_s) = 0\\
+&C_4(\Delta y_s) =-4,24\Delta y_s^{3}+6,37\Delta y_s^{2}
+\end{eqnarray}
 \section{Dinamična ekscentričnost v smeri x osi}
-%
-Dinamična ekscentričnost pričakovano povzroči v $B_{sin}$ in $B_{cos}$ enosmerno komponento (Slika \ref{./LIN/xd_sincos}).
+Dinamična ekscentričnost v smeri x osi pričakovano povzroči v $B_{sin}$ in $B_{cos}$ enosmerno komponento (Slika \ref{./LIN/xd_sincos}).
 \slikaeps{$B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem pri 0,24 mm mm dinamične ekscentričnosti v smeri x}{./LIN/xd_sincos}
- Na sliki \ref{./LIN/xd_napaka} je vidna napaka v obliki prvega harmonika, kar je bilo pričakovati.
+ Na sliki \ref{./LIN/xd_napaka} je vidna napaka v obliki prvega harmonika, kar je bilo pričakovati (Poglavje \ref{2_offseta}).
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0,24 mm dinamične ekscentričnosti v smeri x}{./LIN/xd_napaka}
-Z razvojem napake v Fourierovo vrsto je nejizrazitejši prvi harmonik, enosmerna komponenta je nič (slika \ref{./LIN/xd_fft}).
+Z razvojem napake v Fourierovo vrsto je najizrazitejši prvi harmonik, enosmerna komponenta je nič (slika \ref{./LIN/xd_fft}).
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z linearnim poljem pri 0,24 mm dinamične ekscentričnosti v smeri  x}{./LIN/xd_fft}
 
-
 \newpage
-\subsection{Sprememba $B_{sin}$, $B_{cos}$ ter napake od $\Delta x_d$}
+\subsection{Sprememba signalov Hallovih sond ter napake v odvisnosti od dinamične ekscentričnosti v smeri x}
 Dinamična ekscentričnost vpliva na enosmerni komponenti $B_{sin}$ in $B_{cos}$ (slika \ref{./LIN/xd_sincos_off}).
 \slikaeps{Amplituda osnovnega harmonika  $B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem dinamične ekscentričnosti v smeri x}{./LIN/xd_sincos_amp}
 \slikaeps{Enosmerna komponenta $B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem dinamične ekscentričnosti v smeri x}{./LIN/xd_sincos_off}
@@ -186,50 +191,33 @@ Dinamična ekscentričnost vpliva na enosmerni komponenti $B_{sin}$ in $B_{cos}$
 Z aproksimacijo posameznega parametra $B_{sin}$ in $B_{cos}$ s kubičnim polinomom sta od dinamične ekscentričnosti odvisni le enosmerni komponenti.
 \begin{eqnarray}
 \label{analog_lin_xd}
-&A_{sin} = 2,4\\
+&A_{sin} = 1,5\\
 &Off_{sin} = -\Delta x_d \\
 &\delta_{sin} =0 \\
-&A_{cos} = 2,4\\
+&A_{cos} = 1,5\\
 &Off_{cos} = -\Delta x_d\\
 &\delta_{cos} = 0
 \end{eqnarray}
-Slika \ref{./LIN/xd_potek} prikazuje odvisnost amplitud napake od spreminjanja dinamične ekscentričnosti v smeri x. V napaki, se po pričakovanjih linearno povečuje prvi harmonik (\ref{vrsta_sincosoff}).
+Slika \ref{./LIN/xd_potek} prikazuje odvisnost amplitud napake od spreminjanja dinamične ekscentričnosti v smeri x. V napaki, se po pričakovanjih linearno povečuje prvi harmonik (\ref{vrsta_sincosoff}). Linearno se povečuje le do izmika $\Delta x_d = r_0 \frac{\sqrt{2}}{2}$. Poteki so bili opazovani le do 0,5 mm. V tem območju se ampolituda prvega harmonika zaradi enosmerne komponente v $B_{sin}$ in $B_{cos}$ spreminja linearno.
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od dinamične ekscentričnosti v smeri x pri simulacijah z linearnim poljem}{./LIN/xd_potek}
 Poteki opisani s kubičnimi polinomi.
 \begin{eqnarray}
 \label{nap_lin_xd}
-&C_0 =2,64\cdot 10^{-4}\Delta x_d^{3}+0,00125\Delta x_d^{2}+0,00291\Delta x_d+1,02\cdot 10^{-7} \\
-&C_1 =1,58\cdot 10^{-4}\Delta x_d^{3}+2,37\cdot 10^{-3}\Delta x_d^{2}+33,8\Delta x_d+2,28\cdot 10^{-7} \\     
-&C_2 =1,06\cdot 10^{-3}\Delta x_d^{3}+9,95\Delta x_d^{2}-1,95\cdot 10^{-3}\Delta x_d+7,96\cdot 10^{-7} \\             
-&C_3 =3,91\Delta x_d^{3}-1,41\cdot 10^{-3}\Delta x_d^{2}+9,91\cdot 10^{-4}\Delta x_d+1,06\cdot 10^{-5} \\               
-&C_4 =1,73\Delta x_d^{3}-5,52\cdot 10^{-1}\Delta x_d^{2}+6,15\cdot 10^{-2}\Delta x_d-1,36\cdot 10^{-3}            
+&C_0(\Delta x_d) =(-293\Delta x_d^{3}+253\Delta x_d^{2}-82\Delta x_d+3,64) \cdot 10^{-16}  \\
+&C_1(\Delta x_d) = 54,00\Delta x_d+(-281\Delta x_d^{3}+211\Delta x_d^{2}+5,56) \cdot 10^{-15} \\      
+&C_2(\Delta x_d) =25,5\Delta x_d^{2}+ (-822\Delta x_d^{3}+-127\Delta x_d+7,81)\cdot 10^{-16} \\      
+&C_3(\Delta x_d) =1,60\cdot 10\Delta x_d^{3}+2,09\cdot 10^{-14}\Delta x_d^{2}-1,12\cdot 10^{-15}\Delta x_d-3,04\cdot 10^{-16} \\       
+&C_4(\Delta x_d) =1,13\cdot 10\Delta x_d^{3}-3,61\Delta x_d^{2}+3,92\cdot 10^{-1}\Delta x_d-8,94\cdot 10^{-3}
 \end{eqnarray}
-Poteki (\ref{vrsta_xd}) razviti v Taylorjevo vrsto, so podali enake rezultate.
+Poteki napake so enaki kot v poglavju \ref{2_offseta}. Razlikuje se le v negativnem argumentu. Poteki so razviti v Taylorjevo vrsto. Četrti harmonik je enak nič, saj Taylorjeva vrsta do tretjega člena ne zajame četrte potence.
 \begin{eqnarray}
 &C_0 =0\\
-&C_1 =33,8\Delta x_d\\     
-&C_2 =9,95\Delta x_d^{2}\\             
-&C_3 =3,91\Delta x_d^{3}\\         
+&C_1 =-54,02\Delta x_d\\     
+&C_2 =25,46\Delta x_d^{2}\\             
+&C_3 =-16,01\Delta x_d^{3}\\         
 &C_4 =0            
 \end{eqnarray}
-Predstavljen je bil potek spreminjanja $B_{sin}$ in $B_{cos}$ in napake v odvistnosti od ekscentričnosti. Napaka zaradi dinamične ekscentričnosti je bila 0, zato rezultati tudi niso podani. Dinamična ekscentričnost v smeri y nima vpliva na enosmerno komponento, niti na osnovni harmonik $B_{sin}$ in $B_{cos}$.
-%Rezultati se lepo prilegajo, četrti harmonik razvit s Taylorjevo vrsto je nič, saj je šele člen s potenco 4 neničelen. Polinom četrtega reda lahko kljub temu aprosimiramo s kubičnim polinomom po metodi najmanjših kvadratov.
+\section{Dinamična ekscentričnost v smeri y in sprememba razdalje Hallovih sond od magneta }
+Dinamična ekscentričnost v smeri y ni povzročila nobene napake v kotu zasuka, saj ni vplivala na siganl, ki ga zajameti Hallovi sondi (\ref{equ:lin_potek_sin})\ref{equ:lin_potek_cos}).
 
-%Dinamična ekscentričnost v smeri y pri simulacijsah s linearnim poljem, ne povzroči napake, zato je ne morem opisati.
-
-%Pogledali smo si, kako se bodo obnašali signali $B_{sin}$, $B_{cos}$ in napaka glede na ekcentričnost senzorja ali magneta. Poteki so bili pričakovani, vendar semoramo zavedati, da je simulacijski model s linearizacijo polja zelo poenostavljen. V nadaljevanju pričakujem drugačno obnašanje potekov signalov $B_{sin}$ in $B_{cos}$, napaka se bo izražala enako le harmoniki bodo imeli manjšo amplitudo ob večjih ekscentričnostih.
-
-
-%
-%Dinamična ekscentričnost v smeri y, pri simulacijah z linearnim poljem ni izražala napake, saj se polje ob tej ekscentričnosti zaradi aproksimacije z ravnino, za Hall-ove sonde ni spremenilo.
-%
-%V tem poglavju sem predstavil numerične rezultate simulacij z magnetnim poljem aproksimiranega z ravnino. Rezultati so potrdili prevladujoče harmomnike, pojavljajo se tudi višji, kar sem upošteval pri napaki izrazeni z neskončno vrsto. V nadaljevanju pričakujem, z boljšim modelom magnetnega polja, manjše napake po amplitudi.
-%
-%
-%%H0	[1,10753993340810e-13;1,24706314026430e-12;-6,88797159092575e-12;1,01065478093830e-11]
-%%H1	[3,33808204809378e-14;33,7618618558909;2,34008673890266e-12;-2,18397874745013e-12]
-%%H2	[1,02998847934023e-14;-1,41595026512391e-13;9,94718394324374;-7,34898016894629e-14]
-%%H3	[3,30877367536122e-15;-2,68649378966597e-13;9,00568019414565e-13;3,90762289998666]
-%%
-%%\section{YD}
-%%ni nic ker ni odvisno od njega
+Gostota magnetnega pretoka z razdaljo od magneta upada, oblika Z komponente kljub temu ostaja enaka. Zajeto polje Hallovih sond, bo imelo le manjšo amplitudo. Z večjo oddaljenostjo se bo spremenila le amplituda zajetega signala, faza in enosmerna komponenta se ohraniti. Tudi vpliv ekscentričnosti se bo zmanjšal proprocionalno, kot se je zmanjšala amplituda. V funkcijo atan2(); imata vhodna signala manjši amplitudi, vendar se njuno razmerje ohrani in tako v izračunih v MATLABU ne vpliva na izhodni podatek o zasuku.
