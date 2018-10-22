@@ -13,7 +13,7 @@
 \BOOKMARK [2][-]{subsection.4.2.3}{Enosmerna komponenta pri obeh signalih}{section.4.2}% 13
 \BOOKMARK [1][-]{section.4.3}{Neorotogonalnost signalov}{chapter.4}% 14
 \BOOKMARK [1][-]{section.4.4}{Napaka zaradi spremembe amplitude in faze zaradi enega parametra}{chapter.4}% 15
-\BOOKMARK [0][-]{chapter.5}{Linearni model}{}% 16
+\BOOKMARK [0][-]{chapter.5}{Linearni model magnetnega polja}{}% 16
 \BOOKMARK [1][-]{section.5.1}{Brez ekscentricnosti}{chapter.5}% 17
 \BOOKMARK [1][-]{section.5.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.5}% 18
 \BOOKMARK [2][-]{subsection.5.2.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od staticne ekscentricnosti v smeri x}{section.5.2}% 19
@@ -25,10 +25,10 @@
 \BOOKMARK [0][-]{chapter.6}{Realni model magnetnega polja}{}% 25
 \BOOKMARK [1][-]{section.6.1}{Brez napake}{chapter.6}% 26
 \BOOKMARK [1][-]{section.6.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.6}% 27
-\BOOKMARK [2][-]{subsection.6.2.1}{Sprememba Bsin, Bcos ter napake od xs}{section.6.2}% 28
+\BOOKMARK [2][-]{subsection.6.2.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od staticne ekscentricnosti v smeri x}{section.6.2}% 28
 \BOOKMARK [1][-]{section.6.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.6}% 29
-\BOOKMARK [2][-]{subsection.6.3.1}{Sprememba Bsin, Bcos ter napake od ys}{section.6.3}% 30
+\BOOKMARK [2][-]{subsection.6.3.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od staticne ekscentricnosti v smeri y}{section.6.3}% 30
 \BOOKMARK [1][-]{section.6.4}{Dinamicna ekscentricnost v smeri x}{chapter.6}% 31
-\BOOKMARK [2][-]{subsection.6.4.1}{Sprememba Bsin, Bcos ter napake od xd}{section.6.4}% 32
+\BOOKMARK [2][-]{subsection.6.4.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od dinamicne ekscentricnosti v smeri x}{section.6.4}% 32
 \BOOKMARK [1][-]{section.6.5}{Dinamicna ekscentricnost v smeri y}{chapter.6}% 33
-\BOOKMARK [2][-]{subsection.6.5.1}{Sprememba Bsin, Bcos ter napake od yd}{section.6.5}% 34
+\BOOKMARK [2][-]{subsection.6.5.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od dinamicne ekscentricnosti v smeri y}{section.6.5}% 34
