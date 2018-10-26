@@ -91,22 +91,17 @@ Spreminjanje amplitude prvega harmonika, enosmerne kompoonente in faznega zamika
 \slikaeps{Amplituda osnovnega harmonika  $B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri x}{./LIN/xs_sincos_amp}
 \slikaeps{Enosmerna komponenta $B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri x}{./LIN/xs_sincos_off}
 \slikaeps{Fazni zamik $B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri x glede na idealna signala $B_{sin}$ in $B_{cos}$}{./LIN/xs_sincos_phase}
-
-
 \newpage
 Spremembi signalov $B_{sin}$ in $B_{cos}$ se odrazita tudi pri izračunu kota $\varphi$ in napake $\varepsilon$.
-Na sliki \ref{./LIN/xs_potek} je odvisnost amplitud posameznega harmonika od spreminjanja statične ekscentričnosti v smeri x. Poteke s slike \ref{./LIN/xs_potek} aproksimirajo polinomi (\label{nap_lin_xs}).
+Na sliki \ref{./LIN/xs_potek} je odvisnost amplitud posameznega harmonika od spreminjanja statične ekscentričnosti v smeri x. Poteke s slike \ref{./LIN/xs_potek} aproksimirajo polinomi (\ref{nap_lin_xs}).
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od statične ekscentričnosti v smeri x pri simulacijah z linearnim poljem}{./LIN/xs_potek}
-
-                             
-
 \begin{eqnarray}
 \label{nap_lin_xs}
-&C_0(\Delta x_s) =1,32\Delta x_s^{3}-6,33\Delta x_s^{2}+1,91\cdot 10\Delta x_s+1,09\cdot 10^{-4} \\                                    
-&C_1(\Delta x_s) =6,18\cdot 10^{-14}\Delta x_s^{3}-4,97\cdot 10^{-14}\Delta x_s^{2}+1,03\cdot 10^{-14}\Delta x_s+5,64\cdot 10^{-15} \\ 
-&C_2(\Delta x_s) =1,71\Delta x_s^{3}-9,04\Delta x_s^{2}+2,70\cdot 10\Delta x_s-5,20\cdot 10^{-5} \\                                    
-&C_3(\Delta x_s) =-2,07\cdot 10^{-14}\Delta x_s^{3}+2,00\cdot 10^{-14}\Delta x_s^{2}-3,76\cdot 10^{-15}\Delta x_s+4,81\cdot 10^{-16} \\
-&C_4(\Delta x_s) =-2,92\Delta x_s^{3}+5,96\Delta x_s^{2}+4,36\cdot 10^{-2}\Delta x_s-9,80\cdot 10^{-4} \\ 
+&C_0(\Delta x_s) =1,32\Delta x_s^{3}-6,33\Delta x_s^{2}+19,1\Delta x_s+1,09\cdot 10^{-4} \\                                    
+&C_1(\Delta x_s) =(6,18\Delta x_s^{3}-4,97\Delta x_s^{2}+1,03\Delta x_s)\cdot 10^{-14}+5,64\cdot 10^{-15} \\ 
+&C_2 (\Delta x_s)=1,71\Delta x_s^{3}-9,04\Delta x_s^{2}+27,0\Delta x_s-5,20\cdot 10^{-5} \\                                    
+&C_3(\Delta x_s) =(-20,7\Delta x_s^{3}+20,0\Delta x_s^{2}-3,76\Delta x_s)\cdot 10^{-15}+4,81\cdot 10^{-16} \\
+&C_4 (\Delta x_s)=-2,92\Delta x_s^{3}+5,96\Delta x_s^{2}+4,36\cdot 10^{-2}\Delta x_s-9,80\cdot 10^{-4} 
 \end{eqnarray}
 
 Za primerjavo, so dodane tudi enačbe potekov amplitud posameznega harmonika razvitega v Taylorjevo vrsto v okolici 0, katere sledijo iz (\ref{vrsta:xs}):
@@ -156,11 +151,11 @@ Potek hitrejšega spreminjanja amplitude $B_{sin}$ je pričakovan. Enosmerna kom
 
 \begin{eqnarray}
 \label{nap_lin_ys}
-&C_0(\Delta y_s) =-3,35\cdot 10^{-1}\Delta y_s^{3}+2,48\Delta y_s^{2}-11,9\Delta y_s-1,22\cdot 10^{-5}\\                  
-&C_1(\Delta y_s) =0,000109\Delta y_s^{3}-0,000869\Delta y_s^{2}+0,00434\Delta y_s+7,62\cdot 10^{-10} \\
-&C_2(\Delta y_s) =4,12\cdot 10^{-1}\Delta y_s^{3}-3,53\Delta y_s^{2}+1,69\cdot 10\Delta y_s-2,31\cdot 10^{-5} \\                   
-&C_3(\Delta y_s) =2,43\cdot 10^{-4}\Delta y_s^{3}-0,00130\Delta y_s^{2}+0,00420\Delta y_s+1,83\cdot 10^{-8} \\ 
-&C_4(\Delta y_s) =-8,26\cdot 10^{-1}\Delta y_s^{3}+2,42\Delta y_s^{2}+6,13\cdot 10^{-3}\Delta y_s-0,00016            
+&C_0(\Delta y_s) =-1,32\Delta y_s^{3}+6,33\Delta y_s^{2}-1,91\cdot 10\Delta y_s-1,09\cdot 10^{-4} \\                                   
+&C_1(\Delta y_s) =(4,36\Delta y_s^{3}-3,81\Delta y_s^{2}+1,04\Delta y_s+0,559)\cdot 10^{-14} \\ 
+&C_2 (\Delta y_s)=1,71\Delta y_s^{3}-9,04\Delta y_s^{2}+2,70\cdot 10\Delta y_s-5,20\cdot 10^{-5} \\                                    
+&C_3(\Delta y_s) =(-1,86\Delta y_s^{3}+1,60\Delta y_s^{2}-0,299\Delta y_s)\cdot 10^{-14}+4,59\cdot 10^{-16} \\
+&C_4(\Delta y_s) =-2,92\Delta y_s^{3}+5,96\Delta y_s^{2}+4,36\cdot 10^{-2}\Delta y_s-9,80\cdot 10^{-4}         
 \end{eqnarray}
 
 Tu so priloženi tudi poteki izraza (\ref{vrsta:ys}), razviti v Taylorjevo vrsto okoli ničle do tretje potence. (\ref{vrsta:ys}) opisuje napako funkcije atan2d() v primeru vhodnih signalov, kakršna sta $B_{sin}$ in $B_{cos}$ s statično ekscentričnostjo v smeri y.
@@ -195,6 +190,7 @@ Z aproksimacijo posameznega parametra $B_{sin}$ in $B_{cos}$ s kubičnim polinom
 &Off_{cos} = -\Delta x_d\\
 &\delta_{cos} = 0
 \end{eqnarray}
+\newpage
 Slika \ref{./LIN/xd_potek} prikazuje odvisnost amplitud napake od spreminjanja dinamične ekscentričnosti v smeri x. V napaki, se po pričakovanjih linearno povečuje prvi harmonik (\ref{vrsta_sincosoff}). Linearno se povečuje le do izmika $\Delta x_d = r_0 \frac{\sqrt{2}}{2}$. Poteki so bili opazovani le do 0,5 mm. V tem območju se ampolituda prvega harmonika zaradi enosmerne komponente v $B_{sin}$ in $B_{cos}$ spreminja linearno.
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od dinamične ekscentričnosti v smeri x pri simulacijah z linearnim poljem}{./LIN/xd_potek}
 Poteki opisani s kubičnimi polinomi.
@@ -203,18 +199,18 @@ Poteki opisani s kubičnimi polinomi.
 &C_0(\Delta x_d) =(-293\Delta x_d^{3}+253\Delta x_d^{2}-82\Delta x_d+3,64) \cdot 10^{-16}  \\
 &C_1(\Delta x_d) = 54,00\Delta x_d+(-281\Delta x_d^{3}+211\Delta x_d^{2}+5,56) \cdot 10^{-15} \\      
 &C_2(\Delta x_d) =25,5\Delta x_d^{2}+ (-822\Delta x_d^{3}+-127\Delta x_d+7,81)\cdot 10^{-16} \\      
-&C_3(\Delta x_d) =1,60\cdot 10\Delta x_d^{3}+2,09\cdot 10^{-14}\Delta x_d^{2}-1,12\cdot 10^{-15}\Delta x_d-3,04\cdot 10^{-16} \\       
-&C_4(\Delta x_d) =1,13\cdot 10\Delta x_d^{3}-3,61\Delta x_d^{2}+3,92\cdot 10^{-1}\Delta x_d-8,94\cdot 10^{-3}
+&C_3(\Delta x_d) =16,0\Delta x_d^{3}+ (209\Delta x_d^{2}-11,2\Delta x_d-3,04)\cdot 10^{-16} \\       
+&C_4(\Delta x_d) =11,3\Delta x_d^{3}-3,61\Delta x_d^{2}+3,92\cdot 10^{-1}\Delta x_d-8,94\cdot 10^{-3}
 \end{eqnarray}
 Poteki napake so enaki kot v poglavju \ref{2_offseta}. Razlikuje se le v negativnem argumentu. Poteki so razviti v Taylorjevo vrsto. Četrti harmonik je enak nič, saj Taylorjeva vrsta do tretjega člena ne zajame četrte potence.
 \begin{eqnarray}
 &C_0 =0\\
-&C_1 =-54,02\Delta x_d\\     
+&C_1 =54,02\Delta x_d\\     
 &C_2 =25,46\Delta x_d^{2}\\             
-&C_3 =-16,01\Delta x_d^{3}\\         
+&C_3 =16,01\Delta x_d^{3}\\         
 &C_4 =0            
 \end{eqnarray}
 \section{Dinamična ekscentričnost v smeri y in sprememba razdalje Hallovih sond od magneta }
-Dinamična ekscentričnost v smeri y ni povzročila nobene napake v kotu zasuka, saj ni vplivala na siganl, ki ga zajameti Hallovi sondi (\ref{equ:lin_potek_sin})\ref{equ:lin_potek_cos}).
+Dinamična ekscentričnost v smeri y ni povzročila nobene napake v kotu zasuka, saj ni vplivala na siganl, ki ga zajameti Hallovi sondi (\ref{equ:lin_potek_sin})(\ref{equ:lin_potek_cos}).
 
 Gostota magnetnega pretoka z razdaljo od magneta upada, oblika Z komponente kljub temu ostaja enaka. Zajeto polje Hallovih sond, bo imelo le manjšo amplitudo. Z večjo oddaljenostjo se bo spremenila le amplituda zajetega signala, faza in enosmerna komponenta se ohraniti. Tudi vpliv ekscentričnosti se bo zmanjšal proprocionalno, kot se je zmanjšala amplituda. V funkcijo atan2(); imata vhodna signala manjši amplitudi, vendar se njuno razmerje ohrani in tako v izračunih v MATLABU ne vpliva na izhodni podatek o zasuku.

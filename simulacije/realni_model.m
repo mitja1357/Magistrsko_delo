@@ -1,4 +1,4 @@
-% clear
+clear
 n = 8192;
 theta = linspace(0,360-360/(n),n);
 eks={'xs','ys','xd','yd'};
