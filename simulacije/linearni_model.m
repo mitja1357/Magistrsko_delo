@@ -20,6 +20,7 @@ for j=1:4
     for i=displace
         eval(strcat(ekcentric,'=i;'))
         Sin= r0*sind(theta)+xs.*cosd(theta)+ys.* sind(theta)-xd;
+
         Sin_all=[Sin_all;Sin];
         Cos= r0*cosd(theta)+xs.*cosd(theta)+ys.* sind(theta)-xd;
         Cos_all=[Cos_all;Cos];

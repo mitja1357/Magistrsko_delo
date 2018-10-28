@@ -7,7 +7,7 @@
 % 2018.07.02 dodal da se mi shrani v mapo na racunalniku
 function prikaz_napake(meritev, eks, shrani)
 %%
-load Rezultati_simulacij.mat
+load real_diferencialnesonde.mat
 load Rezultati_meritve.mat
 
 %  meritev = 'meritev_xs';

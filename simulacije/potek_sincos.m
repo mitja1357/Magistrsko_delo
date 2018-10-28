@@ -9,7 +9,7 @@
 % 2018.10.11 popravil directorij kam se shranjujejo slike
 function potek_sincos(meritev,shrani)
 
-load Rezultati_simulacij.mat
+load real_diferencialnesonde.mat
 load Rezultati_meritve.mat
 pathfolder = pwd;
 

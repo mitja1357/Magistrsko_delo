@@ -6,8 +6,9 @@
 % 2018.07.02 dodal da se mi shrani v mapo na racunalniku
 % 2018.10.11 popravil directorij kam se shranjujejo slike
 function potek_harmonikov(meritev)
-load Rezultati_simulacij.mat
+% load Rezultati_simulacij.mat
 load Rezultati_meritve.mat
+load real_diferencialnesonde.mat
 
 % meritev = 'lin_ys';
 pathfolder = pwd;

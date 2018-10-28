@@ -77,9 +77,9 @@ for i=1:4
             cos1=find(abs(Y_tmp-H1y)<1e-6);
             cos2=find(abs(X_tmp-H1x)<1e-6);
             Sin(k)=Zmesh(sin1,sin2)...
-                ;%-Zmesh(find(abs(Y_tmp-H2y2)<1e-6),find(abs(X_tmp-H2x2)<1e-6));      
+                -Zmesh(find(abs(Y_tmp-H2y2)<1e-6),find(abs(X_tmp-H2x2)<1e-6));      
             Cos(k)=Zmesh(cos1,cos2)...
-                ;%-Zmesh(find(abs(Y_tmp-H1y2)<1e-6),find(abs(X_tmp-H1x2)<1e-6));
+                -Zmesh(find(abs(Y_tmp-H1y2)<1e-6),find(abs(X_tmp-H1x2)<1e-6));
             array_pozicij(k,j,1,i) = sin1;
             array_pozicij(k,j,2,i) = sin2;
             array_pozicij(k,j,3,i) = cos1;

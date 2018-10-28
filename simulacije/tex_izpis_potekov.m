@@ -7,7 +7,7 @@
 %
 % 2018.07.02 dodal if stavek ki C0 popravi predznak
 function tex_izpis_potekov(meritev)
-load Rezultati_simulacij.mat
+load real_diferencialnesonde.mat
 load Rezultati_meritve.mat
 
 % meritev = 'lin_xd';

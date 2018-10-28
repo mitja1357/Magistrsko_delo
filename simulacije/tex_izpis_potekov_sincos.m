@@ -1,60 +1,83 @@
 function tex_izpis_potekov_sincos(meritev)
-load Rezultati_simulacij.mat
+load real_diferencialnesonde.mat
 load Rezultati_meritve.mat
+
+% meritev = 'real_xs';
 
 %%
 eval(strcat('podatki=',meritev,';'))
-tx = ['\Delta ',meritev(end-1),'_',meritev(end)];
-if strfind(meritev,'merit')
-    fftSin = createFit(podatki.ref, podatki.sin);
-    fftCos = createFit(podatki.ref, podatki.cos);
-else
-    fftSin = mojfft(podatki.sin);
-    fftCos = mojfft(podatki.cos);
-end
-yOff = [fftSin{1}(:,1).* cosd(fftSin{2}(:,1)), ...
-    fftCos{1}(:,1).* cosd(fftCos{2}(:,1))];
 
-y1st =[fftSin{1}(:,2), fftCos{1}(:,2)];
-y1stPh =[fftSin{2}(:,2)+90, fftCos{2}(:,2)];
+tx = ['\Delta ',meritev(end-1),'_',meritev(end)];
 
 x = podatki.displacement;
+if strfind(meritev,'merit')
+    fftS= createFit(podatki.ref, podatki.sin);
+    fftC= createFit(podatki.ref, podatki.cos);
+else
+    fftS= mojfft(podatki.sin);
+    fftC= mojfft(podatki.cos);
+end
+Array = [fftS{1}(:,1), fftS{1}(:,2), fftS{2}(:,2),...
+    fftC{1}(:,1), fftC{1}(:,2), fftC{2}(:,2)];
+imesprem = {'&Off_{sin} = ', '&A_{sin} = ','&\delta_{sin} = ',...
+    '&Off_{cos} = ', '&A_{cos} = ','&\delta_{cos} = '};
 
-
-fitSinOff=polyfit(x,yOff(:,1),3);
-fitCosOff=polyfit(x,yOff(:,2),3);
-
-fitSinAmp=polyfit(x,y1st(:,1),3);
-fitCosAmp=polyfit(x,y1st(:,2),3);
-
-fitSinF=polyfit(x,y1stPh(:,1),3);
-fitCosF=polyfit(x,y1stPh(:,2),3);
-
-vsi_koef= [fitSinAmp; fitSinOff; fitSinF; fitCosAmp; fitCosOff; fitCosF];
-
-potence = floor(log10(abs(vsi_koef)));
-pop_k = vsi_koef.*10.^-potence;
-imesprem = {'&A_{sin} = ', '&Off_{sin} = ','&\delta_{sin} = ', '&A_{cos} = ', '&Off_{cos} = ','&\delta_{cos} = '};
 for i = 1:6
-    test{i}= imesprem{i};
+    C0 = Array(:, i);
+    if i==1
+        C0 = C0.*cosd(fftS{1, 2}(:,1));
+    elseif i == 4
+        C0 = C0.*cosd(fftC{1, 2}(:,1));
+    end
+    fitC0=polyfit(x,C0,3);
+    potencaC0 = floor(log10(abs(fitC0)));
+    fitC0str = fitC0.*10.^-potencaC0;
+    
+    figure
+    plot(x, C0,x ,fitC0(1).*x.^3+fitC0(2).*x.^2+fitC0(3).*x+fitC0(4))
+    
+    mojstring = strcat(imesprem{i},' = ');
     for j = 1:4
-    test{i}= [test{i},num2str(pop_k(i,j),'%+.2f'),'\cdot 10^{',num2str(potence(i,j),'%1.0f'),'}',tx,'^',num2str(4-j)];
+
+% predznak
+        if j == 1
+            predznak = '%.2f';
+        else
+            predznak = '%+.2f';
+        end
+%stevilka
+        osnova = num2str(fitC0str(j),predznak);
+%potenca
+        if potencaC0(j) == 0
+            potenca = '';
+        elseif potencaC0(j) == 1
+            potenca = '\cdot 10';
+        else
+            potenca = ['\cdot 10^{',num2str(potencaC0(j),'%1.0f'),'}'];
+        end
+% clen
+        if j == 3
+           clen = tx;
+        elseif j== 4
+            clen = '';
+        else
+            clen = [tx ,'^{',num2str(4-j),'}'];
+        end
+        
+        
+        mojstring = [mojstring, osnova, potenca, clen ];
     end
-    test{i}= [test{i},'\\'];
-    test{i}(strfind(test{i},'.')) = ',';
-    test{i}(strfind(test{i},strcat(tx,'^0')):...
-        (strfind(test{i},strcat(tx,'^0'))+11)) = '            ';
-    if strfind(test{i},'\cdot 10^{0}')
-    test{i}(strfind(test{i},'\cdot 10^{0}'):...
-        (strfind(test{i},'\cdot 10^{0}')+11)) = '            ';
-    end
-    if strfind(test{i},'^{1}')
-    test{i}(strfind(test{i},'^{1}'):strfind(test{i},'^{1}')+3) = '    ';
-    end
+    mojstring = [mojstring, ' \\'];
+    
+    mojstring(strfind(mojstring,'.')) = ',';
+    test{i}=mojstring;
 end
 
-
-
-strvcat(test{1},test{2},test{3},test{4},test{5},test{6})
+tmp = strvcat(test{1},test{2},test{3},test{4},test{5}, test{6});
+eval(strcat(meritev,'=tmp'))
 %%
+clear lin_xs lin_xd lin_ys lin_yd real_xs real_xd real_ys real_yd ...
+    meritev_xs meritev_ys meritev_xd meritev_zs podatki ...
+    tx x fftp  i C0 fitC0 potencaC0 fitC0str mojstring j predznak osnova ...
+    potenca clen test tmp meritev
 end

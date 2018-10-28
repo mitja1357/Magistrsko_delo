@@ -64,7 +64,7 @@ Senzor in magnet se lahko gibljeta, najprimernejša, izhodiščna lega, ni defin
 S prilagajanjem vijakov HTIMS601, opazovanjem $B_{sin}$ in $B_{cos}$ ter napake je bil senzor nastavljen v lego, kjer je bila amplituda drugega harmonika napake najmanjša. Najprimernejšo lego sem iskal glede na vrednost amplitud in ortogonalnost  $B_{sin}$ in $B_{cos}$. Signala $B_{sin}$ in $B_{cos}$ morata ustrezati definicijskem območju zajema AD pretvornika.
 
 Na sliki \ref{./MER/00_sincos} sta prikazana $B_{sin}$ in $B_{cos}$. Enosmerni komponenti sta prisotni v obeh signalih, posledično se izrazi v napaki prvi harmonik (slika \ref{./MER/00_napaka}).
-V napaki se pojavi med $\mathrm{95^\circ}$ in $\mathrm{140^\circ}$ preskok napake. V signalih $B_{sin}$ in $B_{cos}$ se v tem območju pojavi fazni zamik, $B_{sin}$ pri $\mathrm{95^\circ}$ in nato $B_{cos}$ pri $\mathrm{160^\circ}$. Vzroka nisem raziskoval.
+V napaki se pojavi med $\mathrm{95^\circ}$ in $\mathrm{140^\circ}$ preskok napake. Vzroka nisem raziskoval.
 Z razvojem napake v Fourierovo vrsto (slika \ref{./MER/00_fft}) vidimo velikosti posameznih amplitud napake.
 Enosmerna komponenta je posledica sofaznih zamikov obeh signalov $B_{sin}$ in $B_{cos}$. 
 Prvi harmonik je posledica ensmermih komponent $B_{sin}$ in $B_{cos}$. Z matematično obdelavo siganlov $B_{sin}$ in $B_{cos}$ sem enosmerni komponenti odstranil,vendar se prvi harmonik napake še vedno izrazi. Prvi harmonik napake je odvisen tudi od drugega harmonika v signalih $B_{sin}$ in $B_{cos}$.
@@ -88,34 +88,36 @@ Srednja vrednost amplitude osnovnega harmonika $B_{cos}$ je $0,449$, standardna 
 \newpage
 \section{Meritve statične ekscentričnosti v smeri x-osi}
 Pri meritvi je pričakovati spremembo amplitud in faznih zamikov signalov $B_{sin}$ in $B_{cos}$. Na sliki \ref{./MER/xs_sincos} sta prikazana $B_{sin}$ in $B_{cos}$ pomerjena pri 0,20 mm statične ekscentričnosti v smeri x. Na signalih, med 95 in 175$^\circ$ se pojavijo nenavadni skoki.
-Izrazijo se tudi na napaki, ki je prikazana na sliki \ref{./MER/xs_napaka}. Med 95 in 175$^\circ$ se signala $B_{sin}$ in $B_{cos}$ hkrati fazno zamakneta. Vzrok tega pojava nisem raziskoval. Napaka razvita v Fourierovo vrsto prikaže pričakovano povišanje drugega harmonika. Povišala sta se tudi amplitudi tretjega in četrtega harmonika.
+Izrazijo se tudi na napaki, ki je prikazana na sliki \ref{./MER/xs_napaka}. Vzrok tega pojava nisem raziskoval. Napaka razvita v Fourierovo vrsto prikaže pričakovano povišanje drugega harmonika. Povišala sta se tudi amplitudi tretjega in četrtega harmonika.
 \slikaeps{Signala $B_{sin}$ in $B_{cos}$ merjena pri 0,2 mm statične ekscentičnosti v smeri x}{./MER/xs_sincos}
 \slikaeps{Napaka $\varepsilon$ merjena pri 0,2 mm statične ekscentičnosti v smeri x}{./MER/xs_napaka}
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto merjeno pri 0,2 mm statične ekscentičnosti v smeri x}{./MER/xs_fft}
 \newpage
 \subsection{Sprememba signalov Hallovih sond ter napake v odvisnosti od statične ekscentričnosti v smeri x}
-Iz simulacij se pričakuje hitrejše spreminjanje amplitude osnovnega harmonika $B_{cos}$ signala. Sprememba amplitud osnovnih harmonikov je prikazana na sliki \ref{./MER/xs_sincos_amp}. Amplituda signala $B_{cos}$ pada pričakovano, pada tudi ampituda signala $B_{sin}$. Signala nimata enake amplitude v izhodišču, kar je posledica neidealne izhodiščne lege. Potek enosmerne komponente je prikazan na sliki \ref{./MER/xs_sincos_off}. Komopnenta $B_{cos}$ signala pada kot je bilo predvideno v simulacijah. Fazni zamik signalov je prikazan na sliki \ref{./MER/xs_sincos_phase}. Pričakovano po simulacijah se fazna razlika med signaloma zmanjšuje. Rezultati simulacij so prikazovali konstanten fazni kot signala $B_{cos}$ in spreminjanje le faznega kota $B_{sin}$. Pri meritvah se je fazni kot $B_{cos}$ zmanjševal, fazni kot $B_{sin}$ naraščal. Razlika med njima je manjša, kot je bila posimulirana. Vsota faznih zamikov ostaja konstantna, zato se enosmerna komponenta v napaki ne spreminja.
+Iz simulacij se pričakuje hitrejše spreminjanje amplitude osnovnega harmonika $B_{cos}$ signala. Sprememba amplitud osnovnih harmonikov je prikazana na sliki \ref{./MER/xs_sincos_amp}. Amplituda signala $B_{cos}$ pada, pada tudi ampituda signala $B_{sin}$. Signala nimata enake amplitude v izhodišču, kar je posledica neidealne izhodiščne lege. Potek enosmerne komponente je prikazan na sliki \ref{./MER/xs_sincos_off}. Fazni zamik signalov je prikazan na sliki \ref{./MER/xs_sincos_phase}. Pričakovano po simulacijah se fazna razlika med signaloma zmanjšuje. Pri meritvah se je fazni kot $B_{cos}$ zmanjševal, fazni kot $B_{sin}$ naraščal. Razlika med njima je manjša, kot je bila posimulirana. Vsota faznih zamikov ostaja konstantna, zato se enosmerna komponenta v napaki ne spreminja.
 Poteki posameznih komponent signalov $B_{sin}$ in $B_{cos}$ so aproksimirani s kubičnimi polinomi.
+\begin{eqnarray}
+&\begin{split}
+Off_{sin}(\Delta x_s) =-3,88\cdot 10^{-2}\Delta x_s^{3}+2,37\cdot 10^{-2}\Delta x_s^{2}-2,25\cdot 10^{-3}\Delta x_s\\-9,53\cdot 10^{-4} \end{split}\\
+&\begin{split}A_{sin}(\Delta x_s) =-6,14\cdot 10^{-2}\Delta x_s^{3}-1,71\cdot 10^{-2}\Delta x_s^{2}-1,17\cdot 10^{-2}\Delta x_s\\+4,84\cdot 10^{-1} \end{split}\\  
+&\delta_{sin}(\Delta x_s) =5,32\Delta x_s^{3}-3,55\Delta x_s^{2}+3,49\Delta x_s-8,89\cdot 10 \\                                          
+&\begin{split}Off_{cos}(\Delta x_s) =2,21\cdot 10^{-2}\Delta x_s^{3}-1,91\cdot 10^{-2}\Delta x_s^{2}-3,91\cdot 10^{-3}\Delta x_s\\+6,48\cdot 10^{-3} \end{split}\\ 
+&\begin{split}A_{cos}(\Delta x_s) =7,46\cdot 10^{-3}\Delta x_s^{3}-1,85\cdot 10^{-1}\Delta x_s^{2}+1,01\cdot 10^{-2}\Delta x_s\\+4,88\cdot 10^{-1} \end{split}\\   
+&\delta_{cos}(\Delta x_s) =1,15\cdot 10\Delta x_s^{3}-1,06\cdot 10\Delta x_s^{2}-1,14\Delta x_s+1,19 
+\end{eqnarray}
 \slikaeps{Potek amplitude osnovnega harmonika $B_{sin}$ in $B_{cos}$ pri meritvah statične ekscentričnosti v smeri x}{./MER/xs_sincos_amp}
 \slikaeps{Potek enosmerne komponente $B_{sin}$ in $B_{cos}$ pri meritvah statične ekscentričnosti v smeri x}{./MER/xs_sincos_off}
 \slikaeps{Fazni zamik osnovnega harmonika  $B_{sin}$ in $B_{cos}$ pri meritvah statične ekscentričnosti v smeri x  glede na idealna signala $B_{sin}$ in $B_{cos}$}{./MER/xs_sincos_phase}
-\begin{eqnarray}
-&A_{sin} = -6,14\cdot 10^{-2}\Delta x_s^3-1,71\cdot 10^{-2}\Delta x_s^2-1,17\cdot 10^{-2}\Delta x_s+0,484\\  
-&Off_{sin} = -0,0388\Delta x_s^3+0,0237\Delta x_s^2-2,25\cdot 10^{-3}\Delta x_s-9,53\cdot 10^{-4}            \\
-&\delta_{sin} = 5,32 \Delta x_s^3-3,55\Delta x_s^2+3,49\Delta x_s+1,08           \\ 
-&A_{cos} = 7,46\cdot 10^{-3}\Delta x_s^3-0,185\Delta x_s^2+1,01\cdot 10^{-2}\Delta x_s+0,488\\  
-&Off_{cos} = 0,0221\Delta x_s^3-0,191\Delta x_s^2-3,91\cdot 10^{-3}\Delta x_s+6,48\cdot 10^{-3}            \\
-&\delta_{cos} = 11,5  \Delta x_s^3-10,6\Delta x_s^2-1,14\Delta x_s+1,19
-\end{eqnarray}
+
 
 Slika \ref{./MER/xs_potek} prikazuje poteke amplitud posameznih harmonikov napake v odvisnosti od statične ekscentričnosti v smeri x. Kvadratično narašča amplituda drugega harmonika, medtem ko so enosmerna komponenta in ostali harmoniki konstantni. Poteke se aproksimira s kubičnimi polinomi.
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ pri meritvah statične ekscentričnosti v smeri x}{./MER/xs_potek}
 \begin{eqnarray}
-&C_0 =2,42\Delta x_s^{3}-1,71\Delta x_s^{2}+2,40\cdot 10^{-1}\Delta x_s+1,15 \\              
-&C_1 =-3,01\Delta x_s^{3}+2,35\Delta x_s^{2}-6,35\cdot 10^{-1}\Delta x_s+1,21 \\             
-&C_2 =-1,11\Delta x_s^{3}+5,06\Delta x_s^{2}+9,95\cdot 10^{-1}\Delta x_s+1,18\cdot 10^{-1} \\
-&C_3 =-2,10\Delta x_s^{3}+1,61\Delta x_s^{2}-5,25\cdot 10^{-1}\Delta x_s+3,57\cdot 10^{-1} \\
-&C_4 =-3,24\Delta x_s^{3}+2,29\Delta x_s^{2}-4,73\cdot 10^{-1}\Delta x_s+4,17\cdot 10^{-1}
+&C_0(\Delta x_s) =2,42\Delta x_s^{3}-1,71\Delta x_s^{2}+2,40\cdot 10^{-1}\Delta x_s+1,15 \\              
+&C_1(\Delta x_s) =-3,01\Delta x_s^{3}+2,35\Delta x_s^{2}-6,35\cdot 10^{-1}\Delta x_s+1,21 \\             
+&C_2(\Delta x_s) =-1,11\Delta x_s^{3}+5,06\Delta x_s^{2}+9,95\cdot 10^{-1}\Delta x_s+1,18\cdot 10^{-1} \\
+&C_3(\Delta x_s) =-2,10\Delta x_s^{3}+1,61\Delta x_s^{2}-5,25\cdot 10^{-1}\Delta x_s+3,57\cdot 10^{-1} \\
+&C_4(\Delta x_s) =-3,24\Delta x_s^{3}+2,29\Delta x_s^{2}-4,73\cdot 10^{-1}\Delta x_s+4,17\cdot 10^{-1}
 \end{eqnarray}
 \section{Meritve statične ekscentričnosti v smeri y-osi}
 Slika \ref{./MER/ys_sincos} prikazuje zajeta signala $B_{sin}$ in $B_{cos}$ pri statični ekscentričnosti v smeri y. Amplituda $B_{sin}$ se je zmanjšala, kot je bilo pričakovati po rezultatih simulacij. Posledično se izrazi v napaki višji drugi harmonik (slika \ref{./MER/ys_napaka}). Z razvojem napake v Fourierovo vrsto se potrdi povišanje drugega harmonika.Enosmerna komponenta in prvi harmonik sta nekoliko nižja.
@@ -124,51 +126,52 @@ Slika \ref{./MER/ys_sincos} prikazuje zajeta signala $B_{sin}$ in $B_{cos}$ pri 
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto merjeno pri 0,2 mm statične ekscentičnosti v smeri y}{./MER/ys_fft}
 \newpage
 \subsection{Sprememba signalov Hallovih sond ter napake v odvisnosti od statične ekscentričnosti v smeri y}
-Slika \ref{./MER/ys_sincos_amp} prikazuje potek amplitud osnovnega hamonika napake v odvisnosti statične ekscentričnosti v smeri y. S potekov se opazi padanje amplitud. Razlika med signaloma linearno narašča. 
+Slika \ref{./MER/ys_sincos_amp} prikazuje potek amplitud osnovnega hamonika napake v odvisnosti statične ekscentričnosti v smeri y. S potekov se opazi padanje amplitud.
 Slika \ref{./MER/ys_sincos_off} prikazuje potek enosmernih komponent. Pri meritvi 0,15 mm se pojavi skok enosmernih komponent, vendar razlika ostaja enaka.
-Fazni kot se v pri manjših odmikih ne spreminja kot je bilo pričakovati po rezultatih simulacij. Pri večjih odmikih se sprememba faznih kotov izrazi kot se je pričakovalo. Fazna razlika se začne ob večjih izmikih manjšati.
+Pričakovana je bila manjša variacija faznega kota.
+\begin{eqnarray}
+&\begin{split}Off_{sin}(\Delta y_s) =4,69\cdot 10^{-2}\Delta y_s^{3}+1,32\cdot 10^{-2}\Delta y_s^{2}-2,29\cdot 10^{-2}\Delta y_s\\+7,08\cdot 10^{-4}\end{split} \\
+&\begin{split}A_{sin}(\Delta y_s) =1,73\Delta y_s^{3}-6,47\cdot 10^{-1}\Delta y_s^{2}-2,60\cdot 10^{-1}\Delta y_s\\+4,94\cdot 10^{-1} \end{split}\\               
+&\delta_{sin}(\Delta y_s) =3,37\cdot 10\Delta y_s^{3}-2,12\cdot 10\Delta y_s^{2}+3,81\Delta y_s-8,91\cdot 10 \\                         
+&\begin{split}Off_{cos}(\Delta y_s) =1,87\cdot 10^{-1}\Delta y_s^{3}-7,92\cdot 10^{-2}\Delta y_s^{2}-9,87\cdot 10^{-3}\Delta y_s\\+9,94\cdot 10^{-3} \end{split}\\
+&\begin{split}A_{cos}(\Delta y_s) =1,99\Delta y_s^{3}-9,29\cdot 10^{-1}\Delta y_s^{2}-7,82\cdot 10^{-2}\Delta y_s\\+4,91\cdot 10^{-1} \end{split}\\               
+&\delta_{cos}(\Delta y_s) =-1,76\cdot 10\Delta y_s^{3}-9,77\cdot 10^{-1}\Delta y_s^{2}+4,42\Delta y_s+3,59\cdot 10^{-1}
+\end{eqnarray}
 \slikaeps{Potek amplitude osnovnega harmonika $B_{sin}$ in $B_{cos}$ pri meritvah statične ekscentričnosti v smeri y}{./MER/ys_sincos_amp}
 \slikaeps{Potek enosmerne komponente $B_{sin}$ in $B_{cos}$ pri meritvah statične ekscentričnosti v smeri y}{./MER/ys_sincos_off}
 \slikaeps{Fazni zamik osnovnega harmonika  $B_{sin}$ in $B_{cos}$ pri meritvah statične ekscentričnosti v smeri y glede na izhodiščno lego}{./MER/ys_sincos_phase}
-\begin{eqnarray}
-&A_{sin} = 1,73 \Delta y_s^3-6,47\cdot 10^{-1}\Delta y_s^2-2,60\cdot 10^{-1}\Delta y_s+4,94\cdot 10^{-1}\\    
-&Off_{sin} = 0,0469\Delta y_s^3+0,0132\Delta y_s^2-0,0229\Delta y_s+7,08\cdot 10^{-4}\\ 
-&\delta_{sin} = 3,37\cdot 10 \Delta y_s^3-2,12\cdot 10^{1}\Delta y_s^2+3,81 \Delta y_s^1+8,82\cdot 10^{-1}\\ 
-&A_{cos} = +1,99 \Delta y_s^3-9,29\cdot 10^{-1}\Delta y_s^2-7,82\cdot 10^{-2}\Delta y_s+4,91\cdot 10^{-1}\\    
-&Off_{cos} = 0,187\Delta y_s^3-0,0792\Delta y_s^2-9,87\cdot 10^{-3}\Delta y_s+9,94\cdot 10^{-3}\\ 
-&\delta_{cos} = -1,76\cdot 10 \Delta y_s^3-9,77\cdot 10^{-1}\Delta y_s^2+4,42\Delta y_s+3,59\cdot 10^{-1}
-\end{eqnarray}
+
 
 Slika \ref{./MER/ys_potek} prikazuje poteke amplitude posameznih harmonikov napake. Kot je bilo pričakovano se spreminja le amplituda drugega harmonika. 
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ pri meritvah statične ekscentričnosti v smeri y}{./MER/ys_potek}
 \begin{eqnarray}
-&C_0 =-3,26\Delta y_s^{3}-3,10\Delta y_s^{2}+2,68\Delta y_s+6,00\cdot 10^{-1} \\                                      
-&C_1 =-2,38\Delta y_s^{3}+3,50\Delta y_s^{2}-1,54\Delta y_s+1,12 \\                                                   
-&C_2 =-4,15\Delta y_s^{3}-1,64\Delta y_s^{2}+8,22\Delta y_s+8,04\cdot 10^{-2} \\                                      
-&C_3 =2,30\Delta y_s^{3}-1,37\cdot 10^{-1}\Delta y_s^{2}-3,13\cdot 10^{-1}\Delta y_s+1,78\cdot 10^{-1} \\             
-&C_4 =7,11\cdot 10^{-1}\Delta y_s^{3}-7,96\cdot 10^{-2}\Delta y_s^{2}-3,14\cdot 10^{-1}\Delta y_s+3,21\cdot 10^{-1}
+&C_0(\Delta y_s) =-3,26\Delta y_s^{3}-3,10\Delta y_s^{2}+2,68\Delta y_s+6,00\cdot 10^{-1} \\                                      
+&C_1(\Delta y_s) =-2,38\Delta y_s^{3}+3,50\Delta y_s^{2}-1,54\Delta y_s+1,12 \\                                                   
+&C_2(\Delta y_s) =-4,15\Delta y_s^{3}-1,64\Delta y_s^{2}+8,22\Delta y_s+8,04\cdot 10^{-2} \\                                      
+&C_3(\Delta y_s) =2,30\Delta y_s^{3}-1,37\cdot 10^{-1}\Delta y_s^{2}-3,13\cdot 10^{-1}\Delta y_s+1,78\cdot 10^{-1} \\             
+&\begin{split}C_4(\Delta y_s) =7,11\cdot 10^{-1}\Delta y_s^{3}-7,96\cdot 10^{-2}\Delta y_s^{2}-3,14\cdot 10^{-1}\Delta y_s\\+3,21\cdot 10^{-1}\end{split}
 \end{eqnarray}
 \section{Meritve dinamične ekscentričnosti v smeri x-osi}
 
 Meritve dinamične ekscentričnosti so bile lahko pomerjene le v eni koordinatni osi. Os po kateri se na napravi spreminja ekscentričnost magneta je zasukana za 32,4$^\circ$ na abciso. Meritev zato ni bilo možno opraviti neposredno v eni koordinatni osi. Enačbe spodaj aproksimirajo poteke amplitude osnovnega harmonika, faze osnovnega harmonika in enosmerne komponete $B_{sin}$ in $B_{cos}$, ter poteke amplitud posameznega harmonika napke pri dinamični ekscentričnosti v smeri x in zarotiranem magnetu za 32,4$^\circ$ pri simulacijah z realnim magnetnim poljem. V enačbah je ekscentričnost označena z $\Delta x_{d}$, z zavedanjem, da je mišljen potek z zasukanim magnetom. 
 \begin{eqnarray}
-&A_{sin}(\Delta x_d) = -6,93            \Delta x_d^3-1,23 \Delta x_d^2-1,12 \Delta x_d+34,2               \\       
-&Off_{sin}(\Delta x_d) =  5,02            \Delta x_d^3-1,75 \Delta x_d^2-15,7    \Delta x_d+9,49\cdot 10^{-2}            \\    
-&\delta_{sin}(\Delta x_d) =  8,95            \Delta x_d^3-1,06 \Delta x_d^2+7,09\cdot 10^{-1}\Delta x_d-1,73\cdot 10^{-2}            \\
-&A_{cos}(\Delta x_d) = -6,93            \Delta x_d^3-1,23 \Delta x_d^2-1,12 \Delta x_d+34,2                \\       
-&Off_{cos}(\Delta x_d) =  5,02            \Delta x_d^3-1,75 \Delta x_d^2-15,7  \Delta x_d+9,49\cdot 10^{-2}            \\    
-&\delta_{cos}(\Delta x_d) =  8,95            \Delta x_d^3-1,06 \Delta x_d^2+7,09\cdot 10^{-1}\Delta x_d-1,73\cdot 10^{-2}  
+&Off_{sin}(\Delta x_d) = 0\Delta x_d^{3}+0\Delta x_d^{2}+0\Delta x_d+0 \\
+&A_{sin}(\Delta x_d) =-1,39\cdot 10\Delta x_d^{3}-2,47\Delta x_d^{2}-2,24\Delta x_d+6,83\cdot 10 \\                                      
+&\delta_{sin}(\Delta x_d) =8,95\Delta x_d^{3}-1,06\Delta x_d^{2}+7,09\cdot 10^{-1}\Delta x_d-9,00\cdot 10 \\                             
+&Off_{cos}(\Delta x_d) = 0\Delta x_d^{3}+0\Delta x_d^{2}+0\Delta x_d+0 \\
+&A_{cos}(\Delta x_d) =-1,39\cdot 10\Delta x_d^{3}-2,47\Delta x_d^{2}-2,24\Delta x_d+6,83\cdot 10 \\                                      
+&\delta_{cos}(\Delta x_d) =8,95\Delta x_d^{3}-1,06\Delta x_d^{2}+7,09\cdot 10^{-1}\Delta x_d-1,73\cdot 10^{-2} 
 \end{eqnarray}
 \begin{eqnarray}
-&C_0(\Delta x_d) =7,20\Delta x_d^{3}-1,74\Delta x_d^{2}+4,85\cdot 10^{-1}\Delta x_d-1,29\cdot 10^{-2} \\                      
-&C_1(\Delta x_d) =-1,69\cdot 10\Delta x_d^{3}+16,1\Delta x_d^{2}+38,1\Delta x_d-6,75\cdot 10^{-2} \\          
-&C_2(\Delta x_d) =-5,14\cdot 10^{-1}\Delta x_d^{3}+12,6\Delta x_d^{2}-0,230\Delta x_d+2,97\cdot 10^{-4} \\
-&C_3(\Delta x_d) =1,50\Delta x_d^{3}+6,27\Delta x_d^{2}+3,15\Delta x_d+1,10\cdot 10^{-1} \\                                   
-&C_4(\Delta x_d) =-7,12\Delta x_d^{3}+14,4\Delta x_d^{2}-3,73\Delta x_d+4,02\cdot 10^{-1}
+&C_0(\Delta x_d) =8,77\Delta x_d^{3}-9,23\cdot 10^{-1}\Delta x_d^{2}+6,83\cdot 10^{-1}\Delta x_d-1,59\cdot 10^{-2} \\                  
+&\begin{split}C_1(\Delta x_d) =2,73\cdot 10^{-14}\Delta x_d^{3}-2,75\cdot 10^{-14}\Delta x_d^{2}+7,03\cdot 10^{-15}\Delta x_d\\+5,79\cdot 10^{-15}\end{split} \\ 
+&\begin{split}C_2(\Delta x_d) =8,94\cdot 10^{-15}\Delta x_d^{3}-7,96\cdot 10^{-15}\Delta x_d^{2}+1,84\cdot 10^{-15}\Delta x_d\\+2,87\cdot 10^{-15}\end{split} \\ 
+&\begin{split}C_3(\Delta x_d) =-5,57\cdot 10^{-14}\Delta x_d^{3}+4,29\cdot 10^{-14}\Delta x_d^{2}-8,87\cdot 10^{-15}\Delta x_d\\+1,06\cdot 10^{-15}\end{split} \\
+&C_4(\Delta x_d) =-1,16\cdot 10\Delta x_d^{3}+1,13\cdot 10\Delta x_d^{2}-3,03\Delta x_d+3,99\cdot 10^{-1} 
 \end{eqnarray}
 Poteki so podobni simulacijam brez zasukanega magneta, amplitude napake so nižje.
 
-Pri dinamični ekscentričnosti v povzročeni smeri se signala $B_{sin}$ in $B_{cos}$ nista opazno spremenila (slika \ref{./MER/xd_sincos}). Sprememb ni niti na napaki (slika \ref{./MER/xd_napaka}). Spremembe niso opazne niti na  napaki razviti v Fourierovo vrsto (slika \ref{./MER/xd_fft}).
+Pri dinamični ekscentričnosti v povzročeni smeri se signala $B_{sin}$ in $B_{cos}$ nista opazno spremenila (slika \ref{./MER/xd_sincos}). Sprememb ni niti na napaki (slika \ref{./MER/xd_napaka}). Sprememba se opazi v  napaki razviti v Fourierovo vrsto (slika \ref{./MER/xd_fft}). Nekoliko se je povišala enosmerna komponenta.
 \slikaeps{Signala $B_{sin}$ in $B_{cos}$ merjena pri 0,19 mm dinamične ekscentičnosti v smeri x}{./MER/xd_sincos}
 \slikaeps{Napaka $\varepsilon$ merjena pri 0,19 mm dinamične ekscentičnosti v smeri x}{./MER/xd_napaka}
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto merjeno pri 0,19 mm dinamične ekscentičnosti v smeri x}{./MER/xd_fft}
@@ -181,20 +184,20 @@ Potek spreminjanja amplitude osnovnega harmonika $B_{sin}$ in $B_{cos}$ glede na
 
 Poteke prikazane na slikah \ref{./MER/xd_sincos_amp} \ref{./MER/xd_sincos_off} in \ref{./MER/xd_sincos_phase}, se lahko aproksimira s kubičnimi polinomi.
 \begin{eqnarray}
-&A_{sin}=-0,795\Delta x_d^3+0,405\Delta x_d^2-0,106\Delta x_d+0,468\\
-&Off_{sin}=(-3,42\Delta x_d^3+7,48\Delta x_d^2-5,61\Delta x_d-2,53) \cdot 10^{-3}\\
-&\delta_{sin}=17,6\Delta x_d^3-2,62\Delta x_d^2+1,18\Delta x_d+8,78\cdot10^{-1}\\
-&A_{cos}=-0,790\Delta x_d^3+0,400\Delta x_d^2-0,104\Delta x_d+0,470\\
-&Off_{cos}=(-1,5,8\Delta x_d^3+1,22\Delta x_d^2-1,63\Delta x_d+0,505) \cdot 10^{-3}\\
-&\delta_{cos}=25,8\Delta x_d^3-8,64\Delta x_d^2+2,01\Delta x_d+1,00
+&\begin{split}Off_{sin}(\Delta x_d) =-3,42\cdot 10^{-3}\Delta x_d^{3}+7,48\cdot 10^{-3}\Delta x_d^{2}-5,61\cdot 10^{-3}\Delta x_d\\-2,53\cdot 10^{-3} \end{split}\\
+&\begin{split}A_{sin}(\Delta x_d) =-7,95\cdot 10^{-1}\Delta x_d^{3}+4,05\cdot 10^{-1}\Delta x_d^{2}-1,06\cdot 10^{-1}\Delta x_d\\+4,68\cdot 10^{-1} \end{split} \\  
+&\delta_{sin}(\Delta x_d) =1,76\cdot 10\Delta x_d^{3}-2,62\Delta x_d^{2}+1,18\Delta x_d-8,91\cdot 10 \\                                  
+&\begin{split}Off_{cos}(\Delta x_d) =-1,58\cdot 10^{-2}\Delta x_d^{3}+1,22\cdot 10^{-2}\Delta x_d^{2}-1,63\cdot 10^{-2}\Delta x_d\\+5,05\cdot 10^{-3} \end{split}\\
+&\begin{split}A_{cos}(\Delta x_d) =-7,90\cdot 10^{-1}\Delta x_d^{3}+4,00\cdot 10^{-1}\Delta x_d^{2}-1,04\cdot 10^{-1}\Delta x_d\\+4,70\cdot 10^{-1} \end{split}\\  
+&\delta_{cos}(\Delta x_d) =2,58\cdot 10\Delta x_d^{3}-8,64\Delta x_d^{2}+2,01\Delta x_d+1,00
 \end{eqnarray}
 Iz potekov $B_{sin}$ in $B_{cos}$ signala je bila najbolj opazna sprememba faznega zamika obeh signalov. To se izrazi tudi v napaki izhodnega kota, ki pridobi enosmerno komponento. Ostali harmoniki napake so konstantni.
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ pri meritvah dinamične ekscentričnosti v smeri x}{./MER/xd_potek}
 \begin{eqnarray}
-&C_0 =2,03\cdot 10\Delta x_d^{3}-5,17\Delta x_d^{2}+1,57\Delta x_d+9,20\cdot 10^{-1} \\                                
-&C_1 =-4,97\cdot 10^{-1}\Delta x_d^{3}+6,69\cdot 10^{-1}\Delta x_d^{2}-2,36\cdot 10^{-1}\Delta x_d+1,07 \\             
-&C_2 =3,14\cdot 10^{-2}\Delta x_d^{3}-0,188\Delta x_d^{2}+7,10\cdot 10^{-2}\Delta x_d+0,129 \\ 
-&C_3 =-0,591\Delta x_d^{3}+0,451\Delta x_d^{2}-6,48\cdot 10^{-2}\Delta x_d+0,135\\
-&C_4 =-0,991\Delta x_d^{3}+0,961\Delta x_d^{2}-8,81\cdot 10^{-2}\Delta x_d+0,291
+&C_0(\Delta x_d) =2,03\cdot 10\Delta x_d^{3}-5,17\Delta x_d^{2}+1,57\Delta x_d+9,20\cdot 10^{-1} \\                                
+&\begin{split}C_1(\Delta x_d) =-4,97\cdot 10^{-1}\Delta x_d^{3}+6,69\cdot 10^{-1}\Delta x_d^{2}-2,36\cdot 10^{-1}\Delta x_d\\+1,07 \end{split}\\             
+&\begin{split}C_2(\Delta x_d) =3,14\cdot 10^{-2}\Delta x_d^{3}-1,88\cdot 10^{-1}\Delta x_d^{2}+7,10\cdot 10^{-2}\Delta x_d\\+1,29\cdot 10^{-1} \end{split}\\ 
+&\begin{split}C_3(\Delta x_d) =-5,91\cdot 10^{-1}\Delta x_d^{3}+4,51\cdot 10^{-1}\Delta x_d^{2}-6,48\cdot 10^{-2}\Delta x_d\\+1,35\cdot 10^{-1} \end{split}\\
+&\begin{split}C_4(\Delta x_d) =-9,91\cdot 10^{-1}\Delta x_d^{3}+9,61\cdot 10^{-1}\Delta x_d^{2}-8,81\cdot 10^{-2}\Delta x_d\\+2,91\cdot 10^{-1}\end{split}
 \end{eqnarray}
 

@@ -1,0 +1,226 @@
+real_xs =
+
+&C_0(\Delta x_s) =5,02\Delta x_s^{3}-3,63\Delta x_s^{2}+5,93\cdot 10^{-1}\Delta x_s-1,47\cdot 10^{-2} \\              
+&C_1(\Delta x_s) =3,79\Delta x_s^{3}-2,50\Delta x_s^{2}+5,17\cdot 10^{-1}\Delta x_s-4,10\cdot 10^{-3} \\              
+&C_2(\Delta x_s) =1,05\cdot 10\Delta x_s^{3}-1,52\Delta x_s^{2}+4,53\cdot 10^{-1}\Delta x_s-5,39\cdot 10^{-5} \\      
+&C_3(\Delta x_s) =-1,41\Delta x_s^{3}+8,22\cdot 10^{-2}\Delta x_s^{2}+3,19\cdot 10^{-1}\Delta x_s+7,42\cdot 10^{-3} \\
+&C_4(\Delta x_s) =1,24\Delta x_s^{3}+2,20\Delta x_s^{2}-1,80\Delta x_s+3,64\cdot 10^{-1} \\                           
+
+
+real_ys =
+
+&C_0(\Delta y_s) =5,02\Delta y_s^{3}-3,63\Delta y_s^{2}+5,93\cdot 10^{-1}\Delta y_s-1,47\cdot 10^{-2} \\              
+&C_1(\Delta y_s) =3,79\Delta y_s^{3}-2,50\Delta y_s^{2}+5,17\cdot 10^{-1}\Delta y_s-4,10\cdot 10^{-3} \\              
+&C_2(\Delta y_s) =1,05\cdot 10\Delta y_s^{3}-1,52\Delta y_s^{2}+4,53\cdot 10^{-1}\Delta y_s-5,39\cdot 10^{-5} \\      
+&C_3(\Delta y_s) =-1,41\Delta y_s^{3}+8,22\cdot 10^{-2}\Delta y_s^{2}+3,19\cdot 10^{-1}\Delta y_s+7,42\cdot 10^{-3} \\
+&C_4(\Delta y_s) =1,24\Delta y_s^{3}+2,20\Delta y_s^{2}-1,80\Delta y_s+3,64\cdot 10^{-1} \\                           
+
+
+real_xd =
+
+&C_0(\Delta x_d) =5,74\Delta x_d^{3}-5,22\Delta x_d^{2}+7,77\cdot 10^{-1}\Delta x_d-1,49\cdot 10^{-2} \\                               
+&C_1(\Delta x_d) =1,51\cdot 10^{-14}\Delta x_d^{3}-1,72\cdot 10^{-14}\Delta x_d^{2}+5,51\cdot 10^{-15}\Delta x_d+5,84\cdot 10^{-15} \\ 
+&C_2(\Delta x_d) =-2,86\cdot 10^{-15}\Delta x_d^{3}+3,37\cdot 10^{-15}\Delta x_d^{2}-3,04\cdot 10^{-16}\Delta x_d+2,91\cdot 10^{-15} \\
+&C_3(\Delta x_d) =1,36\cdot 10^{-14}\Delta x_d^{3}-8,85\cdot 10^{-15}\Delta x_d^{2}+1,03\cdot 10^{-15}\Delta x_d+7,33\cdot 10^{-16} \\ 
+&C_4(\Delta x_d) =1,06\cdot 10\Delta x_d^{3}-6,51\Delta x_d^{2}+3,46\cdot 10^{-1}\Delta x_d+2,96\cdot 10^{-1} \\                       
+
+
+real_yd =
+
+&C_0(\Delta y_d) =6,53\Delta y_d^{3}-5,39\Delta y_d^{2}+8,75\cdot 10^{-1}\Delta y_d-2,59\cdot 10^{-2} \\                               
+&C_1(\Delta y_d) =-3,87\cdot 10^{-14}\Delta y_d^{3}+2,37\cdot 10^{-14}\Delta y_d^{2}-3,01\cdot 10^{-15}\Delta y_d+6,30\cdot 10^{-15} \\
+&C_2(\Delta y_d) =6,08\cdot 10^{-14}\Delta y_d^{3}-4,53\cdot 10^{-14}\Delta y_d^{2}+8,57\cdot 10^{-15}\Delta y_d+2,79\cdot 10^{-15} \\ 
+&C_3(\Delta y_d) =-9,53\cdot 10^{-15}\Delta y_d^{3}+7,01\cdot 10^{-15}\Delta y_d^{2}-1,24\cdot 10^{-15}\Delta y_d+7,33\cdot 10^{-16} \\
+&C_4(\Delta y_d) =7,51\Delta y_d^{3}-1,78\Delta y_d^{2}-9,72\cdot 10^{-1}\Delta y_d+3,24\cdot 10^{-1} \\                               
+
+
+lin_xs =
+
+&C_0(\Delta x_s) =1,32\Delta x_s^{3}-6,33\Delta x_s^{2}+1,91\cdot 10\Delta x_s+1,09\cdot 10^{-4} \\                                    
+&C_1(\Delta x_s) =6,18\cdot 10^{-14}\Delta x_s^{3}-4,97\cdot 10^{-14}\Delta x_s^{2}+1,03\cdot 10^{-14}\Delta x_s+5,64\cdot 10^{-15} \\ 
+&C_2(\Delta x_s) =1,71\Delta x_s^{3}-9,04\Delta x_s^{2}+2,70\cdot 10\Delta x_s-5,20\cdot 10^{-5} \\                                    
+&C_3(\Delta x_s) =-2,07\cdot 10^{-14}\Delta x_s^{3}+2,00\cdot 10^{-14}\Delta x_s^{2}-3,76\cdot 10^{-15}\Delta x_s+4,81\cdot 10^{-16} \\
+&C_4(\Delta x_s) =-2,92\Delta x_s^{3}+5,96\Delta x_s^{2}+4,36\cdot 10^{-2}\Delta x_s-9,80\cdot 10^{-4} \\                              
+
+
+lin_ys =
+
+&C_0(\Delta y_s) =-1,32\Delta y_s^{3}+6,33\Delta y_s^{2}-1,91\cdot 10\Delta y_s-1,09\cdot 10^{-4} \\                                   
+&C_1(\Delta y_s) =4,36\cdot 10^{-14}\Delta y_s^{3}-3,81\cdot 10^{-14}\Delta y_s^{2}+1,04\cdot 10^{-14}\Delta y_s+5,59\cdot 10^{-15} \\ 
+&C_2(\Delta y_s) =1,71\Delta y_s^{3}-9,04\Delta y_s^{2}+2,70\cdot 10\Delta y_s-5,20\cdot 10^{-5} \\                                    
+&C_3(\Delta y_s) =-1,86\cdot 10^{-14}\Delta y_s^{3}+1,60\cdot 10^{-14}\Delta y_s^{2}-2,99\cdot 10^{-15}\Delta y_s+4,59\cdot 10^{-16} \\
+&C_4(\Delta y_s) =-2,92\Delta y_s^{3}+5,96\Delta y_s^{2}+4,36\cdot 10^{-2}\Delta y_s-9,80\cdot 10^{-4} \\                              
+
+
+lin_xd =
+
+&C_0(\Delta x_d) =-2,93\cdot 10^{-14}\Delta x_d^{3}+2,53\cdot 10^{-14}\Delta x_d^{2}-8,20\cdot 10^{-15}\Delta x_d+3,64\cdot 10^{-16} \\
+&C_1(\Delta x_d) =-2,81\cdot 10^{-13}\Delta x_d^{3}+2,11\cdot 10^{-13}\Delta x_d^{2}+5,40\cdot 10\Delta x_d+5,56\cdot 10^{-15} \\      
+&C_2(\Delta x_d) =-8,22\cdot 10^{-14}\Delta x_d^{3}+2,55\cdot 10\Delta x_d^{2}-1,27\cdot 10^{-14}\Delta x_d+7,81\cdot 10^{-16} \\      
+&C_3(\Delta x_d) =1,60\cdot 10\Delta x_d^{3}+2,09\cdot 10^{-14}\Delta x_d^{2}-1,12\cdot 10^{-15}\Delta x_d-3,04\cdot 10^{-16} \\       
+&C_4(\Delta x_d) =1,13\cdot 10\Delta x_d^{3}-3,61\Delta x_d^{2}+3,92\cdot 10^{-1}\Delta x_d-8,94\cdot 10^{-3} \\                       
+
+
+lin_yd =
+
+&C_0(\Delta y_d) =-3,82\cdot 10^{-29}\Delta y_d^{3}+1,24\cdot 10^{-29}\Delta y_d^{2}+3,81\cdot 10^{-30}\Delta y_d+1,18\cdot 10^{-15} \\
+&C_1(\Delta y_d) =3,61\cdot 10^{-29}\Delta y_d^{3}-2,19\cdot 10^{-29}\Delta y_d^{2}+7,62\cdot 10^{-30}\Delta y_d+3,97\cdot 10^{-15} \\ 
+&C_2(\Delta y_d) =-1,17\cdot 10^{-28}\Delta y_d^{3}+4,82\cdot 10^{-29}\Delta y_d^{2}+7,62\cdot 10^{-30}\Delta y_d+3,25\cdot 10^{-15} \\
+&C_3(\Delta y_d) =-4,04\cdot 10^{-29}\Delta y_d^{3}+1,79\cdot 10^{-29}\Delta y_d^{2}+1,90\cdot 10^{-30}\Delta y_d+1,11\cdot 10^{-15} \\
+&C_4(\Delta y_d) =-6,73\cdot 10^{-29}\Delta y_d^{3}+4,02\cdot 10^{-29}\Delta y_d^{2}-3,81\cdot 10^{-30}\Delta y_d+9,35\cdot 10^{-16} \\
+
+
+real_xs =
+
+&Off_{sin}(\Delta x_s) =1,15\cdot 10^{-3}\Delta x_s^{3}-1,67\cdot 10^{-3}\Delta x_s^{2}+6,08\cdot 10^{-4}\Delta x_s-2,68\cdot 10^{-5} \\
+&A_{sin}(\Delta x_s) =1,84\cdot 10^{-1}\Delta x_s^{3}-5,17\Delta x_s^{2}+2,24\cdot 10^{-2}\Delta x_s+6,83\cdot 10 \\                    
+&\delta_{sin}(\Delta x_s) =-1,02\Delta x_s^{3}+8,18\cdot 10^{-1}\Delta x_s^{2}-1,31\cdot 10^{-1}\Delta x_s-9,00\cdot 10 \\              
+&Off_{cos}(\Delta x_s) =8,50\Delta x_s^{3}-7,49\Delta x_s^{2}+1,60\Delta x_s-4,68\cdot 10^{-3} \\                                       
+&A_{cos}(\Delta x_s) =1,27\cdot 10\Delta x_s^{3}-2,50\cdot 10\Delta x_s^{2}+1,16\Delta x_s+6,83\cdot 10 \\                              
+&\delta_{cos}(\Delta x_s) =1,12\cdot 10\Delta x_s^{3}-8,16\Delta x_s^{2}+1,34\Delta x_s-3,78\cdot 10^{-2} \\                            
+
+
+real_ys =
+
+&Off_{sin}(\Delta y_s) =8,50\Delta y_s^{3}-7,49\Delta y_s^{2}+1,60\Delta y_s-4,68\cdot 10^{-3} \\                                        
+&A_{sin}(\Delta y_s) =1,27\cdot 10\Delta y_s^{3}-2,50\cdot 10\Delta y_s^{2}+1,16\Delta y_s+6,83\cdot 10 \\                               
+&\delta_{sin}(\Delta y_s) =1,12\cdot 10\Delta y_s^{3}-8,16\Delta y_s^{2}+1,34\Delta y_s-9,00\cdot 10 \\                                  
+&Off_{cos}(\Delta y_s) =-1,15\cdot 10^{-3}\Delta y_s^{3}+1,67\cdot 10^{-3}\Delta y_s^{2}-6,08\cdot 10^{-4}\Delta y_s+2,68\cdot 10^{-5} \\
+&A_{cos}(\Delta y_s) =1,84\cdot 10^{-1}\Delta y_s^{3}-5,17\Delta y_s^{2}+2,24\cdot 10^{-2}\Delta y_s+6,83\cdot 10 \\                     
+&\delta_{cos}(\Delta y_s) =-1,02\Delta y_s^{3}+8,18\cdot 10^{-1}\Delta y_s^{2}-1,31\cdot 10^{-1}\Delta y_s+6,23\cdot 10^{-3} \\          
+
+
+real_xd =
+
+&Off_{sin}(\Delta x_d) =+0\Delta x_d^{3}+0\Delta x_d^{2}+0\Delta x_d+0 \\
+&A_{sin}(\Delta x_d) =2,56\cdot 10^{-2}\Delta x_d^{3}-1,33\cdot 10\Delta x_d^{2}-1,52\Delta x_d+6,83\cdot 10 \\                          
+&\delta_{sin}(\Delta x_d) =5,79\Delta x_d^{3}-5,26\Delta x_d^{2}+7,87\cdot 10^{-1}\Delta x_d-9,00\cdot 10 \\                             
+&Off_{cos}(\Delta x_d) =+0\Delta x_d^{3}+0\Delta x_d^{2}+0\Delta x_d+0 \\
+&A_{cos}(\Delta x_d) =2,56\cdot 10^{-2}\Delta x_d^{3}-1,33\cdot 10\Delta x_d^{2}-1,52\Delta x_d+6,83\cdot 10 \\                          
+&\delta_{cos}(\Delta x_d) =5,79\Delta x_d^{3}-5,26\Delta x_d^{2}+7,87\cdot 10^{-1}\Delta x_d-1,57\cdot 10^{-2} \\                        
+
+
+real_yd =
+
+&Off_{sin}(\Delta y_d) =+0\Delta y_d^{3}+0\Delta y_d^{2}+0\Delta y_d+0 \\
+&A_{sin}(\Delta y_d) =-6,30\Delta y_d^{3}-1,34\Delta y_d^{2}-4,05\cdot 10^{-1}\Delta y_d+6,83\cdot 10 \\                                 
+&\delta_{sin}(\Delta y_d) =6,51\Delta y_d^{3}-5,38\Delta y_d^{2}+8,76\cdot 10^{-1}\Delta y_d-9,00\cdot 10 \\                             
+&Off_{cos}(\Delta y_d) =+0\Delta y_d^{3}+0\Delta y_d^{2}+0\Delta y_d+0 \\
+&A_{cos}(\Delta y_d) =-6,30\Delta y_d^{3}-1,34\Delta y_d^{2}-4,05\cdot 10^{-1}\Delta y_d+6,83\cdot 10 \\                                 
+&\delta_{cos}(\Delta y_d) =6,51\Delta y_d^{3}-5,38\Delta y_d^{2}+8,76\cdot 10^{-1}\Delta y_d-2,65\cdot 10^{-2} \\                        
+
+
+lin_xs =
+
+&Off_{sin}(\Delta x_s) =+0\Delta x_s^{3}+0\Delta x_s^{2}+0\Delta x_s+0 \\       
+&A_{sin}(\Delta x_s) =-3,38\cdot 10^{-2}\Delta x_s^{3}+3,44\cdot 10^{-1}\Delta x_s^{2}-1,09\cdot 10^{-3}\Delta x_s+1,50 \\                      
+&\delta_{sin}(\Delta x_s) =-4,71\Delta x_s^{3}-3,96\cdot 10^{-1}\Delta x_s^{2}+3,82\cdot 10\Delta x_s-9,00\cdot 10 \\                           
+&Off_{cos}(\Delta x_s) =+0\Delta x_s^{3}+0\Delta x_s^{2}+0\Delta x_s+0 \\       
+&A_{cos}(\Delta x_s) =2,08\cdot 10^{-14}\Delta x_s^{3}-3,29\cdot 10^{-14}\Delta x_s^{2}+1,00\Delta x_s+1,50 \\                                  
+&\delta_{cos}(\Delta x_s) =-2,44\cdot 10^{-15}\Delta x_s^{3}+4,14\cdot 10^{-15}\Delta x_s^{2}-1,07\cdot 10^{-15}\Delta x_s-2,48\cdot 10^{-16} \\
+
+
+lin_ys =
+
+&Off_{sin}(\Delta y_s) =+0\Delta y_s^{3}+0\Delta y_s^{2}+0\Delta y_s+0 \\
+&A_{sin}(\Delta y_s) =2,08\cdot 10^{-14}\Delta y_s^{3}-3,29\cdot 10^{-14}\Delta y_s^{2}+1,00\Delta y_s+1,50 \\                           
+&\delta_{sin}(\Delta y_s) =6,79\cdot 10^{-12}\Delta y_s^{3}-4,89\cdot 10^{-12}\Delta y_s^{2}+8,24\cdot 10^{-13}\Delta y_s-9,00\cdot 10 \\
+&Off_{cos}(\Delta y_s) =+0\Delta y_s^{3}+0\Delta y_s^{2}+0\Delta y_s+0 \\
+&A_{cos}(\Delta y_s) =-3,38\cdot 10^{-2}\Delta y_s^{3}+3,44\cdot 10^{-1}\Delta y_s^{2}-1,09\cdot 10^{-3}\Delta y_s+1,50 \\               
+&\delta_{cos}(\Delta y_s) =4,71\Delta y_s^{3}+3,96\cdot 10^{-1}\Delta y_s^{2}-3,82\cdot 10\Delta y_s+1,15\cdot 10^{-3} \\                
+
+
+lin_xd =
+
+&Off_{sin}(\Delta x_d) =3,78\cdot 10^{-15}\Delta x_d^{3}-2,47\cdot 10^{-15}\Delta x_d^{2}-10,00\cdot 10^{-1}\Delta x_d-2,53\cdot 10^{-17} \\   
+&A_{sin}(\Delta x_d) =-8,33\cdot 10^{-14}\Delta x_d^{3}+5,76\cdot 10^{-14}\Delta x_d^{2}-8,58\cdot 10^{-15}\Delta x_d+1,50 \\                  
+&\delta_{sin}(\Delta x_d) =6,62\cdot 10^{-12}\Delta x_d^{3}-4,89\cdot 10^{-12}\Delta x_d^{2}+8,24\cdot 10^{-13}\Delta x_d-9,00\cdot 10 \\      
+&Off_{cos}(\Delta x_d) =3,78\cdot 10^{-15}\Delta x_d^{3}-2,47\cdot 10^{-15}\Delta x_d^{2}-10,00\cdot 10^{-1}\Delta x_d-2,53\cdot 10^{-17} \\   
+&A_{cos}(\Delta x_d) =-8,33\cdot 10^{-14}\Delta x_d^{3}+5,76\cdot 10^{-14}\Delta x_d^{2}-8,58\cdot 10^{-15}\Delta x_d+1,50 \\                  
+&\delta_{cos}(\Delta x_d) =2,72\cdot 10^{-15}\Delta x_d^{3}+1,33\cdot 10^{-15}\Delta x_d^{2}-1,00\cdot 10^{-15}\Delta x_d-2,16\cdot 10^{-16} \\
+
+
+lin_yd =
+
+&Off_{sin}(\Delta y_d) =+0\Delta y_d^{3}+0\Delta y_d^{2}+0\Delta y_d+0 \\      
+&A_{sin}(\Delta y_d) =-8,33\cdot 10^{-14}\Delta y_d^{3}+5,76\cdot 10^{-14}\Delta y_d^{2}-8,58\cdot 10^{-15}\Delta y_d+1,50 \\                  
+&\delta_{sin}(\Delta y_d) =7,60\cdot 10^{-12}\Delta y_d^{3}-5,32\cdot 10^{-12}\Delta y_d^{2}+8,24\cdot 10^{-13}\Delta y_d-9,00\cdot 10 \\      
+&Off_{cos}(\Delta y_d) =+0\Delta y_d^{3}+0\Delta y_d^{2}+0\Delta y_d+0 \\      
+&A_{cos}(\Delta y_d) =-8,33\cdot 10^{-14}\Delta y_d^{3}+5,76\cdot 10^{-14}\Delta y_d^{2}-8,58\cdot 10^{-15}\Delta y_d+1,50 \\                  
+&\delta_{cos}(\Delta y_d) =1,13\cdot 10^{-29}\Delta y_d^{3}-1,83\cdot 10^{-30}\Delta y_d^{2}-1,90\cdot 10^{-30}\Delta y_d-4,36\cdot 10^{-16} \\
+
+real_xd_32 =
+
+&Off_{sin} =+0\Delta x_d^{3}+0\Delta x_d^{2}+0\Delta x_d+0 \\
+&A_{sin} =-1,39\cdot 10\Delta x_d^{3}-2,47\Delta x_d^{2}-2,24\Delta x_d+6,83\cdot 10 \\                                      
+&\delta_{sin} =8,95\Delta x_d^{3}-1,06\Delta x_d^{2}+7,09\cdot 10^{-1}\Delta x_d-9,00\cdot 10 \\                             
+&Off_{cos} =+0\Delta x_d^{3}+0\Delta x_d^{2}+0\Delta x_d+0 \\
+&A_{cos} =-1,39\cdot 10\Delta x_d^{3}-2,47\Delta x_d^{2}-2,24\Delta x_d+6,83\cdot 10 \\                                      
+&\delta_{cos} =8,95\Delta x_d^{3}-1,06\Delta x_d^{2}+7,09\cdot 10^{-1}\Delta x_d-1,73\cdot 10^{-2} \\                        
+
+real_xd_32 =
+
+&C_0 =8,77\Delta x_d^{3}-9,23\cdot 10^{-1}\Delta x_d^{2}+6,83\cdot 10^{-1}\Delta x_d-1,59\cdot 10^{-2} \\                  
+&C_1 =2,73\cdot 10^{-14}\Delta x_d^{3}-2,75\cdot 10^{-14}\Delta x_d^{2}+7,03\cdot 10^{-15}\Delta x_d+5,79\cdot 10^{-15} \\ 
+&C_2 =8,94\cdot 10^{-15}\Delta x_d^{3}-7,96\cdot 10^{-15}\Delta x_d^{2}+1,84\cdot 10^{-15}\Delta x_d+2,87\cdot 10^{-15} \\ 
+&C_3 =-5,57\cdot 10^{-14}\Delta x_d^{3}+4,29\cdot 10^{-14}\Delta x_d^{2}-8,87\cdot 10^{-15}\Delta x_d+1,06\cdot 10^{-15} \\
+&C_4 =-1,16\cdot 10\Delta x_d^{3}+1,13\cdot 10\Delta x_d^{2}-3,03\Delta x_d+3,99\cdot 10^{-1} \\                           
+
+
+meritev_xs =
+
+&C_0(\Delta x_s) =2,42\Delta x_s^{3}-1,71\Delta x_s^{2}+2,40\cdot 10^{-1}\Delta x_s+1,15 \\              
+&C_1(\Delta x_s) =-3,01\Delta x_s^{3}+2,35\Delta x_s^{2}-6,35\cdot 10^{-1}\Delta x_s+1,21 \\             
+&C_2(\Delta x_s) =-1,11\Delta x_s^{3}+5,06\Delta x_s^{2}+9,95\cdot 10^{-1}\Delta x_s+1,18\cdot 10^{-1} \\
+&C_3(\Delta x_s) =-2,10\Delta x_s^{3}+1,61\Delta x_s^{2}-5,25\cdot 10^{-1}\Delta x_s+3,57\cdot 10^{-1} \\
+&C_4(\Delta x_s) =-3,24\Delta x_s^{3}+2,29\Delta x_s^{2}-4,73\cdot 10^{-1}\Delta x_s+4,17\cdot 10^{-1} \\
+
+
+meritev_ys =
+
+&C_0(\Delta y_s) =-3,26\Delta y_s^{3}-3,10\Delta y_s^{2}+2,68\Delta y_s+6,00\cdot 10^{-1} \\                                      
+&C_1(\Delta y_s) =-2,38\Delta y_s^{3}+3,50\Delta y_s^{2}-1,54\Delta y_s+1,12 \\                                                   
+&C_2(\Delta y_s) =-4,15\Delta y_s^{3}-1,64\Delta y_s^{2}+8,22\Delta y_s+8,04\cdot 10^{-2} \\                                      
+&C_3(\Delta y_s) =2,30\Delta y_s^{3}-1,37\cdot 10^{-1}\Delta y_s^{2}-3,13\cdot 10^{-1}\Delta y_s+1,78\cdot 10^{-1} \\             
+&C_4(\Delta y_s) =7,11\cdot 10^{-1}\Delta y_s^{3}-7,96\cdot 10^{-2}\Delta y_s^{2}-3,14\cdot 10^{-1}\Delta y_s+3,21\cdot 10^{-1} \\
+
+
+meritev_xd =
+
+&C_0(\Delta x_d) =2,03\cdot 10\Delta x_d^{3}-5,17\Delta x_d^{2}+1,57\Delta x_d+9,20\cdot 10^{-1} \\                                
+&C_1(\Delta x_d) =-4,97\cdot 10^{-1}\Delta x_d^{3}+6,69\cdot 10^{-1}\Delta x_d^{2}-2,36\cdot 10^{-1}\Delta x_d+1,07 \\             
+&C_2(\Delta x_d) =3,14\cdot 10^{-2}\Delta x_d^{3}-1,88\cdot 10^{-1}\Delta x_d^{2}+7,10\cdot 10^{-2}\Delta x_d+1,29\cdot 10^{-1} \\ 
+&C_3(\Delta x_d) =-5,91\cdot 10^{-1}\Delta x_d^{3}+4,51\cdot 10^{-1}\Delta x_d^{2}-6,48\cdot 10^{-2}\Delta x_d+1,35\cdot 10^{-1} \\
+&C_4(\Delta x_d) =-9,91\cdot 10^{-1}\Delta x_d^{3}+9,61\cdot 10^{-1}\Delta x_d^{2}-8,81\cdot 10^{-2}\Delta x_d+2,91\cdot 10^{-1} \\
+
+
+meritev_xs =
+
+&Off_{sin}(\Delta x_s) =-3,88\cdot 10^{-2}\Delta x_s^{3}+2,37\cdot 10^{-2}\Delta x_s^{2}-2,25\cdot 10^{-3}\Delta x_s-9,53\cdot 10^{-4} \\
+&A_{sin}(\Delta x_s) =-6,14\cdot 10^{-2}\Delta x_s^{3}-1,71\cdot 10^{-2}\Delta x_s^{2}-1,17\cdot 10^{-2}\Delta x_s+4,84\cdot 10^{-1} \\  
+&\delta_{sin}(\Delta x_s) =5,32\Delta x_s^{3}-3,55\Delta x_s^{2}+3,49\Delta x_s-8,89\cdot 10 \\                                          
+&Off_{cos}(\Delta x_s) =2,21\cdot 10^{-2}\Delta x_s^{3}-1,91\cdot 10^{-2}\Delta x_s^{2}-3,91\cdot 10^{-3}\Delta x_s+6,48\cdot 10^{-3} \\ 
+&A_{cos}(\Delta x_s) =7,46\cdot 10^{-3}\Delta x_s^{3}-1,85\cdot 10^{-1}\Delta x_s^{2}+1,01\cdot 10^{-2}\Delta x_s+4,88\cdot 10^{-1} \\   
+&\delta_{cos}(\Delta x_s) =1,15\cdot 10\Delta x_s^{3}-1,06\cdot 10\Delta x_s^{2}-1,14\Delta x_s+1,19 \\                                  
+
+
+meritev_ys =
+
+&Off_{sin}(\Delta y_s) =4,69\cdot 10^{-2}\Delta y_s^{3}+1,32\cdot 10^{-2}\Delta y_s^{2}-2,29\cdot 10^{-2}\Delta y_s+7,08\cdot 10^{-4} \\
+&A_{sin}(\Delta y_s) =1,73\Delta y_s^{3}-6,47\cdot 10^{-1}\Delta y_s^{2}-2,60\cdot 10^{-1}\Delta y_s+4,94\cdot 10^{-1} \\               
+&\delta_{sin}(\Delta y_s) =3,37\cdot 10\Delta y_s^{3}-2,12\cdot 10\Delta y_s^{2}+3,81\Delta y_s-8,91\cdot 10 \\                         
+&Off_{cos}(\Delta y_s) =1,87\cdot 10^{-1}\Delta y_s^{3}-7,92\cdot 10^{-2}\Delta y_s^{2}-9,87\cdot 10^{-3}\Delta y_s+9,94\cdot 10^{-3} \\
+&A_{cos}(\Delta y_s) =1,99\Delta y_s^{3}-9,29\cdot 10^{-1}\Delta y_s^{2}-7,82\cdot 10^{-2}\Delta y_s+4,91\cdot 10^{-1} \\               
+&\delta_{cos}(\Delta y_s) =-1,76\cdot 10\Delta y_s^{3}-9,77\cdot 10^{-1}\Delta y_s^{2}+4,42\Delta y_s+3,59\cdot 10^{-1} \\              
+
+
+meritev_xd =
+
+&Off_{sin}(\Delta x_d) =-3,42\cdot 10^{-3}\Delta x_d^{3}+7,48\cdot 10^{-3}\Delta x_d^{2}-5,61\cdot 10^{-3}\Delta x_d-2,53\cdot 10^{-3} \\
+&A_{sin}(\Delta x_d) =-7,95\cdot 10^{-1}\Delta x_d^{3}+4,05\cdot 10^{-1}\Delta x_d^{2}-1,06\cdot 10^{-1}\Delta x_d+4,68\cdot 10^{-1} \\  
+&\delta_{sin}(\Delta x_d) =1,76\cdot 10\Delta x_d^{3}-2,62\Delta x_d^{2}+1,18\Delta x_d-8,91\cdot 10 \\                                  
+&Off_{cos}(\Delta x_d) =-1,58\cdot 10^{-2}\Delta x_d^{3}+1,22\cdot 10^{-2}\Delta x_d^{2}-1,63\cdot 10^{-2}\Delta x_d+5,05\cdot 10^{-3} \\
+&A_{cos}(\Delta x_d) =-7,90\cdot 10^{-1}\Delta x_d^{3}+4,00\cdot 10^{-1}\Delta x_d^{2}-1,04\cdot 10^{-1}\Delta x_d+4,70\cdot 10^{-1} \\  
+&\delta_{cos}(\Delta x_d) =2,58\cdot 10\Delta x_d^{3}-8,64\Delta x_d^{2}+2,01\Delta x_d+1,00 \\                                          
+
+

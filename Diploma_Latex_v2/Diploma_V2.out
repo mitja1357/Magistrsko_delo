@@ -8,8 +8,8 @@
 \BOOKMARK [0][-]{chapter.4}{Potek napake funkcije atan2 ob popacenju vhodnih signalov}{}% 8
 \BOOKMARK [1][-]{section.4.1}{Razlicne amplitude}{chapter.4}% 9
 \BOOKMARK [1][-]{section.4.2}{Razlicne enosmerne komponente}{chapter.4}% 10
-\BOOKMARK [2][-]{subsection.4.2.1}{Enosmerna komponenta v signalu Bsin}{section.4.2}% 11
-\BOOKMARK [2][-]{subsection.4.2.2}{Enosmerna komponenta signala Bcos}{section.4.2}% 12
+\BOOKMARK [2][-]{subsection.4.2.1}{Enosmerna komponenta v signalu B_sin}{section.4.2}% 11
+\BOOKMARK [2][-]{subsection.4.2.2}{Enosmerna komponenta signala B_cos}{section.4.2}% 12
 \BOOKMARK [2][-]{subsection.4.2.3}{Enosmerna komponenta pri obeh signalih}{section.4.2}% 13
 \BOOKMARK [1][-]{section.4.3}{Neorotogonalnost signalov}{chapter.4}% 14
 \BOOKMARK [1][-]{section.4.4}{Napaka zaradi spremembe amplitude in faze zaradi enega parametra}{chapter.4}% 15
