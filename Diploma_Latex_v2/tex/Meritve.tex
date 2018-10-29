@@ -7,25 +7,25 @@ Vsebuje elektromotorski pogon z inkrementalnim, referenčnim dajalnikom zasuka T
 Magnetni aktuator je možno premikati le v eni prostorski osi (slika \ref{premikanjeMagneta}).
 Senzor RM44 je pritrjen na konstrukcijo 6-osnega mikrometrskega nastavljalnika pozicije HTIMS601.
 Celotno merilno mesto je prikazano na sliki \ref{postavitevmerilnegamesta.jpg}.
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.4\columnwidth]{./Slike/premikanjeMagneta.jpg}
 	\caption{Dinamično ekscentričnost se lahko izmeri le v eni smeri}
 	\label{premikanjeMagneta}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.75\textwidth]{./Slike/postavitevmerilnegamesta.jpg}
 	\caption{Postavitev testnega mesta}
 	\label{postavitevmerilnegamesta.jpg}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.65\textwidth]{./Slike/koordinatnisistem.jpg}
 	\caption{Postavitev testnega mesta}
 	\label{koordinatnisistem.jpg}
 \end{figure}
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.55\textwidth]{./Slike/HTIMS601.jpg}
 	\caption{Naprava za nastavljanje statične ekscentričnosti}
@@ -52,7 +52,7 @@ Podatki so v obliki enega paketa poslani s krmilne plošče na 1 sekundo. Pri fr
 Podatke se lahko izvozi v obliki .csv datoteke in nato poljubno obdela.
 Na sliki  \ref{GUI.png} je prikazan sinusni signal prikazan kot da je zamaknjen za 180$\mathrm{^\circ}$. To je posledica definicije pozitvne smeri vrtenja za senzor \cite{RM44}. Senzor ima nasproto definirano pozitivno smer vrtenja. To sem rešil tako, da sem obrnil podatke. Popraviti je bilo potrebno tudi potek referenčnega dajalnika.
 \bitnaslika{Grafični vmesnik s poteki signalov}{GUI.png}{0.8\textwidth}{0.42\textwidth}
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.55\textwidth]{./Slike/krmilnaplosca.jpg}
 	\caption{Krmilna plošča za krmiljenje pogona in obdelavo signalov s dajalnikov položaja}

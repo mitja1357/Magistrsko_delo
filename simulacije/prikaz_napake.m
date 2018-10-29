@@ -17,6 +17,11 @@ pathfolder = pwd;
 filename= [pathfolder(1:end-10), ...
     'Diploma_Latex_v2\Slike\', ...
     upper(meritev(1:3)), '\', meritev(end-1:end),'_'];
+if eks == 0
+    filename= [pathfolder(1:end-10), ...
+    'Diploma_Latex_v2\Slike\', ...
+    upper(meritev(1:3)), '\00_'];
+end
 
 eval(strcat('podatki=',meritev,';'))
 %%
@@ -50,9 +55,9 @@ plot(Ref, Sin, Ref, Cos, 'LineWidth',2);
 legend('B_{sin}','B_{cos}','Location','northwest')
 axis( [0,360,-Inf,Inf])
 grid on
-xlabel(' \theta / ^\circ')
+xlabel(' $\mathrm{\theta} / ^\circ$','interpreter','latex')
 if isempty(strfind(meritev,'mer'))
-    ylabel('B / mT')
+    ylabel('B / $mT$','interpreter','latex')
 end
 if exist('shrani')
     if shrani
@@ -70,8 +75,8 @@ axes1 = axes('Parent',gcf,...
 plot(Ref, Err, 'LineWidth',2);
 axis( [0,360,-Inf,Inf])
 grid on
-xlabel(' \theta / ^\circ')
-ylabel('\epsilon / ^\circ')
+xlabel(' $\mathrm{\theta} / ^\circ$','interpreter','latex')
+ylabel('$\varepsilon / ^\circ$', 'interpreter','latex')
 if exist('shrani')
     if shrani
         saveas(gcf,[filename, 'napaka'],'epsc')
@@ -87,8 +92,8 @@ axes1 = axes('Parent',gcf,...
 bar(0:4, y, 'LineWidth',2);
 % axis( [0,4,-Inf,Inf])
 grid on
-xlabel(' harmonik')
-ylabel('\epsilon / ^\circ')
+xlabel('harmonik')
+ylabel('$\varepsilon / ^\circ$', 'interpreter','latex')
 
 if exist('shrani')
     if shrani

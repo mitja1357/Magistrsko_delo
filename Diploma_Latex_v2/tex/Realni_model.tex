@@ -1,12 +1,12 @@
 \chapter{Realni model magnetnega polja}
-S poznavanjem točnejše funkcije polja, je točnejše predvidevanje potekov realnih $B_{sin}$ $B_{cos}$ in napake. Podjetje RLS,  je posredovalo rezultate Z-komponente gostote magnetnega pretoka 1,80 mm nad simuliranim magnetom. Simuliran magnet je imel 4 mm premer in 4 mm višine. definirano je imel remanenco 1050 mT in relativno permeabilnost 1.  Definicijsko območje  je 20x20 mm s korakom 0,02 mm (Slika \ref{Realno_polje}).
+S poznavanjem točnejše funkcije polja, je točnejše predvidevanje potekov realnih $B_{sin}$, $B_{cos}$ in napake. Podjetje RLS,  je posredovalo rezultate Z-komponente gostote magnetnega pretoka 1,80 mm nad simuliranim magnetom. Simuliran magnet je imel 4 mm premer in 4 mm višine. Definirano je imel remanenco 1050 mT in relativno permeabilnost 1.  Definicijsko območje  je 20x20 mm s korakom 0,02 mm (Slika \ref{Realno_polje}).
 \slikaeps{Model Z- komponente gostote magnetnega pretoka uporabljen v simulacijah}{Realno_polje}
 Simulacijski model je definiran s 4 sondami, kot je opisano v začetku poglavja \ref{linearnimodel}.
-Polje, ki ga pomeri posamezna Hallova sonda ob zasuku ni bilo definirano oz. izpeljano analitično kot pri linearni aproksimaciji (\ref{equ:lin_potek_sin}) in (\ref{equ:lin_potek_cos}).  Prvo je bila izračunana relativna lokacija sonde glede na magnet. Nato se je vrednost Z-komponente gostote magnetnega pretoka  aproksimiralo s pretokom, definiranim v geometrijsko najbližji točki definicijskega območja.
-Pomerjeno polje nasproti ležečih sond se je nato odštelo in izračunal kot.
+Polje, ki ga pomeri posamezna Hallova sonda ob zasuku ni bilo definirano oz. izpeljano analitično kot pri linearni aproksimaciji (\ref{equ:lin_potek_sin}) - (\ref{equ:lin_potek_zadnja}).  Prvo je bila izračunana relativna lokacija sonde glede na magnet. Nato se je vrednost Z-komponente gostote magnetnega pretoka  aproksimiralo s pretokom, definiranim v geometrijsko najbližji točki definicijskega območja.
+Pomerjeno polje nasproti ležečih sond se je nato odštelo in vstavilo v funkcijo atan2d();.
 V tem poglavju so predstavljeni rezultati simulacij ekscentričnosti z uporabo realnega modela magnetnega polja.
 \section{Brez napake}
-Kljub idealni montaži, $B_{sin}$ in $B_{cos}$ nista idealna signala.  Signala vsebujeta višje harmonike (Slika \ref{./rea/00_sincos}), ki niso opazno izraziti. To se izrazi v napaki (slika \ref{./rea/00_napaka}). V napaki so špice ( primer $220^{\circ}$ ), ki so posledica izračuna Z-komponente gostote  magnetnega pretoka v odvistnosti magneta. Napaka razvita v Fourierovo vrsto prikaže vrednosti amplitud prvih štirih harmonikov napake (slika \ref{./rea/00_fft}). Izrazit je četrti harmonik, ki je pričakovan po podatkovnih listih \cite{AM8192}. Vzrok četrtega harmonika je tretji harmonik, ki se pojavi zaradi magnetenja.
+Kljub idealni montaži, $B_{sin}$ in $B_{cos}$ nista idealna signala.  Signala vsebujeta višje harmonike (Slika \ref{./rea/00_sincos}), ki niso opazno izraziti. Višji harmoniki se izrazijo v napaki (slika \ref{./rea/00_napaka}). Opazi se grob potek četrtega harmonika. V napaki so špice ( primer $220^{\circ}$ ), ki so posledica izračuna Z-komponente gostote  magnetnega pretoka v odvistnosti magneta. Napaka razvita v Fourierovo vrsto prikaže vrednosti amplitud prvih štirih harmonikov napake (slika \ref{./rea/00_fft}). Izrazit je četrti harmonik, ki je pričakovan po podatkovnih listih \cite{AM8192}. Vzrok četrtega harmonika je tretji harmonik v signalih  $B_{sin}$ in $B_{cos}$, ki se pojavi zaradi magnetenja.
 \slikaeps{$B_{sin}$ in $B_{cos}$ pri simulacijah z realnim magnetnim poljem brez ekscentričnosti}{./rea/00_sincos}
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z realnim magnetnim poljem brez ekscentričnosti}{./rea/00_napaka}
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z realnim poljem brez ekscentričnosti}{./rea/00_fft}
@@ -30,7 +30,7 @@ Na sliki \ref{./rea/xs_potek} so prikazani poteki amplitud posameznega harmonika
 Off_{sin}(\Delta x_s) =1,15\cdot 10^{-3}\Delta x_s^{3}-1,67\cdot 10^{-3}\Delta x_s^{2}+6,08\cdot 10^{-4}\Delta x_s\\-2,68\cdot 10^{-5}
 \end{split}\\
 &A_{sin}(\Delta x_s) =1,84\cdot 10^{-1}\Delta x_s^{3}-5,17\Delta x_s^{2}+2,24\cdot 10^{-2}\Delta x_s+6,83\cdot 10 \\                    
-&\delta_{sin}(\Delta x_s) =-1,02\Delta x_s^{3}+8,18\cdot 10^{-1}\Delta x_s^{2}-1,31\cdot 10^{-1}\Delta x_s-9,00\cdot 10 \\              
+&\delta_{sin}(\Delta x_s) =-1,02\Delta x_s^{3}+8,18\cdot 10^{-1}\Delta x_s^{2}-1,31\cdot 10^{-1}\Delta x_s+6,23\cdot 10^{-3} \\             
 &Off_{cos}(\Delta x_s) =8,50\Delta x_s^{3}-7,49\Delta x_s^{2}+1,60\Delta x_s-4,68\cdot 10^{-3} \\                                       
 &A_{cos}(\Delta x_s) =1,27\cdot 10\Delta x_s^{3}-2,50\cdot 10\Delta x_s^{2}+1,16\Delta x_s+6,83\cdot 10 \\                              
 &\delta_{cos}(\Delta x_s) =1,12\cdot 10\Delta x_s^{3}-8,16\Delta x_s^{2}+1,34\Delta x_s-3,78\cdot 10^{-2}
@@ -57,10 +57,10 @@ Potek amplitude osnovnega harmonika $B_{sin}$ (slika \ref{./rea/ys_sincos_amp}) 
 \begin{eqnarray}
 &Off_{sin}(\Delta y_s) =8,50\Delta y_s^{3}-7,49\Delta y_s^{2}+1,60\Delta y_s-4,68\cdot 10^{-3} \\                                        
 &A_{sin}(\Delta y_s) =1,27\cdot 10\Delta y_s^{3}-2,50\cdot 10\Delta y_s^{2}+1,16\Delta y_s+6,83\cdot 10 \\                               
-&\delta_{sin}(\Delta y_s) =1,12\cdot 10\Delta y_s^{3}-8,16\Delta y_s^{2}+1,34\Delta y_s-9,00\cdot 10 \\                                  
+&\delta_{sin}(\Delta y_s) =1,12\cdot 10\Delta y_s^{3}-8,16\Delta y_s^{2}+1,34\Delta y_s-3,78\cdot 10^{-2} \\                              
 &\begin{split}Off_{cos}(\Delta y_s) =-1,15\cdot 10^{-3}\Delta y_s^{3}+1,67\cdot 10^{-3}\Delta y_s^{2}-6,08\cdot 10^{-4}\Delta y_s\\+2,68\cdot 10^{-5}\end{split} \\
 &A_{cos}(\Delta y_s) =1,84\cdot 10^{-1}\Delta y_s^{3}-5,17\Delta y_s^{2}+2,24\cdot 10^{-2}\Delta y_s+6,83\cdot 10 \\                     
-&\delta_{cos}(\Delta y_s) =-1,02\Delta y_s^{3}+8,18\cdot 10^{-1}\Delta y_s^{2}-1,31\cdot 10^{-1}\Delta y_s+6,23\cdot 10^{-3} 
+&\begin{split}\delta_{cos}(\Delta y_s) =-1,02\Delta y_s^{3}+8,18\cdot 10^{-1}\Delta y_s^{2}-1,31\cdot 10^{-1}\Delta y_s\\+6,23\cdot 10^{-3} \end{split}
 \end{eqnarray}
 \slikaeps{Amplituda osnovnega harmonika  $B_{sin}$ in $B_{cos}$ pri simulacijah z realnim poljem statične ekscentričnosti v smeri y}{./rea/ys_sincos_amp}
 \slikaeps{Enosmerna komponenta $B_{sin}$ in $B_{cos}$ pri simulacijah z realnim poljem statične ekscentričnosti v smeri y}{./rea/ys_sincos_off}
@@ -91,7 +91,7 @@ Poteki zapisani s kubičnimi polinomi predstavijo enako spreminjanje signala $B_
 \begin{eqnarray}
 &Off_{sin}(\Delta x_d) =0\Delta x_d^{3}+0\Delta x_d^{2}+0\Delta x_d+0 \\
 &A_{sin}(\Delta x_d) =2,56\cdot 10^{-2}\Delta x_d^{3}-1,33\cdot 10\Delta x_d^{2}-1,52\Delta x_d+6,83\cdot 10 \\                          
-&\delta_{sin}(\Delta x_d) =5,79\Delta x_d^{3}-5,26\Delta x_d^{2}+7,87\cdot 10^{-1}\Delta x_d-9,00\cdot 10 \\                             
+&\delta_{sin}(\Delta x_d) =5,79\Delta x_d^{3}-5,26\Delta x_d^{2}+7,87\cdot 10^{-1}\Delta x_d+6,23\cdot 10^{-3} \\                               
 &Off_{cos}(\Delta x_d) =0\Delta x_d^{3}+0\Delta x_d^{2}+0\Delta x_d+0 \\
 &A_{cos}(\Delta x_d) =2,56\cdot 10^{-2}\Delta x_d^{3}-1,33\cdot 10\Delta x_d^{2}-1,52\Delta x_d+6,83\cdot 10 \\                          
 &\delta_{cos}(\Delta x_d) =5,79\Delta x_d^{3}-5,26\Delta x_d^{2}+7,87\cdot 10^{-1}\Delta x_d-1,57\cdot 10^{-2}
@@ -106,7 +106,7 @@ Potek posameznih harmonikov napake je viden na sliki \ref{./rea/xd_potek}. Iz po
 &C_4(\Delta x_d) =1,06\cdot 10\Delta x_d^{3}-6,51\Delta x_d^{2}+3,46\cdot 10^{-1}\Delta x_d+2,96\cdot 10^{-1}
 \end{eqnarray}
 \section{Dinamična ekscentričnost v smeri y}
-V simulacijah z linearno aproksimacijo polja signala $B_{sin}$ in $B_{cos}$ ter posledično tudi napaka, ni bila odvisna od dinamične ekscentričnosti v smeri y. Tu je bila kljub temu opravljena simulacija. Rezultati so podobni dinamični ekscentričnosti v smeri x. Spremembe v $B_{sin}$ in $B_{cos}$ ni opaziti (slika \ref{./rea/yd_sincos}), prav tako ne v napaki (slika \ref{./rea/yd_sincos}). Razvoj v Fourierovo vrsto prikaže izstopanje spremembo enosmerne komponente.
+V simulacijah z linearno aproksimacijo polja signala $B_{sin}$ in $B_{cos}$ ter posledično tudi napaka, ni bila odvisna od dinamične ekscentričnosti v smeri y. Tu je bila kljub temu opravljena simulacija. Rezultati so podobni dinamični ekscentričnosti v smeri x. Spremembe v $B_{sin}$ in $B_{cos}$ ni opaziti (slika \ref{./rea/yd_sincos}), prav tako ne v napaki (slika \ref{./rea/yd_sincos}). Razvoj v Fourierovo vrsto prikaže spremembo enosmerne komponente.
 \slikaeps{$B_{sin}$ in $B_{cos}$ pri simulacijah z realnim poljem pri 0,20 mm dinamične ekscentričnosti v smeri y}{./rea/yd_sincos}
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z realnim poljem pri 0,20 mm dinamične ekscentričnosti v smeri y}{./rea/yd_napaka}
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z realnim poljem pri 0,20 mm dinamične ekscentričnosti v smeri y}{./rea/yd_fft}
@@ -117,7 +117,7 @@ Sprememba amplitude osnovnega harmonika od naraščanja ekscentričnosti pada (s
 \begin{eqnarray}
 &Off_{sin}(\Delta y_d) =0\Delta y_d^{3}+0\Delta y_d^{2}+0\Delta y_d+0 \\
 &A_{sin}(\Delta y_d) =-6,30\Delta y_d^{3}-1,34\Delta y_d^{2}-4,05\cdot 10^{-1}\Delta y_d+6,83\cdot 10 \\                                 
-&\delta_{sin}(\Delta y_d) =6,51\Delta y_d^{3}-5,38\Delta y_d^{2}+8,76\cdot 10^{-1}\Delta y_d-9,00\cdot 10 \\                             
+&\delta_{sin}(\Delta y_d) =6,51\Delta y_d^{3}-5,38\Delta y_d^{2}+8,76\cdot 10^{-1}\Delta y_d-2,65\cdot 10^{-2} \\  
 &Off_{cos}(\Delta y_d) =0\Delta y_d^{3}+0\Delta y_d^{2}+0\Delta y_d+0 \\
 &A_{cos}(\Delta y_d) =-6,30\Delta y_d^{3}-1,34\Delta y_d^{2}-4,05\cdot 10^{-1}\Delta y_d+6,83\cdot 10 \\                                 
 &\delta_{cos}(\Delta y_d) =6,51\Delta y_d^{3}-5,38\Delta y_d^{2}+8,76\cdot 10^{-1}\Delta y_d-2,65\cdot 10^{-2} 
@@ -135,4 +135,5 @@ Na sliki \ref{./rea/yd_potek} je prikazana odvisnost amplitud napake ob spreminj
 \slikaeps{Enosmerna komponenta $B_{sin}$ in $B_{cos}$ pri simulacijah z realnim poljem dinamične ekscentričnosti v smeri y}{./rea/yd_sincos_off}
 \slikaeps{Fazni zamik $B_{sin}$ in $B_{cos}$ pri simulacijah z realnim poljem dinamične ekscentričnosti v smeri y glede na idealna signala $B_{sin}$ in $B_{cos}$}{./rea/yd_sincos_phase}
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od dinamične ekscentričnosti v smeri y pri simulacijah z realnim poljem}{./rea/yd_potek}
-V tem poglavju so bile prikazane simulacije z uporabo realnega polja, ki ga merijo Hall-ove sonde. Rezultati podajo manjšo napako kot pri simulacijah z aproksimiranim linearnim magnetnim poljem. Z diferencialnim merjenjem, se odstrani enomerno komponento v signalih $B_{sin}$ in $B_{cos}$.
+
+V tem poglavju so bile prikazane simulacije z uporabo realnega polja, ki ga merijo Hall-ove sonde. Rezultati podajo manjšo napako kot pri simulacijah z aproksimiranim linearnim magnetnim poljem. Z diferencialnim merjenjem, se odstrani enosmerno komponento v signalih $B_{sin}$ in $B_{cos}$.

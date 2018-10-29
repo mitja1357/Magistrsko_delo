@@ -1,4 +1,4 @@
-\select@language {slovene}
+\babel@toc {slovene}{}
 \contentsline {chapter}{\numberline {1}Uvod}{5}{chapter.1}
 \contentsline {chapter}{\numberline {2}Senzor RM44}{7}{chapter.2}
 \contentsline {chapter}{\numberline {3}Izpeljava gibanja sonde relativno na magnet ob nepravilni monta\IeC {\v z}i}{15}{chapter.3}
@@ -21,11 +21,11 @@
 \contentsline {section}{\numberline {5.3}Simulacija stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri y-osi}{42}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Sprememba signalov Hallovih sond ter napake v odvisnosti od stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri y}{44}{subsection.5.3.1}
 \contentsline {section}{\numberline {5.4}Dinami\IeC {\v c}na ekscentri\IeC {\v c}nost v smeri x osi}{47}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Sprememba signalov Hallovih sond ter napake v odvisnosti od dinami\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x}{49}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.1}Sprememba signalov Hallovih sond ter napake v odvisnosti od dinami\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x}{50}{subsection.5.4.1}
 \contentsline {section}{\numberline {5.5}Dinami\IeC {\v c}na ekscentri\IeC {\v c}nost v smeri y in sprememba razdalje Hallovih sond od magneta }{53}{section.5.5}
 \contentsline {chapter}{\numberline {6}Realni model magnetnega polja}{55}{chapter.6}
 \contentsline {section}{\numberline {6.1}Brez napake}{56}{section.6.1}
-\contentsline {section}{\numberline {6.2}Simulacija stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x-osi}{57}{section.6.2}
+\contentsline {section}{\numberline {6.2}Simulacija stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x-osi}{58}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Sprememba signalov Hallovih sond ter napake v odvisnosti od stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x}{60}{subsection.6.2.1}
 \contentsline {section}{\numberline {6.3}Simulacija stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri y-osi}{63}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Sprememba signalov Hallovih sond ter napake v odvisnosti od stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri y}{65}{subsection.6.3.1}
@@ -44,7 +44,7 @@
 \contentsline {subsection}{\numberline {7.5.1}Sprememba signalov Hallovih sond ter napake v odvisnosti od stati\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri y}{95}{subsection.7.5.1}
 \contentsline {section}{\numberline {7.6}Meritve dinami\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x-osi}{98}{section.7.6}
 \contentsline {subsection}{\numberline {7.6.1}Sprememba signalov Hallovih sond ter napake v odvisnosti od dinami\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x}{99}{subsection.7.6.1}
-\contentsline {chapter}{\numberline {8}Primerjava simulacij in meritev}{105}{chapter.8}
+\contentsline {chapter}{\numberline {8}Primerjava rezultatov simulacij in meritev}{105}{chapter.8}
 \contentsline {chapter}{\numberline {9}Sklep}{107}{chapter.9}
 \contentsline {section}{\numberline {9.1}Merjenje kota in vpliv na napako}{107}{section.9.1}
 \contentsline {section}{\numberline {9.2}Nepravilna monta\IeC {\v z}a}{107}{section.9.2}

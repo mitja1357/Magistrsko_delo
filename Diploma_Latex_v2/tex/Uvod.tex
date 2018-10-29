@@ -27,7 +27,7 @@ se napetosti med potencialoma GND in VDD v odvisnosti od kota zasuka.
 Izhod je lahko tudi v obliki inkrementalnih signalov A in B s katerih se lahko določi smer in relativni zasuk vrtenja ter signal Ri kateri določa referenčno točko. Izhod je možen tudi preko SSI vodila. Senzor ima
 možnost nastavljanja resolucije od 5 do 13 bitov na obrat \cite{AM8192}\cite{RM44}. Senzor na katerem so bile opravljene meritve je imel 12 bitno resolucijo in na voljo analogna signala sinus in kosinus. Točno ime senzorja je
 RM44AC0001S20F2E10, v delu bo poimenovan okrajšano RM44.
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.6\columnwidth]{./Slike/senzorRM44.jpg}
 	\caption{Senzor RM44}
@@ -36,13 +36,13 @@ RM44AC0001S20F2E10, v delu bo poimenovan okrajšano RM44.
 
 Ključni element senzorja je čip AM256. Za odčitavnaje zasuka, se mora nahajati nad radialno polariziranim cilindričnim magnetom, ki je pritrjen na os vrtenja (slika \ref{stranski_ris}).
 S strani proizvajalca senzorja je priporočen radialno polariziran magnet s premerom 4 mm in višino 4 mm (slika \ref{magnet4mm}).
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.5\columnwidth]{./Slike/stranski_ris.png}
 	\caption{Nahajanje radialno polariziranega magneta nad čipom AM256 \cite{AM8192}}
 	\label{stranski_ris}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.35\columnwidth]{./Slike/magnet4mm.png}
 	\caption{Primer magneta predlagan s strani proizvajalca RLS}
@@ -56,7 +56,7 @@ razdaljo med magnetom in silicijevo rezino ($1,8 \mathrm{mm}$).
 
 
 Na sliki \ref{polje_brez_ravnine}  je prikazana oblika Z komponente vektorja gostote magnetnega pretoka povzročene z radialno polariziranim cilindričnim magnetom.
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=\columnwidth]{./Slike/polje_brez_ravnine.eps}
 	\caption{Oblika Z komponente gostote magnetnega pretoka nad magnetom}
@@ -66,7 +66,7 @@ Slika \ref{polje_brez_ravnine} prikazuje rezultat Z-komponente gostote magnetneg
 
 S pravilno postavitvijo Hallovih sond in obliki Z-komponente gostote magnetnega pretoka povzročene z magnetom, se ob prostorskem zajemu zajame 2 signala kosinusne oblike, ki sta za 90$^\circ$ prostorsko zamaknjena
 drug na drugega (slika \ref{BxBy}). Prvi zajet signal,  fazno prehiteva za 90$^\circ$ drugi signal in je v delu poimenovan $B_{cos}$, drugi signal, je poimenovan $B_{sin}$.
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\columnwidth]{./Slike/BxBy.png}
 	\caption{Analogna signala zajeta s Hallovimi sondami \cite{AM8192}}
@@ -76,27 +76,26 @@ drug na drugega (slika \ref{BxBy}). Prvi zajet signal,  fazno prehiteva za 90$^\
 Iz signalov, zajetih s Hallovih sond, se izračuna kot. Metod, za numeričen izračun kota iz podatkov kot sta signala $B_{cos}$ in $B_{sin}$ je več (CORDIC, SAR, sledilna metoda, itd \cite{ICHaus_interpolate}). Osnovni
 princip metode je izračun funkcije atan2($B_{sin}$, $B_{cos}$) \cite{atan2Matlab}.
 \newpage
-Osnovno delovanje senzorja se lahko ponazori, z dvema Hallovima sondama.  Sondi sta postavljeni na krožnico s središčem v osi vrtenja magneta in radijem $r_0$.
+Osnovno delovanje senzorja se lahko ponazori, s 4 Hallovimi. Sonde so enakomerno razporejene po krožnici s središčem v osi vrtenja in radijem  $r_0$. Z diferencialnim odčitavanjem pomerjenih signalov nasproti ležečih Hallovih sond, se signaloma $B_{sin}$ in $B_{cos}$ odstrani enosmerno komponento in poviša amplitudo.
 
-Sondi sta prostorsko zamaknjeni za 90$^\circ$ (slika \ref{opis_modela}).  S sondama se zajame signala $B_{cos}$ in $B_{sin}$. Signala sta vhodna parametra v funkcijo atan2(), ki izračuna kot zasuka (slika \ref{opis_modela}).
+Signala $B_{cos}$ in $B_{sin}$. sta vhodna parametra v funkcijo atan2(), ki izračuna kot zasuka (slika \ref{opis_modela}).
 Za oceno napake, se lahko Z komponento gostote magnetnega pretoka v okolici središča magneta, aproksimira z ravnino (slika \ref{polje_z_ravnino}).
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=\columnwidth]{./Slike/polje_z_ravnino.eps}
 	\caption{Oblika Z komponente gostote magnetnega pretoka nad magnetom in aproksimirano ravnino v središču magneta}
 	\label{polje_z_ravnino}
 \end{figure}
+
+Aproksimacija zadostuje za oceno napake. S poznavanjem lokacije sonde glede na magnet, se lahko izračuna merjena komponenta magnetnega polja. Aprokisimirano polje je linearno odvisno od x komponente (\ref{equ:poljeB1}).
+Za lažje razumevanje bo $k$ enak $1\frac{\mathrm{mT}}{\mathrm{mm}}$.
 \begin{equation}
 \label{equ:poljeB1}
 B_z(x,y)=k\cdot x.
 \end{equation} 
 
 
-
-Aproksimacija zadostuje za oceno napake. S poznavanjem lokacije sonde glede na magnet, se lahko izračuna merjena komponenta magnetnega polja. Aprokisimirano polje je linearno odvisno od x komponente (\ref{equ:poljeB1}).
-Za lažje razumevanje bo $k$ enak $1\frac{\mathrm{mT}}{\mathrm{mm}}$.
-
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\columnwidth]{./Slike/opis_modela.png}
 	\caption{Osnovni model, za izračun kot zasuka}

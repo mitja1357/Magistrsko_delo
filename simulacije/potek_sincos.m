@@ -50,7 +50,7 @@ axes1 = axes('Parent',gcf,...
         'FontSize',16,...
         'FontName','Times New Roman');
 plot(x,yOff,'LineWidth',2);
-if (max(yOff(:))-min(yOff(:)))<1e-14;
+if (max(yOff(:))-min(yOff(:)))<1e-14
     axis( [0,0.5,-0.5+mean(yOff(:)),0.5+mean(yOff(:))])
 else
     maxi = max(yOff(:))+0.05.*abs(max(yOff(:))-min(yOff(:)));
@@ -60,11 +60,11 @@ else
 end
 legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
-xlabel([tx ' / mm'])
+xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
 
 
 if isempty(strfind(meritev,'mer'))
-    ylabel('B / mT')
+    ylabel('B / $mT$','interpreter','latex')
 end
 if exist('shrani')
     if shrani
@@ -91,9 +91,9 @@ end
 
 legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
-xlabel([tx ' / mm'])
+xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
 if isempty(strfind(meritev,'mer'))
-    ylabel('B / mT')
+    ylabel('B / $mT$','interpreter','latex')
 end
 if exist('shrani')
     if shrani
@@ -110,7 +110,7 @@ axes1 = axes('Parent',gcf,...
         'FontSize',16,...
         'FontName','Times New Roman');
 plot(x,y1stPh,'LineWidth',2);
-if (max(y1stPh(:))-min(y1stPh(:)))<1e-10;
+if (max(y1stPh(:))-min(y1stPh(:)))<1e-10
     axis( [0,0.5,-0.5+mean(y1stPh(:)),0.5+mean(y1stPh(:))])
 else
     maxi = max(y1stPh(:))+0.05.*abs(max(y1stPh(:))-min(y1stPh(:)));
@@ -120,8 +120,8 @@ else
 end
 legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
-xlabel([tx ' / mm'])
-ylabel('fazni zamik / ^\circ')
+xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
+ylabel('fazni zamik /$ ^\circ$','interpreter','latex')
 if exist('shrani')
     if shrani
         saveas(gcf,[filename, 'sincos_phase'],'epsc')
@@ -139,7 +139,7 @@ axes1 = axes('Parent',gcf,...
         'FontSize',16,...
         'FontName','Times New Roman');
 plot(x,y2nd,'LineWidth',2);
-if (max(y2nd(:))-min(y2nd(:)))<1e-14;
+if (max(y2nd(:))-min(y2nd(:)))<1e-14
     axis( [0,0.5,-0.5+mean(y2nd(:)),0.5+mean(y2nd(:))])
 else
     maxi = max(y2nd(:))+0.05.*abs(max(y2nd(:))-min(y2nd(:)));
@@ -149,10 +149,10 @@ else
 end
 legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
-xlabel([tx ' / mm'])
+xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
 
 if isempty(strfind(meritev,'mer'))
-    ylabel('B / mT')
+    ylabel('B / $mT$','interpreter','latex')
 end
 if exist('shrani')
     if shrani

@@ -1,6 +1,6 @@
 \chapter{Izpeljava gibanja sonde relativno na magnet ob nepravilni montaži}
 
-Nepravilna montaža bo vplivala na obe Hallovi sondi simulacijskega modela enako. Vpliv izmika senzorja in magneta, na relativno gibnaje sonde nad magnetom bo prikazano na eni sondi.
+Nepravilna montaža bo vplivala na  Hallove sondi simulacijskega modela enako. Vpliv izmika senzorja in magneta, na relativno gibnaje sonde nad magnetom bo prikazano na eni sondi.
 
 Izmik sredine senzorja iz osi vrtenja bo med spreminjanjem dejanskega kota zasuka statičen, njegova lokacija se nebo spreminjala na os vrtenja. Ta izmik je poimenovan statična ekscentričnost.
 
@@ -8,7 +8,7 @@ Ob izmiku magneta iz osi vrtenja se pojavi opletanje magneta. Lokacija središč
 \section{Definicija koordinatnega sistema}
 Naj bo definiran kartezični koordinatni sistem, z v izhodišču postavljenim radialno polariziranim magnetom ($S_m(0, 0)$). V izhodišču se nahaja tudi os vrtenja ($S_r(0, 0)$). Na poljubno točko $H(x_0,y_0)$, vendar ne v
 izhodišče je postavljena Hall-ova sonda (slika \ref{fig:def_kks}).
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\begin{tikzpicture}
 	\magnet {0} {0} {0}{ }{1};
@@ -42,7 +42,7 @@ Argument rotacijske matrike je $-\theta$. Z upoštevanjem lihosti funkcije sinus
 \begin{bmatrix} \cos(\theta)&\sin(\theta)\\-\sin(\theta)&\cos(\theta) \end{bmatrix}
 \begin{bmatrix} x_0\\y_0 \end{bmatrix}
 \end{equation}
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \begin{subfigure}[b]{0.5\textwidth}
 	\centering
 		\begin{tikzpicture}
@@ -84,7 +84,7 @@ Argument rotacijske matrike je $-\theta$. Z upoštevanjem lihosti funkcije sinus
 \section{Izpeljava gibanja lokacije Hallove sonde na magnet pri dinamični ekscentričnosti}
 Magnet je postavljen v izhodišce koordinatnega sistema $S_m(0,0)$, kjer je tudi os vrtenja $S_r(0,0)$. Dinamična ekscentričnost povzroči premik središča magneta v točko $S_{m1}(\Delta x_d,\Delta y_d)$ (Slika \ref{fig:def_din_eks}).
 Os vrtenja je ostaja v izhodišču koordinatnega sistema. Središce magneta $S_{m1}(\Delta x_d,\Delta y_d)$ ob rotaciji opiše okoli osi vrtenja krožnico z radijem $\sqrt{\Delta x_d^2+\Delta y_d^2}$.% (\ref{equ:rotacija_hall_din_sonda}).
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	\centering
 	\begin{tikzpicture}
 		\magnet {-0.6} {0.3} {0}{ }{1};
@@ -118,8 +118,8 @@ magnet opiše (\ref{equ:rotacija_hall_din})
 -
 \begin{bmatrix} \Delta x_d\\\Delta y_d \end{bmatrix}
 \end{equation}
-\begin{figure}[h!]
-	%\centering
+\begin{figure}[!ht]
+	\centering
 	\begin{tikzpicture}
 	\magnet {0} {0} {0}{ }{1};
 	\hall {2.3+0.6}{1-0.3} {0};
@@ -143,7 +143,7 @@ magnet opiše (\ref{equ:rotacija_hall_din})
 \section{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri statični ekscentričnosti}
 Statična ekscentričnost se pojavi, ob izmiku Hallove sonde iz njene osnovne lege v  $H_1(x_0+\Delta x_s, y_0+\Delta y_s)$. Z zasukom magneta je razdalja med sondo in osjo vrtenja konstantna.
 Z miselnim obratom vrtenja sonde v nasprotni smeri se gibanje sonde izrazi kot gibanje po krožnici z novim radijem $\sqrt{(x_0+\Delta x_s)^2+(y_0+\Delta y_s)^2}$ (\ref{equ:rotacija_hall_stat}).
-\begin{figure}[h!]
+\begin{figure}[!ht]
 	%\centering
 	\begin{tikzpicture}
 	\kks{3}
