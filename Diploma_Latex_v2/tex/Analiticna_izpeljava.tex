@@ -353,8 +353,9 @@ B_{cos} = C_1 \cos(\theta) + \Delta_c \cos(\theta)
 Opravljena je bila limita $\Delta_c$ v neskončnost. V napaki nastopa enosmerna komponenta in sodi harmoniki. Funkcija, ki predstavlja odvisnost napake od $\Delta_c$ je (\ref{vrsta:xs}).
 \begin{equation}
 	\label{vrsta:xs}
+	\begin{split}
 	\varepsilon_p = \mathrm{atan}\frac{\Delta_c}{\Delta_c+2C_1}+\frac{180}{\pi} \sum_{n=1}^{\infty}\frac{1}{n} (\frac{\Delta_c}{\sqrt{\Delta_c^2+2 r_0\Delta_c+2C_1^2}})^n
-	\sin (2n \theta+n (90+ \mathrm{ atan}(\frac{\Delta_c+C_1}{C_1})))
+	\\\sin (2n \theta+n (90+ \mathrm{ atan}(\frac{\Delta_c+C_1}{C_1})))\end{split}
 \end{equation}
 Pri čemer velja:
 $$\Delta_c > -C_1$$
@@ -369,9 +370,9 @@ B_{cos} = C_1 \cos(\theta) + \Delta_s \sin(\theta)
 Pričakovan je podoben potek kot pri dodanem signalu kosinusne oblike.
 Izračunana vrsta napake v odvisnosti od  $\Delta_s$ je:
 \begin{equation}
-	\label{vrsta:ys}
-	\varepsilon_p = \mathrm{atan}\frac{-\Delta_s}{\Delta_s+2C_1}+\frac{180}{\pi} \sum_{n=1}^{\infty}\frac{1}{n} (\frac{\Delta_s}{\sqrt{\Delta_s^2+2 C_1 \Delta_s+2r_0^2}})^n
-	\sin (2n \theta+n (90+ \mathrm{ atan}(\frac{\Delta_s+C_1}{C_1}))).
+	\label{vrsta:ys}\begin{split}
+	\varepsilon_p = \mathrm{atan}\frac{-\Delta_s}{\Delta_s+2C_1}+\frac{180}{\pi} \sum_{n=1}^{\infty}\frac{1}{n} (\frac{\Delta_s}{\sqrt{\Delta_s^2+2 C_1 \Delta_s+2r_0^2}})^n\\
+	\sin (2n \theta+n (90+ \mathrm{ atan}(\frac{\Delta_s+C_1}{C_1}))).\end{split}
 \end{equation}
 
  Pri čemer velja:

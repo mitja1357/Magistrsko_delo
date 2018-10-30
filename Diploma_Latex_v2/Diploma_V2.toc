@@ -45,9 +45,12 @@
 \contentsline {section}{\numberline {7.6}Meritve dinami\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x-osi}{98}{section.7.6}
 \contentsline {subsection}{\numberline {7.6.1}Sprememba signalov Hallovih sond ter napake v odvisnosti od dinami\IeC {\v c}ne ekscentri\IeC {\v c}nosti v smeri x}{99}{subsection.7.6.1}
 \contentsline {chapter}{\numberline {8}Primerjava rezultatov simulacij in meritev}{105}{chapter.8}
-\contentsline {chapter}{\numberline {9}Sklep}{107}{chapter.9}
-\contentsline {section}{\numberline {9.1}Merjenje kota in vpliv na napako}{107}{section.9.1}
-\contentsline {section}{\numberline {9.2}Nepravilna monta\IeC {\v z}a}{107}{section.9.2}
-\contentsline {section}{\numberline {9.3}Oblika napake}{108}{section.9.3}
-\contentsline {section}{\numberline {9.4}Izvedba meritev}{108}{section.9.4}
-\contentsline {section}{\numberline {9.5}Komentar rezultatov}{108}{section.9.5}
+\contentsline {section}{\numberline {8.1}Stati\IeC {\v c}na ekscentri\IeC {\v c}nost v smeri x}{105}{section.8.1}
+\contentsline {section}{\numberline {8.2}Stati\IeC {\v c}na ekscentri\IeC {\v c}nost v smeri y}{106}{section.8.2}
+\contentsline {section}{\numberline {8.3}Dinami\IeC {\v c}na ekscentri\IeC {\v c}nost}{107}{section.8.3}
+\contentsline {chapter}{\numberline {9}Sklep}{109}{chapter.9}
+\contentsline {section}{\numberline {9.1}Merjenje kota in vpliv na napako}{109}{section.9.1}
+\contentsline {section}{\numberline {9.2}Nepravilna monta\IeC {\v z}a}{109}{section.9.2}
+\contentsline {section}{\numberline {9.3}Oblika napake}{110}{section.9.3}
+\contentsline {section}{\numberline {9.4}Izvedba meritev}{110}{section.9.4}
+\contentsline {section}{\numberline {9.5}Komentar rezultatov}{110}{section.9.5}
