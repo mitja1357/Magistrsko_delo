@@ -32,50 +32,52 @@
 \date{Ljubljana, 2018}
 \mentor{doc. dr. Mitja Nemec}
 \begin{document}
-%%------------------------ ZAČETNI DEL -----------------------------------
-%\frontmatter
-%%%------------------------------------------------------------------------
-%%%************************ NASLOVNA STRAN ********************************
-%\maketitle
-%%%*************************** ZAHVALA ************************************
-%\chapter*{Zahvala}
-%Zahvaljujem se mentorju doc. dr. Mitji Nemcu za pomoč pri izdelavi magistrskega dela. Prav tako se zahvaljujem sodelovcem laboratorija LRTME.
-%Zahvala gre tudi dr. Blažu Šmidu in drugim v podjetju RLS Merilna tehnika.
-%Zahvaljujem se družini in prijateljem, ki so me spodbujali in podpirali tekom celotnega študija.
-%%%*************************** VSEBINA *************************************
-%\tableofcontents
-%%%*************************** SEZNAM SLIK in TABEL  ***********************
-%%\seznamslik
-%%\seznamtabel
-%%%**************************  SEZNAM UPORABLJENIH SIMBOLOV  **************
-%\chapter*{Seznam simbolov}
-%V zaključnem delu so uporabljeni naslednje veličine in
-%simboli:
-%\begin{table}[h]
-%\centering
-%\begin{tabular}{l l l l}
-% \hline \multicolumn{2}{c}{\bf{Veličina / oznaka}} & \multicolumn{2}{c}{\bf{Enota}}  \\
-% \hline
-%Ime & Simbol & Ime & Simbol \\
-% \hline
-% referenčni kot & $\Theta$  & stopinja & $^\circ$ \\
-% pomerjeni kot & $\varphi$  & stopinja & $^\circ$ \\
-% napaka& $\varepsilon$& stopinja & $^\circ$ \\
-% z-komponenta gostote magnetnega pretoka&$B_z$& militesla & mT \\
-% statična ekscentričnost v x&$\Delta x_s$& milimetri & mm \\
-% statična ekscentričnost v y&$\Delta y_s$& milimetri & mm \\
-% dinamična ekscentričnost v x&$\Delta x_d$& milimetri & mm \\
-% dinamična ekscentričnost v y&$\Delta y_d$& milimetri & mm \\
-%  \hline
-%\end{tabular}
-%%%\end{footnotesize}
-%  \caption{Veličine in simboli}
-%  \label{prebojne_trdnosti}
-%\end{table}
-%%%------------------------ GLAVNI DEL ------------------------------------
-%\mainmatter
-%%%-------------------------------------------------------------------------
-%%%********************* POVZETEK V SLOVENŠČINI ****************************
+%------------------------ ZAČETNI DEL -----------------------------------
+\frontmatter
+%%------------------------------------------------------------------------
+%%************************ NASLOVNA STRAN ********************************
+\maketitle
+%%*************************** ZAHVALA ************************************
+\chapter*{Zahvala}
+Zahvaljujem se mentorju doc. dr. Mitji Nemcu za pomoč pri izdelavi magistrskega dela. Prav tako se zahvaljujem sodelovcem laboratorija LRTME.
+Zahvala gre tudi dr. Blažu Šmidu in drugim v podjetju RLS Merilna tehnika.
+Zahvaljujem se družini in prijateljem, ki so me spodbujali in podpirali tekom celotnega študija.
+%%*************************** VSEBINA *************************************
+\tableofcontents
+%%*************************** SEZNAM SLIK in TABEL  ***********************
+%\seznamslik
+%\seznamtabel
+%%**************************  SEZNAM UPORABLJENIH SIMBOLOV  **************
+\chapter*{Seznam simbolov}
+V zaključnem delu so uporabljeni naslednje veličine in
+simboli:
+\begin{table}[h]
+\centering
+\begin{tabular}{l l l l}
+ \hline \multicolumn{2}{c}{\bf{Veličina / oznaka}} & \multicolumn{2}{c}{\bf{Enota}}  \\
+ \hline
+Ime & Simbol & Ime & Simbol \\\hline
+ 
+ napajalna napetost 					&$VDD$			&volt		&V\\
+ ničelni potencial 						&$GND$			&volt		&V\\
+ referenčni kot 						&$\Theta$  		&stopinja 	&$^\circ$ \\
+ pomerjeni kot 							&$\varphi$  	&stopinja 	&$^\circ$ \\
+ napaka									&$\varepsilon$	&stopinja 	&$^\circ$ \\
+ Z-komponenta gostote magnetnega polja	&$B_z$			&militesla 	&mT \\
+ statična ekscentričnost v x			&$\Delta x_s$	&milimetri 	&mm \\
+ statična ekscentričnost v y			&$\Delta y_s$	&milimetri 	&mm \\
+ dinamična ekscentričnost v x			&$\Delta x_d$	&milimetri 	&mm \\
+ dinamična ekscentričnost v y			&$\Delta y_d$	&milimetri	&mm \\
+  \hline
+\end{tabular}
+%%\end{footnotesize}
+  \caption{Veličine in simboli}
+  \label{prebojne_trdnosti}
+\end{table}
+%%------------------------ GLAVNI DEL ------------------------------------
+\mainmatter
+%%-------------------------------------------------------------------------
+%%********************* POVZETEK V SLOVENŠČINI ****************************
 \chapter*{Povzetek}
 
 
@@ -83,9 +85,9 @@ Za regulacijo pogonov se v industriji uporablja dajalnike zasuka.
 Primer dajalnika zasuka je magnetni enkoder.
 Magnetni enkoder je zaradi svoje robustnosti primeren za delovanje v takem okolju.
 
-S Hallovimi sonadmi enkoder meri Z- komponento magnetnega polja magneta, ki se nahaja na rotirajočem delu pogona.
+S Hallovimi sonadmi enkoder meri Z-komponento magnetnega polja magneta, ki se nahaja na rotirajočem delu pogona.
 Iz signalov Hallovih sond se preko matematičnega algoritma izračuna kot zasuka.
-Osnovni princip algoritma je izračun matematične funkcije $atan2();$.
+Algoritem predstavlja izračun matematične funkcije $atan2();$.
 
 Ob nepravilni montaži enkoderja ali magneta, Hallove sonde zajamejo nepravilno polje. Posledično se v izračunanem kotu pojavi napaka.
 Napaka kota se izrazi glede na nepravilno zajeto magnetno polje. V magistrskem delu je predstavljeno spreminjanje zajemanja magnetnega polja posamezne Hallove sonde v odvisnosti od nepravilne montaže.
@@ -98,55 +100,32 @@ Simulacije so bile opravljene na linearno aprokismirani Z-komponenti gostote mag
 Napaka ob napačni montaži je bila analizirana v frekvenčenem prostoru in je predstavljena kot potek posameznega harmonika v odvisnosti od nepravilne montaže.
 
 Opravljene so bile meritve na enkoderju RM44, ki so bile primerjane s simulacijami.
-%
-%
-%
-%Z matematičnim algoritmom, ki je v osnovi funkcija atan2(); se preko signalov iz Hallovih sond izračuna kot zasuka.
-%
-%Nepravilna montaža enkoderja ali
-%
-%
-%V magistrski nalogi je predstavljen vpliv napačno merjene Z-komponente gostote magnetnega pretoka magnetnega enkoderja, zaradi nepravilne montaže enkoderja ali magnetnega aktuatorja.
-%
-%Nepravilna montaža senzorja ali magnetnega aktuatorja vpliva na napako izhoda funkcije.
-%Enkoder s Hallovimi sondami zajame magnetno polje. Z matematičnim algoritmom, ki v osnovi predstavlja  funkcijo atan2(); se iz zajetega magnetenga polja izračuna kot.
-%Z nepravilno zajetim poljem se izračuna napačen kot.
-%
-%Nepravilna montaža senzorja vpliva na posamezno Hallovo sondo znotraj senzorja.
-%
-%Predstavljen je vpliv nepravilne montaže  Hallove sonde na magnet
-%Opisan je vpliv nepravilnih vhodnih signalov na napako izhoda funkcije atan2();.
-%Opravljene so bile simulacije na linearno aproksimirani Z-komponenti gostote magnetnega pretoka, ter na numerično izračunani Z-komponenti gostote magnetnega pretoka simuliranega realnega magneta.
-%Simulacije so primerjane z meritvami na enkoderju RM44. 
-%Tehnologija in princip senzorja RM44 je poslovna skrivnost, zato je bil postavljen lasten simulacijski model enkoderja, s pričakovanji, da se  bodo rezultati simulacij  razlikovali od končnih meritev.
-%
-%\kljucnebesede  dajalnik položaja, Hallova sonda, napačna montaža, predvidevanje napake, arcustangens
-%%%*************************** POVZETEK V ANGLEďż˝ďż˝INI ***********************
-%\chapter*{Abstract}
-%
-%
-%Simulations have been compared to the encoder RM44 measurements. The basic principle of operation of encoder cannot be revealed due to secrecy.
-%
-%
-%This work presents the impact of incorrect measured Z-component of magnetic field with magnetic encoder, due to inappropriate installation of encoder or magnetic actuator.
-%A relative change in position of Hall sensor relative to magnet is derived.
-%The error of mathematical function atan2(); is described by infinity series depending on input signals distortion.
-%Basic simulation model has been developed.
-%Simulations have been made by linear approximation of Z-component of magnetic field and numerical calculations by magnet model.
-%Simulations have been compared to measurements with encoder RM44.
-%The basic principle of  operation of encoder is business secret.
-%Therefor was built own simulation model, by expectation that measurements will be different.
-%
-%\keywords position encoders, Hall effect sensor, superficial implementation, anticipating an error, arcustangens
+
+\kljucnebesede  dajalnik položaja, Hallova sonda, nepravilna montaža, predvidevanje napake, arcustangens
+%%*************************** POVZETEK V ANGLEďż˝ďż˝INI ***********************
+\chapter*{Abstract}
+
+Simulations have been compared to the encoder RM44 measurements. The basic principle of operation of encoder cannot be revealed due to secrecy.
+
+This work presents the impact of incorrect measured Z-component of magnetic field with magnetic encoder, due to inappropriate installation of encoder or magnetic actuator.
+A relative change in position of Hall sensor relative to magnet is derived.
+The error of mathematical function atan2(); is described by infinity series depending on input signals distortion.
+Basic simulation model has been developed.
+Simulations have been made by linear approximation of Z-component of magnetic field and numerical calculations by magnet model.
+Simulations have been compared to measurements with encoder RM44.
+The basic principle of  operation of encoder is business secret.
+Therefor was built own simulation model, by expectation that measurements will be different.
+
+\keywords position encoders, Hall effect sensor, superficial implementation, anticipating an error, arcustangens
 %%%***************************** UVOD **************************************
-%\include{./tex/Uvod}
-%\include{./tex/Analiticna_izpeljava}
+\include{./tex/Uvod}
+\include{./tex/Analiticna_izpeljava}
 %\include{./tex/Linearni_model}
 %\include{./tex/Realni_model}
 %\include{./tex/Meritve}
 %\include{./tex/Primerjava}
 %\include{./tex/Sklep}
-%\bibliographystyle{ieeetrslo}
-%\bibliography{literatura}
+\bibliographystyle{ieeetrslo}
+\bibliography{literatura}
 
 \end{document}

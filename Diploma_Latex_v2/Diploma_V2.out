@@ -1,0 +1,15 @@
+\BOOKMARK [0][-]{chapter.1}{Uvod}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Senzor RM44}{}% 2
+\BOOKMARK [0][-]{chapter.3}{Izpeljava gibanja sonde relativno na magnet ob nepravilni monta\236i}{}% 3
+\BOOKMARK [1][-]{section.3.1}{Definicija koordinatnega sistema}{chapter.3}% 4
+\BOOKMARK [1][-]{section.3.2}{Izpeljava gibanja lokacije Hallove sonde na magnet pri dinamicni ekscentricnosti}{chapter.3}% 5
+\BOOKMARK [1][-]{section.3.3}{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri staticni ekscentricnosti}{chapter.3}% 6
+\BOOKMARK [1][-]{section.3.4}{Koncna enacba za dolocanje lokacije Hall-ove sonde}{chapter.3}% 7
+\BOOKMARK [0][-]{chapter.4}{Potek napake funkcije atan2 ob popacenju vhodnih signalov}{}% 8
+\BOOKMARK [1][-]{section.4.1}{Razlicne amplitude}{chapter.4}% 9
+\BOOKMARK [1][-]{section.4.2}{Razlicne enosmerne komponente}{chapter.4}% 10
+\BOOKMARK [2][-]{subsection.4.2.1}{Enosmerna komponenta v signalu B_sin}{section.4.2}% 11
+\BOOKMARK [2][-]{subsection.4.2.2}{Enosmerna komponenta signala B_cos}{section.4.2}% 12
+\BOOKMARK [2][-]{subsection.4.2.3}{Enosmerna komponenta pri obeh signalih}{section.4.2}% 13
+\BOOKMARK [1][-]{section.4.3}{Neorotogonalnost signalov}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.4}{Napaka zaradi spremembe amplitude in faze zaradi enega parametra}{chapter.4}% 15
