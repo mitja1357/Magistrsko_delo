@@ -58,7 +58,7 @@ else
     axis( [0,0.5,mini,maxi]);
 
 end
-legend('$B_{sin}$','$B_{cos}$','Location','northeast','interpreter','latex')
+legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
 xlabel(['$', tx,'$ / mm'],'interpreter','latex')
 
@@ -89,7 +89,7 @@ else
     axis( [0,0.5,mini,maxi]);
 end
 
-legend('$B_{sin}$','$B_{cos}$','Location','northeast','interpreter','latex')
+legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
 xlabel(['$', tx,'$ / mm'],'interpreter','latex')
 if isempty(strfind(meritev,'mer'))
@@ -118,7 +118,7 @@ else
     axis( [0,0.5,mini,maxi]);
 
 end
-legend('$B_{sin}$','$B_{cos}$','Location','northeast','interpreter','latex')
+legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
 xlabel(['$', tx,'$ / mm'],'interpreter','latex')
 ylabel('fazni zamik /$ ^\circ$','interpreter','latex')
@@ -147,7 +147,7 @@ else
     axis( [0,0.5,mini,maxi]);
 
 end
-legend('$B_{sin}$','$B_{cos}$','Location','northeast','interpreter','latex')
+legend('B_{sin}','B_{cos}','Location','northeast')
 grid on
 xlabel(['$', tx,'$ / mm'],'interpreter','latex')
 

@@ -94,7 +94,7 @@ Napaka $\varepsilon$ je pri vsaki ekscentričnosti razvita v Fourierovo vrsto. O
 Parameteri amplitud so  aproksimirani s kubičnimi polinomomi v odvisnosti od ekscentričnosti.
 Na spodnjih slikah so predstavljeni tudi poteki amplitud posameznega harmonika napake v odvisnosti od ekscentričnosti.
 
-Na sliki \ref{./LIN/xs_sincos_amp} je prikazana sprememba amplitude prvega harmonika signalov $B_{sin}$ in $B_{cos}$. Razvidno iz (\ref{equ:linearna_atan_sin})  (\ref{equ:linearna_atan_cos}) linearno narašča amplituda $B_{cos}$. Slika \ref{./LIN/xs_sincos_off} prikazuje enosmerni komponenti, ki od statične ekscentričnosti nista odvisni. Slika \ref{./LIN/xs_sincos_phase} prikazuje fazni zamik signalov glede na njuno idealno poravnavo. Po (\ref{equ:linearna_atan_sin}) je pričakovano spreminjanje faze $B_{sin}$.
+Na sliki \ref{./LIN/xs_sincos_amp} je prikazana sprememba amplitude prvega harmonika signalov $B_{sin}$ in $B_{cos}$. Razvidno iz (\ref{equ:linearna_atan_sin})  (\ref{equ:linearna_atan_cos}) linearno narašča amplituda $B_{cos}$. Slika \ref{./LIN/xs_sincos_off} prikazuje enosmerni komponenti, ki od statične ekscentričnosti nista odvisni. Slika \ref{./LIN/xs_sincos_phase} prikazuje fazni zamik signalov glede na njuno idealno poravnavo (slika \ref{./LIN/xs_sincos_phase}). Po (\ref{equ:linearna_atan_sin}) je pričakovano spreminjanje faze $B_{sin}$.
 
 Spreminjanje amplitude prvega harmonika, enosmerne komponente in faznega zamika $B_{sin}$ in $B_{cos}$ je opisano z (\ref{analog_lin_xs})- (\ref{analog_lin_xs_zadnja}). 
 \begin{eqnarray}
@@ -112,7 +112,7 @@ Spreminjanje amplitude prvega harmonika, enosmerne komponente in faznega zamika 
 \slikaeps{Fazni zamik $B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri x glede na idealna signala $B_{sin}$ in $B_{cos}$}{./LIN/xs_sincos_phase}
 \newpage
 Spremembi signalov $B_{sin}$ in $B_{cos}$ se odrazita tudi pri izračunu kota $\varphi$ in napake $\varepsilon$.
-Na sliki \ref{./LIN/xs_potek} je odvisnost amplitud posameznega harmonika od spreminjanja statične ekscentričnosti v smeri x. Poteke s slike \ref{./LIN/xs_potek} aproksimirajo polinomi (\ref{nap_lin_xs}) - (\ref{nap_lin_xs_zadnji}).
+Na sliki \ref{./LIN/xs_potek} je prikazana odvisnost amplitud posameznega harmonika napake od spreminjanja statične ekscentričnosti v smeri x. Poteke s slike \ref{./LIN/xs_potek} aproksimirajo polinomi (\ref{nap_lin_xs}) - (\ref{nap_lin_xs_zadnji}).
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od statične ekscentričnosti v smeri x pri simulacijah z linearnim poljem}{./LIN/xs_potek}
 \begin{eqnarray}
 \label{nap_lin_xs}
@@ -135,7 +135,7 @@ Za primerjavo, so dodane tudi enačbe potekov amplitud posameznega harmonika raz
 
 Rezultati so pričakovani.
 %Enosmerna komponenta in amplituda drugega harmonika naračšata linearno, četrti harmonik narašča s kvadratom ekscentričnosti, lihi harmoniki, so zanemarljivi.
-Četrti harmonik se po poteku nekoliko razlikuje. To je posledica razvite vrste okoli izhodišča. Z razvojem četrtega harmonika okoli točke $0,25 \mathrm{ mm}$ (\ref{equ:4harTay}), je iz izraza že bolj razvidno prilagajanje harmonika.
+Četrti harmonik se po poteku nekoliko razlikuje. To je posledica razvite vrste okoli izhodišča. Z razvojem četrtega harmonika okoli točke $0,25 \mathrm{ mm}$ (\ref{equ:4harTay}), je iz izraza bolj razvidno prilagajanje harmonika.
 \begin{equation}
 \label{equ:4harTay}
 C_4(\Delta x_s) =-2,90\Delta x_s^{3}+5,88\Delta x_s^{2}+0,08 \Delta x_s - 4,98 \cdot 10^{-3}
@@ -144,7 +144,7 @@ C_4(\Delta x_s) =-2,90\Delta x_s^{3}+5,88\Delta x_s^{2}+0,08 \Delta x_s - 4,98 \
 
 \section{Simulacija statične ekscentričnosti v smeri y-osi}
 
-Pričakovani so podobni rezultati kot pri statični ekscentričnosti v smeri x, le da bo tu hitreje naraščala amplituda $B_{sin}$, spreminjal se bo fazni zamik $B_{cos}$.
+Pričakovani so podobni rezultati kot pri statični ekscentričnosti v smeri x, le da tu hitreje narašča amplituda $B_{sin}$, spreminja se fazni zamik $B_{cos}$ (slika \ref{./LIN/ys_sincos}).
  
 \slikaeps{$B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem pri 0,2 mm statične ekscentričnosti v smeri y}{./LIN/ys_sincos}
 
@@ -154,7 +154,9 @@ Napaka je prikazana na sliki \ref{./LIN/ys_napaka}. Sestavlja jo negativna enosm
 \newpage
 \subsection{Sprememba signalov Hallovih sond ter napake v odvisnosti od statične ekscentričnosti v smeri y}
 
-Potek hitrejšega spreminjanja amplitude $B_{sin}$ je pričakovan. Enosmerna komponenta signalov se prav tako ni spremenila. Fazni zamik signala $B_{cos}$ se je zmanjševal, posledično tudi fazna razlika med signaloma. Poteki so opisani s kubičnimi polinomi. Na sliki \ref{./LIN/ys_potek} so prikazani poteki amplitud posameznih harmonikov v odvisnosti od statične ekscentričnosti v smeri y.  Potek amplitud harmonikov je enak potekom simuliranih s statično ekscentričnostjo v smeri x, razlikuje se le enosmerna komponenta z nasprotnim predznakom.
+Potek hitrejšega spreminjanja amplitude $B_{sin}$ je pričakovan. Enosmerna komponenta signalov ni odvisna od statične ekscentričnosti (slika \ref{./LIN/ys_sincos_off}). Fazni zamik signala $B_{cos}$ se je zmanjševal, posledično tudi fazna razlika med signaloma (slika \ref{./LIN/ys_sincos_phase}). Poteki so opisani s kubičnimi polinomi.
+
+Na sliki \ref{./LIN/ys_potek} so prikazani poteki amplitud posameznih harmonikov v odvisnosti od statične ekscentričnosti v smeri y.  Potek amplitud harmonikov je enak potekom simuliranih s statično ekscentričnostjo v smeri x, razlikuje se le enosmerna komponenta z nasprotnim predznakom.
 \begin{eqnarray}
 \label{analog_lin_ys}
 &Off_{sin}(\Delta y_s) = 0\Delta y_s^{3}+0\Delta y_s^{2}+0\Delta y_s+0 \\
@@ -184,9 +186,11 @@ Tu so priloženi tudi poteki izraza (\ref{vrsta:ys}), razviti v Taylorjevo vrsto
 \slikaeps{Enosmerna komponenta $B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri y}{./LIN/ys_sincos_off}
 \slikaeps{Fazni zamik $B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem statične ekscentričnosti v smeri y glede na idealna signala $B_{sin}$ in $B_{cos}$}{./LIN/ys_sincos_phase}
 \slikaeps{Potek amplitud posameznega harmonika napake $\varepsilon$ od statične ekscentričnosti v smeri y pri simulacijah z linearnim poljem}{./LIN/ys_potek}
+\newpage
 \section{Dinamična ekscentričnost v smeri x osi}
 Dinamična ekscentričnost v smeri x osi pričakovano povzroči v $B_{sin}$ in $B_{cos}$ enosmerno komponento (Slika \ref{./LIN/xd_sincos}).
 \slikaeps{$B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem pri 0,24 mm mm dinamične ekscentričnosti v smeri x}{./LIN/xd_sincos}
+
  Na sliki \ref{./LIN/xd_napaka} je vidna napaka v obliki prvega harmonika, kar je bilo pričakovati (Poglavje \ref{2_offseta}).
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0,24 mm dinamične ekscentričnosti v smeri x}{./LIN/xd_napaka}
 Z razvojem napake v Fourierovo vrsto je najizrazitejši prvi harmonik, enosmerna komponenta je nič (slika \ref{./LIN/xd_fft}).
@@ -232,4 +236,4 @@ Poteki napake so enaki kot v poglavju \ref{2_offseta}. Razlikuje se le v negativ
 \section{Dinamična ekscentričnost v smeri y in sprememba razdalje Hallovih sond od magneta }
 Dinamična ekscentričnost v smeri y ni povzročila nobene napake v kotu zasuka, saj ni vplivala na siganl, ki ga zajameti Hallovi sondi (\ref{equ:lin_potek_sin})(\ref{equ:lin_potek_cos}).
 
-Gostota magnetnega pretoka z razdaljo od magneta upada, oblika Z komponente kljub temu ostaja enaka. Zajeto polje Hallovih sond, bo imelo le manjšo amplitudo. Z večjo oddaljenostjo se bo spremenila le amplituda zajetega signala, faza in enosmerna komponenta se ohraniti. Tudi vpliv ekscentričnosti se bo zmanjšal proprocionalno, kot se je zmanjšala amplituda. V funkcijo atan2(); imata vhodna signala manjši amplitudi, vendar se njuno razmerje ohrani in tako v izračunih v MATLABU ne vpliva na izhodni podatek o zasuku.
+Gostota magnetnega polja z razdaljo od magneta upada, oblika kljub temu ostaja enaka. Zajeto polje Hallovih sond, bo imelo le manjšo amplitudo. Z večjo oddaljenostjo se bo spremenila le amplituda zajetega signala in enosmerna komponenta, vendar obe za enak faktor.Faza se ohraniti. Tudi vpliv ekscentričnosti se bo zmanjšal proporcionalno, kot se je zmanjšala amplituda. V funkcijo atan2(); imata vhodna signala manjši amplitudi, vendar se njuno razmerje ohrani. Sprememba razdalje med sondam in magnetom ne vpliva na izhodni podatek o zasuku.

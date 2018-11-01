@@ -52,7 +52,7 @@ axes1 = axes('Parent',gcf,...
         'FontSize',16,...
         'FontName','Times New Roman');
 plot(Ref, Sin, Ref, Cos, 'LineWidth',2);
-legend('$B_{sin}$','$B_{cos}$','Location','northwest','interpreter','latex')
+legend('B_{sin}','B_{cos}','Location','northeast')
 axis( [0,360,-Inf,Inf])
 grid on
 xlabel(' $\theta / ^\circ$','interpreter','latex')

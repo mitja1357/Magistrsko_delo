@@ -31,42 +31,43 @@ for j = 1:3
     ax_max = max([max(y{1}(:)),max(y{2}(:)),max(y{3}(:))]);
     ax_min = min([min(y{1}(:)),min(y{2}(:)),min(y{3}(:))]);
     naslov = {'Linearno polje', 'Realno polje', 'Meritev'};
-
-    figure
-    
-    ax1 = subplot(1,3,1);
     velikost_besedila = 20;
+    ime_besedila = 'Times New Roman';
+    figure('Position', [1,41,1920, 963])
+    
+    ax1 = subplot(1,3,1,'FontSize', velikost_besedila,'FontName', ime_besedila);
     
     
     plot(x{1}, y{1},'LineWidth',2)
-    ax1.FontSize = velikost_besedila;
+
     legend('C_0','C_1','C_2','C_3','C_4','Location','northwest')
     axis( [0,0.5,-Inf,Inf])
     grid on
     title(naslov{1})
-    xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
-    ylabel('$\mathrm{\varepsilon} / ^\circ$', 'interpreter','latex')
+    xlabel(['$', tx,'$ / mm'],'interpreter','latex')
+    ylabel('$\varepsilon / ^\circ$', 'interpreter','latex')
     
-    ax2 = subplot(1,3,2);
+    ax2 = subplot(1,3,2,'FontSize', velikost_besedila,'FontName', ime_besedila);
     
     plot(x{2}, y{2},'LineWidth',2)   
-    ax2.FontSize = velikost_besedila;
+
     legend('C_0','C_1','C_2','C_3','C_4','Location','northwest')
     axis( [0,0.5,-Inf,Inf])
     grid on
     title(naslov{2})
-    xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
-    ylabel('$\mathrm{\varepsilon} / ^\circ$', 'interpreter','latex')
+    xlabel(['$', tx,'$ / mm'],'interpreter','latex')
+    ylabel('$\varepsilon / ^\circ$', 'interpreter','latex')
     
-    ax3 = subplot(1,3,3);
+    ax3 = subplot(1,3,3,'FontSize', velikost_besedila,'FontName', ime_besedila);
     plot(x{3}, y{3},'LineWidth',2)
-    ax3.FontSize = velikost_besedila;
+
+
     legend('C_0','C_1','C_2','C_3','C_4','Location','northwest')
     axis( [0,0.5,-Inf,Inf])
     grid on
     title(naslov{3})
-    xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
-    ylabel('$\mathrm{\varepsilon} / ^\circ$', 'interpreter','latex')
+    xlabel(['$', tx,'$ / mm'],'interpreter','latex')
+    ylabel('$\varepsilon / ^\circ$', 'interpreter','latex')
  
     
 end

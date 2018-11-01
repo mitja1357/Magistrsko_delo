@@ -44,7 +44,7 @@ axes1 = axes('Parent',gcf,...
         'FontSize',16,...
         'FontName','Times New Roman');
 plot(x,y,'LineWidth',2);
-legend('$C_0$','$C_1$','$C_2$','$C_3$','$C_4$','Location','northwest','interpreter','latex')
+legend('C_0','C_1','C_2','C_3','C_4','Location','northwest')
 axis( [0,0.5,-Inf,Inf])
 grid on
 xlabel(['$', tx,'$ / mm'],'interpreter','latex')

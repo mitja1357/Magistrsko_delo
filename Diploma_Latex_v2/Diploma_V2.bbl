@@ -67,4 +67,8 @@ D.~Hanselman, ``Resolver signal requirements for high accuracy
 MathWorks. Dosegljivo:
   \url{https://www.mathworks.com/products/curvefitting.html}.
 
+\bibitem{iCMHM}
+iCHaus, ``14-bit absolute angle hall encoder.'' Dosegljivo:
+  \url{http://www.ichaus.de/upload/pdf/MHM_datasheet_D2en.pdf}.
+
 \end{thebibliography}
