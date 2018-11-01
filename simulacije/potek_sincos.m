@@ -58,13 +58,13 @@ else
     axis( [0,0.5,mini,maxi]);
 
 end
-legend('B_{sin}','B_{cos}','Location','northeast')
+legend('$B_{sin}$','$B_{cos}$','Location','northeast','interpreter','latex')
 grid on
-xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
+xlabel(['$', tx,'$ / mm'],'interpreter','latex')
 
 
 if isempty(strfind(meritev,'mer'))
-    ylabel('B / $mT$','interpreter','latex')
+    ylabel('$B$ / mT','interpreter','latex')
 end
 if exist('shrani')
     if shrani
@@ -89,11 +89,11 @@ else
     axis( [0,0.5,mini,maxi]);
 end
 
-legend('B_{sin}','B_{cos}','Location','northeast')
+legend('$B_{sin}$','$B_{cos}$','Location','northeast','interpreter','latex')
 grid on
-xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
+xlabel(['$', tx,'$ / mm'],'interpreter','latex')
 if isempty(strfind(meritev,'mer'))
-    ylabel('B / $mT$','interpreter','latex')
+    ylabel('$B$/ mT','interpreter','latex')
 end
 if exist('shrani')
     if shrani
@@ -118,9 +118,9 @@ else
     axis( [0,0.5,mini,maxi]);
 
 end
-legend('B_{sin}','B_{cos}','Location','northeast')
+legend('$B_{sin}$','$B_{cos}$','Location','northeast','interpreter','latex')
 grid on
-xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
+xlabel(['$', tx,'$ / mm'],'interpreter','latex')
 ylabel('fazni zamik /$ ^\circ$','interpreter','latex')
 if exist('shrani')
     if shrani
@@ -147,12 +147,12 @@ else
     axis( [0,0.5,mini,maxi]);
 
 end
-legend('B_{sin}','B_{cos}','Location','northeast')
+legend('$B_{sin}$','$B_{cos}$','Location','northeast','interpreter','latex')
 grid on
-xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
+xlabel(['$', tx,'$ / mm'],'interpreter','latex')
 
 if isempty(strfind(meritev,'mer'))
-    ylabel('B / $mT$','interpreter','latex')
+    ylabel('$B$/ mT','interpreter','latex')
 end
 if exist('shrani')
     if shrani

@@ -52,12 +52,12 @@ axes1 = axes('Parent',gcf,...
         'FontSize',16,...
         'FontName','Times New Roman');
 plot(Ref, Sin, Ref, Cos, 'LineWidth',2);
-legend('B_{sin}','B_{cos}','Location','northwest')
+legend('$B_{sin}$','$B_{cos}$','Location','northwest','interpreter','latex')
 axis( [0,360,-Inf,Inf])
 grid on
-xlabel(' $\mathrm{\theta} / ^\circ$','interpreter','latex')
+xlabel(' $\theta / ^\circ$','interpreter','latex')
 if isempty(strfind(meritev,'mer'))
-    ylabel('B / $mT$','interpreter','latex')
+    ylabel('$B$ / mT','interpreter','latex')
 end
 if exist('shrani')
     if shrani
@@ -75,7 +75,7 @@ axes1 = axes('Parent',gcf,...
 plot(Ref, Err, 'LineWidth',2);
 axis( [0,360,-Inf,Inf])
 grid on
-xlabel(' $\mathrm{\theta} / ^\circ$','interpreter','latex')
+xlabel(' $\theta / ^\circ$','interpreter','latex')
 ylabel('$\varepsilon / ^\circ$', 'interpreter','latex')
 if exist('shrani')
     if shrani

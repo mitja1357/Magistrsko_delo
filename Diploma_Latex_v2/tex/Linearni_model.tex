@@ -1,11 +1,11 @@
 \chapter{Linearni model magnetnega polja}
 \label{linearnimodel}
-Prve simulacije in predvideni poteki napake so opravljeni na Z-komponenti gostote magnetnega pretoka aprokimiranega z ravnino (\ref{equ:lin_polje}).
+Prve simulacije in predvideni poteki napake so opravljeni na Z-komponenti gostote magnetnega polja aprokimiranega z ravnino (\ref{equ:lin_polje}).
 \begin{equation}
 \label{equ:lin_polje}
 B(x,y)= x
 \end{equation}
-Simulacijski model sestavljajo 4 Hallove sonde postavljene na krožnico z radijem $r_0$ in so prostorsko zamaknjene za $90^\circ$ (slika \ref{lin_simul}). Lokacija predstavlja začetno lego Hallovih sond. 
+Simulacijski model sestavljajo 4 Hallove sonde enakomerno razporejene po krožnici z radijem $r_0$ (slika \ref{lin_simul}). Lokacija predstavlja začetno lego Hallovih sond. 
 Ob zasuku magneta, se sonde relativno gibljejo na magnet v nasprotni smeri kot se vrti magnet. 
 \begin{figure}[!ht]
 	\centering
@@ -28,21 +28,17 @@ Ob zasuku magneta, se sonde relativno gibljejo na magnet v nasprotni smeri kot s
 	\label{lin_simul}
 \end{figure}
 
-Z upoštevanjem vplivov ekscentričnosti iz izraza (\ref{equ:rotacija_hall_koncna}) in enačbe za izračun Z-komponente gostote magnetnega pretoka (\ref{equ:lin_polje}) se izrazi potek, ki ga pomeri posamezna sonda ob vrtenju. 
-
-
+Z upoštevanjem vplivov ekscentričnosti iz izraza (\ref{equ:rotacija_hall_koncna}) in enačbe za izračun Z-komponente gostote magnetnega pretoka (\ref{equ:lin_polje}) se izrazi potek polja, ki ga pomeri posamezna sonda ob vrtenju.
 \begin{eqnarray}
 \label{equ:lin_potek_sin}
-B_{H_1}=  r_0 \cos \theta + \Delta x_s \cos \theta+ \Delta y_s \sin \theta -\Delta x_d\\
+B_{H_1}(\theta, r_0, \Delta x_s, \Delta y_s, \Delta x_d, \Delta y_d)=  r_0 \cos \theta + \Delta x_s \cos \theta+ \Delta y_s \sin \theta -\Delta x_d\\
 \label{equ:lin_potek_cos}
-B_{H_2}= r_0 \sin \theta + \Delta x_s \cos \theta+ \Delta y_s \sin \theta -\Delta x_d\\
-B_{H_3}=  -r_0 \cos \theta + \Delta x_s \cos \theta+ \Delta y_s \sin \theta -\Delta x_d\\
+B_{H_2}(\theta, r_0, \Delta x_s, \Delta y_s, \Delta x_d, \Delta y_d)= r_0 \sin \theta + \Delta x_s \cos \theta+ \Delta y_s \sin \theta -\Delta x_d\\
+B_{H_3}(\theta, r_0, \Delta x_s, \Delta y_s, \Delta x_d, \Delta y_d)=  -r_0 \cos \theta + \Delta x_s \cos \theta+ \Delta y_s \sin \theta -\Delta x_d\\
 \label{equ:lin_potek_zadnja}
-B_{H_4}=-r_0 \sin \theta + \Delta x_s \cos \theta+ \Delta y_s \sin \theta -\Delta x_d
+B_{H_4}(\theta, r_0, \Delta x_s, \Delta y_s, \Delta x_d, \Delta y_d)=-r_0 \sin \theta + \Delta x_s \cos \theta+ \Delta y_s \sin \theta -\Delta x_d
 \end{eqnarray}
-
 Z odštevanjem signalov nasprotni ležečih sond se pridobi signala  $B_{sin}$ in $B_{cos}$.
-
 \begin{eqnarray}
 B_{sin}=  B_{H_1} - B_{H_3} = 2 r_0 \sin \theta \\
 B_{cos}=  B_{H_2} - B_{H_4}=  2 r_0 \cos \theta
@@ -50,7 +46,7 @@ B_{cos}=  B_{H_2} - B_{H_4}=  2 r_0 \cos \theta
 
 Z diferencialnim odčitavenjem signalov  $B_{sin}$ in $B_{cos}$, se popačanje signalov zaradi napačne montaže izniči. Iz tega sledi zaključek, da pri linearni apoksimaciji Z-komponente gostote magnetnega pretoka napačna montaža ne vpliva na napako.
 
-Kljub temu so bile opravljene simulacije na poenostavljenem modelu le dveh sond
+Kljub temu so bile opravljene simulacije na poenostavljenem modelu, uporabi le dveh sond
  ($B_{sin}=B_{H_1}$ in $B_{cos}=B_{H_2}$). Na ta način je lahko bila analizirana napaka.
 
 V tem poglavju so predstavljeni rezultati simulacij z upoštevanjem dveh Hall-ovih sond in uporabo linearno aprokismirane Z-komponente gostote magnetnega pretoka.
@@ -60,7 +56,7 @@ Hall-ovi sondi sta postavljeni na krožnico z radijem 1,5 mm \cite{AM8192}.
 Signala $B_{sin}$ in $B_{cos}$ pomerjena v stanju brez ekscentričnosti imata enaki amplitudi in sta fazno zamaknjena za $90^{\circ}$ ter brez enosmernih komponent. Napaka $\varepsilon$, ki se pojavi pri izračunu je le numerična napaka funkcije atan2d(); (Slika \ref{./LIN/yd_napaka}). Numerična napaka je proti pričakovani napaki zaradi ekscnetričnosti zanemarljiva.
 \slikaeps{$B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim magnetnim poljem brez ekscentričnosti}{./LIN/yd_sincos}
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim magnetnim poljem brez ekscentričnosti}{./LIN/yd_napaka}
-%\newpage
+\newpage
 \section{Simulacija statične ekscentričnosti v smeri x-osi}
 Izraza (\ref{equ:lin_potek_sin}) in (\ref{equ:lin_potek_cos}), se lahko preuredi:
 \begin{eqnarray}
@@ -74,7 +70,7 @@ Ob upoštevanju le statične ekscentričnosti v smeri x se iz (\ref{equ:linearna
 Signalu $B_{sin}$ se poveča amplituda, vendar je sprememba manjša kot pri signalu $B_{cos}$. Signalu $B_{sin}$ se spremeni tudi faza.
 Potek signalov $B_{sin}$ in $B_{cos}$ pri 0,2mm statične ekscentričnosti v smeri x je prikazan na sliki \ref{./LIN/xs_sincos}.
 V poglavju \ref{izpeljava_atan_napake_staticne} je bil predstavljen primer popačanja signalov na ta način.
-Napaka se je pričakovano izrazila v obliki enosmerne komponente in drugega harmonika (slika \ref{./LIN/xs_napaka} in \ref{./LIN/xs_fft}).
+Napaka se je pričakovano izrazila v obliki enosmerne komponente, drugega harmonika in višjih sodih harmonikov (slika \ref{./LIN/xs_napaka} in \ref{./LIN/xs_fft}).
 \slikaeps{$B_{sin}$ in $B_{cos}$ pri simulacijah z linearnim poljem pri 0,2 mm statične ekscentričnosti v smeri x}{./LIN/xs_sincos}
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z linearnim poljem pri 0,2 mm statične ekscentričnosti v smeri x}{./LIN/xs_napaka}
 \slikaeps{Amplitude harmonikov napake $\varepsilon$ razvite v Fourierovo vrsto pri simulacijah z linearnim poljem pri 0,2 mm statične ekscentričnosti v smeri x}{./LIN/xs_fft}
@@ -85,17 +81,17 @@ Signala $B_{sin}$ in $B_{cos}$ se pri vsaki simulirani ekscentričnosti aproksim
 B_{sin} \simeq A_{sin} \sin (\theta + \delta_{sin})+ Off_{sin}\\
 B_{cos} \simeq A_{cos} \cos (\theta + \delta_{cos})+ Off_{cos}.
 \end{eqnarray}
-V primeru linearizirane Z-komponente magnetnega pretoka bi bil v gornjih izrazih primernejši enačaj, vendar je uporabljen približek zaradi splošne aproksimacije. Poteki posamezngega parametra so bili pridobljeni s FFT-jem signala in nato aproksimiranje poteka kubičnega polinoma z metodo minimalnih kvadratov.
-Na slikah je predstavljen potek posameznega parametra od spreminjajoče ekscentričnosti.
+V primeru linearizirane Z-komponente magnetnega polja v gornjih izrazih velja enačaj, vendar je uporabljen približek zaradi splošne aproksimacije. Parametri ($A_{sin}$, $\delta_{sin}$, $Off_{sin}$, $A_{cos}$, $\delta_{cos}$, $Off_{cos}$) so se s spreminjanjem posamezne ekscentričnosti spreminjali. Poteki posameznega parametra v odvisnosti od ekscentričnosti so aproksimiranz kubičnimi polinomi.
+Na spodnjih slikah je predstavljen potek posameznega parametra od spreminjajoče ekscentričnosti.
 
-Napaka je pri vsaki ekscentričnosti razvita v Fourierovo vrsto. Opazovani so bili prvi štirje harmoniki in enosmerna komponenta. Napako se lahko predstavi tudi v obliki
+Napaka $\varepsilon$ je pri vsaki ekscentričnosti razvita v Fourierovo vrsto. Opazovani so prvi štirje harmoniki in enosmerna komponenta. Napako se lahko predstavi tudi v obliki
 \begin{equation}
 \varepsilon (\Delta x_s) \simeq C_0 + C_1 \sin (\theta + \delta_1)
 + C_2 \sin (2 \theta + \delta_2)
 + C_3 \sin (3 \theta + \delta_3)
 + C_4 \sin (4 \theta + \delta_4).
 \end{equation}
-Parameter je bil aproksimiran s kubičnim polinomom v odvisnosti od ekscentričnosti.
+Parameteri amplitud so  aproksimirani s kubičnimi polinomomi v odvisnosti od ekscentričnosti.
 Na spodnjih slikah so predstavljeni tudi poteki amplitud posameznega harmonika napake v odvisnosti od ekscentričnosti.
 
 Na sliki \ref{./LIN/xs_sincos_amp} je prikazana sprememba amplitude prvega harmonika signalov $B_{sin}$ in $B_{cos}$. Razvidno iz (\ref{equ:linearna_atan_sin})  (\ref{equ:linearna_atan_cos}) linearno narašča amplituda $B_{cos}$. Slika \ref{./LIN/xs_sincos_off} prikazuje enosmerni komponenti, ki od statične ekscentričnosti nista odvisni. Slika \ref{./LIN/xs_sincos_phase} prikazuje fazni zamik signalov glede na njuno idealno poravnavo. Po (\ref{equ:linearna_atan_sin}) je pričakovano spreminjanje faze $B_{sin}$.

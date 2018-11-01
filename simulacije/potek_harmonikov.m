@@ -44,11 +44,11 @@ axes1 = axes('Parent',gcf,...
         'FontSize',16,...
         'FontName','Times New Roman');
 plot(x,y,'LineWidth',2);
-legend('C_0','C_1','C_2','C_3','C_4','Location','northwest')
+legend('$C_0$','$C_1$','$C_2$','$C_3$','$C_4$','Location','northwest','interpreter','latex')
 axis( [0,0.5,-Inf,Inf])
 grid on
-xlabel(['$\mathrm{', tx,'} / mm$'],'interpreter','latex')
-ylabel('$\mathrm{\varepsilon} / ^\circ$', 'interpreter','latex')
+xlabel(['$', tx,'$ / mm'],'interpreter','latex')
+ylabel('$\varepsilon / ^\circ$', 'interpreter','latex')
 saveas(gcf,[filename, 'potek'],'epsc')
 clear lin_xs lin_xd lin_ys lin_yd real_xs real_xd real_ys real_yd ...
     meritev_xs meritev_ys meritev_xd meritev_zs

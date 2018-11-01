@@ -43,6 +43,8 @@ prikaz_napake('real_ys',0.2,1)
 prikaz_napake('real_xd',0.2,1)
 prikaz_napake('real_yd',0.2,1)
 %%
+prikaz_napake('real_xs',0.0,1)
+%%
 potek_harmonikov('lin_xs')
 potek_harmonikov('lin_ys')
 potek_harmonikov('lin_xd')
@@ -58,5 +60,18 @@ prikaz_napake('lin_ys',0.2,1)
 prikaz_napake('lin_xd',0.2,1)
 prikaz_napake('lin_yd',0.2,1)
 %%
-prikaz_napake('real_xs',0.0,1)
 prikaz_napake('lin_xs',0.0,1)
+%%
+potek_harmonikov('meritev_xs')
+potek_harmonikov('meritev_ys')
+potek_harmonikov('meritev_xd')
+%%
+potek_sincos('meritev_xs', 1)
+potek_sincos('meritev_ys', 1)
+potek_sincos('meritev_xd', 1)
+%%
+prikaz_napake('meritev_xs',0.2,1)
+prikaz_napake('meritev_ys',0.2,1)
+prikaz_napake('meritev_xd',0.2,1)
+%%
+prikaz_napake('meritev_xs',0.0,1)

@@ -13,3 +13,12 @@
 \BOOKMARK [2][-]{subsection.4.2.3}{Enosmerna komponenta pri obeh signalih}{section.4.2}% 13
 \BOOKMARK [1][-]{section.4.3}{Neorotogonalnost signalov}{chapter.4}% 14
 \BOOKMARK [1][-]{section.4.4}{Napaka zaradi spremembe amplitude in faze zaradi enega parametra}{chapter.4}% 15
+\BOOKMARK [0][-]{chapter.5}{Linearni model magnetnega polja}{}% 16
+\BOOKMARK [1][-]{section.5.1}{Brez ekscentricnosti}{chapter.5}% 17
+\BOOKMARK [1][-]{section.5.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.5}% 18
+\BOOKMARK [2][-]{subsection.5.2.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od staticne ekscentricnosti v smeri x}{section.5.2}% 19
+\BOOKMARK [1][-]{section.5.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.5}% 20
+\BOOKMARK [2][-]{subsection.5.3.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od staticne ekscentricnosti v smeri y}{section.5.3}% 21
+\BOOKMARK [1][-]{section.5.4}{Dinamicna ekscentricnost v smeri x osi}{chapter.5}% 22
+\BOOKMARK [2][-]{subsection.5.4.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od dinamicne ekscentricnosti v smeri x}{section.5.4}% 23
+\BOOKMARK [1][-]{section.5.5}{Dinamicna ekscentricnost v smeri y in sprememba razdalje Hallovih sond od magneta }{chapter.5}% 24
