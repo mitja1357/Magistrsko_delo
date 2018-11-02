@@ -69,12 +69,12 @@ figure('Name', 'Offset','Position', ...
 subplot(1,2,1)
 hist(fftS{1}(:,1))
 grid on
-xlabel('Enosmerna komponenta sin')
+xlabel('Enosmerna komponenta $B_{sin}$','interpreter','latex')
 ylabel('Število meritev')
 subplot(1,2,2)
 hist(fftC{1}(:,1))
 grid on
-xlabel('Enosmerna komponenta cos')
+xlabel('Enosmerna komponenta $B_{cos}$','interpreter','latex')
 ylabel('Število meritev')
 
 
@@ -84,13 +84,13 @@ figure('Name', 'Amp','Position', ...
 subplot(1,2,1)
 hist(fftC{1}(:,2))
 grid on
-xlabel('Amplituda osnovnega harmonika sin')
+xlabel('Amplituda osnovnega harmonika $B_{sin}$','interpreter','latex')
 ylabel('Število meritev')
 
 subplot(1,2,2)
 hist(fftS{1}(:,2))
 grid on
-xlabel('Amplituda osnovnega harmonika cos')
+xlabel('Amplituda osnovnega harmonika $B_{cos}$','interpreter','latex')
 ylabel('Število meritev')
 
 %%

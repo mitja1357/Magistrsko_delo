@@ -20,13 +20,13 @@
 % tex_izpis_potekov_sincos('lin_yd')
 % 
 % %%
-% tex_izpis_potekov('meritev_xs')
-% tex_izpis_potekov('meritev_ys')
-% tex_izpis_potekov('meritev_xd')
+tex_izpis_potekov('meritev_xs')
+tex_izpis_potekov('meritev_ys')
+tex_izpis_potekov('meritev_xd')
 % %%
-% tex_izpis_potekov_sincos('meritev_xs')
-% tex_izpis_potekov_sincos('meritev_ys')
-% tex_izpis_potekov_sincos('meritev_xd')
+tex_izpis_potekov_sincos('meritev_xs')
+tex_izpis_potekov_sincos('meritev_ys')
+tex_izpis_potekov_sincos('meritev_xd')
 %%
 potek_harmonikov('real_xs')
 potek_harmonikov('real_ys')

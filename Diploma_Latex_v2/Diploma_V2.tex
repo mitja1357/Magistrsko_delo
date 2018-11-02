@@ -105,26 +105,35 @@ Opravljene so bile meritve na enkoderju RM44, ki so bile primerjane s simulacija
 %%*************************** POVZETEK V ANGLEďż˝ďż˝INI ***********************
 \chapter*{Abstract}
 
-Simulations have been compared to the encoder RM44 measurements. The basic principle of operation of encoder cannot be revealed due to secrecy.
+Position sensors are used for motor drive controls.
+Usage of magnetic encoder is appropriate for sensing position in robust industrial environment.
 
-This work presents the impact of incorrect measured Z-component of magnetic field with magnetic encoder, due to inappropriate installation of encoder or magnetic actuator.
-A relative change in position of Hall sensor relative to magnet is derived.
-The error of mathematical function atan2(); is described by infinity series depending on input signals distortion.
-Basic simulation model has been developed.
-Simulations have been made by linear approximation of Z-component of magnetic field and numerical calculations by magnet model.
-Simulations have been compared to measurements with encoder RM44.
-The basic principle of  operation of encoder is business secret.
-Therefor was built own simulation model, by expectation that measurements will be different.
+Magnetic encoder senses the angular position of a permanent magnet placed above the sensor.
+The permanent magnet must be diametrically polarized and of cylindrical shape.
+Encoder uses Hall sensors to detect magnetic flux density.
+Signals from Hall sensors are then converted to absolute angle with a specific algorithm.
+Algorithem could be presented by mathematical function of atan2();.
+
+Incorrect installation of sensor or magnet, causes error in output angle.
+This work presents, how incorrect installation of sensor or magnet  impact to measured magnetic field by Hall sensor.
+
+Incorrect installation can be recognized from field measured by Hall sensors. Encoders output signal is only angle.
+In this thesis is demonstrated how to recognize changes of signals from Hall sensors, by knowing encoder output only.
+
+The basic simulation model was built in MATLAB. Simulations were  made  by linear approximation of Z-component of magnetic field and numerical calculations by magnet model.
+Encoders error was analysed in frequence spectrum.
+
+Simulations have been compared to the encoder RM44 measurements.
 
 \keywords position encoders, Hall effect sensor, superficial implementation, anticipating an error, arcustangens
 %%%***************************** UVOD **************************************
 \include{./tex/Uvod}
 \include{./tex/Analiticna_izpeljava}
 \include{./tex/Linearni_model}
-%\include{./tex/Realni_model}
-%\include{./tex/Meritve}
-%\include{./tex/Primerjava}
-%\include{./tex/Sklep}
+\include{./tex/Realni_model}
+\include{./tex/Meritve}
+\include{./tex/Primerjava}
+\include{./tex/Sklep}
 \bibliographystyle{ieeetrslo}
 \bibliography{literatura}
 
