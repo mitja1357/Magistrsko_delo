@@ -86,20 +86,20 @@ Primer dajalnika zasuka je magnetni enkoder.
 Magnetni enkoder je zaradi svoje robustnosti primeren za delovanje v takem okolju.
 
 S Hallovimi sonadmi enkoder meri Z-komponento magnetnega polja magneta, ki se nahaja na rotirajočem delu pogona.
-Iz signalov Hallovih sond se preko matematičnega algoritma izračuna kot zasuka.
-Algoritem predstavlja izračun matematične funkcije $atan2();$.
+Iz signalov Hallovih sond enkoder pridobi signala v obliki sinusa in kosinusa. Preko matematičnega algoritma se izračuna kot zasuka.
+Algoritem predstavlja izračun matematične funkcije $atan2()$.
 
-Ob nepravilni montaži enkoderja ali magneta, Hallove sonde zajamejo nepravilno polje. Posledično se v izračunanem kotu pojavi napaka.
+Ob nepravilni montaži enkoderja ali magneta, se prostorski zajem signalov sinusne in kosinusne oblike spremeni. Posledično se v izračunanem kotu pojavi napaka.
 Napaka kota se izrazi glede na nepravilno zajeto magnetno polje. V magistrskem delu je predstavljeno spreminjanje zajemanja magnetnega polja posamezne Hallove sonde v odvisnosti od nepravilne montaže.
 
-Napako zaradi nepravilne montaže se razbere iz signalov pomerjenih s Hallovimi sondami, izhod enkoderja je le podatek o zasuku.
-Izpeljan je potek napake  $atan2();$ v odvisnosti od nepravilnih vhodnih signalov funkcije. Napaka funkcije $atan2();$  je izpeljana v neskončno vrsto v odvisnosti od nepravilnosti vhodnih signalov.
+Napako zaradi nepravilne montaže, se najlažje razbere iz signalov Hallovih sond. Izhod enkoderja je le podatek o zasuku.
+Ker se za izračun kota potrebuje funkcijo $atan2()$, je v delu izpeljano, kako napaka v vhodnih signalih rezultira v napaki izhoda funkcije.
 
 V programu MATLAB je bil sestavljen simulacijski model za merjenje napake enkoderja v odvisnosti od nepravilne montaže.
 Simulacije so bile opravljene na linearno aprokismirani Z-komponenti gostote magnetnega polja in na numerično izračunanem polju realnega magneta.
 Napaka ob napačni montaži je bila analizirana v frekvenčenem prostoru in je predstavljena kot potek posameznega harmonika v odvisnosti od nepravilne montaže.
 
-Opravljene so bile meritve na enkoderju RM44, ki so bile primerjane s simulacijami.
+Opravljene so bile meritve na enkoderju RM44, ki so bile primerjane s simulacijami. Meritve so potrdile pričakovane poteke napake predvidene s simulacijami. Na napravi je bila idealna lega iskana empirično. Posledično se je to pokazalo tudi v potekih napake v odvisnosti od nepravilne montaže.
 
 \kljucnebesede  dajalnik položaja, Hallova sonda, nepravilna montaža, predvidevanje napake, arcustangens
 %%*************************** POVZETEK V ANGLEďż˝ďż˝INI ***********************
