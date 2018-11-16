@@ -1,6 +1,7 @@
 \chapter{Linearni model magnetnega polja}
 \label{linearnimodel}
-Prve simulacije in predvideni poteki napake so opravljeni na Z-komponenti gostote magnetnega polja aprokimiranega z ravnino (\ref{equ:lin_polje}).
+Prve simulacije in predvideni poteki napake so opravljeni na Z-komponenti gostote magnetnega polja aprokimiranega z ravnino (\ref{equ:lin_polje}). Za lažje razumevanje bo $k$ enak $1\frac{\mathrm{mT}}{\mathrm{mm}}$.
+
 \begin{equation}
 \label{equ:lin_polje}
 B(x,y)= x
@@ -48,6 +49,9 @@ Z diferencialnim odčitavenjem signalov  $B_{sin}$ in $B_{cos}$, se popačanje s
 
 Kljub temu so bile opravljene simulacije na poenostavljenem modelu, uporabi le dveh sond
  ($B_{sin}=B_{H_1}$ in $B_{cos}=B_{H_2}$). Na ta način je lahko bila analizirana napaka.
+ 
+ Koeficient $k$, ki je v (\ref{equ:lin_polje}) enak $1 \frac{\mathrm{ mT}}{\mathrm{ mm}}$, bi bil lahko tudi poljuben.
+ Izraza $B_{sin}$ in $B_{cos}$ bi bila tako le množena s koeficientom $k$. Za izračun kota, se znotraj funkcije $atan2()$ izračuna kvocient med $B_{sin}$ in $B_{cos}$. Ker se $k$ pojavi tako v števcu in imenovaluc, se izniči. Koeficient $k$ na napako kota ne vpliva.
 
 V tem poglavju so predstavljeni rezultati simulacij z upoštevanjem dveh Hall-ovih sond in uporabo linearno aprokismirane Z-komponente gostote magnetnega pretoka.
 Prikazan je potek napake pri različnih izmikih, ter potek amplitud posameznih harmonikov napake v odvisnosti od ekscentričnosti.
@@ -236,4 +240,4 @@ Poteki napake so enaki kot v poglavju \ref{2_offseta}. Razlikuje se le v negativ
 \section{Dinamična ekscentričnost v smeri y in sprememba razdalje Hallovih sond od magneta }
 Dinamična ekscentričnost v smeri y ni povzročila nobene napake v kotu zasuka, saj ni vplivala na siganl, ki ga zajameti Hallovi sondi (\ref{equ:lin_potek_sin})(\ref{equ:lin_potek_cos}).
 
-Gostota magnetnega polja z razdaljo od magneta upada, oblika kljub temu ostaja enaka. Zajeto polje Hallovih sond, bo imelo le manjšo amplitudo. Z večjo oddaljenostjo se bo spremenila le amplituda zajetega signala in enosmerna komponenta, vendar obe za enak faktor.Faza se ohraniti. Tudi vpliv ekscentričnosti se bo zmanjšal proporcionalno, kot se je zmanjšala amplituda. V funkcijo atan2(); imata vhodna signala manjši amplitudi, vendar se njuno razmerje ohrani. Sprememba razdalje med sondam in magnetom ne vpliva na izhodni podatek o zasuku.
+Gostota magnetnega polja z razdaljo od magneta upada, oblika kljub temu ostaja enaka. Zajeto polje Hallovih sond, bo imelo le manjšo amplitudo. Z večjo oddaljenostjo se bo spremenila le amplituda zajetega signala in enosmerna komponenta, vendar obe za enak faktor.Faza se ohraniti. Tudi vpliv ekscentričnosti se bo zmanjšal proporcionalno, kot se je zmanjšala amplituda. V funkcijo atan2() imata vhodna signala manjši amplitudi, vendar se njuno razmerje ohrani. Sprememba razdalje med sondam in magnetom ne vpliva na izhodni podatek o zasuku.

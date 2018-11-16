@@ -1,6 +1,14 @@
 \chapter{Izpeljava gibanja sonde relativno na magnet ob nepravilni montaži}
 
-Nepravilna montaža bo vplivala na  Hallove sonde simulacijskega modela enako. Vpliv izmika senzorja in magneta, na relativno gibnaje sonde nad magnetom bo prikazan na eni sondi.
+Ob premiku senzorja ali magneta se spremni polje katerega pomerijo Hallove sonde.
+Zajeto polje se  spremeni, ker so ob izmiku senzorja ali magneta, Hallovim sondam glede na magnet spremeni lokacija.
+S poznavanjem lokacije sond glede na magnet, se lahko določi polje, ki ga sonda na določeni lokaciji zajame.
+V tem poglavju je izpeljan postopek za eno Hallovo sondo na poljubni lokaciji, v odvisnosti od rotirajočega magneta in nepravilne montaže.
+
+%Za določanje lokacij sond relativno na magnet, je izpeljana določitev lokacije sonde na poljubnem 
+
+%Premik senzorja ali magneta vpliva na vse Hallove sonde enako. 
+%Nepravilna montaža bo vplivala na  Hallove sonde simulacijskega modela enako. Vpliv izmika senzorja in magneta, na relativno gibnaje sonde nad magnetom bo prikazan na eni sondi.
 
 Izmik sredine senzorja iz osi vrtenja bo med spreminjanjem dejanskega kota zasuka statičen, njegova lokacija se nebo spreminjala na os vrtenja. Ta izmik je poimenovan statična ekscentričnost.
 
@@ -188,7 +196,7 @@ Dinamična ekscentričnost vpliva na premik krožnice, po kateri se navidezno gi
 %
 %
 \chapter{Potek napake funkcije atan2 ob popačenju vhodnih signalov}
-Izhod enkoderja je podatek o zasuku. Iz pomerjene gostote magnetnega polja, sledi izračun kota preko inverza funkcije tangens. Funkcija se v MATLAB-u imenuje atan2();. Funkcija atan2(); vrne rezultat v radianih,
+Izhod enkoderja je podatek o zasuku. Iz pomerjene gostote magnetnega polja, sledi izračun kota preko inverza funkcije tangens. Funkcija se v MATLAB-u imenuje atan2(). Funkcija atan2() vrne rezultat v radianih,
 funkcija atan2d(); vrne rezultat v stopinjah\cite{atan2Matlab}\cite{atan2dMatlab}.
 
 Različne literature \cite{RLS3} \cite{osnova} \cite{RLS1} \cite{RLS2} opisujejo napako izhoda funkcije zaradi popačenosti vhodnih signalov. Napaka je izražena v obliki enosmerne komponente ter prvega oz. drugega
@@ -225,7 +233,7 @@ V napaki nastopajo le sodi harmoniki. Z opazovanjem sodih harmonikov napake pri 
 \slikaeps{Razlika med napako izračunano s funkcijo atan2d(); in izračnunano napako z vrsto (\ref{vrsta_k}), pri čemer je bilo uporabljenih prvih 15 členov pri k = 1,1}{./Napake/razlika_amp11}
 
 Razlika med napako izračunano s funkcijo atan2d(); in napako izračunano z (\ref{vrsta_k}) je prikazana na sliki \ref{./Napake/razlika_amp11}.Ostala je le numerična napaka. MATLAB pri funkciji atan2d(); izračuna najprej funkcijo
-atan2(); in  rezultat nato pomnoži z $\frac{360}{2\pi}$. Izhod funkcije je nato v stopinjah. Če se rezultat s slike \ref{./Napake/razlika_amp11} pomnoži z $\frac{2\pi}{360}$ je rezultat v območju numerične napake MATLAB-a.
+atan2() in  rezultat nato pomnoži z $\frac{360}{2\pi}$. Izhod funkcije je nato v stopinjah. Če se rezultat s slike \ref{./Napake/razlika_amp11} pomnoži z $\frac{2\pi}{360}$ je rezultat v območju numerične napake MATLAB-a.
 \newpage
 \section{Različne enosmerne komponente}
 Naj imata vhodna signala amplitudi enaki 1. Signaloma se definira enosmerna komponenta v velikosti $B_0$ signalu $B_{sin}$ in $A_0$ signalu $B_{cos}$. Enosmerna komponenta se lahko pojavi v enem ali obeh vhodnih signalih.

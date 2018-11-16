@@ -2,7 +2,7 @@ close all
 load('razno\X_tmp_stari.mat');
 load('razno\Y_tmp_stari.mat');
 load('razno\Zmesh_stari.mat');
-ravnina = 1;
+ravnina = 0;
 gif = 0;
 n= 30;
 X = X_tmp(1+n:(1001-n));
@@ -55,7 +55,10 @@ surf(Xn,Yn,Zn);
 % Create ravnina
 if ravnina
     filename = 'polje_z_ravnino.gif';
-    patch(Y,X,Zravn, 'r','EdgeColor','r','FaceAlpha',0.5)
+   pts=[    X(1), X(1), X(end), X(end);...
+            Y(1), Y(end),Y(end), Y(1);...
+            Zravn(1,1),Zravn(1,end),Zravn(end,end),Zravn(end,1)];
+patch(pts(2,:),pts(1,:),pts(3,:),'b','EdgeColor','b','FaceAlpha',0.8)
 end
 
 surf(Xc,Yc,4*Zc-50-4,'FaceColor',...
