@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.19)  16 NOV 2018 23:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.19)  18 NOV 2018 17:51
 entering extended mode
 **./Diploma_V2.tex
 (Diploma_V2.tex
@@ -1440,28 +1440,27 @@ Package babel Info: Redefining slovene shorthand "|
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 106.
 [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 132.
  [3
 
 ]
-\openout2 = `./tex/Uvod.aux'.
-
- (tex/Uvod.tex
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 1.
-[4
+(babel)             in language  on input line 132.
+[4]
+\openout2 = `./tex/Uvod.aux'.
 
-
-]
+ (tex/Uvod.tex
   1.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 1.
@@ -1472,7 +1471,10 @@ Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining slovene shorthand "|
 (babel)             in language  on input line 18.
- [5]
+ [5
+
+
+]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
@@ -1590,27 +1592,27 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 132.
 [10 <./Slike/BxBy.png>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 132.
 [11 <./Slike/opis_modela.png>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 132.
 [12 <./Slike/polje_z_ravnino-eps-converted-to.pdf>]
 \openout2 = `./tex/Analiticna_izpeljava.aux'.
 
@@ -2201,9 +2203,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 [31]
 \openout2 = `./tex/Linearni_model.aux'.
 
@@ -3143,9 +3145,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 134.
 [53]
 \openout2 = `./tex/Realni_model.aux'.
 
@@ -4265,9 +4267,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 135.
 [76 <./Slike/./rea/yd_sincos_amp-eps-converted-to.pdf>]
 
 LaTeX Warning: Text page 77 contains only floats.
@@ -4281,9 +4283,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 135.
 [77 <./Slike/./rea/yd_sincos_off-eps-converted-to.pdf> <./Slike/./rea/yd_sincos
 _phase-eps-converted-to.pdf>]
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
@@ -4291,9 +4293,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 135.
 [78 <./Slike/./rea/yd_potek-eps-converted-to.pdf>]
 \openout2 = `./tex/Meritve.aux'.
 
@@ -5384,9 +5386,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 136.
 [104 <./Slike/./MER/xd_potek-eps-converted-to.pdf>]
 \openout2 = `./tex/Primerjava.aux'.
 
@@ -5535,9 +5537,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 137.
 [108 <./Slike/primerjava_xd-eps-converted-to.pdf>]
 \openout2 = `./tex/Sklep.aux'.
 
@@ -5582,9 +5584,9 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 138.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 138.
 [111] (Diploma_V2.bbl
 Overfull \hbox (2.61108pt too wide) has occurred while \output is active
 [] 
@@ -5619,24 +5621,24 @@ Overfull \hbox (2.61108pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 142.
 Package babel Info: Redefining slovene shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 142.
 [114]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 142.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 142.
  (Diploma_V2.aux (tex/Uvod.aux) (tex/Analiticna_izpeljava.aux)
 (tex/Linearni_model.aux) (tex/Realni_model.aux) (tex/Meritve.aux)
 (tex/Primerjava.aux) (tex/Sklep.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 142.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 142.
 Package rerunfilecheck Info: File `Diploma_V2.out' has not changed.
 (rerunfilecheck)             Checksum: 53D3DBCBABF19683C580164C753E65B5;5162.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 142.
  ) 
 Here is how much of TeX's memory you used:
  29224 strings out of 493323
@@ -5663,7 +5665,7 @@ blic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Diploma_V2.pdf (124 pages, 12754647 bytes).
+Output written on Diploma_V2.pdf (124 pages, 12754889 bytes).
 PDF statistics:
  2970 PDF objects out of 2984 (max. 8388607)
  378 named destinations out of 1000 (max. 500000)

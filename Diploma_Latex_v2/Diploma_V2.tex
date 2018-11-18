@@ -99,7 +99,7 @@ V programu MATLAB je bil sestavljen simulacijski model za merjenje napake enkode
 Simulacije so bile opravljene na linearno aprokismirani Z-komponenti gostote magnetnega polja in na numerično izračunanem polju realnega magneta.
 Napaka ob napačni montaži je bila analizirana v frekvenčenem prostoru in je predstavljena kot potek posameznega harmonika v odvisnosti od nepravilne montaže.
 
-Opravljene so bile meritve na enkoderju RM44, ki so bile primerjane s simulacijami. Meritve so potrdile pričakovane poteke napake predvidene s simulacijami. Na napravi je bila idealna lega iskana empirično. Posledično se je to pokazalo tudi v potekih napake v odvisnosti od nepravilne montaže.
+Opravljene so bile meritve na enkoderju RM44, ki so bile primerjane s simulacijami. Meritve so potrdile pričakovane poteke napake predvidene s simulacijami. Na napravi je bila idealna lega določena empirično. Posledično se je to pokazalo tudi v potekih napake v odvisnosti od nepravilne montaže.
 
 \kljucnebesede  dajalnik položaja, Hallova sonda, nepravilna montaža, predvidevanje napake, arcustangens
 %%*************************** POVZETEK V ANGLEďż˝ďż˝INI ***********************
@@ -111,8 +111,8 @@ Usage of magnetic encoder is appropriate for sensing position in robust industri
 Magnetic encoder senses the angular position of a permanent magnet placed above the sensor.
 The permanent magnet must be diametrically polarized and of cylindrical shape.
 Encoder uses Hall sensors to detect magnetic flux density.
-Signals from Hall sensors are then converted to absolute angle with a specific algorithm.
-Algorithem could be presented by mathematical function of atan2();.
+Signals from Hall sensors are then converted to signals in shape of sine and cosine. From sine an cosine signal, an angle calculation algorithm is performed.
+Algorithm could be presented by mathematical function of atan2().
 
 Incorrect installation of sensor or magnet, causes error in output angle.
 This work presents, how incorrect installation of sensor or magnet  impact to measured magnetic field by Hall sensor.
@@ -121,9 +121,11 @@ Incorrect installation can be recognized from field measured by Hall sensors. En
 In this thesis is demonstrated how to recognize changes of signals from Hall sensors, by knowing encoder output only.
 
 The basic simulation model was built in MATLAB. Simulations were  made  by linear approximation of Z-component of magnetic field and numerical calculations by magnet model.
-Encoders error was analysed in frequence spectrum.
+Encoders error was analyzed in frequency spectrum.
 
-Simulations have been compared to the encoder RM44 measurements.
+Simulations have been compared to the encoder RM44 measurements. 
+Simulation results of error has been confirmed by measurements. Best installation of sensor was determined empirically. 
+Empirical determination of installation, has been resulting in the output error.
 
 \keywords position encoders, Hall effect sensor, superficial implementation, anticipating an error, arcustangens
 %%%***************************** UVOD **************************************
