@@ -76,23 +76,10 @@ princip metode je izračun funkcije atan2($B_{sin}$, $B_{cos}$) \cite{atan2Matla
 
 Osnovno delovanje senzorja se lahko ponazori, s 4 Hallovimi. Sonde so enakomerno razporejene po krožnici s središčem v osi vrtenja in radijem  $r_0$. Z diferencialnim odčitavanjem pomerjenih signalov nasproti ležečih Hallovih sond, se signaloma $B_{sin}$ in $B_{cos}$ odstrani enosmerno komponento in poviša amplitudo.
 
-Signala $B_{cos}$ in $B_{sin}$. sta vhodna parametra v funkcijo atan2(), ki izračuna kot zasuka (slika \ref{opis_modela}).
-Za oceno napake, se lahko Z komponento gostote magnetnega pretoka v okolici središča magneta, aproksimira z ravnino (slika \ref{polje_z_ravnino}).
-
-Aproksimacija zadostuje za oceno napake. S poznavanjem lokacije sonde glede na magnet, se lahko izračuna merjena komponenta magnetnega polja. Aprokisimirano polje je linearno odvisno od x komponente (\ref{equ:poljeB1}).
-\begin{equation}
-\label{equ:poljeB1}
-B_z(x,y)=k\cdot x.
-\end{equation} 
+Signala $B_{cos}$ in $B_{sin}$ sta vhodna parametra v funkcijo atan2(), ki izračuna kot zasuka (slika \ref{opis_modela}).
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.9\columnwidth]{./Slike/opis_modela.png}
 	\caption{Osnovni model, za izračun kot zasuka}
 	\label{opis_modela}
-\end{figure}
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=\columnwidth]{./Slike/polje_z_ravnino.eps}
-	\caption{Oblika Z komponente gostote magnetnega polja nad magnetom in aproksimirano ravnino v središču magneta}
-	\label{polje_z_ravnino}
 \end{figure}

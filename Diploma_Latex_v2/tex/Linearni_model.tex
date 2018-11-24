@@ -1,11 +1,20 @@
 \chapter{Linearni model magnetnega polja}
 \label{linearnimodel}
-Prve simulacije in predvideni poteki napake so opravljeni na Z-komponenti gostote magnetnega polja aprokimiranega z ravnino (\ref{equ:lin_polje}). Za lažje razumevanje bo $k$ enak $1\frac{\mathrm{mT}}{\mathrm{mm}}$.
 
+Za oceno napake, se lahko Z komponento magnetnega polja v okolici središča magneta, aproksimira z ravnino (slika \ref{polje_z_ravnino}).
+Aproksimacija zadostuje za oceno napake. S poznavanjem lokacije sonde glede na magnet, se lahko izračuna merjena komponenta magnetnega polja. Aprokisimirano polje je linearno odvisno od x komponente (\ref{equ:poljeB1}).  Za lažje razumevanje bo $k$ enak $1\frac{\mathrm{mT}}{\mathrm{mm}}$.
 \begin{equation}
 \label{equ:lin_polje}
-B(x,y)= x
+B_z(x,y)=k\cdot x.
 \end{equation}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6 \columnwidth]{./Slike/polje_z_ravnino.eps}
+	\caption{Oblika Z komponente gostote magnetnega polja nad magnetom in aproksimirano ravnino v središču magneta}
+	\label{polje_z_ravnino}
+\end{figure}
+\newpage
+
 Simulacijski model sestavljajo 4 Hallove sonde enakomerno razporejene po krožnici z radijem $r_0$ (slika \ref{lin_simul}). Lokacija predstavlja začetno lego Hallovih sond. 
 Ob zasuku magneta, se sonde relativno gibljejo na magnet v nasprotni smeri kot se vrti magnet. 
 \begin{figure}[!ht]
@@ -50,7 +59,7 @@ Z diferencialnim odčitavenjem signalov  $B_{sin}$ in $B_{cos}$, se popačanje s
 Kljub temu so bile opravljene simulacije na poenostavljenem modelu, uporabi le dveh sond
  ($B_{sin}=B_{H_1}$ in $B_{cos}=B_{H_2}$). Na ta način je lahko bila analizirana napaka.
  
- Koeficient $k$, ki je v (\ref{equ:lin_polje}) enak $1 \frac{\mathrm{ mT}}{\mathrm{ mm}}$, bi bil lahko tudi poljuben.
+ Koeficient $k$, ki je v simulacijah enak $1 \frac{\mathrm{ mT}}{\mathrm{ mm}}$, bi bil lahko tudi poljuben.
  Izraza $B_{sin}$ in $B_{cos}$ bi bila tako le množena s koeficientom $k$. Za izračun kota, se znotraj funkcije $atan2()$ izračuna kvocient med $B_{sin}$ in $B_{cos}$. Ker se $k$ pojavi tako v števcu in imenovaluc, se izniči. Koeficient $k$ na napako kota ne vpliva.
 
 V tem poglavju so predstavljeni rezultati simulacij z upoštevanjem dveh Hall-ovih sond in uporabo linearno aprokismirane Z-komponente gostote magnetnega pretoka.
