@@ -1,6 +1,6 @@
 \chapter{Izpeljava gibanja sonde relativno na magnet ob nepravilni montaži}
 
-Ob premiku senzorja ali magneta se spremni polje katerega pomerijo Hallove sonde.
+Ob premiku senzorja ali magneta se spremeni polje katerega pomerijo Hallove sonde.
 Zajeto polje se  spremeni, ker so ob izmiku senzorja ali magneta, Hallovim sondam glede na magnet spremeni lokacija.
 S poznavanjem lokacije sond glede na magnet, se lahko določi polje, ki ga sonda na določeni lokaciji zajame.
 V tem poglavju je izpeljan postopek za eno Hallovo sondo na poljubni lokaciji, v odvisnosti od rotirajočega magneta in nepravilne montaže.
@@ -10,15 +10,16 @@ V tem poglavju je izpeljan postopek za eno Hallovo sondo na poljubni lokaciji, v
 %Premik senzorja ali magneta vpliva na vse Hallove sonde enako. 
 %Nepravilna montaža bo vplivala na  Hallove sonde simulacijskega modela enako. Vpliv izmika senzorja in magneta, na relativno gibnaje sonde nad magnetom bo prikazan na eni sondi.
 
-Izmik sredine senzorja iz osi vrtenja bo med spreminjanjem dejanskega kota zasuka statičen, njegova lokacija se nebo spreminjala na os vrtenja. Ta izmik je poimenovan statična ekscentričnost.
+Izmik sredine senzorja iz osi vrtenja bo med spreminjanjem dejanskega kota zasuka statičen, njegova lokacija se ne bo spreminjala na os vrtenja. Ta izmik je poimenovan statična ekscentričnost.
 
 Ob izmiku magneta iz osi vrtenja se pojavi opletanje magneta. Lokacija središča magneta se spreminja glede na določen zasuk magneta. Opletanje magneta je poimenovano dinamična ekscentričnost.
 \section{Definicija koordinatnega sistema}
-Naj bo definiran kartezični koordinatni sistem, ki ima v izhodišču postavljen radialno polariziranim magnetom ($S_m(0, 0)$). V izhodišču se nahaja os vrtenja ($S_r(0, 0)$). Na poljubno točko $H(x_0,y_0)$, vendar ne v
-izhodišče je postavljena Hall-ova sonda (slika \ref{fig:def_kks}).
+Naj bo definiran kartezični koordinatni sistem (slika \ref{fig:def_kks}). V izhodišču koordinatnega sistema se nahaja središče radialno polariziranega magneta označeno s $S_m(0, 0)$. V izhodišču se nahaja os vrtenja ($S_r(0, 0)$). Na poljubno točko $H(x_0,y_0)$, vendar ne v
+izhodišče je postavljena Hall-ova sonda.
 \begin{figure}[!ht]
 	\centering
 	\begin{tikzpicture}
+	\CaCS{3}{0}{0};
 	\magnet {0} {0} {0}{ }{1};
 	\hall {2.3}{1} {0};
 	\draw [decorate,decoration={brace,amplitude=5pt,mirror},xshift= 0pt,yshift=0pt]
@@ -34,7 +35,7 @@ izhodišče je postavljena Hall-ova sonda (slika \ref{fig:def_kks}).
 	\label{fig:def_kks}
 \end{figure}
 
-Z zasukom magneta okoli osi vrtenja za kot $\theta$, se lokacija sonde glede na magnet spremeni. Nova lokacija sonde glede na magnet je enaka, če se namesto magnet, zavrti sondo okoli osi vrtenja za kot $-\theta$ . Nova lokacija
+Z zasukom magneta okoli osi vrtenja za kot $\theta$ (slika \ref{subfig:zasuk_magnet}), se lokacija sonde glede na magnet spremeni. Nova lokacija sonde glede na magnet je enaka, če se namesto magnet, zavrti sondo okoli osi vrtenja za kot $-\theta$ . Nova lokacija
 sonde glede na magnet je v točki  $(x, y)$. Spremembo lokacije sonde glede na magnet v odvisnosti od zasuka magneta za kot $\theta$, opiše enačba (\ref{equ:rotacija_hall}).
 \begin{equation}
 \label{equ:rotacija_hall}
@@ -197,20 +198,20 @@ Dinamična ekscentričnost vpliva na premik krožnice, po kateri se navidezno gi
 %
 \chapter{Potek napake funkcije atan2 ob popačenju vhodnih signalov}
 Izhod enkoderja je podatek o zasuku. Iz pomerjene gostote magnetnega polja, sledi izračun kota preko inverza funkcije tangens. Funkcija se v MATLAB-u imenuje atan2(). Funkcija atan2() vrne rezultat v radianih,
-funkcija atan2d(); vrne rezultat v stopinjah\cite{atan2Matlab}\cite{atan2dMatlab}.
+funkcija atan2d() vrne rezultat v stopinjah\cite{atan2Matlab}\cite{atan2dMatlab}.
 
 Različne literature \cite{RLS3} \cite{osnova} \cite{RLS1} \cite{RLS2} opisujejo napako izhoda funkcije zaradi popačenosti vhodnih signalov. Napaka je izražena v obliki enosmerne komponente ter prvega oz. drugega
-harmonika, kateri od primera do primera bolj izstopa. V tem poglavju je prikazano, kako popačena signala kot vhoda v funkcijo atan2d(); vplivata na napako. Za majhna popačenja vhodnih signalov, literatura nakazuje linearno naraščanje napake. V poglavju je predstavljeno tudi kako se popačenja vhodnih signalov odražajo na višjih harmonikih napake.
+harmonika, kateri od primera do primera bolj izstopa. V tem poglavju je prikazano, kako popačena signala kot vhoda v funkcijo atan2d() vplivata na napako. Za majhna popačenja vhodnih signalov, literatura nakazuje linearno naraščanje napake. V poglavju je predstavljeno tudi kako se popačenja vhodnih signalov odražajo na višjih harmonikih napake.
 \section{Različne amplitude}
-Prvi primer popačenih vhodov v funkcijo atan2d(); je neenakost amplitud vhodnih signalov. Signala imata poljubne amplitude, vendar se izhod funkcije atan2d(); nebo spremenil, če se obe amplitudi deli s
-poljubnim številom. Če se za poljubno število vzame amplitudo signala $B_{cos}$, imata singala novo definirani amplitdi. Razmerje amplitud med $B_{sin}$ in $B_{cos}$ je označeno s $k$.
+Prvi primer popačenih vhodov v funkcijo atan2d() je neenakost amplitud vhodnih signalov. Signala imata poljubne amplitude, vendar se izhod funkcije atan2d() ne bo spremenil, če se obe amplitudi deli s
+poljubnim številom. Če se za poljubno število vzame amplitudo signala $B_{cos}$, imata singala novo definirani amplitudi. Razmerje amplitud med $B_{sin}$ in $B_{cos}$ je označeno s $k$.
 \begin{eqnarray}
 \label{equ:def_sin_ama}
 &B_{sin} = k \sin(\theta)\\
 \label{equ:def_cos_amp}
 &B_{cos} =\cos(\theta)
 \end{eqnarray}
-Funkciji sta vstavljeni v atan2d(); in parameter $k$ je limitiran v neskončnost. Izhod atan2d(); je konstanta, napaka $\varepsilon$ je prikazana na sliki \ref{./Napake/k_lim}.
+Funkciji sta vstavljeni v atan2d(). Parameter $k$ se limitira v skrajno lego. Z limito se ugotovi v kakšno obliko napaka konvergira. Z limito v skrajnost se zoži nabor funkcij na katero se aproksimira napako.  Izhod atan2d() je konstanta, napaka $\varepsilon$ je prikazana na sliki \ref{./Napake/k_lim}.
 \begin{equation}
 \lim_{k \rightarrow \infty} \mathrm{atan2}(k \sin{\theta},\cos{\theta}) - \theta
 \end{equation}
@@ -223,16 +224,21 @@ Potek $\varepsilon$ se lahko zapiše s Fourierovo vrsto \cite{Matematika1}:
 \end{equation}
 
 V napaki nastopajo le sodi harmoniki. Z opazovanjem sodih harmonikov napake pri različnih $k$-jih in uporabo Curve Fitting tool \cite{cftool}, je bila določena funkcija poteka napake v odvistnosti od $k$. 
-
+Goodness of fit:
+k = 0:1e-2:5
+SSE: 1.178e-10
+R-square: 1
+Adjusted R-square: 1
+RMSE: 4.863e-07
 \begin{equation}
 \label{vrsta_k}
 \varepsilon_p =\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n}(\frac{k-1}{k+1})^n \sin 2 n \theta
 \end{equation}
 
 \slikaeps{Napaka $\varepsilon$ pri $k$=1,1 }{./Napake/napaka_amp11}
-\slikaeps{Razlika med napako izračunano s funkcijo atan2d(); in izračnunano napako z vrsto (\ref{vrsta_k}), pri čemer je bilo uporabljenih prvih 15 členov pri k = 1,1}{./Napake/razlika_amp11}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2d() in izračnunano napako z vrsto (\ref{vrsta_k}), pri čemer je bilo uporabljenih prvih 15 členov pri k = 1,1}{./Napake/razlika_amp11}
 
-Razlika med napako izračunano s funkcijo atan2d(); in napako izračunano z (\ref{vrsta_k}) je prikazana na sliki \ref{./Napake/razlika_amp11}.Ostala je le numerična napaka. MATLAB pri funkciji atan2d(); izračuna najprej funkcijo
+Razlika med napako izračunano s funkcijo atan2d() in napako izračunano z (\ref{vrsta_k}) je prikazana na sliki \ref{./Napake/razlika_amp11}.Ostala je le numerična napaka. MATLAB pri funkciji atan2d() izračuna najprej funkcijo
 atan2() in  rezultat nato pomnoži z $\frac{360}{2\pi}$. Izhod funkcije je nato v stopinjah. Če se rezultat s slike \ref{./Napake/razlika_amp11} pomnoži z $\frac{2\pi}{360}$ je rezultat v območju numerične napake MATLAB-a.
 \newpage
 \section{Različne enosmerne komponente}
@@ -293,11 +299,11 @@ Potek napake v odvisnosti od $A_0$ je (\ref{vrsta_cosoff})
 \end{cases}
 \end{equation}
 \slikaeps{$\varepsilon$ pri $A_0=$ 0,1 }{./Napake/napaka_cos01}
-\slikaeps{Razlika med napako izračunano s funkcijo atan2d(); in napako izračunano z (\ref{vrsta_cosoff}) pri $A_0=$ 0,1 in uporabi prvih 20 členov vrste (\ref{vrsta_cosoff})}{./Napake/razlika_cos01}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2d() in napako izračunano z (\ref{vrsta_cosoff}) pri $A_0=$ 0,1 in uporabi prvih 20 členov vrste (\ref{vrsta_cosoff})}{./Napake/razlika_cos01}
 \newpage
 \subsection{Enosmerna komponenta pri obeh signalih}
 \label{2_offseta}
-Naj bo enosmerna komponenta v obeh signalih označena s $C_0$, kjer velja $C_0= A_0= B_0$.
+Naj imata $B_{sin}$ in $B_{cos}$ enako enosmerno komponento $C_0$. 
 Limita napake, ko gre $C_0$ proti neskončnosti se v Fourierovi vrsti izrazi kot:
 \slikaeps{$\varepsilon$ ob limiti $C_0$ v neskončnost }{./Napake/lim_sincos}
 \begin{equation}
@@ -315,7 +321,7 @@ Odvisnost napake ob spreminjanju enosmernih komponent pri obeh signalih se izraz
 \end{cases}
 \end{equation}
 \slikaeps{$\varepsilon$ pri $C_0=$ 0,1 }{./Napake/napaka_sincos01}
-\slikaeps{Razlika med napako izračunano s funkcijo atan2d(); in napako izračunano z (\ref{vrsta_sincosoff}) pri $C_0=$ 0,1 in uporabi prvih 20 členov vrste (\ref{vrsta_sincosoff})}{./Napake/razlika_sincos01}
+\slikaeps{Razlika med napako izračunano s funkcijo atan2d() in napako izračunano z (\ref{vrsta_sincosoff}) pri $C_0=$ 0,1 in uporabi prvih 20 členov vrste (\ref{vrsta_sincosoff})}{./Napake/razlika_sincos01}
 
 \section{Neorotogonalnost signalov}
 Napaka se pojavi tudi, če signala $B_{sin}$ in $B_{cos}$ nista fazno zamaknjena za točno $90^\circ$. Signala $B_{sin}$ in $B_{cos}$ bodita odvisna tudi od faznega zamika in sicer

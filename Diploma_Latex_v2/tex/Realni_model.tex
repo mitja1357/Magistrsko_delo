@@ -5,7 +5,7 @@ Simulacijski model je definiran s 4 sondami, kot je opisano v začetku poglavja 
 Polje, ki ga pomeri posamezna Hallova sonda ob zasuku ni bilo definirano oz. izpeljano analitično kot pri linearni aproksimaciji (\ref{equ:lin_potek_sin}) - (\ref{equ:lin_potek_zadnja}).  Prvo je bila izračunana relativna lokacija sonde glede na magnet. Nato se je vrednost Z-komponente gostote magnetnega polja  aproksimiralo s poljem, definiranim v geometrijsko najbližji točki definicijskega območja.
 Pomerjeno polje nasproti ležečih sond se je nato odštelo in vstavilo v funkcijo atan2d();.
 V tem poglavju so predstavljeni rezultati simulacij ekscentričnosti z uporabo realnega modela magnetnega polja.
-\section{Brez napake}
+\section{Napaka brez vpliva ekscentričnosti}
 Kljub idealni montaži, $B_{sin}$ in $B_{cos}$ nista idealna signala.  Signala vsebujeta višje harmonike (Slika \ref{./rea/00_sincos}), ki niso opazno izraziti. Višji harmoniki se izrazijo v napaki (slika \ref{./rea/00_napaka}). Opazi se grob potek četrtega harmonika. V napaki so špice (primer $220^{\circ}$), ki so posledica načina izračuna Z-komponente gostote  magnetnega polja simuliranega magneta. Napaka razvita v Fourierovo vrsto prikaže vrednosti amplitud prvih štirih harmonikov napake (slika \ref{./rea/00_fft}). Izrazit je četrti harmonik, ki je pričakovan po podatkovnih listih \cite{AM8192}. Vzrok četrtega harmonika je tretji harmonik v signalih  $B_{sin}$ in $B_{cos}$, ki se pojavi zaradi magnetenja.
 \slikaeps{$B_{sin}$ in $B_{cos}$ pri simulacijah z realnim magnetnim poljem brez ekscentričnosti}{./rea/00_sincos}
 \slikaeps{Napaka $\varepsilon$ pri simulacijah z realnim magnetnim poljem brez ekscentričnosti}{./rea/00_napaka}
