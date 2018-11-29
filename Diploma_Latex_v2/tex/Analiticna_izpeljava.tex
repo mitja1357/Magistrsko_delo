@@ -223,18 +223,13 @@ Potek $\varepsilon$ se lahko zapiše s Fourierovo vrsto \cite{Matematika1}:
 \varepsilon = \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \sin 2 n \theta
 \end{equation}
 
-V napaki nastopajo le sodi harmoniki. Z opazovanjem sodih harmonikov napake pri različnih $k$-jih in uporabo Curve Fitting tool \cite{cftool}, je bila določena funkcija poteka napake v odvistnosti od $k$. 
-Goodness of fit:
-k = 0:1e-2:5
-SSE: 1.178e-10
-R-square: 1
-Adjusted R-square: 1
-RMSE: 4.863e-07
+V napaki nastopajo le sodi harmoniki. Z opazovanjem sodih harmonikov napake pri različnih $k$-jih in uporabo Curve Fitting tool \cite{cftool}, je bila določena funkcija poteka napake v odvistnosti od $k$.
 \begin{equation}
 \label{vrsta_k}
 \varepsilon_p =\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n}(\frac{k-1}{k+1})^n \sin 2 n \theta
 \end{equation}
-
+Funkcijo sem aproksimiral na definicijskem območju $k \in [ 0, 5]$. Napaka aproksimacije drugega harmonika po metodi najmanjših kvadratov je bila
+ $1,178^\circ\cdot 10^{-10}$.
 \slikaeps{Napaka $\varepsilon$ pri $k$=1,1 }{./Napake/napaka_amp11}
 \slikaeps{Razlika med napako izračunano s funkcijo atan2d() in izračnunano napako z vrsto (\ref{vrsta_k}), pri čemer je bilo uporabljenih prvih 15 členov pri k = 1,1}{./Napake/razlika_amp11}
 
@@ -261,7 +256,7 @@ Z limito $B_0$ v neskončnost in $A_0 = 0$ ter izpeljavo napake $\varepsilon$ v 
 
 Največjo amplitudo ima prvi harmonik, nastopajo tako lihe kot sode komponente.
 Z analizo potekov posameznega harmonika napake in uporabe Curve Fitting tool je bila najdena funkcija, ki opiše odvisnost napake od enosmerne komponente v signalu $B_{sin}$. Definicijsko območje je bilo potrebno
-razdeliti na 3 dele.
+razdeliti na 3 dele. Napaka minimalnih kvadratov prvega harmonika na območju $B_0 \in [-1, 1]$ je bila $1,206^\circ \cdot 10^{-7} $
 
 \begin{equation}
 \label{vrsta_sinoff}
@@ -346,12 +341,14 @@ Potek napake $\varepsilon$ s slike \ref{./Napake/lim_sinfaza} predstavi vrsta (\
 \label{equ:lim_fis_vrsta}
 \varepsilon = 45^\circ - \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \sin (2n \theta)
 \end{equation} 
-Iz  izraza je vidno nastopanje enosmerne komponente in sodih harmonikov. Z opazovanjem sodih harmonikov napake pri različnih faznih kotih, je bil dobljen izraz napake v odvistnosti od faznih zamikov $B_{sin}$ in
-$B_{cos}$.
+Iz  izraza je vidno nastopanje enosmerne komponente in sodih harmonikov. Z opazovanjem sodih harmonikov napake pri različnih faznih kotih, je bil dobljen izraz napake v odvistnosti od faznih zamikov $B_{sin}$ in $B_{cos}$. Napaka minimalnih kvadratov drugega harmonika na območju $\varphi_{s} \in [-90, 90]$ je bila $5,29^\circ \cdot 10^{-9}$.
 \begin{multline}
 \label{equ:fis_err}
 \varepsilon(\varphi_{s},\varphi_{c}) = \frac{\varphi_{s}+\varphi_{c}}{2}+\\ \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} (\mathrm{tan}\frac{\varphi_{s}-\varphi_{c}}{2})^n \sin (2n \theta+n(90^\circ +\varphi_{s}+\varphi_{c}))
 \end{multline}
+
+Izraz velja pri pogoju:
+$$|\varphi_{s}-\varphi_{c}|<90$$
 
 \section{Napaka zaradi spremembe amplitude in faze zaradi enega parametra}
 \label{izpeljava_atan_napake_staticne}
@@ -370,6 +367,7 @@ Opravljena je bila limita $\Delta_c$ v neskončnost. V napaki nastopa enosmerna 
 \end{equation}
 Pri čemer velja:
 $$\Delta_c > -C_1.$$
+Napaka minimalnih kvadratov aproksimiranega drugega harmonika napake pri $\Delta_c \in (-1,1]$ je bila $1,915^\circ \cdot 10^{-5}$.
 
 Izračunan je bil tudi potek napake, če se pojavi signal v obliki sinusne oblike. Vhoda v funkcijo sta:
 \begin{eqnarray}

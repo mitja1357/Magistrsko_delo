@@ -2,7 +2,7 @@
 
 \bibitem{uporabaSenzorjev}
 J.~Gachter, M.~Hirz  in R.~Seebacher, Impact of rotor position sensor errors
-  on speed controlled permanent magnetized synchronous machines, v {\em IEEE
+  on speed controlled permanent magnetized synchronous machines v {\em IEEE
   12th International Conference on Power Electronics and Drive Systems (PEDS)},
   str.~pp.822--830, Dec. 2017.
 
@@ -12,38 +12,39 @@ B.~Killer, Absolutni magnetni dajalnik zasuka z uporabo principa nonij,
 
 \bibitem{enkoder}
 Z.~Zhang, F.~Ni, H.~Liu  in M.~Jin, Theory analysis of a new absolute
-  position sensor based on electromagnetism, v {\em International Conference
+  position sensor based on electromagnetism v {\em International Conference
   on Automatic Control and Artificial Intelligence}, str.~pp.2204--208.
 
 \bibitem{RLS3}
-M.~Demierre, Improvements of cmos hall microsystems and application for
-  absolute angular position measurements, doktorska dizertacija, Federal
-  Polytechnic School of Lausanne, Switzerland, 2003.
+M.~Demierre, Improvements of \uppercase{CMOS H}all microsystems and
+  application for absolute angular position measurements, doktorska
+  dizertacija, Federal Polytechnic School of Lausanne, Switzerland, 2003.
 
 \bibitem{RM44}
-{RLS~Merilna~tehnika~d.o.o.}, Rm44 magnetic encoder base unit. Dosegljivo:
+{RLS~Merilna~tehnika~d.o.o.}, \uppercase{RM44} magnetic encoder base unit,
+  Dosegljivo:
   \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom%2Fupload%2FRM44D01_10.pdf}.
 
 \bibitem{Ambrozic}
-V.~Ambrožič in P.~Zajec, {\em Električni servo pogoni}.
+V.~Ambrožič in P.~Zajec, {\em Električni servo pogoni},
 \newblock Slovensko Združenje elektroenergetikov CIGR\'{E}-CIRED.
 
 \bibitem{AM8192}
-{RLS~Merilna~tehnika~d.o.o.}, Am256 – angular magnetic encoder ic.
-  Dosegljivo:
+{RLS~Merilna~tehnika~d.o.o.}, \uppercase{AM256} – angular magnetic encoder, 
+  \uppercase{IC}, Dosegljivo:
   \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom%2Fupload%2FAM256D01_13_bookmark.pdf}.
 
 \bibitem{ICHaus_interpolate}
-{iC Haus}, High-precision sine/cosine interpolation / white paper.
-  Dosegljivo:
+{iC Haus}, High-precision sine/cosine interpolation-\uppercase{W}hite
+  paper, Dosegljivo:
   \url{http://www.ichaus.de/upload/pdf/WP7en_High-Precision_Interpolation_140124.pdf}.
 
 \bibitem{atan2Matlab}
-MathWorks. Dosegljivo:
+MathWorks, Dosegljivo:
   \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
 
 \bibitem{Matematika1}
-G.~Dolinar, {\em Matematika 1}.
+G.~Dolinar, {\em Matematika 1}, 
 \newblock Založba FE in FRI.
 
 \bibitem{atan2dMatlab}
@@ -52,12 +53,12 @@ MathWorks. Dosegljivo:
 
 \bibitem{osnova}
 J.~Lara, Position error compensation in quadrature analog magnetic encoders
-  through an iterative optimization algorithm, v {\em IECON 2014 - 40th
+  through an iterative optimization algorithm v {\em IECON 2014 - 40th
   Annual Conference of the IEEE Industrial Electronics Society}.
 
 \bibitem{RLS1}
 Q.~Lin, T.~Li  in Z.~Zhou, Error analysis and compensation of the orthogonal
-  magnetic encoder, v {\em IEEE ICMCC Conference}.
+  magnetic encoder v {\em IEEE ICMCC Conference}.
 
 \bibitem{RLS2}
 D.~Hanselman, Resolver signal requirements for high accuracy
@@ -68,7 +69,7 @@ MathWorks. Dosegljivo:
   \url{https://www.mathworks.com/products/curvefitting.html}.
 
 \bibitem{iCMHM}
-iCHaus, 14-bit absolute angle hall encoder. Dosegljivo:
+iCHaus, 14-bit absolute angle \uppercase{H}all encoder. Dosegljivo:
   \url{http://www.ichaus.de/upload/pdf/MHM_datasheet_D2en.pdf}.
 
 \end{thebibliography}

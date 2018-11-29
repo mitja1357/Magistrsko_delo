@@ -4,7 +4,7 @@ theta = linspace(0,2*pi,8192);
 
 
 % x = sqrt(2)/2;
-x = linspace(-4,4,101);
+x = linspace(-1,1,101);
 primer = 2;
 
 
