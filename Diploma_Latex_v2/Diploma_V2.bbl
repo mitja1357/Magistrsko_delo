@@ -1,27 +1,27 @@
 \begin{thebibliography}{10}
 
 \bibitem{uporabaSenzorjev}
-J.~Gachter, M.~Hirz  in R.~Seebacher, ``Impact of rotor position sensor errors
-  on speed controlled permanent magnetized synchronous machines,'' v {\em IEEE
+J.~Gachter, M.~Hirz  in R.~Seebacher, Impact of rotor position sensor errors
+  on speed controlled permanent magnetized synchronous machines, v {\em IEEE
   12th International Conference on Power Electronics and Drive Systems (PEDS)},
   str.~pp.822--830, Dec. 2017.
 
 \bibitem{killer}
-B.~Killer, ``Diplomsko delo absolutni magnetni dajalnik zasuka z uporabo
-  principa nonij,'' Master's thesis, Univerza v Ljubljani.
+B.~Killer, Absolutni magnetni dajalnik zasuka z uporabo principa nonij,
+  diplomsko delo, Univerza v Ljubljani, 2008.
 
 \bibitem{enkoder}
-Z.~Zhang, F.~Ni, H.~Liu  in M.~Jin, ``Theory analysis of a new absolute
-  position sensor based on electromagnetism,'' v {\em International Conference
-  on Automatic Control and Artificial Intelligence}.
+Z.~Zhang, F.~Ni, H.~Liu  in M.~Jin, Theory analysis of a new absolute
+  position sensor based on electromagnetism, v {\em International Conference
+  on Automatic Control and Artificial Intelligence}, str.~pp.2204--208.
 
 \bibitem{RLS3}
-M.~Demierre, {\em Improvements of CMOS Hall Microsystems and Application for
-  Absolute Angular Position Measurements}.
-\newblock PhD thesis, Federal Polytechnic School of Lausanne, Switzerland.
+M.~Demierre, Improvements of cmos hall microsystems and application for
+  absolute angular position measurements, doktorska dizertacija, Federal
+  Polytechnic School of Lausanne, Switzerland, 2003.
 
 \bibitem{RM44}
-{RLS~Merilna~tehnika~d.o.o.}, ``Rm44 magnetic encoder base unit.'' Dosegljivo:
+{RLS~Merilna~tehnika~d.o.o.}, Rm44 magnetic encoder base unit. Dosegljivo:
   \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom%2Fupload%2FRM44D01_10.pdf}.
 
 \bibitem{Ambrozic}
@@ -29,12 +29,12 @@ V.~Ambrožič in P.~Zajec, {\em Električni servo pogoni}.
 \newblock Slovensko Združenje elektroenergetikov CIGR\'{E}-CIRED.
 
 \bibitem{AM8192}
-{RLS~Merilna~tehnika~d.o.o.}, ``Am256 – angular magnetic encoder ic.''
+{RLS~Merilna~tehnika~d.o.o.}, Am256 – angular magnetic encoder ic.
   Dosegljivo:
   \url{https://www.rls.si/en/fileuploader/download/download/?d=0&file=custom%2Fupload%2FAM256D01_13_bookmark.pdf}.
 
 \bibitem{ICHaus_interpolate}
-{iC Haus}, ``High-precision sine/cosine interpolation / white paper.''
+{iC Haus}, High-precision sine/cosine interpolation / white paper.
   Dosegljivo:
   \url{http://www.ichaus.de/upload/pdf/WP7en_High-Precision_Interpolation_140124.pdf}.
 
@@ -51,24 +51,24 @@ MathWorks. Dosegljivo:
   \url{https://www.mathworks.com/help/matlab/ref/atan2d.html}.
 
 \bibitem{osnova}
-J.~Lara, ``Position error compensation in quadrature analog magnetic encoders
-  through an iterative optimization algorithm,'' v {\em IECON 2014 - 40th
+J.~Lara, Position error compensation in quadrature analog magnetic encoders
+  through an iterative optimization algorithm, v {\em IECON 2014 - 40th
   Annual Conference of the IEEE Industrial Electronics Society}.
 
 \bibitem{RLS1}
-Q.~Lin, T.~Li  in Z.~Zhou, ``Error analysis and compensation of the orthogonal
-  magnetic encoder,'' v {\em IEEE ICMCC Conference}.
+Q.~Lin, T.~Li  in Z.~Zhou, Error analysis and compensation of the orthogonal
+  magnetic encoder, v {\em IEEE ICMCC Conference}.
 
 \bibitem{RLS2}
-D.~Hanselman, ``Resolver signal requirements for high accuracy
-  resolver-to-digital conversion,'' {\em 37}.
+D.~Hanselman, Resolver signal requirements for high accuracy
+  resolver-to-digital conversion, {\em 37}.
 
 \bibitem{cftool}
 MathWorks. Dosegljivo:
   \url{https://www.mathworks.com/products/curvefitting.html}.
 
 \bibitem{iCMHM}
-iCHaus, ``14-bit absolute angle hall encoder.'' Dosegljivo:
+iCHaus, 14-bit absolute angle hall encoder. Dosegljivo:
   \url{http://www.ichaus.de/upload/pdf/MHM_datasheet_D2en.pdf}.
 
 \end{thebibliography}

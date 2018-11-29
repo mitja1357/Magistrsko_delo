@@ -5,7 +5,7 @@ Na merilni napravi so bile opravljene meritve ekscentričnosti. V poglavju je op
 Merilno mesto sestavljala krmilna plošča za regulacijo motorskega pogona in obdelavo signalov sestavljena v LRTME.
 Vsebuje elektromotorski pogon z inkrementalnim, referenčnim dajalnikom zasuka TONiC podjetja Renishaw in magnetnim aktuatorjem za RM44 podjetja RLS  d.o.o.
 Magnetni aktuator je možno premikati le v eni prostorski osi (slika \ref{premikanjeMagneta}).
-Senzor RM44 je pritrjen na konstrukcijo 6-osnega mikrometrskega nastavljalnika pozicije HTIMS601.
+Senzor RM44 je pritrjen na merilno mizico s šestimi prostorskimi stopnjami HTIMS601.
 Celotno merilno mesto je prikazano na sliki \ref{postavitevmerilnegamesta.jpg}.
 \begin{figure}[ht]
 	\centering
@@ -31,17 +31,16 @@ Celotno merilno mesto je prikazano na sliki \ref{postavitevmerilnegamesta.jpg}.
 	\caption{Naprava za nastavljanje statične ekscentričnosti}
 	\label{HTIMS601.jpg}
 \end{figure}
-Za manevriranje s HTIMS601 je potrebno nastaviti 6 osi.
+Za manevriranje merilne mizice je potrebno nastaviti 6 osi.
 S postavitvijo koordinatnega sistema (slika \ref{koordinatnisistem.jpg}), je vsak od vijakov definiral premik senzorja. 
-Vsako os se nastavlja z enim od vijakov (slika \ref{HTIMS601.jpg}). Vijaki poimenovani x-os, y-os in z-os so za nastavljanje translaciijo merjenca, x-rot, y-rot in z-rot so za nastavljanje rotacije premikajoče plošče na vrhu HTIMS601.
+Vsako os se nastavlja z enim od vijakov (slika \ref{HTIMS601.jpg}). Vijaki poimenovani x-os, y-os in z-os so za nastavljanje translaciijo merjenca, x-rot, y-rot in z-rot so za nastavljanje rotacije premikajoče plošče na vrhu merilne mizice.
 S spremembo vrtenja vijakov translacijskih osi, se je lokacija senzorja pred magnetom spreminjala za enako spremembo. S spremembo vrtenja rotacijskih vijakov, se je zaradi ročice na katero je pritrjen senzor, senzor zarotira in hkrati tudi premakne iz dotedanje lege. S spremembo rotacije je potrebno popraviti tudi nastavitve vijakov, ki senzor premikajo v translacijskih oseh.
 
-Hitrost vrtenja pogona je nastavljiva.
-Hitrost vrtenja je pogona je nastavljena na 60 RPM. Hitrost ni popolnoma konstantna (slika \ref{hitrost}). Vzrok je v vztrajnosti pogona. Mitja Nemec je problem skušal čimbolje odpraviti, z dodajanjem primernih uteži na primerna mesta na vztrajniku.
+Pogon se vrti s 60 RPM. Vrtilna hitrost tekom obrata niha (slika \ref{hitrost}). Vzrok je v vztrajnosti pogona. Z dodajanjem uteži na vztrajnik, se je oscilacije znižalo na minimalne.
 \slikaeps{Potek hitrosti od zasuka}{hitrost}
 \newpage
 \section{Zajem podatkov}
-Mitja Nemec je pripravil grafični uporabniški vmesnik za prikazovanje meritev (slika \ref{GUI.png}).
+Za merilno napravo je bil sestavljen grafični uporabniški vmesnik za prikazovanje meritev (slika \ref{GUI.png}).
 Vmesnik lahko prikazuje potek refernečnega kota, $B_{sin}$ in $B_{cos}$ senzorja RM44, izračunanega kota iz $B_{sin}$ in $B_{cos}$ signala, napako med izračunanim kotom senzorja in refernčnim dajalnikom, hitrost vrtenja ter tok prve faze motorskega pogona. Signaloma $B_{sin}$ in $B_{cos}$ se v programu prišteje enosmerna komponenta, ki bi popravila signala.
 
 Krmilna plošča (slika \ref{krmilnaplosca.jpg}) zajema podatke pogona s frekvenco 1kHz.
@@ -50,7 +49,7 @@ Signala $B_{sin}$ in $B_{cos}$  se na krmilni plošči ojačata in pretvorita z 
 Hitrost in napaka sta izračunana iz zajetih signalov.
 Podatki so v obliki enega paketa poslani s krmilne plošče na 1 sekundo. Pri frekvenci vrtenja 1 Hz, grafični vmesnik prikaže en obrat.
 Podatke se lahko izvozi v obliki .csv datoteke in nato poljubno obdela.
-Na sliki  \ref{GUI.png} je prikazan sinusni signal prikazan kot da je zamaknjen za 180$\mathrm{^\circ}$. To je posledica definicije pozitvne smeri vrtenja za senzor \cite{RM44}. Senzor ima nasproto definirano pozitivno smer vrtenja. To sem rešil tako, da sem obrnil podatke. Popraviti je bilo potrebno tudi potek referenčnega dajalnika.
+Na sliki  \ref{GUI.png} je prikazan sinusni signal prikazan kot da je zamaknjen za 180$\mathrm{^\circ}$. To je posledica definicije pozitvne smeri vrtenja za senzor \cite{RM44}. Senzor ima nasprotno definirano pozitivno smer vrtenja. To sem rešil tako, da sem obrnil podatke. Popraviti je bilo potrebno tudi potek referenčnega dajalnika.
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.99\textwidth]{./Slike/GUI.png}
@@ -61,7 +60,7 @@ Na sliki  \ref{GUI.png} je prikazan sinusni signal prikazan kot da je zamaknjen 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=0.55\textwidth]{./Slike/krmilnaplosca.jpg}
-	\caption{Krmilna plošča za krmiljenje pogona in obdelavo signalov s dajalnikov položaja}
+	\caption{Elektronika za krmiljenje pogona in zajem podatkov z dajalnikov zasuka}
 	\label{krmilnaplosca.jpg}
 \end{figure}
 \newpage

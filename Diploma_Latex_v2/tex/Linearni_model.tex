@@ -1,11 +1,12 @@
 \chapter{Linearni model magnetnega polja}
 \label{linearnimodel}
 
+Aproksimacija polja zadostuje za oceno napake.
 Za oceno napake, se lahko Z komponento magnetnega polja v okolici središča magneta, aproksimira z ravnino (slika \ref{polje_z_ravnino}).
-Aproksimacija zadostuje za oceno napake. S poznavanjem lokacije sonde glede na magnet, se lahko izračuna merjena komponenta magnetnega polja. Aprokisimirano polje je linearno odvisno od x komponente (\ref{equ:poljeB1}).  Za lažje razumevanje bo $k$ enak $1\frac{\mathrm{mT}}{\mathrm{mm}}$.
+Koordinatni sistem nad magnetom naj bo postavljen tako, da bo polje aproksimirano z enačbo (\ref{equ:lin_polje}).
 \begin{equation}
 \label{equ:lin_polje}
-B_z(x,y)=k\cdot x.
+B_z(x,y)= x.
 \end{equation}
 \begin{figure}[ht]
 	\centering
@@ -20,7 +21,8 @@ Ob zasuku magneta, se sonde relativno gibljejo na magnet v nasprotni smeri kot s
 \begin{figure}[!ht]
 	\centering
 	\begin{tikzpicture}
-	\magnet {0} {0} {0}{ }{1};
+	\CaCS{3}{0}{0}
+	\magnet {0} {0} {90}{ }{1};
 	\hall {1}{0} {0};
 	\hall {0}{1} {0};
 	\hall {-1}{0} {0};
@@ -50,17 +52,17 @@ B_{H_4}(\theta, r_0, \Delta x_s, \Delta y_s, \Delta x_d, \Delta y_d)=-r_0 \sin \
 \end{eqnarray}
 Z odštevanjem signalov nasprotni ležečih sond se pridobi signala  $B_{sin}$ in $B_{cos}$.
 \begin{eqnarray}
-B_{sin}=  B_{H_1} - B_{H_3} = 2 r_0 \sin \theta \\
-B_{cos}=  B_{H_2} - B_{H_4}=  2 r_0 \cos \theta
+B_{cos}=  B_{H_1} - B_{H_3} = 2 r_0 \cos \theta \\
+B_{sin}=  B_{H_2} - B_{H_4}=  2 r_0 \sin \theta
 \end{eqnarray}
 
 Z diferencialnim odčitavenjem signalov  $B_{sin}$ in $B_{cos}$, se popačanje signalov zaradi napačne montaže izniči. Iz tega sledi zaključek, da pri linearni apoksimaciji Z-komponente gostote magnetnega pretoka napačna montaža ne vpliva na napako.
 
 Kljub temu so bile opravljene simulacije na poenostavljenem modelu, uporabi le dveh sond
- ($B_{sin}=B_{H_1}$ in $B_{cos}=B_{H_2}$). Na ta način je lahko bila analizirana napaka.
+ ($B_{cos}=B_{H_1}$ in $B_{sin}=B_{H_2}$). Na ta način je lahko bila analizirana napaka.
  
- Koeficient $k$, ki je v simulacijah enak $1 \frac{\mathrm{ mT}}{\mathrm{ mm}}$, bi bil lahko tudi poljuben.
- Izraza $B_{sin}$ in $B_{cos}$ bi bila tako le množena s koeficientom $k$. Za izračun kota, se znotraj funkcije $atan2()$ izračuna kvocient med $B_{sin}$ in $B_{cos}$. Ker se $k$ pojavi tako v števcu in imenovaluc, se izniči. Koeficient $k$ na napako kota ne vpliva.
+ Ravnina, ki aproksimiran magnetno polje v središču magneta, bi lahko imela gradient tudi drugačen od 1.
+ Izraza $B_{sin}$ in $B_{cos}$ bi bila tako le množena s poljubnim koeficientom. Za izračun kota, se znotraj funkcije $atan2()$ izračuna kvocient med $B_{sin}$ in $B_{cos}$. Ker bi se koeficient  pojavi tako v števcu in imenovaluc, bi se izničil. Koeficient, ki predstavlja gradient napake na napako kota ne vpliva.
 
 V tem poglavju so predstavljeni rezultati simulacij z upoštevanjem dveh Hall-ovih sond in uporabo linearno aprokismirane Z-komponente gostote magnetnega pretoka.
 Prikazan je potek napake pri različnih izmikih, ter potek amplitud posameznih harmonikov napake v odvisnosti od ekscentričnosti.

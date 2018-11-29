@@ -98,7 +98,7 @@ Os vrtenja ostaja v izhodišču koordinatnega sistema. Središce magneta $S_{m1}
 	\begin{tikzpicture}
 		\magnet {-0.6} {0.3} {0}{ }{1};
 		\hall {2.3}{1} {0};
-		\kks{3}
+		\CaCS{3}{0}{0}
 		\draw [dashed]  (0,0) circle (0.67);
 		\draw (0,0)--(-0.6,0.3);
 		\fill (0,0) circle [radius=1pt];
@@ -132,7 +132,7 @@ magnet opiše (\ref{equ:rotacija_hall_din})
 	\begin{tikzpicture}
 	\magnet {0} {0} {0}{ }{1};
 	\hall {2.3+0.6}{1-0.3} {0};
-	\kks{3}
+	\CaCS{3}{0}{0}
 	\draw (0,0)--(0.6,-0.3);
 	\fill (0.6, -0.3) circle [radius=1pt];
 	\node at (-0.55,-0.3){$S_m(0,0)$};
@@ -155,7 +155,7 @@ Z miselnim obratom vrtenja sonde v nasprotno smer se gibanje sonde izrazi kot gi
 \begin{figure}[!ht]
 	\hspace*{3.5cm}   
 	\begin{tikzpicture}
-	\kks{3}
+	\CaCS{3}{0}{0}
 	\magnet {0} {0} {0}{}{1};
 	\hall {2.3+0.9}{1+0.7} {0};
 	\node at (-0.55,-0.3){$S_r(0,0)$};
