@@ -1,0 +1,92 @@
+% Replace the following information with your document's actual
+% metadata. If you do not want to set a value for a certain parameter,
+% just omit it.
+%
+% Symbols permitted in metadata
+% =============================
+% 
+% Within the metadata, all printable ASCII characters except
+% '\', '{', '}', and '%' represent themselves. Also, all printable
+% Unicode characters from the basic multilingual plane (i.e., up to
+% code point U+FFFF) can be used directly with the UTF-8 encoding. 
+% Consecutive whitespace characters are combined into a single
+% space. Whitespace after a macro such as \copyright, \backslash, or
+% \sep is ignored. Blank lines are not permitted. Moreover, the
+% following markup can be used:
+%
+%  '\ '         - a literal space  (for example after a macro)                  
+%   \%          - a literal '%'                                                 
+%   \{          - a literal '{'                                                 
+%   \}          - a literal '}'                                                 
+%   \backslash  - a literal '\'                                                 
+%   \copyright  - the (c) copyright symbol                                      
+%
+% The macro \sep is only permitted within \Author, \Keywords, and
+% \Org.  It is used to separate multiple authors, keywords, etc.
+% 
+% List of supported metadata fields
+% =================================
+% 
+% Here is a complete list of user-definable metadata fields currently
+% supported, and their meanings. More may be added in the future.
+% 
+% General information:
+%
+%  \Author           - the document's human author. Separate multiple
+%                      authors with \sep.
+%  \Title            - the document's title.
+%  \Keywords         - list of keywords, separated with \sep.
+%  \Subject          - the abstract. 
+%  \Org              - publishers.
+% 
+% Copyright information:
+%
+%  \Copyright        - a copyright statement.
+%  \CopyrightURL     - location of a web page describing the owner
+%                      and/or rights statement for this document.
+%  \Copyrighted      - 'True' if the document is copyrighted, and
+%                      'False' if it isn't. This is automatically set
+%                      to 'True' if either \Copyright or \CopyrightURL
+%                      is specified, but can be overridden. For
+%                      example, if the copyright statement is "Public
+%                      Domain", this should be set to 'False'.
+%
+% Publication information:
+%
+% \PublicationType   - The type of publication. If defined, must be
+%                      one of book, catalog, feed, journal, magazine,
+%                      manual, newsletter, pamphlet. This is
+%                      automatically set to "journal" if \Journaltitle
+%                      is specified, but can be overridden.
+% \Journaltitle      - The title of the journal in which the document
+%                      was published. 
+% \Journalnumber     - The ISSN for the publication in which the
+%                      document was published.
+% \Volume            - Journal volume.
+% \Issue             - Journal issue/number.
+% \Firstpage         - First page number of the published version of
+%                      the document.
+% \Lastpage          - Last page number of the published version of
+%                      the document.
+% \Doi               - Digital Object Identifier (DOI) for the
+%                      document, without the leading "doi:".
+% \CoverDisplayDate  - Date on the cover of the journal issue, as a
+%                      human-readable text string.
+% \CoverDate         - Date on the cover of the journal issue, in a
+%                      format suitable for storing in a database field
+%                      with a 'date' data type.
+
+
+
+\Title        {Vpliv statične in dinamične ekscentričnosti magnetnega senzorja RM44 na napako v signalu kota}
+
+\Author       {Mitja Alič}
+
+\Copyright    {Copyright \copyright\ 2018 "Mitja Alič"}
+
+\Keywords     {dajalnik položaja \sep Hallova sonda \sep nepravilna montaža \sep predvidevanje napake \sep arcustangens}
+
+\Subject      {Za regulacijo pogonov se v industriji uporablja dajalnike zasuka. Primer dajalnika zasuka je magnetni enkoder. Magnetni enkoder je zaradi svoje robustnosti primeren za delovanje v takem okolju. S Hallovimi sonadmi enkoder meri Z-komponento magnetnega polja magneta, ki se nahaja na rotirajočem delu pogona.
+Iz signalov Hallovih sond enkoder pridobi signala v obliki sinusa in kosinusa. Preko matematičnega algoritma se izračuna kot zasuka.
+Algoritem predstavlja izračun matematične funkcije atan2(). Ob nepravilni montaži enkoderja ali magneta, se prostorski zajem signalov sinusne in kosinusne oblike spremeni. Posledično se v izračunanem kotu pojavi napaka. Napaka kota se izrazi glede na nepravilno zajeto magnetno polje. V magistrskem delu je predstavljeno spreminjanje zajemanja magnetnega polja posamezne Hallove sonde v odvisnosti od nepravilne montaže. Napako zaradi nepravilne montaže, se najlažje razbere iz signalov Hallovih sond. Izhod enkoderja je le podatek o zasuku.
+Ker se za izračun kota potrebuje funkcijo atan2(), je v delu izpeljano, kako napaka v vhodnih signalih rezultira v napaki izhoda funkcije. V programu MATLAB je bil sestavljen simulacijski model za merjenje napake enkoderja v odvisnosti od nepravilne montaže. Simulacije so bile opravljene na linearno aprokismirani Z-komponenti gostote magnetnega polja in na numerično izračunanem polju realnega magneta. Napaka ob napačni montaži je bila analizirana v frekvenčenem prostoru in je predstavljena kot potek posameznega harmonika v odvisnosti od nepravilne montaže. Opravljene so bile meritve na enkoderju RM44, ki so bile primerjane s simulacijami. Meritve so potrdile pričakovane poteke napake predvidene s simulacijami. Na napravi je bila idealna lega določena empirično. Posledično se je to pokazalo tudi v potekih napake v odvisnosti od nepravilne montaže.}

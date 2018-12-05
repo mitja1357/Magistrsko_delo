@@ -1,55 +1,55 @@
 \BOOKMARK [0][-]{chapter.1}{Uvod}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Senzor RM44}{}% 2
-\BOOKMARK [0][-]{chapter.3}{Izpeljava gibanja sonde relativno na magnet ob nepravilni monta\236i}{}% 3
-\BOOKMARK [1][-]{section.3.1}{Definicija koordinatnega sistema}{chapter.3}% 4
-\BOOKMARK [1][-]{section.3.2}{Izpeljava gibanja lokacije Hallove sonde na magnet pri dinamicni ekscentricnosti}{chapter.3}% 5
-\BOOKMARK [1][-]{section.3.3}{Izpeljava gibanja lokacije Hall-ove sonde na magnet pri staticni ekscentricnosti}{chapter.3}% 6
-\BOOKMARK [1][-]{section.3.4}{Koncna enacba za dolocanje lokacije Hall-ove sonde}{chapter.3}% 7
-\BOOKMARK [0][-]{chapter.4}{Potek napake funkcije atan2 ob popacenju vhodnih signalov}{}% 8
-\BOOKMARK [1][-]{section.4.1}{Razlicne amplitude}{chapter.4}% 9
-\BOOKMARK [1][-]{section.4.2}{Razlicne enosmerne komponente}{chapter.4}% 10
-\BOOKMARK [2][-]{subsection.4.2.1}{Enosmerna komponenta v signalu B_sin}{section.4.2}% 11
-\BOOKMARK [2][-]{subsection.4.2.2}{Enosmerna komponenta signala B_cos}{section.4.2}% 12
-\BOOKMARK [2][-]{subsection.4.2.3}{Enosmerna komponenta pri obeh signalih}{section.4.2}% 13
-\BOOKMARK [1][-]{section.4.3}{Neorotogonalnost signalov}{chapter.4}% 14
-\BOOKMARK [1][-]{section.4.4}{Napaka zaradi spremembe amplitude in faze zaradi enega parametra}{chapter.4}% 15
-\BOOKMARK [0][-]{chapter.5}{Linearni model magnetnega polja}{}% 16
-\BOOKMARK [1][-]{section.5.1}{Napaka brez vplivov ekscentricnost}{chapter.5}% 17
-\BOOKMARK [1][-]{section.5.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.5}% 18
-\BOOKMARK [2][-]{subsection.5.2.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od staticne ekscentricnosti v smeri x}{section.5.2}% 19
-\BOOKMARK [1][-]{section.5.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.5}% 20
-\BOOKMARK [2][-]{subsection.5.3.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od staticne ekscentricnosti v smeri y}{section.5.3}% 21
-\BOOKMARK [1][-]{section.5.4}{Dinamicna ekscentricnost v smeri x osi}{chapter.5}% 22
-\BOOKMARK [2][-]{subsection.5.4.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od dinamicne ekscentricnosti v smeri x}{section.5.4}% 23
-\BOOKMARK [1][-]{section.5.5}{Dinamicna ekscentricnost v smeri y in sprememba razdalje Hallovih sond od magneta }{chapter.5}% 24
-\BOOKMARK [0][-]{chapter.6}{Realni model magnetnega polja}{}% 25
-\BOOKMARK [1][-]{section.6.1}{Napaka brez vplivov ekscentricnosti}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.2}{Simulacija staticne ekscentricnosti v smeri x-osi}{chapter.6}% 27
-\BOOKMARK [2][-]{subsection.6.2.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od staticne ekscentricnosti v smeri x}{section.6.2}% 28
-\BOOKMARK [1][-]{section.6.3}{Simulacija staticne ekscentricnosti v smeri y-osi}{chapter.6}% 29
-\BOOKMARK [2][-]{subsection.6.3.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od staticne ekscentricnosti v smeri y}{section.6.3}% 30
-\BOOKMARK [1][-]{section.6.4}{Dinamicna ekscentricnost v smeri x}{chapter.6}% 31
-\BOOKMARK [2][-]{subsection.6.4.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od dinamicne ekscentricnosti v smeri x}{section.6.4}% 32
-\BOOKMARK [1][-]{section.6.5}{Dinamicna ekscentricnost v smeri y}{chapter.6}% 33
-\BOOKMARK [2][-]{subsection.6.5.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od dinamicne ekscentricnosti v smeri y}{section.6.5}% 34
+\BOOKMARK [0][-]{chapter.2}{Senzor\040RM44}{}% 2
+\BOOKMARK [0][-]{chapter.3}{Izpeljava\040gibanja\040sonde\040relativno\040na\040magnet\040ob\040nepravilni\040monta\236i}{}% 3
+\BOOKMARK [1][-]{section.3.1}{Definicija\040koordinatnega\040sistema}{chapter.3}% 4
+\BOOKMARK [1][-]{section.3.2}{\376\377\000I\000z\000p\000e\000l\000j\000a\000v\000a\000\040\000g\000i\000b\000a\000n\000j\000a\000\040\000l\000o\000k\000a\000c\000i\000j\000e\000\040\000H\000a\000l\000l\000o\000v\000e\000\040\000s\000o\000n\000d\000e\000\040\000n\000a\000\040\000m\000a\000g\000n\000e\000t\000\040\000p\000r\000i\000\040\000d\000i\000n\000a\000m\000i\001\015\000n\000i\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i}{chapter.3}% 5
+\BOOKMARK [1][-]{section.3.3}{\376\377\000I\000z\000p\000e\000l\000j\000a\000v\000a\000\040\000g\000i\000b\000a\000n\000j\000a\000\040\000l\000o\000k\000a\000c\000i\000j\000e\000\040\000H\000a\000l\000l\000-\000o\000v\000e\000\040\000s\000o\000n\000d\000e\000\040\000n\000a\000\040\000m\000a\000g\000n\000e\000t\000\040\000p\000r\000i\000\040\000s\000t\000a\000t\000i\001\015\000n\000i\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i}{chapter.3}% 6
+\BOOKMARK [1][-]{section.3.4}{\376\377\000K\000o\000n\001\015\000n\000a\000\040\000e\000n\000a\001\015\000b\000a\000\040\000z\000a\000\040\000d\000o\000l\000o\001\015\000a\000n\000j\000e\000\040\000l\000o\000k\000a\000c\000i\000j\000e\000\040\000H\000a\000l\000l\000-\000o\000v\000e\000\040\000s\000o\000n\000d\000e}{chapter.3}% 7
+\BOOKMARK [0][-]{chapter.4}{\376\377\000P\000o\000t\000e\000k\000\040\000n\000a\000p\000a\000k\000e\000\040\000f\000u\000n\000k\000c\000i\000j\000e\000\040\000a\000t\000a\000n\0002\000\040\000o\000b\000\040\000p\000o\000p\000a\001\015\000e\000n\000j\000u\000\040\000v\000h\000o\000d\000n\000i\000h\000\040\000s\000i\000g\000n\000a\000l\000o\000v}{}% 8
+\BOOKMARK [1][-]{section.4.1}{\376\377\000R\000a\000z\000l\000i\001\015\000n\000e\000\040\000a\000m\000p\000l\000i\000t\000u\000d\000e}{chapter.4}% 9
+\BOOKMARK [1][-]{section.4.2}{\376\377\000R\000a\000z\000l\000i\001\015\000n\000e\000\040\000e\000n\000o\000s\000m\000e\000r\000n\000e\000\040\000k\000o\000m\000p\000o\000n\000e\000n\000t\000e}{chapter.4}% 10
+\BOOKMARK [2][-]{subsection.4.2.1}{Enosmerna\040komponenta\040v\040signalu\040B_sin}{section.4.2}% 11
+\BOOKMARK [2][-]{subsection.4.2.2}{Enosmerna\040komponenta\040signala\040B_cos}{section.4.2}% 12
+\BOOKMARK [2][-]{subsection.4.2.3}{Enosmerna\040komponenta\040pri\040obeh\040signalih}{section.4.2}% 13
+\BOOKMARK [1][-]{section.4.3}{Neorotogonalnost\040signalov}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.4}{Napaka\040zaradi\040spremembe\040amplitude\040in\040faze\040zaradi\040enega\040parametra}{chapter.4}% 15
+\BOOKMARK [0][-]{chapter.5}{Linearni\040model\040magnetnega\040polja}{}% 16
+\BOOKMARK [1][-]{section.5.1}{\376\377\000N\000a\000p\000a\000k\000a\000\040\000b\000r\000e\000z\000\040\000v\000p\000l\000i\000v\000o\000v\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t}{chapter.5}% 17
+\BOOKMARK [1][-]{section.5.2}{\376\377\000S\000i\000m\000u\000l\000a\000c\000i\000j\000a\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x\000-\000o\000s\000i}{chapter.5}% 18
+\BOOKMARK [2][-]{subsection.5.2.1}{\376\377\000S\000p\000r\000e\000m\000e\000m\000b\000a\000\040\000s\000i\000g\000n\000a\000l\000o\000v\000\040\000H\000a\000l\000l\000o\000v\000i\000h\000\040\000s\000o\000n\000d\000\040\000t\000e\000r\000\040\000n\000a\000p\000a\000k\000e\000\040\000v\000\040\000o\000d\000v\000i\000s\000n\000o\000s\000t\000i\000\040\000o\000d\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x}{section.5.2}% 19
+\BOOKMARK [1][-]{section.5.3}{\376\377\000S\000i\000m\000u\000l\000a\000c\000i\000j\000a\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000y\000-\000o\000s\000i}{chapter.5}% 20
+\BOOKMARK [2][-]{subsection.5.3.1}{\376\377\000S\000p\000r\000e\000m\000e\000m\000b\000a\000\040\000s\000i\000g\000n\000a\000l\000o\000v\000\040\000H\000a\000l\000l\000o\000v\000i\000h\000\040\000s\000o\000n\000d\000\040\000t\000e\000r\000\040\000n\000a\000p\000a\000k\000e\000\040\000v\000\040\000o\000d\000v\000i\000s\000n\000o\000s\000t\000i\000\040\000o\000d\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000y}{section.5.3}% 21
+\BOOKMARK [1][-]{section.5.4}{\376\377\000D\000i\000n\000a\000m\000i\001\015\000n\000a\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x\000\040\000o\000s\000i}{chapter.5}% 22
+\BOOKMARK [2][-]{subsection.5.4.1}{\376\377\000S\000p\000r\000e\000m\000e\000m\000b\000a\000\040\000s\000i\000g\000n\000a\000l\000o\000v\000\040\000H\000a\000l\000l\000o\000v\000i\000h\000\040\000s\000o\000n\000d\000\040\000t\000e\000r\000\040\000n\000a\000p\000a\000k\000e\000\040\000v\000\040\000o\000d\000v\000i\000s\000n\000o\000s\000t\000i\000\040\000o\000d\000\040\000d\000i\000n\000a\000m\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x}{section.5.4}% 23
+\BOOKMARK [1][-]{section.5.5}{\376\377\000D\000i\000n\000a\000m\000i\001\015\000n\000a\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000y\000\040\000i\000n\000\040\000s\000p\000r\000e\000m\000e\000m\000b\000a\000\040\000r\000a\000z\000d\000a\000l\000j\000e\000\040\000H\000a\000l\000l\000o\000v\000i\000h\000\040\000s\000o\000n\000d\000\040\000o\000d\000\040\000m\000a\000g\000n\000e\000t\000a\000\040}{chapter.5}% 24
+\BOOKMARK [0][-]{chapter.6}{Realni\040model\040magnetnega\040polja}{}% 25
+\BOOKMARK [1][-]{section.6.1}{\376\377\000N\000a\000p\000a\000k\000a\000\040\000b\000r\000e\000z\000\040\000v\000p\000l\000i\000v\000o\000v\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.2}{\376\377\000S\000i\000m\000u\000l\000a\000c\000i\000j\000a\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x\000-\000o\000s\000i}{chapter.6}% 27
+\BOOKMARK [2][-]{subsection.6.2.1}{\376\377\000S\000p\000r\000e\000m\000e\000m\000b\000a\000\040\000s\000i\000g\000n\000a\000l\000o\000v\000\040\000H\000a\000l\000l\000o\000v\000i\000h\000\040\000s\000o\000n\000d\000\040\000t\000e\000r\000\040\000n\000a\000p\000a\000k\000e\000\040\000v\000\040\000o\000d\000v\000i\000s\000n\000o\000s\000t\000i\000\040\000o\000d\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x}{section.6.2}% 28
+\BOOKMARK [1][-]{section.6.3}{\376\377\000S\000i\000m\000u\000l\000a\000c\000i\000j\000a\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000y\000-\000o\000s\000i}{chapter.6}% 29
+\BOOKMARK [2][-]{subsection.6.3.1}{\376\377\000S\000p\000r\000e\000m\000e\000m\000b\000a\000\040\000s\000i\000g\000n\000a\000l\000o\000v\000\040\000H\000a\000l\000l\000o\000v\000i\000h\000\040\000s\000o\000n\000d\000\040\000t\000e\000r\000\040\000n\000a\000p\000a\000k\000e\000\040\000v\000\040\000o\000d\000v\000i\000s\000n\000o\000s\000t\000i\000\040\000o\000d\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000y}{section.6.3}% 30
+\BOOKMARK [1][-]{section.6.4}{\376\377\000D\000i\000n\000a\000m\000i\001\015\000n\000a\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x}{chapter.6}% 31
+\BOOKMARK [2][-]{subsection.6.4.1}{\376\377\000S\000p\000r\000e\000m\000e\000m\000b\000a\000\040\000s\000i\000g\000n\000a\000l\000o\000v\000\040\000H\000a\000l\000l\000o\000v\000i\000h\000\040\000s\000o\000n\000d\000\040\000t\000e\000r\000\040\000n\000a\000p\000a\000k\000e\000\040\000v\000\040\000o\000d\000v\000i\000s\000n\000o\000s\000t\000i\000\040\000o\000d\000\040\000d\000i\000n\000a\000m\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x}{section.6.4}% 32
+\BOOKMARK [1][-]{section.6.5}{\376\377\000D\000i\000n\000a\000m\000i\001\015\000n\000a\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000y}{chapter.6}% 33
+\BOOKMARK [2][-]{subsection.6.5.1}{\376\377\000S\000p\000r\000e\000m\000e\000m\000b\000a\000\040\000s\000i\000g\000n\000a\000l\000o\000v\000\040\000H\000a\000l\000l\000o\000v\000i\000h\000\040\000s\000o\000n\000d\000\040\000t\000e\000r\000\040\000n\000a\000p\000a\000k\000e\000\040\000v\000\040\000o\000d\000v\000i\000s\000n\000o\000s\000t\000i\000\040\000o\000d\000\040\000d\000i\000n\000a\000m\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000y}{section.6.5}% 34
 \BOOKMARK [0][-]{chapter.7}{Meritve}{}% 35
-\BOOKMARK [1][-]{section.7.1}{Oprema in postavitev merilnega mesta}{chapter.7}% 36
-\BOOKMARK [1][-]{section.7.2}{Zajem podatkov}{chapter.7}% 37
-\BOOKMARK [1][-]{section.7.3}{Senzor v izhodi\235cni legi}{chapter.7}% 38
-\BOOKMARK [2][-]{subsection.7.3.1}{Meritve v izhodi\235ni legi}{section.7.3}% 39
-\BOOKMARK [1][-]{section.7.4}{Meritve staticne ekscentricnosti v smeri x-osi}{chapter.7}% 40
-\BOOKMARK [2][-]{subsection.7.4.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od staticne ekscentricnosti v smeri x}{section.7.4}% 41
-\BOOKMARK [1][-]{section.7.5}{Meritve staticne ekscentricnosti v smeri y-osi}{chapter.7}% 42
-\BOOKMARK [2][-]{subsection.7.5.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od staticne ekscentricnosti v smeri y}{section.7.5}% 43
-\BOOKMARK [1][-]{section.7.6}{Meritve dinamicne ekscentricnosti v smeri x-osi}{chapter.7}% 44
-\BOOKMARK [2][-]{subsection.7.6.1}{Sprememba signalov Hallovih sond ter napake v odvisnosti od dinamicne ekscentricnosti v smeri x}{section.7.6}% 45
-\BOOKMARK [0][-]{chapter.8}{Primerjava rezultatov simulacij in meritev}{}% 46
-\BOOKMARK [1][-]{section.8.1}{Staticna ekscentricnost v smeri x}{chapter.8}% 47
-\BOOKMARK [1][-]{section.8.2}{Staticna ekscentricnost v smeri y}{chapter.8}% 48
-\BOOKMARK [1][-]{section.8.3}{Dinamicna ekscentricnost}{chapter.8}% 49
+\BOOKMARK [1][-]{section.7.1}{Oprema\040in\040postavitev\040merilnega\040mesta}{chapter.7}% 36
+\BOOKMARK [1][-]{section.7.2}{Zajem\040podatkov}{chapter.7}% 37
+\BOOKMARK [1][-]{section.7.3}{\376\377\000S\000e\000n\000z\000o\000r\000\040\000v\000\040\000i\000z\000h\000o\000d\000i\001\141\001\015\000n\000i\000\040\000l\000e\000g\000i}{chapter.7}% 38
+\BOOKMARK [2][-]{subsection.7.3.1}{Meritve\040v\040izhodi\235ni\040legi}{section.7.3}% 39
+\BOOKMARK [1][-]{section.7.4}{\376\377\000M\000e\000r\000i\000t\000v\000e\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x\000-\000o\000s\000i}{chapter.7}% 40
+\BOOKMARK [2][-]{subsection.7.4.1}{\376\377\000S\000p\000r\000e\000m\000e\000m\000b\000a\000\040\000s\000i\000g\000n\000a\000l\000o\000v\000\040\000H\000a\000l\000l\000o\000v\000i\000h\000\040\000s\000o\000n\000d\000\040\000t\000e\000r\000\040\000n\000a\000p\000a\000k\000e\000\040\000v\000\040\000o\000d\000v\000i\000s\000n\000o\000s\000t\000i\000\040\000o\000d\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x}{section.7.4}% 41
+\BOOKMARK [1][-]{section.7.5}{\376\377\000M\000e\000r\000i\000t\000v\000e\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000y\000-\000o\000s\000i}{chapter.7}% 42
+\BOOKMARK [2][-]{subsection.7.5.1}{\376\377\000S\000p\000r\000e\000m\000e\000m\000b\000a\000\040\000s\000i\000g\000n\000a\000l\000o\000v\000\040\000H\000a\000l\000l\000o\000v\000i\000h\000\040\000s\000o\000n\000d\000\040\000t\000e\000r\000\040\000n\000a\000p\000a\000k\000e\000\040\000v\000\040\000o\000d\000v\000i\000s\000n\000o\000s\000t\000i\000\040\000o\000d\000\040\000s\000t\000a\000t\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000y}{section.7.5}% 43
+\BOOKMARK [1][-]{section.7.6}{\376\377\000M\000e\000r\000i\000t\000v\000e\000\040\000d\000i\000n\000a\000m\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x\000-\000o\000s\000i}{chapter.7}% 44
+\BOOKMARK [2][-]{subsection.7.6.1}{\376\377\000S\000p\000r\000e\000m\000e\000m\000b\000a\000\040\000s\000i\000g\000n\000a\000l\000o\000v\000\040\000H\000a\000l\000l\000o\000v\000i\000h\000\040\000s\000o\000n\000d\000\040\000t\000e\000r\000\040\000n\000a\000p\000a\000k\000e\000\040\000v\000\040\000o\000d\000v\000i\000s\000n\000o\000s\000t\000i\000\040\000o\000d\000\040\000d\000i\000n\000a\000m\000i\001\015\000n\000e\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000i\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x}{section.7.6}% 45
+\BOOKMARK [0][-]{chapter.8}{Primerjava\040rezultatov\040simulacij\040in\040meritev}{}% 46
+\BOOKMARK [1][-]{section.8.1}{\376\377\000S\000t\000a\000t\000i\001\015\000n\000a\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000x}{chapter.8}% 47
+\BOOKMARK [1][-]{section.8.2}{\376\377\000S\000t\000a\000t\000i\001\015\000n\000a\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t\000\040\000v\000\040\000s\000m\000e\000r\000i\000\040\000y}{chapter.8}% 48
+\BOOKMARK [1][-]{section.8.3}{\376\377\000D\000i\000n\000a\000m\000i\001\015\000n\000a\000\040\000e\000k\000s\000c\000e\000n\000t\000r\000i\001\015\000n\000o\000s\000t}{chapter.8}% 49
 \BOOKMARK [0][-]{chapter.9}{Sklep}{}% 50
-\BOOKMARK [1][-]{section.9.1}{Merjenje kota in vpliv na napako}{chapter.9}% 51
-\BOOKMARK [1][-]{section.9.2}{Nepravilna monta\236a}{chapter.9}% 52
-\BOOKMARK [1][-]{section.9.3}{Oblika napake}{chapter.9}% 53
-\BOOKMARK [1][-]{section.9.4}{Izvedba meritev}{chapter.9}% 54
-\BOOKMARK [1][-]{section.9.5}{Komentar rezultatov}{chapter.9}% 55
+\BOOKMARK [1][-]{section.9.1}{Merjenje\040kota\040in\040vpliv\040na\040napako}{chapter.9}% 51
+\BOOKMARK [1][-]{section.9.2}{Nepravilna\040monta\236a}{chapter.9}% 52
+\BOOKMARK [1][-]{section.9.3}{Oblika\040napake}{chapter.9}% 53
+\BOOKMARK [1][-]{section.9.4}{Izvedba\040meritev}{chapter.9}% 54
+\BOOKMARK [1][-]{section.9.5}{Komentar\040rezultatov}{chapter.9}% 55
