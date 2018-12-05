@@ -47,7 +47,7 @@ h = figure('Color',[1 1 1],'Position',[50,100,800,4000]);
 filename = 'polje_brez_ravnino.gif';
 clf
 % Create axes
-axes1 = axes('Visible','off','Parent',h);
+axes1 = axes('Visible','on','Parent',h);
 view(axes1,[80 8]);
 hold(axes1,'all');
 % Create polje

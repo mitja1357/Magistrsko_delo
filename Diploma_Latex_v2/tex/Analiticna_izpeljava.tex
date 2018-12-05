@@ -201,7 +201,10 @@ Izhod enkoderja je podatek o zasuku. Iz pomerjene gostote magnetnega polja, sled
 funkcija atan2d() vrne rezultat v stopinjah\cite{atan2Matlab}\cite{atan2dMatlab}.
 
 Različne literature \cite{RLS3} \cite{osnova} \cite{RLS1} \cite{RLS2} opisujejo napako izhoda funkcije zaradi popačenosti vhodnih signalov. Napaka je izražena v obliki enosmerne komponente ter prvega oz. drugega
-harmonika, kateri od primera do primera bolj izstopa. V tem poglavju je prikazano, kako popačena signala kot vhoda v funkcijo atan2d() vplivata na napako. Za majhna popačenja vhodnih signalov, literatura nakazuje linearno naraščanje napake. V poglavju je predstavljeno tudi kako se popačenja vhodnih signalov odražajo na višjih harmonikih napake.
+harmonika, kateri od primera do primera bolj izstopa. V tem poglavju je prikazano, kako popačena signala kot vhoda v funkcijo atan2d() vplivata na napako. Za majhna popačenja vhodnih signalov, literatura nakazuje linearno naraščanje napake. V poglavju je predstavljeno tudi, kako se popačenja vhodnih signalov odražajo na višjih harmonikih napake.
+
+Pri različnih popačenjih, se je opravil FFT napake, nato je sledilo aproksimiranje posameznega harmonika napake v odvisnosti od spreminjajočega parametra. Iskalo se je funkcijo, ki bi aproksimirala amplitudo posameznega harmonika čim bolje. Z izbiro najbolj primernih funkcij, je bila napaka minimalnih kvadratov aprokismacije pri vseh potekih manjša od $0,072$''.
+
 \section{Različne amplitude}
 Prvi primer popačenih vhodov v funkcijo atan2d() je neenakost amplitud vhodnih signalov. Signala imata poljubne amplitude, vendar se izhod funkcije atan2d() ne bo spremenil, če se obe amplitudi deli s
 poljubnim številom. Če se za poljubno število vzame amplitudo signala $B_{cos}$, imata singala novo definirani amplitudi. Razmerje amplitud med $B_{sin}$ in $B_{cos}$ je označeno s $k$.
@@ -211,11 +214,11 @@ poljubnim številom. Če se za poljubno število vzame amplitudo signala $B_{cos
 \label{equ:def_cos_amp}
 &B_{cos} =\cos(\theta)
 \end{eqnarray}
-Funkciji sta vstavljeni v atan2d(). Parameter $k$ se limitira v skrajno lego. Z limito se ugotovi v kakšno obliko napaka konvergira. Z limito v skrajnost se zoži nabor funkcij na katero se aproksimira napako.  Izhod atan2d() je konstanta, napaka $\varepsilon$ je prikazana na sliki \ref{./Napake/k_lim}.
+Funkciji sta vstavljeni v atan2d(). Opravi se limito napake s pošiljanjem parametra $k$ v skrajno lego. Z limito se ugotovi v kakšno obliko napaka konvergira. Z limito napake, se zoži nabor funkcij na katero se aproksimira napako.  Izhod atan2d() je konstanta, napaka $\varepsilon$ je prikazana na sliki \ref{./Napake/k_lim}.
 \begin{equation}
 \lim_{k \rightarrow \infty} \mathrm{atan2}(k \sin{\theta},\cos{\theta}) - \theta
 \end{equation}
-\slikaeps{$\varepsilon$ ob limiti k v neskončnost }{./Napake/k_lim}
+\slikaeps{Limita napake $\varepsilon$ ko gre $k$ prooti neskončnosti }{./Napake/k_lim}
 
 Potek $\varepsilon$ se lahko zapiše s Fourierovo vrsto \cite{Matematika1}:
 
@@ -228,8 +231,8 @@ V napaki nastopajo le sodi harmoniki. Z opazovanjem sodih harmonikov napake pri 
 \label{vrsta_k}
 \varepsilon_p =\frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n}(\frac{k-1}{k+1})^n \sin 2 n \theta
 \end{equation}
-Funkcijo sem aproksimiral na definicijskem območju $k \in [ 0, 5]$. Napaka aproksimacije drugega harmonika po metodi najmanjših kvadratov je bila
- $1,178^\circ\cdot 10^{-10}$.
+%Funkcijo sem aproksimiral na definicijskem območju $k \in [ 0, 5]$. Napaka aproksimacije drugega harmonika po metodi najmanjših kvadratov je bila
+ %$1,178^\circ\cdot 10^{-10}$.
 \slikaeps{Napaka $\varepsilon$ pri $k$=1,1 }{./Napake/napaka_amp11}
 \slikaeps{Razlika med napako izračunano s funkcijo atan2d() in izračnunano napako z vrsto (\ref{vrsta_k}), pri čemer je bilo uporabljenih prvih 15 členov pri k = 1,1}{./Napake/razlika_amp11}
 
@@ -256,7 +259,7 @@ Z limito $B_0$ v neskončnost in $A_0 = 0$ ter izpeljavo napake $\varepsilon$ v 
 
 Največjo amplitudo ima prvi harmonik, nastopajo tako lihe kot sode komponente.
 Z analizo potekov posameznega harmonika napake in uporabe Curve Fitting tool je bila najdena funkcija, ki opiše odvisnost napake od enosmerne komponente v signalu $B_{sin}$. Definicijsko območje je bilo potrebno
-razdeliti na 3 dele. Napaka minimalnih kvadratov prvega harmonika na območju $B_0 \in [-1, 1]$ je bila $1,206^\circ \cdot 10^{-7} $
+razdeliti na 3 dele.% Napaka minimalnih kvadratov prvega harmonika na območju $B_0 \in [-1, 1]$ je bila $1,206^\circ \cdot 10^{-7} $
 
 \begin{equation}
 \label{vrsta_sinoff}
@@ -298,7 +301,9 @@ Potek napake v odvisnosti od $A_0$ je (\ref{vrsta_cosoff})
 \newpage
 \subsection{Enosmerna komponenta pri obeh signalih}
 \label{2_offseta}
-Naj imata $B_{sin}$ in $B_{cos}$ enako enosmerno komponento $C_0$. 
+Ta primer je pomemben zaradi dinamične ekscentričnosti. Pri dinamični ekscentričnosti se vsem Hallovim sondam prišteje enaka enosmerna komponenta. Posledično enosmerne komponente Hallovih sond vplivajo na  signala $B_{sin}$ in $B_{cos}$.
+
+Zato naj imata $B_{sin}$ in $B_{cos}$ enako enosmerno komponento označeno s $C_0$.
 Limita napake, ko gre $C_0$ proti neskončnosti se v Fourierovi vrsti izrazi kot:
 \slikaeps{$\varepsilon$ ob limiti $C_0$ v neskončnost }{./Napake/lim_sincos}
 \begin{equation}
@@ -341,7 +346,7 @@ Potek napake $\varepsilon$ s slike \ref{./Napake/lim_sinfaza} predstavi vrsta (\
 \label{equ:lim_fis_vrsta}
 \varepsilon = 45^\circ - \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} \sin (2n \theta)
 \end{equation} 
-Iz  izraza je vidno nastopanje enosmerne komponente in sodih harmonikov. Z opazovanjem sodih harmonikov napake pri različnih faznih kotih, je bil dobljen izraz napake v odvistnosti od faznih zamikov $B_{sin}$ in $B_{cos}$. Napaka minimalnih kvadratov drugega harmonika na območju $\varphi_{s} \in [-90, 90]$ je bila $5,29^\circ \cdot 10^{-9}$.
+Iz  izraza je vidno nastopanje enosmerne komponente in sodih harmonikov. Z opazovanjem sodih harmonikov napake pri različnih faznih kotih, je bil dobljen izraz napake v odvistnosti od faznih zamikov $B_{sin}$ in $B_{cos}$.% Napaka minimalnih kvadratov drugega harmonika na območju $\varphi_{s} \in [-90, 90]$ je bila $5,29^\circ \cdot 10^{-9}$.
 \begin{multline}
 \label{equ:fis_err}
 \varepsilon(\varphi_{s},\varphi_{c}) = \frac{\varphi_{s}+\varphi_{c}}{2}+\\ \frac{180}{\pi}\sum_{n=1}^{\infty}\frac{1}{n} (\mathrm{tan}\frac{\varphi_{s}-\varphi_{c}}{2})^n \sin (2n \theta+n(90^\circ +\varphi_{s}+\varphi_{c}))
@@ -367,7 +372,7 @@ Opravljena je bila limita $\Delta_c$ v neskončnost. V napaki nastopa enosmerna 
 \end{equation}
 Pri čemer velja:
 $$\Delta_c > -C_1.$$
-Napaka minimalnih kvadratov aproksimiranega drugega harmonika napake pri $\Delta_c \in (-1,1]$ je bila $1,915^\circ \cdot 10^{-5}$.
+%Napaka minimalnih kvadratov aproksimiranega drugega harmonika napake pri $\Delta_c \in (-1,1]$ je bila $1,915^\circ \cdot 10^{-5}$.
 
 Izračunan je bil tudi potek napake, če se pojavi signal v obliki sinusne oblike. Vhoda v funkcijo sta:
 \begin{eqnarray}
