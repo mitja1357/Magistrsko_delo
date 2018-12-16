@@ -3,8 +3,8 @@ theta = linspace(0,360,8192);
 
 
 
-k = -90:5:90;
-primer = 2;
+k = 0:1:90;
+primer = 1;
 Sin = zeros(length(k),length(theta));
 Cos = Sin;
 theta1 = Sin;
@@ -58,6 +58,19 @@ har9(k<0) = -har9(k<0);
 har10 = fftErr{1}(:,11);
 har10(k<0) = -har10(k<0);
 
+%%
+figure;
+faza = fftErr{2}(:,3);
+faza(1) = 0;
+plot(k,har0,k,har2,k,faza,'Linewidth',2)%,k,har3,k,har4,k,har5,k,har6,k,har7,k,har8, ...
+     %k,har9,k,har10)
+grid on
+%set(gca,'FontSize',22);
+xlabel('$\mathrm{\varphi_{s}/^\circ}$','Interpreter','latex')
+ylabel('$\varepsilon/^\circ,\varphi/^\circ$','Interpreter','latex')
+leg1 = legend('$C_0$', '$C_2$','$\varphi_2$')
+set(leg1,'Interpreter','latex');
+set(leg1,'location','NorthWest');
 %%
 figure;
 plot(k,har0,k,har1,k,har2,k,har3,k,har4, 'Linewidth',3)%,k,har3,k,har4,k,har5,k,har6,k,har7,k,har8, ...

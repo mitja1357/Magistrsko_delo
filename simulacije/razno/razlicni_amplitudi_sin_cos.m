@@ -3,7 +3,7 @@ theta = linspace(0,360-360/8192,8192);
 Sin = sind(theta);
 Cos = cosd(theta);
 
-k = 0:1e-2:5;
+k = 0:1e-2:10;
 
 for i = 1: length(k)
     kot = atan2d(k(i).*Sin,Cos);
@@ -31,7 +31,7 @@ axes1 = axes('Parent',gcf,...
 plot(k,har2, 'LineWidth',2, 'Color', [215,25,28]/255);
 
 
-legend('C_{1}', 'Location','northwest')
+legend('C_{2}', 'Location','northwest')
 grid on
 xlabel('$k$','interpreter', 'latex')
 ylabel('$\varepsilon / ^\circ$','interpreter', 'latex')
