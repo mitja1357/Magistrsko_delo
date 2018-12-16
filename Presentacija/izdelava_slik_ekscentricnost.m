@@ -1,5 +1,5 @@
-stat_eks = [0;0];
-dina_eks = [0.2;0.1];
+stat_eks = [0.0;0.0];
+dina_eks = [0.2;0.3];
 n=37;
 theta=linspace(0,360,n);
 
