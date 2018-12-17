@@ -43,8 +43,9 @@ plot(dc, b2, 'LineWidth',2, 'Color', [44,123,182]/255);
 
 legend('C_{0}','C_{2c}', 'C_{2s}', 'Location','northwest')
 grid on
-xlabel('$\Delta_c$','interpreter', 'latex')
-ylabel('$\varepsilon / ^\circ$','interpreter', 'latex')
+set(gca,'FontSize',26);
+xlabel('$\Delta_c/A_1$','interpreter', 'latex','FontSize',26)
+ylabel('$\varepsilon / ^\circ$','interpreter', 'latex','FontSize',26)
 % xlabel('$\theta$','interpreter', 'latex')
 % ylabel('$/ ^\circ$','interpreter', 'latex')
 % axis([0,360,-Inf,Inf])

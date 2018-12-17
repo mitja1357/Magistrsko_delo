@@ -4,7 +4,7 @@ theta = linspace(0,2*pi,8192);
 
 
 % x = sqrt(2)/2;
-x = linspace(-10,10,1000);
+x = linspace(-6,6,500);
 primer = 2;
 
 
@@ -123,3 +123,13 @@ fftRazlike = mojfft(razlikaNapak);
 
 fftErr = mojfft(err);
 fftPred = mojfft(predviden_err);
+%%
+figure
+y = fftErr{1}(:,2);
+y(x<0)=-y(x<0);
+plot(x(abs(x)<5),-y(abs(x)<5),'-r', 'linewidth',3)
+grid on
+legend('C_1')
+set(gca,'FontSize',26);
+xlabel('A_0 / A_1','FontSize',26)
+ylabel('$\varepsilon / ^\circ$','interpreter', 'latex','FontSize',26)
