@@ -5,7 +5,7 @@ theta = linspace(0,2*pi,8192);
 
 % x = sqrt(2)/2;
 x = linspace(-6,6,500);
-primer = 2;
+primer = 3;
 
 
 Sin = zeros(length(x),length(theta));
@@ -125,11 +125,14 @@ fftErr = mojfft(err);
 fftPred = mojfft(predviden_err);
 %%
 figure
+axes1 = axes('Parent',gcf);
 y = fftErr{1}(:,2);
 y(x<0)=-y(x<0);
-plot(x(abs(x)<5),-y(abs(x)<5),'-r', 'linewidth',3)
+plot(x(abs(x)<5),180/pi.*y(abs(x)<5),'-r', 'linewidth',3)
 grid on
 legend('C_1')
 set(gca,'FontSize',26);
-xlabel('A_0 / A_1','FontSize',26)
+set(axes1,'FontSize',26,'XTick',[-5 -4 -3 -2 -1 0 1 2 3 4 5],'XTickLabel',...
+    {'-5','-4','-3','-2','-1','0','1','2','3','4','5'});
+xlabel('off / amp','FontSize',26)
 ylabel('$\varepsilon / ^\circ$','interpreter', 'latex','FontSize',26)

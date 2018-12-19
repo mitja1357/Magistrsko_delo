@@ -3,7 +3,7 @@ load('razno\X_tmp_stari.mat');
 load('razno\Y_tmp_stari.mat');
 load('razno\Zmesh_stari.mat');
 ravnina = 0;
-gif = 0;
+gif = 1;
 n= 30;
 X = X_tmp(1+n:(1001-n));
 Y = Y_tmp(1+n:(1001-n));
@@ -47,7 +47,7 @@ h = figure('Color',[1 1 1],'Position',[50,100,800,4000]);
 filename = 'polje_brez_ravnino.gif';
 clf
 % Create axes
-axes1 = axes('Visible','on','Parent',h);
+axes1 = axes('Visible','off','Parent',h);
 view(axes1,[80 8]);
 hold(axes1,'all');
 % Create polje
